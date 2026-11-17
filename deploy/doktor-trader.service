@@ -1,0 +1,18 @@
+[Unit]
+Description=Doktor Trader web app
+After=network.target
+
+[Service]
+Type=simple
+User=doktor
+WorkingDirectory=/opt/doktor-trader
+EnvironmentFile=/etc/doktor-trader.env
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/var/lib/doktor-trader
+
+[Install]
+WantedBy=multi-user.target

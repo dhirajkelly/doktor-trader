@@ -1,0 +1,6 @@
+[Unit]
+Description=Doktor Trader: pull latest code and articles from GitHub
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/doktor-trader/deploy/update.sh
