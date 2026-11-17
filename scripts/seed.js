@@ -1,8 +1,7 @@
 // Seeds default Academy, tools and settings the first time the database is empty.
 const db = require('../src/db');
-const { slugify, SITE } = require('../src/views');
+const { slugify } = require('../src/views');
 
-const WA = `https://wa.me/${SITE.whatsapp}`;
 
 const COURSES = [
   { title: 'Fondasi Trading', level: 'Pemula', summary: 'Kenali pasar forex dan emas, cara kerja broker, dan cara membaca chart sebelum menyentuh uang sungguhan.', lessons: [
@@ -152,10 +151,31 @@ Tujuan Doktor Trader adalah membantu Anda menjadi trader yang **disiplin dan ber
   ] },
 ];
 
+const EA_DESC = `EA pendamping yang **tidak membuka posisi**. Ia hanya menjaga posisi yang Anda buka sendiri:
+- **Auto SL/TP**: memasang SL dan TP otomatis pada posisi yang belum punya SL/TP
+- **Break-even**: memindahkan SL ke harga entry setelah profit mencapai jarak tertentu
+- **Trailing stop**: SL ikut bergerak mengunci profit
+- **Batas rugi harian**: jika rugi hari ini mencapai X% (default 3%), semua posisi ditutup dan posisi baru langsung ditutup sampai besok
+
+**Cara pasang (MT5):** unduh file, buka MetaTrader → File → Open Data Folder → MQL5 → Experts, tempel file, lalu klik kanan Navigator → Refresh. Tarik **DT_RiskGuard** ke chart XAUUSD, centang *Allow Algo Trading*, dan aktifkan tombol **Algo Trading**. Atur angka SL/TP di tab Inputs (dalam point; untuk XAUUSD 2 digit, 100 point = $1).
+
+Pakai MT4? [Unduh versi MT4](/member/unduh/DT_RiskGuard.mq4) (taruh di MQL4 → Experts).`;
+
+const SIGNAL_DESC = `Indikator sinyal berbasis aturan yang menandai peluang searah tren di chart:
+- **Panah hijau (BUY)**: harga dan EMA 50 di atas EMA 200, lalu RSI naik kembali melewati 40 (pullback selesai)
+- **Panah merah (SELL)**: kebalikannya, RSI turun melewati 60 saat downtrend
+- Menampilkan **saran SL dan TP** dari ATR (SL 1,5× ATR, TP 3× ATR) di pojok chart
+- Alert dan notifikasi HP (MetaTrader mobile) saat sinyal baru muncul
+- Hanya membaca candle yang sudah tutup, jadi panah tidak berubah setelah muncul
+
+**Cara pasang (MT5):** taruh file di MQL5 → Indicators, Refresh, lalu tarik **DT_SmartSignal** ke chart. Cocok dipakai di H1/H4. Gabungkan dengan **DT Risk Guard** dan kalkulator lot di bawah.
+
+Pakai MT4? [Unduh versi MT4](/member/unduh/DT_SmartSignal.mq4) (taruh di MQL4 → Indicators).`;
+
 const TOOLS = [
-  ['ea', 'EA Risk Guard (manajemen risiko otomatis)', 'Expert Advisor pendamping yang membantu memasang SL/TP otomatis, membatasi rugi harian, dan menghitung lot sesuai persentase risiko. Cocok untuk melatih disiplin.', 'EA hanyalah alat bantu. Uji di akun demo terlebih dahulu; hasil dapat berbeda di setiap kondisi pasar.', WA + '?text=' + encodeURIComponent('Halo Doktor Trader, saya member dan mau minta file EA Risk Guard.'), 'Minta file EA'],
-  ['signal', 'AI Signals XAUUSD (edukasi)', 'Ide trading XAUUSD yang dirangkum dengan bantuan AI dan dikurasi tim, lengkap dengan area entry, SL, TP, dan alasan teknikal. Dibagikan di grup komunitas member.', 'Sinyal bersifat edukasi, bukan rekomendasi. Selalu sesuaikan lot dengan aturan risiko Anda sendiri.', WA + '?text=' + encodeURIComponent('Halo Doktor Trader, saya member dan mau gabung grup AI Signals.'), 'Gabung grup sinyal'],
-  ['copytrade', 'Copy Trade Doktor Trader', 'Ikuti posisi strategi Doktor Trader secara otomatis melalui fitur copy trading Vantage, dengan pengaturan risiko yang bisa Anda tentukan sendiri.', 'Copy trade tetap berisiko dan dapat mengalami drawdown. Gunakan dana yang siap Anda tanggung risikonya.', WA + '?text=' + encodeURIComponent('Halo Doktor Trader, saya member dan mau mulai copy trade.'), 'Mulai copy trade'],
+  ['ea', 'DT Risk Guard: auto SL/TP, break-even, trailing', EA_DESC, 'Alat bantu disiplin, bukan jaminan profit. Uji di akun demo dulu dan cek kembali pengaturan point sesuai simbol Anda.', '/member/unduh/DT_RiskGuard.mq5', 'Unduh EA (MT5)'],
+  ['signal', 'DT Smart Signal: indikator sinyal XAUUSD', SIGNAL_DESC, 'Sinyal berbasis aturan teknikal, bukan ramalan dan bukan rekomendasi. Sinyal bisa salah; selalu pakai SL dan aturan risiko 1%.', '/member/unduh/DT_SmartSignal.mq5', 'Unduh indikator (MT5)'],
+  ['copytrade', 'Copy Trade Doktor Trader', 'Ikuti posisi strategi Doktor Trader secara otomatis melalui fitur copy trading Vantage, dengan pengaturan risiko yang bisa Anda tentukan sendiri. Link strategi segera tersedia di sini.', 'Copy trade tetap berisiko dan dapat mengalami drawdown. Gunakan dana yang siap Anda tanggung risikonya.', '', ''],
 ];
 
 function seed() {
@@ -171,6 +191,15 @@ function seed() {
   if (!db.get('SELECT id FROM tools LIMIT 1')) {
     TOOLS.forEach((t, i) => db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', [...t, i + 1]));
     console.log('[seed] tools');
+  }
+  // v2: direct downloads instead of WhatsApp links (one-time update of the default tool cards)
+  if (db.setting('tools_v2') !== '1') {
+    for (const [kind, title, desc, risk, url, label] of TOOLS) {
+      const row = db.get("SELECT id FROM tools WHERE kind = ? AND link_url LIKE 'https://wa.me/%' ORDER BY position, id LIMIT 1", [kind]);
+      if (row) db.run('UPDATE tools SET title=?, description=?, risk_note=?, link_url=?, link_label=? WHERE id=?', [title, desc, risk, url, label, row.id]);
+    }
+    db.setSetting('tools_v2', '1');
+    console.log('[seed] tools v2');
   }
 }
 

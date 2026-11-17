@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const db = require('../db');
 const auth = require('../auth');
@@ -159,6 +160,38 @@ router.post('/member/tanya', (req, res) => {
   res.redirect('/member/tanya?ok=1');
 });
 
+
+const DOWNLOADS = path.join(__dirname, '..', '..', 'downloads');
+const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4'];
+router.get('/member/unduh/:file', (req, res, next) => {
+  const f = req.params.file;
+  if (!FILES.includes(f)) return next();
+  db.log(req.user.id, 'download', f);
+  res.download(path.join(DOWNLOADS, f), f);
+});
+
+const LOT_CALC = `<h2 style="margin-top:28px">Kalkulator lot</h2>
+<div class="card"><p class="muted" style="margin-top:0">Hitung ukuran lot dari modal, persentase risiko, dan jarak stop loss. Untuk XAUUSD akun standar, 1 lot = 100 oz (gerak $1 = $100 per lot).</p>
+<div class="grid g3 f" id="lotcalc">
+<div><label for="lc-bal">Modal ($)</label><input id="lc-bal" type="number" min="0" step="any" value="1000"></div>
+<div><label for="lc-risk">Risiko per posisi (%)</label><input id="lc-risk" type="number" min="0" step="0.1" value="1"></div>
+<div><label for="lc-sl">Jarak SL (dalam $ harga)</label><input id="lc-sl" type="number" min="0" step="any" value="5"></div>
+<div><label for="lc-cs">Ukuran kontrak (oz per lot)</label><input id="lc-cs" type="number" min="0" step="any" value="100"></div>
+<div><label for="lc-rr">Target risk-reward (1 : x)</label><input id="lc-rr" type="number" min="0" step="0.1" value="2"></div>
+<div><label for="lc-min">Lot minimum</label><input id="lc-min" type="number" min="0" step="0.01" value="0.01"></div>
+</div>
+<div class="card" style="margin-top:14px;background:rgba(233,196,106,.06)" id="lc-out" aria-live="polite"></div></div>
+<script>(function(){var $=function(i){return parseFloat(document.getElementById(i).value)||0};
+function calc(){var bal=$('lc-bal'),risk=$('lc-risk'),sl=$('lc-sl'),cs=$('lc-cs'),rr=$('lc-rr'),mn=$('lc-min')||0.01;
+var out=document.getElementById('lc-out');if(!bal||!risk||!sl||!cs){out.innerHTML='Isi semua kolom.';return;}
+var riskUsd=bal*risk/100,raw=riskUsd/(sl*cs),lot=Math.floor(raw/mn+1e-9)*mn;
+var actual=lot*sl*cs,pct=actual/bal*100;
+var h='<div class="stat">'+(lot>0?lot.toFixed(2):'0')+' lot</div><p style="margin:6px 0 0">Risiko maksimal: <b>$'+riskUsd.toFixed(2)+'</b> ('+risk+'%). Dengan '+lot.toFixed(2)+' lot, kena SL = rugi <b>$'+actual.toFixed(2)+'</b> ('+pct.toFixed(2)+'%).';
+if(rr>0)h+=' Target TP berjarak <b>$'+(sl*rr).toFixed(2)+'</b> = potensi <b>$'+(actual*rr).toFixed(2)+'</b>.';
+h+='</p>';if(lot<=0)h='<div class="stat" style="color:var(--red)">Terlalu besar</div><p style="margin:6px 0 0">Lot minimum '+mn+' sudah merisikokan $'+(mn*sl*cs).toFixed(2)+' ('+(mn*sl*cs/bal*100).toFixed(2)+'%). Pilih SL lebih dekat, atau tambah modal.</p>';
+out.innerHTML=h;}
+document.getElementById('lotcalc').addEventListener('input',calc);calc();})();</script>`;
+
 const KINDS = { ea: 'EA Trading', signal: 'AI Signals Premium', copytrade: 'Copy Trade' };
 router.get('/member/tools', (req, res) => {
   const tools = db.all('SELECT * FROM tools WHERE published = 1 ORDER BY kind, position, id');
@@ -169,8 +202,8 @@ router.get('/member/tools', (req, res) => {
 ${Object.entries(KINDS).map(([k, label]) => {
     const list = tools.filter((t) => t.kind === k);
     return `<h2 style="margin-top:24px">${label}</h2>${list.length ? `<div class="grid g2">${list.map((t) => `<div class="card"><h3>${esc(t.title)}</h3><div class="prose" style="font-size:15px">${md(t.description)}</div>
-${t.risk_note ? `<p class="dim">Karakter risiko: ${esc(t.risk_note)}</p>` : ''}${t.link_url ? `<a class="btn sm" href="${esc(t.link_url)}" target="_blank" rel="noopener">${esc(t.link_label || 'Buka')}</a>` : ''}</div>`).join('')}</div>` : '<p class="muted">Segera hadir.</p>'}`;
-  }).join('')}`,
+${t.risk_note ? `<p class="dim">Karakter risiko: ${esc(t.risk_note)}</p>` : ''}${t.link_url ? `<a class="btn sm" href="${esc(t.link_url)}"${t.link_url.startsWith('/') ? '' : ' target="_blank" rel="noopener"'}>${esc(t.link_label || 'Buka')}</a>` : ''}</div>`).join('')}</div>` : '<p class="muted">Segera hadir.</p>'}`;
+  }).join('')}${LOT_CALC}`,
   });
 });
 
