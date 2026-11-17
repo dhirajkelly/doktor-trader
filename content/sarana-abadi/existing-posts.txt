@@ -1,0 +1,32 @@
+# Artikel yang sudah ada di sarana-abadi.co.id sebelum sistem otomatis (per 18 Nov 2026).
+# Format: URL | Judul. Jangan ulangi topik/keyword ini. Boleh dijadikan internal link.
+https://sarana-abadi.co.id/2026/06/03/epc-plts-atap-industri/ | EPC PLTS Atap Industri 2026: Skema PPA, Estimasi Biaya per kWp, dan ROI
+https://sarana-abadi.co.id/2026/06/01/rdmp-balikpapan-kilang-epc/ | RDMP Balikpapan Resmi Beroperasi: Pelajaran EPC dari Kilang Euro V Terbesar RI
+https://sarana-abadi.co.id/2026/05/31/proyek-ccus-indonesia-2026/ | CCUS di Indonesia: Peta Jalan 15 Proyek Carbon Capture On-Stream 2026–2030
+https://sarana-abadi.co.id/2026/05/29/tkdn-migas-ptk-007/ | Perhitungan TKDN Migas 2026: Panduan Lengkap PTK 007 Revisi 5 SKK Migas
+https://sarana-abadi.co.id/2026/05/27/kontraktor-epc-migas-indonesia/ | 7 Kriteria Utama Memilih Kontraktor EPC Migas Terpercaya di Indonesia
+https://sarana-abadi.co.id/2026/05/25/cathodic-protection-storage-tank/ | Cathodic Protection Storage Tank: Perbandingan Sistem ICCP dan Sacrificial Anode
+https://sarana-abadi.co.id/2026/05/23/inspeksi-api-510-653/ | Inspeksi Bejana Tekan API 510 dan API 653: Interval, Checklist, dan Format Laporan
+https://sarana-abadi.co.id/2026/05/21/piping-stress-analysis-caesar/ | Piping Stress Analysis dengan CAESAR II: Studi Kasus Jalur Steam di Pabrik Petrokimia
+https://sarana-abadi.co.id/2026/05/19/sil-assessment-iec-61511/ | SIL Assessment IEC 61511: Cara Merancang Safety Instrumented System yang Andal
+https://sarana-abadi.co.id/2026/05/17/hazop-study-pabrik-migas/ | HAZOP Study Pabrik Migas: Metode, Template, dan Contoh Kasus Nyata
+https://sarana-abadi.co.id/2026/05/15/fabrikasi-storage-tank-api/ | Fabrikasi Storage Tank API 650: Panduan Material, Welding, dan Hydrotest
+https://sarana-abadi.co.id/2026/05/13/fabrikasi-pressure-vessel-asme/ | Panduan Fabrikasi Pressure Vessel Standar ASME Section VIII Divisi 1
+https://sarana-abadi.co.id/2026/05/11/perbedaan-commissioning-dan-start-up/ | Pre-Commissioning, Commissioning, dan Start-Up: Apa Beda dan Urutannya?
+https://sarana-abadi.co.id/2026/05/09/tahapan-proyek-epc-migas/ | 7 Tahapan Proyek EPC Migas: Dari FEED sampai Commissioning Secara Lengkap
+https://sarana-abadi.co.id/2026/05/07/perbedaan-kontrak-epc-industri/ | Perbedaan EPC, EPCM, EPCI, dan EPCC: Panduan Memilih Model Kontrak Proyek Industri
+https://sarana-abadi.co.id/2026/05/05/konstruksi-industri-rendah-emisi/ | Konstruksi Industri Rendah Emisi: Langkah Praktis Menuju Proyek yang Lebih Berkelanjutan
+https://sarana-abadi.co.id/2026/05/03/material-handling-fasilitas-industri/ | Pentingnya Material Handling yang Tepat untuk Mendukung Kelancaran Fasilitas Industri
+https://sarana-abadi.co.id/2026/05/01/keselamatan-kerja-proyek-industri/ | Keselamatan Kerja pada Proyek Industri: Fondasi Utama Konstruksi Modern yang Andal
+https://sarana-abadi.co.id/2026/04/29/integrasi-epc-proyek-industri/ | Bagaimana Integrasi EPC Meningkatkan Produktivitas, Kontrol Biaya, dan Kecepatan Proyek
+https://sarana-abadi.co.id/2026/04/27/rantai-pasok-material-proyek/ | Strategi Mengelola Rantai Pasok Material agar Proyek Konstruksi Industri Tetap Stabil
+https://sarana-abadi.co.id/2026/04/25/modular-construction-pabrik-industri/ | Offsite Fabrication dan Modular Construction untuk Efisiensi Proyek Industri
+https://sarana-abadi.co.id/2026/04/23/digital-twin-proyek-industri/ | Digital Twin dalam Konstruksi Industri: Manfaat Nyata untuk Engineering dan Eksekusi Proyek
+https://sarana-abadi.co.id/2026/04/21/quality-control-konstruksi-industri/ | Mengapa Quality Control Menjadi Fondasi Utama Konstruksi Industri yang Profesional
+https://sarana-abadi.co.id/2026/04/19/commissioning-fasilitas-industri-andal/ | Commissioning sebagai Kunci Keandalan Fasilitas Industri Sejak Hari Pertama Operasi
+https://sarana-abadi.co.id/2026/04/17/erection-struktur-pabrik-modern/ | Erection dalam Konstruksi Modern: Cara Menjaga Instalasi Struktur Tetap Tepat Waktu
+https://sarana-abadi.co.id/2026/04/15/fabrikasi-modular-proyek-industri/ | Fabrication Modern untuk Proyek Industri: Lebih Presisi, Lebih Cepat, Lebih Aman
+https://sarana-abadi.co.id/2026/04/13/procurement-material-proyek-industri/ | Mengapa Procurement yang Tepat Menentukan Jadwal dan Biaya Proyek Industri
+https://sarana-abadi.co.id/2026/04/11/peran-engineering-terpadu-proyek-industri/ | Peran Engineering Terpadu dalam Menekan Risiko Proyek Konstruksi Industri
+https://sarana-abadi.co.id/2026/04/09/estimasi-material-berbasis-data/ | Estimasi Material Berbasis Data: Predictive Modeling untuk Procurement yang Lebih Akurat
+https://sarana-abadi.co.id/2026/04/07/efisiensi-material-handling-proyek/ | Alur Workshop ke Site: Statistik Material Handling yang Mengurangi Waktu Menganggur di Lapangan
