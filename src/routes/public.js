@@ -85,11 +85,71 @@ ${related.length ? `<h2>Baca juga</h2><ul>${related.map((r) => `<li><a href="/ar
   }));
 });
 
+// Free position-size calculator (linkable asset for SEO). Runs fully client-side.
+router.get('/alat/kalkulator-lot', (req, res) => {
+  const url = `${SITE.url}/alat/kalkulator-lot`;
+  const desc = 'Kalkulator lot gratis untuk XAUUSD, EURUSD, GBPUSD, dan USDJPY: hitung ukuran posisi dari modal, persentase risiko, dan jarak stop loss.';
+  const jsonld = { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Kalkulator Lot Doktor Trader', url, description: desc,
+    applicationCategory: 'FinanceApplication', operatingSystem: 'Any', inLanguage: 'id-ID', offers: { '@type': 'Offer', price: '0', priceCurrency: 'IDR' },
+    author: { '@type': 'Person', name: SITE.author, url: SITE.url } };
+  const head = `<meta property="og:type" content="website"><meta property="og:title" content="Kalkulator Lot Trading Gratis"><meta property="og:description" content="${esc(desc)}">
+<meta property="og:url" content="${esc(url)}"><meta property="og:image" content="${SITE.url}/doktor-portrait.webp">
+<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, '\\u003c')}</script>`;
+  const dd = [10, 20, 30, 40, 50, 60, 75, 90];
+  res.send(layout({
+    title: 'Kalkulator Lot Trading Gratis (XAUUSD & Forex)', description: desc, canonical: url, head, user: req.user, active: 'artikel',
+    body: `<section class="narrow" style="padding:40px 20px">
+<nav class="dim" aria-label="breadcrumb"><a href="/">Beranda</a> › Alat › Kalkulator Lot</nav>
+<h1 style="margin-top:12px">Kalkulator lot trading</h1>
+<p class="muted">Tentukan ukuran posisi dari risiko, bukan dari perasaan. Masukkan modal, persentase risiko per posisi, dan jarak stop loss; kalkulator menghitung lot maksimal agar kerugian tidak melewati batas yang Anda tetapkan.</p>
+<form class="card f" id="calc" onsubmit="return false" style="margin:20px 0">
+<div class="grid g2">
+<div><label for="sym">Instrumen</label><select id="sym"><option value="XAUUSD">XAUUSD (emas)</option><option value="EURUSD">EURUSD</option><option value="GBPUSD">GBPUSD</option><option value="USDJPY">USDJPY</option></select></div>
+<div><label for="bal">Modal akun (USD)</label><input id="bal" type="number" min="0" step="any" value="1000" inputmode="decimal"></div>
+<div><label for="risk">Risiko per posisi (%)</label><input id="risk" type="number" min="0" max="100" step="0.1" value="1" inputmode="decimal"></div>
+<div><label for="sl" id="sllab">Jarak stop loss (USD per ons)</label><input id="sl" type="number" min="0" step="any" value="5" inputmode="decimal"></div>
+<div id="pxwrap" hidden><label for="px">Harga USDJPY saat ini</label><input id="px" type="number" min="0" step="any" value="150" inputmode="decimal"></div>
+</div>
+<div class="card" style="background:var(--bg2);margin-top:6px" aria-live="polite">
+<div class="spread"><span class="muted">Risiko dalam dolar</span><span class="stat" id="oRisk">-</span></div>
+<div class="spread"><span class="muted">Ukuran lot maksimal</span><span class="stat" style="color:var(--gold)" id="oLot">-</span></div>
+<div class="spread"><span class="muted">Rugi jika stop loss kena</span><span id="oLoss">-</span></div>
+<p class="dim" id="oNote" style="margin:8px 0 0"></p>
+</div>
+</form>
+<div class="prose">
+<h2>Cara kerja kalkulator</h2>
+<p><strong>Lot = Risiko dalam dolar ÷ (Jarak stop loss × Nilai per lot)</strong>. Hasil dibulatkan ke bawah ke 0,01 lot agar risiko tidak melebihi batas.</p>
+<ul><li>XAUUSD: 1 lot standar = 100 ons, jadi pergerakan $1 = $100 per lot.</li><li>EURUSD dan GBPUSD: 1 pip = $10 per lot standar.</li><li>USDJPY: nilai 1 pip per lot ≈ 1.000 ÷ harga USDJPY (dalam USD).</li></ul>
+<p>Spesifikasi kontrak bisa berbeda antar jenis akun. Selalu cek contract size di MT4/MT5 Anda. Penjelasan lengkapnya ada di artikel <a href="/artikel/cara-menghitung-lot-xauusd">cara menghitung lot XAUUSD</a>.</p>
+<h2>Tabel pemulihan drawdown</h2>
+<p>Semakin besar risiko per posisi, semakin dalam drawdown saat kalah beruntun, dan semakin berat jalan pulangnya.</p>
+<div class="tablewrap"><table><thead><tr><th>Drawdown</th><th>Kenaikan untuk balik modal</th></tr></thead><tbody>${dd.map((d) => `<tr><td>${d}%</td><td>${(d / (100 - d) * 100).toFixed(1).replace('.', ',').replace(',0', '')}%</td></tr>`).join('')}</tbody></table></div>
+<p>Baca juga: <a href="/artikel/rumus-drawdown-trading">rumus drawdown trading</a>.</p>
+</div>
+<div class="alert" style="margin-top:28px;font-size:14px">Kalkulator ini alat bantu edukasi, bukan rekomendasi transaksi. Hasil bisa berbeda karena spread, slippage, dan spesifikasi kontrak pialang Anda.</div>
+${cta()}
+</section>
+<script>
+(function(){var $=function(i){return document.getElementById(i)};
+function fmt(n,d){return n.toLocaleString('id-ID',{minimumFractionDigits:d,maximumFractionDigits:d})}
+function calc(){var s=$('sym').value,bal=+$('bal').value,r=+$('risk').value,sl=+$('sl').value,px=+$('px').value;
+$('pxwrap').hidden=s!=='USDJPY';$('sllab').textContent=s==='XAUUSD'?'Jarak stop loss (USD per ons)':'Jarak stop loss (pip)';
+var per=s==='XAUUSD'?100:s==='USDJPY'?(px>0?1000/px:0):10;var risk=bal*r/100;
+if(!(bal>0&&r>0&&sl>0&&per>0)){$('oRisk').textContent='-';$('oLot').textContent='-';$('oLoss').textContent='-';$('oNote').textContent='Isi semua kolom dengan angka lebih dari nol.';return}
+var lot=Math.floor(risk/(sl*per)*100+1e-9)/100;$('oRisk').textContent='$'+fmt(risk,2);$('oLot').textContent=fmt(lot,2)+' lot';
+$('oLoss').textContent='$'+fmt(lot*sl*per,2);$('oNote').textContent=lot<0.01?'Lot di bawah 0,01: perlebar modal, kecilkan jarak SL dengan alasan teknikal yang valid, atau lewati trade ini.':(r>2?'Risiko di atas 2% per posisi membuat drawdown cepat dalam saat kalah beruntun.':'');}
+['sym','bal','risk','sl','px'].forEach(function(i){$(i).addEventListener('input',calc)});calc();})();
+</script>`,
+  }));
+});
+
 router.get('/sitemap.xml', (req, res) => {
   const rows = db.all("SELECT slug, updated_at, published_at FROM articles WHERE status='published' AND published_at <= datetime('now') ORDER BY published_at DESC");
   const urls = [
     { loc: SITE.url + '/', pri: '1.0', freq: 'weekly' },
     { loc: SITE.url + '/artikel', pri: '0.9', freq: 'daily' },
+    { loc: SITE.url + '/alat/kalkulator-lot', pri: '0.8', freq: 'monthly' },
     { loc: SITE.url + '/daftar', pri: '0.5', freq: 'monthly' },
     ...rows.map((a) => ({ loc: `${SITE.url}/artikel/${a.slug}`, mod: isoDate(a.updated_at || a.published_at).slice(0, 10), pri: '0.7', freq: 'monthly' })),
   ];
