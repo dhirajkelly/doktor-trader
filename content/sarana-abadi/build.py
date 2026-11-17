@@ -23,29 +23,13 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent
 ART, OUT_HTML, OUT_IMG = ROOT / "articles", ROOT / "html", ROOT / "img"
-SITE = "https://sarana-abadi.co.id"
+CFG = json.loads((ROOT / "site.json").read_text(encoding="utf-8"))
+SITE = CFG["site"]
 WIB = dt.timezone(dt.timedelta(hours=7))
-CATEGORIES = {
-    "Construction Technology & Innovation", "Engineering & Design",
-    "Industrial Projects & Case Studies", "Fabrication & Construction",
-    "Safety, Health & Environment (SHE)", "Corporate & Partnership",
-    "Quality & Standards", "Jasa Kontraktor Karawang",
-}
+CATEGORIES = set(CFG["categories"])
 REQUIRED = ["title", "slug", "publish_at", "meta_title", "meta_description",
             "focus_keyword", "categories", "tags", "excerpt", "image_alt", "faq"]
-
-CTA = """
-<div class="sar-cta" style="border-left:4px solid #f5b800;background:#f6f7f9;padding:18px 22px;margin:32px 0;border-radius:4px">
-<p style="margin-top:0"><strong>PT Sarana Abadi Raya</strong> &mdash; EPC &amp; General Contractor di Karawang, Jawa Barat. Kami menangani pekerjaan sipil, struktur baja, fabrikasi, mekanikal, dan fit-out untuk fasilitas industri di Karawang, Bekasi, Purwakarta, Bandung, dan Jabodetabek.</p>
-<p>Ingin mendiskusikan kebutuhan proyek Anda atau meminta penawaran harga? Hubungi tim kami:</p>
-<ul style="margin-bottom:0">
-<li>Kantor: Karawang Business Square Blok A No. 1-2, Jl. Surotokunto No. 28, Karawang, Jawa Barat 41322</li>
-<li>Telepon: <a href="tel:+622678406981">(0267) 840 6981</a> / <a href="tel:+622678630027">(0267) 863 0027</a></li>
-<li>Email: <a href="mailto:info@sarana-abadi.co.id">info@sarana-abadi.co.id</a></li>
-<li>Jam kerja: Senin&ndash;Jumat 09.00&ndash;18.00, Sabtu&ndash;Minggu 09.00&ndash;12.00 WIB</li>
-</ul>
-</div>
-"""
+CTA = (ROOT / "cta.html").read_text(encoding="utf-8")
 
 
 def slug_ok(s):
@@ -123,8 +107,8 @@ def validate(path, meta, body, seen, existing):
     faq = meta["faq"]
     if not (isinstance(faq, list) and 3 <= len(faq) <= 6 and all(isinstance(f, dict) and f.get("q") and f.get("a") for f in faq)):
         e.append("faq harus 3–6 item {q, a}")
-    if SITE + "/20" not in body:
-        e.append("minimal 1 internal link ke artikel lain di sarana-abadi.co.id")
+    if SITE + "/" not in body:
+        e.append(f"minimal 1 internal link ke {SITE}")
     return e
 
 
@@ -152,14 +136,15 @@ def font(size, bold=True):
 
 def cover(meta, dest):
     W, H = 1200, 675
-    navy, yellow, white = (17, 33, 61), (245, 184, 0), (255, 255, 255)
+    navy, yellow, white = tuple(CFG["cover"]["bg"]), tuple(CFG["cover"]["accent"]), (255, 255, 255)
+    line = tuple(CFG["cover"].get("line", [30, 52, 90]))
     im = Image.new("RGB", (W, H), navy)
     d = ImageDraw.Draw(im)
     # steel-truss motif on the right
     for i in range(0, 9):
         x = 760 + i * 60
-        d.line([(x, 0), (x + 120, H)], fill=(30, 52, 90), width=3)
-        d.line([(x + 120, 0), (x, H)], fill=(30, 52, 90), width=3)
+        d.line([(x, 0), (x + 120, H)], fill=line, width=3)
+        d.line([(x + 120, 0), (x, H)], fill=line, width=3)
     d.rectangle([0, 0, 18, H], fill=yellow)
     cat = meta["categories"][0].upper()
     f_cat, f_t, f_s = font(26), font(56), font(24, bold=False)
@@ -170,8 +155,8 @@ def cover(meta, dest):
         d.text((70, y), ln, font=f_t, fill=white)
         y += 72
     d.rectangle([70, H - 120, 190, H - 114], fill=yellow)
-    d.text((70, H - 96), "PT Sarana Abadi Raya  ·  EPC & General Contractor  ·  Karawang", font=f_s, fill=(210, 218, 230))
-    d.text((70, H - 62), "sarana-abadi.co.id", font=font(24), fill=yellow)
+    d.text((70, H - 96), CFG["cover"]["brand_line"], font=f_s, fill=(210, 218, 230))
+    d.text((70, H - 62), CFG["cover"]["domain"], font=font(24), fill=yellow)
     im.save(dest, optimize=True)
 
 
