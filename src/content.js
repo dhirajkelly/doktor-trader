@@ -36,11 +36,16 @@ function syncInbox() {
     const dateFromName = (f.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1];
     const publishAt = data.date || dateFromName || new Date().toISOString().slice(0, 10);
     const status = data.status === 'draft' ? 'draft' : 'published';
+    // Goes live at 07:00 WIB (00:00 UTC) on its date. If that moment has passed and the file is
+    // dated today, use the import time so several articles on one day keep their real order.
+    const nowUtc = new Date().toISOString().slice(0, 19).replace('T', ' ');
+    let publishTs = publishAt + ' 00:00:00';
+    if (publishTs < nowUtc && publishAt === nowUtc.slice(0, 10)) publishTs = nowUtc;
     db.run(`INSERT INTO articles(slug, title, meta_title, meta_description, focus_keyword, excerpt, body_md, category, tags, status, source, published_at)
       VALUES(?,?,?,?,?,?,?,?,?,?, 'auto', ?)`, [
       slug, data.title.slice(0, 140), (data.meta_title || '').slice(0, 80), (data.meta_description || data.description || '').slice(0, 200),
       (data.focus_keyword || data.keyword || '').slice(0, 80), (data.excerpt || plain(body, 200)).slice(0, 400), body,
-      (data.category || 'Edukasi').slice(0, 40), (data.tags || '').slice(0, 200), status, status === 'published' ? publishAt + ' 00:00:00' : null,
+      (data.category || 'Edukasi').slice(0, 40), (data.tags || '').slice(0, 200), status, status === 'published' ? publishTs : null,
     ]);
     added++;
   }

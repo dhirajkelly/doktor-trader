@@ -4,7 +4,9 @@ Express + sql.js app for dhirajkelly.id: public landing, SEO blog, member area (
 
 ## Daily SEO article (scheduled task)
 
-Write ONE new article per run as `content/articles/YYYY-MM-DD-<slug>.md` (date = today in Asia/Jakarta). The app imports it automatically; it goes live at 07:00 WIB on that date.
+The task runs three times a day (about 05:40, 11:40 and 17:40 WIB). Write ONE new article per run as `content/articles/YYYY-MM-DD-<slug>.md` (date = today in Asia/Jakarta). The app imports it automatically: the morning article goes live at 07:00 WIB, later ones within about 15 minutes of the push.
+
+Topic spread: check the files already dated today and pick a different category and search intent from them, so the three daily articles cover different angles (for example one beginner guide, one risk-management or strategy piece, one psychology/fundamental/term-explainer).
 
 Rules:
 - Read the existing files in `content/articles/` first. Never repeat a focus keyword or slug that already exists; pick a new long-tail keyword Indonesian traders search for (forex, emas/XAUUSD, manajemen risiko, analisa teknikal, psikologi trading, istilah trading, MT4/MT5, kalender ekonomi, pemula).
