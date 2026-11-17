@@ -1,6 +1,6 @@
 # Artikel SEO harian — eraintegrityindonesia.com
 
-Folder ini milik website agen properti Era Integrity Indonesia (WordPress di platform BuatWebProperty), bukan aplikasi Doktor Trader. Plugin WordPress `ERA Auto Articles` (lihat `wp-plugin/`) membaca `index.json` dari GitHub setiap jam, mengimpor artikel baru, dan menjadwalkannya tayang.
+Folder ini milik website agen properti Era Integrity Indonesia (WordPress 4.7 di platform BuatWebProperty), bukan aplikasi Doktor Trader. Admin website tidak punya akses plugin, jadi `wp-plugin/` TIDAK dipakai. Artikel diposting oleh scheduled task kedua (±05.13 WIB) yang berjalan di komputer pemilik: browser bawaan Claude desktop app membuka `/kelolah/post-new.php` dan menjalankan `post-classic.js`, yang mengambil data dari `index.json` dan menjadwalkan tayangnya.
 
 ## Tugas harian (scheduled task, sekali sehari sekitar 04.47 WIB)
 
