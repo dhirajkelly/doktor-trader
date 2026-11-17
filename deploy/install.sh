@@ -25,7 +25,7 @@ if [ ! -d /opt/doktor-trader/.git ]; then
   mkdir -p /opt/doktor-trader && chown doktor:doktor /opt/doktor-trader
   sudo -u doktor -E git clone -q $REPO /opt/doktor-trader
 fi
-git config --global --add safe.directory /opt/doktor-trader
+git config --system --add safe.directory /opt/doktor-trader
 cd /opt/doktor-trader
 sudo -u doktor npm ci --omit=dev --no-audit --no-fund
 [ -f /etc/doktor-trader.env ] || cat > /etc/doktor-trader.env <<ENV
