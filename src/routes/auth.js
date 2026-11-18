@@ -23,7 +23,7 @@ ${flash(error, 'bad')}
 <label for="vantage_account">Nomor akun ${SITE.brokerName} <span class="dim">(opsional, mempercepat verifikasi)</span></label><input id="vantage_account" name="vantage_account" maxlength="40" value="${v('vantage_account')}">
 <label for="experience">Pengalaman trading</label><select id="experience" name="experience">${levels.map((l) => `<option${values.experience === l ? ' selected' : ''}>${l}</option>`).join('')}</select>
 <label for="password">Password <span class="dim">(min. 8 karakter)</span></label><input id="password" name="password" type="password" required minlength="8" autocomplete="new-password">
-<label class="row" style="font-weight:500"><input type="checkbox" name="agree" value="1" required style="width:auto;min-height:auto"> Saya memahami trading berisiko tinggi dan konten Doktor Trader bersifat edukasi.</label>
+<label class="row" style="font-weight:500"><input type="checkbox" name="agree" value="1" required style="width:auto;min-height:auto"> Saya memahami trading berisiko tinggi, konten Doktor Trader bersifat edukasi, dan saya menyetujui <a href="/syarat-ketentuan" target="_blank">Syarat &amp; Ketentuan</a> serta <a href="/kebijakan-privasi" target="_blank">Kebijakan Privasi</a>.</label>
 <button class="btn" type="submit">Daftar &amp; minta verifikasi</button>
 <span class="dim">Sudah punya akun? <a href="/masuk">Masuk</a></span>
 </form></section>`,

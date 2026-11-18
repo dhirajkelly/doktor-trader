@@ -7,7 +7,28 @@ const SITE = {
   brokerName: 'Dupoin',
   brokerUrl: process.env.BROKER_URL || 'https://i.dupoin.vip/gSgaysBeR',
   whatsapp: process.env.WHATSAPP || '628111282991',
+  // Partner broker's legal entity (verified on dupoin.co.id/about-us/licenses, Nov 2026)
+  brokerEntity: 'PT Dupoin Futures Indonesia',
+  brokerLicense: 'Izin Bappebti No. 423/BAPPEBTI/SI/VII/2004 · Anggota JFX No. SPAB-064/BBJ/04/04',
+  // Author's competency certificate (BNSP). This is a competency certificate, not a Bappebti business licence.
+  cert: {
+    title: 'Sertifikat Kompetensi BNSP: Wakil Penasihat Berjangka',
+    field: 'Perdagangan Berjangka Komoditi',
+    number: '66173 1120 6 0001519 2025',
+    reg: 'WPA.002.00073 2025',
+    issuer: 'LSP Perdagangan Berjangka Komoditi (LSP PBK)',
+    issued: '30 September 2025',
+    validUntil: 'September 2028',
+  },
+  // Other credentials shown on the landing page (Tentang Doktor).
+  credentials: [
+    'Izin Wakil Manajer Investasi (WMI) OJK No. KEP-570/PM.112/WMI/TTE/2026, berlaku s.d. 31 Mei 2029',
+    'Sertifikat Kompetensi BNSP Certified Technical Analyst (CTA), LSP Pasar Modal, No. 66123 2413 0027687 2026',
+    'Sertifikat Kompetensi BNSP Jenjang 5 Pasar Modal, Pengelolaan Investasi, No. 66301 2412 5 0028048 2026',
+  ],
 };
+
+const DISCLOSURE = `Pengungkapan: Doktor Trader adalah mitra referral ${SITE.brokerName} (${SITE.brokerEntity}). Jika Anda membuka akun lewat link kami, kami dapat menerima komisi dari ${SITE.brokerName} tanpa biaya tambahan untuk Anda.`;
 
 function esc(s) {
   return String(s == null ? '' : s)
@@ -59,7 +80,7 @@ header.top nav{display:flex;align-items:center;justify-content:space-between;gap
 .brand b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--gold);color:#0B1630;font-size:14px}
 .navl{display:flex;gap:18px;align-items:center;font-size:14px;flex-wrap:wrap}
 .navl a{color:var(--muted);text-decoration:none}.navl a:hover,.navl a.on{color:var(--text)}
-.navl a.btn{color:#0B1630}.navl a.btn:hover{color:#0B1630;filter:brightness(1.05)}
+.navl a.btn{color:#0B1630}@media(max-width:520px){.navl a.hs{display:none}}.navl a.btn:hover{color:#0B1630;filter:brightness(1.05)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:12px;border:0;background:var(--gold);color:#0B1630;font-weight:800;font-size:15px;font-family:inherit;text-decoration:none;cursor:pointer}
 .btn.ghost{background:transparent;border:1px solid rgba(233,196,106,.5);color:var(--gold)}
 .btn.sm{min-height:34px;padding:0 12px;font-size:13px;border-radius:9px}
@@ -98,8 +119,25 @@ footer.bot{border-top:1px solid var(--line);margin-top:60px;padding:30px 0;color
 
 const RISK = 'Peringatan risiko: Trading forex, emas, dan instrumen berjangka memiliki risiko tinggi dan dapat mengakibatkan kehilangan sebagian atau seluruh modal. Seluruh konten Doktor Trader bersifat edukasi, bukan ajakan atau rekomendasi transaksi. Kinerja masa lalu tidak menjamin hasil di masa depan.';
 
+// First-party click tracking: broker links, WhatsApp links and anything with data-track.
+// Sends only the event name and page path; no personal data, no cookies beyond the existing session.
+const TRACK_JS = `(function(){function ev(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'',t=a.getAttribute('data-track');
+if(!t){if(/dupoin\\./i.test(h))t='broker_click';else if(/wa\\.me\\//i.test(h))t='wa_click';else if(/^\\/daftar/.test(h))t='daftar_click';}
+if(!t)return;try{navigator.sendBeacon('/t',new Blob([JSON.stringify({e:t,p:location.pathname})],{type:'application/json'}))}catch(_){}}
+document.addEventListener('click',ev,true);})();`;
+
+function authorBox() {
+  const c = SITE.cert;
+  return `<aside class="card" style="margin:32px 0;display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap">
+<img src="/doktor-portrait.webp" alt="${SITE.author}" width="72" height="72" loading="lazy" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;background:var(--bg2)">
+<div style="flex:1;min-width:220px"><div class="dim">Ditulis oleh</div><strong>${SITE.author} (Dhiraj Kelly Sawlani)</strong>
+<p class="muted" style="margin:6px 0;font-size:15px">Margin call survivor yang kini fokus mengajar manajemen risiko. Trader XAUUSD, pebisnis, dan akademisi (DRM BINUS, LL.M. IBLAM, kandidat doktor Unhan RI).</p>
+<ul class="dim" style="margin:0;padding-left:18px">${SITE.credentials.map((x) => `<li>${x}</li>`).join('')}<li>${c.title} (${c.field}), No. ${c.number}, No. Reg. ${c.reg}, ${c.issuer}, ${c.issued}, berlaku hingga ${c.validUntil}</li></ul>
+<p class="dim" style="margin:6px 0 0"><a href="/#tentang">Lihat dokumen sertifikat dan izin</a></p></div></aside>`;
+}
+
 function layout({ title, description = '', body, user = null, canonical = '', head = '', noindex = false, active = '' }) {
-  const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} — Belajar Trading Gratis bersama ${SITE.author}`;
+  const fullTitle = title ? (title.includes(SITE.name) ? title : `${title} | ${SITE.name}`) : `${SITE.name} — Belajar Trading Gratis bersama ${SITE.author}`;
   const link = (href, label, key) => `<a href="${href}"${active === key ? ' class="on"' : ''}>${label}</a>`;
   return `<!DOCTYPE html><html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -108,6 +146,8 @@ ${description ? `<meta name="description" content="${esc(description)}">` : ''}
 ${canonical ? `<link rel="canonical" href="${esc(canonical)}">` : ''}
 ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ''}
 <meta name="theme-color" content="#070F1E">
+<meta property="og:site_name" content="${SITE.name}"><meta property="og:locale" content="id_ID">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Artikel ${SITE.name}" href="/artikel/rss.xml">
@@ -116,12 +156,15 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ''}
 <a class="brand" href="/"><b>DT</b>DOKTOR TRADER</a>
 <div class="navl">
 ${link('/artikel', 'Artikel', 'artikel')}
+${link('/alat/kalkulator-lot', 'Kalkulator Lot', 'alat').replace('<a ', '<a class="hs" ').replace('class="hs" href="/alat/kalkulator-lot" class="on"', 'class="hs on" href="/alat/kalkulator-lot"')}
 ${user ? (user.role === 'admin' ? link('/admin', 'Admin', 'admin') : '') + link('/member', 'Member', 'member') : link('/masuk', 'Masuk', 'masuk')}
 ${user ? `<form method="post" action="/keluar" style="display:inline"><input type="hidden" name="_csrf" value="${esc(user._csrf || '')}"><button class="btn sm ghost" type="submit">Keluar</button></form>` : '<a class="btn sm" href="/daftar">Daftar Gratis</a>'}
 </div></nav></header>
 <main>${body}</main>
-<footer class="bot"><div class="wrap"><p>${RISK} Doktor Trader bekerja sama dengan ${SITE.brokerName}; pembukaan akun dan transaksi tunduk pada syarat dan ketentuan ${SITE.brokerName} serta regulasi yang berlaku.</p>
-<p>© ${new Date().getFullYear()} ${SITE.author} · <a href="/">dhirajkelly.id</a> · <a href="/artikel">Artikel</a> · <a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener">WhatsApp</a></p></div></footer>
+<footer class="bot"><div class="wrap"><p>${RISK} ${DISCLOSURE} Pembukaan akun dan transaksi tunduk pada syarat dan ketentuan ${SITE.brokerName} serta regulasi yang berlaku. ${SITE.brokerEntity}: ${SITE.brokerLicense}.</p>
+<p>Penulis: ${SITE.author}, pemegang izin Wakil Manajer Investasi (WMI) OJK, sertifikat kompetensi BNSP CTA, dan ${SITE.cert.title} (No. Reg. ${SITE.cert.reg}). Doktor Trader adalah layanan edukasi; konten di situs ini bukan nasihat investasi pribadi atau jasa pengelolaan dana.</p>
+<p>© ${new Date().getFullYear()} ${SITE.author} · <a href="/">dhirajkelly.id</a> · <a href="/artikel">Artikel</a> · <a href="/alat/kalkulator-lot">Kalkulator Lot</a> · <a href="/syarat-ketentuan">Syarat &amp; Ketentuan</a> · <a href="/kebijakan-privasi">Kebijakan Privasi</a> · <a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener" data-track="wa_click">WhatsApp</a></p></div></footer>
+<script>${TRACK_JS}</script>
 </body></html>`;
 }
 
@@ -137,4 +180,4 @@ function csrfField(csrf) {
   return `<input type="hidden" name="_csrf" value="${esc(csrf)}">`;
 }
 
-module.exports = { SITE, esc, md, plain, slugify, fmtDate, layout, sideNav, flash, csrfField, RISK };
+module.exports = { SITE, DISCLOSURE, authorBox, esc, md, plain, slugify, fmtDate, layout, sideNav, flash, csrfField, RISK };

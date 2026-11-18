@@ -107,6 +107,12 @@ CREATE TABLE IF NOT EXISTS activity (
   detail TEXT,
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+CREATE TABLE IF NOT EXISTS events (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,            -- broker_click | wa_click | daftar_click
+  path TEXT,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
 CREATE TABLE IF NOT EXISTS settings (
   key TEXT PRIMARY KEY,
   value TEXT
@@ -123,8 +129,23 @@ async function init() {
   }
   db.exec('PRAGMA foreign_keys = ON;');
   db.exec(SCHEMA);
+  migrate();
   saveNow();
   return db;
+}
+
+// Additive column migrations for databases created before a column existed.
+function migrate() {
+  const cols = (t) => { const r = db.exec(`PRAGMA table_info(${t})`); return r.length ? r[0].values.map((v) => v[1]) : []; };
+  const add = (t, c, def) => { if (!cols(t).includes(c)) db.exec(`ALTER TABLE ${t} ADD COLUMN ${c} ${def}`); };
+  add('articles', 'src_rev', 'INTEGER DEFAULT 1');          // revision of the markdown file last imported
+  if (!cols('articles').includes('edited_in_cms')) {
+    add('articles', 'edited_in_cms', 'INTEGER DEFAULT 0');  // 1 = changed in admin, never overwritten by file updates
+    // Articles whose updated_at moved after import were edited in the admin before this column existed.
+    db.exec("UPDATE articles SET edited_in_cms = 1 WHERE updated_at > datetime(created_at, '+2 minutes')");
+  }
+  add('articles', 'review_notes', "TEXT DEFAULT ''");        // why the compliance gate held it as draft
+  db.exec('CREATE INDEX IF NOT EXISTS idx_events_created ON events(created_at)');
 }
 
 function saveNow() {

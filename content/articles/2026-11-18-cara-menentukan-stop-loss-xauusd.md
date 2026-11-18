@@ -7,6 +7,7 @@ focus_keyword: cara menentukan stop loss xauusd
 category: Strategi Emas
 tags: [stop loss, xauusd, atr, analisa teknikal]
 excerpt: Stop loss emas yang terlalu sempit sering tersentuh noise. Pelajari cara memakai struktur harga dan ATR, lalu sesuaikan lot dengan jarak SL.
+revision: 2
 ---
 
 Banyak trader emas mengeluh hal yang sama: "Stop loss saya kena, lalu harga langsung berbalik ke arah analisa saya." Sering kali masalahnya bukan arah analisa, melainkan **cara menentukan stop loss XAUUSD** yang asal pasang, misalnya selalu $3 atau selalu 30 pip, tanpa melihat seberapa lebar harga emas sedang bergerak. Emas adalah instrumen yang "bernapas" lebar. Stop loss yang tidak memberi ruang napas akan tersentuh oleh pergerakan biasa, bukan oleh pembatalan setup.
@@ -47,7 +48,7 @@ Angka kedua dan ketiga menangkap *gap*, yaitu ketika harga membuka jauh dari pen
 | 4 | 2.650,6 | 2.646,2 | 2.649,4 | 4,4 | 7,5 | 3,1 | **7,5** |
 | 5 | 2.652,8 | 2.645,0 | 2.651,2 | 7,8 | 3,4 | 4,4 | **7,8** |
 
-Perhatikan candle 4. Badannya hanya $4,4, tetapi karena harga melompat dari penutupan $2.643,1 ke high $2.650,6, True Range-nya $7,5. Inilah kenapa ATR lebih jujur daripada sekadar mengukur panjang candle.
+Perhatikan candle 4. Rentang high–low-nya hanya $4,4, tetapi karena harga melompat dari penutupan $2.643,1 ke high $2.650,6, True Range-nya $7,5. Inilah kenapa ATR lebih jujur daripada sekadar mengukur panjang candle.
 
 Rata-rata sederhana lima TR di atas adalah **$8,58**. Indikator ATR di platform memakai 14 candle dan metode penghalusan Wilder, jadi angkanya akan sedikit berbeda, tetapi logikanya sama.
 
@@ -101,11 +102,11 @@ Pola di tabel ini penting: **saat ATR membesar, lot harus mengecil.** Jarak SL m
 
 ## Kesalahan yang sering terjadi
 
-Dari pertanyaan member yang masuk, kesalahan berikut paling sering muncul:
+Berikut kesalahan yang sering terjadi saat memasang stop loss:
 
 - **SL tetap dalam dolar untuk semua kondisi.** SL $5 mungkin wajar di sesi Asia yang sepi, tetapi terlalu sempit menjelang rilis data penting.
 - **Memakai ATR dari timeframe yang salah.** Entry di M15 dengan ATR D1 akan menghasilkan SL yang sangat lebar dan lot yang tidak masuk akal.
-- **Menggeser SL menjauh saat posisi merugi.** Ini mengubah risiko 1% menjadi tak terbatas. Banyak kasus margin call dimulai dari sini, seperti saya ceritakan di artikel [margin call: penyebab dan cara menghindarinya](/artikel/margin-call-penyebab-dan-cara-menghindari).
+- **Menggeser SL menjauh saat posisi merugi.** Ini mengubah risiko 1% menjadi tak terbatas. Kebiasaan ini sering menjadi awal margin call, seperti saya ceritakan di artikel [margin call: penyebab dan cara menghindarinya](/artikel/margin-call-penyebab-dan-cara-menghindari).
 - **Lupa spread.** Untuk posisi sell, SL tersentuh oleh harga ask. Penyangga ATR membantu, tetapi spread yang melebar saat berita tetap perlu diperhitungkan.
 - **Tidak mencatat.** Tanpa jurnal, Anda tidak tahu apakah pengali 0,5× atau 1× ATR yang lebih cocok dengan gaya trading Anda.
 

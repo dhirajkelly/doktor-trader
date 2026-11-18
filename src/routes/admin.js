@@ -37,6 +37,9 @@ router.get('/admin', (req, res) => {
   const c = (sql, p = []) => db.get(sql, p).n;
   const pending = db.all("SELECT * FROM users WHERE role = 'member' AND status = 'pending' ORDER BY id DESC LIMIT 8");
   const openQ = c('SELECT COUNT(*) n FROM questions WHERE answer IS NULL');
+  const ev = (name, days = 30) => c(`SELECT COUNT(*) n FROM events WHERE name = ? AND created_at >= datetime('now', ?)`, [name, `-${days} days`]);
+  const topPages = db.all("SELECT path, COUNT(*) n FROM events WHERE name='broker_click' AND created_at >= datetime('now','-30 days') GROUP BY path ORDER BY n DESC LIMIT 8");
+  const held = db.all("SELECT id, title, review_notes FROM articles WHERE status='draft' AND COALESCE(review_notes,'') != '' ORDER BY id DESC LIMIT 20");
   page(req, res, {
     title: 'Ringkasan', active: 'home',
     body: `<h1>Ringkasan</h1>
@@ -47,7 +50,16 @@ router.get('/admin', (req, res) => {
 <div class="card"><div class="dim">Artikel tayang</div><div class="stat">${c("SELECT COUNT(*) n FROM articles WHERE status='published'")}</div><span class="dim">${c("SELECT COUNT(*) n FROM articles WHERE source='auto'")} dari otomatis harian</span></div>
 <div class="card"><div class="dim">Materi Academy</div><div class="stat">${c('SELECT COUNT(*) n FROM lessons')}</div><span class="dim">${c('SELECT COUNT(*) n FROM courses')} kelas</span></div>
 <div class="card"><div class="dim">Materi diselesaikan member</div><div class="stat">${c('SELECT COUNT(*) n FROM progress')}</div></div>
+<div class="card"><div class="dim">Artikel ditahan (cek kepatuhan)</div><div class="stat">${held.length}</div><a href="/admin/artikel">Tinjau →</a></div>
 </div>
+<h2>Konversi 30 hari terakhir</h2>
+<div class="grid g3" style="margin:12px 0 18px">
+<div class="card"><div class="dim">Klik buka akun ${SITE.brokerName}</div><div class="stat">${ev('broker_click')}</div><span class="dim">${ev('broker_click', 7)} dalam 7 hari</span></div>
+<div class="card"><div class="dim">Klik WhatsApp</div><div class="stat">${ev('wa_click')}</div><span class="dim">${ev('wa_click', 7)} dalam 7 hari</span></div>
+<div class="card"><div class="dim">Klik daftar → member baru</div><div class="stat">${ev('daftar_click')} → ${c("SELECT COUNT(*) n FROM users WHERE role='member' AND created_at >= datetime('now','-30 days')")}</div><span class="dim">klik tombol daftar → akun terdaftar</span></div>
+</div>
+${topPages.length ? `<div class="tablewrap card" style="padding:6px 14px;margin-bottom:24px"><table><thead><tr><th>Halaman asal klik ${SITE.brokerName}</th><th>Klik (30 hari)</th></tr></thead><tbody>${topPages.map((r) => `<tr><td>${esc(r.path)}</td><td>${r.n}</td></tr>`).join('')}</tbody></table></div>` : ''}
+${held.length ? `<h2>Artikel ditahan gerbang kepatuhan</h2><div class="tablewrap card" style="padding:6px 14px;margin-bottom:24px"><table><thead><tr><th>Judul</th><th>Alasan</th></tr></thead><tbody>${held.map((a) => `<tr><td><a href="/admin/artikel/${a.id}">${esc(a.title)}</a></td><td class="dim">${esc(a.review_notes)}</td></tr>`).join('')}</tbody></table></div>` : ''}
 <h2>Menunggu verifikasi</h2>${pending.length ? memberTable(req, pending) : '<p class="muted">Tidak ada antrean.</p>'}`,
   });
 });
@@ -217,7 +229,7 @@ function saveArticle(req, id) {
     String(b.excerpt || '').slice(0, 400) || plain(body, 200), body, String(b.category || 'Edukasi').slice(0, 40), String(b.tags || '').slice(0, 200), status];
   if (id) {
     db.run(`UPDATE articles SET title=?, slug=?, meta_title=?, meta_description=?, focus_keyword=?, excerpt=?, body_md=?, category=?, tags=?, status=?,
-      published_at = CASE WHEN ? = 'published' THEN COALESCE(published_at, datetime('now')) ELSE published_at END, updated_at = datetime('now') WHERE id = ?`, [...fields, status, id]);
+      published_at = CASE WHEN ? = 'published' THEN COALESCE(published_at, datetime('now')) ELSE published_at END, updated_at = datetime('now'), edited_in_cms = 1, review_notes = '' WHERE id = ?`, [...fields, status, id]);
     return { id };
   }
   const r = db.run(`INSERT INTO articles(title, slug, meta_title, meta_description, focus_keyword, excerpt, body_md, category, tags, status, published_at, source)
