@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-17T18:10:34Z",
+ "generated": "2026-11-18T21:20:44Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -133,6 +133,92 @@
     {
      "q": "Apakah kos dekat kawasan industri pasti selalu penuh?",
      "a": "Tidak pasti. Permintaan memang cenderung tinggi, tetapi persaingan antar-kos juga ketat. Tingkat hunian sangat dipengaruhi harga, fasilitas, kebersihan, keamanan, dan cara pengelolaan."
+    }
+   ]
+  },
+  {
+   "id": "sewa-ruko-di-karawang",
+   "slug": "sewa-ruko-di-karawang",
+   "title": "Sewa Ruko di Karawang: Cara Memilih Lokasi, Biaya, dan Isi Kontrak",
+   "publish_at_wib": "2026-11-19 07:00",
+   "publish_at_utc": "2026-11-19T00:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/19/sewa-ruko-di-karawang/",
+   "html": "html/sewa-ruko-di-karawang.html",
+   "image": "img/sewa-ruko-di-karawang.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang sewa ruko di Karawang untuk usaha",
+   "excerpt": "Panduan praktis sewa ruko di Karawang: membaca lokasi, menghitung total biaya, memahami pajak sewa, dan memeriksa kontrak sebelum tanda tangan.",
+   "meta_title": "Sewa Ruko di Karawang: Lokasi, Biaya & Kontrak",
+   "meta_description": "Mau sewa ruko di Karawang untuk usaha? Pelajari cara memilih lokasi, komponen biaya di luar harga sewa, PPh final 10%, dan klausul kontrak yang wajib dicek.",
+   "focus_keyword": "sewa ruko di karawang",
+   "categories": [
+    "Jual • Beli • Sewa",
+    "Listing Properti"
+   ],
+   "tags": [
+    "sewa ruko karawang",
+    "ruko untuk usaha",
+    "kontrak sewa ruko",
+    "properti komersial karawang"
+   ],
+   "faq": [
+    {
+     "q": "Berapa lama minimal kontrak sewa ruko di Karawang?",
+     "a": "Tidak ada aturan baku. Di praktik, banyak pemilik ruko meminta kontrak minimal satu tahun dan sebagian meminta dua tahun atau lebih. Durasi ini bisa dinegosiasikan, terutama bila Anda bersedia membayar di muka."
+    },
+    {
+     "q": "Siapa yang menanggung PPh sewa ruko?",
+     "a": "PPh final atas sewa tanah dan/atau bangunan adalah pajak atas penghasilan pemilik, dengan tarif 10% dari nilai bruto sewa. Bila penyewa adalah badan atau pihak yang ditunjuk sebagai pemotong, penyewa memotong dan menyetorkannya; bila tidak, pemilik menyetor sendiri. Sepakati di kontrak apakah harga sewa sudah termasuk atau belum termasuk pajak."
+    },
+    {
+     "q": "Apakah boleh merenovasi ruko sewaan?",
+     "a": "Boleh bila diizinkan pemilik secara tertulis. Tuliskan jenis renovasi yang diizinkan, siapa yang menanggung biayanya, dan apakah kondisi ruko harus dikembalikan seperti semula saat kontrak berakhir."
+    },
+    {
+     "q": "Ruko di pinggir jalan raya selalu lebih baik?",
+     "a": "Tidak selalu. Jalan raya yang ramai belum tentu mudah disinggahi, misalnya bila ada median jalan, tidak ada tempat parkir, atau kendaraan melaju cepat. Cocokkan lokasi dengan pola kunjungan pelanggan usaha Anda."
+    }
+   ]
+  },
+  {
+   "id": "checklist-serah-terima-rumah-sewa",
+   "slug": "checklist-serah-terima-rumah-sewa",
+   "title": "Checklist Serah Terima Rumah Sewa: Saat Masuk dan Saat Keluar",
+   "publish_at_wib": "2026-11-19 10:00",
+   "publish_at_utc": "2026-11-19T03:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/19/checklist-serah-terima-rumah-sewa/",
+   "html": "html/checklist-serah-terima-rumah-sewa.html",
+   "image": "img/checklist-serah-terima-rumah-sewa.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang checklist serah terima rumah sewa",
+   "excerpt": "Checklist lengkap serah terima rumah sewa saat masuk dan keluar, supaya kondisi rumah, tagihan, dan deposit tidak jadi sumber perselisihan.",
+   "meta_title": "Checklist Serah Terima Rumah Sewa: Masuk & Keluar",
+   "meta_description": "Checklist serah terima rumah sewa untuk penyewa dan pemilik: cek kondisi per ruangan, meteran, kunci, foto bukti, berita acara, dan pengembalian deposit.",
+   "focus_keyword": "checklist serah terima rumah sewa",
+   "categories": [
+    "Panduan & Edukasi Agen",
+    "Jual • Beli • Sewa"
+   ],
+   "tags": [
+    "serah terima rumah sewa",
+    "berita acara sewa",
+    "deposit sewa rumah",
+    "tips penyewa"
+   ],
+   "faq": [
+    {
+     "q": "Apakah berita acara serah terima rumah sewa wajib dibuat?",
+     "a": "Tidak ada kewajiban format tertentu, tetapi sangat dianjurkan. Berita acara yang ditandatangani kedua pihak, dilengkapi foto, menjadi bukti kondisi rumah dan sangat membantu saat menghitung pengembalian deposit."
+    },
+    {
+     "q": "Kerusakan apa yang wajar tidak dipotong dari deposit?",
+     "a": "Keausan wajar karena pemakaian normal, seperti cat yang sedikit kusam atau engsel yang melemah karena usia, umumnya tidak dibebankan ke penyewa. Kerusakan karena kelalaian, misalnya kaca pecah atau dinding berlubang, biasanya ditanggung penyewa. Sebaiknya kriterianya ditulis di kontrak."
+    },
+    {
+     "q": "Kapan deposit sewa rumah dikembalikan?",
+     "a": "Tergantung kesepakatan di kontrak. Banyak pemilik mengembalikan deposit setelah pemeriksaan akhir dan setelah tagihan terakhir dipastikan lunas. Tuliskan batas waktunya agar sama-sama jelas."
+    },
+    {
+     "q": "Perlukah memfoto meteran listrik dan air?",
+     "a": "Perlu. Foto angka meteran air dan sisa token atau angka meteran listrik pada hari serah terima memisahkan pemakaian penyewa lama dan penyewa baru secara jelas."
     }
    ]
   }
