@@ -162,7 +162,7 @@ router.post('/member/tanya', (req, res) => {
 
 
 const DOWNLOADS = path.join(__dirname, '..', '..', 'downloads');
-const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4'];
+const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4', 'PIPTRACKER_GoMart_V1R_SAFE_10k_XAUUSD.set'];
 router.get('/member/unduh/:file', (req, res, next) => {
   const f = req.params.file;
   if (!FILES.includes(f)) return next();

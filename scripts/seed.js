@@ -365,6 +365,23 @@ function seed() {
     db.setSetting('tools_v2', '1');
     console.log('[seed] tools v2');
   }
+  // Set file aman (cut loss aktif) untuk EA PIPTRACKER PRO GO-MART V1R
+  if (db.setting('tool_piptracker_safe') !== '1') {
+    const desc = [
+      'File setting (.set) versi risiko lebih terkendali untuk EA **PIPTRACKER PRO GO-MART CUSTOM V1R** di XAUUSD, modal acuan $10.000, lot awal 0,02.',
+      '',
+      'Perubahan dari set bawaan "medium risk":',
+      '- Cut loss aktif: equity stop 25% (`UseCutLoss=true`, `CutLossMode=1`, `CutLossPercent=25`)',
+      '- Maksimal 12 layer per sisi (sebelumnya 999)',
+      '- Lot per layer maksimal 1,0 (sebelumnya 100)',
+      '',
+      'File ini hanya setting. EA dan lisensinya tidak disertakan. Cek dulu apakah harga emas di broker Anda 2 atau 3 digit: step 277 point dirancang untuk 2 digit, jadi untuk 3 digit naikkan step sekitar 10 kali.',
+    ].join('\n');
+    const pos = (db.get("SELECT MAX(position) AS m FROM tools WHERE kind = 'ea'") || {}).m || 0;
+    db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', ['ea', 'Set PIPTRACKER GO-MART V1R: versi cut loss 25%', desc, 'Tinggi. Grid martingale dua arah; cut loss 25% artinya satu kejadian bisa memotong seperempat modal. Bukan jaminan profit. Uji di akun demo/cent dulu.', '/member/unduh/PIPTRACKER_GoMart_V1R_SAFE_10k_XAUUSD.set', 'Unduh set (.set)', pos + 1]);
+    db.setSetting('tool_piptracker_safe', '1');
+    console.log('[seed] tool piptracker safe set');
+  }
   // Broker switch Vantage -> Dupoin (one-time rename in existing academy/tool texts)
   if (db.setting('broker_dupoin') !== '1') {
     db.run("UPDATE lessons SET title = REPLACE(title, 'Vantage', 'Dupoin'), body_md = REPLACE(body_md, 'Vantage', 'Dupoin') WHERE title LIKE '%Vantage%' OR body_md LIKE '%Vantage%'");
