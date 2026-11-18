@@ -41,7 +41,7 @@ router.get('/member/menunggu', auth.requireLogin, (req, res) => {
   const msg = u.status === 'rejected'
     ? `Maaf, akun ${SITE.brokerName}-mu belum bisa kami verifikasi. Pastikan akun dibuka lewat link resmi Doktor Trader, lalu hubungi tim kami.`
     : u.status === 'suspended' ? 'Akses akunmu sedang dinonaktifkan. Hubungi tim kami untuk info lebih lanjut.'
-      : `Pendaftaran diterima. Tim kami sedang mengecek akun ${SITE.brokerName}-mu (${esc(u.vantage_email || u.email)}). Biasanya selesai dalam 1×24 jam kerja. Halaman member terbuka otomatis setelah disetujui.`;
+      : `Pendaftaran diterima. Tim kami sedang mengecek akun ${SITE.brokerName}-mu (${esc(u.vantage_email || u.email)}). Akun yang sudah terverifikasi di ${SITE.brokerName} biasanya disetujui otomatis dalam ±1 jam. Kalau akun ${SITE.brokerName}-mu belum selesai verifikasi (KYC), selesaikan dulu di aplikasi ${SITE.brokerName}. Halaman member terbuka otomatis setelah disetujui.`;
   const wa = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(`Halo Tim Doktor Trader, saya sudah daftar member.\n\nNama: ${u.name}\nEmail: ${u.email}\nEmail ${SITE.brokerName}: ${u.vantage_email || u.email}\nNo. akun: ${u.vantage_account || '-'}`)}`;
   res.send(layout({
     title: 'Menunggu verifikasi', noindex: true, user: u,

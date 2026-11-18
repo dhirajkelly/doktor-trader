@@ -37,3 +37,7 @@ Rules:
 ## Correcting a published article
 
 Edit its markdown file and add or increase `revision: N` in the frontmatter (first file is revision 1). The app re-imports the file when the revision goes up, unless the article was edited in the admin (the admin copy wins). Commit with message `artikel(revisi): <title>`.
+
+## Dupoin auto-approval (scheduled task)
+
+Pending members are approved automatically by an hourly scheduled task that runs in the admin's built-in browser (logged in to both dhirajkelly.id admin and portal.dupoin.co.id): GET `/admin/api/dupoin/pending` → run `scripts/dupoin-portal-check.js` in the portal tab → POST the result to `/admin/api/dupoin/results` with header `x-csrf-token`. The server approves only a single match that is KYC-verified and has ≥1 trading account, and never reuses a Dupoin UID already tied to another approved member. Everything else stays pending with a note in admin.

@@ -146,6 +146,9 @@ function migrate() {
   }
   add('articles', 'review_notes', "TEXT DEFAULT ''");        // why the compliance gate held it as draft
   db.exec('CREATE INDEX IF NOT EXISTS idx_events_created ON events(created_at)');
+  add('users', 'dupoin_uid', 'INTEGER');                   // UID in the Dupoin partner portal, once matched
+  add('users', 'dupoin_check', "TEXT DEFAULT ''");         // last result of the referral check, shown in admin
+  add('users', 'dupoin_checked_at', 'TEXT');
 }
 
 function saveNow() {

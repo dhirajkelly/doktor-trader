@@ -50,6 +50,7 @@ router.get('/admin', (req, res) => {
 <div class="card"><div class="dim">Artikel tayang</div><div class="stat">${c("SELECT COUNT(*) n FROM articles WHERE status='published'")}</div><span class="dim">${c("SELECT COUNT(*) n FROM articles WHERE source='auto'")} dari otomatis harian</span></div>
 <div class="card"><div class="dim">Materi Academy</div><div class="stat">${c('SELECT COUNT(*) n FROM lessons')}</div><span class="dim">${c('SELECT COUNT(*) n FROM courses')} kelas</span></div>
 <div class="card"><div class="dim">Materi diselesaikan member</div><div class="stat">${c('SELECT COUNT(*) n FROM progress')}</div></div>
+<div class="card"><div class="dim">Sinkron referral ${SITE.brokerName}</div><div class="stat" style="font-size:20px">${esc(db.setting('dupoin_last_sync') ? fmtDate(db.setting('dupoin_last_sync')) + ' ' + db.setting('dupoin_last_sync').slice(11, 16) + ' UTC' : 'Belum pernah')}</div><span class="dim">${esc(db.setting('dupoin_last_summary', ''))}</span></div>
 <div class="card"><div class="dim">Artikel ditahan (cek kepatuhan)</div><div class="stat">${held.length}</div><a href="/admin/artikel">Tinjau →</a></div>
 </div>
 <h2>Konversi 30 hari terakhir</h2>
@@ -69,7 +70,7 @@ function memberTable(req, rows) {
 ${rows.map((u) => `<tr><td><a href="/admin/member/${u.id}"><strong>${esc(u.name)}</strong></a><div class="dim">${esc(u.experience || '')}</div></td>
 <td>${esc(u.email)}<div><a href="${waLink(u.whatsapp)}" target="_blank" rel="noopener">${esc(u.whatsapp || '')}</a></div></td>
 <td>${esc(u.vantage_email || '')}<div class="dim">${esc(u.vantage_account || '')}</div></td>
-<td>${statusPill(u.status)}${u.tags ? `<div class="dim">${esc(u.tags)}</div>` : ''}</td><td class="dim">${fmtDate(u.created_at)}</td>
+<td>${statusPill(u.status)}${u.dupoin_check ? `<div class="dim" style="font-size:12px">${esc(u.dupoin_check)}</div>` : ''}${u.tags ? `<div class="dim">${esc(u.tags)}</div>` : ''}</td><td class="dim">${fmtDate(u.created_at)}</td>
 <td>${u.status !== 'approved' ? `<form method="post" action="/admin/member/${u.id}/status">${csrfField(req.csrf)}<input type="hidden" name="status" value="approved"><button class="btn sm green">Approve</button></form>` : ''}</td></tr>`).join('')}
 </tbody></table></div>`;
 }
@@ -122,6 +123,7 @@ ${temp ? `<div class="alert ok">Password sementara: <strong>${esc(temp)}</strong
 <tr><th>WhatsApp</th><td><a href="${waLink(u.whatsapp)}" target="_blank" rel="noopener">${esc(u.whatsapp)}</a></td></tr>
 <tr><th>Email ${SITE.brokerName}</th><td>${esc(u.vantage_email)}</td></tr>
 <tr><th>No. akun ${SITE.brokerName}</th><td>${esc(u.vantage_account || '-')}</td></tr>
+<tr><th>Cek referral ${SITE.brokerName}</th><td>${esc(u.dupoin_check || 'Belum dicek')}${u.dupoin_uid ? ` · UID ${u.dupoin_uid}` : ''}${u.dupoin_checked_at ? `<div class="dim">${fmtDate(u.dupoin_checked_at)}</div>` : ''}</td></tr>
 <tr><th>Pengalaman</th><td>${esc(u.experience || '-')}</td></tr>
 <tr><th>Sumber</th><td>${esc(u.source || '-')}</td></tr>
 <tr><th>Daftar</th><td>${fmtDate(u.created_at)}</td></tr>
@@ -147,6 +149,50 @@ router.post('/admin/member/:id/status', (req, res) => {
   db.run(`UPDATE users SET status = ?${s === 'approved' ? ", approved_at = COALESCE(approved_at, datetime('now'))" : ''} WHERE id = ? AND role = 'member'`, [s, req.params.id]);
   db.log(Number(req.params.id), 'status:' + s, 'oleh ' + req.user.email);
   res.redirect(req.get('referer') && req.get('referer').includes('/admin') ? req.get('referer') : '/admin/member/' + req.params.id);
+});
+
+// ---------- Dupoin referral auto-approval ----------
+// The Dupoin partner portal has no API key; it is checked from the admin's logged-in browser by a scheduled task:
+// 1) GET pending list here, 2) search each member in the portal (email / account), 3) POST the matches back here.
+router.get('/admin/api/dupoin/pending', (req, res) => {
+  const members = db.all("SELECT id, name, email, vantage_email, vantage_account, created_at FROM users WHERE role='member' AND status='pending' ORDER BY id");
+  res.set('Cache-Control', 'no-store').json({ csrf: req.csrf, members });
+});
+
+router.post('/admin/api/dupoin/results', express.json({ limit: '200kb' }), (req, res) => {
+  const results = Array.isArray(req.body && req.body.results) ? req.body.results.slice(0, 500) : [];
+  let approved = 0, waiting = 0, notFound = 0, ambiguous = 0;
+  const out = [];
+  for (const r of results) {
+    const u = db.get("SELECT id, name, status FROM users WHERE id = ? AND role='member'", [Number(r.id)]);
+    if (!u || u.status !== 'pending') continue;
+    const seen = new Map();
+    for (const m of Array.isArray(r.matches) ? r.matches : []) if (Number(m.uid)) seen.set(Number(m.uid), m);
+    const matches = [...seen.values()];
+    let check, uid = null, approve = false;
+    if (!matches.length) { check = 'Tidak ditemukan di referral Dupoin'; notFound++; }
+    else if (matches.length > 1) { check = `Ditemukan ${matches.length} akun referral, cek manual`; ambiguous++; }
+    else {
+      const m = matches[0]; uid = Number(m.uid);
+      const claimed = db.get("SELECT id FROM users WHERE dupoin_uid = ? AND id != ? AND status = 'approved'", [uid, u.id]);
+      if (claimed) { check = `UID ${uid} sudah dipakai member #${claimed.id}, cek manual`; ambiguous++; uid = null; }
+      else if (m.verified && Number(m.accounts) > 0) { check = `Terverifikasi di referral Dupoin (via ${String(m.by || 'pencarian').slice(0, 20)})`; approve = true; }
+      else { check = m.verified ? 'Referral terverifikasi, belum punya akun trading' : 'Terdaftar di referral, belum verifikasi KYC'; waiting++; }
+    }
+    if (approve) {
+      db.run("UPDATE users SET status='approved', approved_at=COALESCE(approved_at, datetime('now')), dupoin_uid=?, dupoin_check=?, dupoin_checked_at=datetime('now') WHERE id=?", [uid, check, u.id]);
+      db.log(u.id, 'status:approved', `otomatis: Dupoin UID ${uid}`);
+      approved++;
+    } else {
+      db.run("UPDATE users SET dupoin_uid=COALESCE(?, dupoin_uid), dupoin_check=?, dupoin_checked_at=datetime('now') WHERE id=?", [uid, check, u.id]);
+    }
+    out.push({ id: u.id, name: u.name, approved: approve, check });
+  }
+  const summary = `${approved} disetujui, ${waiting} menunggu KYC/akun, ${notFound} tidak ditemukan, ${ambiguous} cek manual`;
+  db.setSetting('dupoin_last_sync', new Date().toISOString().replace('T', ' ').slice(0, 19));
+  db.setSetting('dupoin_last_summary', summary);
+  if (results.length) db.log(null, 'dupoin-sync', summary);
+  res.json({ ok: true, summary, results: out });
 });
 
 router.post('/admin/member/:id/catatan', (req, res) => {
