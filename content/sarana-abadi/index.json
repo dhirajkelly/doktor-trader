@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-17T18:05:59Z",
+ "generated": "2026-11-18T21:52:05Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -131,6 +131,138 @@
     {
      "q": "Apa peran kontraktor dalam pengurusan SLF?",
      "a": "Kontraktor menyiapkan bukti bahwa bangunan dibangun sesuai PBG dan standar teknis, antara lain as-built drawing, laporan pelaksanaan, hasil uji material, dan dokumentasi pekerjaan, yang kemudian digunakan dalam pemeriksaan kelaikan fungsi."
+    }
+   ]
+  },
+  {
+   "id": "kontraktor-gudang-bekasi",
+   "slug": "kontraktor-gudang-bekasi",
+   "title": "Kontraktor Gudang Bekasi: Panduan Memilih dari Desain sampai Serah Terima",
+   "publish_at_wib": "2026-11-19 07:00",
+   "publish_at_utc": "2026-11-19T00:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/19/kontraktor-gudang-bekasi/",
+   "html": "html/kontraktor-gudang-bekasi.html",
+   "image": "img/kontraktor-gudang-bekasi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang memilih kontraktor gudang Bekasi: desain, struktur baja, lantai beton, atap, dan serah terima",
+   "excerpt": "Cara memilih kontraktor gudang di Bekasi: data yang perlu disiapkan, lingkup pekerjaan, membandingkan penawaran, dan tahapan proyek sampai BAST.",
+   "meta_title": "Kontraktor Gudang Bekasi: Panduan Memilih yang Tepat",
+   "meta_description": "Mencari kontraktor gudang Bekasi? Pelajari lingkup pekerjaan, data yang perlu disiapkan, cara membandingkan penawaran, dan tahapan proyek hingga serah terima.",
+   "focus_keyword": "kontraktor gudang bekasi",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "kontraktor gudang",
+    "gudang bekasi",
+    "konstruksi gudang",
+    "struktur baja",
+    "BOQ"
+   ],
+   "faq": [
+    {
+     "q": "Data apa yang perlu disiapkan sebelum meminta penawaran kontraktor gudang?",
+     "a": "Minimal luas dan ukuran kavling, rencana fungsi gudang, tinggi bersih yang dibutuhkan, beban lantai (forklift, rak, atau tumpukan barang), jumlah pintu bongkar muat, serta aturan dari pengelola kawasan bila lokasinya di kawasan industri."
+    },
+    {
+     "q": "Kenapa penawaran beberapa kontraktor gudang bisa berbeda jauh?",
+     "a": "Perbedaan biasanya datang dari asumsi lingkup dan spesifikasi: tebal dan mutu lantai beton, profil baja, jenis atap, pekerjaan tanah, drainase, atau MEP yang dimasukkan atau tidak. Samakan dulu lingkup dan spesifikasi agar penawaran bisa dibandingkan secara adil."
+    },
+    {
+     "q": "Apakah gudang di kawasan industri Bekasi perlu persetujuan pengelola kawasan?",
+     "a": "Umumnya ya. Pengelola kawasan industri biasanya memiliki aturan desain, garis sempadan, dan prosedur kerja kontraktor sendiri, di samping perizinan bangunan dari pemerintah daerah. Cek aturan kawasan sejak tahap desain."
+    },
+    {
+     "q": "Berapa lama membangun gudang struktur baja?",
+     "a": "Durasinya sangat bergantung pada luas, kondisi tanah, desain, dan ketersediaan material. Mintalah jadwal rinci dalam bentuk kurva S dari kontraktor, lengkap dengan jalur kritis seperti pondasi, fabrikasi baja, dan pengecoran lantai."
+    }
+   ]
+  },
+  {
+   "id": "floor-hardener-lantai-gudang",
+   "slug": "floor-hardener-lantai-gudang",
+   "title": "Floor Hardener Lantai Gudang: Jenis, Tahapan Aplikasi, dan Kesalahan Umum",
+   "publish_at_wib": "2026-11-19 10:00",
+   "publish_at_utc": "2026-11-19T03:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/19/floor-hardener-lantai-gudang/",
+   "html": "html/floor-hardener-lantai-gudang.html",
+   "image": "img/floor-hardener-lantai-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang floor hardener lantai gudang: penaburan dry shake, power trowel, dan curing beton",
+   "excerpt": "Fungsi floor hardener, perbedaan tipe dry shake dan cair, tahapan aplikasi di lapangan, curing, dan kesalahan yang paling sering terjadi.",
+   "meta_title": "Floor Hardener Lantai Gudang: Jenis dan Cara Aplikasi",
+   "meta_description": "Panduan floor hardener lantai gudang: fungsi, jenis dry shake dan cair, tahapan aplikasi dengan power trowel, curing, dan kesalahan yang membuat lantai berdebu.",
+   "focus_keyword": "floor hardener lantai gudang",
+   "categories": [
+    "Construction Technology & Innovation",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "floor hardener",
+    "lantai beton",
+    "lantai gudang",
+    "power trowel",
+    "curing beton"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda floor hardener dry shake dan floor hardener cair?",
+     "a": "Dry shake adalah bubuk semen dengan agregat keras yang ditabur ke beton segar lalu diratakan dengan trowel. Hardener cair adalah bahan kimia yang diaplikasikan ke beton yang sudah mengeras untuk memadatkan dan mengurangi debu permukaan."
+    },
+    {
+     "q": "Berapa banyak floor hardener dry shake yang dipakai per meter persegi?",
+     "a": "Dosis ditentukan oleh lembar data produk dan tingkat lalu lintas di atas lantai. Semakin berat beban dan frekuensi lalu lintas, semakin tinggi dosis yang disarankan pabrikan. Tetapkan dosis di spesifikasi teknis sebelum pengecoran."
+    },
+    {
+     "q": "Apakah floor hardener bisa mencegah retak?",
+     "a": "Tidak. Floor hardener meningkatkan ketahanan aus permukaan, tetapi retak dipengaruhi oleh desain pelat, sambungan, tanah dasar, mutu beton, dan curing. Pencegahan retak harus direncanakan dari sisi struktur dan metode kerja."
+    },
+    {
+     "q": "Kapan lantai yang memakai floor hardener boleh dilewati forklift?",
+     "a": "Ikuti umur beton dan rekomendasi perencana serta lembar data produk. Membebani lantai terlalu cepat berisiko merusak permukaan dan sambungan, terutama di area lalu lintas padat."
+    }
+   ]
+  },
+  {
+   "id": "izin-kerja-panas",
+   "slug": "izin-kerja-panas",
+   "title": "Izin Kerja Panas di Pabrik: Prosedur, Checklist, dan Peran Fire Watch",
+   "publish_at_wib": "2026-11-19 13:00",
+   "publish_at_utc": "2026-11-19T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/19/izin-kerja-panas/",
+   "html": "html/izin-kerja-panas.html",
+   "image": "img/izin-kerja-panas.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang izin kerja panas: pengelasan, pembersihan area, APAR, dan fire watch",
+   "excerpt": "Apa itu izin kerja panas, kapan dibutuhkan, alur penerbitan, checklist area kerja, peran fire watch, dan cara menutup izin dengan benar.",
+   "meta_title": "Izin Kerja Panas: Prosedur dan Checklist di Pabrik",
+   "meta_description": "Panduan izin kerja panas untuk pengelasan, gerinda, dan pemotongan di pabrik: alur penerbitan, checklist area, peran fire watch, dan cara menutup izin.",
+   "focus_keyword": "izin kerja panas",
+   "categories": [
+    "Safety, Health & Environment (SHE)",
+    "Quality & Standards"
+   ],
+   "tags": [
+    "hot work permit",
+    "K3 konstruksi",
+    "pengelasan",
+    "fire watch",
+    "SMK3"
+   ],
+   "faq": [
+    {
+     "q": "Pekerjaan apa saja yang memerlukan izin kerja panas?",
+     "a": "Pekerjaan yang menghasilkan api terbuka, percikan, atau panas yang dapat menyulut bahan mudah terbakar, misalnya pengelasan, pemotongan dengan gas atau plasma, gerinda, brazing, dan penggunaan obor pemanas, terutama bila dilakukan di luar area kerja panas yang permanen."
+    },
+    {
+     "q": "Siapa yang menerbitkan izin kerja panas?",
+     "a": "Umumnya pihak pemilik area atau fasilitas yang ditunjuk dalam prosedur perusahaan, setelah memeriksa area bersama pelaksana pekerjaan. Kontraktor mengajukan izin dan memenuhi persyaratannya, tetapi tidak menerbitkan izin untuk dirinya sendiri di area pemilik."
+    },
+    {
+     "q": "Apa tugas fire watch?",
+     "a": "Fire watch mengawasi percikan dan potensi api selama pekerjaan berlangsung dan selama periode tertentu setelah pekerjaan selesai, memegang alat pemadam yang sesuai, dan berwenang menghentikan pekerjaan bila kondisi tidak aman."
+    },
+    {
+     "q": "Berapa lama izin kerja panas berlaku?",
+     "a": "Masa berlaku ditetapkan oleh prosedur perusahaan, umumnya terbatas pada satu shift atau satu hari kerja di lokasi tertentu. Bila kondisi berubah atau pekerjaan terhenti lama, area harus diperiksa ulang."
     }
    ]
   }
