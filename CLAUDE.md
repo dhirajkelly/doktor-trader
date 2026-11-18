@@ -32,8 +32,8 @@ Rules:
 - No unsupported claims: don't write "dari pertanyaan member", "banyak kasus", "mayoritas trader" or similar without a real source. Use precise terms (e.g. candle body vs high–low range) and double-check every number in examples.
 - Where it fits, end with a short `## Pertanyaan yang sering diajukan` section (2–3 `###` questions), and link the free lot calculator `/alat/kalkulator-lot` in articles about lot, stop loss or risk.
 - Compliance gate: the importer (`src/content.js` → `review()`) holds an article as a DRAFT instead of publishing it if it names another broker, promises profit, quotes a win rate or a return per day/week/month outside a warning context, gives a "buy/sell sekarang" call, claims member experience without data, is under 700 words, or misses frontmatter. Run `node -e "const c=require('./src/content');const f=process.argv[1];const {data,body}=c.parseFrontmatter(require('fs').readFileSync(f,'utf8'));console.log(c.review(data,body))" content/articles/<file>.md` before committing; it must print `[]`.
+- Commit only the new markdown file to `main` with message `artikel: <title>` and push. Do not touch code.
 
 ## Correcting a published article
 
 Edit its markdown file and add or increase `revision: N` in the frontmatter (first file is revision 1). The app re-imports the file when the revision goes up, unless the article was edited in the admin (the admin copy wins). Commit with message `artikel(revisi): <title>`.
-- Commit only the new markdown file to `main` with message `artikel: <title>` and push. Do not touch code.
