@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-18T21:52:05Z",
+ "generated": "2026-11-18T21:54:49Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -263,6 +263,94 @@
     {
      "q": "Berapa lama izin kerja panas berlaku?",
      "a": "Masa berlaku ditetapkan oleh prosedur perusahaan, umumnya terbatas pada satu shift atau satu hari kerja di lokasi tertentu. Bila kondisi berubah atau pekerjaan terhenti lama, area harus diperiksa ulang."
+    }
+   ]
+  },
+  {
+   "id": "jasa-renovasi-pabrik-purwakarta",
+   "slug": "jasa-renovasi-pabrik-purwakarta",
+   "title": "Jasa Renovasi Pabrik Purwakarta: Rencana Kerja agar Produksi Tetap Jalan",
+   "publish_at_wib": "2026-11-19 16:00",
+   "publish_at_utc": "2026-11-19T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/19/jasa-renovasi-pabrik-purwakarta/",
+   "html": "html/jasa-renovasi-pabrik-purwakarta.html",
+   "image": "img/jasa-renovasi-pabrik-purwakarta.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa renovasi pabrik Purwakarta: survei kondisi, zonasi kerja, dan renovasi bertahap",
+   "excerpt": "Cara merencanakan renovasi pabrik di Purwakarta agar produksi tetap berjalan: survei kondisi, zonasi kerja, jadwal bertahap, K3, dan dokumen.",
+   "meta_title": "Jasa Renovasi Pabrik Purwakarta: Panduan Perencanaan",
+   "meta_description": "Panduan memilih jasa renovasi pabrik Purwakarta: survei kondisi, jadwal bertahap agar produksi tetap jalan, pengendalian K3, dan dokumen yang perlu disiapkan.",
+   "focus_keyword": "jasa renovasi pabrik purwakarta",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Industrial Projects & Case Studies"
+   ],
+   "tags": [
+    "renovasi pabrik",
+    "purwakarta",
+    "perluasan pabrik",
+    "retrofit bangunan industri",
+    "manajemen proyek"
+   ],
+   "faq": [
+    {
+     "q": "Apakah renovasi pabrik bisa dilakukan saat produksi tetap berjalan?",
+     "a": "Bisa, dengan perencanaan zonasi, penjadwalan bertahap, dan pengendalian K3 yang ketat. Pekerjaan yang paling mengganggu, seperti penggantian atap di atas lini produksi atau pekerjaan listrik utama, biasanya dijadwalkan pada hari libur atau saat shutdown."
+    },
+    {
+     "q": "Apa langkah pertama sebelum renovasi pabrik?",
+     "a": "Survei kondisi eksisting. Kumpulkan gambar lama, periksa struktur, atap, lantai, drainase, dan instalasi MEP, lalu tetapkan prioritas perbaikan berdasarkan risiko dan dampaknya terhadap operasi."
+    },
+    {
+     "q": "Apakah renovasi pabrik memerlukan PBG?",
+     "a": "Bergantung pada jenis perubahan. Perubahan luas, struktur, atau fungsi bangunan umumnya memerlukan PBG, sedangkan perawatan dengan bentuk dan fungsi yang sama mungkin cukup mengikuti ketentuan pemeliharaan. Konsultasikan dengan dinas terkait di daerah Anda."
+    },
+    {
+     "q": "Bagaimana mengendalikan biaya renovasi yang sering membengkak?",
+     "a": "Lakukan survei kondisi sebelum menetapkan anggaran, siapkan BOQ yang memisahkan pekerjaan pasti dan pekerjaan yang bergantung temuan lapangan, sediakan dana kontingensi, dan sepakati prosedur perubahan pekerjaan sejak awal."
+    }
+   ]
+  },
+  {
+   "id": "baja-wf-vs-cnp",
+   "slug": "baja-wf-vs-cnp",
+   "title": "Baja WF vs CNP: Perbedaan, Kegunaan, dan Cara Memilih untuk Gudang",
+   "publish_at_wib": "2026-11-19 19:00",
+   "publish_at_utc": "2026-11-19T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/19/baja-wf-vs-cnp/",
+   "html": "html/baja-wf-vs-cnp.html",
+   "image": "img/baja-wf-vs-cnp.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang perbandingan baja WF vs CNP: penampang I dan penampang C untuk struktur gudang",
+   "excerpt": "Perbedaan baja WF dan CNP dari proses produksi sampai perilaku struktur, serta panduan memilih profil yang tepat untuk gudang dan pabrik.",
+   "meta_title": "Baja WF vs CNP: Perbedaan dan Cara Memilihnya",
+   "meta_description": "Baja WF vs CNP: perbedaan proses produksi, bentuk penampang, perilaku struktur, sambungan, perlindungan korosi, dan panduan memilih untuk gudang dan pabrik.",
+   "focus_keyword": "baja wf vs cnp",
+   "categories": [
+    "Engineering & Design",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "baja WF",
+    "baja CNP",
+    "struktur baja",
+    "gording",
+    "baja ringan canai dingin"
+   ],
+   "faq": [
+    {
+     "q": "Apa perbedaan utama baja WF dan CNP?",
+     "a": "Baja WF adalah profil canai panas berbentuk I atau H dengan sayap lebar dan pelat relatif tebal, umum untuk kolom dan rafter. CNP adalah profil canai dingin berbentuk C dengan bibir, pelatnya tipis, dan umum dipakai untuk gording, girt dinding, atau rangka ringan."
+    },
+    {
+     "q": "Bisakah CNP dipakai sebagai kolom atau rafter gudang?",
+     "a": "Untuk bangunan kecil dengan bentang dan beban ringan, sistem rangka canai dingin bisa direncanakan. Namun untuk gudang dan pabrik dengan bentang lebar, crane, atau beban berat, kolom dan rafter umumnya memakai profil canai panas seperti WF. Keputusan harus berdasarkan perhitungan struktur."
+    },
+    {
+     "q": "Standar apa yang dipakai untuk merencanakan baja WF dan CNP di Indonesia?",
+     "a": "Baja struktural canai panas umumnya direncanakan dengan SNI 1729:2020, sedangkan struktur baja canai dingin mengacu pada SNI 7971:2013. Perencana struktur akan memilih standar yang sesuai untuk setiap komponen."
+    },
+    {
+     "q": "Mana yang lebih murah, WF atau CNP?",
+     "a": "Per kilogram dan per elemen keduanya tidak bisa dibandingkan langsung karena fungsi dan kapasitasnya berbeda. Yang perlu dibandingkan adalah total biaya sistem struktur yang memenuhi syarat kekuatan, kekakuan, dan ketahanan, termasuk fabrikasi, pemasangan, dan perlindungan korosi."
     }
    ]
   }

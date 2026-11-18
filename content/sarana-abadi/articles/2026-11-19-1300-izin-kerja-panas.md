@@ -100,7 +100,7 @@ Fire watch sering dianggap tugas tambahan yang bisa dirangkap siapa saja. Padaha
 - **Mengawasi area sekitar dan area di bawah atau di balik dinding**, bukan hanya titik las.
 - **Tetap berjaga setelah pekerjaan selesai.** Material yang membara bisa menyala beberapa saat kemudian. Durasi pengawasan pascapekerjaan ditetapkan dalam prosedur fasilitas, dan banyak prosedur menetapkan rentang setengah jam sampai satu jam.
 
-Untuk pekerjaan di ketinggian, misalnya pengelasan struktur baja atap, posisi fire watch perlu dipikirkan agar dapat melihat arah jatuh percikan di lantai bawah.
+Untuk pekerjaan di ketinggian, misalnya pengelasan saat [erection struktur baja pabrik](https://sarana-abadi.co.id/2026/04/17/erection-struktur-pabrik-modern/) atau perbaikan rangka atap, posisi fire watch perlu dipikirkan agar dapat melihat arah jatuh percikan di lantai bawah.
 
 ## Isi Minimal Formulir Izin Kerja Panas
 
