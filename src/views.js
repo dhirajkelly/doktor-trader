@@ -131,7 +131,7 @@ function authorBox() {
   return `<aside class="card" style="margin:32px 0;display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap">
 <img src="/doktor-portrait.webp" alt="${SITE.author}" width="72" height="72" loading="lazy" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;background:var(--bg2)">
 <div style="flex:1;min-width:220px"><div class="dim">Ditulis oleh</div><strong>${SITE.author} (Dhiraj Kelly Sawlani)</strong>
-<p class="muted" style="margin:6px 0;font-size:15px">Margin call survivor yang kini fokus mengajar manajemen risiko. Trader XAUUSD, pebisnis, dan akademisi (DRM BINUS, LL.M. IBLAM, kandidat doktor Unhan RI).</p>
+<p class="muted" style="margin:6px 0;font-size:15px">Margin call survivor yang kini fokus mengajar manajemen risiko. Trader XAUUSD, pebisnis, dan akademisi (Doctor of Research in Management, LL.M. IBLAM, kandidat doktor Unhan RI).</p>
 <ul class="dim" style="margin:0;padding-left:18px">${SITE.credentials.map((x) => `<li>${x}</li>`).join('')}<li>${c.title} (${c.field}), No. ${c.number}, No. Reg. ${c.reg}, ${c.issuer}, ${c.issued}, berlaku hingga ${c.validUntil}</li></ul>
 <p class="dim" style="margin:6px 0 0"><a href="/#tentang">Lihat dokumen sertifikat dan izin</a></p></div></aside>`;
 }
