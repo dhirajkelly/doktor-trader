@@ -4,8 +4,8 @@ const SITE = {
   name: 'Doktor Trader',
   url: (process.env.SITE_URL || 'https://dhirajkelly.id').replace(/\/$/, ''),
   author: 'Dr. Dhiraj Kelly',
-  brokerName: 'Vantage',
-  brokerUrl: process.env.BROKER_URL || 'https://vigco.co/la-s1com-inv/id/zvohY4cj',
+  brokerName: 'Dupoin',
+  brokerUrl: process.env.BROKER_URL || 'https://i.dupoin.vip/gSgaysBeR',
   whatsapp: process.env.WHATSAPP || '628111282991',
 };
 

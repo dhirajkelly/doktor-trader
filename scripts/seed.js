@@ -39,8 +39,8 @@ Jangan menghafal puluhan pola candle. Fokus pada konteks: **di mana** candle itu
 - **Take profit (TP)**: target untung otomatis.
 
 Kebiasaan sehat: tentukan entry, SL, dan TP **sebelum** menekan tombol, bukan setelah posisi berjalan.`],
-    ['Menyiapkan MT4/MT5 dan akun Vantage', 10, `1. Buka akun Vantage lewat link resmi Doktor Trader (agar akses member Anda bisa diverifikasi).
-2. Unduh MetaTrader 4 atau 5 di HP atau laptop, lalu login dengan nomor akun dan server dari email Vantage.
+    ['Menyiapkan MT4/MT5 dan akun Dupoin', 10, `1. Buka akun Dupoin lewat link resmi Doktor Trader (agar akses member Anda bisa diverifikasi).
+2. Unduh MetaTrader 4 atau 5 di HP atau laptop, lalu login dengan nomor akun dan server dari email Dupoin.
 3. Tambahkan simbol **XAUUSD** di Market Watch.
 4. Mulai dari **akun demo** sampai Anda konsisten mengikuti rencana trading minimal 1 bulan.
 5. Saat beralih ke akun live, mulai dengan modal yang benar-benar siap Anda tanggung risikonya.
@@ -315,7 +315,7 @@ Pakai MT4? [Unduh versi MT4](/member/unduh/DT_SmartSignal.mq4) (taruh di MQL4 â†
 const TOOLS = [
   ['ea', 'DT Risk Guard: auto SL/TP, break-even, trailing', EA_DESC, 'Alat bantu disiplin, bukan jaminan profit. Uji di akun demo dulu dan cek kembali pengaturan point sesuai simbol Anda.', '/member/unduh/DT_RiskGuard.mq5', 'Unduh EA (MT5)'],
   ['signal', 'DT Smart Signal: indikator sinyal XAUUSD', SIGNAL_DESC, 'Sinyal berbasis aturan teknikal, bukan ramalan dan bukan rekomendasi. Sinyal bisa salah; selalu pakai SL dan aturan risiko 1%.', '/member/unduh/DT_SmartSignal.mq5', 'Unduh indikator (MT5)'],
-  ['copytrade', 'Copy Trade Doktor Trader', 'Ikuti posisi strategi Doktor Trader secara otomatis melalui fitur copy trading Vantage, dengan pengaturan risiko yang bisa Anda tentukan sendiri. Link strategi segera tersedia di sini.', 'Copy trade tetap berisiko dan dapat mengalami drawdown. Gunakan dana yang siap Anda tanggung risikonya.', '', ''],
+  ['copytrade', 'Copy Trade Doktor Trader', 'Ikuti posisi strategi Doktor Trader secara otomatis melalui fitur copy trading Dupoin, dengan pengaturan risiko yang bisa Anda tentukan sendiri. Link strategi segera tersedia di sini.', 'Copy trade tetap berisiko dan dapat mengalami drawdown. Gunakan dana yang siap Anda tanggung risikonya.', '', ''],
 ];
 
 function seed() {
@@ -364,6 +364,13 @@ function seed() {
     }
     db.setSetting('tools_v2', '1');
     console.log('[seed] tools v2');
+  }
+  // Broker switch Vantage -> Dupoin (one-time rename in existing academy/tool texts)
+  if (db.setting('broker_dupoin') !== '1') {
+    db.run("UPDATE lessons SET title = REPLACE(title, 'Vantage', 'Dupoin'), body_md = REPLACE(body_md, 'Vantage', 'Dupoin') WHERE title LIKE '%Vantage%' OR body_md LIKE '%Vantage%'");
+    db.run("UPDATE tools SET title = REPLACE(title, 'Vantage', 'Dupoin'), description = REPLACE(description, 'Vantage', 'Dupoin'), risk_note = REPLACE(risk_note, 'Vantage', 'Dupoin') WHERE title LIKE '%Vantage%' OR description LIKE '%Vantage%' OR risk_note LIKE '%Vantage%'");
+    db.setSetting('broker_dupoin', '1');
+    console.log('[seed] broker -> Dupoin');
   }
 }
 

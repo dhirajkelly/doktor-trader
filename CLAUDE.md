@@ -27,6 +27,6 @@ Rules:
   ---
   ```
   Quote any value that contains a colon.
-- Compliance (mandatory): education only. Never promise profit, never give a specific "buy/sell now" call, never quote win rates or returns, never claim regulation facts you have not verified. Market data in examples must be clearly illustrative ("contoh"). Don't name competitor brokers. Vantage may be mentioned neutrally.
+- Compliance (mandatory): education only. Never promise profit, never give a specific "buy/sell now" call, never quote win rates or returns, never claim regulation facts you have not verified. Market data in examples must be clearly illustrative ("contoh"). Don't name competitor brokers. Dupoin (the partner broker) may be mentioned neutrally.
 - Facts that change (rates, regulations, dates of events) must be checked with web search, or left out.
 - Commit only the new markdown file to `main` with message `artikel: <title>` and push. Do not touch code.
