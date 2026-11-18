@@ -2,23 +2,36 @@
 
 Folder ini milik website agen properti Era Integrity Indonesia (WordPress 4.7 di platform BuatWebProperty), bukan aplikasi Doktor Trader. Admin website tidak punya akses plugin, jadi `wp-plugin/` TIDAK dipakai. Artikel diposting oleh scheduled task kedua (±05.13 WIB) yang berjalan di komputer pemilik: browser bawaan Claude desktop app membuka `/kelolah/post-new.php` dan menjalankan `post-classic.js`, yang mengambil data dari `index.json` dan menjadwalkan tayangnya.
 
-## Tugas harian (scheduled task, sekali sehari sekitar 04.47 WIB)
+## Tugas harian (2 scheduled task per hari: Batch A dan Batch B)
 
-Tulis **3 artikel baru** untuk hari ini (tanggal Asia/Jakarta), jam tayang **07:00, 12:00, 17:00 WIB**:
+Target **10 artikel baru per hari** (tanggal Asia/Jakarta), dibagi dua batch supaya kualitas tiap artikel tetap terjaga. Jam tayang dan jenis artikel tetap (A = komersial/lokal, B = panduan/edukasi, C = investasi/analisis/area; lihat bagian Pemilihan topik):
 
-- `articles/YYYY-MM-DD-0700-<slug>.md`
-- `articles/YYYY-MM-DD-1200-<slug>.md`
-- `articles/YYYY-MM-DD-1700-<slug>.md`
+| Batch | File | Tayang (WIB) | Jenis |
+|---|---|---|---|
+| A | `articles/YYYY-MM-DD-0600-<slug>.md` | 06:00 | A |
+| A | `articles/YYYY-MM-DD-0730-<slug>.md` | 07:30 | B |
+| A | `articles/YYYY-MM-DD-0900-<slug>.md` | 09:00 | C |
+| A | `articles/YYYY-MM-DD-1030-<slug>.md` | 10:30 | A |
+| A | `articles/YYYY-MM-DD-1200-<slug>.md` | 12:00 | B |
+| B | `articles/YYYY-MM-DD-1330-<slug>.md` | 13:30 | C |
+| B | `articles/YYYY-MM-DD-1500-<slug>.md` | 15:00 | A |
+| B | `articles/YYYY-MM-DD-1630-<slug>.md` | 16:30 | B |
+| B | `articles/YYYY-MM-DD-1800-<slug>.md` | 18:00 | C |
+| B | `articles/YYYY-MM-DD-1930-<slug>.md` | 19:30 | A |
 
-Lalu `pip install -q markdown pyyaml pillow --break-system-packages` (bila perlu) dan `python3 content/era-integrity/build.py`. Build harus lolos. Commit hanya perubahan di `content/era-integrity/` ke `main` dengan pesan `era: 3 artikel YYYY-MM-DD`, lalu push. Jika file untuk hari ini sudah ada, jangan tulis ulang; lengkapi yang kurang saja.
+- Batch A menulis 5 slot pertama, Batch B 5 slot terakhir. `git pull` dulu sebelum mulai. Kalau Batch B mendapati slot Batch A hari ini belum ada, tulis juga slot itu (tetap 10 total, jangan lebih).
+- Jangan tulis ulang file yang sudah ada untuk slot itu; lengkapi yang kurang saja. Satu slot = satu artikel.
+- Commit setiap kali 2–3 artikel lolos build (jangan tunggu kelimanya), supaya kalau sesi terputus artikel yang sudah jadi tetap terkirim.
+- Build: `pip install -q markdown pyyaml pillow --break-system-packages` (bila perlu) dan `python3 content/era-integrity/build.py`. Build harus lolos. Commit hanya perubahan di `content/era-integrity/` ke `main` dengan pesan `era: artikel YYYY-MM-DD batch A|B (n)`, lalu push (`git pull --rebase` dulu bila ditolak).
+- Posting ke WordPress dilakukan scheduled task browser (±05.13 WIB) untuk semua artikel hari ini; Batch A ±03.17 WIB dan Batch B ±04.17 WIB harus selesai sebelum itu.
 
 ## Pemilihan topik
 
 1. Baca `existing-posts.txt` (153 artikel lama; judul tersirat dari slug) dan frontmatter semua file di `articles/`. Jangan ulangi topik, slug, atau focus keyword. Topik yang sudah sangat banyak dibahas: legalitas sertifikat (SHM/HGB/girik, sertipikat elektronik), BPHTB/PPh, KPR ditolak, Whoosh/TOD, inspeksi rumah bekas, PKKPR. Hindari kecuali sudut pandangnya benar-benar baru.
-2. Tiga artikel per hari harus beda niat pencarian:
-   - **07:00 — komersial/lokal** (orang yang siap sewa/beli/jual): mis. sewa rumah dekat kawasan industri tertentu, gudang disewakan di Karawang Timur, ruko dijual di Galuh Mas, rumah dijual di perumahan/kecamatan tertentu, sewa rumah untuk ekspatriat di Cikarang, kontrakan petakan untuk karyawan.
-   - **12:00 — panduan/edukasi** (proses & cara): titip jual ke agen, perjanjian sewa, cara menaksir harga, take over KPR, renovasi sebelum dijual, cara negosiasi, checklist serah terima rumah sewa.
-   - **17:00 — investasi/analisis/area**: profil kawasan (Telukjambe, Klari, Cikampek, Purwasari, Kotabaru, Rengasdengklok, Cikarang), yield kos/kontrakan/gudang, prospek infrastruktur, perbandingan area.
+2. Sepuluh artikel per hari harus beda niat pencarian, beda topik, dan beda lokasi/tipe sebisa mungkin. Dalam satu hari, jangan ada dua artikel yang focus keyword-nya hanya beda lokasi (mis. "X Karawang" dan "X Bekasi"). Jenis artikel per slot (lihat tabel):
+   - **A — komersial/lokal**: (orang yang siap sewa/beli/jual): mis. sewa rumah dekat kawasan industri tertentu, gudang disewakan di Karawang Timur, ruko dijual di Galuh Mas, rumah dijual di perumahan/kecamatan tertentu, sewa rumah untuk ekspatriat di Cikarang, kontrakan petakan untuk karyawan.
+   - **B — panduan/edukasi**: (proses & cara): titip jual ke agen, perjanjian sewa, cara menaksir harga, take over KPR, renovasi sebelum dijual, cara negosiasi, checklist serah terima rumah sewa.
+   - **C — investasi/analisis/area**: profil kawasan (Telukjambe, Klari, Cikampek, Purwasari, Kotabaru, Rengasdengklok, Cikarang), yield kos/kontrakan/gudang, prospek infrastruktur, perbandingan area.
 3. Prioritaskan long-tail keyword berbahasa Indonesia untuk Karawang dan sekitarnya (Bekasi, Cikarang, Purwakarta, Subang, Cianjur). Variasikan lokasi dan tipe properti (rumah, tanah, ruko, gudang, apartemen, kos/kontrakan).
 
 ## Gaya & struktur
