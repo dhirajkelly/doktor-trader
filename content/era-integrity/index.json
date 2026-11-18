@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-18T21:22:57Z",
+ "generated": "2026-11-18T21:23:48Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -306,6 +306,49 @@
     {
      "q": "Berapa tanda jadi yang wajar saat membeli rumah bekas?",
      "a": "Tidak ada angka baku. Yang lebih penting adalah tanda jadi dituangkan dalam tanda terima atau perjanjian tertulis yang menjelaskan apakah uang itu bisa kembali bila transaksi batal, misalnya karena KPR tidak disetujui atau dokumen bermasalah."
+    }
+   ]
+  },
+  {
+   "id": "cara-negosiasi-harga-rumah",
+   "slug": "cara-negosiasi-harga-rumah",
+   "title": "Cara Negosiasi Harga Rumah: Persiapan, Taktik, dan Batas Aman",
+   "publish_at_wib": "2026-11-19 19:00",
+   "publish_at_utc": "2026-11-19T12:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/19/cara-negosiasi-harga-rumah/",
+   "html": "html/cara-negosiasi-harga-rumah.html",
+   "image": "img/cara-negosiasi-harga-rumah.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang cara negosiasi harga rumah",
+   "excerpt": "Panduan cara negosiasi harga rumah untuk pembeli: riset pembanding, menentukan batas atas, menyusun tawaran, dan menuliskan kesepakatan.",
+   "meta_title": "Cara Negosiasi Harga Rumah untuk Pembeli",
+   "meta_description": "Pelajari cara negosiasi harga rumah yang sopan dan berbasis data: riset harga pembanding, menentukan batas atas, menyusun tawaran, dan menutup kesepakatan.",
+   "focus_keyword": "cara negosiasi harga rumah",
+   "categories": [
+    "Panduan & Edukasi Agen",
+    "Jual • Beli • Sewa"
+   ],
+   "tags": [
+    "negosiasi harga rumah",
+    "tips beli rumah",
+    "harga pembanding",
+    "rumah bekas"
+   ],
+   "faq": [
+    {
+     "q": "Berapa persen sebaiknya menawar harga rumah?",
+     "a": "Tidak ada persentase yang selalu tepat. Besarnya tawaran sebaiknya didasarkan pada harga rumah pembanding, kondisi bangunan, biaya perbaikan yang dibutuhkan, dan seberapa lama rumah sudah dipasarkan, bukan angka potongan yang dipukul rata."
+    },
+    {
+     "q": "Apakah rumah baru dari pengembang bisa ditawar?",
+     "a": "Ruang tawarnya biasanya lebih sempit karena harga mengikuti daftar harga pengembang. Namun Anda tetap bisa menanyakan promo, bonus, atau keringanan biaya tertentu yang sedang berlaku."
+    },
+    {
+     "q": "Kapan sebaiknya memberi tanda jadi dalam negosiasi?",
+     "a": "Setelah harga dan syarat utama disepakati dan Anda sudah memeriksa dokumen dasar serta kondisi rumah. Tuangkan tanda jadi dalam perjanjian tertulis yang menjelaskan kondisi pengembaliannya."
+    },
+    {
+     "q": "Apakah agen properti bisa membantu negosiasi?",
+     "a": "Bisa. Agen dapat menyiapkan data pembanding, menyampaikan tawaran secara profesional, dan menjaga komunikasi tetap tenang. Pastikan Anda tahu agen tersebut mewakili pihak siapa dan bagaimana komisinya diatur."
     }
    ]
   }
