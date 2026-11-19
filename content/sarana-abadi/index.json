@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-19T15:13:13Z",
+ "generated": "2026-11-19T21:51:57Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -389,6 +389,138 @@
     {
      "q": "Bagaimana cara menghubungi PT Sarana Abadi Raya untuk proyek?",
      "a": "Anda dapat menghubungi tim PT Sarana Abadi Raya melalui telepon atau email kantor yang tercantum di bagian akhir artikel ini untuk diskusi kebutuhan proyek dan permintaan penawaran."
+    }
+   ]
+  },
+  {
+   "id": "jasa-fabrikasi-baja-karawang",
+   "slug": "jasa-fabrikasi-baja-karawang",
+   "title": "Jasa Fabrikasi Baja Karawang: Alur Kerja, Dokumen Mutu, dan Tips Memilih",
+   "publish_at_wib": "2026-11-20 07:00",
+   "publish_at_utc": "2026-11-20T00:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/20/jasa-fabrikasi-baja-karawang/",
+   "html": "html/jasa-fabrikasi-baja-karawang.html",
+   "image": "img/jasa-fabrikasi-baja-karawang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa fabrikasi baja Karawang: alur kerja workshop, kontrol mutu las, dan pengiriman ke site",
+   "excerpt": "Alur kerja fabrikasi baja dari shop drawing sampai erection, dokumen mutu yang perlu diminta, dan cara menilai penawaran fabrikator di Karawang.",
+   "meta_title": "Jasa Fabrikasi Baja Karawang: Alur dan Tips Memilih",
+   "meta_description": "Butuh jasa fabrikasi baja Karawang? Pahami alur kerja dari shop drawing sampai erection, dokumen mutu yang wajib diminta, dan cara menilai penawaran.",
+   "focus_keyword": "jasa fabrikasi baja karawang",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "fabrikasi baja",
+    "struktur baja pabrik",
+    "shop drawing",
+    "welding",
+    "kawasan industri karawang"
+   ],
+   "faq": [
+    {
+     "q": "Apa saja yang termasuk dalam lingkup jasa fabrikasi baja?",
+     "a": "Umumnya meliputi pembuatan shop drawing, pengadaan material, pemotongan, perakitan, pengelasan, pengeboran lubang baut, perlakuan permukaan dan pengecatan, inspeksi, serta pengiriman. Erection di site kadang termasuk, kadang dipisah, sehingga perlu ditegaskan di kontrak."
+    },
+    {
+     "q": "Dokumen apa yang sebaiknya diminta dari fabrikator?",
+     "a": "Minimal sertifikat material (mill certificate), prosedur las (WPS) beserta kualifikasinya, kualifikasi juru las, laporan inspeksi dimensi dan visual las, laporan uji tidak merusak bila disyaratkan, serta laporan ketebalan cat."
+    },
+    {
+     "q": "Lebih baik fabrikasi di workshop atau langsung di site?",
+     "a": "Untuk sebagian besar komponen struktur, fabrikasi di workshop memberi kontrol mutu, keselamatan, dan jadwal yang lebih baik. Pekerjaan di site sebaiknya dibatasi pada sambungan lapangan dan penyesuaian yang memang tidak bisa dilakukan di workshop."
+    },
+    {
+     "q": "Mengapa harga per kilogram baja dari beberapa fabrikator bisa sangat berbeda?",
+     "a": "Karena lingkup yang dihitung sering tidak sama, misalnya sistem cat, galvanis, baut, uji NDT, transportasi, dan erection. Bandingkan penawaran berdasarkan lingkup dan spesifikasi yang sama, bukan hanya angka per kilogram."
+    }
+   ]
+  },
+  {
+   "id": "pondasi-mesin-pabrik",
+   "slug": "pondasi-mesin-pabrik",
+   "title": "Pondasi Mesin Pabrik: Prinsip Desain, Isolasi Getaran, dan Pelaksanaan",
+   "publish_at_wib": "2026-11-20 10:00",
+   "publish_at_utc": "2026-11-20T03:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/20/pondasi-mesin-pabrik/",
+   "html": "html/pondasi-mesin-pabrik.html",
+   "image": "img/pondasi-mesin-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang pondasi mesin pabrik: blok beton, isolasi getaran, angkur, dan grouting",
+   "excerpt": "Prinsip desain pondasi mesin pabrik, cara mengendalikan getaran, dan urutan pelaksanaan dari penyelidikan tanah sampai grouting.",
+   "meta_title": "Pondasi Mesin Pabrik: Desain dan Isolasi Getaran",
+   "meta_description": "Panduan pondasi mesin pabrik: data yang dibutuhkan, prinsip blok pondasi, pemisahan dari lantai, kontrol getaran, angkur dan grouting, serta urutan kerja.",
+   "focus_keyword": "pondasi mesin pabrik",
+   "categories": [
+    "Engineering & Design",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "pondasi mesin",
+    "getaran mesin",
+    "grouting",
+    "angkur",
+    "beton struktural"
+   ],
+   "faq": [
+    {
+     "q": "Apakah mesin boleh dipasang langsung di atas lantai pabrik?",
+     "a": "Mesin ringan dengan getaran kecil sering bisa dipasang di lantai yang direncanakan untuk bebannya. Mesin berat atau bergetar, seperti kompresor, press, genset, atau mesin berputar besar, umumnya memerlukan pondasi tersendiri yang dipisahkan dari lantai."
+    },
+    {
+     "q": "Data apa yang dibutuhkan untuk mendesain pondasi mesin?",
+     "a": "Minimal gambar dan berat mesin, posisi titik angkur, beban statis dan dinamis dari pabrikan, kecepatan operasi, batas getaran yang diizinkan, serta data penyelidikan tanah di lokasi pondasi."
+    },
+    {
+     "q": "Mengapa grouting di bawah base plate mesin penting?",
+     "a": "Grouting mengisi celah antara base plate dan beton sehingga beban tersalur merata dan mesin tidak bertumpu hanya pada shim atau baut. Grout yang retak atau berongga dapat menyebabkan getaran meningkat dan kelurusan mesin berubah."
+    },
+    {
+     "q": "Berapa lama beton pondasi mesin harus menunggu sebelum mesin dipasang?",
+     "a": "Waktunya bergantung pada mutu beton, metode perawatan, dan beban yang akan bekerja. Pemasangan sebaiknya dilakukan setelah beton mencapai kekuatan yang ditetapkan perencana berdasarkan hasil uji benda uji, bukan hanya berdasarkan jumlah hari."
+    }
+   ]
+  },
+  {
+   "id": "kurva-s-proyek-konstruksi",
+   "slug": "kurva-s-proyek-konstruksi",
+   "title": "Kurva S Proyek Konstruksi: Cara Membuat, Membaca, dan Memakainya",
+   "publish_at_wib": "2026-11-20 13:00",
+   "publish_at_utc": "2026-11-20T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/20/kurva-s-proyek-konstruksi/",
+   "html": "html/kurva-s-proyek-konstruksi.html",
+   "image": "img/kurva-s-proyek-konstruksi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang kurva S proyek konstruksi: grafik rencana dan realisasi progres kumulatif",
+   "excerpt": "Cara menyusun, menghitung, dan membaca kurva S proyek konstruksi, lengkap dengan contoh perhitungan bobot dan deviasi progres.",
+   "meta_title": "Kurva S Proyek Konstruksi: Cara Membuat dan Membaca",
+   "meta_description": "Pelajari kurva S proyek konstruksi: cara menyusun bobot pekerjaan, menghitung rencana dan realisasi, membaca deviasi, dan memakainya untuk keputusan proyek.",
+   "focus_keyword": "kurva s proyek konstruksi",
+   "categories": [
+    "Industrial Projects & Case Studies",
+    "Quality & Standards"
+   ],
+   "tags": [
+    "kurva S",
+    "manajemen proyek",
+    "progress proyek",
+    "jadwal konstruksi",
+    "deviasi"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu kurva S dalam proyek konstruksi?",
+     "a": "Kurva S adalah grafik progres kumulatif terhadap waktu. Bentuknya menyerupai huruf S karena progres biasanya lambat di awal, cepat di tengah, dan melambat lagi menjelang akhir proyek."
+    },
+    {
+     "q": "Dari mana bobot pekerjaan dalam kurva S dihitung?",
+     "a": "Bobot umumnya dihitung dari nilai biaya setiap item pekerjaan dibagi total nilai kontrak atau anggaran. Ada juga proyek yang memakai bobot berdasarkan jam kerja, terutama untuk pekerjaan engineering."
+    },
+    {
+     "q": "Apakah deviasi positif selalu berarti proyek dalam kondisi baik?",
+     "a": "Belum tentu. Deviasi positif bisa terjadi karena pekerjaan bernilai besar dikerjakan lebih dulu, sementara pekerjaan di jalur kritis justru tertinggal. Kurva S perlu dibaca bersama jadwal rinci dan jalur kritis."
+    },
+    {
+     "q": "Seberapa sering kurva S sebaiknya diperbarui?",
+     "a": "Pada sebagian besar proyek, realisasi diperbarui mingguan dan dilaporkan dalam rapat mingguan. Proyek dengan durasi sangat singkat atau intensitas tinggi dapat memperbaruinya lebih sering."
     }
    ]
   }
