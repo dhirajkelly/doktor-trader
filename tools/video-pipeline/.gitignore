@@ -1,0 +1,7 @@
+node_modules/
+remotion/public/vo/
+remotion/qc/
+remotion/out/
+out/
+scripts/script.py
+__pycache__/
