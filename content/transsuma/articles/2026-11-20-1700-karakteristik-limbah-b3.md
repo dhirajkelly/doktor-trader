@@ -116,6 +116,15 @@ Sebuah pabrik komponen logam di Karawang memiliki proses pencucian dengan pelaru
 
 Contoh ini ilustratif. Hasil identifikasi di fasilitas Anda bisa berbeda dan perlu diverifikasi.
 
+### Kesalahan yang sering terjadi saat identifikasi
+
+Beberapa kekeliruan berikut membuat data limbah tidak akurat dan menyulitkan pengelolaan selanjutnya:
+
+- **Menganggap limbah "kecil" bukan B3.** Lampu TL, baterai, atau toner bekas dari kantor tetap perlu dicek terhadap daftar limbah B3, meskipun jumlahnya sedikit.
+- **Hanya mencatat satu karakteristik.** Pelarut bekas bisa mudah menyala sekaligus beracun. Catat semua karakteristik yang relevan agar simbol dan pemisahan di TPS tepat.
+- **Tidak memperbarui identifikasi.** Pergantian bahan baku atau proses baru dapat mengubah sifat limbah. Tinjau ulang identifikasi setiap kali ada perubahan proses.
+- **Mencampur limbah agar praktis.** Pencampuran mengubah sifat limbah, menyulitkan penentuan kode, dan dilarang dalam penyimpanan limbah B3.
+
 ## Dampak karakteristik pada penyimpanan dan pengangkutan
 
 Karakteristik bukan sekadar label. Ia memengaruhi seluruh rantai pengelolaan:
