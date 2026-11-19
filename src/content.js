@@ -48,7 +48,34 @@ function review(data, body) {
   return notes;
 }
 
+// Academy video links: content/academy-videos.json maps "<course-slug>/<lesson-slug>" to a YouTube URL.
+// A lesson's video_url is set when it is empty or still holds the value this sync wrote last time,
+// so a link the admin changed by hand in /admin is never overwritten.
+const VIDEOS = path.join(__dirname, '..', 'content', 'academy-videos.json');
+function syncAcademyVideos() {
+  if (!fs.existsSync(VIDEOS)) return 0;
+  let map;
+  try { map = JSON.parse(fs.readFileSync(VIDEOS, 'utf8')); } catch (e) { console.error('[academy-videos] JSON invalid', e.message); return 0; }
+  let n = 0;
+  for (const [key, url] of Object.entries(map)) {
+    if (!/^https:\/\/(www\.)?(youtube\.com|youtu\.be)\//.test(String(url))) continue;
+    const [cslug, lslug] = key.split('/');
+    const row = db.get('SELECT l.id, l.video_url FROM lessons l JOIN courses c ON c.id = l.course_id WHERE c.slug = ? AND l.slug = ?', [cslug, lslug]);
+    if (!row) continue;
+    const last = db.setting('academy_video:' + key, '');
+    const cur = row.video_url || '';
+    if (cur === url) { if (last !== url) db.setSetting('academy_video:' + key, url); continue; }
+    if (cur && cur !== last) continue; // edited by admin
+    db.run('UPDATE lessons SET video_url = ? WHERE id = ?', [url, row.id]);
+    db.setSetting('academy_video:' + key, url);
+    n++;
+  }
+  if (n) db.log(null, 'academy-video-sync', `${n} video materi dipasang`);
+  return n;
+}
+
 function syncInbox() {
+  try { syncAcademyVideos(); } catch (e) { console.error('[academy-videos]', e); }
   if (!fs.existsSync(INBOX)) return 0;
   let added = 0;
   const files = fs.readdirSync(INBOX).filter((f) => f.endsWith('.md')).sort();
@@ -96,4 +123,4 @@ function syncInbox() {
   return added;
 }
 
-module.exports = { syncInbox, parseFrontmatter, review, INBOX };
+module.exports = { syncInbox, syncAcademyVideos, parseFrontmatter, review, INBOX };
