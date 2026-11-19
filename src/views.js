@@ -57,6 +57,14 @@ function plain(mdText, n = 160) {
   return t.length > n ? t.slice(0, n - 1).trimEnd() + '…' : t;
 }
 
+// Nama sapaan: kata pertama setelah gelar depan ("Dr. Dhiraj Kelly" → "Dhiraj", "H. Ahmad" → "Ahmad").
+const HONORIFICS = new Set(['dr', 'drs', 'dra', 'prof', 'ir', 'h', 'hj', 'kh', 'bpk', 'bapak', 'pak', 'ibu', 'bu', 'sdr', 'sdri', 'mr', 'mrs', 'ms', 'mas', 'mbak', 'kak', 'drg', 'apt', 'ns']);
+function firstName(name) {
+  const parts = String(name || '').split(',')[0].trim().split(/\s+/).filter(Boolean);
+  const rest = parts.filter((p, i) => !(HONORIFICS.has(p.toLowerCase().replace(/\./g, '')) && i < parts.length - 1 && parts.slice(0, i).every((q) => HONORIFICS.has(q.toLowerCase().replace(/\./g, '')))));
+  return rest[0] || parts[0] || '';
+}
+
 function slugify(s) {
   return String(s || '').toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '')
     .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 90) || 'artikel';
@@ -78,11 +86,17 @@ a{color:var(--gold)}img{max-width:100%;height:auto}
 .narrow{max-width:760px;margin:0 auto;padding:0 20px}
 header.top{position:sticky;top:0;z-index:20;background:rgba(7,15,30,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 header.top nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;max-width:1100px;margin:0 auto}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;letter-spacing:.04em}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;letter-spacing:.04em;white-space:nowrap;flex-shrink:0}
 .brand b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--gold);color:#0B1630;font-size:14px}
 .navl{display:flex;gap:18px;align-items:center;font-size:14px;flex-wrap:wrap}
 .navl a{color:var(--muted);text-decoration:none}.navl a:hover,.navl a.on{color:var(--text)}
-.navl a.btn{color:#0B1630}@media(max-width:520px){.navl a.hs{display:none}}.navl a.btn:hover{color:#0B1630;filter:brightness(1.05)}
+.navl a.btn{color:#0B1630}.navl a.btn:hover{color:#0B1630;filter:brightness(1.05)}
+.navt{display:none;width:44px;height:44px;place-items:center;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--text);cursor:pointer;flex-shrink:0}
+.navt svg{display:block}.navt .x{display:none}header.top.open .navt .x{display:block}header.top.open .navt .m{display:none}
+@media(max-width:760px){header.top nav{padding:10px 16px}.navt{display:inline-grid}
+.navl{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:6px 16px 16px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.45);font-size:16px}
+header.top.open .navl{display:flex}.navl>a{padding:13px 4px;border-bottom:1px solid var(--line)}
+.navl>a.btn,.navl form .btn{margin-top:12px;width:100%;min-height:46px;border-bottom:0}.navl form{display:block!important}}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:12px;border:0;background:var(--gold);color:#0B1630;font-weight:800;font-size:15px;font-family:inherit;text-decoration:none;cursor:pointer}
 .btn.ghost{background:transparent;border:1px solid rgba(233,196,106,.5);color:var(--gold)}
 .btn.sm{min-height:34px;padding:0 12px;font-size:13px;border-radius:9px}
@@ -112,7 +126,8 @@ th{color:var(--dim);font-weight:700;font-size:12px;text-transform:uppercase;lett
 .side{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
 .side aside a{display:block;padding:9px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:14px}
 .side aside a.on,.side aside a:hover{background:var(--card);color:var(--text)}
-@media(max-width:820px){.side{grid-template-columns:1fr}.side aside{display:flex;gap:6px;overflow-x:auto}.side aside a{white-space:nowrap}}
+.side>*{min-width:0}
+@media(max-width:820px){.side{grid-template-columns:1fr;gap:18px}.side aside{display:flex;flex-wrap:wrap;gap:6px}.side aside a{white-space:nowrap;padding:7px 12px;font-size:13px;border:1px solid var(--line)}.side aside a.on{border-color:rgba(233,196,106,.45)}}
 footer.bot{border-top:1px solid var(--line);margin-top:60px;padding:30px 0;color:var(--dim);font-size:12px;line-height:1.7}
 .stat{font-size:28px;font-weight:800}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
@@ -126,7 +141,12 @@ const RISK = 'Peringatan risiko: Trading forex, emas, dan instrumen berjangka me
 const TRACK_JS = `(function(){function ev(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'',t=a.getAttribute('data-track');
 if(!t){if(/dupoin\\./i.test(h))t='broker_click';else if(/wa\\.me\\//i.test(h))t='wa_click';else if(/^\\/daftar/.test(h))t='daftar_click';}
 if(!t)return;try{navigator.sendBeacon('/t',new Blob([JSON.stringify({e:t,p:location.pathname})],{type:'application/json'}))}catch(_){}}
-document.addEventListener('click',ev,true);})();`;
+document.addEventListener('click',ev,true);})();
+(function(){var h=document.querySelector('header.top'),b=h&&h.querySelector('.navt');if(!b)return;
+function set(o){h.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Tutup menu':'Buka menu')}
+b.addEventListener('click',function(){set(!h.classList.contains('open'))});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+document.addEventListener('click',function(e){if(!h.contains(e.target))set(false)});})();`;
 
 function authorBox() {
   const c = SITE.cert;
@@ -156,7 +176,8 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ''}
 <style>${CSS}</style>${head}</head><body>
 <header class="top"><nav>
 <a class="brand" href="/"><b>DT</b>DOKTOR TRADER</a>
-<div class="navl">
+<button class="navt" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="navl"><svg class="m" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+<div class="navl" id="navl">
 ${link('/artikel', 'Artikel', 'artikel')}
 ${link('/alat/kalkulator-lot', 'Kalkulator Lot', 'alat').replace('<a ', '<a class="hs" ').replace('class="hs" href="/alat/kalkulator-lot" class="on"', 'class="hs on" href="/alat/kalkulator-lot"')}
 ${user ? (user.role === 'admin' ? link('/admin', 'Admin', 'admin') : '') + link('/member', 'Member', 'member') : link('/masuk', 'Masuk', 'masuk')}
@@ -183,4 +204,4 @@ function csrfField(csrf) {
   return `<input type="hidden" name="_csrf" value="${esc(csrf)}">`;
 }
 
-module.exports = { SITE, DISCLOSURE, authorBox, esc, md, plain, slugify, fmtDate, layout, sideNav, flash, csrfField, RISK };
+module.exports = { SITE, DISCLOSURE, authorBox, esc, md, plain, slugify, firstName, fmtDate, layout, sideNav, flash, csrfField, RISK };

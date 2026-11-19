@@ -2,7 +2,7 @@ const express = require('express');
 const crypto = require('crypto');
 const db = require('../db');
 const auth = require('../auth');
-const { layout, esc, md, flash, csrfField, sideNav, fmtDate, slugify, plain, SITE } = require('../views');
+const { layout, esc, md, flash, csrfField, sideNav, fmtDate, slugify, plain, firstName, SITE } = require('../views');
 const { syncInbox } = require('../content');
 
 const router = express.Router();
@@ -132,7 +132,7 @@ router.get('/admin/member/:id', (req, res, next) => {
   const qs = db.get('SELECT COUNT(*) n FROM questions WHERE user_id = ?', [u.id]).n;
   const acts = db.all('SELECT * FROM activity WHERE user_id = ? ORDER BY id DESC LIMIT 15', [u.id]);
   const temp = req.query.temp ? String(req.query.temp) : '';
-  const approveMsg = `Halo ${u.name.split(' ')[0]}, akun member Doktor Trader kamu sudah aktif. Silakan masuk di ${SITE.url}/masuk dengan email ${u.email}. Selamat belajar!`;
+  const approveMsg = `Halo ${firstName(u.name)}, akun member Doktor Trader kamu sudah aktif. Silakan masuk di ${SITE.url}/masuk dengan email ${u.email}. Selamat belajar!`;
   page(req, res, {
     title: u.name, active: 'member',
     body: `<a class="dim" href="/admin/member">← CRM Member</a>

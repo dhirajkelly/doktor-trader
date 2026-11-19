@@ -32,7 +32,15 @@ a{color:#E9C46A}a:hover{color:#F5DA96}
 .dt-ghost:hover{background:rgba(233,196,106,0.10)}
 .dt-card:hover{border-color:rgba(233,196,106,0.45)}
 input::placeholder{color:#7D8BA6}
-@media (max-width:720px){.dt-navlinks{display:none !important}.dt-hide-sm{display:none !important}}
+@media (max-width:720px){.dt-hide-sm{display:none !important}}
+.dt-brand-t{white-space:nowrap}.dt-burger{display:none;width:44px;height:44px;align-items:center;justify-content:center;border-radius:12px;border:1px solid rgba(255,255,255,0.14);background:transparent;color:#E7ECF5;cursor:pointer;flex-shrink:0;padding:0}
+.dt-burger .x{display:none}.dt-open .dt-burger .x{display:block}.dt-open .dt-burger .m{display:none}.dt-only-sm{display:none !important}
+@media (max-width:860px){.dt-nav{padding:10px 16px !important;gap:10px !important}.dt-burger{display:inline-flex}
+.dt-navlinks{display:none !important;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0 !important;padding:6px 16px 18px;background:#070F1E;border-bottom:1px solid rgba(255,255,255,0.08);box-shadow:0 18px 40px rgba(0,0,0,0.5);font-size:16px !important}
+.dt-open .dt-navlinks{display:flex !important}.dt-navlinks a{padding:13px 4px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.dt-navlinks a.dt-only-sm{display:flex !important;justify-content:center;margin-top:14px;border-bottom:0;background:#E9C46A;color:#0B1630 !important;font-weight:700;border-radius:12px;min-height:46px;align-items:center}
+.dt-cta{padding:10px 16px !important;font-size:13px !important;white-space:nowrap}}
+@media (max-width:420px){.dt-cta{display:none !important}}
 .dt-tab{min-height:44px;padding:10px 20px;border-radius:10px;border:0;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;background:transparent;color:#C5CFE0}.dt-tab.on{background:#E9C46A;color:#0B1630}html{scroll-behavior:smooth}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dhiraj Kelly Sawlani","alternateName":["Dr. Dhiraj Kelly","Dhiraj Kelly"],"url":"https://dhirajkelly.id/","image":"https://dhirajkelly.id/doktor-portrait.webp","jobTitle":"President Director","worksFor":{"@type":"Organization","name":"PT Sarana Abadi Raya","url":"https://sarana-abadi.co.id/"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"BINUS University"},{"@type":"CollegeOrUniversity","name":"IBLAM School of Law"}],"knowsAbout":["Manajemen risiko trading","Money management","Trading emas XAUUSD","Psikologi trading"],"hasCredential":[{"@type":"EducationalOccupationalCredential","name":"Izin Wakil Manajer Investasi (WMI)","credentialCategory":"Izin profesi","identifier":"KEP-570/PM.112/WMI/TTE/2026","recognizedBy":{"@type":"Organization","name":"Otoritas Jasa Keuangan (OJK)"}},{"@type":"EducationalOccupationalCredential","name":"Certified Technical Analyst (CTA)","credentialCategory":"Sertifikat Kompetensi","identifier":"66123 2413 0027687 2026","recognizedBy":{"@type":"Organization","name":"Badan Nasional Sertifikasi Profesi (BNSP)"}},{"@type":"EducationalOccupationalCredential","name":"Sertifikat Kompetensi BNSP: Wakil Penasihat Berjangka","credentialCategory":"Sertifikat Kompetensi","identifier":"WPA.002.00073 2025","dateCreated":"2025-09-30","recognizedBy":{"@type":"Organization","name":"Badan Nasional Sertifikasi Profesi (BNSP)"}}],"sameAs":["https://www.instagram.com/dhirajkelly","https://www.tiktok.com/@dhirajkelly","https://www.youtube.com/@dhirajkelly","https://www.threads.net/@dhirajkelly","https://x.com/sawlani_dr35211","https://www.facebook.com/dhirajkellysawlani"]}</script>
@@ -43,17 +51,17 @@ input::placeholder{color:#7D8BA6}
 
   <!-- NAV -->
   <header style="position: sticky; top: 0; z-index: 20; background: rgba(7,15,30,0.86); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06)">
-    <nav style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+    <nav class="dt-nav" style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
       <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #E7ECF5">
         <span style="width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg,#1C3B78,#2B5BD7); display: flex; align-items: center; justify-content: center">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E9C46A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-5 4 4 8-8"></path><path d="M15 8h5v5"></path></svg>
         </span>
         <span style="display: flex; flex-direction: column; line-height: 1.1">
-          <span style="font-weight: 800; font-size: 16px; letter-spacing: 0.04em">DOKTOR TRADER</span>
-          <span style="font-size: 11px; color: #9AA8C2; letter-spacing: 0.08em">by Dr. Dhiraj Kelly</span>
+          <span class="dt-brand-t" style="font-weight: 800; font-size: 16px; letter-spacing: 0.04em">DOKTOR TRADER</span>
+          <span class="dt-brand-t" style="font-size: 11px; color: #9AA8C2; letter-spacing: 0.08em">by Dr. Dhiraj Kelly</span>
         </span>
       </a>
-      <div class="dt-navlinks" style="display: flex; gap: 28px; font-size: 14px; font-weight: 500">
+      <div class="dt-navlinks" id="dt-navlinks" style="display: flex; gap: 28px; font-size: 14px; font-weight: 500">
         <a href="#jalur" style="color: #C5CFE0; text-decoration: none">Jalur Belajar</a>
         <a href="#fitur" style="color: #C5CFE0; text-decoration: none">Fitur</a>
         <a href="#komunitas" style="color: #C5CFE0; text-decoration: none">Komunitas</a>
@@ -61,8 +69,12 @@ input::placeholder{color:#7D8BA6}
         <a href="/artikel" style="color: #C5CFE0; text-decoration: none">Artikel</a>
         <a href="/alat/kalkulator-lot" style="color: #C5CFE0; text-decoration: none">Kalkulator Lot</a>
         <a href="/masuk" style="color: #E9C46A; text-decoration: none; font-weight: 700">Masuk Member</a>
+        <a class="dt-only-sm" href="#daftar" style="text-decoration: none">Akses Gratis</a>
       </div>
-      <a class="dt-btn" href="#daftar" style="background: #E9C46A; color: #0B1630; font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 999px; text-decoration: none; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Akses Gratis</a>
+      <div style="display: flex; align-items: center; gap: 8px">
+      <a class="dt-btn dt-cta" href="#daftar" style="background: #E9C46A; color: #0B1630; font-weight: 700; font-size: 14px; padding: 12px 20px; border-radius: 999px; text-decoration: none; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Akses Gratis</a>
+      <button class="dt-burger" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="dt-navlinks"><svg class="m" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      </div>
     </nav>
   </header>
 
@@ -556,5 +568,11 @@ if(/dupoin\./i.test(h))t='broker_click';else if(/wa\.me\//i.test(h))t='wa_click'
 if(!t)return;try{navigator.sendBeacon('/t',new Blob([JSON.stringify({e:t,p:location.pathname})],{type:'application/json'}))}catch(_){}}
 document.addEventListener('click',ev,true);
 var f=document.getElementById('klaim');if(f)f.addEventListener('submit',function(){try{navigator.sendBeacon('/t',new Blob([JSON.stringify({e:'daftar_click',p:'/#daftar'})],{type:'application/json'}))}catch(_){}},true);})();</script>
+<script>(function(){var h=document.querySelector('header'),b=h&&h.querySelector('.dt-burger');if(!b)return;
+function set(o){h.classList.toggle('dt-open',o);b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Tutup menu':'Buka menu')}
+b.addEventListener('click',function(){set(!h.classList.contains('dt-open'))});
+h.querySelectorAll('.dt-navlinks a').forEach(function(a){a.addEventListener('click',function(){set(false)})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+document.addEventListener('click',function(e){if(!h.contains(e.target))set(false)});})();</script>
 </body>
 </html>

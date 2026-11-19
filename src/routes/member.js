@@ -3,7 +3,7 @@ const express = require('express');
 const db = require('../db');
 const auth = require('../auth');
 const ai = require('../ai');
-const { layout, esc, md, flash, csrfField, sideNav, fmtDate, SITE } = require('../views');
+const { layout, esc, md, flash, csrfField, sideNav, fmtDate, firstName, SITE } = require('../views');
 
 const router = express.Router();
 
@@ -21,7 +21,7 @@ const NAV = [
 function page(req, res, { title, active, body }) {
   res.send(layout({
     title, noindex: true, user: req.user, active: 'member',
-    body: `<section class="wrap" style="padding:32px 20px"><div class="side">${sideNav(NAV, active)}<div>${body}</div></div></section>`,
+    body: `<section class="wrap" style="padding:32px 20px"><div class="side">${sideNav(NAV, active)}<div style="min-width:0">${body}</div></div></section>`,
   }));
 }
 
@@ -51,7 +51,7 @@ router.get('/member/menunggu', auth.requireLogin, (req, res) => {
     title: 'Menunggu verifikasi', noindex: true, user: u,
     body: `<section class="narrow" style="padding:56px 20px">
 <span class="pill ${u.status === 'pending' ? '' : 'bad'}">${u.status === 'pending' ? 'Menunggu verifikasi' : u.status === 'rejected' ? 'Belum terverifikasi' : 'Dinonaktifkan'}</span>
-<h1 style="margin-top:12px">Halo, ${esc(u.name.split(' ')[0])}</h1><p class="muted" style="font-size:17px">${msg}</p>
+<h1 style="margin-top:12px">Halo, ${esc(firstName(u.name))}</h1><p class="muted" style="font-size:17px">${msg}</p>
 <div class="row" style="margin-top:20px"><a class="btn" href="${wa}" target="_blank" rel="noopener">Percepat via WhatsApp</a>
 <a class="btn ghost" href="${esc(SITE.brokerUrl)}" target="_blank" rel="noopener">Buka akun ${SITE.brokerName}</a><a class="btn ghost" href="/artikel">Baca artikel gratis</a></div>
 </section>`,
@@ -70,7 +70,7 @@ router.get('/member', (req, res) => {
     ORDER BY c.position, c.id, l.position, l.id LIMIT 1`, [req.user.id]);
   page(req, res, {
     title: 'Dashboard member', active: 'home',
-    body: `<h1>Selamat datang, ${esc(req.user.name.split(' ')[0])}</h1>
+    body: `<h1>Selamat datang, ${esc(firstName(req.user.name))}</h1>
 <div class="grid g3" style="margin:20px 0">
 <div class="card"><div class="dim">Progress Academy</div><div class="stat">${done}/${total}</div><div class="bar"><i style="width:${total ? Math.round((done / total) * 100) : 0}%"></i></div></div>
 <div class="card"><div class="dim">Pertanyaan ke Doktor</div><div class="stat">${qs.length ? db.get('SELECT COUNT(*) n FROM questions WHERE user_id=?', [req.user.id]).n : 0}</div><a href="/member/tanya">Tanya sekarang →</a></div>

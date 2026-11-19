@@ -119,11 +119,14 @@ router.post('/admin/analisa/:id/hapus', A, (req, res) => {
 
 // ================= MARKET WATCH =================
 // Widget gratis TradingView (data bisa tertunda; tidak menyimpan data member).
-const tvWidget = (name, cfg, height) => `<div class="tradingview-widget-container" style="height:${height}px;border-radius:14px;overflow:hidden;margin-bottom:6px"><div class="tradingview-widget-container__widget" style="height:100%"></div>
+// Ukuran widget: market-overview & events memakai tinggi piksel di config (widget menghitung tata letaknya sendiri,
+// tidak terpotong oleh container). Advanced chart memakai autosize di container dengan tinggi responsif (.tv-chart).
+const tvWidget = (name, cfg, cls = '') => `<div class="tradingview-widget-container ${cls}" style="width:100%;border-radius:12px;overflow:hidden${typeof cfg.height === 'number' ? `;min-height:${cfg.height}px` : ''}"><div class="tradingview-widget-container__widget" style="width:100%;height:100%"></div>
 <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-${name}.js" async>${JSON.stringify(cfg)}</script></div>`;
+const TV_CSS = '<style>.tv-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));align-items:start;margin-top:16px}.tv-chart{height:clamp(420px,70vh,640px)}</style>';
 router.get('/member/market', M, (req, res) => {
   const overview = {
-    colorTheme: 'dark', dateRange: '1D', showChart: true, locale: 'id', isTransparent: true, showSymbolLogo: true, showFloatingTooltip: false, width: '100%', height: '100%',
+    colorTheme: 'dark', dateRange: '1D', showChart: true, locale: 'id', isTransparent: true, showSymbolLogo: true, showFloatingTooltip: false, width: '100%', height: 660,
     tabs: [
       { title: 'Emas & Komoditas', symbols: [{ s: 'OANDA:XAUUSD', d: 'Emas (XAUUSD)' }, { s: 'OANDA:XAGUSD', d: 'Perak (XAGUSD)' }, { s: 'TVC:USOIL', d: 'Minyak WTI' }] },
       { title: 'Forex', symbols: [{ s: 'FX:EURUSD', d: 'EUR/USD' }, { s: 'FX:GBPUSD', d: 'GBP/USD' }, { s: 'FX:USDJPY', d: 'USD/JPY' }, { s: 'FX_IDC:USDIDR', d: 'USD/IDR' }, { s: 'TVC:DXY', d: 'Indeks Dolar (DXY)' }] },
@@ -131,13 +134,13 @@ router.get('/member/market', M, (req, res) => {
     ],
   };
   const chart = { autosize: true, symbol: 'OANDA:XAUUSD', interval: '60', timezone: 'Asia/Jakarta', theme: 'dark', style: '1', locale: 'id', allow_symbol_change: true, hide_side_toolbar: false, support_host: 'https://www.tradingview.com' };
-  const cal = { colorTheme: 'dark', isTransparent: true, width: '100%', height: '100%', locale: 'id', importanceFilter: '0,1', countryFilter: 'us,eu,gb,jp,cn,id' };
+  const cal = { colorTheme: 'dark', isTransparent: true, width: '100%', height: 600, locale: 'id', importanceFilter: '0,1', countryFilter: 'us,eu,gb,jp,cn,id' };
   memberPage(req, res, {
     title: 'Market Watch', active: 'market',
     body: `<h1>Market Watch</h1><p class="muted">Pantau emas, pair forex utama, dan indeks saham dalam satu layar. Ganti simbol di chart untuk instrumen favoritmu. Data dari TradingView dan bisa tertunda; bukan sinyal transaksi.</p>
-<div class="grid g2" style="margin-top:16px;align-items:start"><div class="card" style="padding:10px">${tvWidget('market-overview', overview, 520)}</div>
-<div class="card" style="padding:10px">${tvWidget('events', cal, 520)}<div class="dim" style="padding:4px 6px">Kalender ekonomi (dampak sedang–tinggi). Hati-hati posisi saat rilis data besar.</div></div></div>
-<div class="card" style="padding:10px;margin-top:18px">${tvWidget('advanced-chart', chart, 560)}</div>
+${TV_CSS}<div class="tv-grid"><div class="card" style="padding:10px">${tvWidget('market-overview', overview)}</div>
+<div class="card" style="padding:10px">${tvWidget('events', cal)}<div class="dim" style="padding:6px 6px 2px">Kalender ekonomi (dampak sedang–tinggi). Hati-hati posisi saat rilis data besar.</div></div></div>
+<div class="card" style="padding:10px;margin-top:18px">${tvWidget('advanced-chart', chart, 'tv-chart')}</div>
 <p class="dim" style="margin-top:10px">Widget pasar oleh <a href="https://id.tradingview.com/" target="_blank" rel="noopener nofollow">TradingView</a>.</p>`,
   });
 });
