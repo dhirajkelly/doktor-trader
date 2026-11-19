@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-19T20:04:54Z",
+ "generated": "2026-11-19T20:05:50Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -123,6 +123,49 @@
     {
      "q": "Apa yang harus dilakukan bila masa simpan hampir habis?",
      "a": "Jadwalkan penyerahan limbah kepada pihak berizin, misalnya melalui transporter limbah B3 ke pengolah atau pemanfaat, sebelum batas masa simpan tercapai."
+    }
+   ]
+  },
+  {
+   "id": "karakteristik-limbah-b3",
+   "slug": "karakteristik-limbah-b3",
+   "title": "6 Karakteristik Limbah B3 dan Cara Mengenalinya di Fasilitas",
+   "publish_at_wib": "2026-11-20 17:00",
+   "publish_at_utc": "2026-11-20T10:00:00Z",
+   "url": "https://transsuma.com/karakteristik-limbah-b3/",
+   "html": "html/karakteristik-limbah-b3.html",
+   "image": "img/karakteristik-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang karakteristik limbah B3",
+   "excerpt": "Penjelasan enam karakteristik limbah B3, perbedaan kategori 1 dan 2, dan cara mengidentifikasi limbah di fasilitas Anda.",
+   "meta_title": "6 Karakteristik Limbah B3 dan Kategori Bahayanya",
+   "meta_description": "Kenali 6 karakteristik limbah B3: mudah meledak, mudah menyala, reaktif, infeksius, korosif, beracun, beserta kategori 1 dan 2 serta contoh di fasilitas.",
+   "focus_keyword": "karakteristik limbah b3",
+   "categories": [
+    "Jenis & Karakteristik Limbah B3",
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "kategori limbah b3",
+    "kode limbah",
+    "identifikasi limbah",
+    "pp 22 2021"
+   ],
+   "faq": [
+    {
+     "q": "Apa saja karakteristik limbah B3?",
+     "a": "Ada enam karakteristik: mudah meledak, mudah menyala, reaktif, infeksius, korosif, dan beracun. Satu jenis limbah dapat memiliki lebih dari satu karakteristik."
+    },
+    {
+     "q": "Apa beda limbah B3 kategori 1 dan kategori 2?",
+     "a": "Kategori ditentukan dari tingkat bahaya berdasarkan uji, antara lain uji TCLP dan uji toksikologi LD50. Kategori 1 memiliki tingkat bahaya lebih tinggi; misalnya LD50 sama dengan atau kurang dari 50 mg/kg berat badan hewan uji."
+    },
+    {
+     "q": "Mengapa karakteristik limbah penting untuk pengangkutan?",
+     "a": "Karakteristik menentukan kemasan, simbol, cara penyimpanan, pemisahan saat dimuat, dan langkah tanggap darurat bila terjadi tumpahan. Transporter juga mencocokkan jenis limbah dengan perizinannya."
+    },
+    {
+     "q": "Di mana daftar kode limbah B3 resmi dapat dilihat?",
+     "a": "Daftar nama dan kode limbah B3 tercantum dalam lampiran PP Nomor 22 Tahun 2021 tentang Penyelenggaraan Perlindungan dan Pengelolaan Lingkungan Hidup."
     }
    ]
   }
