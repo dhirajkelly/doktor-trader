@@ -1,5 +1,44 @@
 {
  "version": 1,
- "generated": "2026-11-19T05:41:06Z",
- "items": []
+ "generated": "2026-11-19T15:13:13Z",
+ "items": [
+  {
+   "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
+   "slug": "profil-direktur-pt-transsuma-lestari-sejahtera",
+   "title": "Profil Direktur PT Transsuma Lestari Sejahtera: Dr. Dhiraj Kelly",
+   "publish_at_wib": "2026-11-19 23:30",
+   "publish_at_utc": "2026-11-19T16:30:00Z",
+   "url": "https://transsuma.com/profil-direktur-pt-transsuma-lestari-sejahtera/",
+   "html": "html/profil-direktur-pt-transsuma-lestari-sejahtera.html",
+   "image": "img/profil-direktur-pt-transsuma-lestari-sejahtera.png",
+   "image_alt": "Gambar sampul artikel Transsuma tentang profil direktur perusahaan",
+   "excerpt": "Mengenal Dr. Dhiraj Kelly Sawlani, Direktur PT Transsuma Lestari Sejahtera, perusahaan jasa pengangkutan limbah B3 di Karawang.",
+   "meta_title": "Profil Direktur PT Transsuma Lestari Sejahtera",
+   "meta_description": "Mengenal direktur pt transsuma lestari sejahtera, Dr. Dhiraj Kelly Sawlani, dan latar di balik layanan pengangkutan limbah B3 Transsuma di Karawang.",
+   "focus_keyword": "direktur pt transsuma lestari sejahtera",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3"
+   ],
+   "tags": [
+    "profil perusahaan",
+    "direksi",
+    "pengangkutan limbah b3",
+    "karawang"
+   ],
+   "faq": [
+    {
+     "q": "Siapa direktur PT Transsuma Lestari Sejahtera?",
+     "a": "Direktur PT Transsuma Lestari Sejahtera adalah Dr. Dhiraj Kelly Sawlani, yang juga menjabat Direktur Utama PT Sarana Abadi Raya di Karawang."
+    },
+    {
+     "q": "Apa layanan utama PT Transsuma Lestari Sejahtera?",
+     "a": "PT Transsuma Lestari Sejahtera bergerak di jasa pengangkutan limbah Bahan Berbahaya dan Beracun (B3) dan berkantor di Karawang, Jawa Barat."
+    },
+    {
+     "q": "Apa yang perlu disiapkan pabrik sebelum meminta jasa pengangkutan limbah B3?",
+     "a": "Siapkan informasi jenis dan karakteristik limbah, perkiraan jumlah dan frekuensi, cara pengemasan, lokasi penyimpanan sementara, serta dokumen lingkungan yang dimiliki fasilitas."
+    }
+   ]
+  }
+ ]
 }

@@ -1,5 +1,44 @@
 {
  "version": 1,
- "generated": "2026-11-19T05:22:16Z",
- "items": []
+ "generated": "2026-11-19T15:13:14Z",
+ "items": [
+  {
+   "id": "profil-direktur-ide-ruang",
+   "slug": "profil-direktur-ide-ruang",
+   "title": "Profil Direktur Ide Ruang: Dr. Dhiraj Kelly Sawlani dan Arah Studio",
+   "publish_at_wib": "2026-11-19 23:30",
+   "publish_at_utc": "2026-11-19T16:30:00Z",
+   "url": "https://ide-ruang.com/profil-direktur-ide-ruang/",
+   "html": "html/profil-direktur-ide-ruang.html",
+   "image": "img/profil-direktur-ide-ruang.png",
+   "image_alt": "Gambar sampul artikel Ide Ruang tentang profil direktur studio",
+   "excerpt": "Mengenal Dr. Dhiraj Kelly Sawlani, Direktur Ide Ruang, studio desain interior, arsitektur, dan design & build di Karawang.",
+   "meta_title": "Profil Direktur Ide Ruang Karawang",
+   "meta_description": "Mengenal direktur ide ruang, Dr. Dhiraj Kelly Sawlani: latar manajemen dan konstruksi di balik layanan desain interior dan design & build Ide Ruang di Karawang.",
+   "focus_keyword": "direktur ide ruang",
+   "categories": [
+    "Manajemen Proyek"
+   ],
+   "tags": [
+    "profil studio",
+    "ide ruang",
+    "desain interior karawang",
+    "design and build"
+   ],
+   "faq": [
+    {
+     "q": "Siapa direktur Ide Ruang?",
+     "a": "Direktur Ide Ruang adalah Dr. Dhiraj Kelly Sawlani, yang juga menjabat Direktur Utama PT Sarana Abadi Raya, kontraktor EPC di Karawang."
+    },
+    {
+     "q": "Layanan apa saja yang ditawarkan Ide Ruang?",
+     "a": "Ide Ruang menangani desain interior, arsitektur, visualisasi 3D, dan pembangunan (design & build) untuk rumah tinggal, kantor, kafe dan restoran, ruko, serta fit-out komersial."
+    },
+    {
+     "q": "Apa keuntungan memakai jasa design and build?",
+     "a": "Dengan design and build, desain dan pelaksanaan ditangani satu pihak sehingga koordinasi lebih sederhana dan tanggung jawab atas hasil akhir lebih jelas."
+    }
+   ]
+  }
+ ]
 }

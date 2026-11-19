@@ -1,5 +1,44 @@
 {
  "version": 1,
- "generated": "2026-11-19T05:22:16Z",
- "items": []
+ "generated": "2026-11-19T15:13:14Z",
+ "items": [
+  {
+   "id": "profil-direktur-pt-satya-abadi-raya",
+   "slug": "profil-direktur-pt-satya-abadi-raya",
+   "title": "Profil Direktur PT Satya Abadi Raya: Dr. Dhiraj Kelly Sawlani",
+   "publish_at_wib": "2026-11-19 23:30",
+   "publish_at_utc": "2026-11-19T16:30:00Z",
+   "url": "https://satya-abadi.co.id/profil-direktur-pt-satya-abadi-raya/",
+   "html": "html/profil-direktur-pt-satya-abadi-raya.html",
+   "image": "img/profil-direktur-pt-satya-abadi-raya.png",
+   "image_alt": "Gambar sampul artikel PT Satya Abadi Raya tentang profil direktur perusahaan",
+   "excerpt": "Mengenal Dr. Dhiraj Kelly Sawlani, Direktur PT Satya Abadi Raya, perusahaan engineering dan fabrikasi di Karawang sejak 2011.",
+   "meta_title": "Profil Direktur PT Satya Abadi Raya Karawang",
+   "meta_description": "Mengenal direktur pt satya abadi raya, Dr. Dhiraj Kelly Sawlani: latar manajemen, hukum, dan konstruksi di balik layanan engineering dan fabrikasi di Karawang.",
+   "focus_keyword": "direktur pt satya abadi raya",
+   "categories": [
+    "Berita & Proyek (News/Case Studies)"
+   ],
+   "tags": [
+    "profil perusahaan",
+    "direksi",
+    "engineering karawang",
+    "cnc machining"
+   ],
+   "faq": [
+    {
+     "q": "Siapa direktur PT Satya Abadi Raya?",
+     "a": "Direktur PT Satya Abadi Raya adalah Dr. Dhiraj Kelly Sawlani, yang juga menjabat Direktur Utama PT Sarana Abadi Raya."
+    },
+    {
+     "q": "Layanan apa yang ditawarkan PT Satya Abadi Raya?",
+     "a": "PT Satya Abadi Raya melayani CNC machining presisi, fabrikasi dan konstruksi, otomasi industri, mold dan dies, serta solusi peralatan industri makanan."
+    },
+    {
+     "q": "Apa yang perlu disiapkan untuk meminta penawaran komponen?",
+     "a": "Siapkan gambar teknik dengan dimensi dan toleransi, spesifikasi material, jumlah pesanan, kebutuhan finishing, dan target waktu pengiriman."
+    }
+   ]
+  }
+ ]
 }

@@ -1,5 +1,44 @@
 {
  "version": 1,
- "generated": "2026-11-19T05:22:16Z",
- "items": []
+ "generated": "2026-11-19T15:13:14Z",
+ "items": [
+  {
+   "id": "profil-direktur-pt-segoro-lintas-benua",
+   "slug": "profil-direktur-pt-segoro-lintas-benua",
+   "title": "Profil Direktur PT Segoro Lintas Benua: Dr. Dhiraj Kelly Sawlani",
+   "publish_at_wib": "2026-11-19 23:30",
+   "publish_at_utc": "2026-11-19T16:30:00Z",
+   "url": "https://segorolintasbenua.id/profil-direktur-pt-segoro-lintas-benua/",
+   "html": "html/profil-direktur-pt-segoro-lintas-benua.html",
+   "image": "img/profil-direktur-pt-segoro-lintas-benua.png",
+   "image_alt": "Gambar sampul artikel PT Segoro Lintas Benua tentang profil direktur perusahaan",
+   "excerpt": "Mengenal Dr. Dhiraj Kelly Sawlani, Direktur PT Segoro Lintas Benua, perusahaan freight forwarding dan logistik terintegrasi di Karawang.",
+   "meta_title": "Profil Direktur PT Segoro Lintas Benua",
+   "meta_description": "Mengenal direktur pt segoro lintas benua, Dr. Dhiraj Kelly Sawlani: latar manajemen, hukum, dan keuangan di balik layanan freight forwarding di Karawang.",
+   "focus_keyword": "direktur pt segoro lintas benua",
+   "categories": [
+    "Layanan"
+   ],
+   "tags": [
+    "profil perusahaan",
+    "direksi",
+    "freight forwarding karawang",
+    "logistik"
+   ],
+   "faq": [
+    {
+     "q": "Siapa direktur PT Segoro Lintas Benua?",
+     "a": "Direktur PT Segoro Lintas Benua adalah Dr. Dhiraj Kelly Sawlani, yang juga menjabat Direktur Utama PT Sarana Abadi Raya di Karawang."
+    },
+    {
+     "q": "Layanan apa saja yang ditawarkan PT Segoro Lintas Benua?",
+     "a": "PT Segoro Lintas Benua melayani jasa pengurusan transportasi (freight forwarding), angkutan multimoda, ekspedisi muatan kapal, dan layanan logistik terintegrasi."
+    },
+    {
+     "q": "Apa yang perlu disiapkan untuk meminta penawaran pengiriman?",
+     "a": "Siapkan jenis dan jumlah barang, berat dan volume, alamat asal dan tujuan, waktu kesiapan barang, target tiba, serta dokumen yang sudah dimiliki."
+    }
+   ]
+  }
+ ]
 }

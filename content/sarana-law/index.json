@@ -1,5 +1,44 @@
 {
  "version": 1,
- "generated": "2026-11-19T05:22:16Z",
- "items": []
+ "generated": "2026-11-19T15:13:13Z",
+ "items": [
+  {
+   "id": "profil-direktur-sarana-law-firm",
+   "slug": "profil-direktur-sarana-law-firm",
+   "title": "Profil Direktur Sarana Law Firm: Dr. Dhiraj Kelly Sawlani, LL.M.",
+   "publish_at_wib": "2026-11-19 23:30",
+   "publish_at_utc": "2026-11-19T16:30:00Z",
+   "url": "https://saranalawfirm.com/profil-direktur-sarana-law-firm/",
+   "html": "html/profil-direktur-sarana-law-firm.html",
+   "image": "img/profil-direktur-sarana-law-firm.png",
+   "image_alt": "Gambar sampul artikel Sarana Law Firm tentang profil direktur firma",
+   "excerpt": "Mengenal Dr. Dhiraj Kelly Sawlani, LL.M., Direktur Sarana Law Firm, firma hukum di Karawang, Jawa Barat.",
+   "meta_title": "Profil Direktur Sarana Law Firm Karawang",
+   "meta_description": "Mengenal direktur sarana law firm, Dr. Dhiraj Kelly Sawlani, LL.M.: pendidikan hukum dan manajemen, peran kepemimpinan, serta arah layanan firma di Karawang.",
+   "focus_keyword": "direktur sarana law firm",
+   "categories": [
+    "Tips Hukum & Edukasi Publik"
+   ],
+   "tags": [
+    "profil firma hukum",
+    "sarana law firm",
+    "firma hukum karawang",
+    "direksi"
+   ],
+   "faq": [
+    {
+     "q": "Siapa direktur Sarana Law Firm?",
+     "a": "Direktur Sarana Law Firm adalah Dr. Dhiraj Kelly Sawlani, LL.M., yang juga memimpin beberapa perusahaan di Karawang."
+    },
+    {
+     "q": "Bidang hukum apa saja yang ditangani Sarana Law Firm?",
+     "a": "Sarana Law Firm menangani hukum keluarga dan waris, korporasi dan kepatuhan, perdata dan bisnis, pidana, ketenagakerjaan, serta properti dan pertanahan."
+    },
+    {
+     "q": "Apakah konsultasi awal bisa dilakukan lewat WhatsApp?",
+     "a": "Anda dapat menghubungi Sarana Law Firm melalui telepon, WhatsApp, atau email yang tercantum di akhir artikel untuk mengatur jadwal konsultasi."
+    }
+   ]
+  }
+ ]
 }
