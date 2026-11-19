@@ -1,0 +1,31 @@
+{
+ "site": "https://segorolintasbenua.id",
+ "permalink": "slug",
+ "categories": [
+  "Industri & Sektor",
+  "Kepatuhan & Regulasi",
+  "Layanan",
+  "Operasional & Teknologi",
+  "Solusi & Studi Kasus",
+  "Wawasan Pasar & Rute"
+ ],
+ "cover": {
+  "bg": [
+   10,
+   38,
+   71
+  ],
+  "accent": [
+   0,
+   174,
+   239
+  ],
+  "line": [
+   24,
+   56,
+   96
+  ],
+  "brand_line": "PT Segoro Lintas Benua  ·  Freight Forwarding & Multimoda  ·  Karawang",
+  "domain": "segorolintasbenua.id"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "site": "https://ide-ruang.com",
+ "permalink": "slug",
+ "categories": [
+  "Desain & Tren Interior",
+  "Manajemen Proyek",
+  "Material & Finishing",
+  "Pencahayaan & Efisiensi Energi",
+  "Regulasi & Perizinan",
+  "Sektor & Tipologi Proyek",
+  "Teknologi Desain & Visualisasi"
+ ],
+ "cover": {
+  "bg": [
+   38,
+   34,
+   30
+  ],
+  "accent": [
+   214,
+   168,
+   112
+  ],
+  "line": [
+   60,
+   54,
+   48
+  ],
+  "brand_line": "Ide Ruang  ·  Desain Interior, Arsitektur & Build  ·  Karawang",
+  "domain": "ide-ruang.com"
+ }
+}

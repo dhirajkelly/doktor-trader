@@ -1,0 +1,32 @@
+{
+ "site": "https://saranalawfirm.com",
+ "permalink": "slug",
+ "categories": [
+  "Hukum Keluarga & Waris",
+  "Hukum Korporasi & Kepatuhan (Compliance)",
+  "Hukum Perdata & Bisnis",
+  "Hukum Pidana",
+  "Ketenagakerjaan & Industri",
+  "Properti & Pertanahan",
+  "Tips Hukum & Edukasi Publik"
+ ],
+ "cover": {
+  "bg": [
+   18,
+   24,
+   38
+  ],
+  "accent": [
+   196,
+   160,
+   82
+  ],
+  "line": [
+   34,
+   44,
+   64
+  ],
+  "brand_line": "Sarana Law Firm  ·  Konsultasi & Pendampingan Hukum  ·  Karawang",
+  "domain": "saranalawfirm.com"
+ }
+}

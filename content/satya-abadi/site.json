@@ -1,0 +1,33 @@
+{
+ "site": "https://satya-abadi.co.id",
+ "permalink": "slug",
+ "categories": [
+  "Berita & Proyek (News/Case Studies)",
+  "Engineering & Desain",
+  "Fabrication & Construction",
+  "Food Industry Solutions",
+  "Industrial Automation",
+  "Mold & Dies",
+  "Mutu, K3 & Lingkungan (QHSE)",
+  "Precision Machining"
+ ],
+ "cover": {
+  "bg": [
+   20,
+   36,
+   48
+  ],
+  "accent": [
+   0,
+   168,
+   204
+  ],
+  "line": [
+   34,
+   54,
+   70
+  ],
+  "brand_line": "PT Satya Abadi Raya  ·  Engineering, Machining, Automation  ·  Karawang",
+  "domain": "satya-abadi.co.id"
+ }
+}
