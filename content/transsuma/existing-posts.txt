@@ -1,0 +1,5 @@
+# Artikel & landing page yang sudah ada di transsuma.com sebelum sistem otomatis (per 19 Nov 2026).
+# Satu URL per baris; topik tersirat dari slug. Jangan ulangi topik/keyword ini. Boleh dijadikan internal link.
+https://transsuma.com/mengapa-pengangkutan-limbah-b3-memerlukan-penanganan-profesional-dan-bersertifikasi/
+https://transsuma.com/inovasi-dan-teknologi-terbaru-dalam-jasa-pengangkutan-limbah-b3/
+https://transsuma.com/peran-vital-jasa-pengangkutan-limbah-b3-dalam-melindungi-lingkungan-dan-kesehatan-masyarakat/

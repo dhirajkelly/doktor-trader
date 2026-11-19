@@ -1,0 +1,31 @@
+{
+ "site": "https://transsuma.com",
+ "permalink": "slug",
+ "categories": [
+  "Regulasi Limbah B3",
+  "Pengangkutan & Manifest",
+  "Jenis & Karakteristik Limbah B3",
+  "K3 & Tanggap Darurat",
+  "Panduan Pengelolaan Limbah untuk Industri",
+  "Jasa Pengangkutan Limbah B3"
+ ],
+ "cover": {
+  "bg": [
+   16,
+   44,
+   34
+  ],
+  "accent": [
+   242,
+   183,
+   5
+  ],
+  "line": [
+   28,
+   64,
+   50
+  ],
+  "brand_line": "PT Transsuma Lestari Sejahtera  ·  Jasa Pengangkutan Limbah B3  ·  Karawang",
+  "domain": "transsuma.com"
+ }
+}
