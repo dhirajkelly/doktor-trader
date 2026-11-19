@@ -5,8 +5,8 @@ const SITE = {
   url: (process.env.SITE_URL || 'https://dhirajkelly.id').replace(/\/$/, ''),
   author: 'Dr. Dhiraj Kelly',
   brokerName: 'Dupoin',
-  brokerUrl: process.env.BROKER_URL || 'https://i.dupoin.vip/gSgaysBeR',
-  whatsapp: process.env.WHATSAPP || '628111282991',
+  brokerUrl: process.env.BROKER_URL || 'https://i.dupoin.vip/Xff2dFOFr',
+  whatsapp: process.env.WHATSAPP || '6285178956447',
   // Partner broker's legal entity (verified on dupoin.co.id/about-us/licenses, Nov 2026)
   brokerEntity: 'PT Dupoin Futures Indonesia',
   brokerLicense: 'Izin Bappebti No. 423/BAPPEBTI/SI/VII/2004 · Anggota JFX No. SPAB-064/BBJ/04/04',
