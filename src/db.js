@@ -113,6 +113,40 @@ CREATE TABLE IF NOT EXISTS events (
   path TEXT,
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
+CREATE TABLE IF NOT EXISTS case_studies (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  slug TEXT UNIQUE NOT NULL,
+  title TEXT NOT NULL,
+  instrument TEXT DEFAULT 'XAUUSD',
+  timeframe TEXT DEFAULT 'H1',
+  verdict TEXT DEFAULT 'entry',                 -- entry | skip
+  context_md TEXT,                              -- kondisi pasar
+  entry_md TEXT,                                -- kenapa entry (atau kenapa tidak)
+  sl_md TEXT,                                   -- di mana stop loss dan kenapa
+  tp_md TEXT,                                   -- target dan risk-reward
+  invalid_md TEXT,                              -- kapan setup batal
+  lesson_md TEXT,                               -- pelajaran
+  image_url TEXT,
+  is_illustration INTEGER DEFAULT 1,            -- 1 = ilustrasi edukasi, bukan data harga riil
+  published INTEGER DEFAULT 1,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE TABLE IF NOT EXISTS webinars (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  starts_at TEXT NOT NULL,                      -- waktu WIB, format YYYY-MM-DD HH:MM
+  description TEXT,
+  join_url TEXT,
+  replay_url TEXT,
+  published INTEGER DEFAULT 1,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE TABLE IF NOT EXISTS webinar_regs (
+  webinar_id INTEGER NOT NULL,
+  user_id INTEGER NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  PRIMARY KEY (webinar_id, user_id)
+);
 CREATE TABLE IF NOT EXISTS settings (
   key TEXT PRIMARY KEY,
   value TEXT
@@ -149,6 +183,9 @@ function migrate() {
   add('users', 'dupoin_uid', 'INTEGER');                   // UID in the Dupoin partner portal, once matched
   add('users', 'dupoin_check', "TEXT DEFAULT ''");         // last result of the referral check, shown in admin
   add('users', 'dupoin_checked_at', 'TEXT');
+  add('questions', 'ai_answer', 'TEXT');                   // jawaban otomatis asisten AI
+  add('questions', 'ai_status', "TEXT DEFAULT ''");        // ok | off | error
+  add('questions', 'ai_at', 'TEXT');
 }
 
 function saveNow() {

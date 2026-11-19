@@ -11,7 +11,7 @@ const readMin = (t) => Math.max(1, Math.round(String(t || '').split(/\s+/).lengt
 
 function cta() {
   return `<div class="card" style="margin:36px 0;border-color:rgba(233,196,106,.35)"><h3 style="margin:0 0 6px">Belajar lebih terarah, gratis</h3>
-<p class="muted" style="margin:0 0 14px">Academy, Tanya Doktor, EA, AI Signals, dan Copy Trade gratis untuk pemilik akun ${SITE.brokerName} yang dibuka lewat link resmi Doktor Trader. Tanpa biaya langganan; syaratnya membuka dan memverifikasi akun trading di ${SITE.brokerName}.</p>
+<p class="muted" style="margin:0 0 14px">Academy, Tanya Doktor (asisten AI), Analisa Doktor, Market Watch, EA, AI Signals, materi Copy Trade, dan webinar bulanan gratis untuk pemilik akun ${SITE.brokerName} yang dibuka lewat link resmi Doktor Trader. Tanpa biaya langganan; syaratnya membuka dan memverifikasi akun trading di ${SITE.brokerName}.</p>
 <div class="row"><a class="btn" href="/daftar">Daftar member gratis</a><a class="btn ghost" href="${esc(SITE.brokerUrl)}" target="_blank" rel="noopener sponsored">Buka akun ${SITE.brokerName}</a></div>
 <p class="dim" style="margin:12px 0 0;font-size:12px">${DISCLOSURE} ${SITE.brokerEntity}: ${SITE.brokerLicense}. Trading berisiko tinggi.</p></div>`;
 }

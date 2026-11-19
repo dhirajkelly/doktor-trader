@@ -15,6 +15,8 @@ const NAV = [
   ['/admin/academy', 'Academy', 'academy'],
   ['/admin/tanya', 'Tanya Doktor', 'tanya'],
   ['/admin/tools', 'EA · Signals · Copy', 'tools'],
+  ['/admin/analisa', 'Analisa Doktor', 'analisa'],
+  ['/admin/webinar', 'Webinar', 'webinar'],
 ];
 
 function page(req, res, { title, active, body }) {
@@ -36,13 +38,32 @@ const waLink = (n, text = '') => {
 router.get('/admin', (req, res) => {
   const c = (sql, p = []) => db.get(sql, p).n;
   const pending = db.all("SELECT * FROM users WHERE role = 'member' AND status = 'pending' ORDER BY id DESC LIMIT 8");
-  const openQ = c('SELECT COUNT(*) n FROM questions WHERE answer IS NULL');
+  const openQ = c('SELECT COUNT(*) n FROM questions WHERE answer IS NULL AND ai_answer IS NULL');
   const ev = (name, days = 30) => c(`SELECT COUNT(*) n FROM events WHERE name = ? AND created_at >= datetime('now', ?)`, [name, `-${days} days`]);
   const topPages = db.all("SELECT path, COUNT(*) n FROM events WHERE name='broker_click' AND created_at >= datetime('now','-30 days') GROUP BY path ORDER BY n DESC LIMIT 8");
   const held = db.all("SELECT id, title, review_notes FROM articles WHERE status='draft' AND COALESCE(review_notes,'') != '' ORDER BY id DESC LIMIT 20");
+  // Janji di video/landing vs yang benar-benar tersedia di website.
+  const today = new Date(Date.now() + 7 * 3600e3).toISOString().slice(0, 10);
+  const lessonsN = c('SELECT COUNT(*) n FROM lessons l JOIN courses k ON k.id = l.course_id WHERE l.published = 1 AND k.published = 1');
+  const casesN = c('SELECT COUNT(*) n FROM case_studies WHERE published = 1');
+  const lastCase = (db.get('SELECT MAX(created_at) m FROM case_studies WHERE published = 1') || {}).m;
+  const nextWeb = db.get('SELECT title, starts_at FROM webinars WHERE published = 1 AND starts_at >= ? ORDER BY starts_at LIMIT 1', [today]);
+  const lastWeb = (db.get('SELECT MAX(starts_at) m FROM webinars WHERE published = 1 AND starts_at < ?', [today]) || {}).m;
+  const copyLive = c("SELECT COUNT(*) n FROM tools WHERE kind = 'copytrade' AND published = 1 AND COALESCE(link_url,'') != ''");
+  const aiOn = require('../ai').enabled();
+  const P = [
+    ['Tanya Doktor = asisten AI, bisa ditanya kapan saja', aiOn, aiOn ? 'AI aktif' : 'ANTHROPIC_API_KEY belum diisi di server', '/admin/tanya'],
+    ['Doktor Academy 30 modul', lessonsN >= 30, `${lessonsN} materi tayang`, '/admin/academy'],
+    ['Analisa Doktor: studi kasus entry, SL, kapan batal', casesN > 0, `${casesN} studi kasus${lastCase ? ', terbaru ' + fmtDate(lastCase) : ''}`, '/admin/analisa'],
+    ['Webinar rutin (sebulan sekali)', Boolean(nextWeb), nextWeb ? 'Berikutnya: ' + esc(nextWeb.title) + ' · ' + esc(nextWeb.starts_at) + ' WIB' : 'Belum ada jadwal mendatang' + (lastWeb ? ' (terakhir ' + esc(lastWeb.slice(0, 10)) + ')' : ''), '/admin/webinar'],
+    ['Market Watch', true, 'Widget TradingView aktif', '/member/market'],
+    ['Copy Trade', true, copyLive ? 'Link copy strategi aktif' : 'Materi edukasi tersedia; copy strategi ditandai "segera" (sesuai janji)', '/admin/tools'],
+  ];
   page(req, res, {
     title: 'Ringkasan', active: 'home',
     body: `<h1>Ringkasan</h1>
+<h2 style="font-size:18px;margin-top:14px">Janji di video &amp; landing</h2>
+<div class="tablewrap card" style="padding:6px 14px;margin-bottom:8px"><table><tbody>${P.map(([k, ok, d, href]) => `<tr><td>${ok ? '<span class="pill ok">Terpenuhi</span>' : '<span class="pill bad">Belum</span>'}</td><td><strong>${k}</strong><div class="dim">${d}</div></td><td><a href="${href}">Kelola →</a></td></tr>`).join('')}</tbody></table></div>
 <div class="grid g3" style="margin:18px 0">
 <div class="card"><div class="dim">Member menunggu verifikasi</div><div class="stat">${c("SELECT COUNT(*) n FROM users WHERE role='member' AND status='pending'")}</div><a href="/admin/member?status=pending">Proses →</a></div>
 <div class="card"><div class="dim">Member aktif</div><div class="stat">${c("SELECT COUNT(*) n FROM users WHERE role='member' AND status='approved'")}</div><span class="dim">${c("SELECT COUNT(*) n FROM users WHERE role='member' AND created_at >= datetime('now','-7 days')")} daftar 7 hari terakhir</span></div>
@@ -403,15 +424,21 @@ router.post('/admin/academy/materi/:id/hapus', (req, res) => {
 
 // ---------- Tanya Doktor ----------
 router.get('/admin/tanya', (req, res) => {
-  const filter = req.query.semua ? '' : 'WHERE q.answer IS NULL';
+  const filter = req.query.semua ? '' : 'WHERE q.answer IS NULL AND q.ai_answer IS NULL';
   const rows = db.all(`SELECT q.*, u.name, u.whatsapp FROM questions q JOIN users u ON u.id = q.user_id ${filter} ORDER BY q.id DESC LIMIT 200`);
+  const aiOn = require('../ai').enabled();
+  const st = (db.get("SELECT SUM(ai_status='ok') ok, SUM(ai_status='error') err, SUM(ai_status='off') off FROM questions WHERE created_at >= datetime('now','-30 days')") || {});
   page(req, res, {
     title: 'Tanya Doktor', active: 'tanya',
-    body: `<div class="spread"><h1>Tanya Doktor</h1><a class="pill ${req.query.semua ? '' : 'gray'}" href="/admin/tanya${req.query.semua ? '' : '?semua=1'}">${req.query.semua ? 'Tampilkan yang belum dijawab' : 'Tampilkan semua'}</a></div>
+    body: `<div class="spread"><h1>Tanya Doktor</h1><a class="pill ${req.query.semua ? '' : 'gray'}" href="/admin/tanya${req.query.semua ? '' : '?semua=1'}">${req.query.semua ? 'Hanya yang perlu dijawab' : 'Tampilkan semua (tinjau jawaban AI)'}</a></div>
+${aiOn ? `<div class="alert ok">Asisten AI aktif. 30 hari terakhir: ${st.ok || 0} dijawab AI, ${st.err || 0} gagal (gagal = perlu dijawab manual).</div>`
+    : '<div class="alert bad">Asisten AI belum aktif: ANTHROPIC_API_KEY belum diisi di /etc/doktor-trader.env. Selama itu, setiap pertanyaan harus dijawab manual di sini, padahal landing & video menyebut Tanya Doktor sebagai asisten AI yang bisa ditanya kapan saja.</div>'}
+<p class="dim">Default: pertanyaan yang belum punya jawaban sama sekali. Jawaban AI bisa ditambah "Catatan Doktor" (koreksi/penegasan); catatan tampil di bawah jawaban AI.</p>
 ${rows.map((q) => `<div class="card" style="margin-bottom:14px"><div class="spread"><strong>${esc(q.topic || 'Pertanyaan')} · ${esc(q.name)}</strong><span class="dim">${fmtDate(q.created_at)}</span></div>
 <p style="white-space:pre-wrap">${esc(q.body)}</p>
-<form class="f" method="post" action="/admin/tanya/${q.id}">${csrfField(req.csrf)}<label>Jawaban (Markdown)</label><textarea name="answer" required>${esc(q.answer || '')}</textarea>
-<div class="row"><label class="row" style="font-weight:500"><input type="checkbox" name="is_public" value="1" ${q.is_public ? 'checked' : ''} style="width:auto;min-height:auto"> Tampilkan ke member lain (tanpa nama)</label><button class="btn sm">Simpan jawaban</button></div></form></div>`).join('') || '<p class="muted">Tidak ada pertanyaan yang menunggu.</p>'}`,
+${q.ai_answer ? `<details style="margin:8px 0"><summary class="dim" style="cursor:pointer">Jawaban AI (${fmtDate(q.ai_at)})</summary><div class="prose" style="font-size:15px;border-left:3px solid #7FA6FF;padding-left:12px">${md(q.ai_answer)}</div></details>` : `<p class="dim">${q.ai_status === 'error' ? 'AI gagal menjawab.' : 'Tanpa jawaban AI.'}</p>`}
+<form class="f" method="post" action="/admin/tanya/${q.id}">${csrfField(req.csrf)}<label>Catatan / jawaban Doktor (Markdown)</label><textarea name="answer" required>${esc(q.answer || '')}</textarea>
+<div class="row"><label class="row" style="font-weight:500"><input type="checkbox" name="is_public" value="1" ${q.is_public ? 'checked' : ''} style="width:auto;min-height:auto"> Tampilkan ke member lain (tanpa nama)</label><button class="btn sm">Simpan</button></div></form></div>`).join('') || '<p class="muted">Tidak ada pertanyaan yang menunggu.</p>'}`,
   });
 });
 router.post('/admin/tanya/:id', (req, res) => {
@@ -421,7 +448,7 @@ router.post('/admin/tanya/:id', (req, res) => {
 });
 
 // ---------- Tools ----------
-const KINDS = { ea: 'EA Trading', signal: 'AI Signals Premium', copytrade: 'Copy Trade' };
+const KINDS = { ea: 'EA Trading', signal: 'AI Signals', copytrade: 'Copy Trade' };
 router.get('/admin/tools', (req, res) => {
   const rows = db.all('SELECT * FROM tools ORDER BY kind, position, id');
   const form = (t = {}) => `<form class="f" method="post" action="/admin/tools/${t.id || 'baru'}">${csrfField(req.csrf)}
@@ -451,4 +478,5 @@ router.post('/admin/tools/:id/hapus', (req, res) => {
   res.redirect('/admin/tools');
 });
 
+router.page = page;
 module.exports = router;

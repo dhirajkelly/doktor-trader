@@ -318,6 +318,77 @@ const TOOLS = [
   ['copytrade', 'Copy Trade Doktor Trader', 'Ikuti posisi strategi Doktor Trader secara otomatis melalui fitur copy trading Dupoin, dengan pengaturan risiko yang bisa Anda tentukan sendiri. Link strategi segera tersedia di sini.', 'Copy trade tetap berisiko dan dapat mengalami drawdown. Gunakan dana yang siap Anda tanggung risikonya.', '', ''],
 ];
 
+
+const CASES = [
+  {
+    slug: 'pullback-ke-support-di-uptrend-h1', title: 'Pullback ke area support saat uptrend H1', instrument: 'XAUUSD', timeframe: 'H1', verdict: 'entry',
+    context_md: `Struktur H1 membentuk *higher high* dan *higher low* selama beberapa sesi. Harga menembus resistance lama di **2.410** (angka contoh), naik ke **2.428**, lalu turun kembali menguji area 2.408–2.412, yaitu bekas resistance yang sekarang diuji sebagai support. Tidak ada rilis data berdampak tinggi dalam 4 jam ke depan.`,
+    entry_md: `- Arah sesuai struktur besar (uptrend), jadi kita hanya mencari posisi **buy**.
+- Harga kembali ke level yang sudah teruji (*breakout–retest*), bukan mengejar harga di tengah.
+- Ada konfirmasi: candle H1 di area itu **ditutup** dengan ekor bawah panjang dan body di atas 2.410. Entry dilakukan setelah candle tutup, di sekitar **2.413**.`,
+    sl_md: `Stop loss di **2.403**, sedikit di bawah *swing low* terakhir (2.406) ditambah buffer untuk spread. Jarak SL = **$10**.
+Logikanya: kalau harga turun ke sana, ide "bekas resistance jadi support" sudah gagal. SL tidak diletakkan berdasarkan "berapa rugi yang saya mau", tapi di titik yang membuktikan analisa salah.`,
+    tp_md: `Target pertama di **2.428** (high sebelumnya), jarak $15 → risk-reward **1 : 1,5**. Target kedua di **2.433** (1 : 2).
+Ukuran lot dihitung dari risiko 1%: modal $1.000 → risiko $10 → $10 ÷ ($10 × 100 oz) = **0,01 lot**.`,
+    invalid_md: `- Candle H1 **ditutup** di bawah 2.405 sebelum entry terpicu → setup batal, tidak jadi entry.
+- Muncul jadwal rilis data besar (mis. NFP/CPI) dalam jendela posisi → setup dilewati.
+- Spread melebar tidak wajar → tunda entry.`,
+    lesson_md: `Setup yang baik punya tiga hal yang bisa ditulis sebelum klik buy: alasan entry, titik yang membatalkan ide (SL), dan ukuran posisi dari persentase risiko. Hasil satu posisi (TP atau SL) tidak menentukan setup itu benar atau salah; konsistensi prosesnya yang menentukan.`,
+  },
+  {
+    slug: 'breakout-palsu-di-resistance-kenapa-dilewati', title: 'Breakout di resistance yang dilewati: kenapa tidak ikut masuk', instrument: 'XAUUSD', timeframe: 'M15 → H1', verdict: 'skip',
+    context_md: `Harga mendekati resistance harian **2.450** (angka contoh) dengan dorongan cepat di M15. Satu candle M15 menembus ke 2.454, tapi candle H1 yang sama belum tutup. Volume pergerakan terjadi menjelang pergantian sesi.`,
+    entry_md: `Setup **dilewati**, karena:
+- Penembusan baru terjadi di M15; di H1 (timeframe rencana) candle belum ditutup di atas level.
+- Jarak dari level ke harga saat itu sudah jauh, jadi SL logis (di bawah 2.440) membuat jarak SL **$14**, sementara ruang ke target terdekat hanya sekitar $10. Risk-reward di bawah 1 : 1.
+- Mengejar harga yang sudah lari biasanya didorong FOMO, bukan rencana.`,
+    sl_md: `Seandainya tetap entry, SL yang masuk akal ada di bawah 2.440 (di bawah area breakout). Karena jaraknya terlalu lebar dibanding target, posisi ini tidak memenuhi syarat rencana.`,
+    tp_md: `Target terdekat di area 2.464 hanya memberi ±$10 dari harga kejar. Dengan SL $14, risk-reward ≈ **1 : 0,7**, di bawah syarat minimal 1 : 1,5.`,
+    invalid_md: `Rencana baru dibuat **hanya jika** candle H1 tutup di atas 2.450 lalu harga kembali menguji level itu (retest). Kalau H1 tutup kembali di bawah 2.450, breakout dianggap gagal (*false breakout*) dan tidak ada setup buy.`,
+    lesson_md: `Melewatkan setup juga keputusan trading. Aturan sederhana seperti "tunggu candle timeframe rencana tutup" dan "risk-reward minimal 1 : 1,5" menyaring banyak entry impulsif.`,
+  },
+  {
+    slug: 'setup-menjelang-rilis-nfp-kenapa-ditunda', title: 'Setup bagus menjelang rilis NFP: kenapa ditunda', instrument: 'XAUUSD', timeframe: 'H1', verdict: 'skip',
+    context_md: `Struktur H1 sebenarnya rapi: harga memantul dari support dan membentuk pola pembalikan kecil. Masalahnya, data **Non-Farm Payrolls (NFP)** AS dijadwalkan rilis 40 menit lagi (cek jam rilis di kalender ekonomi, biasanya malam hari WIB).`,
+    entry_md: `Setup **ditunda**. Menjelang dan saat rilis data besar, spread emas bisa melebar dan harga bisa bergerak beberapa dolar dalam hitungan detik. Analisa teknikal yang rapi bisa "dihapus" oleh satu candle berita.`,
+    sl_md: `Saat rilis, harga bisa melompati level SL (*slippage*), sehingga rugi aktual bisa lebih besar dari rencana 1%. Ini risiko yang tidak bisa dikontrol dengan menaruh SL saja.`,
+    tp_md: `Tidak relevan, karena setup tidak diambil. Kalau setelah rilis struktur yang sama masih valid dan spread kembali normal, setup dievaluasi ulang dari awal dengan level baru.`,
+    invalid_md: `- Ada rilis data berdampak tinggi dalam ±1 jam → tidak membuka posisi baru.
+- Setelah rilis, candle H1 menembus support → setup lama batal sepenuhnya.`,
+    lesson_md: `Cek kalender ekonomi (ada di menu Market Watch) sebelum entry adalah bagian dari manajemen risiko, sama pentingnya dengan menghitung lot.`,
+  },
+];
+
+const COPYTRADE_LESSON = ['Copy Trade: Cara Kerja dan Risikonya', 9, `Copy trade (copy trading) adalah fitur yang menyalin posisi seorang trader lain (sering disebut *master*, *provider*, atau *strategi*) ke akun Anda secara otomatis. Ketika master membuka posisi, akun Anda ikut membuka posisi serupa dengan ukuran yang disesuaikan pengaturan Anda.
+
+## Cara kerjanya secara umum
+1. Anda memilih strategi yang mau disalin di platform yang menyediakan fitur copy trading.
+2. Anda menentukan **dana yang dialokasikan** dan **metode ukuran posisi** (misalnya proporsional terhadap ekuitas, atau lot tetap).
+3. Setiap posisi master tersalin ke akun Anda, termasuk penutupannya. Hasil akun Anda bisa berbeda dari master karena perbedaan modal, spread, dan waktu eksekusi.
+
+## Risiko yang sering diremehkan
+- **Drawdown master = drawdown Anda.** Kalau strategi rugi 30%, alokasi Anda juga bisa turun dengan persentase serupa.
+- **Riwayat bagus tidak menjamin ke depan.** Strategi grid/martingale bisa terlihat mulus berbulan-bulan lalu habis dalam satu pergerakan besar.
+- **Perbedaan eksekusi.** Selisih harga dan spread membuat hasil Anda tidak identik dengan master.
+- **Anda tetap pemilik risiko.** Copy trade bukan pengelolaan dana; keputusan memakai, menghentikan, dan mengatur risiko ada di tangan Anda.
+
+## Checklist sebelum menyalin strategi
+| Cek | Kenapa penting |
+|---|---|
+| Drawdown maksimum dan lamanya | Menunjukkan seberapa dalam dan lama akun bisa tertekan |
+| Gaya strategi (grid, martingale, scalping, swing) | Grid/martingale berisiko habis dalam satu kejadian |
+| Panjang riwayat (minimal beberapa bulan) | Riwayat pendek belum teruji di berbagai kondisi |
+| Ukuran lot relatif terhadap ekuitas | Lot besar = risiko per posisi besar |
+| Biaya (komisi/bagi hasil) | Mengurangi hasil bersih |
+
+## Cara memakai dengan aman
+- Mulai dari alokasi kecil yang siap Anda tanggung risikonya, idealnya uji di akun demo atau cent dulu.
+- Pasang batas rugi pada alokasi copy (jika platform menyediakan *stop copy* atau *equity stop*).
+- Evaluasi bulanan: kalau perilaku strategi berubah (lot membesar, posisi menumpuk), hentikan dulu.
+- Jangan pernah memakai dana kebutuhan pokok, dana darurat, atau uang pinjaman.
+
+Di Doktor Trader, menu **Copy Trade** dipakai sebagai bahan belajar. Akses menyalin strategi Doktor Trader sendiri **belum tersedia** dan akan diumumkan di menu tersebut bila sudah siap. Kinerja masa lalu tidak menjamin hasil di masa depan.`];
+
 function seed() {
   if (!db.get('SELECT id FROM courses LIMIT 1')) {
     COURSES.forEach((c, ci) => {
@@ -394,6 +465,35 @@ function seed() {
     db.run("UPDATE tools SET title = REPLACE(title, 'Vantage', 'Dupoin'), description = REPLACE(description, 'Vantage', 'Dupoin'), risk_note = REPLACE(risk_note, 'Vantage', 'Dupoin') WHERE title LIKE '%Vantage%' OR description LIKE '%Vantage%' OR risk_note LIKE '%Vantage%'");
     db.setSetting('broker_dupoin', '1');
     console.log('[seed] broker -> Dupoin');
+  }
+  // v3 (Nov 2026): klaim video Doktor Trader harus bisa dibuktikan di website.
+  if (db.setting('promise_v3') !== '1') {
+    CASES.forEach((c) => {
+      if (db.get('SELECT id FROM case_studies WHERE slug = ?', [c.slug])) return;
+      db.run(`INSERT INTO case_studies(slug, title, instrument, timeframe, verdict, context_md, entry_md, sl_md, tp_md, invalid_md, lesson_md, is_illustration, published)
+        VALUES(?,?,?,?,?,?,?,?,?,?,?,1,1)`, [c.slug, c.title, c.instrument, c.timeframe, c.verdict, c.context_md, c.entry_md, c.sl_md, c.tp_md, c.invalid_md, c.lesson_md]);
+    });
+    // Materi Copy Trade di kelas "Evaluasi & Naik Level" (atau kelas terakhir bila sudah diganti nama)
+    const course = db.get("SELECT id FROM courses WHERE slug = 'evaluasi-naik-level'") || db.get('SELECT id FROM courses ORDER BY position DESC, id DESC LIMIT 1');
+    if (course && !db.get("SELECT id FROM lessons WHERE slug = 'copy-trade-cara-kerja-dan-risikonya'")) {
+      const pos = (db.get('SELECT MAX(position) m FROM lessons WHERE course_id = ?', [course.id]) || {}).m || 0;
+      db.run('INSERT INTO lessons(course_id, slug, title, video_url, body_md, duration_min, position, published) VALUES(?,?,?,?,?,?,?,1)',
+        [course.id, 'copy-trade-cara-kerja-dan-risikonya', COPYTRADE_LESSON[0], '', COPYTRADE_LESSON[2], COPYTRADE_LESSON[1], pos + 1]);
+    }
+    // Kartu Copy Trade: jujur bahwa copy strategi belum tersedia; arahkan ke materinya.
+    db.run(`UPDATE tools SET title = 'Copy Trade: materi & akses strategi (segera)',
+      description = ?, link_url = '/member/academy/evaluasi-naik-level/copy-trade-cara-kerja-dan-risikonya', link_label = 'Pelajari cara kerja & risikonya'
+      WHERE kind = 'copytrade' AND COALESCE(link_url, '') = ''`,
+      ['Pelajari dulu cara kerja copy trade, risiko drawdown, dan checklist memilih strategi di materi Academy.\n\n**Akses menyalin strategi Doktor Trader: segera hadir.** Link akan dipasang di sini setelah strategi siap; sampai saat itu belum ada strategi yang bisa disalin dari Doktor Trader.']);
+    // AI Signals: indikator berbasis aturan + Bedah Setup dengan Asisten AI.
+    if (!db.get("SELECT id FROM tools WHERE link_url LIKE '/member/tanya%'")) {
+      db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', ['signal', 'Bedah Setup AI',
+        'Ceritakan setup yang sedang kamu pantau atau yang muncul dari DT Smart Signal: instrumen, timeframe, alasan entry, letak stop loss, target, dan modal. Asisten AI menilai prosesnya: apakah SL di titik yang membatalkan ide, berapa risk-reward, ukuran lot untuk risiko 1%, dan apakah ada rilis berita yang perlu dihindari.\n\nAI tidak menebak arah harga dan tidak memberi perintah buy/sell.',
+        'Bahan analisa, bukan rekomendasi. Keputusan dan risiko tetap di tanganmu.', '/member/tanya?topik=Bedah%20setup', 'Bedah setup dengan AI', 0]);
+    }
+    db.run("UPDATE tools SET title = 'DT Smart Signal: indikator sinyal XAUUSD (berbasis aturan)' WHERE title = 'DT Smart Signal: indikator sinyal XAUUSD'");
+    db.setSetting('promise_v3', '1');
+    console.log('[seed] promise v3: analisa, materi copy trade, kartu tools');
   }
 }
 

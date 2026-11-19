@@ -24,7 +24,7 @@ function privacy() {
 <h2>2. Tujuan pemrosesan</h2>
 <ul>
 <li>Memverifikasi bahwa akun ${SITE.brokerName} Anda dibuka melalui link referral Doktor Trader, lalu mengaktifkan akses member.</li>
-<li>Menyediakan layanan member: Academy, Tanya Doktor, unduhan alat, dan informasi acara.</li>
+<li>Menyediakan layanan member: Academy, Tanya Doktor, Analisa Doktor, Market Watch, unduhan alat, dan pendaftaran webinar.</li>
 <li>Menghubungi Anda lewat WhatsApp atau email terkait akun dan layanan member.</li>
 <li>Menjaga keamanan situs dan mencegah penyalahgunaan.</li>
 <li>Mengukur halaman mana yang membantu pengunjung, secara agregat.</li>
@@ -36,6 +36,8 @@ function privacy() {
 <ul>
 <li><strong>${SITE.brokerEntity}</strong>: kami mencocokkan email atau nomor akun yang Anda berikan dengan data referral yang tersedia bagi kami sebagai mitra, semata untuk verifikasi keanggotaan.</li>
 <li><strong>Penyedia infrastruktur</strong>: situs dihosting di server virtual milik penyedia cloud di Indonesia. Halaman memuat font dari Google Fonts dan video materi dari YouTube (mode privasi ditingkatkan), sehingga alamat IP Anda dapat terlihat oleh penyedia tersebut saat halaman dimuat.</li>
+<li><strong>Penyedia AI (Anthropic)</strong>: teks pertanyaan yang Anda kirim di Tanya Doktor diproses oleh layanan AI Anthropic untuk menghasilkan jawaban otomatis. Nama, email, dan nomor WhatsApp Anda tidak ikut dikirim. Jangan menulis data pribadi atau data akun di pertanyaan.</li>
+<li><strong>TradingView</strong>: halaman Market Watch memuat widget pasar dari TradingView, sehingga alamat IP Anda dapat terlihat oleh TradingView saat halaman itu dibuka.</li>
 <li><strong>Kewajiban hukum</strong>: bila diminta oleh otoritas yang berwenang sesuai peraturan perundang-undangan.</li>
 </ul>
 
@@ -98,6 +100,7 @@ function terms() {
 <p>${SITE.author} memegang: ${SITE.credentials.join('; ')}; serta ${c.title} di bidang ${c.field} (No. Sertifikat ${c.number}, No. Reg. ${c.reg}) yang diterbitkan ${c.issuer} atas nama BNSP pada ${c.issued}, berlaku hingga ${c.validUntil}. Izin dan sertifikat tersebut melekat pada pribadi penulis. Doktor Trader adalah layanan edukasi, bukan manajer investasi, penasihat berjangka, atau jasa pengelolaan dana.</p>
 
 <h2>6. EA, sinyal, dan Copy Trade</h2>
+<p>Jawaban Tanya Doktor dibuat otomatis oleh asisten AI berdasarkan materi Academy. Jawaban AI bisa keliru atau tidak lengkap, bukan nasihat atau rekomendasi transaksi pribadi, dan dapat dilengkapi catatan dari tim Doktor. "AI Signals" terdiri dari indikator berbasis aturan teknikal dan fitur Bedah Setup oleh asisten AI; keduanya tidak memprediksi arah harga. Menu Copy Trade saat ini berisi materi belajar; akses menyalin strategi Doktor Trader belum tersedia dan akan diumumkan di menu tersebut.</p>
 <p>Alat otomatis dan sinyal disediakan apa adanya untuk pembelajaran. Hasilnya dapat berbeda karena spread, slippage, latensi, dan spesifikasi akun. Uji terlebih dahulu di akun demo. Anda bertanggung jawab penuh atas penggunaannya di akun riil.</p>
 
 <h2>7. Hak kekayaan intelektual</h2>

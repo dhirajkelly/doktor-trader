@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const db = require('../db');
 const auth = require('../auth');
+const ai = require('../ai');
 const { layout, esc, md, flash, csrfField, sideNav, fmtDate, SITE } = require('../views');
 
 const router = express.Router();
@@ -9,8 +10,11 @@ const router = express.Router();
 const NAV = [
   ['/member', 'Dashboard', 'home'],
   ['/member/academy', 'Academy', 'academy'],
-  ['/member/tanya', 'Tanya Doktor', 'tanya'],
-  ['/member/tools', 'EA · Signals · Copy Trade', 'tools'],
+  ['/member/tanya', 'Tanya Doktor (AI)', 'tanya'],
+  ['/member/analisa', 'Analisa Doktor', 'analisa'],
+  ['/member/market', 'Market Watch', 'market'],
+  ['/member/tools', 'EA · AI Signals · Copy Trade', 'tools'],
+  ['/member/webinar', 'Webinar bulanan', 'webinar'],
   ['/member/akun', 'Akun', 'akun'],
 ];
 
@@ -70,21 +74,29 @@ router.get('/member', (req, res) => {
 <div class="grid g3" style="margin:20px 0">
 <div class="card"><div class="dim">Progress Academy</div><div class="stat">${done}/${total}</div><div class="bar"><i style="width:${total ? Math.round((done / total) * 100) : 0}%"></i></div></div>
 <div class="card"><div class="dim">Pertanyaan ke Doktor</div><div class="stat">${qs.length ? db.get('SELECT COUNT(*) n FROM questions WHERE user_id=?', [req.user.id]).n : 0}</div><a href="/member/tanya">Tanya sekarang →</a></div>
-<div class="card"><div class="dim">Status</div><div class="stat" style="font-size:20px;margin:6px 0"><span class="pill ok">Member terverifikasi</span></div><a href="/member/tools">Buka EA, Signals &amp; Copy Trade →</a></div>
+<div class="card"><div class="dim">Status</div><div class="stat" style="font-size:20px;margin:6px 0"><span class="pill ok">Member terverifikasi</span></div><a href="/member/tools">Buka EA, AI Signals &amp; Copy Trade →</a></div>
 </div>
+<div class="row" style="margin-bottom:18px"><a class="btn ghost sm" href="/member/analisa">Analisa Doktor</a><a class="btn ghost sm" href="/member/market">Market Watch</a><a class="btn ghost sm" href="/member/webinar">Webinar bulanan</a><a class="btn ghost sm" href="/alat/kalkulator-lot">Kalkulator lot</a></div>
 ${next ? `<div class="card spread"><div><div class="dim">Lanjutkan belajar</div><strong>${esc(next.ctitle)} · ${esc(next.title)}</strong></div><a class="btn" href="/member/academy/${esc(next.cslug)}/${esc(next.slug)}">Mulai materi</a></div>` : (total ? '<div class="alert ok">Semua materi Academy sudah selesai. Mantap!</div>' : '')}
-${qs.length ? `<h2 style="margin-top:28px">Pertanyaan terakhirmu</h2>${qs.map((q) => `<div class="card" style="margin-bottom:10px"><div class="spread"><strong>${esc(q.topic || 'Pertanyaan')}</strong>${q.answer ? '<span class="pill ok">Dijawab</span>' : '<span class="pill gray">Menunggu jawaban</span>'}</div><p class="muted" style="margin:6px 0 0">${esc(q.body.slice(0, 180))}</p></div>`).join('')}` : ''}`,
+${qs.length ? `<h2 style="margin-top:28px">Pertanyaan terakhirmu</h2>${qs.map((q) => `<div class="card" style="margin-bottom:10px"><div class="spread"><strong>${esc(q.topic || 'Pertanyaan')}</strong>${(q.answer || q.ai_answer) ? '<span class="pill ok">Dijawab</span>' : '<span class="pill gray">Menunggu jawaban</span>'}</div><p class="muted" style="margin:6px 0 0">${esc(q.body.slice(0, 180))}</p></div>`).join('')}` : ''}`,
   });
 });
 
+// Dua jalur belajar: pemula (fondasi → risiko → psikologi) dan trader yang sudah jalan.
+const TRACK_PRO = new Set(['Menengah', 'Lanjutan', 'Mahir']);
 router.get('/member/academy', (req, res) => {
   const courses = courseProgress(req.user.id);
+  const card = (c) => `<a class="card" href="/member/academy/${esc(c.slug)}" style="text-decoration:none;color:inherit">
+<span class="pill">${esc(c.level)}</span><h3 style="margin:10px 0 6px">${esc(c.title)}</h3><p class="muted" style="margin:0 0 12px">${esc(c.summary || '')}</p>
+<div class="spread dim"><span>${c.done}/${c.total} materi</span><span>${c.total ? Math.round((c.done / c.total) * 100) : 0}%</span></div><div class="bar"><i style="width:${c.total ? Math.round((c.done / c.total) * 100) : 0}%"></i></div></a>`;
+  const beg = courses.filter((c) => !TRACK_PRO.has(c.level));
+  const pro = courses.filter((c) => TRACK_PRO.has(c.level));
+  const total = courses.reduce((a, c) => a + c.total, 0);
   page(req, res, {
     title: 'Academy', active: 'academy',
-    body: `<h1>Academy</h1><p class="muted">Kurikulum bertahap dari dasar sampai evaluasi. Tandai materi yang sudah selesai untuk melacak progresmu.</p>
-${courses.length ? `<div class="grid g2" style="margin-top:18px">${courses.map((c) => `<a class="card" href="/member/academy/${esc(c.slug)}" style="text-decoration:none;color:inherit">
-<span class="pill">${esc(c.level)}</span><h3 style="margin:10px 0 6px">${esc(c.title)}</h3><p class="muted" style="margin:0 0 12px">${esc(c.summary || '')}</p>
-<div class="spread dim"><span>${c.done}/${c.total} materi</span><span>${c.total ? Math.round((c.done / c.total) * 100) : 0}%</span></div><div class="bar"><i style="width:${c.total ? Math.round((c.done / c.total) * 100) : 0}%"></i></div></a>`).join('')}</div>` : '<div class="alert">Materi Academy sedang disiapkan.</div>'}`,
+    body: `<h1>Doktor Academy</h1><p class="muted">${total} materi dalam ${courses.length} kelas, disusun Dr. Dhiraj Kelly dari dasar sampai manajemen risiko dan evaluasi. Tandai materi yang sudah selesai untuk melacak progresmu.</p>
+${courses.length ? `<h2 style="margin-top:22px">Jalur Pemula</h2><p class="dim">Mulai dari sini, urut dari atas: fondasi, manajemen risiko, lalu psikologi.</p><div class="grid g2" style="margin-top:12px">${beg.map(card).join('')}</div>
+${pro.length ? `<h2 style="margin-top:28px">Jalur Trader yang Sudah Jalan</h2><p class="dim">Untuk yang sudah paham dasar: strategi emas, fundamental & berita, evaluasi. Lengkapi dengan <a href="/member/analisa">Analisa Doktor</a>, <a href="/member/market">Market Watch</a>, dan <a href="/member/tools">EA · AI Signals · Copy Trade</a>.</p><div class="grid g2" style="margin-top:12px">${pro.map(card).join('')}</div>` : ''}` : '<div class="alert">Materi Academy sedang disiapkan.</div>'}`,
   });
 });
 
@@ -131,33 +143,53 @@ router.post('/member/academy/:course/:lesson/selesai', (req, res, next) => {
   res.redirect(`/member/academy/${req.params.course}/${req.params.lesson}`);
 });
 
+const TOPICS = ['Istilah & konsep', 'Manajemen risiko', 'Skenario risiko / hitung lot', 'Bedah setup', 'Psikologi', 'Analisa teknikal', 'Fundamental & berita', 'Akun & platform', 'Lainnya'];
+const lessonLinks = (ls) => ls.length ? `<div class="dim" style="margin-top:10px">Materi terkait: ${ls.map((l) => `<a href="/member/academy/${esc(l.cslug)}/${esc(l.slug)}">${esc(l.title)}</a>`).join(' · ')}</div>` : '';
+function answerBlock(q, mineFlag) {
+  let h = '';
+  if (q.ai_answer) h += `<div style="border-left:3px solid #7FA6FF;padding:4px 14px;margin-top:10px"><div class="dim">Jawaban Asisten AI · otomatis · ${fmtDate(q.ai_at)}</div><div class="prose" style="font-size:15px">${md(q.ai_answer)}</div></div>`;
+  if (q.answer) h += `<div style="border-left:3px solid var(--gold);padding:4px 14px;margin-top:10px"><div class="dim">Catatan Doktor · ${fmtDate(q.answered_at)}</div><div class="prose" style="font-size:15px">${md(q.answer)}</div></div>`;
+  if (!q.ai_answer && !q.answer && mineFlag) {
+    h += `<div class="alert" style="margin-top:10px">Asisten AI sedang tidak tersedia, jadi pertanyaan ini diteruskan ke tim Doktor dan akan dijawab di halaman ini.${lessonLinks(ai.relatedLessons(q.body + ' ' + (q.topic || '')))}</div>`;
+  }
+  return h;
+}
+
 router.get('/member/tanya', (req, res) => {
-  const mine = db.all('SELECT * FROM questions WHERE user_id = ? ORDER BY id DESC', [req.user.id]);
+  const mine = db.all('SELECT * FROM questions WHERE user_id = ? ORDER BY id DESC LIMIT 30', [req.user.id]);
   const pub = db.all('SELECT * FROM questions WHERE is_public = 1 AND answer IS NOT NULL AND user_id != ? ORDER BY answered_at DESC LIMIT 15', [req.user.id]);
+  const pre = TOPICS.includes(req.query.topik) ? req.query.topik : '';
   const qcard = (q, mineFlag) => `<div class="card" style="margin-bottom:12px"><div class="spread"><strong>${esc(q.topic || 'Pertanyaan')}</strong><span class="dim">${fmtDate(q.created_at)}</span></div>
-<p style="white-space:pre-wrap;margin:8px 0">${esc(q.body)}</p>
-${q.answer ? `<div style="border-left:3px solid var(--gold);padding:4px 14px;margin-top:10px"><div class="dim">Jawaban Doktor · ${fmtDate(q.answered_at)}</div><div class="prose" style="font-size:15px">${md(q.answer)}</div></div>` : (mineFlag ? '<span class="pill gray">Menunggu jawaban</span>' : '')}</div>`;
+<p style="white-space:pre-wrap;margin:8px 0">${esc(q.body)}</p>${answerBlock(q, mineFlag)}</div>`;
+  const status = ai.enabled()
+    ? '<span class="pill ok">Asisten AI aktif 24 jam</span>'
+    : '<span class="pill gray">Asisten AI sedang offline · pertanyaan dijawab tim Doktor</span>';
   page(req, res, {
     title: 'Tanya Doktor', active: 'tanya',
-    body: `<h1>Tanya Doktor</h1><p class="muted">Tanyakan apa saja seputar belajar trading, manajemen risiko, atau evaluasi jurnalmu. Jawaban bersifat edukasi, bukan rekomendasi transaksi.</p>
-${flash(req.query.ok ? 'Pertanyaan terkirim. Kamu akan melihat jawabannya di halaman ini.' : '', 'ok')}
-<form class="f card" method="post" action="/member/tanya" style="margin-bottom:28px">${csrfField(req.csrf)}
-<label for="topic">Topik</label><select id="topic" name="topic"><option>Dasar trading</option><option>Manajemen risiko</option><option>Psikologi</option><option>Analisa teknikal</option><option>Akun &amp; platform</option><option>Lainnya</option></select>
-<label for="body">Pertanyaan</label><textarea id="body" name="body" required maxlength="3000" placeholder="Ceritakan konteksnya: instrumen, timeframe, kondisi akun, apa yang sudah dicoba..."></textarea>
+    body: `<div class="spread"><h1>Tanya Doktor</h1>${status}</div>
+<p class="muted">Tanya istilah, konsep, sampai skenario risiko kapan saja. Asisten AI menjawab langsung berdasarkan materi Doktor Academy; untuk <b>Bedah setup</b>, ceritakan alasan entry, letak stop loss, target, dan modalmu, lalu AI menilai prosesnya (bukan menebak arah harga). Jawaban bersifat edukasi, bukan rekomendasi transaksi.</p>
+${flash(req.query.ok ? 'Pertanyaan terkirim.' : req.query.lim ? 'Batas 20 pertanyaan per hari tercapai. Coba lagi besok.' : '', req.query.lim ? 'bad' : 'ok')}
+<form class="f card" method="post" action="/member/tanya" style="margin-bottom:28px" onsubmit="var b=this.querySelector('button');b.disabled=true;b.textContent='Asisten AI sedang menjawab…'">${csrfField(req.csrf)}
+<label for="topic">Topik</label><select id="topic" name="topic">${TOPICS.map((t) => `<option${t === pre ? ' selected' : ''}>${esc(t)}</option>`).join('')}</select>
+<label for="body">Pertanyaan</label><textarea id="body" name="body" required maxlength="3000" placeholder="Contoh: Modal $500, mau entry XAUUSD dengan SL $6. Berapa lot supaya risikonya 1%? Atau: apa beda margin call dan stop out?"></textarea>
 <button class="btn" type="submit">Kirim pertanyaan</button></form>
 ${mine.length ? `<h2>Pertanyaanmu</h2>${mine.map((q) => qcard(q, true)).join('')}` : ''}
-${pub.length ? `<h2 style="margin-top:28px">Tanya jawab member lain</h2>${pub.map((q) => qcard(q, false)).join('')}` : ''}`,
+${pub.length ? `<h2 style="margin-top:28px">Tanya jawab pilihan Doktor</h2>${pub.map((q) => qcard(q, false)).join('')}` : ''}`,
   });
 });
 
-router.post('/member/tanya', (req, res) => {
-  const body = String((req.body || {}).body || '').trim().slice(0, 3000);
-  const topic = String((req.body || {}).topic || '').slice(0, 60);
-  if (body.length < 5) return res.redirect('/member/tanya');
-  if (!auth.rateLimit('q:' + req.user.id, 10, 86400e3)) return res.status(429).send('Batas 10 pertanyaan per hari.');
-  db.run('INSERT INTO questions(user_id, topic, body) VALUES(?, ?, ?)', [req.user.id, topic, body]);
-  db.log(req.user.id, 'question', topic);
-  res.redirect('/member/tanya?ok=1');
+router.post('/member/tanya', async (req, res, next) => {
+  try {
+    const body = String((req.body || {}).body || '').trim().slice(0, 3000);
+    const topic = TOPICS.includes((req.body || {}).topic) ? req.body.topic : 'Lainnya';
+    if (body.length < 5) return res.redirect('/member/tanya');
+    if (!auth.rateLimit('q:' + req.user.id, 20, 86400e3)) return res.redirect('/member/tanya?lim=1');
+    const id = db.run('INSERT INTO questions(user_id, topic, body) VALUES(?, ?, ?)', [req.user.id, topic, body]).lastInsertRowid;
+    db.log(req.user.id, 'question', topic);
+    const r = await ai.answer(body, topic);
+    db.run("UPDATE questions SET ai_answer = ?, ai_status = ?, ai_at = CASE WHEN ? IS NULL THEN NULL ELSE datetime('now') END WHERE id = ?", [r.text, r.status, r.text, id]);
+    res.redirect('/member/tanya?ok=1');
+  } catch (e) { next(e); }
 });
 
 
@@ -192,13 +224,14 @@ h+='</p>';if(lot<=0)h='<div class="stat" style="color:var(--red)">Terlalu besar<
 out.innerHTML=h;}
 document.getElementById('lotcalc').addEventListener('input',calc);calc();})();</script>`;
 
-const KINDS = { ea: 'EA Trading', signal: 'AI Signals Premium', copytrade: 'Copy Trade' };
+const KINDS = { ea: 'EA Trading', signal: 'AI Signals', copytrade: 'Copy Trade' };
 router.get('/member/tools', (req, res) => {
   const tools = db.all('SELECT * FROM tools WHERE published = 1 ORDER BY kind, position, id');
   page(req, res, {
     title: 'EA, AI Signals & Copy Trade', active: 'tools',
     body: `<h1>EA · AI Signals · Copy Trade</h1>
-<div class="alert">Semua tools di bawah adalah alat bantu. Selalu uji di akun demo dulu, gunakan ukuran posisi kecil, dan pahami bahwa kinerja masa lalu tidak menjamin hasil di masa depan.</div>
+<p class="muted">EA dan indikator bisa diunduh langsung. <b>AI Signals</b> = indikator sinyal berbasis aturan teknikal (DT Smart Signal) ditambah Bedah Setup oleh Asisten AI. <b>Copy Trade</b> saat ini berupa materi belajar; akses menyalin strategi Doktor Trader segera hadir.</p>
+<div class="alert">Semua tools di bawah adalah alat bantu belajar. Selalu uji di akun demo dulu, gunakan ukuran posisi kecil, dan pahami bahwa kinerja masa lalu tidak menjamin hasil di masa depan.</div>
 ${Object.entries(KINDS).map(([k, label]) => {
     const list = tools.filter((t) => t.kind === k);
     return `<h2 style="margin-top:24px">${label}</h2>${list.length ? `<div class="grid g2">${list.map((t) => `<div class="card"><h3>${esc(t.title)}</h3><div class="prose" style="font-size:15px">${md(t.description)}</div>
@@ -227,4 +260,6 @@ router.post('/member/akun/password', (req, res) => {
   res.redirect('/member/akun?ok=1');
 });
 
+router.NAV = NAV;
+router.page = page;
 module.exports = router;
