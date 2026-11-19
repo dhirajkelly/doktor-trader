@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-19T21:22:46Z",
+ "generated": "2026-11-19T21:23:47Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -522,6 +522,49 @@
     {
      "q": "Apakah perlu memeriksa status pemilik unit?",
      "a": "Perlu. Minta identitas pemilik dan bukti kepemilikan atau kuasa sewa. Bila yang menyewakan bukan pemilik, pastikan ada surat kuasa yang sah agar kontrak Anda tidak bermasalah di kemudian hari."
+    }
+   ]
+  },
+  {
+   "id": "cek-pbb-sebelum-beli-rumah",
+   "slug": "cek-pbb-sebelum-beli-rumah",
+   "title": "Cek PBB Sebelum Beli Rumah: Cara, Dokumen, dan Risiko Tunggakan",
+   "publish_at_wib": "2026-11-20 19:00",
+   "publish_at_utc": "2026-11-20T12:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/20/cek-pbb-sebelum-beli-rumah/",
+   "html": "html/cek-pbb-sebelum-beli-rumah.html",
+   "image": "img/cek-pbb-sebelum-beli-rumah.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang cara cek PBB sebelum beli rumah",
+   "excerpt": "Panduan cek PBB sebelum beli rumah: cara membaca SPPT, dokumen yang perlu diminta, risiko tunggakan, dan cara mengaturnya dalam kesepakatan.",
+   "meta_title": "Cek PBB Sebelum Beli Rumah: Cara dan Risikonya",
+   "meta_description": "Kenapa perlu cek PBB sebelum beli rumah? Pelajari cara membaca SPPT, dokumen yang diminta, risiko tunggakan, dan cara mengaturnya dalam kesepakatan.",
+   "focus_keyword": "cek pbb sebelum beli rumah",
+   "categories": [
+    "Panduan & Edukasi Agen",
+    "Jual • Beli • Sewa"
+   ],
+   "tags": [
+    "pbb",
+    "sppt pbb",
+    "njop",
+    "beli rumah bekas"
+   ],
+   "faq": [
+    {
+     "q": "Kenapa PBB perlu dicek sebelum membeli rumah?",
+     "a": "Untuk memastikan tidak ada tunggakan yang akan merepotkan proses transaksi atau menjadi beban pembeli, sekaligus mencocokkan data objek pajak dengan sertifikat dan kondisi fisik rumah."
+    },
+    {
+     "q": "Dokumen PBB apa yang perlu diminta dari penjual?",
+     "a": "Minta SPPT PBB tahun berjalan dan bukti pembayaran beberapa tahun terakhir. Dokumen ini juga umumnya dibutuhkan PPAT saat menyiapkan akta jual beli."
+    },
+    {
+     "q": "Siapa yang menanggung PBB tahun berjalan saat rumah dijual?",
+     "a": "Tidak ada satu aturan baku untuk pembagiannya antara penjual dan pembeli; biasanya disepakati para pihak. Yang penting, tuliskan kesepakatan itu dengan jelas di perjanjian."
+    },
+    {
+     "q": "Apa yang harus dilakukan kalau data SPPT berbeda dengan sertifikat?",
+     "a": "Jangan diabaikan. Tanyakan penyebabnya ke penjual dan konsultasikan dengan PPAT. Perbedaan luas atau nama perlu diluruskan melalui instansi pengelola PBB di daerah setempat sebelum atau bersamaan dengan proses transaksi."
     }
    ]
   }
