@@ -10,6 +10,8 @@ const SITE = {
   // Partner broker's legal entity (verified on dupoin.co.id/about-us/licenses, Nov 2026)
   brokerEntity: 'PT Dupoin Futures Indonesia',
   brokerLicense: 'Izin Bappebti No. 423/BAPPEBTI/SI/VII/2004 · Anggota JFX No. SPAB-064/BBJ/04/04',
+  // Futures advisory company (verified on bappebti.go.id/penasihat_berjangka, Nov 2026)
+  advisor: { name: 'PT Smartin Advisor Sistem', url: 'https://www.smartintrade.co.id/', license: 'Izin Penasihat Berjangka Bappebti No. 02/BAPPEBTI/SI-PNB/10/2023 (30 Oktober 2023)' },
   // Author's competency certificate (BNSP). This is a competency certificate, not a Bappebti business licence.
   cert: {
     title: 'Sertifikat Kompetensi BNSP: Wakil Penasihat Berjangka',
@@ -162,6 +164,7 @@ ${user ? `<form method="post" action="/keluar" style="display:inline"><input typ
 </div></nav></header>
 <main>${body}</main>
 <footer class="bot"><div class="wrap"><p>${RISK} ${DISCLOSURE} Pembukaan akun dan transaksi tunduk pada syarat dan ketentuan ${SITE.brokerName} serta regulasi yang berlaku. ${SITE.brokerEntity}: ${SITE.brokerLicense}.</p>
+<p><img src="/logo-smartin.webp" alt="Logo Smartin" width="28" height="37" loading="lazy" style="vertical-align:middle;background:#F7F7F7;border-radius:6px;padding:3px;margin-right:8px">Perusahaan penasihat berjangka: <a href="${SITE.advisor.url}" target="_blank" rel="noopener">${SITE.advisor.name}</a> (Smartin) · ${SITE.advisor.license} · <a href="https://bappebti.go.id/penasihat_berjangka" target="_blank" rel="noopener">Cek di Bappebti</a>.</p>
 <p>Penulis: ${SITE.author}, pemegang izin Wakil Manajer Investasi (WMI) OJK, sertifikat kompetensi BNSP CTA, dan ${SITE.cert.title} (No. Reg. ${SITE.cert.reg}). Doktor Trader adalah layanan edukasi; konten di situs ini bukan nasihat investasi pribadi atau jasa pengelolaan dana.</p>
 <p>© ${new Date().getFullYear()} ${SITE.author} · <a href="/">dhirajkelly.id</a> · <a href="/artikel">Artikel</a> · <a href="/alat/kalkulator-lot">Kalkulator Lot</a> · <a href="/syarat-ketentuan">Syarat &amp; Ketentuan</a> · <a href="/kebijakan-privasi">Kebijakan Privasi</a> · <a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener" data-track="wa_click">WhatsApp</a></p></div></footer>
 <script>${TRACK_JS}</script>
