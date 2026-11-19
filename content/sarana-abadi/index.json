@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-19T21:51:57Z",
+ "generated": "2026-11-19T21:54:28Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -521,6 +521,94 @@
     {
      "q": "Seberapa sering kurva S sebaiknya diperbarui?",
      "a": "Pada sebagian besar proyek, realisasi diperbarui mingguan dan dilaporkan dalam rapat mingguan. Proyek dengan durasi sangat singkat atau intensitas tinggi dapat memperbaruinya lebih sering."
+    }
+   ]
+  },
+  {
+   "id": "kontraktor-kanopi-gudang-cikarang",
+   "slug": "kontraktor-kanopi-gudang-cikarang",
+   "title": "Kontraktor Kanopi Gudang Cikarang: Panduan Kanopi Loading Dock yang Awet",
+   "publish_at_wib": "2026-11-20 16:00",
+   "publish_at_utc": "2026-11-20T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/20/kontraktor-kanopi-gudang-cikarang/",
+   "html": "html/kontraktor-kanopi-gudang-cikarang.html",
+   "image": "img/kontraktor-kanopi-gudang-cikarang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang kontraktor kanopi gudang Cikarang: kanopi loading dock struktur baja dengan atap metal",
+   "excerpt": "Panduan memilih kontraktor kanopi gudang di Cikarang: tipe kanopi loading dock, ukuran, struktur, atap, drainase, dan isi penawaran yang perlu dicek.",
+   "meta_title": "Kontraktor Kanopi Gudang Cikarang: Panduan Lengkap",
+   "meta_description": "Mencari kontraktor kanopi gudang Cikarang? Pahami tipe kanopi loading dock, ukuran, struktur, atap, drainase, dan hal yang perlu dicek sebelum memesan.",
+   "focus_keyword": "kontraktor kanopi gudang cikarang",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "kanopi gudang",
+    "loading dock",
+    "struktur baja",
+    "atap metal",
+    "kawasan industri cikarang"
+   ],
+   "faq": [
+    {
+     "q": "Kanopi loading dock sebaiknya memakai tiang atau kantilever?",
+     "a": "Kanopi kantilever membuat area manuver truk bebas dari tiang, tetapi membebani kolom bangunan eksisting dan butuh profil yang lebih besar. Kanopi bertiang lebih sederhana strukturnya, tetapi posisi tiang harus aman dari jalur truk. Pilihan ditentukan oleh bentang, kondisi bangunan, dan pola lalu lintas."
+    },
+    {
+     "q": "Berapa tinggi kanopi loading dock yang ideal?",
+     "a": "Tinggi bersih ditentukan dari tinggi kendaraan terbesar yang akan dilayani ditambah ruang aman, serta kebutuhan membuka pintu atau terpal truk. Ukurannya sebaiknya ditetapkan setelah data armada dan pola bongkar muat dikumpulkan."
+    },
+    {
+     "q": "Apakah kanopi bisa disambung ke bangunan gudang yang sudah ada?",
+     "a": "Bisa, tetapi kemampuan kolom dan pondasi eksisting harus dicek terhadap beban tambahan, termasuk angin. Bila tidak mencukupi, kanopi diberi tiang dan pondasi sendiri atau kolom eksisting diperkuat."
+    },
+    {
+     "q": "Material atap apa yang umum untuk kanopi gudang?",
+     "a": "Yang umum adalah atap metal gelombang atau sistem klip, kadang dikombinasikan dengan lembaran tembus cahaya untuk pencahayaan alami. Pemilihannya mempertimbangkan kemiringan, panjang lembaran, ketahanan korosi, dan kebisingan saat hujan."
+    }
+   ]
+  },
+  {
+   "id": "sandwich-panel-cold-storage",
+   "slug": "sandwich-panel-cold-storage",
+   "title": "Sandwich Panel Cold Storage: Jenis Inti, Ketebalan, dan Detail Pemasangan",
+   "publish_at_wib": "2026-11-20 19:00",
+   "publish_at_utc": "2026-11-20T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/20/sandwich-panel-cold-storage/",
+   "html": "html/sandwich-panel-cold-storage.html",
+   "image": "img/sandwich-panel-cold-storage.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang sandwich panel cold storage: panel insulasi PU dan PIR untuk ruang pendingin industri",
+   "excerpt": "Cara memilih sandwich panel cold storage: jenis inti, ketebalan, contoh perhitungan perpindahan panas, serta detail lantai dan sambungan yang kedap.",
+   "meta_title": "Sandwich Panel Cold Storage: Jenis, Tebal, Pemasangan",
+   "meta_description": "Panduan sandwich panel cold storage: perbandingan inti PU, PIR, dan rockwool, cara memilih ketebalan, contoh hitungan panas, dan detail sambungan kedap.",
+   "focus_keyword": "sandwich panel cold storage",
+   "categories": [
+    "Engineering & Design",
+    "Construction Technology & Innovation"
+   ],
+   "tags": [
+    "sandwich panel",
+    "cold storage",
+    "panel PU",
+    "panel PIR",
+    "insulasi termal"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda panel PU dan PIR untuk cold storage?",
+     "a": "Keduanya busa poliuretan kaku dengan konduktivitas termal rendah. PIR memiliki struktur kimia yang dimodifikasi sehingga umumnya berperilaku lebih baik saat terkena api dibanding PU standar. Detail kinerja tiap produk perlu dicek pada lembar data dan hasil uji pabrikan."
+    },
+    {
+     "q": "Berapa ketebalan sandwich panel untuk ruang beku?",
+     "a": "Ruang beku membutuhkan panel lebih tebal daripada ruang dingin karena selisih suhunya lebih besar. Ketebalan final sebaiknya ditentukan dari perhitungan beban pendinginan, target suhu, kondisi lingkungan, dan rekomendasi pabrikan panel serta perencana refrigerasi."
+    },
+    {
+     "q": "Mengapa lantai ruang beku perlu perhatian khusus?",
+     "a": "Suhu di bawah titik beku dapat merambat ke tanah di bawah lantai dan membekukan air tanah sehingga tanah mengembang (frost heave). Karena itu lantai ruang beku biasanya diberi insulasi, lapisan penghalang uap, dan sistem pemanas atau ventilasi di bawahnya."
+    },
+    {
+     "q": "Apakah ruang beku memerlukan katup penyeimbang tekanan?",
+     "a": "Umumnya ya. Perubahan suhu udara di dalam ruang beku, misalnya setelah pintu dibuka lalu ditutup, dapat menimbulkan perbedaan tekanan yang membebani panel dan menyulitkan pintu dibuka. Katup penyeimbang tekanan membantu mengatasi hal ini."
     }
    ]
   }
