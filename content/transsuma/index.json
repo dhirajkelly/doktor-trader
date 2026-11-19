@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-19T20:03:49Z",
+ "generated": "2026-11-19T20:04:54Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -80,6 +80,49 @@
     {
      "q": "Apa yang perlu disiapkan sebelum meminta penawaran jasa angkut limbah B3?",
      "a": "Siapkan daftar jenis dan kode limbah, perkiraan volume per bulan, jenis kemasan, lokasi TPS, akses kendaraan, serta tujuan pengolahan atau pemanfaatan bila sudah ada."
+    }
+   ]
+  },
+  {
+   "id": "cara-menyimpan-limbah-b3-di-tps",
+   "slug": "cara-menyimpan-limbah-b3-di-tps",
+   "title": "Cara Menyimpan Limbah B3 di TPS: Syarat Bangunan dan Masa Simpan",
+   "publish_at_wib": "2026-11-20 12:00",
+   "publish_at_utc": "2026-11-20T05:00:00Z",
+   "url": "https://transsuma.com/cara-menyimpan-limbah-b3-di-tps/",
+   "html": "html/cara-menyimpan-limbah-b3-di-tps.html",
+   "image": "img/cara-menyimpan-limbah-b3-di-tps.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang cara menyimpan limbah B3 di TPS",
+   "excerpt": "Panduan praktis menyimpan limbah B3 di TPS: syarat bangunan, kemasan dan label, batas masa simpan, dan pencatatan untuk penghasil limbah.",
+   "meta_title": "Cara Menyimpan Limbah B3 di TPS sesuai Aturan",
+   "meta_description": "Cara menyimpan limbah B3 di TPS: syarat bangunan, kemasan, simbol dan label, batas masa simpan 90/180/365 hari, serta pencatatan yang perlu disiapkan.",
+   "focus_keyword": "cara menyimpan limbah b3 di tps",
+   "categories": [
+    "Panduan Pengelolaan Limbah untuk Industri",
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "tps limbah b3",
+    "masa simpan limbah b3",
+    "rincian teknis",
+    "penyimpanan limbah"
+   ],
+   "faq": [
+    {
+     "q": "Berapa lama limbah B3 boleh disimpan di TPS?",
+     "a": "Paling lama 90 hari bila limbah B3 yang dihasilkan 50 kg per hari atau lebih. Untuk timbulan di bawah 50 kg per hari, batasnya 180 hari untuk kategori 1 dan 365 hari untuk kategori 2, dihitung sejak limbah dihasilkan."
+    },
+    {
+     "q": "Apakah limbah B3 yang berbeda boleh dicampur dalam satu drum?",
+     "a": "Tidak. Limbah B3 yang disimpan tidak boleh dicampur. Simpan setiap jenis limbah dalam kemasan terpisah dan beri jarak atau sekat antara limbah yang tidak saling cocok."
+    },
+    {
+     "q": "Apa itu rincian teknis penyimpanan limbah B3?",
+     "a": "Rincian teknis adalah dokumen yang memuat identitas limbah, lokasi dan desain fasilitas penyimpanan, kemasan, prosedur, dan tanggap darurat. Dokumen ini diintegrasikan ke dalam persetujuan lingkungan fasilitas."
+    },
+    {
+     "q": "Apa yang harus dilakukan bila masa simpan hampir habis?",
+     "a": "Jadwalkan penyerahan limbah kepada pihak berizin, misalnya melalui transporter limbah B3 ke pengolah atau pemanfaat, sebelum batas masa simpan tercapai."
     }
    ]
   }
