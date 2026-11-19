@@ -68,7 +68,8 @@ router.get('/artikel/:slug', (req, res, next) => {
   const jsonld = [{
     '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: desc, inLanguage: 'id-ID',
     datePublished: isoDate(a.published_at), dateModified: isoDate(a.updated_at), mainEntityOfPage: url,
-    author: { '@type': 'Person', name: 'Dhiraj Kelly Sawlani', alternateName: SITE.author, url: SITE.url + '/#tentang',
+    author: { '@type': 'Person', '@id': SITE.url + '/#dhiraj', name: 'Dhiraj Kelly Sawlani', alternateName: SITE.author, url: SITE.url + '/#tentang',
+      sameAs: ['https://www.linkedin.com/in/dhirajkelly', 'https://www.instagram.com/dhirajkelly', 'https://www.tiktok.com/@dhirajkelly', 'https://www.youtube.com/@dhirajkelly'],
       hasCredential: { '@type': 'EducationalOccupationalCredential', name: SITE.cert.title, credentialCategory: 'Sertifikat Kompetensi', identifier: SITE.cert.reg,
         recognizedBy: { '@type': 'Organization', name: 'Badan Nasional Sertifikasi Profesi (BNSP)' } } },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: SITE.url + '/logo-512.png' } },
