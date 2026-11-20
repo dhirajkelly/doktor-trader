@@ -14,6 +14,7 @@ const NAV = [
   ['/member/analisa', 'Analisa Doktor', 'analisa'],
   ['/member/market', 'Market Watch', 'market'],
   ['/member/tools', 'EA · AI Signals · Copy Trade', 'tools'],
+  ['/member/ai-lab', 'AI Strategy Lab', 'ailab'],
   ['/member/webinar', 'Webinar bulanan', 'webinar'],
   ['/member/akun', 'Akun', 'akun'],
 ];
@@ -194,7 +195,7 @@ router.post('/member/tanya', async (req, res, next) => {
 
 
 const DOWNLOADS = path.join(__dirname, '..', '..', 'downloads');
-const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4', 'PIPTRACKER_GoMart_V1R_SAFE_10k_XAUUSD.set'];
+const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4', 'PIPTRACKER_GoMart_V1R_SAFE_10k_XAUUSD.set', 'DoktorTrader_AI_Strategy_Lab.zip'];
 router.get('/member/unduh/:file', (req, res, next) => {
   const f = req.params.file;
   if (!FILES.includes(f)) return next();
