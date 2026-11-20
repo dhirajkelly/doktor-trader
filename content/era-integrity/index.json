@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-20T21:22:29Z",
+ "generated": "2026-11-20T21:24:53Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -694,6 +694,93 @@
     {
      "q": "Apa risiko utama properti di Rengasdengklok?",
      "a": "Risiko yang perlu dicek antara lain riwayat genangan atau banjir di lokasi mikro, legalitas tanah, akses jalan, serta kesesuaian tata ruang, terutama untuk lahan yang dekat area persawahan."
+    }
+   ]
+  },
+  {
+   "id": "rumah-dijual-di-telukjambe",
+   "slug": "rumah-dijual-di-telukjambe",
+   "title": "Rumah Dijual di Telukjambe: Panduan Memilih Lokasi dan Unit yang Tepat",
+   "publish_at_wib": "2026-11-21 16:00",
+   "publish_at_utc": "2026-11-21T09:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/21/rumah-dijual-di-telukjambe/",
+   "html": "html/rumah-dijual-di-telukjambe.html",
+   "image": "img/rumah-dijual-di-telukjambe.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang rumah dijual di Telukjambe Karawang",
+   "excerpt": "Panduan membeli rumah di Telukjambe: karakter Telukjambe Timur dan Barat, cara menyaring listing, cek kondisi, dan hitungan kemampuan bayar.",
+   "meta_title": "Rumah Dijual di Telukjambe: Panduan Memilih Unit",
+   "meta_description": "Mencari rumah dijual di Telukjambe? Kenali beda Telukjambe Timur dan Barat, cara menyaring listing, cek kondisi rumah, dan hitung kemampuan bayar.",
+   "focus_keyword": "rumah dijual di telukjambe",
+   "categories": [
+    "Jual • Beli • Sewa",
+    "Listing Properti",
+    "Area & Kawasan"
+   ],
+   "tags": [
+    "telukjambe",
+    "rumah karawang",
+    "telukjambe timur",
+    "beli rumah"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda Telukjambe Timur dan Telukjambe Barat?",
+     "a": "Keduanya kecamatan terpisah di sektor selatan Kabupaten Karawang. Telukjambe Timur lebih padat, dengan penduduk sekitar 135 ribu jiwa pada Sensus 2020, dan dekat dengan kawasan seperti Galuh Mas. Telukjambe Barat penduduknya lebih sedikit, sekitar 55 ribu jiwa pada sensus yang sama."
+    },
+    {
+     "q": "Siapa yang cocok membeli rumah di Telukjambe?",
+     "a": "Telukjambe banyak dipertimbangkan oleh keluarga yang ingin dekat pusat kota Karawang, pekerja di kawasan industri sekitar seperti KIIC, serta pembeli yang mengutamakan akses ke gerbang tol Karawang Barat."
+    },
+    {
+     "q": "Lebih baik rumah baru dari pengembang atau rumah second?",
+     "a": "Tergantung kebutuhan. Rumah baru menawarkan kondisi baru dan skema pembayaran dari pengembang, sedangkan rumah second biasanya bisa langsung ditempati dan lingkungannya sudah terbentuk. Bandingkan total biaya, termasuk renovasi, sebelum memutuskan."
+    },
+    {
+     "q": "Apa yang paling penting dicek sebelum membayar tanda jadi?",
+     "a": "Cek legalitas sertifikat, kesesuaian nama pemilik, riwayat genangan, kondisi struktur dan atap, serta status PBB. Tuangkan kesepakatan tanda jadi secara tertulis, termasuk syarat pengembalian bila transaksi batal."
+    }
+   ]
+  },
+  {
+   "id": "take-over-kpr-ke-bank-lain",
+   "slug": "take-over-kpr-ke-bank-lain",
+   "title": "Take Over KPR ke Bank Lain: Proses, Biaya, dan Cara Menghitung Untungnya",
+   "publish_at_wib": "2026-11-21 19:00",
+   "publish_at_utc": "2026-11-21T12:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/21/take-over-kpr-ke-bank-lain/",
+   "html": "html/take-over-kpr-ke-bank-lain.html",
+   "image": "img/take-over-kpr-ke-bank-lain.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang take over KPR ke bank lain",
+   "excerpt": "Panduan take over KPR ke bank lain: tahapan proses, komponen biaya, dokumen, dan cara menghitung titik impas sebelum memutuskan pindah bank.",
+   "meta_title": "Take Over KPR ke Bank Lain: Proses dan Biaya",
+   "meta_description": "Berencana take over KPR ke bank lain? Pahami prosesnya, komponen biaya, dokumen yang disiapkan, dan cara menghitung titik impas sebelum pindah bank.",
+   "focus_keyword": "take over kpr ke bank lain",
+   "categories": [
+    "Panduan & Edukasi Agen",
+    "Investasi & Analisis"
+   ],
+   "tags": [
+    "take over kpr",
+    "refinancing",
+    "kpr",
+    "cicilan rumah"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu take over KPR ke bank lain?",
+     "a": "Take over KPR ke bank lain adalah memindahkan sisa pinjaman KPR dari bank lama ke bank baru. Bank baru melunasi sisa utang di bank lama, lalu Anda melanjutkan cicilan ke bank baru dengan syarat dan suku bunga yang baru."
+    },
+    {
+     "q": "Apa beda take over KPR ke bank lain dengan over kredit?",
+     "a": "Take over ke bank lain mengganti banknya, sedangkan pemilik rumah dan debiturnya tetap Anda. Over kredit atau oper kredit adalah pengalihan cicilan dari satu orang ke orang lain, sehingga yang berganti adalah debiturnya."
+    },
+    {
+     "q": "Biaya apa saja yang muncul saat take over KPR?",
+     "a": "Umumnya ada penalti pelunasan dipercepat di bank lama, serta provisi, administrasi, appraisal, notaris, dan asuransi di bank baru. Besarannya berbeda tiap bank, jadi minta rincian tertulis dari kedua bank."
+    },
+    {
+     "q": "Kapan take over KPR tidak menguntungkan?",
+     "a": "Take over bisa tidak menguntungkan bila sisa pinjaman sudah kecil, sisa tenor tinggal sebentar, atau penghematan cicilan habis dimakan biaya pindah sebelum periode bunga promo di bank baru berakhir."
     }
    ]
   }

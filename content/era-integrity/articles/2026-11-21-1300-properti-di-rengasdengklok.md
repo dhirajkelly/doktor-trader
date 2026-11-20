@@ -92,6 +92,18 @@ Misalnya Anda punya anggaran tertentu dan sedang membandingkan dua pilihan di Re
 
 Dari ilustrasi ini, angka yield hanya sebagian dari cerita. Kios bergantung pada satu penyewa: bila kosong, pendapatannya nol. Kontrakan lebih tersebar, tetapi pengelolaannya lebih repot. Uji juga skenario buruk, misalnya kios kosong tiga bulan atau tingkat hunian kontrakan turun ke 60%. Pembahasan cara menghitung yield hunian sewa lebih lengkap ada di artikel [investasi kos-kosan di Karawang](https://www.eraintegrityindonesia.com/2026/11/18/investasi-kos-kosan-karawang/).
 
+## Tips Survei Lokasi di Rengasdengklok
+
+Karena pasarnya lokal, informasi terbaik sering datang dari lapangan, bukan dari iklan. Beberapa kebiasaan survei yang kami sarankan:
+
+- **Datang lebih dari sekali.** Kunjungi lokasi di pagi hari kerja, sore hari, dan bila memungkinkan saat atau setelah hujan deras. Suasana pasar dan koridor jalan bisa sangat berbeda antara jam sibuk dan jam sepi.
+- **Ngobrol dengan warga.** Tetangga, pemilik warung, dan pengurus lingkungan biasanya tahu riwayat genangan, rencana pembangunan di sekitar, dan reputasi lingkungan.
+- **Telusuri rute harian.** Coba rute ke pasar, sekolah, puskesmas atau rumah sakit, dan jalan utama menuju pusat kota Karawang pada jam yang biasa Anda lalui.
+- **Perhatikan tanda-tanda fisik.** Bekas garis air di dinding, lantai rumah yang ditinggikan, atau tanggul darurat bisa menjadi petunjuk riwayat banjir.
+- **Catat dan foto.** Dokumentasi memudahkan Anda membandingkan beberapa kandidat setelah pulang.
+
+Untuk tanah dan rumah warisan keluarga, yang cukup umum di kawasan seperti ini, minta penjual menunjukkan dokumen ahli waris lebih awal. Proses yang melibatkan banyak ahli waris biasanya butuh waktu lebih panjang, sehingga lebih baik diketahui sebelum Anda membayar tanda jadi.
+
 ## Rengasdengklok Dibanding Kawasan Lain
 
 Supaya keputusan lebih jernih, bandingkan Rengasdengklok dengan kawasan lain sesuai tujuan Anda. Jika prioritasnya dekat dengan kawasan industri dan pekerja pendatang, kawasan di bagian selatan dan timur Karawang mungkin lebih relevan. Jika prioritasnya komunitas yang mapan, pasar lokal yang stabil, dan kedekatan dengan keluarga di Karawang utara, Rengasdengklok layak dipertimbangkan.
