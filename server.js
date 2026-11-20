@@ -39,6 +39,10 @@ async function main() {
     }
     res.status(204).end();
   });
+  // Token-protected temporary media hosting for scheduled tasks. Before body parsing/CSRF: streams the raw body.
+  const media = require('./src/media');
+  media.start();
+  app.use(media.router);
   app.use(express.urlencoded({ extended: false, limit: '1mb' }));
   app.use(auth.loadSession);
   app.use(auth.verifyCsrf);

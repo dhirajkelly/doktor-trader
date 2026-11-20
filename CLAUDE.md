@@ -47,3 +47,7 @@ The auto-approval flow, kept for reference if it is turned back on: it runs in t
 ## Academy module videos (scheduled task)
 
 Each of the 30 Academy lessons gets a faceless YouTube video (one per day). After the video is uploaded to YouTube @dhirajkelly, add its link to `content/academy-videos.json` as `"<course-slug>/<lesson-slug>": "https://youtu.be/<id>"` and push to `main` with message `academy(video): <lesson title>`. The importer (`src/content.js` → `syncAcademyVideos()`, run with the 5-minute content sync) sets the lesson's `video_url`, which the member page embeds. It never overwrites a link the admin changed by hand. Slugs are `slugify(title)` of the course and lesson in `scripts/seed.js`. Touch only the JSON file in that task.
+
+## Temporary media hosting (scheduled tasks)
+
+`src/media.js` hosts files for tools that need a public URL (e.g. Metricool posting a video when Tebar's YouTube quota is used up). Upload: `curl --fail -X POST --data-binary @video.mp4 -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/octet-stream" "https://dhirajkelly.id/media/upload?ext=mp4"` (ext: mp4, mov, jpg, jpeg, png; max 1 GiB) → `{ url, name, bytes, expires_at }`. The URL is public, `noindex`, and the file is deleted automatically after 7 days (or with `DELETE /media/<name>` and the same token). Only the token's SHA-256 is in the code (override with env `MEDIA_UPLOAD_TOKEN_SHA256`); the token itself is kept with the scheduled task, never in the repo.
