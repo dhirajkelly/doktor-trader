@@ -89,7 +89,7 @@ Saat survei, bawa meteran, kamera, dan daftar periksa. Berikut poin yang kami sa
 2. Dokumen bangunan (PBG atau IMB untuk bangunan lama).
 3. Kesesuaian peruntukan lahan dengan kegiatan usaha Anda.
 
-Foto setiap temuan dan catat di berita acara saat serah terima, supaya kondisi awal gudang terdokumentasi.
+Foto setiap temuan dan catat di berita acara saat serah terima, supaya kondisi awal gudang terdokumentasi. Bila ada kerusakan yang Anda minta diperbaiki pemilik sebelum masuk, tuliskan daftar perbaikannya beserta tenggat waktu di kontrak atau lampirannya. Janji lisan saat survei mudah terlupa ketika kedua pihak sudah sibuk dengan operasional masing-masing.
 
 ## Menghitung Biaya Total, Bukan Hanya Harga Sewa
 

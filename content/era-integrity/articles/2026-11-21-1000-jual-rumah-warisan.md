@@ -94,6 +94,20 @@ Agar tidak bolak-balik, berikut urutan yang umumnya ditempuh:
 8. **Pembayaran pajak** oleh masing-masing pihak dan proses balik nama.
 9. **Serah terima** rumah dan pembagian hasil sesuai kesepakatan keluarga.
 
+## Menentukan Harga yang Adil bagi Semua Ahli Waris
+
+Harga sering menjadi sumber perbedaan pendapat. Ada saudara yang ingin harga tinggi karena nilai kenangan, ada yang ingin cepat terjual karena butuh dana. Supaya diskusi lebih objektif, gunakan data, bukan perasaan.
+
+Beberapa cara yang bisa ditempuh:
+
+- **Kumpulkan pembanding.** Cari rumah dengan luas tanah, luas bangunan, dan kondisi serupa di lingkungan yang sama, lalu catat harga penawaran dan, bila ada, harga transaksinya.
+- **Nilai kondisi rumah dengan jujur.** Rumah warisan sering sudah lama tidak direnovasi. Atap, instalasi listrik, dan saluran air yang perlu perbaikan akan diperhitungkan calon pembeli.
+- **Pertimbangkan renovasi ringan.** Mengecat ulang, membersihkan halaman, dan memperbaiki kerusakan kecil bisa membuat rumah lebih mudah dipasarkan. Renovasi besar sebaiknya dihitung ulang manfaatnya.
+- **Gunakan penilai bila perlu.** Untuk keluarga yang sulit sepakat, penilaian dari pihak independen bisa menjadi titik temu.
+- **Sepakati rentang, bukan satu angka.** Tentukan harga penawaran awal dan batas bawah yang disetujui bersama, sehingga wakil keluarga punya ruang negosiasi tanpa harus mengumpulkan semua ahli waris setiap kali ada tawaran.
+
+Harga yang terlalu tinggi membuat rumah lama tidak laku, sementara biaya PBB, listrik, dan perawatan tetap berjalan. Sebaliknya, harga terlalu rendah merugikan semua ahli waris. Rentang yang disepakati di awal membantu menghindari dua risiko itu.
+
 ## Kondisi Khusus yang Perlu Diwaspadai
 
 Beberapa situasi membuat penjualan rumah warisan lebih rumit. Kenali sejak awal supaya bisa diantisipasi:
