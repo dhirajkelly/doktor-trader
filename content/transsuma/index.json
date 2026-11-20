@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-19T20:06:08Z",
+ "generated": "2026-11-20T20:00:49Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -166,6 +166,49 @@
     {
      "q": "Di mana daftar kode limbah B3 resmi dapat dilihat?",
      "a": "Daftar nama dan kode limbah B3 tercantum dalam lampiran PP Nomor 22 Tahun 2021 tentang Penyelenggaraan Perlindungan dan Pengelolaan Lingkungan Hidup."
+    }
+   ]
+  },
+  {
+   "id": "jasa-angkut-oli-bekas-cikarang",
+   "slug": "jasa-angkut-oli-bekas-cikarang",
+   "title": "Jasa Angkut Oli Bekas Cikarang: Persiapan dan Cara Memilih Transporter",
+   "publish_at_wib": "2026-11-21 07:00",
+   "publish_at_utc": "2026-11-21T00:00:00Z",
+   "url": "https://transsuma.com/jasa-angkut-oli-bekas-cikarang/",
+   "html": "html/jasa-angkut-oli-bekas-cikarang.html",
+   "image": "img/jasa-angkut-oli-bekas-cikarang.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang jasa angkut oli bekas di Cikarang",
+   "excerpt": "Hal yang perlu disiapkan pabrik di Cikarang sebelum menyerahkan oli bekas ke transporter limbah B3, dari kode limbah sampai Festronik.",
+   "meta_title": "Jasa Angkut Oli Bekas Cikarang untuk Pabrik",
+   "meta_description": "Panduan memilih jasa angkut oli bekas Cikarang: kode limbah B105d, kemasan dan TPS, batas masa simpan, dokumen transporter, dan Festronik untuk pabrik Anda.",
+   "focus_keyword": "jasa angkut oli bekas cikarang",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3",
+    "Pengangkutan & Manifest"
+   ],
+   "tags": [
+    "oli bekas",
+    "cikarang",
+    "b105d",
+    "transporter limbah b3"
+   ],
+   "faq": [
+    {
+     "q": "Apakah oli bekas termasuk limbah B3?",
+     "a": "Ya. Minyak pelumas bekas tercantum dalam Lampiran IX PP Nomor 22 Tahun 2021 dengan kode B105d, termasuk limbah B3 dari sumber tidak spesifik kategori 2."
+    },
+    {
+     "q": "Berapa lama oli bekas boleh disimpan di TPS?",
+     "a": "Untuk fasilitas yang menghasilkan limbah B3 50 kg per hari atau lebih, paling lama 90 hari. Untuk timbulan di bawah 50 kg per hari, limbah B3 kategori 2 seperti oli bekas paling lama 365 hari sejak dihasilkan."
+    },
+    {
+     "q": "Bolehkah oli bekas dijual atau diberikan ke pengepul tanpa izin?",
+     "a": "Tidak dianjurkan dan berisiko melanggar aturan. Pengangkutan limbah B3 wajib dilakukan oleh pengangkut yang memiliki perizinan berusaha di bidang pengangkutan limbah B3 dan disertai manifest elektronik (Festronik) menuju penerima yang berizin."
+    },
+    {
+     "q": "Apa yang perlu disiapkan sebelum transporter datang?",
+     "a": "Siapkan data jenis dan kode limbah, jumlah drum atau volume tangki, kondisi kemasan, label dan simbol, catatan logbook, serta akses kendaraan ke TPS."
     }
    ]
   }
