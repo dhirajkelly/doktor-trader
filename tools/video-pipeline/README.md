@@ -6,7 +6,7 @@ Academy-module videos. Nothing here is served by the app.
 Output standard: 1920×1080, 30 fps, H.264 + AAC 48 kHz, ≥ 8:00 (mid-roll), navy–gold brand
 (#0B1B33 / #C9A24A / #F4F1EA), Helvetica (Liberation Sans fallback) + Playfair Display + JetBrains Mono,
 burned-in subtitles (max 2 lines, one gold keyword), "SIMULASI" label on every chart, spoken + on-screen
-disclaimer before the CTA, CTA = "Join komunitas gratis dhirajkelly.id", 20 s end screen.
+disclaimer before the CTA, CTA = "Join Komunitas Trading · dhirajkelly.id" (description: "Join Komunitas Trading: https://dhirajkelly.id"), 20 s end screen.
 No third-party music (Content ID): only the self-generated `public/sfx/whoosh.wav`.
 
 ## Steps

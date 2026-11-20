@@ -525,7 +525,7 @@ export const SCta: React.FC<SceneProps> = ({b}) => (
 	<AbsoluteFill style={{padding: '150px 160px'}}>
 		<Appear at={b(0)}><Card accent={C.muted} style={{fontSize: 30, color: C.body}}>Konten edukasi umum. Trading derivatif berleverage dapat menyebabkan kerugian dan kehilangan modal.</Card></Appear>
 		<Appear at={b(2)} style={{marginTop: 60}}>
-			<div style={{fontFamily: MONO, color: C.muted, fontSize: 26, letterSpacing: 2}}>JOIN KOMUNITAS GRATIS</div>
+			<div style={{fontFamily: MONO, color: C.muted, fontSize: 26, letterSpacing: 2}}>JOIN KOMUNITAS TRADING</div>
 			<div style={{fontFamily: SANS, fontWeight: 800, fontSize: 110, color: C.gold, letterSpacing: -2, marginTop: 6}}>dhirajkelly.id</div>
 		</Appear>
 		<Appear at={b(3)} style={{marginTop: 40}}>

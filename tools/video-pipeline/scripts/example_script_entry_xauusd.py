@@ -90,7 +90,7 @@ SCENES = [
   "Kalau satu aja nggak terpenuhi, nggak usah entry.")),
  dict(id="s11_cta", chapter="Penutup", visual="cta", vo=(
   "Ini edukasi umum. Trading pakai leverage bisa bikin lo rugi dan kehilangan modal. "
-  "Kalau lo mau latihan nandain area dan CHoCH bareng trader lain, join komunitas gratis di dhirajkelly dot i d. "
+  "Kalau lo mau latihan nandain area dan CHoCH bareng trader lain, join komunitas trading di dhirajkelly dot i d. "
   "Dan tulis di komentar: dari lima langkah tadi, mana yang paling sering lo langgar? "
   "Gue Dhiraj Kelly. Manage risk, protect capital, trade smarter.")),
 ]
