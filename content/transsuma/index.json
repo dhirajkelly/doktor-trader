@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-20T20:00:49Z",
+ "generated": "2026-11-20T20:02:01Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -209,6 +209,49 @@
     {
      "q": "Apa yang perlu disiapkan sebelum transporter datang?",
      "a": "Siapkan data jenis dan kode limbah, jumlah drum atau volume tangki, kondisi kemasan, label dan simbol, catatan logbook, serta akses kendaraan ke TPS."
+    }
+   ]
+  },
+  {
+   "id": "manifest-elektronik-limbah-b3",
+   "slug": "manifest-elektronik-limbah-b3",
+   "title": "Manifest Elektronik Limbah B3: Cara Pakai Festronik bagi Penghasil",
+   "publish_at_wib": "2026-11-21 12:00",
+   "publish_at_utc": "2026-11-21T05:00:00Z",
+   "url": "https://transsuma.com/manifest-elektronik-limbah-b3/",
+   "html": "html/manifest-elektronik-limbah-b3.html",
+   "image": "img/manifest-elektronik-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang manifest elektronik limbah B3 (Festronik)",
+   "excerpt": "Langkah praktis bagi penghasil limbah untuk memakai manifest elektronik (Festronik), dari persiapan akun sampai memeriksa data sebelum menyetujui.",
+   "meta_title": "Manifest Elektronik Limbah B3 (Festronik) untuk Penghasil",
+   "meta_description": "Panduan manifest elektronik limbah B3 (Festronik) bagi penghasil: dasar aturan, persiapan akun, alur persetujuan, pemeriksaan data, dan kesalahan umum.",
+   "focus_keyword": "manifest elektronik limbah b3",
+   "categories": [
+    "Pengangkutan & Manifest",
+    "Panduan Pengelolaan Limbah untuk Industri"
+   ],
+   "tags": [
+    "festronik",
+    "manifest limbah b3",
+    "penghasil limbah",
+    "pengangkutan limbah b3"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu Festronik?",
+     "a": "Festronik adalah manifest elektronik untuk memantau pengangkutan limbah B3 secara daring. Sistem ini menggantikan dokumen manifest kertas dan mencatat perpindahan limbah dari pengirim, pengangkut, sampai penerima."
+    },
+    {
+     "q": "Siapa yang membuat entri manifest di Festronik?",
+     "a": "Entri manifest dibuat oleh pengangkut berdasarkan data limbah dari pengirim. Pengirim kemudian memeriksa dan menyetujui data, dan penerima menyatakan limbah diterima atau ditolak setelah dibongkar."
+    },
+    {
+     "q": "Apakah penghasil limbah wajib punya akun Festronik?",
+     "a": "Peraturan Menteri LHK Nomor 6 Tahun 2021 mengatur bahwa Festronik digunakan oleh pengangkut dan juga oleh penghasil, pengumpul, pemanfaat, pengolah, dan penimbun limbah B3. Penghasil yang menyerahkan limbah kepada pengangkut perlu terdaftar agar dapat memeriksa dan menyetujui manifest."
+    },
+    {
+     "q": "Apa yang dilakukan bila data manifest tidak sesuai dengan limbah yang dimuat?",
+     "a": "Jangan setujui. Kembalikan data untuk direvisi oleh pengangkut sampai jenis, kode, kemasan, dan jumlahnya sesuai dengan limbah yang benar-benar dimuat."
     }
    ]
   }
