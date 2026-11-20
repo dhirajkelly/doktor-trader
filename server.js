@@ -51,7 +51,7 @@ async function main() {
   const landingTpl = fs.readFileSync(path.join(PUBLIC, 'index.html'), 'utf8');
   app.get(['/', '/index.html'], (req, res) => {
     const rows = db.all("SELECT slug, title, excerpt, published_at, category FROM articles WHERE status='published' AND published_at <= datetime('now') ORDER BY published_at DESC LIMIT 3");
-    let html = landingTpl;
+    let html = landingTpl.replace('<!-- MARKET WATCH -->', require('./src/market').landingSection());
     if (rows.length) {
       const sec = `<section style="background:#070F1E;border-top:1px solid rgba(255,255,255,0.06)"><div style="max-width:1200px;margin:0 auto;padding:64px 24px">
 <div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px;margin-bottom:24px"><h2 style="margin:0;font-size:32px;font-weight:800">Artikel terbaru</h2><a href="/artikel" style="color:#E9C46A;font-weight:700;text-decoration:none">Lihat semua artikel →</a></div>

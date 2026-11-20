@@ -37,7 +37,7 @@ function privacy() {
 <li><strong>${SITE.brokerEntity}</strong>: kami mencocokkan email atau nomor akun yang Anda berikan dengan data referral yang tersedia bagi kami sebagai mitra, semata untuk verifikasi keanggotaan.</li>
 <li><strong>Penyedia infrastruktur</strong>: situs dihosting di server virtual milik penyedia cloud di Indonesia. Halaman memuat font dari Google Fonts dan video materi dari YouTube (mode privasi ditingkatkan), sehingga alamat IP Anda dapat terlihat oleh penyedia tersebut saat halaman dimuat.</li>
 <li><strong>Penyedia AI (Anthropic)</strong>: teks pertanyaan yang Anda kirim di Tanya Doktor diproses oleh layanan AI Anthropic untuk menghasilkan jawaban otomatis. Nama, email, dan nomor WhatsApp Anda tidak ikut dikirim. Jangan menulis data pribadi atau data akun di pertanyaan.</li>
-<li><strong>TradingView</strong>: halaman Market Watch memuat widget pasar dari TradingView, sehingga alamat IP Anda dapat terlihat oleh TradingView saat halaman itu dibuka.</li>
+<li><strong>TradingView</strong>: beranda dan halaman Market Watch memuat widget pasar dari TradingView, sehingga alamat IP Anda dapat terlihat oleh TradingView saat halaman tersebut dibuka.</li>
 <li><strong>Kewajiban hukum</strong>: bila diminta oleh otoritas yang berwenang sesuai peraturan perundang-undangan.</li>
 </ul>
 
