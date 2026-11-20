@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-20T20:02:01Z",
+ "generated": "2026-11-20T20:03:17Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -252,6 +252,49 @@
     {
      "q": "Apa yang dilakukan bila data manifest tidak sesuai dengan limbah yang dimuat?",
      "a": "Jangan setujui. Kembalikan data untuk direvisi oleh pengangkut sampai jenis, kode, kemasan, dan jumlahnya sesuai dengan limbah yang benar-benar dimuat."
+    }
+   ]
+  },
+  {
+   "id": "perbedaan-limbah-b3-dan-non-b3",
+   "slug": "perbedaan-limbah-b3-dan-non-b3",
+   "title": "Perbedaan Limbah B3 dan Non B3 menurut PP 22/2021 dan Contohnya",
+   "publish_at_wib": "2026-11-21 17:00",
+   "publish_at_utc": "2026-11-21T10:00:00Z",
+   "url": "https://transsuma.com/perbedaan-limbah-b3-dan-non-b3/",
+   "html": "html/perbedaan-limbah-b3-dan-non-b3.html",
+   "image": "img/perbedaan-limbah-b3-dan-non-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang perbedaan limbah B3 dan non-B3",
+   "excerpt": "Memahami beda limbah B3 dan non-B3 menurut PP 22/2021, contoh limbah non-B3 terdaftar, dan apa artinya bagi pengelolaan di fasilitas Anda.",
+   "meta_title": "Perbedaan Limbah B3 dan Non B3 beserta Contohnya",
+   "meta_description": "Perbedaan limbah B3 dan non B3 menurut PP 22/2021: definisi, limbah non-B3 terdaftar dan khusus, contoh FABA dan slag, serta dampaknya bagi pengelolaan.",
+   "focus_keyword": "perbedaan limbah b3 dan non b3",
+   "categories": [
+    "Regulasi Limbah B3",
+    "Jenis & Karakteristik Limbah B3"
+   ],
+   "tags": [
+    "limbah non b3",
+    "pp 22 2021",
+    "faba",
+    "permen lhk 19 2021"
+   ],
+   "faq": [
+    {
+     "q": "Apa definisi limbah non-B3?",
+     "a": "Limbah non-B3 adalah sisa suatu usaha dan/atau kegiatan yang tidak menunjukkan karakteristik limbah B3. Sementara itu, limbah B3 adalah sisa usaha dan/atau kegiatan yang mengandung B3."
+    },
+    {
+     "q": "Apakah limbah non-B3 boleh dibuang begitu saja?",
+     "a": "Tidak. Peraturan Menteri LHK Nomor 19 Tahun 2021 mewajibkan setiap orang yang menghasilkan limbah non-B3 melakukan pengelolaan, mulai dari pengurangan, penyimpanan, pemanfaatan, penimbunan, pengangkutan, sampai pemantauan dan pelaporan."
+    },
+    {
+     "q": "Apakah semua fly ash dan bottom ash batu bara sekarang termasuk limbah non-B3?",
+     "a": "Tidak. Fly ash dan bottom ash dari PLTU di luar fasilitas stoker boiler dan/atau tungku industri masuk limbah non-B3 terdaftar. Fly ash dan bottom ash dari stoker boiler dan/atau tungku industri tetap limbah B3 dengan kode B409 dan B410."
+    },
+    {
+     "q": "Di mana daftar limbah non-B3 terdaftar dapat dilihat?",
+     "a": "Daftar limbah non-B3 terdaftar tercantum dalam Lampiran XIV PP Nomor 22 Tahun 2021 dengan kode N101 sampai N109."
     }
    ]
   }
