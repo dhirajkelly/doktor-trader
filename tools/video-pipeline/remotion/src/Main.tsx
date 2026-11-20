@@ -1,6 +1,6 @@
 import React from 'react';
 import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame} from 'remotion';
-import {SCENES} from './Scenes';
+import {SCENES} from './LessonScenes';
 import {Background, C, MONO, SANS, SERIF, useIn} from './ui';
 
 export const FPS = 30;
@@ -8,15 +8,13 @@ export type Sent = {text: string; sub: string; start: number; end: number};
 export type SceneT = {id: string; chapter: string; visual: string; audioDur: number; duration: number; sentences: Sent[]};
 
 const CARD: Record<string, [string, string]> = {
-	trend: ['LANGKAH 1', 'Arah Trend'],
-	area: ['LANGKAH 2', 'Area Entry'],
-	confirm: ['LANGKAH 3', 'Konfirmasi'],
-	sltp: ['LANGKAH 4', 'Stop Loss & Target'],
-	lot: ['RISK FIRST', 'Ukuran Posisi'],
-	example: ['CONTOH 1', 'Setup Lengkap'],
-	loss: ['CONTOH 2', 'Setup yang Gagal'],
-	skip: ['FILTER', 'Kapan Nggak Entry'],
-	checklist: ['RINGKASAN', 'Checklist'],
+	ohlc: ['BAGIAN 1', 'Empat Harga'],
+	bodywick: ['BAGIAN 2', 'Body, Sumbu, Range'],
+	timeframe: ['BAGIAN 3', 'Timeframe'],
+	context: ['BAGIAN 4', 'Konteks'],
+	risk: ['BAGIAN 5', 'Rencana Risiko'],
+	task: ['LATIHAN', 'Tugas Akun Demo'],
+	summary: ['RINGKASAN', 'Yang Perlu Diingat'],
 };
 export const PAD = 1.6; // seconds of chapter card before VO
 export const TAIL = 0.9;
@@ -32,7 +30,7 @@ export const layout = (scenes: SceneT[]) => {
 	});
 };
 
-const KEY = ['VWAP', 'EMA 9', 'order block', 'FVG', 'CHoCH', 'stop loss', 'Stop loss', 'lot', 'risiko', 'Risiko', 'target', 'Target', '2R', '1:2', 'margin call', '1%', '$100', 'entry', 'skip', 'Skip', 'checklist', 'dhirajkelly.id', 'mahal', 'perasaan'];
+const KEY = ['candlestick', 'candle', 'body', 'Body', 'sumbu', 'range', 'Range', 'open', 'close', 'high', 'low', 'H1', 'H4', 'M15', 'konteks', 'support', 'stop loss', 'Stop loss', 'lot', '1%', 'dhirajkelly.id', 'warna', 'Warna'];
 
 type Cue = {t0: number; t1: number; text: string};
 const cues = (sents: Sent[]): Cue[] => {

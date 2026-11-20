@@ -11,6 +11,5 @@ export const End: React.FC = () => (
 			<Appear at={8}><div style={{fontWeight: 800, fontSize: 96, color: C.gold, letterSpacing: -2, marginTop: 18}}>dhirajkelly.id</div></Appear>
 			<Appear at={16}><div style={{fontFamily: SERIF, fontSize: 40, color: C.text, marginTop: 12}}>Manage risk. Protect capital. Trade smarter.</div></Appear>
 		</div>
-		<div style={{position: 'absolute', left: 110, top: 520, width: 900, fontSize: 30, color: C.body, lineHeight: 1.4}}>Komen: langkah mana yang paling sering lo langgar?</div>
 	</AbsoluteFill>
 );

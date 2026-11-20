@@ -3,899 +3,773 @@
   "id": "s01_hook",
   "chapter": "Hook",
   "visual": "hook",
-  "audioDur": 34.769,
-  "duration": 35.469,
+  "audioDur": 41.874,
+  "duration": 42.574,
   "sentences": [
    {
-    "text": "Kebanyakan trader gold nggak rugi karena analisanya salah.",
-    "sub": "Kebanyakan trader gold nggak rugi karena analisanya salah.",
+    "text": "Satu candle yang sama bisa bikin dua trader ambil keputusan yang berlawanan.",
+    "sub": "Satu candle yang sama bisa bikin dua trader ambil keputusan yang berlawanan.",
     "start": 0.0,
-    "end": 3.253
+    "end": 4.125
    },
    {
-    "text": "Mereka rugi karena masuk di tempat yang salah, di waktu yang salah.",
-    "sub": "Mereka rugi karena masuk di tempat yang salah, di waktu yang salah.",
-    "start": 3.608,
-    "end": 7.531
+    "text": "Yang satu lihat warnanya hijau, langsung mikir harga mau naik.",
+    "sub": "Yang satu lihat warnanya hijau, langsung mikir harga mau naik.",
+    "start": 4.569,
+    "end": 8.182
    },
    {
-    "text": "Harga udah lari jauh, baru ikut buy.",
-    "sub": "Harga udah lari jauh, baru ikut buy.",
-    "start": 7.859,
-    "end": 10.093
+    "text": "Yang satu lagi lihat sumbu atasnya panjang, dan mikir pembeli baru aja kalah.",
+    "sub": "Yang satu lagi lihat sumbu atasnya panjang, dan mikir pembeli baru aja kalah.",
+    "start": 8.592,
+    "end": 13.199
    },
    {
-    "text": "Harga baru mau balik arah, malah buka posisi.",
-    "sub": "Harga baru mau balik arah, malah buka posisi.",
-    "start": 10.339,
-    "end": 13.026
+    "text": "Contoh simulasi: dalam satu jam emas sempat naik delapan dolar, tapi waktu candle tutup, harganya cuma dua dolar di atas pembukaan.",
+    "sub": "Contoh simulasi: dalam satu jam emas sempat naik $8, tapi waktu candle tutup, harganya cuma $2 di atas pembukaan.",
+    "start": 13.682,
+    "end": 21.903
    },
    {
-    "text": "Di video ini gue bongkar cara gue nentuin entry XAUUSD dari nol.",
-    "sub": "Di video ini gue bongkar cara gue nentuin entry XAUUSD dari nol.",
-    "start": 13.38,
-    "end": 18.185
+    "text": "Di video ini gue ajarin cara baca candle dengan benar: empat harga di dalamnya, cara ngitung body dan sumbu, hubungan antar timeframe, dan cara pakai candle buat naruh stop loss.",
+    "sub": "Di video ini gue ajarin cara baca candle dengan benar: 4 harga di dalamnya, cara ngitung body dan sumbu, hubungan antar timeframe, dan cara pakai candle buat naruh stop loss.",
+    "start": 22.401,
+    "end": 33.447
    },
    {
-    "text": "Arah trend, area entry, konfirmasi, sampai di mana stop loss dan target ditaruh.",
-    "sub": "Arah trend, area entry, konfirmasi, sampai di mana stop loss dan target ditaruh.",
-    "start": 18.519,
-    "end": 23.599
+    "text": "Kalau lo cuma lihat warna, lo baru baca setengah cerita.",
+    "sub": "Kalau lo cuma lihat warna, lo baru baca setengah cerita.",
+    "start": 33.849,
+    "end": 37.04
    },
    {
-    "text": "Empat langkah, satu chart, dan di akhir ada checklist yang bisa lo pakai sebelum klik buy atau sell.",
-    "sub": "Empat langkah, satu chart, dan di akhir ada checklist yang bisa lo pakai sebelum klik buy atau sell.",
-    "start": 23.948,
-    "end": 29.495
-   },
-   {
-    "text": "Kalau lo lewatin, lo bakal terus nebak-nebak entry.",
-    "sub": "Kalau lo lewatin, lo bakal terus nebak-nebak entry.",
-    "start": 29.778,
-    "end": 32.59
-   },
-   {
-    "text": "Dan nebak itu mahal.",
-    "sub": "Dan nebak itu mahal.",
-    "start": 32.89,
-    "end": 34.486
+    "text": "Dan setengah cerita itu biasanya berakhir di stop loss yang kesentuh percuma.",
+    "sub": "Dan setengah cerita itu biasanya berakhir di stop loss yang kesentuh percuma.",
+    "start": 37.439,
+    "end": 41.631
    }
   ]
  },
  {
-  "id": "s02_setup",
-  "chapter": "Hook",
+  "id": "s02_map",
+  "chapter": "Peta isi",
   "visual": "roadmap",
-  "audioDur": 24.686,
-  "duration": 25.386,
+  "audioDur": 29.806,
+  "duration": 30.506,
   "sentences": [
    {
-    "text": "Sebelum mulai, satu hal.",
-    "sub": "Sebelum mulai, satu hal.",
+    "text": "Ini materi ketiga di kelas Fondasi Trading, Academy Doktor Trader.",
+    "sub": "Ini materi ketiga di kelas Fondasi Trading, Academy Doktor Trader.",
     "start": 0.0,
-    "end": 1.501
+    "end": 3.79
    },
    {
-    "text": "Semua chart di video ini simulasi buat edukasi, bukan sinyal.",
-    "sub": "Semua chart di video ini simulasi buat edukasi, bukan sinyal.",
-    "start": 1.948,
-    "end": 6.077
+    "text": "Semua chart dan angka di video ini simulasi buat edukasi, bukan sinyal.",
+    "sub": "Semua chart dan angka di video ini simulasi buat edukasi, bukan sinyal.",
+    "start": 4.232,
+    "end": 8.493
    },
    {
-    "text": "Tujuannya biar lo ngerti logikanya, bukan nyalin levelnya.",
-    "sub": "Tujuannya biar lo ngerti logikanya, bukan nyalin levelnya.",
-    "start": 6.494,
-    "end": 10.033
+    "text": "Kita jalan lima bagian.",
+    "sub": "Kita jalan lima bagian.",
+    "start": 8.889,
+    "end": 11.062
    },
    {
-    "text": "Konsep yang dipakai juga bukan barang baru:",
-    "sub": "Konsep yang dipakai juga bukan barang baru:",
-    "start": 10.525,
-    "end": 12.59
+    "text": "Satu, empat harga di dalam satu candle.",
+    "sub": "Satu, 4 harga di dalam satu candle.",
+    "start": 11.309,
+    "end": 13.116
    },
    {
-    "text": "VWAP, EMA, order block, fair value gap, dan change of character.",
-    "sub": "VWAP, EMA, order block, fair value gap, dan change of character.",
-    "start": 13.001,
-    "end": 17.925
+    "text": "Dua, body, sumbu, dan range.",
+    "sub": "Dua, body, sumbu, dan range.",
+    "start": 13.425,
+    "end": 15.945
    },
    {
-    "text": "Yang bikin beda adalah urutannya.",
-    "sub": "Yang bikin beda adalah urutannya.",
-    "start": 18.351,
-    "end": 20.36
+    "text": "Tiga, timeframe, dan kenapa pemula sebaiknya mulai dari H satu dan H empat.",
+    "sub": "Tiga, timeframe, dan kenapa pemula sebaiknya mulai dari H1 dan H4.",
+    "start": 16.248,
+    "end": 20.803
    },
    {
-    "text": "Kalau urutannya jelas, keputusan lo nggak lagi tergantung perasaan.",
-    "sub": "Kalau urutannya jelas, keputusan lo nggak lagi tergantung perasaan.",
-    "start": 20.808,
-    "end": 24.393
+    "text": "Empat, konteks, yang lebih penting dari bentuk candle.",
+    "sub": "Empat, konteks, yang lebih penting dari bentuk candle.",
+    "start": 21.147,
+    "end": 24.324
+   },
+   {
+    "text": "Lima, dari candle ke rencana risiko.",
+    "sub": "Lima, dari candle ke rencana risiko.",
+    "start": 24.62,
+    "end": 27.081
+   },
+   {
+    "text": "Terakhir ada tugas latihan di akun demo.",
+    "sub": "Terakhir ada tugas latihan di akun demo.",
+    "start": 27.377,
+    "end": 29.528
    }
   ]
  },
  {
-  "id": "s03_trend",
-  "chapter": "Langkah 1 · Arah trend",
-  "visual": "trend",
-  "audioDur": 44.669,
-  "duration": 45.369,
+  "id": "s03_ohlc",
+  "chapter": "Bagian 1 · Empat harga",
+  "visual": "ohlc",
+  "audioDur": 52.846,
+  "duration": 53.546,
   "sentences": [
    {
-    "text": "Langkah pertama, tentuin arah.",
-    "sub": "Langkah pertama, tentuin arah.",
+    "text": "Bagian pertama.",
+    "sub": "Bagian pertama.",
     "start": 0.0,
-    "end": 2.022
+    "end": 0.885
    },
    {
-    "text": "Gue pakai timeframe lima belas menit dengan dua alat:",
-    "sub": "Gue pakai timeframe 15 menit dengan dua alat:",
-    "start": 2.386,
-    "end": 4.907
+    "text": "Satu candlestick merangkum empat harga dalam satu periode.",
+    "sub": "Satu candlestick merangkum 4 harga dalam satu periode.",
+    "start": 1.404,
+    "end": 4.751
    },
    {
-    "text": "VWAP dan EMA sembilan.",
-    "sub": "VWAP dan EMA 9.",
-    "start": 5.226,
-    "end": 7.588
+    "text": "Open, harga pembukaan.",
+    "sub": "Open, harga pembukaan.",
+    "start": 5.194,
+    "end": 5.656
    },
    {
-    "text": "VWAP itu harga rata-rata yang ditimbang pakai volume sejak sesi dimulai.",
-    "sub": "VWAP itu harga rata-rata yang ditimbang pakai volume sejak sesi dimulai.",
-    "start": 7.942,
-    "end": 12.501
+    "text": "High, harga tertinggi yang sempat disentuh.",
+    "sub": "High, harga tertinggi yang sempat disentuh.",
+    "start": 5.913,
+    "end": 9.63
    },
    {
-    "text": "Anggap aja ini garis harga wajar hari itu.",
-    "sub": "Anggap aja ini garis harga wajar hari itu.",
-    "start": 12.827,
-    "end": 15.26
+    "text": "Low, harga terendah.",
+    "sub": "Low, harga terendah.",
+    "start": 10.039,
+    "end": 10.462
    },
    {
-    "text": "EMA sembilan itu rata-rata sembilan candle terakhir.",
-    "sub": "EMA 9 itu rata-rata sembilan candle terakhir.",
-    "start": 15.606,
-    "end": 18.766
+    "text": "Dan close, harga penutupan.",
+    "sub": "Dan close, harga penutupan.",
+    "start": 10.705,
+    "end": 11.535
    },
    {
-    "text": "Dia cepat, jadi nunjukin momentum sekarang.",
-    "sub": "Dia cepat, jadi nunjukin momentum sekarang.",
-    "start": 19.068,
-    "end": 21.387
+    "text": "Di MT empat atau MT lima, keempat angka ini bisa lo lihat di jendela Data Window sambil arahin kursor ke candle.",
+    "sub": "Di MT4 atau MT5, keempat angka ini bisa lo lihat di jendela Data Window sambil arahin kursor ke candle.",
+    "start": 11.803,
+    "end": 21.029
    },
    {
-    "text": "Aturannya simpel.",
-    "sub": "Aturannya simpel.",
-    "start": 21.73,
-    "end": 22.595
+    "text": "Kita pakai satu candle simulasi di timeframe satu jam.",
+    "sub": "Kita pakai satu candle simulasi di timeframe satu jam.",
+    "start": 21.525,
+    "end": 24.427
    },
    {
-    "text": "Harga dan EMA sembilan ada di atas VWAP, gue cuma cari buy.",
-    "sub": "Harga dan EMA 9 ada di atas VWAP, gue cuma cari buy.",
-    "start": 22.854,
-    "end": 27.149
+    "text": "Open di tiga ribu tujuh ratus lima puluh.",
+    "sub": "Open di 3.750.",
+    "start": 24.869,
+    "end": 27.079
    },
    {
-    "text": "Harga dan EMA sembilan ada di bawah VWAP, gue cuma cari sell.",
-    "sub": "Harga dan EMA 9 ada di bawah VWAP, gue cuma cari sell.",
-    "start": 27.422,
-    "end": 30.502
+    "text": "Harga sempat naik ke tiga ribu tujuh ratus lima puluh delapan, lalu sempat turun ke tiga ribu tujuh ratus empat puluh enam.",
+    "sub": "Harga sempat naik ke 3.758, lalu sempat turun ke 3.746.",
+    "start": 27.513,
+    "end": 34.019
    },
    {
-    "text": "Kalau harga bolak-balik nyilang VWAP dan EMA-nya mendatar, itu pasar tanpa arah.",
-    "sub": "Kalau harga bolak-balik nyilang VWAP dan EMA-nya mendatar, itu pasar tanpa arah.",
-    "start": 30.698,
-    "end": 37.028
+    "text": "Satu jam kemudian candle tutup di tiga ribu tujuh ratus lima puluh dua.",
+    "sub": "Satu jam kemudian candle tutup di 3.752.",
+    "start": 34.438,
+    "end": 38.444
    },
    {
-    "text": "Gue nggak trading.",
-    "sub": "Gue nggak trading.",
-    "start": 37.264,
-    "end": 38.053
+    "text": "Karena close lebih tinggi dari open, body-nya hijau.",
+    "sub": "Karena close lebih tinggi dari open, body-nya hijau.",
+    "start": 38.865,
+    "end": 41.952
    },
    {
-    "text": "Langkah ini kelihatan sepele, tapi ini yang nyelametin lo dari kebiasaan paling mahal: ngelawan arus.",
-    "sub": "Langkah ini kelihatan sepele, tapi ini yang nyelametin lo dari kebiasaan paling mahal: ngelawan arus.",
-    "start": 38.378,
-    "end": 44.669
+    "text": "Kalau close lebih rendah dari open, body-nya merah.",
+    "sub": "Kalau close lebih rendah dari open, body-nya merah.",
+    "start": 42.334,
+    "end": 45.269
+   },
+   {
+    "text": "Warna cuma ngasih tahu satu hal: posisi close dibanding open.",
+    "sub": "Warna cuma ngasih tahu satu hal: posisi close dibanding open.",
+    "start": 45.626,
+    "end": 49.503
+   },
+   {
+    "text": "Warna nggak ngasih tahu apa yang terjadi di tengah jalan.",
+    "sub": "Warna nggak ngasih tahu apa yang terjadi di tengah jalan.",
+    "start": 49.818,
+    "end": 52.846
    }
   ]
  },
  {
-  "id": "s04_area",
-  "chapter": "Langkah 2 · Area entry",
-  "visual": "area",
-  "audioDur": 48.588,
-  "duration": 49.288,
+  "id": "s04_body",
+  "chapter": "Bagian 2 · Body, sumbu, range",
+  "visual": "bodywick",
+  "audioDur": 64.601,
+  "duration": 65.301,
   "sentences": [
    {
-    "text": "Langkah kedua, cari area.",
-    "sub": "Langkah kedua, cari area.",
+    "text": "Bagian kedua, kita bedah candle tadi pakai hitungan.",
+    "sub": "Bagian kedua, kita bedah candle tadi pakai hitungan.",
     "start": 0.0,
-    "end": 1.91
+    "end": 3.15
    },
    {
-    "text": "Masih di lima belas menit, gue cari dua hal.",
-    "sub": "Masih di 15 menit, gue cari dua hal.",
-    "start": 2.464,
-    "end": 4.761
+    "text": "Body adalah jarak open ke close.",
+    "sub": "Body adalah jarak open ke close.",
+    "start": 3.585,
+    "end": 5.954
    },
    {
-    "text": "Pertama, order block.",
-    "sub": "Pertama, order block.",
-    "start": 5.136,
-    "end": 5.65
+    "text": "Tiga ribu tujuh ratus lima puluh dua dikurangi tiga ribu tujuh ratus lima puluh, body-nya dua dolar.",
+    "sub": "3.752 dikurangi 3.750, body-nya $2.",
+    "start": 6.336,
+    "end": 12.159
    },
    {
-    "text": "Ini candle terakhir yang berlawanan arah sebelum harga bergerak kuat.",
-    "sub": "Ini candle terakhir yang berlawanan arah sebelum harga bergerak kuat.",
-    "start": 5.836,
-    "end": 10.53
+    "text": "Range adalah jarak high ke low.",
+    "sub": "Range adalah jarak high ke low.",
+    "start": 12.561,
+    "end": 14.709
    },
    {
-    "text": "Kalau trend naik, berarti candle merah terakhir sebelum harga lompat ke atas.",
-    "sub": "Kalau trend naik, berarti candle merah terakhir sebelum harga lompat ke atas.",
-    "start": 10.884,
-    "end": 15.234
+    "text": "Tiga ribu tujuh ratus lima puluh delapan dikurangi tiga ribu tujuh ratus empat puluh enam, range-nya dua belas dolar.",
+    "sub": "3.758 dikurangi 3.746, range-nya $12.",
+    "start": 15.054,
+    "end": 21.416
    },
    {
-    "text": "Kedua, fair value gap atau FVG.",
-    "sub": "Kedua, fair value gap atau FVG.",
-    "start": 15.598,
-    "end": 17.21
+    "text": "Sumbu atas, dari high ke bagian atas body, enam dolar.",
+    "sub": "Sumbu atas, dari high ke bagian atas body, $6.",
+    "start": 21.82,
+    "end": 25.557
    },
    {
-    "text": "Ini celah di antara tiga candle, waktu harga gerak terlalu cepat sampai ada bagian yang nggak sempat ditransaksikan.",
-    "sub": "Ini celah di antara tiga candle, waktu harga gerak terlalu cepat sampai ada bagian yang nggak sempat ditransaksikan.",
-    "start": 17.405,
-    "end": 25.43
+    "text": "Sumbu bawah, dari bagian bawah body ke low, empat dolar.",
+    "sub": "Sumbu bawah, dari bagian bawah body ke low, $4.",
+    "start": 25.961,
+    "end": 28.736
    },
    {
-    "text": "Area terbaik itu tempat order block dan FVG saling tumpang tindih.",
-    "sub": "Area terbaik itu tempat order block dan FVG saling tumpang tindih.",
-    "start": 25.782,
-    "end": 29.89
+    "text": "Coba cek: dua tambah enam tambah empat, balik lagi ke dua belas.",
+    "sub": "Coba cek: 2 + 6 + 4, balik lagi ke 12.",
+    "start": 29.002,
+    "end": 32.817
    },
    {
-    "text": "Satu catatan: pilih area yang masih segar, yang belum pernah disentuh lagi sejak terbentuk.",
-    "sub": "Satu catatan: pilih area yang masih segar, yang belum pernah disentuh lagi sejak terbentuk.",
-    "start": 30.357,
-    "end": 35.321
+    "text": "Jadi body cuma sekitar seperenam dari range.",
+    "sub": "Jadi body cuma sekitar 1/6 dari range.",
+    "start": 33.084,
+    "end": 37.585
    },
    {
-    "text": "Area yang udah berkali-kali dites biasanya makin lemah.",
-    "sub": "Area yang udah berkali-kali dites biasanya makin lemah.",
-    "start": 35.624,
-    "end": 38.662
+    "text": "Artinya selama satu jam itu harga gerak lebar ke dua arah, tapi akhirnya nggak jauh dari titik awal.",
+    "sub": "Artinya selama satu jam itu harga gerak lebar ke dua arah, tapi akhirnya nggak jauh dari titik awal.",
+    "start": 37.882,
+    "end": 41.499
    },
    {
-    "text": "Terus yang paling penting: lo nunggu harga balik ke area itu.",
-    "sub": "Terus yang paling penting: lo nunggu harga balik ke area itu.",
-    "start": 38.969,
-    "end": 42.666
+    "text": "Pembeli sempat dorong naik delapan dolar dari open, lalu sebagian besar kenaikan itu dilepas lagi.",
+    "sub": "Pembeli sempat dorong naik $8 dari open, lalu sebagian besar kenaikan itu dilepas lagi.",
+    "start": 41.733,
+    "end": 50.173
    },
    {
-    "text": "Lo nggak ngejar.",
-    "sub": "Lo nggak ngejar.",
-    "start": 42.921,
-    "end": 43.684
+    "text": "Ini beda jauh dengan candle hijau yang body-nya hampir sepanjang range.",
+    "sub": "Ini beda jauh dengan candle hijau yang body-nya hampir sepanjang range.",
+    "start": 50.49,
+    "end": 54.566
    },
    {
-    "text": "Kalau harga nggak balik, ya udah.",
-    "sub": "Kalau harga nggak balik, ya udah.",
-    "start": 43.94,
-    "end": 45.721
+    "text": "Hati-hati juga dengan istilah.",
+    "sub": "Hati-hati juga dengan istilah.",
+    "start": 54.897,
+    "end": 56.38
    },
    {
-    "text": "Lo nggak rugi apa-apa karena lo memang nggak masuk.",
-    "sub": "Lo nggak rugi apa-apa karena lo memang nggak masuk.",
-    "start": 45.952,
-    "end": 48.344
+    "text": "Body itu bukan range.",
+    "sub": "Body itu bukan range.",
+    "start": 56.627,
+    "end": 58.429
+   },
+   {
+    "text": "Kalau lo ngukur volatilitas pakai body aja, lo bakal salah ngitung seberapa jauh harga sebenarnya bergerak.",
+    "sub": "Kalau lo ngukur volatilitas pakai body aja, lo bakal salah ngitung seberapa jauh harga sebenarnya bergerak.",
+    "start": 58.649,
+    "end": 64.336
    }
   ]
  },
  {
-  "id": "s05_confirm",
-  "chapter": "Langkah 3 · Konfirmasi",
-  "visual": "confirm",
-  "audioDur": 40.829,
-  "duration": 41.529,
+  "id": "s05_tf",
+  "chapter": "Bagian 3 · Timeframe",
+  "visual": "timeframe",
+  "audioDur": 63.713,
+  "duration": 64.413,
   "sentences": [
    {
-    "text": "Langkah ketiga, konfirmasi.",
-    "sub": "Langkah ketiga, konfirmasi.",
+    "text": "Bagian ketiga, timeframe.",
+    "sub": "Bagian ketiga, timeframe.",
     "start": 0.0,
-    "end": 1.979
+    "end": 1.931
    },
    {
-    "text": "Ini yang paling sering dilewatin.",
-    "sub": "Ini yang paling sering dilewatin.",
-    "start": 2.448,
-    "end": 4.186
+    "text": "Di MT empat atau MT lima, lo bisa pilih M satu, M lima, M lima belas, H satu, H empat, sampai D satu.",
+    "sub": "Di MT4 atau MT5, lo bisa pilih M1, M5, M15, H1, H4, sampai D1.",
+    "start": 2.507,
+    "end": 7.961
    },
    {
-    "text": "Harga nyentuh area bukan berarti langsung entry.",
-    "sub": "Harga nyentuh area bukan berarti langsung entry.",
-    "start": 4.615,
-    "end": 7.251
+    "text": "Satu candle H satu itu sebenarnya gabungan dari empat candle M lima belas.",
+    "sub": "Satu candle H1 itu sebenarnya gabungan dari 4 candle M15.",
+    "start": 8.184,
+    "end": 10.757
    },
    {
-    "text": "Area itu cuma tempat lo mulai memperhatikan.",
-    "sub": "Area itu cuma tempat lo mulai memperhatikan.",
-    "start": 7.641,
-    "end": 10.209
+    "text": "Open-nya diambil dari candle pertama.",
+    "sub": "Open-nya diambil dari candle pertama.",
+    "start": 11.291,
+    "end": 15.913
    },
    {
-    "text": "Begitu harga masuk area, gue turun ke timeframe satu atau tiga menit.",
-    "sub": "Begitu harga masuk area, gue turun ke timeframe M1 atau M3.",
-    "start": 10.62,
-    "end": 14.61
+    "text": "Close-nya dari candle terakhir.",
+    "sub": "Close-nya dari candle terakhir.",
+    "start": 16.37,
+    "end": 18.614
    },
    {
-    "text": "Di situ biasanya harga masih turun, bikin high yang makin rendah.",
-    "sub": "Di situ biasanya harga masih turun, bikin high yang makin rendah.",
-    "start": 15.052,
-    "end": 18.812
+    "text": "High-nya yang paling tinggi dari keempatnya, dan low-nya yang paling rendah.",
+    "sub": "High-nya yang paling tinggi dari keempatnya, dan low-nya yang paling rendah.",
+    "start": 19.048,
+    "end": 20.738
    },
    {
-    "text": "Gue nunggu harga nembus high terakhir itu.",
-    "sub": "Gue nunggu harga nembus high terakhir itu.",
-    "start": 19.265,
-    "end": 23.834
+    "text": "Lihat di layar.",
+    "sub": "Lihat di layar.",
+    "start": 21.157,
+    "end": 25.779
    },
    {
-    "text": "Itu yang disebut change of character, atau CHoCH.",
-    "sub": "Itu yang disebut change of character, atau CHoCH.",
-    "start": 24.027,
-    "end": 25.63
+    "text": "Di M lima belas, candle kedua naik sampai tiga ribu tujuh ratus lima puluh delapan, terus dua candle berikutnya turun lagi.",
+    "sub": "Di M15, candle kedua naik sampai 3.758, terus dua candle berikutnya turun lagi.",
+    "start": 26.264,
+    "end": 32.108
    },
    {
-    "text": "Artinya tekanan jual mulai kalah.",
-    "sub": "Artinya tekanan jual mulai kalah.",
-    "start": 25.815,
-    "end": 28.18
+    "text": "Di H satu, semua cerita itu dipadatkan jadi satu candle dengan sumbu atas panjang.",
+    "sub": "Di H1, semua cerita itu dipadatkan jadi satu candle dengan sumbu atas panjang.",
+    "start": 32.478,
+    "end": 40.629
    },
    {
-    "text": "Syarat tambahannya, gerakan yang nembus itu harus ninggalin FVG kecil.",
-    "sub": "Syarat tambahannya, gerakan yang nembus itu harus ninggalin FVG kecil.",
-    "start": 28.621,
-    "end": 32.753
+    "text": "Makin kecil timeframe-nya, makin banyak gerakan acak yang kelihatan.",
+    "sub": "Makin kecil timeframe-nya, makin banyak gerakan acak yang kelihatan.",
+    "start": 41.152,
+    "end": 44.857
    },
    {
-    "text": "Entry gue ada di FVG itu, waktu harga balik ngetes.",
-    "sub": "Entry gue ada di FVG itu, waktu harga balik ngetes.",
-    "start": 33.209,
-    "end": 36.681
+    "text": "Itu sebabnya pemula sebaiknya mulai dari H satu dan H empat.",
+    "sub": "Itu sebabnya pemula sebaiknya mulai dari H1 dan H4.",
+    "start": 45.305,
+    "end": 48.916
    },
    {
-    "text": "Nggak ada CHoCH, nggak ada entry.",
-    "sub": "Nggak ada CHoCH, nggak ada entry.",
-    "start": 37.032,
-    "end": 39.181
+    "text": "Candle-nya lebih sedikit, noise-nya lebih kecil, dan lo punya waktu buat mikir sebelum ambil keputusan.",
+    "sub": "Candle-nya lebih sedikit, noise-nya lebih kecil, dan lo punya waktu buat mikir sebelum ambil keputusan.",
+    "start": 49.401,
+    "end": 55.073
    },
    {
-    "text": "Sesederhana itu.",
-    "sub": "Sesederhana itu.",
-    "start": 39.478,
-    "end": 40.829
+    "text": "Satu catatan lagi: jam candle ikut zona waktu server broker, jadi candle harian di dua broker bisa sedikit beda bentuknya.",
+    "sub": "Satu catatan lagi: jam candle ikut zona waktu server broker, jadi candle harian di dua broker bisa sedikit beda bentuknya.",
+    "start": 55.612,
+    "end": 63.493
    }
   ]
  },
  {
-  "id": "s06_sltp",
-  "chapter": "Langkah 4 · Stop loss & target",
-  "visual": "sltp",
-  "audioDur": 33.646,
-  "duration": 34.346,
+  "id": "s06_ctx",
+  "chapter": "Bagian 4 · Konteks",
+  "visual": "context",
+  "audioDur": 59.167,
+  "duration": 59.867,
   "sentences": [
    {
-    "text": "Langkah keempat, stop loss dan target.",
-    "sub": "Langkah keempat, stop loss dan target.",
+    "text": "Bagian keempat, dan ini yang paling sering dilewatin: konteks.",
+    "sub": "Bagian keempat, dan ini yang paling sering dilewatin: konteks.",
     "start": 0.0,
-    "end": 2.377
+    "end": 3.39
    },
    {
-    "text": "Stop loss gue taruh di bawah low yang bikin CHoCH tadi, ditambah buffer lima pips.",
-    "sub": "Stop loss gue taruh di bawah low yang bikin CHoCH tadi, ditambah buffer 5 pips.",
-    "start": 2.895,
-    "end": 8.023
+    "text": "Banyak orang ngapalin puluhan nama pola.",
+    "sub": "Banyak orang ngapalin puluhan nama pola.",
+    "start": 3.891,
+    "end": 7.072
    },
    {
-    "text": "Buffer ini biar posisi lo nggak kena cuma karena spread melebar sedikit.",
-    "sub": "Buffer ini biar posisi lo nggak kena cuma karena spread melebar sedikit.",
-    "start": 8.479,
-    "end": 12.27
+    "text": "Doji, engulfing, pin bar, hammer.",
+    "sub": "Doji, engulfing, pin bar, hammer.",
+    "start": 7.475,
+    "end": 10.52
    },
    {
-    "text": "Target gue dua kali jarak stop loss.",
-    "sub": "Target gue dua kali jarak stop loss.",
-    "start": 12.731,
-    "end": 14.912
+    "text": "Nama itu boleh lo kenal, tapi bentuk candle tanpa lokasi itu nyaris nggak ada artinya.",
+    "sub": "Nama itu boleh lo kenal, tapi bentuk candle tanpa lokasi itu nyaris nggak ada artinya.",
+    "start": 10.893,
+    "end": 15.841
    },
    {
-    "text": "Risk reward satu banding dua.",
-    "sub": "Risk reward 1:2.",
-    "start": 15.292,
-    "end": 17.048
+    "text": "Lihat dua candle simulasi ini.",
+    "sub": "Lihat dua candle simulasi ini.",
+    "start": 16.298,
+    "end": 17.846
    },
    {
-    "text": "Kenapa dua?",
-    "sub": "Kenapa dua?",
-    "start": 17.458,
-    "end": 18.08
+    "text": "Bentuknya sama persis, sumbu bawah panjang dan body kecil.",
+    "sub": "Bentuknya sama persis, sumbu bawah panjang dan body kecil.",
+    "start": 18.225,
+    "end": 21.811
    },
    {
-    "text": "Coba itung.",
-    "sub": "Coba itung.",
-    "start": 18.395,
-    "end": 18.876
+    "text": "Yang kiri muncul di tengah-tengah range, di area yang nggak punya sejarah apa-apa.",
+    "sub": "Yang kiri muncul di tengah-tengah range, di area yang nggak punya sejarah apa-apa.",
+    "start": 22.264,
+    "end": 26.53
    },
    {
-    "text": "Sepuluh trade, menang cuma empat.",
-    "sub": "10 trade, menang cuma 4.",
-    "start": 19.273,
-    "end": 21.052
+    "text": "Yang kanan muncul tepat di area support yang sebelumnya udah beberapa kali nahan harga.",
+    "sub": "Yang kanan muncul tepat di area support yang sebelumnya udah beberapa kali nahan harga.",
+    "start": 26.978,
+    "end": 31.922
    },
    {
-    "text": "Empat kali dua R sama dengan delapan R.",
-    "sub": "4 × 2R = 8R.",
-    "start": 21.464,
-    "end": 23.875
+    "text": "Yang kanan ngasih informasi: harga sempat ditekan ke area itu, lalu ditolak.",
+    "sub": "Yang kanan ngasih informasi: harga sempat ditekan ke area itu, lalu ditolak.",
+    "start": 32.345,
+    "end": 36.954
    },
    {
-    "text": "Kalah enam, minus enam R.",
-    "sub": "Kalah 6, minus 6R.",
-    "start": 24.247,
-    "end": 26.072
+    "text": "Yang kiri cuma gerakan biasa.",
+    "sub": "Yang kiri cuma gerakan biasa.",
+    "start": 37.471,
+    "end": 39.228
    },
    {
-    "text": "Hasilnya masih plus dua R, sebelum biaya.",
-    "sub": "Hasilnya masih +2R, sebelum biaya.",
-    "start": 26.388,
-    "end": 29.122
+    "text": "Jadi urutannya begini.",
+    "sub": "Jadi urutannya begini.",
+    "start": 39.673,
+    "end": 40.79
    },
    {
-    "text": "Jadi lo nggak harus sering benar.",
-    "sub": "Jadi lo nggak harus sering benar.",
-    "start": 29.498,
-    "end": 31.047
+    "text": "Pertama, tandai dulu area penting di H empat.",
+    "sub": "Pertama, tandai dulu area penting di H4.",
+    "start": 41.237,
+    "end": 43.887
    },
    {
-    "text": "Lo cuma harus disiplin sama rasio ini.",
-    "sub": "Lo cuma harus disiplin sama rasio ini.",
-    "start": 31.274,
-    "end": 33.365
+    "text": "Kedua, baru perhatiin candle yang terbentuk di area itu.",
+    "sub": "Kedua, baru perhatiin candle yang terbentuk di area itu.",
+    "start": 44.349,
+    "end": 47.63
+   },
+   {
+    "text": "Ketiga, tanya apa yang candle itu ceritain soal tarik-menarik pembeli dan penjual.",
+    "sub": "Ketiga, tanya apa yang candle itu ceritain soal tarik-menarik pembeli dan penjual.",
+    "start": 48.077,
+    "end": 53.23
+   },
+   {
+    "text": "Candle bukan sinyal.",
+    "sub": "Candle bukan sinyal.",
+    "start": 53.756,
+    "end": 54.882
+   },
+   {
+    "text": "Candle itu bukti kecil yang lo kumpulin sebelum bikin rencana.",
+    "sub": "Candle itu bukti kecil yang lo kumpulin sebelum bikin rencana.",
+    "start": 55.211,
+    "end": 58.848
    }
   ]
  },
  {
-  "id": "s07_lot",
-  "chapter": "Ukuran posisi",
-  "visual": "lot",
-  "audioDur": 45.479,
-  "duration": 46.179,
+  "id": "s07_risk",
+  "chapter": "Bagian 5 · Rencana risiko",
+  "visual": "risk",
+  "audioDur": 72.046,
+  "duration": 72.746,
   "sentences": [
    {
-    "text": "Sekarang bagian yang bikin semua langkah tadi ada artinya: ukuran posisi.",
-    "sub": "Sekarang bagian yang bikin semua langkah tadi ada artinya: ukuran posisi.",
+    "text": "Bagian kelima, dari candle ke rencana risiko.",
+    "sub": "Bagian kelima, dari candle ke rencana risiko.",
     "start": 0.0,
-    "end": 4.848
-   },
-   {
-    "text": "Banyak orang ngajarin cara nyari profit.",
-    "sub": "Banyak orang ngajarin cara nyari profit.",
-    "start": 5.372,
-    "end": 7.228
-   },
-   {
-    "text": "Gue lebih tertarik ngajarin cara ngebangun modal tanpa ngancurin modal itu.",
-    "sub": "Gue lebih tertarik ngajarin cara ngebangun modal tanpa ngancurin modal itu.",
-    "start": 7.752,
-    "end": 11.987
+    "end": 3.161
    },
    {
     "text": "Contoh simulasi.",
     "sub": "Contoh simulasi.",
-    "start": 12.485,
-    "end": 13.291
+    "start": 3.672,
+    "end": 4.559
    },
    {
-    "text": "Modal sepuluh ribu dolar.",
-    "sub": "Modal $10.000.",
-    "start": 13.758,
-    "end": 15.19
+    "text": "Di area support tadi, ada candle H satu dengan low di tiga ribu tujuh ratus empat puluh.",
+    "sub": "Di area support tadi, ada candle H1 dengan low di 3.740.",
+    "start": 5.031,
+    "end": 10.134
    },
    {
-    "text": "Risiko satu persen per trade, berarti seratus dolar.",
-    "sub": "Risiko 1% per trade, berarti $100.",
-    "start": 15.596,
-    "end": 18.847
+    "text": "Misalnya rencana entry ilustrasi lo di tiga ribu tujuh ratus empat puluh delapan.",
+    "sub": "Misalnya rencana entry ilustrasi lo di 3.748.",
+    "start": 10.566,
+    "end": 15.004
    },
    {
-    "text": "Jarak stop loss lima dolar.",
-    "sub": "Jarak stop loss $5.",
-    "start": 19.273,
-    "end": 20.833
+    "text": "Stop loss logisnya ditaruh di bawah ujung sumbu itu, ditambah buffer satu dolar, jadi di tiga ribu tujuh ratus tiga puluh sembilan.",
+    "sub": "Stop loss logisnya ditaruh di bawah ujung sumbu itu, ditambah buffer $1, jadi di 3.739.",
+    "start": 15.357,
+    "end": 23.276
    },
    {
-    "text": "Di XAUUSD, satu lot itu seratus ons, jadi tiap harga gerak satu dolar, nilainya seratus dolar per lot.",
-    "sub": "Di XAUUSD, satu lot itu 100 ons, jadi tiap harga gerak $1, nilainya $100 per lot.",
-    "start": 21.267,
-    "end": 28.745
+    "text": "Jarak stop-nya sembilan dolar.",
+    "sub": "Jarak stop-nya $9.",
+    "start": 23.601,
+    "end": 25.235
    },
    {
-    "text": "Stop lima dolar berarti lima ratus dolar per lot.",
-    "sub": "Stop $5 berarti $500 per lot.",
-    "start": 29.235,
-    "end": 32.073
+    "text": "Kenapa bukan di tengah sumbu?",
+    "sub": "Kenapa bukan di tengah sumbu?",
+    "start": 25.614,
+    "end": 26.946
    },
    {
-    "text": "Seratus dibagi lima ratus, ketemu nol koma dua lot.",
-    "sub": "$100 ÷ $500, ketemu 0,2 lot.",
-    "start": 32.49,
-    "end": 35.75
+    "text": "Karena harga udah pernah ke sana.",
+    "sub": "Karena harga udah pernah ke sana.",
+    "start": 27.204,
+    "end": 29.133
    },
    {
-    "text": "Urutannya: risiko dulu, jarak stop kedua, lot terakhir.",
-    "sub": "Urutannya: risiko dulu, jarak stop kedua, lot terakhir.",
-    "start": 36.25,
-    "end": 39.222
+    "text": "Stop di tengah sumbu gampang kesentuh lagi walaupun ide lo belum salah.",
+    "sub": "Stop di tengah sumbu gampang kesentuh lagi walaupun ide lo belum salah.",
+    "start": 29.383,
+    "end": 33.585
    },
    {
-    "text": "Jangan dibalik.",
-    "sub": "Jangan dibalik.",
-    "start": 39.429,
-    "end": 40.12
+    "text": "Sekarang hitung lot.",
+    "sub": "Sekarang hitung lot.",
+    "start": 33.994,
+    "end": 34.858
    },
    {
-    "text": "Lot yang ditentuin dari perasaan itu jalan tercepat ke margin call.",
-    "sub": "Lot yang ditentuin dari perasaan itu jalan tercepat ke margin call.",
-    "start": 40.431,
-    "end": 45.479
+    "text": "Modal lima ribu dolar, risiko satu persen, berarti lima puluh dolar.",
+    "sub": "Modal $5.000, risiko 1%, berarti $50.",
+    "start": 35.21,
+    "end": 39.481
+   },
+   {
+    "text": "Satu lot XAUUSD umumnya seratus ons, jadi tiap harga gerak satu dolar nilainya seratus dolar per lot.",
+    "sub": "Satu lot XAUUSD umumnya 100 ons, jadi tiap harga gerak $1 nilainya $100 per lot.",
+    "start": 39.808,
+    "end": 47.079
+   },
+   {
+    "text": "Stop sembilan dolar berarti sembilan ratus dolar per lot.",
+    "sub": "Stop $9 berarti $900 per lot.",
+    "start": 47.418,
+    "end": 50.745
+   },
+   {
+    "text": "Lima puluh dibagi sembilan ratus, kira-kira nol koma nol lima lima.",
+    "sub": "$50 ÷ $900, kira-kira 0,055.",
+    "start": 51.029,
+    "end": 55.391
+   },
+   {
+    "text": "Bulatkan ke bawah jadi nol koma nol lima lot.",
+    "sub": "Bulatkan ke bawah jadi 0,05 lot.",
+    "start": 55.653,
+    "end": 58.478
+   },
+   {
+    "text": "Kalau kena stop, rugi sekitar empat puluh lima dolar, bisa lebih kalau ada slippage atau spread melebar.",
+    "sub": "Kalau kena stop, rugi sekitar $45, bisa lebih kalau ada slippage atau spread melebar.",
+    "start": 58.806,
+    "end": 64.6
+   },
+   {
+    "text": "Urutannya selalu sama: candle ngasih lokasi stop, risiko persen ngasih batas rugi, lot dihitung paling akhir.",
+    "sub": "Urutannya selalu sama: candle ngasih lokasi stop, risiko persen ngasih batas rugi, lot dihitung paling akhir.",
+    "start": 64.893,
+    "end": 71.786
    }
   ]
  },
  {
-  "id": "s08_example",
-  "chapter": "Contoh lengkap",
-  "visual": "example",
-  "audioDur": 51.879,
-  "duration": 52.579,
+  "id": "s08_task",
+  "chapter": "Tugas latihan",
+  "visual": "task",
+  "audioDur": 40.124,
+  "duration": 40.824,
   "sentences": [
    {
-    "text": "Biar kebayang, kita jalanin satu contoh simulasi dari awal.",
-    "sub": "Biar kebayang, kita jalanin satu contoh simulasi dari awal.",
+    "text": "Sekarang tugas latihan di akun demo.",
+    "sub": "Sekarang tugas latihan di akun demo.",
     "start": 0.0,
-    "end": 3.438
+    "end": 2.025
    },
    {
-    "text": "Di lima belas menit, harga dan EMA sembilan ada di atas VWAP.",
-    "sub": "Di 15 menit, harga dan EMA 9 ada di atas VWAP.",
-    "start": 3.942,
-    "end": 8.474
+    "text": "Buka chart XAUUSD di H satu, lalu ambil sepuluh candle terakhir.",
+    "sub": "Buka chart XAUUSD di H1, lalu ambil 10 candle terakhir.",
+    "start": 2.49,
+    "end": 7.544
    },
    {
-    "text": "Berarti cuma cari buy.",
-    "sub": "Berarti cuma cari buy.",
-    "start": 8.786,
-    "end": 10.415
+    "text": "Untuk tiap candle, catat open, high, low, dan close.",
+    "sub": "Untuk tiap candle, catat open, high, low, dan close.",
+    "start": 8.029,
+    "end": 10.732
    },
    {
-    "text": "Harga turun ke area di mana order block dan FVG tumpang tindih.",
-    "sub": "Harga turun ke area di mana order block dan FVG tumpang tindih.",
-    "start": 10.785,
-    "end": 14.781
+    "text": "Hitung body, range, sumbu atas, dan sumbu bawah, lalu cek apakah body tambah dua sumbu sama dengan range.",
+    "sub": "Hitung body, range, sumbu atas, dan sumbu bawah, lalu cek apakah body tambah dua sumbu sama dengan range.",
+    "start": 10.912,
+    "end": 19.816
    },
    {
-    "text": "Gue belum entry.",
-    "sub": "Gue belum entry.",
-    "start": 15.126,
-    "end": 15.966
+    "text": "Setelah itu tandai satu atau dua area penting di H empat, dan lihat candle mana yang terbentuk di dekat area itu.",
+    "sub": "Setelah itu tandai satu atau dua area penting di H4, dan lihat candle mana yang terbentuk di dekat area itu.",
+    "start": 20.258,
+    "end": 26.831
    },
    {
-    "text": "Gue turun ke satu menit.",
-    "sub": "Gue turun ke 1 menit.",
-    "start": 16.393,
-    "end": 17.493
+    "text": "Terakhir, pindah ke M lima belas dan lihat cerita apa yang tersembunyi di dalam satu candle H satu.",
+    "sub": "Terakhir, pindah ke M15 dan lihat cerita apa yang tersembunyi di dalam satu candle H1.",
+    "start": 27.296,
+    "end": 33.112
    },
    {
-    "text": "Harga nembus high terakhir, CHoCH terbentuk, dan ninggalin FVG kecil.",
-    "sub": "Harga nembus high terakhir, CHoCH terbentuk, dan ninggalin FVG kecil.",
-    "start": 17.908,
-    "end": 19.372
+    "text": "Nggak usah buka posisi.",
+    "sub": "Nggak usah buka posisi.",
+    "start": 33.547,
+    "end": 34.64
    },
    {
-    "text": "Harga balik ngetes FVG itu di empat ribu empat ratus dua belas koma lima.",
-    "sub": "Harga balik ngetes FVG itu di 4.412,50.",
-    "start": 19.647,
-    "end": 27.495
-   },
-   {
-    "text": "Di situ entry.",
-    "sub": "Di situ entry.",
-    "start": 27.86,
-    "end": 28.592
-   },
-   {
-    "text": "Stop loss di empat ribu empat ratus tujuh koma lima, lima dolar di bawah.",
-    "sub": "Stop loss di 4.407,50, $5 di bawah.",
-    "start": 28.957,
-    "end": 31.703
-   },
-   {
-    "text": "Target di empat ribu empat ratus dua puluh dua koma lima, sepuluh dolar di atas.",
-    "sub": "Target di 4.422,50, $10 di atas.",
-    "start": 31.984,
-    "end": 36.377
-   },
-   {
-    "text": "Lot nol koma dua, risiko seratus dolar, potensi dua ratus dolar.",
-    "sub": "Lot 0,2, risiko $100, potensi $200.",
-    "start": 36.596,
-    "end": 40.938
-   },
-   {
-    "text": "Kalau harga balik turun dan kena stop, rugi sekitar seratus dolar, bisa sedikit lebih kalau ada slippage.",
-    "sub": "Kalau harga balik turun dan kena stop, rugi sekitar $100, bisa sedikit lebih kalau ada slippage.",
-    "start": 41.156,
-    "end": 48.808
-   },
-   {
-    "text": "Dan angka itu sudah diterima sebelum klik buy.",
-    "sub": "Dan angka itu sudah diterima sebelum klik buy.",
-    "start": 49.017,
-    "end": 51.657
+    "text": "Tujuannya biar mata lo terbiasa baca candle sebagai data, bukan sebagai warna.",
+    "sub": "Tujuannya biar mata lo terbiasa baca candle sebagai data, bukan sebagai warna.",
+    "start": 34.983,
+    "end": 39.846
    }
   ]
  },
  {
-  "id": "s08b_loss",
-  "chapter": "Contoh yang gagal",
-  "visual": "loss",
-  "audioDur": 46.759,
-  "duration": 47.459,
+  "id": "s09_sum",
+  "chapter": "Ringkasan",
+  "visual": "summary",
+  "audioDur": 33.646,
+  "duration": 34.346,
   "sentences": [
    {
-    "text": "Sekarang contoh kedua, dan yang ini gagal.",
-    "sub": "Sekarang contoh kedua, dan yang ini gagal.",
+    "text": "Ringkasnya.",
+    "sub": "Ringkasnya.",
     "start": 0.0,
-    "end": 3.099
+    "end": 0.698
    },
    {
-    "text": "Gue sengaja tunjukin, karena video trading yang isinya menang semua itu nggak jujur.",
-    "sub": "Gue sengaja tunjukin, karena video trading yang isinya menang semua itu nggak jujur.",
-    "start": 3.528,
-    "end": 8.156
+    "text": "Satu, tiap candle berisi empat harga: open, high, low, close.",
+    "sub": "Satu, tiap candle berisi 4 harga: open, high, low, close.",
+    "start": 1.085,
+    "end": 6.375
    },
    {
-    "text": "Semua syarat terpenuhi.",
-    "sub": "Semua syarat terpenuhi.",
-    "start": 8.566,
-    "end": 9.878
+    "text": "Dua, warna cuma nunjukin close dibanding open, bukan seluruh perjalanan harga.",
+    "sub": "Dua, warna cuma nunjukin close dibanding open, bukan seluruh perjalanan harga.",
+    "start": 6.699,
+    "end": 11.591
    },
    {
-    "text": "Trend naik di atas VWAP, harga balik ke area, CHoCH muncul di satu menit, entry di FVG.",
-    "sub": "Trend naik di atas VWAP, harga balik ke area, CHoCH muncul di 1 menit, entry di FVG.",
-    "start": 10.251,
-    "end": 16.104
+    "text": "Tiga, body dan range itu beda, dan body tambah dua sumbu sama dengan range.",
+    "sub": "Tiga, body dan range itu beda, dan body tambah dua sumbu sama dengan range.",
+    "start": 12.009,
+    "end": 17.047
    },
    {
-    "text": "Lima belas menit kemudian, harga turun nembus low dan kena stop loss.",
-    "sub": "15 menit kemudian, harga turun nembus low dan kena stop loss.",
-    "start": 16.421,
-    "end": 22.323
+    "text": "Empat, satu candle H satu adalah gabungan empat candle M lima belas, jadi mulai dari H satu dan H empat.",
+    "sub": "Empat, satu candle H1 adalah gabungan 4 candle M15, jadi mulai dari H1 dan H4.",
+    "start": 17.415,
+    "end": 24.504
    },
    {
-    "text": "Rugi sekitar seratus dolar, satu R.",
-    "sub": "Rugi sekitar $100, 1R.",
-    "start": 22.622,
-    "end": 24.16
+    "text": "Lima, lokasi lebih penting dari bentuk.",
+    "sub": "Lima, lokasi lebih penting dari bentuk.",
+    "start": 24.901,
+    "end": 27.446
    },
    {
-    "text": "Apa yang salah?",
-    "sub": "Apa yang salah?",
-    "start": 24.358,
-    "end": 24.874
-   },
-   {
-    "text": "Bisa jadi nggak ada yang salah.",
-    "sub": "Bisa jadi nggak ada yang salah.",
-    "start": 25.426,
-    "end": 27.935
-   },
-   {
-    "text": "Setup yang bagus tetap bisa kalah.",
-    "sub": "Setup yang bagus tetap bisa kalah.",
-    "start": 28.275,
-    "end": 30.224
-   },
-   {
-    "text": "Itu sebabnya risiko per trade dibatasi satu persen.",
-    "sub": "Itu sebabnya risiko per trade dibatasi 1%.",
-    "start": 30.576,
-    "end": 33.804
-   },
-   {
-    "text": "Satu kekalahan cuma satu R, bukan setengah akun.",
-    "sub": "Satu kekalahan cuma 1R, bukan setengah akun.",
-    "start": 34.165,
-    "end": 37.4
-   },
-   {
-    "text": "Yang perlu lo cek setelah loss cuma satu: apakah semua aturan diikutin.",
-    "sub": "Yang perlu lo cek setelah loss cuma satu: apakah semua aturan diikutin.",
-    "start": 37.761,
-    "end": 42.134
-   },
-   {
-    "text": "Kalau iya, itu biaya bisnis.",
-    "sub": "Kalau iya, itu biaya bisnis.",
-    "start": 42.478,
-    "end": 44.409
-   },
-   {
-    "text": "Kalau nggak, itu pelajaran.",
-    "sub": "Kalau nggak, itu pelajaran.",
-    "start": 44.73,
-    "end": 46.49
+    "text": "Enam, stop loss di luar sumbu, dan lot dihitung dari risiko, bukan dari perasaan.",
+    "sub": "Enam, stop loss di luar sumbu, dan lot dihitung dari risiko, bukan dari perasaan.",
+    "start": 27.866,
+    "end": 33.371
    }
   ]
  },
  {
-  "id": "s09_skip",
-  "chapter": "Kapan nggak entry",
-  "visual": "skip",
-  "audioDur": 29.884,
-  "duration": 30.584,
-  "sentences": [
-   {
-    "text": "Sama pentingnya: kapan gue nggak entry.",
-    "sub": "Sama pentingnya: kapan gue nggak entry.",
-    "start": 0.0,
-    "end": 2.37
-   },
-   {
-    "text": "Satu, harga bolak-balik di sekitar VWAP.",
-    "sub": "Satu, harga bolak-balik di sekitar VWAP.",
-    "start": 2.85,
-    "end": 6.291
-   },
-   {
-    "text": "Dua, area sudah dites berkali-kali, jadi kekuatannya udah kepakai.",
-    "sub": "Dua, area sudah dites berkali-kali, jadi kekuatannya udah kepakai.",
-    "start": 6.673,
-    "end": 11.1
-   },
-   {
-    "text": "Tiga, ada berita besar kayak NFP, CPI, atau FOMC dalam waktu dekat.",
-    "sub": "Tiga, ada berita besar kayak NFP, CPI, atau FOMC dalam waktu dekat.",
-    "start": 11.449,
-    "end": 16.934
-   },
-   {
-    "text": "Empat, CHoCH nggak muncul.",
-    "sub": "Empat, CHoCH nggak muncul.",
-    "start": 17.359,
-    "end": 17.688
-   },
-   {
-    "text": "Lima, target dua R ketutup level lain, jadi rasionya nggak masuk.",
-    "sub": "Lima, target 2R ketutup level lain, jadi rasionya nggak masuk.",
-    "start": 17.975,
-    "end": 23.473
-   },
-   {
-    "text": "Skip itu juga keputusan.",
-    "sub": "Skip itu juga keputusan.",
-    "start": 24.023,
-    "end": 25.773
-   },
-   {
-    "text": "Kadang keputusan terbaik hari itu adalah nggak ngapa-ngapain.",
-    "sub": "Kadang keputusan terbaik hari itu adalah nggak ngapa-ngapain.",
-    "start": 26.175,
-    "end": 29.628
-   }
-  ]
- },
- {
-  "id": "s10_checklist",
-  "chapter": "Checklist",
-  "visual": "checklist",
-  "audioDur": 30.119,
-  "duration": 30.819,
-  "sentences": [
-   {
-    "text": "Ini checklist-nya.",
-    "sub": "Ini checklist-nya.",
-    "start": 0.0,
-    "end": 0.811
-   },
-   {
-    "text": "Screenshot atau simpan.",
-    "sub": "Screenshot atau simpan.",
-    "start": 1.166,
-    "end": 2.587
-   },
-   {
-    "text": "Satu, arah trend jelas di lima belas menit, harga dan EMA sembilan di sisi yang sama dari VWAP.",
-    "sub": "Satu, arah trend jelas di 15 menit, harga dan EMA 9 di sisi yang sama dari VWAP.",
-    "start": 2.992,
-    "end": 9.862
-   },
-   {
-    "text": "Dua, harga balik ke area order block plus FVG.",
-    "sub": "Dua, harga balik ke area order block plus FVG.",
-    "start": 10.26,
-    "end": 13.78
-   },
-   {
-    "text": "Tiga, ada CHoCH di satu atau tiga menit, dan ninggalin FVG.",
-    "sub": "Tiga, ada CHoCH di M1 atau M3, dan ninggalin FVG.",
-    "start": 14.202,
-    "end": 17.564
-   },
-   {
-    "text": "Empat, stop loss di bawah low plus buffer, target minimal dua R.",
-    "sub": "Empat, stop loss di bawah low plus buffer, target minimal 2R.",
-    "start": 17.76,
-    "end": 22.146
-   },
-   {
-    "text": "Lima, lot dihitung dari risiko satu persen.",
-    "sub": "Lima, lot dihitung dari risiko 1%.",
-    "start": 22.415,
-    "end": 27.075
-   },
-   {
-    "text": "Kalau satu aja nggak terpenuhi, nggak usah entry.",
-    "sub": "Kalau satu aja nggak terpenuhi, nggak usah entry.",
-    "start": 27.373,
-    "end": 29.807
-   }
-  ]
- },
- {
-  "id": "s11_cta",
+  "id": "s10_cta",
   "chapter": "Penutup",
   "visual": "cta",
-  "audioDur": 21.238,
-  "duration": 21.938,
+  "audioDur": 25.156,
+  "duration": 25.856,
   "sentences": [
    {
     "text": "Ini edukasi umum.",
     "sub": "Ini edukasi umum.",
     "start": 0.0,
-    "end": 1.121
+    "end": 1.093
    },
    {
     "text": "Trading pakai leverage bisa bikin lo rugi dan kehilangan modal.",
     "sub": "Trading pakai leverage bisa bikin lo rugi dan kehilangan modal.",
-    "start": 1.47,
-    "end": 4.692
+    "start": 1.458,
+    "end": 4.737
    },
    {
-    "text": "Kalau lo mau latihan nandain area dan CHoCH bareng trader lain, join komunitas gratis di dhirajkelly dot i d.",
-    "sub": "Kalau lo mau latihan nandain area dan CHoCH bareng trader lain, join komunitas gratis di dhirajkelly.id.",
-    "start": 5.011,
-    "end": 11.896
+    "text": "Kalau lo mau latihan baca chart bareng trader lain, join komunitas gratis di dhirajkelly dot i d.",
+    "sub": "Kalau lo mau latihan baca chart bareng trader lain, join komunitas gratis di dhirajkelly.id.",
+    "start": 5.05,
+    "end": 10.536
    },
    {
-    "text": "Dan tulis di komentar: dari lima langkah tadi, mana yang paling sering lo langgar?",
-    "sub": "Dan tulis di komentar: dari lima langkah tadi, mana yang paling sering lo langgar?",
-    "start": 12.23,
-    "end": 16.361
+    "text": "Tulis di komentar: dari sepuluh candle yang lo catat, berapa yang body-nya lebih kecil dari setengah range?",
+    "sub": "Tulis di komentar: dari 10 candle yang lo catat, berapa yang body-nya lebih kecil dari setengah range?",
+    "start": 10.969,
+    "end": 16.505
+   },
+   {
+    "text": "Kalau video ini ngebantu, subscribe biar materi berikutnya nggak kelewat.",
+    "sub": "Kalau video ini ngebantu, subscribe biar materi berikutnya nggak kelewat.",
+    "start": 16.894,
+    "end": 20.65
    },
    {
     "text": "Gue Dhiraj Kelly.",
     "sub": "Gue Dhiraj Kelly.",
-    "start": 16.866,
-    "end": 17.751
+    "start": 20.951,
+    "end": 21.818
    },
    {
     "text": "Manage risk, protect capital, trade smarter.",
     "sub": "Manage risk, protect capital, trade smarter.",
-    "start": 18.041,
-    "end": 20.949
+    "start": 22.115,
+    "end": 24.88
    }
   ]
  }
