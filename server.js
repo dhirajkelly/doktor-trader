@@ -53,11 +53,11 @@ async function main() {
     const rows = db.all("SELECT slug, title, excerpt, published_at, category FROM articles WHERE status='published' AND published_at <= datetime('now') ORDER BY published_at DESC LIMIT 3");
     let html = landingTpl.replace('<!-- MARKET WATCH -->', require('./src/market').landingSection());
     if (rows.length) {
-      const sec = `<section style="background:#070F1E;border-top:1px solid rgba(255,255,255,0.06)"><div style="max-width:1200px;margin:0 auto;padding:64px 24px">
-<div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px;margin-bottom:24px"><h2 style="margin:0;font-size:32px;font-weight:800">Artikel terbaru</h2><a href="/artikel" style="color:#E9C46A;font-weight:700;text-decoration:none">Lihat semua artikel →</a></div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px">${rows.map((a) => `<a href="/artikel/${esc(a.slug)}" style="display:block;padding:22px;border-radius:18px;background:#0C1730;border:1px solid rgba(255,255,255,0.08);text-decoration:none;color:#E7ECF5">
-<span style="font-size:12px;color:#E9C46A;font-weight:700;letter-spacing:.08em;text-transform:uppercase">${esc(a.category)}</span><h3 style="margin:10px 0 8px;font-size:19px;line-height:1.35">${esc(a.title)}</h3>
-<p style="margin:0 0 10px;color:#A9B6CC;font-size:15px;line-height:1.6">${esc(a.excerpt || '')}</p><span style="font-size:13px;color:#8C9AB5">${fmtDate(a.published_at)}</span></a>`).join('')}</div></div></section>`;
+      const sec = `<section class="sec" style="padding-top:24px"><div class="wrap">
+<div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px;margin-bottom:28px"><h2 class="h-sec" style="text-align:left">Artikel terbaru</h2><a href="/artikel" style="font-weight:700;text-decoration:none">Lihat semua artikel →</a></div>
+<div class="grid g3">${rows.map((a) => `<a href="/artikel/${esc(a.slug)}" class="card art-card">
+<span class="tag">${esc(a.category)}</span><b>${esc(a.title)}</b>
+<p>${esc(a.excerpt || '')}</p><small>${fmtDate(a.published_at)}</small></a>`).join('')}</div></div></section>`;
       html = html.replace('<!-- FOOTER -->', sec + '\n  <!-- FOOTER -->');
     }
     res.type('html').send(html);

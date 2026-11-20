@@ -27,13 +27,13 @@ function widgets(cardAttr = 'class="card" style="padding:10px"', calNoteAttr = '
 
 // Section untuk homepage (gaya landing di public/index.html).
 function landingSection() {
-  const card = 'style="padding:10px;border:1px solid rgba(255,255,255,0.08);background:#0C1730;border-radius:22px"';
-  return `<section id="market" style="max-width:1200px;margin:0 auto;padding:96px 24px 24px">
-<span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#5FD3A6;letter-spacing:0.14em">MARKET WATCH · LIVE</span>
-<h2 style="margin:14px 0 12px;font-size:clamp(30px,3.6vw,46px);line-height:1.12;font-weight:800;letter-spacing:-0.01em">Pantau market langsung dari sini.</h2>
-<p style="margin:0 0 8px;font-size:17px;line-height:1.6;color:#A9B6CC;max-width:720px">Emas, pair forex utama, indeks saham, dan kalender ekonomi dalam satu layar. Ganti simbol di chart untuk instrumen favoritmu. Data dari TradingView dan bisa tertunda; bukan sinyal transaksi.</p>
+  const card = 'style="padding:10px;border:1px solid rgba(255,255,255,0.08);background:#071A33;border-radius:12px"';
+  return `<section id="market" style="max-width:1180px;margin:0 auto;padding:72px 24px 24px">
+<span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5BE3EE;letter-spacing:0.16em">MARKET WATCH · LIVE</span>
+<h2 style="margin:14px 0 12px;font-family:'Fira Sans',sans-serif;text-transform:uppercase;font-size:clamp(24px,2.6vw,32px);line-height:1.12;font-weight:800">Pantau market langsung dari sini</h2>
+<p style="margin:0 0 8px;font-size:16px;line-height:1.6;color:#9DB0C8;max-width:720px">Emas, pair forex utama, indeks saham, dan kalender ekonomi dalam satu layar. Ganti simbol di chart untuk instrumen favoritmu. Data dari TradingView dan bisa tertunda; bukan sinyal transaksi.</p>
 ${widgets(card, 'style="padding:6px 6px 2px;font-size:14px;color:#8C9AB5"')}
-<p style="margin:12px 0 0;font-size:14px;color:#8C9AB5">Widget pasar oleh <a href="https://id.tradingview.com/" target="_blank" rel="noopener nofollow" style="color:#E9C46A">TradingView</a>.</p>
+<p style="margin:12px 0 0;font-size:14px;color:#8C9AB5">Widget pasar oleh <a href="https://id.tradingview.com/" target="_blank" rel="noopener nofollow" style="color:#5BE3EE">TradingView</a>.</p>
 </section>`;
 }
 
