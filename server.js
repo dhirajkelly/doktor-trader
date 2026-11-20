@@ -70,6 +70,7 @@ async function main() {
   app.use(require('./src/routes/admin'));
   app.use(require('./src/routes/features'));
   app.use(require('./src/routes/lab'));
+  app.use(require('./src/routes/command'));
 
   app.use((req, res) => res.status(404).send(layout({ title: 'Halaman tidak ditemukan', noindex: true, user: req.user,
     body: '<section class="narrow" style="padding:60px 20px;text-align:center"><h1>404</h1><p class="muted">Halaman tidak ditemukan.</p><a class="btn" href="/">Ke beranda</a> <a class="btn ghost" href="/artikel">Baca artikel</a></section>' })));

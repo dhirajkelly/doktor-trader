@@ -1,0 +1,43 @@
+/* Trading Command Center (member area). Memakai variabel warna dari layout utama. */
+.cc-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin:0 0 18px;scrollbar-width:thin}
+.cc-tabs a{flex:none;padding:7px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap}
+.cc-tabs a.on{color:#0B1630;background:var(--gold);border-color:var(--gold)}
+.cc-tool{text-decoration:none;color:inherit;display:block}
+.cc-tool:hover{border-color:rgba(233,196,106,.45)}
+.cc-ico{width:42px;height:42px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;background:rgba(233,196,106,.12);color:var(--gold)}
+.cc-scan{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.cc-check{margin:0;padding-left:20px;line-height:1.7}
+.cc-check li{margin:4px 0}
+.cc-sec{margin-top:22px}
+.cc-sec>h2,.cc-sec>h3{margin:0 0 10px}
+.cc-form{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))}
+.cc-form .full{grid-column:1/-1}
+.cc-form label{display:block;margin-bottom:4px}
+.cc-form [hidden]{display:none!important}
+.cc-sum{background:rgba(233,196,106,.06);border:1px solid rgba(233,196,106,.25);border-radius:12px;padding:14px 16px;line-height:1.65}
+.cc-sum ul{margin:6px 0 0;padding-left:18px}
+.cc-stats{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr))}
+.cc-stats .card{padding:14px}
+.cc-stats .v{font-size:22px;font-weight:800;margin-top:2px}
+.cc-pos{color:var(--green)}.cc-neg{color:var(--red)}
+.cc-tbl{width:100%;border-collapse:collapse;font-size:14px}
+.cc-tbl th,.cc-tbl td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.cc-tbl th{color:var(--muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.cc-tbl td.n,.cc-tbl th.n{text-align:right;font-variant-numeric:tabular-nums}
+.cc-canvas{width:100%;height:240px;display:block}
+.cc-light{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:14px;border:1px solid var(--line)}
+.cc-light b{font-size:22px}
+.cc-light.go{background:rgba(95,211,166,.1);border-color:rgba(95,211,166,.45)}
+.cc-light.warn{background:rgba(233,196,106,.1);border-color:rgba(233,196,106,.45)}
+.cc-light.stop{background:rgba(240,138,126,.12);border-color:rgba(240,138,126,.5)}
+.cc-meter{height:10px;border-radius:10px;background:rgba(255,255,255,.08);overflow:hidden;margin:6px 0 2px}
+.cc-meter i{display:block;height:100%;background:var(--gold)}
+.cc-meter i.hot{background:var(--red)}
+.cc-tags{display:flex;flex-wrap:wrap;gap:6px}
+.cc-tags label{display:inline-flex;align-items:center;gap:6px;font-weight:500;font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;cursor:pointer}
+.cc-tags input{width:auto;min-height:auto}
+dialog.cc-dlg{max-width:560px;width:calc(100% - 24px);background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:16px;padding:20px}
+dialog.cc-dlg::backdrop{background:rgba(0,0,0,.6)}
+.cc-x{font-size:12px;padding:2px 8px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer;min-height:28px}
+.cc-x:hover{color:var(--text)}
+button[disabled]{opacity:.5;cursor:not-allowed}

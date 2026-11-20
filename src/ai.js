@@ -66,4 +66,48 @@ async function answer(question, topic) {
   }
 }
 
-module.exports = { enabled, answer, relatedLessons };
+
+// ===== Command Center: AI Chart Analysis (vision) & review jurnal =====
+const CHART_SYSTEM = `Kamu "Asisten AI Doktor Trader" yang membantu member BELAJAR membaca chart. Member mengunggah screenshot chart. Jawab dalam Bahasa Indonesia (sapa "kamu"), Markdown, maksimal ±300 kata, dengan bagian berikut:
+1. **Apa yang terlihat** — instrumen, timeframe, dan indikator bila terbaca di gambar (kalau tidak terbaca, katakan).
+2. **Struktur & tren** — higher high/higher low atau sebaliknya, fase (trending/ranging), posisi harga terhadap MA/VWAP bila ada.
+3. **Area penting** — zona support/resistance, swing high/low, gap/FVG atau order block yang tampak, sebut sebagai zona harga perkiraan dari gambar.
+4. **Skenario yang perlu dipantau** — minimal dua sisi (bullish dan bearish), masing-masing: konfirmasi apa yang ditunggu dan di mana ide itu batal.
+5. **Checklist risiko** — di mana stop loss logis untuk tiap skenario, cek jarak SL vs risk-reward minimal 1:2, risiko ≤1% modal, dan event berita.
+Aturan wajib: edukasi saja. JANGAN memberi sinyal buy/sell, rekomendasi masuk sekarang, target "pasti", atau prediksi arah. Angka harga dari gambar adalah perkiraan visual dan bisa meleset; minta member memverifikasi di platformnya. Jangan menjanjikan profit. Kalau gambar bukan chart trading, katakan singkat. Tutup dengan: "Ini edukasi, bukan rekomendasi transaksi."`;
+
+const JOURNAL_SYSTEM = `Kamu "Asisten AI Doktor Trader" yang mereview jurnal trading member dari ringkasan statistik (bukan data mentah). Bahasa Indonesia, sapa "kamu", Markdown, maksimal ±280 kata. Isi: 3 pola terkuat dari data (sebut angkanya), 2 kebiasaan yang paling mahal (kesalahan/emosi/jam/setup dengan P/L terburuk), dan 3 aturan perbaikan konkret untuk 20 trade berikutnya (mis. batas trade per hari, berhenti setelah 2 loss, hanya setup X). Jangan memberi sinyal atau prediksi harga, jangan menyarankan menambah modal atau deposit. Bila sampel <20 trade, ingatkan bahwa sampel kecil. Kalau data menunjukkan rugi besar beruntun, sarankan jeda trading dengan empati. Tutup: "Ini edukasi, bukan rekomendasi transaksi."`;
+
+async function callClaude(system, content, maxTokens = 1000) {
+  if (!enabled()) return { status: 'off', text: null };
+  const ctl = new AbortController();
+  const timer = setTimeout(() => ctl.abort(), 60000);
+  try {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST', signal: ctl.signal,
+      headers: { 'content-type': 'application/json', 'x-api-key': KEY(), 'anthropic-version': '2023-06-01' },
+      body: JSON.stringify({ model: MODEL(), max_tokens: maxTokens, system, messages: [{ role: 'user', content }] }),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}: ${(await r.text()).slice(0, 200)}`);
+    const j = await r.json();
+    const text = (j.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('\n').trim();
+    if (!text) throw new Error('empty');
+    return { status: 'ok', text };
+  } catch (e) {
+    console.error('[ai]', e.message);
+    return { status: 'error', text: null };
+  } finally { clearTimeout(timer); }
+}
+
+function analyzeChart(base64, mediaType, note) {
+  return callClaude(CHART_SYSTEM, [
+    { type: 'image', source: { type: 'base64', media_type: mediaType, data: base64 } },
+    { type: 'text', text: `Catatan member: ${String(note || '-').slice(0, 800)}\nBedah chart ini sesuai format.` },
+  ], 1100);
+}
+
+function reviewJournal(summary) {
+  return callClaude(JOURNAL_SYSTEM, [{ type: 'text', text: `Ringkasan jurnal member:\n${String(summary).slice(0, 6000)}` }], 900);
+}
+
+module.exports = { enabled, answer, relatedLessons, analyzeChart, reviewJournal };

@@ -12,6 +12,7 @@ const NAV = [
   ['/member/academy', 'Academy', 'academy'],
   ['/member/tanya', 'Tanya Doktor (AI)', 'tanya'],
   ['/member/analisa', 'Analisa Doktor', 'analisa'],
+  ['/member/command-center', 'Trading Command Center', 'cc'],
   ['/member/market', 'Market Watch', 'market'],
   ['/member/tools', 'EA · AI Signals · Copy Trade', 'tools'],
   ['/member/ai-lab', 'AI Strategy Lab', 'ailab'],
@@ -77,6 +78,7 @@ router.get('/member', (req, res) => {
 <div class="card"><div class="dim">Pertanyaan ke Doktor</div><div class="stat">${qs.length ? db.get('SELECT COUNT(*) n FROM questions WHERE user_id=?', [req.user.id]).n : 0}</div><a href="/member/tanya">Tanya sekarang →</a></div>
 <div class="card"><div class="dim">Status</div><div class="stat" style="font-size:20px;margin:6px 0"><span class="pill ok">Member terverifikasi</span></div><a href="/member/tools">Buka EA, AI Signals &amp; Copy Trade →</a></div>
 </div>
+<a class="card spread" href="/member/command-center" style="text-decoration:none;color:inherit;margin-bottom:18px;border-color:rgba(233,196,106,.45)"><div><div class="dim">Baru</div><strong>Trading Command Center</strong><div class="muted" style="font-size:14px">Scanner · AI Chart Analysis · Strategy Builder · Backtest · Risk Manager · Broker &amp; MT5 · AI Journal</div></div><span class="btn sm">Buka</span></a>
 <div class="row" style="margin-bottom:18px"><a class="btn ghost sm" href="/member/analisa">Analisa Doktor</a><a class="btn ghost sm" href="/member/market">Market Watch</a><a class="btn ghost sm" href="/member/webinar">Webinar bulanan</a><a class="btn ghost sm" href="/alat/kalkulator-lot">Kalkulator lot</a></div>
 ${next ? `<div class="card spread"><div><div class="dim">Lanjutkan belajar</div><strong>${esc(next.ctitle)} · ${esc(next.title)}</strong></div><a class="btn" href="/member/academy/${esc(next.cslug)}/${esc(next.slug)}">Mulai materi</a></div>` : (total ? '<div class="alert ok">Semua materi Academy sudah selesai. Mantap!</div>' : '')}
 ${qs.length ? `<h2 style="margin-top:28px">Pertanyaan terakhirmu</h2>${qs.map((q) => `<div class="card" style="margin-bottom:10px"><div class="spread"><strong>${esc(q.topic || 'Pertanyaan')}</strong>${(q.answer || q.ai_answer) ? '<span class="pill ok">Dijawab</span>' : '<span class="pill gray">Menunggu jawaban</span>'}</div><p class="muted" style="margin:6px 0 0">${esc(q.body.slice(0, 180))}</p></div>`).join('')}` : ''}`,

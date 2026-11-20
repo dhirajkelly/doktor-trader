@@ -151,6 +151,41 @@ CREATE TABLE IF NOT EXISTS settings (
   key TEXT PRIMARY KEY,
   value TEXT
 );
+CREATE TABLE IF NOT EXISTS cc_strategies (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  name TEXT NOT NULL,
+  rules_json TEXT NOT NULL,
+  created_at TEXT DEFAULT (datetime('now')),
+  updated_at TEXT DEFAULT (datetime('now'))
+);
+CREATE TABLE IF NOT EXISTS cc_journal (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL,
+  opened_at TEXT,
+  closed_at TEXT,
+  symbol TEXT,
+  side TEXT,
+  lot REAL,
+  entry REAL,
+  sl REAL,
+  tp REAL,
+  exit_price REAL,
+  pnl REAL,
+  setup TEXT DEFAULT '',
+  mistakes TEXT DEFAULT '',
+  emotion TEXT DEFAULT '',
+  notes TEXT DEFAULT '',
+  source TEXT DEFAULT 'manual',
+  ext_id TEXT,
+  created_at TEXT DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_cc_journal_user ON cc_journal(user_id, opened_at);
+CREATE TABLE IF NOT EXISTS cc_risk (
+  user_id INTEGER PRIMARY KEY,
+  json TEXT NOT NULL,
+  updated_at TEXT DEFAULT (datetime('now'))
+);
 `;
 
 async function init() {
