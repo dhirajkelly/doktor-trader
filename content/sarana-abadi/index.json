@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-20T21:52:10Z",
+ "generated": "2026-11-20T21:54:28Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -738,6 +738,94 @@
     {
      "q": "Kapan addendum sebaiknya ditandatangani?",
      "a": "Idealnya sebelum pekerjaan perubahan dilaksanakan, atau setidaknya segera setelah instruksi tertulis diterbitkan. Menumpuk banyak perubahan sampai akhir proyek membuat negosiasi lebih sulit."
+    }
+   ]
+  },
+  {
+   "id": "kontraktor-interior-kantor-pabrik",
+   "slug": "kontraktor-interior-kantor-pabrik",
+   "title": "Kontraktor Interior Kantor Pabrik: Perencanaan, Material, dan Tahapan",
+   "publish_at_wib": "2026-11-21 16:00",
+   "publish_at_utc": "2026-11-21T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/21/kontraktor-interior-kantor-pabrik/",
+   "html": "html/kontraktor-interior-kantor-pabrik.html",
+   "image": "img/kontraktor-interior-kantor-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang kontraktor interior kantor pabrik: ruang kantor dengan partisi dan plafon di area industri",
+   "excerpt": "Hal yang perlu direncanakan sebelum menunjuk kontraktor interior kantor pabrik, dari layout dan material sampai MEP, akustik, dan serah terima.",
+   "meta_title": "Kontraktor Interior Kantor Pabrik: Panduan Lengkap",
+   "meta_description": "Panduan memilih kontraktor interior kantor pabrik: kebutuhan ruang, partisi dan plafon, MEP, akustik, tahapan kerja, serta checklist penawaran yang setara.",
+   "focus_keyword": "kontraktor interior kantor pabrik",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Engineering & Design"
+   ],
+   "tags": [
+    "interior kantor",
+    "kantor pabrik",
+    "fit-out",
+    "partisi",
+    "plafon"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda kontraktor interior kantor pabrik dengan kontraktor interior biasa?",
+     "a": "Kantor pabrik berada di lingkungan industri dengan debu, kebisingan, getaran, dan aturan keselamatan yang lebih ketat. Kontraktor perlu memahami koordinasi dengan utilitas pabrik, izin kerja, serta jadwal yang tidak mengganggu produksi."
+    },
+    {
+     "q": "Apakah interior kantor bisa dikerjakan sambil pabrik beroperasi?",
+     "a": "Bisa, dengan zona kerja yang dipisahkan, jalur material dan pekerja yang tidak melintasi area produksi, pengendalian debu, serta jadwal kerja yang disepakati dengan pengelola pabrik."
+    },
+    {
+     "q": "Material partisi apa yang cocok untuk kantor di dalam area produksi?",
+     "a": "Pilihan umum adalah partisi rangka metal dengan papan gipsum atau papan semen, partisi kaca dengan rangka aluminium, dan sandwich panel. Pilihannya bergantung pada kebutuhan kedap suara, kebersihan, ketahanan benturan, dan persyaratan proteksi kebakaran."
+    },
+    {
+     "q": "Dokumen apa yang sebaiknya diterima saat serah terima interior kantor?",
+     "a": "Minimal gambar as-built, daftar material dan merek, single line diagram listrik, hasil pengujian instalasi, manual peralatan, serta daftar garansi dan masa pemeliharaan."
+    }
+   ]
+  },
+  {
+   "id": "sistem-ventilasi-gudang",
+   "slug": "sistem-ventilasi-gudang",
+   "title": "Sistem Ventilasi Gudang: Ventilasi Alami, Mekanis, dan Cara Menghitungnya",
+   "publish_at_wib": "2026-11-21 19:00",
+   "publish_at_utc": "2026-11-21T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/21/sistem-ventilasi-gudang/",
+   "html": "html/sistem-ventilasi-gudang.html",
+   "image": "img/sistem-ventilasi-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang sistem ventilasi gudang: aliran udara melalui louver dinding dan bukaan atap gudang industri",
+   "excerpt": "Cara merencanakan sistem ventilasi gudang yang efektif, dari ventilasi alami sampai exhaust fan, lengkap dengan contoh perhitungan pertukaran udara.",
+   "meta_title": "Sistem Ventilasi Gudang: Alami, Mekanis, dan Hitungan",
+   "meta_description": "Panduan sistem ventilasi gudang: prinsip efek cerobong, pilihan ridge vent, louver, turbin ventilator dan exhaust fan, serta contoh menghitung pertukaran udara.",
+   "focus_keyword": "sistem ventilasi gudang",
+   "categories": [
+    "Engineering & Design",
+    "Construction Technology & Innovation"
+   ],
+   "tags": [
+    "ventilasi gudang",
+    "sirkulasi udara",
+    "exhaust fan",
+    "turbin ventilator",
+    "gudang industri"
+   ],
+   "faq": [
+    {
+     "q": "Apakah turbin ventilator saja cukup untuk mendinginkan gudang?",
+     "a": "Turbin ventilator membantu mengeluarkan udara panas di bawah atap, tetapi kinerjanya bergantung pada angin dan perbedaan suhu. Tanpa bukaan masuk udara yang cukup di bagian bawah dinding, aliran udara tetap lemah."
+    },
+    {
+     "q": "Kapan gudang perlu memakai ventilasi mekanis?",
+     "a": "Ventilasi mekanis dipertimbangkan bila bukaan alami terbatas, beban panas dari proses atau atap tinggi, ada sumber asap atau uap yang perlu dibuang, atau barang yang disimpan memerlukan kondisi udara yang lebih terkendali."
+    },
+    {
+     "q": "Apa itu ACH dalam perhitungan ventilasi?",
+     "a": "ACH atau air changes per hour adalah berapa kali volume udara di dalam ruangan digantikan udara baru dalam satu jam. Angka ini dipakai untuk memperkirakan kapasitas kipas atau luas bukaan yang dibutuhkan."
+    },
+    {
+     "q": "Bagaimana mencegah air hujan masuk melalui bukaan ventilasi?",
+     "a": "Gunakan louver dengan bilah dan kemiringan yang sesuai, overstek atap yang cukup, ridge vent dengan penutup yang dirancang untuk hujan angin, serta kasa untuk mencegah burung dan serangga masuk."
     }
    ]
   }
