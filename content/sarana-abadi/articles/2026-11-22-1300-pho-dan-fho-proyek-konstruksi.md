@@ -106,6 +106,8 @@ Selama masa pemeliharaan, kontraktor wajib memperbaiki cacat yang muncul akibat 
 - **Batas tanggung jawab**: kerusakan akibat pemakaian yang salah, beban melebihi desain, atau modifikasi oleh pihak lain umumnya tidak termasuk.
 - **Inspeksi menjelang FHO**: pemeriksaan bersama beberapa minggu sebelum masa pemeliharaan berakhir agar sisa perbaikan bisa diselesaikan tepat waktu.
 
+Kami menyarankan agar setiap laporan cacat dan tindak lanjutnya dicatat dalam satu log bersama yang dapat dilihat kedua pihak. Log ini menjadi bukti yang objektif saat pemeriksaan menjelang FHO dan mencegah perdebatan tentang kapan suatu cacat dilaporkan.
+
 Pemilik juga perlu menjalankan perawatan rutin sesuai manual. Kerusakan yang muncul karena perawatan diabaikan dapat memicu perdebatan tentang siapa yang bertanggung jawab.
 
 ## Contoh Format Punch List yang Efektif

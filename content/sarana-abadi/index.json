@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-21T21:53:38Z",
+ "generated": "2026-11-21T21:55:47Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -955,6 +955,92 @@
     {
      "q": "Bolehkah retensi diganti jaminan bank?",
      "a": "Bisa, bila kontrak mengizinkan. Retensi dapat diganti dengan jaminan pemeliharaan dari bank atau perusahaan asuransi sehingga dana dapat dicairkan lebih awal."
+    }
+   ]
+  },
+  {
+   "id": "kontraktor-jalan-beton-pabrik-karawang",
+   "slug": "kontraktor-jalan-beton-pabrik-karawang",
+   "title": "Kontraktor Jalan Beton Pabrik Karawang: Lapisan, Sambungan, dan Mutu",
+   "publish_at_wib": "2026-11-22 16:00",
+   "publish_at_utc": "2026-11-22T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/22/kontraktor-jalan-beton-pabrik-karawang/",
+   "html": "html/kontraktor-jalan-beton-pabrik-karawang.html",
+   "image": "img/kontraktor-jalan-beton-pabrik-karawang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang kontraktor jalan beton pabrik Karawang",
+   "excerpt": "Yang perlu Anda cek sebelum menunjuk kontraktor jalan beton pabrik Karawang: lapisan, sambungan, contoh hitungan volume, dan pengendalian mutu.",
+   "meta_title": "Kontraktor Jalan Beton Pabrik Karawang: Panduan",
+   "meta_description": "Tips memilih kontraktor jalan beton pabrik Karawang: lapisan perkerasan kaku, sambungan dan dowel, contoh hitungan volume, uji mutu, dan menilai penawaran.",
+   "focus_keyword": "kontraktor jalan beton pabrik karawang",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "jalan beton",
+    "rigid pavement",
+    "jalan kawasan industri",
+    "pengecoran"
+   ],
+   "faq": [
+    {
+     "q": "Mengapa jalan di area pabrik umumnya memakai beton, bukan aspal?",
+     "a": "Jalan beton atau perkerasan kaku cocok untuk lalu lintas truk berat, forklift, dan area yang sering terkena tumpahan oli atau genangan, serta membutuhkan perawatan permukaan yang lebih jarang. Pilihan akhir tetap bergantung pada desain beban, anggaran, dan jadwal."
+    },
+    {
+     "q": "Berapa tebal jalan beton untuk area pabrik?",
+     "a": "Tebal pelat dihitung oleh perencana berdasarkan beban kendaraan, jumlah lintasan, daya dukung tanah dasar, dan mutu beton. Hindari menetapkan tebal hanya berdasarkan kebiasaan proyek lain."
+    },
+    {
+     "q": "Kapan jalan beton baru boleh dilewati truk?",
+     "a": "Setelah beton mencapai kekuatan yang disyaratkan perencana, yang dibuktikan dengan hasil uji benda uji. Waktu ini bergantung pada mutu beton, bahan tambah, dan perawatan, sehingga sebaiknya tidak ditetapkan hanya berdasarkan jumlah hari."
+    },
+    {
+     "q": "Apa fungsi sambungan gergaji pada jalan beton?",
+     "a": "Sambungan gergaji (saw cut) mengarahkan retak susut agar terjadi di garis yang direncanakan, bukan menyebar acak di permukaan pelat."
+    }
+   ]
+  },
+  {
+   "id": "kapasitas-rak-gudang",
+   "slug": "kapasitas-rak-gudang",
+   "title": "Kapasitas Rak Gudang: Cara Menghitung Posisi Palet dan Beban Aman",
+   "publish_at_wib": "2026-11-22 19:00",
+   "publish_at_utc": "2026-11-22T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/22/kapasitas-rak-gudang/",
+   "html": "html/kapasitas-rak-gudang.html",
+   "image": "img/kapasitas-rak-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang kapasitas rak gudang dan beban lantai",
+   "excerpt": "Panduan menghitung kapasitas rak gudang dari dua sisi: berapa palet yang muat dan berapa beban yang aman bagi rak serta lantai beton.",
+   "meta_title": "Kapasitas Rak Gudang: Hitung Posisi Palet & Beban",
+   "meta_description": "Cara menghitung kapasitas rak gudang: jumlah posisi palet, beban per level dan per rangka, beban titik ke lantai beton, contoh hitungan, dan inspeksi rak.",
+   "focus_keyword": "kapasitas rak gudang",
+   "categories": [
+    "Engineering & Design",
+    "Safety, Health & Environment (SHE)"
+   ],
+   "tags": [
+    "rak gudang",
+    "selective racking",
+    "beban lantai",
+    "desain gudang"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda kapasitas simpan dan kapasitas beban rak?",
+     "a": "Kapasitas simpan adalah jumlah posisi palet yang tersedia. Kapasitas beban adalah berat maksimum yang aman per level beam dan per rangka tegak. Keduanya harus dihitung, karena rak yang muat banyak palet belum tentu aman memikul beratnya."
+    },
+    {
+     "q": "Bolehkah mengubah ketinggian level beam sendiri?",
+     "a": "Sebaiknya tidak tanpa konfirmasi pemasok atau perencana. Jarak antar-level beam memengaruhi kapasitas rangka tegak, sehingga perubahan layout dapat menurunkan beban aman."
+    },
+    {
+     "q": "Apakah lantai gudang perlu dicek sebelum memasang rak?",
+     "a": "Ya. Kaki rak menyalurkan beban terpusat ke pelat lantai. Tebal pelat, mutu beton, dan kondisi tanah dasar perlu dicek terhadap beban titik dari base plate."
+    },
+    {
+     "q": "Seberapa sering rak gudang perlu diinspeksi?",
+     "a": "Lakukan pemeriksaan visual rutin oleh petugas gudang, ditambah inspeksi oleh pihak yang kompeten secara berkala. Standar Eropa EN 15635 sering dijadikan acuan pengelolaan dan inspeksi rak."
     }
    ]
   }
