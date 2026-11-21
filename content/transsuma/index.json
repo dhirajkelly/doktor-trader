@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-21T20:05:59Z",
+ "generated": "2026-11-21T20:07:04Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -338,6 +338,48 @@
     {
      "q": "Berapa lama limbah infeksius boleh disimpan di fasilitas?",
      "a": "Limbah infeksius perlu dijemput jauh lebih sering daripada limbah industri pada umumnya. Pastikan batas waktu penyimpanan yang berlaku untuk fasilitas Anda dengan dinas lingkungan hidup setempat dan tuangkan dalam rincian teknis penyimpanan."
+    }
+   ]
+  },
+  {
+   "id": "cara-memilih-kemasan-limbah-b3",
+   "slug": "cara-memilih-kemasan-limbah-b3",
+   "title": "Cara Memilih Kemasan Limbah B3: Drum, Jumbo Bag, IBC, dan Kontainer",
+   "publish_at_wib": "2026-11-22 12:00",
+   "publish_at_utc": "2026-11-22T05:00:00Z",
+   "url": "https://transsuma.com/cara-memilih-kemasan-limbah-b3/",
+   "html": "html/cara-memilih-kemasan-limbah-b3.html",
+   "image": "img/cara-memilih-kemasan-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang cara memilih kemasan limbah B3",
+   "excerpt": "Panduan praktis memilih drum, jumbo bag, IBC, atau kontainer untuk limbah B3, lengkap dengan syarat kemasan dan aturan penumpukan menurut Permen LHK 6/2021.",
+   "meta_title": "Cara Memilih Kemasan Limbah B3 sesuai Permen LHK 6/2021",
+   "meta_description": "Cara memilih kemasan limbah B3 sesuai Permen LHK 6/2021: syarat bahan dan tutup, kompatibilitas, kemasan bekas, ruang kosong, dan aturan penumpukan drum di TPS.",
+   "focus_keyword": "cara memilih kemasan limbah b3",
+   "categories": [
+    "Panduan Pengelolaan Limbah untuk Industri"
+   ],
+   "tags": [
+    "kemasan limbah b3",
+    "drum limbah",
+    "ibc",
+    "permen lhk 6 2021"
+   ],
+   "faq": [
+    {
+     "q": "Bahan apa yang boleh dipakai untuk kemasan limbah B3?",
+     "a": "Permen LHK 6/2021 Pasal 68 ayat (2) menyebut kemasan terbuat dari bahan logam atau plastik yang dapat mengemas limbah sesuai karakteristiknya, dengan penutup kuat dan dalam kondisi tidak bocor, tidak berkarat, dan tidak rusak."
+    },
+    {
+     "q": "Bolehkah drum bekas dipakai lagi untuk limbah B3?",
+     "a": "Boleh dengan syarat. Kemasan bekas dapat dipakai untuk limbah dengan kategori atau karakteristik yang sama, untuk limbah yang saling cocok dengan limbah sebelumnya, atau untuk limbah lain setelah kemasan dicuci."
+    },
+    {
+     "q": "Berapa tumpukan maksimal drum limbah B3 200 liter?",
+     "a": "Untuk drum logam 200 liter, tumpukan paling banyak 3 lapis dengan palet untuk setiap 4 drum. Drum plastik 200 liter juga paling banyak 3 lapis, kecuali ditempatkan di rak."
+    },
+    {
+     "q": "Apakah semua limbah B3 harus dikemas?",
+     "a": "Limbah B3 yang disimpan di bangunan pada dasarnya wajib dikemas, dengan pengecualian tertentu dalam Pasal 69 ayat (2), misalnya peralatan elektronik utuh dan limbah yang tidak berbentuk cair, debu, dross, gram logam, atau cacahan."
     }
    ]
   }
