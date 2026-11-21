@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-20T20:03:17Z",
+ "generated": "2026-11-21T20:05:59Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -295,6 +295,49 @@
     {
      "q": "Di mana daftar limbah non-B3 terdaftar dapat dilihat?",
      "a": "Daftar limbah non-B3 terdaftar tercantum dalam Lampiran XIV PP Nomor 22 Tahun 2021 dengan kode N101 sampai N109."
+    }
+   ]
+  },
+  {
+   "id": "jasa-angkut-limbah-medis-bekasi",
+   "slug": "jasa-angkut-limbah-medis-bekasi",
+   "title": "Jasa Angkut Limbah Medis Bekasi: Panduan untuk Klinik dan Rumah Sakit",
+   "publish_at_wib": "2026-11-22 07:00",
+   "publish_at_utc": "2026-11-22T00:00:00Z",
+   "url": "https://transsuma.com/jasa-angkut-limbah-medis-bekasi/",
+   "html": "html/jasa-angkut-limbah-medis-bekasi.html",
+   "image": "img/jasa-angkut-limbah-medis-bekasi.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang jasa angkut limbah medis di Bekasi",
+   "excerpt": "Apa yang perlu disiapkan klinik, laboratorium, dan rumah sakit di Bekasi sebelum memakai jasa angkut limbah medis, dan apa yang perlu diperiksa dari transporternya.",
+   "meta_title": "Jasa Angkut Limbah Medis Bekasi untuk Fasyankes",
+   "meta_description": "Panduan memilih jasa angkut limbah medis Bekasi: kode limbah fasyankes, syarat kendaraan pengangkut, GPS Silacak, Festronik, dan persiapan sebelum penjemputan.",
+   "focus_keyword": "jasa angkut limbah medis bekasi",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3",
+    "Pengangkutan & Manifest"
+   ],
+   "tags": [
+    "limbah medis",
+    "limbah infeksius",
+    "fasilitas pelayanan kesehatan",
+    "bekasi"
+   ],
+   "faq": [
+    {
+     "q": "Apakah limbah medis termasuk limbah B3?",
+     "a": "Ya. Lampiran IX PP 22/2021 mencantumkan limbah dari fasilitas pelayanan kesehatan sebagai limbah B3, antara lain kode A337-1 untuk limbah klinis yang memiliki karakteristik infeksius dan B337-1 untuk kemasan produk farmasi."
+    },
+    {
+     "q": "Apakah limbah infeksius boleh diangkut dengan kendaraan bak terbuka?",
+     "a": "Tidak. Permen LHK 6/2021 memasukkan limbah berkarakteristik infeksius ke kategori 1, dan limbah B3 kategori 1 wajib diangkut dengan alat angkut tertutup."
+    },
+    {
+     "q": "Dokumen apa yang menyertai setiap pengangkutan limbah medis?",
+     "a": "Setiap pengangkutan limbah B3 wajib disertai manifest elektronik (Festronik). Penghasil membuat manifest, lalu transporter dan penerima mengonfirmasi serah terima di sistem."
+    },
+    {
+     "q": "Berapa lama limbah infeksius boleh disimpan di fasilitas?",
+     "a": "Limbah infeksius perlu dijemput jauh lebih sering daripada limbah industri pada umumnya. Pastikan batas waktu penyimpanan yang berlaku untuk fasilitas Anda dengan dinas lingkungan hidup setempat dan tuangkan dalam rincian teknis penyimpanan."
     }
    ]
   }
