@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-21T20:07:04Z",
+ "generated": "2026-11-21T20:08:01Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -380,6 +380,49 @@
     {
      "q": "Apakah semua limbah B3 harus dikemas?",
      "a": "Limbah B3 yang disimpan di bangunan pada dasarnya wajib dikemas, dengan pengecualian tertentu dalam Pasal 69 ayat (2), misalnya peralatan elektronik utuh dan limbah yang tidak berbentuk cair, debu, dross, gram logam, atau cacahan."
+    }
+   ]
+  },
+  {
+   "id": "program-kedaruratan-limbah-b3",
+   "slug": "program-kedaruratan-limbah-b3",
+   "title": "Program Kedaruratan Limbah B3: Isi, Pelatihan, dan Langkah Tanggap",
+   "publish_at_wib": "2026-11-22 17:00",
+   "publish_at_utc": "2026-11-22T10:00:00Z",
+   "url": "https://transsuma.com/program-kedaruratan-limbah-b3/",
+   "html": "html/program-kedaruratan-limbah-b3.html",
+   "image": "img/program-kedaruratan-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang program kedaruratan limbah B3",
+   "excerpt": "Siapa yang wajib menyusun program kedaruratan limbah B3, apa isinya, seberapa sering pelatihan dan geladi, serta langkah saat terjadi tumpahan.",
+   "meta_title": "Program Kedaruratan Limbah B3 menurut Permen LHK 74/2019",
+   "meta_description": "Program kedaruratan limbah B3 menurut Permen LHK P.74/2019: siapa wajib menyusun, isi infrastruktur dan fungsi penanggulangan, geladi tahunan, dan pelaporan.",
+   "focus_keyword": "program kedaruratan limbah b3",
+   "categories": [
+    "K3 & Tanggap Darurat",
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "tanggap darurat",
+    "tumpahan limbah b3",
+    "permen lhk 74 2019",
+    "geladi kedaruratan"
+   ],
+   "faq": [
+    {
+     "q": "Siapa yang wajib menyusun program kedaruratan limbah B3?",
+     "a": "Menurut Permen LHK P.74/2019, kewajiban ini berlaku bagi setiap orang yang melakukan pengelolaan B3 serta setiap orang yang menghasilkan limbah B3, termasuk pengumpul, pengangkut, pemanfaat, pengolah, dan penimbun limbah B3."
+    },
+    {
+     "q": "Apa saja isi program kedaruratan limbah B3?",
+     "a": "Program kedaruratan terdiri atas infrastruktur dan fungsi penanggulangan. Infrastruktur mencakup organisasi, koordinasi, fasilitas dan peralatan termasuk peringatan dini dan alarm, prosedur penanggulangan, serta pelatihan dan geladi kedaruratan."
+    },
+    {
+     "q": "Seberapa sering pelatihan dan geladi kedaruratan harus dilakukan?",
+     "a": "Bagi setiap orang yang wajib menyusun program kedaruratan, pelatihan dan geladi dilakukan paling sedikit satu kali dalam satu tahun."
+    },
+    {
+     "q": "Apakah kejadian darurat limbah B3 harus dilaporkan?",
+     "a": "Ya. Penanggulangan kedaruratan wajib dilaporkan secara tertulis dan berkala setiap hari kepada Menteri, gubernur, dan bupati/wali kota sampai penanggulangan selesai dilakukan."
     }
    ]
   }
