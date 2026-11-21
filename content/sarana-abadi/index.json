@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-20T21:54:28Z",
+ "generated": "2026-11-21T21:53:38Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -826,6 +826,135 @@
     {
      "q": "Bagaimana mencegah air hujan masuk melalui bukaan ventilasi?",
      "a": "Gunakan louver dengan bilah dan kemiringan yang sesuai, overstek atap yang cukup, ridge vent dengan penutup yang dirancang untuk hujan angin, serta kasa untuk mencegah burung dan serangga masuk."
+    }
+   ]
+  },
+  {
+   "id": "jasa-pemasangan-atap-spandek-gudang",
+   "slug": "jasa-pemasangan-atap-spandek-gudang",
+   "title": "Jasa Pemasangan Atap Spandek Gudang: Tahapan, Material, dan Tips Memilih",
+   "publish_at_wib": "2026-11-22 07:00",
+   "publish_at_utc": "2026-11-22T00:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/22/jasa-pemasangan-atap-spandek-gudang/",
+   "html": "html/jasa-pemasangan-atap-spandek-gudang.html",
+   "image": "img/jasa-pemasangan-atap-spandek-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa pemasangan atap spandek gudang",
+   "excerpt": "Hal yang perlu Anda ketahui sebelum memakai jasa pemasangan atap spandek gudang: material, tahapan kerja, contoh hitungan, dan tips memilih kontraktor.",
+   "meta_title": "Jasa Pemasangan Atap Spandek Gudang: Panduan Lengkap",
+   "meta_description": "Panduan jasa pemasangan atap spandek gudang: pilihan ketebalan dan lapisan, tahapan kerja, contoh hitungan, K3 di ketinggian, dan tips memilih kontraktor.",
+   "focus_keyword": "jasa pemasangan atap spandek gudang",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "atap spandek",
+    "atap gudang",
+    "metal roof",
+    "kontraktor gudang"
+   ],
+   "faq": [
+    {
+     "q": "Berapa ketebalan atap spandek yang cocok untuk gudang?",
+     "a": "Tidak ada satu angka untuk semua gudang. Ketebalan dipilih berdasarkan jarak gording, beban angin, dan kebutuhan perawatan, lalu dicek terhadap tabel bentang dari pabrikan profil. Pastikan penawaran menyebut ketebalan baja dasar (BMT), bukan hanya ketebalan total (TCT)."
+    },
+    {
+     "q": "Apakah atap spandek gudang perlu insulasi?",
+     "a": "Untuk gudang yang dihuni pekerja atau menyimpan barang sensitif panas, insulasi sangat disarankan karena membantu menahan panas radiasi, mengurangi kondensasi, dan meredam suara hujan."
+    },
+    {
+     "q": "Mengapa lembaran spandek gudang sebaiknya dibuat satu panjang dari nok sampai tepi?",
+     "a": "Lembaran utuh tanpa sambungan melintang mengurangi titik rawan bocor. Banyak aplikator menggulung (roll forming) lembaran langsung di lokasi agar panjangnya sesuai kebutuhan."
+    },
+    {
+     "q": "Apa yang harus diperiksa saat serah terima atap?",
+     "a": "Periksa kerapian dan kekencangan sekrup, overlap samping, flashing, talang, kemiringan, serta lakukan uji siram atau pengamatan saat hujan untuk memastikan tidak ada rembesan."
+    }
+   ]
+  },
+  {
+   "id": "penangkal-petir-pabrik",
+   "slug": "penangkal-petir-pabrik",
+   "title": "Penangkal Petir Pabrik: Komponen, Grounding, dan Pemeriksaan Berkala",
+   "publish_at_wib": "2026-11-22 10:00",
+   "publish_at_utc": "2026-11-22T03:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/22/penangkal-petir-pabrik/",
+   "html": "html/penangkal-petir-pabrik.html",
+   "image": "img/penangkal-petir-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang penangkal petir pabrik dan sistem grounding",
+   "excerpt": "Cara kerja penangkal petir pabrik, komponen yang wajib ada, cara menurunkan tahanan grounding, dan jadwal pemeriksaan berkala sesuai aturan.",
+   "meta_title": "Penangkal Petir Pabrik: Komponen & Grounding",
+   "meta_description": "Panduan penangkal petir pabrik: komponen proteksi eksternal dan internal, grounding maksimal 5 ohm, contoh hitungan elektroda, dan pemeriksaan berkala.",
+   "focus_keyword": "penangkal petir pabrik",
+   "categories": [
+    "Engineering & Design",
+    "Safety, Health & Environment (SHE)"
+   ],
+   "tags": [
+    "penangkal petir",
+    "grounding",
+    "instalasi listrik pabrik",
+    "K3 listrik"
+   ],
+   "faq": [
+    {
+     "q": "Berapa batas tahanan pembumian penangkal petir?",
+     "a": "Permenaker PER.02/MEN/1989 tentang Pengawasan Instalasi Penyalur Petir menyebut tahanan pembumian seluruh sistem tidak boleh lebih dari 5 ohm. Pengukuran dianjurkan dilakukan pada musim kemarau."
+    },
+    {
+     "q": "Seberapa sering penangkal petir pabrik harus diperiksa?",
+     "a": "Menurut Permenaker 02/1989, instalasi diperiksa sebelum diserahkan kepada pemakai, setelah ada perubahan atau perbaikan, secara berkala setiap dua tahun, dan setelah ada kerusakan akibat sambaran petir."
+    },
+    {
+     "q": "Apakah grounding panel listrik boleh dipisah dari grounding penangkal petir?",
+     "a": "Sistem pembumian yang terpisah tanpa ikatan dapat menimbulkan beda potensial berbahaya saat terjadi sambaran. Praktik yang umum adalah mengikat (bonding) sistem-sistem pembumian sesuai desain perencana, ditambah pemasangan SPD pada panel."
+    },
+    {
+     "q": "Apakah penangkal petir saja cukup untuk melindungi mesin dan PLC?",
+     "a": "Tidak. Penangkal petir eksternal melindungi bangunan, sedangkan peralatan elektronik membutuhkan proteksi internal berupa equipotential bonding dan surge protective device (SPD) yang dikoordinasikan."
+    }
+   ]
+  },
+  {
+   "id": "pho-dan-fho-proyek-konstruksi",
+   "slug": "pho-dan-fho-proyek-konstruksi",
+   "title": "PHO dan FHO Proyek Konstruksi: Tahapan, Dokumen, dan Retensi",
+   "publish_at_wib": "2026-11-22 13:00",
+   "publish_at_utc": "2026-11-22T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/22/pho-dan-fho-proyek-konstruksi/",
+   "html": "html/pho-dan-fho-proyek-konstruksi.html",
+   "image": "img/pho-dan-fho-proyek-konstruksi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang PHO dan FHO proyek konstruksi pabrik",
+   "excerpt": "Panduan praktis PHO dan FHO: urutan serah terima, dokumen yang perlu disiapkan, masa pemeliharaan, retensi, dan cara menghindari sengketa.",
+   "meta_title": "PHO dan FHO Proyek Konstruksi: Tahapan & Dokumen",
+   "meta_description": "Pahami PHO dan FHO pada proyek pabrik dan gudang: beda serah terima pertama dan akhir, dokumen wajib, masa pemeliharaan, retensi, dan contoh perhitungannya.",
+   "focus_keyword": "pho dan fho",
+   "categories": [
+    "Industrial Projects & Case Studies",
+    "Quality & Standards"
+   ],
+   "tags": [
+    "serah terima pekerjaan",
+    "BAST",
+    "retensi",
+    "masa pemeliharaan"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda PHO dan FHO?",
+     "a": "PHO (Provisional Hand Over) adalah serah terima pertama saat pekerjaan dinyatakan selesai dan siap dipakai, sedangkan FHO (Final Hand Over) adalah serah terima akhir setelah masa pemeliharaan berakhir dan seluruh cacat telah diperbaiki."
+    },
+    {
+     "q": "Berapa persen retensi yang ditahan sampai FHO?",
+     "a": "Pada pengadaan pemerintah, Perpres 16/2018 mengatur retensi 5% sebagai jaminan pemeliharaan. Pada proyek swasta, besaran dan mekanismenya mengikuti kesepakatan di kontrak."
+    },
+    {
+     "q": "Apakah bangunan boleh dipakai sebelum FHO?",
+     "a": "Umumnya boleh. Setelah PHO, pemilik biasanya mulai memakai bangunan, sementara kontraktor tetap bertanggung jawab memperbaiki cacat selama masa pemeliharaan sesuai kontrak."
+    },
+    {
+     "q": "Bolehkah retensi diganti jaminan bank?",
+     "a": "Bisa, bila kontrak mengizinkan. Retensi dapat diganti dengan jaminan pemeliharaan dari bank atau perusahaan asuransi sehingga dana dapat dicairkan lebih awal."
     }
    ]
   }
