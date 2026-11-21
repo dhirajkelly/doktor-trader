@@ -88,7 +88,17 @@ function requireApproved(req, res, next) {
 
 function requireAdmin(req, res, next) {
   if (!req.user) return res.redirect('/masuk?next=' + encodeURIComponent(req.originalUrl));
-  if (req.user.role !== 'admin') return res.status(403).send('Khusus admin.');
+  if (req.user.role !== 'admin') {
+    if (req.user.role === 'sales' && req.method === 'GET') return res.redirect('/admin/lead');
+    return res.status(403).send('Khusus admin.');
+  }
+  next();
+}
+
+// Admin atau tim sales (role 'sales' hanya boleh membuka pipeline lead).
+function requireStaff(req, res, next) {
+  if (!req.user) return res.redirect('/masuk?next=' + encodeURIComponent(req.originalUrl));
+  if (req.user.role !== 'admin' && req.user.role !== 'sales') return res.status(403).send('Khusus admin dan tim sales.');
   next();
 }
 
@@ -104,5 +114,5 @@ function rateLimit(key, max, windowMs) {
 
 module.exports = {
   hashPassword, checkPassword, createSession, destroySession, loadSession,
-  verifyCsrf, requireLogin, requireApproved, requireAdmin, rateLimit,
+  verifyCsrf, requireLogin, requireApproved, requireAdmin, requireStaff, rateLimit,
 };

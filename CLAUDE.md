@@ -51,3 +51,7 @@ Each of the 30 Academy lessons gets a faceless YouTube video (one per day). Afte
 ## Temporary media hosting (scheduled tasks)
 
 `src/media.js` hosts files for tools that need a public URL (e.g. Metricool posting a video when Tebar's YouTube quota is used up). Upload: `curl --fail -X POST --data-binary @video.mp4 -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/octet-stream" "https://dhirajkelly.id/media/upload?ext=mp4"` (ext: mp4, mov, jpg, jpeg, png; max 1 GiB) → `{ url, name, bytes, expires_at }`. The URL is public, `noindex`, and the file is deleted automatically after 7 days (or with `DELETE /media/<name>` and the same token). Only the token's SHA-256 is in the code (override with env `MEDIA_UPLOAD_TOKEN_SHA256`); the token itself is kept with the scheduled task, never in the repo.
+
+## Pipeline lead sales (`/admin/lead`)
+
+Table `leads` (dedupe key `whatsapp`, format 62xxx) + `lead_log`. Import CSV at `/admin/lead/import` (admin only, preview first); existing leads are never overwritten, only empty fields are filled. Role `sales` (accounts made in `/admin/lead/tim`) can only view/edit the pipeline. Code: `src/leads.js`, `src/routes/leads.js`. The repo is public: never commit lead CSVs or any lead data; import only through the admin page.

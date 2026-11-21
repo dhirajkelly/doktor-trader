@@ -180,7 +180,7 @@ ${noindex ? '<meta name="robots" content="noindex,nofollow">' : ''}
 <div class="navl" id="navl">
 ${link('/artikel', 'Artikel', 'artikel')}
 ${link('/alat/kalkulator-lot', 'Kalkulator Lot', 'alat').replace('<a ', '<a class="hs" ').replace('class="hs" href="/alat/kalkulator-lot" class="on"', 'class="hs on" href="/alat/kalkulator-lot"')}
-${user ? (user.role === 'admin' ? link('/admin', 'Admin', 'admin') : '') + link('/member', 'Member', 'member') : link('/masuk', 'Masuk', 'masuk')}
+${user ? (user.role === 'admin' ? link('/admin', 'Admin', 'admin') : user.role === 'sales' ? link('/admin/lead', 'Pipeline', 'admin') : '') + link('/member', 'Member', 'member') : link('/masuk', 'Masuk', 'masuk')}
 ${user ? `<form method="post" action="/keluar" style="display:inline"><input type="hidden" name="_csrf" value="${esc(user._csrf || '')}"><button class="btn sm ghost" type="submit">Keluar</button></form>` : '<a class="btn sm" href="/daftar">Daftar Gratis</a>'}
 </div></nav></header>
 <main>${body}</main>

@@ -11,6 +11,7 @@ router.use('/admin', auth.requireAdmin);
 const NAV = [
   ['/admin', 'Ringkasan', 'home'],
   ['/admin/member', 'CRM Member', 'member'],
+  ['/admin/lead', 'Pipeline Lead', 'lead'],
   ['/admin/artikel', 'Artikel SEO', 'artikel'],
   ['/admin/academy', 'Academy', 'academy'],
   ['/admin/tanya', 'Tanya Doktor', 'tanya'],
@@ -479,4 +480,5 @@ router.post('/admin/tools/:id/hapus', (req, res) => {
 });
 
 router.page = page;
+router.NAV = NAV;
 module.exports = router;

@@ -181,6 +181,45 @@ CREATE TABLE IF NOT EXISTS cc_journal (
   created_at TEXT DEFAULT (datetime('now'))
 );
 CREATE INDEX IF NOT EXISTS idx_cc_journal_user ON cc_journal(user_id, opened_at);
+CREATE TABLE IF NOT EXISTS leads (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  whatsapp TEXT NOT NULL UNIQUE,                -- format 62xxx, kunci dedupe
+  prioritas TEXT DEFAULT '',
+  nama TEXT DEFAULT '',
+  langkah_berikut TEXT DEFAULT '',
+  pic_sales TEXT DEFAULT '',
+  status_fu TEXT DEFAULT '',
+  tgl_fu TEXT DEFAULT '',                       -- YYYY-MM-DD bila bisa dikenali
+  hasil_fu TEXT DEFAULT '',
+  akun_dupoin TEXT DEFAULT '',
+  email TEXT DEFAULT '',
+  kota TEXT DEFAULT '',
+  level_trading TEXT DEFAULT '',
+  minat TEXT DEFAULT '',
+  sumber TEXT DEFAULT '',
+  asal_iklan TEXT DEFAULT '',
+  tgl_masuk TEXT DEFAULT '',
+  pic_lama TEXT DEFAULT '',
+  akun_kvb_form TEXT DEFAULT '',
+  akun_kvb_lama TEXT DEFAULT '',
+  webinar TEXT DEFAULT '',
+  riwayat_fu_lama TEXT DEFAULT '',
+  catatan TEXT DEFAULT '',
+  source TEXT DEFAULT 'web-lama-kvb',           -- asal data import, mis. web-lama-kvb
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  updated_at TEXT NOT NULL DEFAULT (datetime('now')),
+  updated_by TEXT DEFAULT ''
+);
+CREATE INDEX IF NOT EXISTS idx_leads_pic ON leads(pic_sales);
+CREATE INDEX IF NOT EXISTS idx_leads_status ON leads(status_fu);
+CREATE TABLE IF NOT EXISTS lead_log (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  lead_id INTEGER NOT NULL,
+  actor TEXT DEFAULT '',
+  detail TEXT,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_lead_log_lead ON lead_log(lead_id);
 CREATE TABLE IF NOT EXISTS cc_risk (
   user_id INTEGER PRIMARY KEY,
   json TEXT NOT NULL,

@@ -67,6 +67,7 @@ async function main() {
   app.use(require('./src/routes/public'));
   app.use(require('./src/routes/auth'));
   app.use(require('./src/routes/member'));
+  app.use(require('./src/routes/leads'));   // sebelum admin: tim sales boleh membuka /admin/lead
   app.use(require('./src/routes/admin'));
   app.use(require('./src/routes/features'));
   app.use(require('./src/routes/lab'));

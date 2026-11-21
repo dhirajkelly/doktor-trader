@@ -62,7 +62,7 @@ router.post('/daftar', (req, res) => {
 });
 
 router.get('/masuk', (req, res) => {
-  if (req.user) return res.redirect(req.user.role === 'admin' ? '/admin' : '/member');
+  if (req.user) return res.redirect(req.user.role === 'admin' ? '/admin' : req.user.role === 'sales' ? '/admin/lead' : '/member');
   res.send(layout({
     title: 'Masuk', noindex: true, active: 'masuk',
     body: `<section class="narrow" style="padding:56px 20px;max-width:460px">
@@ -88,7 +88,7 @@ router.post('/masuk', (req, res) => {
   db.log(user.id, 'login');
   let next = String((req.body || {}).next || '');
   if (!next.startsWith('/') || next.startsWith('//')) next = '';
-  res.redirect(next || (user.role === 'admin' ? '/admin' : '/member'));
+  res.redirect(next || (user.role === 'admin' ? '/admin' : user.role === 'sales' ? '/admin/lead' : '/member'));
 });
 
 router.post('/keluar', (req, res) => {
