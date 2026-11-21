@@ -58,7 +58,7 @@ function parseCsv(text) {
 function normalizeWa(v) {
   const s = String(v || '').trim();
   if (!s || /e\+?\d/i.test(s)) return '';                // notasi ilmiah dari Excel: digit sudah hilang
-  let d = s.split(/[\/,;|]|\batau\b/i)[0].replace(/\D/g, '');
+  let d = s.split(/[\/,;|]|\batau\b/i)[0].trim().replace(/\.0+$/, '').replace(/\D/g, '');   // "81234.0" dari Excel
   if (d.startsWith('00')) d = d.slice(2);
   if (d.startsWith('0')) d = '62' + d.slice(1);
   else if (d.startsWith('8')) d = '62' + d;
