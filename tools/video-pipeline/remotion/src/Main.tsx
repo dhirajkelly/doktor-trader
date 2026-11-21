@@ -1,6 +1,6 @@
 import React from 'react';
-import {AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame} from 'remotion';
-import {SCENES} from './LessonScenes';
+import {AbsoluteFill, Audio, Loop, OffthreadVideo, Sequence, interpolate, spring, staticFile, useCurrentFrame} from 'remotion';
+import {SCENES} from './OrderScenes';
 import {Background, C, MONO, SANS, SERIF, useIn} from './ui';
 
 export const FPS = 30;
@@ -8,11 +8,12 @@ export type Sent = {text: string; sub: string; start: number; end: number};
 export type SceneT = {id: string; chapter: string; visual: string; audioDur: number; duration: number; sentences: Sent[]};
 
 const CARD: Record<string, [string, string]> = {
-	ohlc: ['BAGIAN 1', 'Empat Harga'],
-	bodywick: ['BAGIAN 2', 'Body, Sumbu, Range'],
-	timeframe: ['BAGIAN 3', 'Timeframe'],
-	context: ['BAGIAN 4', 'Konteks'],
-	risk: ['BAGIAN 5', 'Rencana Risiko'],
+	market: ['BAGIAN 1', 'Market Order'],
+	limit: ['BAGIAN 2', 'Limit Order'],
+	stop: ['BAGIAN 3', 'Stop Order'],
+	sltp: ['BAGIAN 4', 'Stop Loss & Take Profit'],
+	pilih: ['BAGIAN 5', 'Cara Memilih'],
+	mt5: ['BAGIAN 6', 'Cara Pasang di MT5'],
 	task: ['LATIHAN', 'Tugas Akun Demo'],
 	summary: ['RINGKASAN', 'Yang Perlu Diingat'],
 };
@@ -30,7 +31,7 @@ export const layout = (scenes: SceneT[]) => {
 	});
 };
 
-const KEY = ['candlestick', 'candle', 'body', 'Body', 'sumbu', 'range', 'Range', 'open', 'close', 'high', 'low', 'H1', 'H4', 'M15', 'konteks', 'support', 'stop loss', 'Stop loss', 'lot', '1%', 'dhirajkelly.id', 'warna', 'Warna'];
+const KEY = ['market order', 'Market order', 'buy limit', 'Buy limit', 'sell limit', 'Sell limit', 'buy stop', 'Buy stop', 'sell stop', 'Sell stop', 'limit order', 'stop order', 'Stop loss', 'stop loss', 'take profit', 'slippage', 'spread', 'bid', 'ask', 'konfirmasi', 'lot', '1%', 'dhirajkelly.id', 'MT5', 'pending order'];
 
 type Cue = {t0: number; t1: number; text: string};
 const cues = (sents: Sent[]): Cue[] => {
@@ -62,12 +63,13 @@ const cues = (sents: Sent[]): Cue[] => {
 	return out;
 };
 
-const Subtitle: React.FC<{sents: Sent[]; offset: number}> = ({sents, offset}) => {
+const Subtitle: React.FC<{sents: Sent[]; offset: number; host?: [number, number][]}> = ({sents, offset, host = []}) => {
 	const f = useCurrentFrame();
 	const t = f / FPS - offset;
 	const cs = React.useMemo(() => cues(sents), [sents]);
 	const c = cs.find((x) => t >= x.t0 && t < x.t1 + 0.12);
 	if (!c) return null;
+	const side = host.some(([h0, h1]) => f >= h0 - 6 && f < h1 + 6);
 	const a = interpolate(t, [c.t0, c.t0 + 0.12], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
 	// highlight first keyword occurrence in gold
 	let html: React.ReactNode = c.text;
@@ -85,12 +87,49 @@ const Subtitle: React.FC<{sents: Sent[]; offset: number}> = ({sents, offset}) =>
 		}
 	}
 	return (
-		<div style={{position: 'absolute', left: 0, right: 0, bottom: 74, display: 'flex', justifyContent: 'center', opacity: a}}>
-			<div style={{maxWidth: 1400, textAlign: 'center', fontFamily: SANS, fontWeight: 700, fontSize: 46, lineHeight: 1.25, color: '#FFFFFF', background: 'rgba(5,12,26,0.72)', padding: '10px 26px', borderRadius: 12, WebkitTextStroke: '0px'}}>
+		<div style={{position: 'absolute', left: 0, right: side ? 560 : 0, bottom: 74, display: 'flex', justifyContent: 'center', opacity: a}}>
+			<div style={{maxWidth: side ? 1150 : 1400, textAlign: 'center', fontFamily: SANS, fontWeight: 700, fontSize: 46, lineHeight: 1.25, color: '#FFFFFF', background: 'rgba(5,12,26,0.72)', padding: '10px 26px', borderRadius: 12, WebkitTextStroke: '0px'}}>
 				{html}
 			</div>
 		</div>
 	);
+};
+
+// Host avatar (approved cartoon of Dhiraj, white bg removed by multiply on a light card in the same stacking context)
+const HOST_LOOP = 302;
+const HostIn: React.FC<{len: number}> = ({len}) => {
+	const f = useCurrentFrame();
+	const sp = spring({frame: f, fps: FPS, config: {damping: 12, stiffness: 160, mass: 0.7}});
+	const out = interpolate(f, [len - 10, len], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+	const bob = Math.sin(f / 18) * 5;
+	const H = 380;
+	return (
+		<div style={{position: 'absolute', right: 40, bottom: 0, width: 470, height: H + 20, opacity: out, transform: `translateY(${(1 - sp) * 220 + bob}px) scale(${0.85 + sp * 0.15})`, transformOrigin: '50% 100%'}}>
+			<div style={{position: 'absolute', inset: 0, isolation: 'isolate', overflow: 'hidden', borderRadius: '28px 28px 0 0', background: '#F4F1EA', borderTop: `5px solid ${C.gold}`, boxShadow: '0 -10px 40px rgba(0,0,0,0.35)'}}>
+				<div style={{position: 'absolute', left: -118, top: 26, width: 676, height: H, mixBlendMode: 'multiply'}}>
+					<Loop durationInFrames={HOST_LOOP}>
+						<OffthreadVideo src={staticFile('host/host.mp4')} muted style={{width: 676, height: H}} />
+					</Loop>
+				</div>
+			</div>
+		</div>
+	);
+};
+const Host: React.FC<{wins: [number, number][]}> = ({wins}) => (
+	<>
+		{wins.map(([a, b]) => (
+			<Sequence key={a} from={a} durationInFrames={Math.max(1, b - a)} name="host">
+				<HostIn len={b - a} />
+			</Sequence>
+		))}
+	</>
+);
+export const hostWins = (visual: string, pad: number, dur: number): [number, number][] => {
+	const F = (t: number) => Math.round(t * FPS);
+	if (visual === 'hook') return [[F(0.2), F(5.5)]];
+	if (visual === 'cta') return [[F(pad + 0.3), dur - 2]];
+	if (CARD[visual]) return [[F(pad + 0.1), F(pad + 4.6)]];
+	return [];
 };
 
 const ChapterCard: React.FC<{k: string; t: string; len: number}> = ({k, t, len}) => {
@@ -133,11 +172,12 @@ export const Main: React.FC<{scenes: SceneT[]}> = ({scenes}) => {
 					<Sequence key={s.id} from={from} durationInFrames={dur} name={s.id}>
 						<Comp b={b} dur={dur} />
 						<Chrome total={total} chapter={s.chapter} />
-						<Subtitle sents={s.sentences} offset={pad} />
+						<Subtitle sents={s.sentences} offset={pad} host={hostWins(s.visual, pad, dur)} />
 						<Sequence from={Math.round(pad * FPS)} name={`vo_${s.id}`}>
 							<Audio src={staticFile(`vo/${s.id}.mp3`)} />
 						</Sequence>
 						<Audio src={staticFile('sfx/whoosh.wav')} volume={0.22} />
+						<Host wins={hostWins(s.visual, pad, dur)} />
 						{CARD[s.visual] && (
 							<Sequence durationInFrames={Math.round(pad * FPS)} name={`card_${s.id}`}>
 								<ChapterCard k={CARD[s.visual][0]} t={CARD[s.visual][1]} len={Math.round(pad * FPS)} />

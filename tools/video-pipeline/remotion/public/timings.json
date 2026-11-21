@@ -3,773 +3,896 @@
   "id": "s01_hook",
   "chapter": "Hook",
   "visual": "hook",
-  "audioDur": 41.874,
-  "duration": 42.574,
+  "audioDur": 52.976,
+  "duration": 53.676,
   "sentences": [
    {
-    "text": "Satu candle yang sama bisa bikin dua trader ambil keputusan yang berlawanan.",
-    "sub": "Satu candle yang sama bisa bikin dua trader ambil keputusan yang berlawanan.",
+    "text": "Dua trader punya analisa yang sama persis.",
+    "sub": "Dua trader punya analisa yang sama persis.",
     "start": 0.0,
-    "end": 4.125
+    "end": 2.454
    },
    {
-    "text": "Yang satu lihat warnanya hijau, langsung mikir harga mau naik.",
-    "sub": "Yang satu lihat warnanya hijau, langsung mikir harga mau naik.",
-    "start": 4.569,
-    "end": 8.182
+    "text": "Emas lagi di tiga ribu tujuh ratus lima puluh, dan mereka sama-sama nunggu harga balik ke support di tiga ribu tujuh ratus empat puluh dua.",
+    "sub": "Emas lagi di 3.750, dan mereka sama-sama nunggu harga balik ke support di 3.742.",
+    "start": 2.733,
+    "end": 11.484
    },
    {
-    "text": "Yang satu lagi lihat sumbu atasnya panjang, dan mikir pembeli baru aja kalah.",
-    "sub": "Yang satu lagi lihat sumbu atasnya panjang, dan mikir pembeli baru aja kalah.",
-    "start": 8.592,
-    "end": 13.199
+    "text": "Trader A takut ketinggalan, langsung pencet buy sekarang.",
+    "sub": "Trader A takut ketinggalan, langsung pencet buy sekarang.",
+    "start": 11.68,
+    "end": 12.951
    },
    {
-    "text": "Contoh simulasi: dalam satu jam emas sempat naik delapan dolar, tapi waktu candle tutup, harganya cuma dua dolar di atas pembukaan.",
-    "sub": "Contoh simulasi: dalam satu jam emas sempat naik $8, tapi waktu candle tutup, harganya cuma $2 di atas pembukaan.",
-    "start": 13.682,
-    "end": 21.903
+    "text": "Trader B pasang buy limit di tiga ribu tujuh ratus empat puluh dua, lalu nunggu.",
+    "sub": "Trader B pasang buy limit di 3.742, lalu nunggu.",
+    "start": 13.247,
+    "end": 17.371
    },
    {
-    "text": "Di video ini gue ajarin cara baca candle dengan benar: empat harga di dalamnya, cara ngitung body dan sumbu, hubungan antar timeframe, dan cara pakai candle buat naruh stop loss.",
-    "sub": "Di video ini gue ajarin cara baca candle dengan benar: 4 harga di dalamnya, cara ngitung body dan sumbu, hubungan antar timeframe, dan cara pakai candle buat naruh stop loss.",
-    "start": 22.401,
-    "end": 33.447
+    "text": "Stop loss mereka sama, di tiga ribu tujuh ratus tiga puluh enam.",
+    "sub": "Stop loss mereka sama, di 3.736.",
+    "start": 17.68,
+    "end": 24.008
    },
    {
-    "text": "Kalau lo cuma lihat warna, lo baru baca setengah cerita.",
-    "sub": "Kalau lo cuma lihat warna, lo baru baca setengah cerita.",
-    "start": 33.849,
-    "end": 37.04
+    "text": "Hasilnya, jarak stop loss Trader A empat belas dolar, punya Trader B cuma enam dolar.",
+    "sub": "Hasilnya, jarak stop loss Trader A $14, punya Trader B cuma $6.",
+    "start": 24.233,
+    "end": 28.443
    },
    {
-    "text": "Dan setengah cerita itu biasanya berakhir di stop loss yang kesentuh percuma.",
-    "sub": "Dan setengah cerita itu biasanya berakhir di stop loss yang kesentuh percuma.",
-    "start": 37.439,
-    "end": 41.631
+    "text": "Analisanya sama, tombolnya beda, risikonya beda lebih dari dua kali lipat.",
+    "sub": "Analisanya sama, tombolnya beda, risikonya beda lebih dari 2 kali lipat.",
+    "start": 28.698,
+    "end": 30.839
+   },
+   {
+    "text": "Di video ini gue bongkar tiga jenis order yang ada di MT4 dan MT5: market, limit, dan stop.",
+    "sub": "Di video ini gue bongkar tiga jenis order yang ada di MT4 dan MT5: market, limit, dan stop.",
+    "start": 31.322,
+    "end": 37.452
+   },
+   {
+    "text": "Kapan pakai yang mana, jebakan masing-masing, dan cara pasangnya.",
+    "sub": "Kapan pakai yang mana, jebakan masing-masing, dan cara pasangnya.",
+    "start": 37.819,
+    "end": 41.24
+   },
+   {
+    "text": "Terus ada satu order yang mungkin lo pakai tiap hari tanpa sadar, padahal itu stop order.",
+    "sub": "Terus ada satu order yang mungkin lo pakai tiap hari tanpa sadar, padahal itu stop order.",
+    "start": 41.538,
+    "end": 46.8
+   },
+   {
+    "text": "Kalau lo lewatin materi ini, lo bakal terus milih tombol pakai perasaan.",
+    "sub": "Kalau lo lewatin materi ini, lo bakal terus milih tombol pakai perasaan.",
+    "start": 47.133,
+    "end": 50.932
+   },
+   {
+    "text": "Dan perasaan itu mahal.",
+    "sub": "Dan perasaan itu mahal.",
+    "start": 51.249,
+    "end": 52.976
    }
   ]
  },
  {
   "id": "s02_map",
-  "chapter": "Peta isi",
+  "chapter": "Peta materi",
   "visual": "roadmap",
-  "audioDur": 29.806,
-  "duration": 30.506,
+  "audioDur": 23.014,
+  "duration": 23.714,
   "sentences": [
    {
-    "text": "Ini materi ketiga di kelas Fondasi Trading, Academy Doktor Trader.",
-    "sub": "Ini materi ketiga di kelas Fondasi Trading, Academy Doktor Trader.",
+    "text": "Sebelum mulai, satu hal.",
+    "sub": "Sebelum mulai, satu hal.",
     "start": 0.0,
-    "end": 3.79
+    "end": 1.374
    },
    {
-    "text": "Semua chart dan angka di video ini simulasi buat edukasi, bukan sinyal.",
-    "sub": "Semua chart dan angka di video ini simulasi buat edukasi, bukan sinyal.",
-    "start": 4.232,
-    "end": 8.493
+    "text": "Semua chart dan harga di video ini simulasi buat edukasi, bukan sinyal.",
+    "sub": "Semua chart dan harga di video ini simulasi buat edukasi, bukan sinyal.",
+    "start": 1.71,
+    "end": 6.04
    },
    {
-    "text": "Kita jalan lima bagian.",
-    "sub": "Kita jalan lima bagian.",
-    "start": 8.889,
-    "end": 11.062
+    "text": "Ini peta materinya.",
+    "sub": "Ini peta materinya.",
+    "start": 6.45,
+    "end": 7.412
    },
    {
-    "text": "Satu, empat harga di dalam satu candle.",
-    "sub": "Satu, 4 harga di dalam satu candle.",
-    "start": 11.309,
-    "end": 13.116
+    "text": "Pertama, market order.",
+    "sub": "Pertama, market order.",
+    "start": 7.729,
+    "end": 9.108
    },
    {
-    "text": "Dua, body, sumbu, dan range.",
-    "sub": "Dua, body, sumbu, dan range.",
-    "start": 13.425,
-    "end": 15.945
+    "text": "Kedua, limit order.",
+    "sub": "Kedua, limit order.",
+    "start": 9.377,
+    "end": 10.705
    },
    {
-    "text": "Tiga, timeframe, dan kenapa pemula sebaiknya mulai dari H satu dan H empat.",
-    "sub": "Tiga, timeframe, dan kenapa pemula sebaiknya mulai dari H1 dan H4.",
-    "start": 16.248,
-    "end": 20.803
+    "text": "Ketiga, stop order.",
+    "sub": "Ketiga, stop order.",
+    "start": 10.958,
+    "end": 12.307
    },
    {
-    "text": "Empat, konteks, yang lebih penting dari bentuk candle.",
-    "sub": "Empat, konteks, yang lebih penting dari bentuk candle.",
-    "start": 21.147,
-    "end": 24.324
+    "text": "Keempat, stop loss dan take profit, dan kenapa dua-duanya juga order.",
+    "sub": "Keempat, stop loss dan take profit, dan kenapa dua-duanya juga order.",
+    "start": 12.559,
+    "end": 16.422
    },
    {
-    "text": "Lima, dari candle ke rencana risiko.",
-    "sub": "Lima, dari candle ke rencana risiko.",
-    "start": 24.62,
-    "end": 27.081
+    "text": "Kelima, cara milih order yang tepat.",
+    "sub": "Kelima, cara milih order yang tepat.",
+    "start": 16.69,
+    "end": 18.605
    },
    {
-    "text": "Terakhir ada tugas latihan di akun demo.",
-    "sub": "Terakhir ada tugas latihan di akun demo.",
-    "start": 27.377,
-    "end": 29.528
+    "text": "Dan terakhir, cara pasang di MT5, plus tugas latihan di akun demo.",
+    "sub": "Dan terakhir, cara pasang di MT5, plus tugas latihan di akun demo.",
+    "start": 18.817,
+    "end": 23.014
    }
   ]
  },
  {
-  "id": "s03_ohlc",
-  "chapter": "Bagian 1 · Empat harga",
-  "visual": "ohlc",
-  "audioDur": 52.846,
-  "duration": 53.546,
+  "id": "s03_market",
+  "chapter": "Bagian 1 · Market order",
+  "visual": "market",
+  "audioDur": 61.649,
+  "duration": 62.349,
   "sentences": [
    {
-    "text": "Bagian pertama.",
-    "sub": "Bagian pertama.",
+    "text": "Mulai dari yang paling sering dipakai: market order.",
+    "sub": "Mulai dari yang paling sering dipakai: market order.",
     "start": 0.0,
-    "end": 0.885
+    "end": 2.688
    },
    {
-    "text": "Satu candlestick merangkum empat harga dalam satu periode.",
-    "sub": "Satu candlestick merangkum 4 harga dalam satu periode.",
-    "start": 1.404,
-    "end": 4.751
+    "text": "Market order artinya lo masuk sekarang, di harga yang lagi berjalan.",
+    "sub": "Market order artinya lo masuk sekarang, di harga yang lagi berjalan.",
+    "start": 3.124,
+    "end": 7.021
    },
    {
-    "text": "Open, harga pembukaan.",
-    "sub": "Open, harga pembukaan.",
-    "start": 5.194,
-    "end": 5.656
+    "text": "Tapi harga yang berjalan itu ada dua.",
+    "sub": "Tapi harga yang berjalan itu ada dua.",
+    "start": 7.357,
+    "end": 9.45
    },
    {
-    "text": "High, harga tertinggi yang sempat disentuh.",
-    "sub": "High, harga tertinggi yang sempat disentuh.",
-    "start": 5.913,
-    "end": 9.63
+    "text": "Ada harga bid, harga yang mau dibayar pembeli.",
+    "sub": "Ada harga bid, harga yang mau dibayar pembeli.",
+    "start": 9.771,
+    "end": 12.312
    },
    {
-    "text": "Low, harga terendah.",
-    "sub": "Low, harga terendah.",
-    "start": 10.039,
-    "end": 10.462
+    "text": "Dan ada harga ask, harga yang diminta penjual.",
+    "sub": "Dan ada harga ask, harga yang diminta penjual.",
+    "start": 12.578,
+    "end": 15.556
    },
    {
-    "text": "Dan close, harga penutupan.",
-    "sub": "Dan close, harga penutupan.",
-    "start": 10.705,
-    "end": 11.535
+    "text": "Contoh simulasi: bid tiga ribu tujuh ratus lima puluh koma nol nol, ask tiga ribu tujuh ratus lima puluh koma tiga nol.",
+    "sub": "Contoh simulasi: bid 3.750,00, ask 3.750,30.",
+    "start": 15.87,
+    "end": 23.13
    },
    {
-    "text": "Di MT empat atau MT lima, keempat angka ini bisa lo lihat di jendela Data Window sambil arahin kursor ke candle.",
-    "sub": "Di MT4 atau MT5, keempat angka ini bisa lo lihat di jendela Data Window sambil arahin kursor ke candle.",
-    "start": 11.803,
-    "end": 21.029
+    "text": "Selisihnya tiga puluh sen, itu spread.",
+    "sub": "Selisihnya 30 sen, itu spread.",
+    "start": 23.424,
+    "end": 24.789
    },
    {
-    "text": "Kita pakai satu candle simulasi di timeframe satu jam.",
-    "sub": "Kita pakai satu candle simulasi di timeframe satu jam.",
-    "start": 21.525,
-    "end": 24.427
+    "text": "Kalau lo buy, lo dibukain di harga ask.",
+    "sub": "Kalau lo buy, lo dibukain di harga ask.",
+    "start": 24.971,
+    "end": 25.686
    },
    {
-    "text": "Open di tiga ribu tujuh ratus lima puluh.",
-    "sub": "Open di 3.750.",
-    "start": 24.869,
-    "end": 27.079
+    "text": "Kalau lo sell, lo dibukain di harga bid.",
+    "sub": "Kalau lo sell, lo dibukain di harga bid.",
+    "start": 25.992,
+    "end": 28.373
    },
    {
-    "text": "Harga sempat naik ke tiga ribu tujuh ratus lima puluh delapan, lalu sempat turun ke tiga ribu tujuh ratus empat puluh enam.",
-    "sub": "Harga sempat naik ke 3.758, lalu sempat turun ke 3.746.",
-    "start": 27.513,
-    "end": 34.019
+    "text": "Artinya, begitu posisi kebuka, posisi lo langsung minus sebesar spread.",
+    "sub": "Artinya, begitu posisi kebuka, posisi lo langsung minus sebesar spread.",
+    "start": 28.604,
+    "end": 30.752
    },
    {
-    "text": "Satu jam kemudian candle tutup di tiga ribu tujuh ratus lima puluh dua.",
-    "sub": "Satu jam kemudian candle tutup di 3.752.",
-    "start": 34.438,
-    "end": 38.444
+    "text": "Itu normal, itu biaya.",
+    "sub": "Itu normal, itu biaya.",
+    "start": 31.085,
+    "end": 35.184
    },
    {
-    "text": "Karena close lebih tinggi dari open, body-nya hijau.",
-    "sub": "Karena close lebih tinggi dari open, body-nya hijau.",
-    "start": 38.865,
-    "end": 41.952
+    "text": "Masalah kedua namanya slippage.",
+    "sub": "Masalah kedua namanya slippage.",
+    "start": 35.47,
+    "end": 37.086
    },
    {
-    "text": "Kalau close lebih rendah dari open, body-nya merah.",
-    "sub": "Kalau close lebih rendah dari open, body-nya merah.",
-    "start": 42.334,
-    "end": 45.269
+    "text": "Waktu pasar gerak cepat, misalnya pas rilis berita, harga eksekusi bisa beda dari harga yang lo lihat di layar.",
+    "sub": "Waktu pasar gerak cepat, misalnya pas rilis berita, harga eksekusi bisa beda dari harga yang lo lihat di layar.",
+    "start": 37.466,
+    "end": 45.599
    },
    {
-    "text": "Warna cuma ngasih tahu satu hal: posisi close dibanding open.",
-    "sub": "Warna cuma ngasih tahu satu hal: posisi close dibanding open.",
-    "start": 45.626,
-    "end": 49.503
+    "text": "Lo klik di tiga ribu tujuh ratus lima puluh, kebukanya bisa di tiga ribu tujuh ratus lima puluh koma delapan.",
+    "sub": "Lo klik di 3.750, kebukanya bisa di 3.750,80.",
+    "start": 45.945,
+    "end": 51.412
    },
    {
-    "text": "Warna nggak ngasih tahu apa yang terjadi di tengah jalan.",
-    "sub": "Warna nggak ngasih tahu apa yang terjadi di tengah jalan.",
-    "start": 49.818,
-    "end": 52.846
+    "text": "Jadi market order itu cepat, tapi lo nggak ngontrol harga persisnya.",
+    "sub": "Jadi market order itu cepat, tapi lo nggak ngontrol harga persisnya.",
+    "start": 51.7,
+    "end": 55.359
+   },
+   {
+    "text": "Pakai market order kalau harga sekarang memang sudah ada di area rencana lo.",
+    "sub": "Pakai market order kalau harga sekarang memang sudah ada di area rencana lo.",
+    "start": 55.713,
+    "end": 59.558
+   },
+   {
+    "text": "Bukan karena takut ketinggalan.",
+    "sub": "Bukan karena takut ketinggalan.",
+    "start": 59.821,
+    "end": 61.649
    }
   ]
  },
  {
-  "id": "s04_body",
-  "chapter": "Bagian 2 · Body, sumbu, range",
-  "visual": "bodywick",
-  "audioDur": 64.601,
-  "duration": 65.301,
+  "id": "s04_limit",
+  "chapter": "Bagian 2 · Limit order",
+  "visual": "limit",
+  "audioDur": 57.861,
+  "duration": 58.561,
   "sentences": [
    {
-    "text": "Bagian kedua, kita bedah candle tadi pakai hitungan.",
-    "sub": "Bagian kedua, kita bedah candle tadi pakai hitungan.",
+    "text": "Sekarang limit order.",
+    "sub": "Sekarang limit order.",
     "start": 0.0,
-    "end": 3.15
+    "end": 1.306
    },
    {
-    "text": "Body adalah jarak open ke close.",
-    "sub": "Body adalah jarak open ke close.",
-    "start": 3.585,
-    "end": 5.954
+    "text": "Kuncinya satu kalimat: limit itu nunggu harga yang lebih bagus dari harga sekarang.",
+    "sub": "Kuncinya satu kalimat: limit itu nunggu harga yang lebih bagus dari harga sekarang.",
+    "start": 1.619,
+    "end": 6.43
    },
    {
-    "text": "Tiga ribu tujuh ratus lima puluh dua dikurangi tiga ribu tujuh ratus lima puluh, body-nya dua dolar.",
-    "sub": "3.752 dikurangi 3.750, body-nya $2.",
-    "start": 6.336,
-    "end": 12.159
+    "text": "Buy limit dipasang di bawah harga sekarang.",
+    "sub": "Buy limit dipasang di bawah harga sekarang.",
+    "start": 6.68,
+    "end": 8.889
    },
    {
-    "text": "Range adalah jarak high ke low.",
-    "sub": "Range adalah jarak high ke low.",
-    "start": 12.561,
-    "end": 14.709
+    "text": "Logikanya, lo mau beli, tapi lo mau belinya lebih murah.",
+    "sub": "Logikanya, lo mau beli, tapi lo mau belinya lebih murah.",
+    "start": 9.167,
+    "end": 12.48
    },
    {
-    "text": "Tiga ribu tujuh ratus lima puluh delapan dikurangi tiga ribu tujuh ratus empat puluh enam, range-nya dua belas dolar.",
-    "sub": "3.758 dikurangi 3.746, range-nya $12.",
-    "start": 15.054,
-    "end": 21.416
+    "text": "Contoh: harga tiga ribu tujuh ratus lima puluh, support di tiga ribu tujuh ratus empat puluh dua.",
+    "sub": "Contoh: harga 3.750, support di 3.742.",
+    "start": 12.752,
+    "end": 17.778
    },
    {
-    "text": "Sumbu atas, dari high ke bagian atas body, enam dolar.",
-    "sub": "Sumbu atas, dari high ke bagian atas body, $6.",
-    "start": 21.82,
-    "end": 25.557
+    "text": "Lo pasang buy limit di tiga ribu tujuh ratus empat puluh dua.",
+    "sub": "Lo pasang buy limit di 3.742.",
+    "start": 18.012,
+    "end": 20.923
    },
    {
-    "text": "Sumbu bawah, dari bagian bawah body ke low, empat dolar.",
-    "sub": "Sumbu bawah, dari bagian bawah body ke low, $4.",
-    "start": 25.961,
-    "end": 28.736
+    "text": "Kalau harga turun nyentuh level itu, order lo kebuka otomatis.",
+    "sub": "Kalau harga turun nyentuh level itu, order lo kebuka otomatis.",
+    "start": 21.164,
+    "end": 24.596
    },
    {
-    "text": "Coba cek: dua tambah enam tambah empat, balik lagi ke dua belas.",
-    "sub": "Coba cek: 2 + 6 + 4, balik lagi ke 12.",
-    "start": 29.002,
-    "end": 32.817
+    "text": "Sell limit kebalikannya, dipasang di atas harga sekarang.",
+    "sub": "Sell limit kebalikannya, dipasang di atas harga sekarang.",
+    "start": 24.858,
+    "end": 28.004
    },
    {
-    "text": "Jadi body cuma sekitar seperenam dari range.",
-    "sub": "Jadi body cuma sekitar 1/6 dari range.",
-    "start": 33.084,
-    "end": 37.585
+    "text": "Lo mau jual, tapi lo mau jualnya lebih mahal, misalnya di area resistance.",
+    "sub": "Lo mau jual, tapi lo mau jualnya lebih mahal, misalnya di area resistance.",
+    "start": 28.276,
+    "end": 32.63
    },
    {
-    "text": "Artinya selama satu jam itu harga gerak lebar ke dua arah, tapi akhirnya nggak jauh dari titik awal.",
-    "sub": "Artinya selama satu jam itu harga gerak lebar ke dua arah, tapi akhirnya nggak jauh dari titik awal.",
-    "start": 37.882,
-    "end": 41.499
+    "text": "Kelebihannya, entry lo presisi dan jarak stop loss bisa lebih pendek, kayak Trader B tadi.",
+    "sub": "Kelebihannya, entry lo presisi dan jarak stop loss bisa lebih pendek, kayak Trader B tadi.",
+    "start": 32.873,
+    "end": 37.599
    },
    {
-    "text": "Pembeli sempat dorong naik delapan dolar dari open, lalu sebagian besar kenaikan itu dilepas lagi.",
-    "sub": "Pembeli sempat dorong naik $8 dari open, lalu sebagian besar kenaikan itu dilepas lagi.",
-    "start": 41.733,
-    "end": 50.173
+    "text": "Tapi ada harga yang harus dibayar.",
+    "sub": "Tapi ada harga yang harus dibayar.",
+    "start": 37.819,
+    "end": 39.88
    },
    {
-    "text": "Ini beda jauh dengan candle hijau yang body-nya hampir sepanjang range.",
-    "sub": "Ini beda jauh dengan candle hijau yang body-nya hampir sepanjang range.",
-    "start": 50.49,
-    "end": 54.566
+    "text": "Harga bisa mantul satu dolar sebelum level lo, terus lari tanpa lo.",
+    "sub": "Harga bisa mantul $1 sebelum level lo, terus lari tanpa lo.",
+    "start": 40.133,
+    "end": 43.823
    },
    {
-    "text": "Hati-hati juga dengan istilah.",
-    "sub": "Hati-hati juga dengan istilah.",
-    "start": 54.897,
-    "end": 56.38
+    "text": "Order lo nggak pernah kebuka.",
+    "sub": "Order lo nggak pernah kebuka.",
+    "start": 44.069,
+    "end": 45.457
    },
    {
-    "text": "Body itu bukan range.",
-    "sub": "Body itu bukan range.",
-    "start": 56.627,
-    "end": 58.429
+    "text": "Dan itu bukan kerugian.",
+    "sub": "Dan itu bukan kerugian.",
+    "start": 45.715,
+    "end": 48.727
    },
    {
-    "text": "Kalau lo ngukur volatilitas pakai body aja, lo bakal salah ngitung seberapa jauh harga sebenarnya bergerak.",
-    "sub": "Kalau lo ngukur volatilitas pakai body aja, lo bakal salah ngitung seberapa jauh harga sebenarnya bergerak.",
-    "start": 58.649,
-    "end": 64.336
+    "text": "Itu bagian dari rencana.",
+    "sub": "Itu bagian dari rencana.",
+    "start": 48.988,
+    "end": 49.529
+   },
+   {
+    "text": "Satu lagi: limit order yang dipasang di tengah tren kuat yang berlawanan itu sama aja nangkep pisau jatuh.",
+    "sub": "Satu lagi: limit order yang dipasang di tengah tren kuat yang berlawanan itu sama aja nangkep pisau jatuh.",
+    "start": 49.731,
+    "end": 54.309
+   },
+   {
+    "text": "Level limit harus punya alasan, bukan sekadar angka bulat.",
+    "sub": "Level limit harus punya alasan, bukan sekadar angka bulat.",
+    "start": 54.555,
+    "end": 57.861
    }
   ]
  },
  {
-  "id": "s05_tf",
-  "chapter": "Bagian 3 · Timeframe",
-  "visual": "timeframe",
-  "audioDur": 63.713,
-  "duration": 64.413,
+  "id": "s05_stop",
+  "chapter": "Bagian 3 · Stop order",
+  "visual": "stop",
+  "audioDur": 54.073,
+  "duration": 54.773,
   "sentences": [
    {
-    "text": "Bagian ketiga, timeframe.",
-    "sub": "Bagian ketiga, timeframe.",
+    "text": "Lanjut ke stop order.",
+    "sub": "Lanjut ke stop order.",
     "start": 0.0,
-    "end": 1.931
+    "end": 1.137
    },
    {
-    "text": "Di MT empat atau MT lima, lo bisa pilih M satu, M lima, M lima belas, H satu, H empat, sampai D satu.",
-    "sub": "Di MT4 atau MT5, lo bisa pilih M1, M5, M15, H1, H4, sampai D1.",
-    "start": 2.507,
-    "end": 7.961
+    "text": "Ini kebalikan dari limit.",
+    "sub": "Ini kebalikan dari limit.",
+    "start": 1.436,
+    "end": 2.659
    },
    {
-    "text": "Satu candle H satu itu sebenarnya gabungan dari empat candle M lima belas.",
-    "sub": "Satu candle H1 itu sebenarnya gabungan dari 4 candle M15.",
-    "start": 8.184,
-    "end": 10.757
+    "text": "Stop itu masuk di harga yang lebih jelek dari harga sekarang, sebagai bayaran untuk konfirmasi.",
+    "sub": "Stop itu masuk di harga yang lebih jelek dari harga sekarang, sebagai bayaran untuk konfirmasi.",
+    "start": 2.966,
+    "end": 7.877
    },
    {
-    "text": "Open-nya diambil dari candle pertama.",
-    "sub": "Open-nya diambil dari candle pertama.",
-    "start": 11.291,
-    "end": 15.913
+    "text": "Buy stop dipasang di atas harga sekarang.",
+    "sub": "Buy stop dipasang di atas harga sekarang.",
+    "start": 8.28,
+    "end": 10.509
    },
    {
-    "text": "Close-nya dari candle terakhir.",
-    "sub": "Close-nya dari candle terakhir.",
-    "start": 16.37,
-    "end": 18.614
+    "text": "Contoh: emas lagi di tiga ribu tujuh ratus lima puluh, resistance di tiga ribu tujuh ratus lima puluh delapan.",
+    "sub": "Contoh: emas lagi di 3.750, resistance di 3.758.",
+    "start": 10.762,
+    "end": 16.507
    },
    {
-    "text": "High-nya yang paling tinggi dari keempatnya, dan low-nya yang paling rendah.",
-    "sub": "High-nya yang paling tinggi dari keempatnya, dan low-nya yang paling rendah.",
-    "start": 19.048,
-    "end": 20.738
+    "text": "Lo cuma mau buy kalau resistance itu benar-benar ditembus.",
+    "sub": "Lo cuma mau buy kalau resistance itu benar-benar ditembus.",
+    "start": 16.78,
+    "end": 19.914
    },
    {
-    "text": "Lihat di layar.",
-    "sub": "Lihat di layar.",
-    "start": 21.157,
-    "end": 25.779
+    "text": "Jadi lo pasang buy stop di tiga ribu tujuh ratus enam puluh.",
+    "sub": "Jadi lo pasang buy stop di 3.760.",
+    "start": 20.102,
+    "end": 23.187
    },
    {
-    "text": "Di M lima belas, candle kedua naik sampai tiga ribu tujuh ratus lima puluh delapan, terus dua candle berikutnya turun lagi.",
-    "sub": "Di M15, candle kedua naik sampai 3.758, terus dua candle berikutnya turun lagi.",
-    "start": 26.264,
-    "end": 32.108
+    "text": "Sell stop dipasang di bawah harga sekarang, buat ikut kalau support jebol.",
+    "sub": "Sell stop dipasang di bawah harga sekarang, buat ikut kalau support jebol.",
+    "start": 23.486,
+    "end": 27.369
    },
    {
-    "text": "Di H satu, semua cerita itu dipadatkan jadi satu candle dengan sumbu atas panjang.",
-    "sub": "Di H1, semua cerita itu dipadatkan jadi satu candle dengan sumbu atas panjang.",
-    "start": 32.478,
-    "end": 40.629
+    "text": "Kedengarannya aneh, kenapa mau beli lebih mahal?",
+    "sub": "Kedengarannya aneh, kenapa mau beli lebih mahal?",
+    "start": 27.626,
+    "end": 29.959
    },
    {
-    "text": "Makin kecil timeframe-nya, makin banyak gerakan acak yang kelihatan.",
-    "sub": "Makin kecil timeframe-nya, makin banyak gerakan acak yang kelihatan.",
-    "start": 41.152,
-    "end": 44.857
+    "text": "Karena lo bayar buat bukti bahwa harga memang bergerak ke arah itu.",
+    "sub": "Karena lo bayar buat bukti bahwa harga memang bergerak ke arah itu.",
+    "start": 30.25,
+    "end": 33.676
    },
    {
-    "text": "Itu sebabnya pemula sebaiknya mulai dari H satu dan H empat.",
-    "sub": "Itu sebabnya pemula sebaiknya mulai dari H1 dan H4.",
-    "start": 45.305,
-    "end": 48.916
+    "text": "Jebakannya ada dua.",
+    "sub": "Jebakannya ada dua.",
+    "start": 33.964,
+    "end": 34.932
    },
    {
-    "text": "Candle-nya lebih sedikit, noise-nya lebih kecil, dan lo punya waktu buat mikir sebelum ambil keputusan.",
-    "sub": "Candle-nya lebih sedikit, noise-nya lebih kecil, dan lo punya waktu buat mikir sebelum ambil keputusan.",
-    "start": 49.401,
-    "end": 55.073
+    "text": "Satu, breakout palsu.",
+    "sub": "Satu, breakout palsu.",
+    "start": 35.165,
+    "end": 36.607
    },
    {
-    "text": "Satu catatan lagi: jam candle ikut zona waktu server broker, jadi candle harian di dua broker bisa sedikit beda bentuknya.",
-    "sub": "Satu catatan lagi: jam candle ikut zona waktu server broker, jadi candle harian di dua broker bisa sedikit beda bentuknya.",
-    "start": 55.612,
-    "end": 63.493
+    "text": "Harga nembus, order lo kebuka, terus harga balik lagi ke dalam range.",
+    "sub": "Harga nembus, order lo kebuka, terus harga balik lagi ke dalam range.",
+    "start": 36.85,
+    "end": 40.554
+   },
+   {
+    "text": "Dua, slippage.",
+    "sub": "Dua, slippage.",
+    "start": 40.796,
+    "end": 41.924
+   },
+   {
+    "text": "Stop order dieksekusi sebagai market order begitu levelnya kesentuh, jadi waktu pasar cepat, harga isinya bisa lebih jauh dari level lo.",
+    "sub": "Stop order dieksekusi sebagai market order begitu levelnya kesentuh, jadi waktu pasar cepat, harga isinya bisa lebih jauh dari level lo.",
+    "start": 42.14,
+    "end": 49.394
+   },
+   {
+    "text": "Makanya stop order butuh stop loss yang ditentuin dari awal, bukan setelah kebuka.",
+    "sub": "Makanya stop order butuh stop loss yang ditentuin dari awal, bukan setelah kebuka.",
+    "start": 49.658,
+    "end": 54.073
    }
   ]
  },
  {
-  "id": "s06_ctx",
-  "chapter": "Bagian 4 · Konteks",
-  "visual": "context",
-  "audioDur": 59.167,
-  "duration": 59.867,
+  "id": "s06_sltp",
+  "chapter": "Bagian 4 · Stop loss & take profit",
+  "visual": "sltp",
+  "audioDur": 55.954,
+  "duration": 56.654,
   "sentences": [
    {
-    "text": "Bagian keempat, dan ini yang paling sering dilewatin: konteks.",
-    "sub": "Bagian keempat, dan ini yang paling sering dilewatin: konteks.",
+    "text": "Ini dia order yang lo pakai tiap hari tanpa sadar.",
+    "sub": "Ini dia order yang lo pakai tiap hari tanpa sadar.",
     "start": 0.0,
-    "end": 3.39
+    "end": 2.956
    },
    {
-    "text": "Banyak orang ngapalin puluhan nama pola.",
-    "sub": "Banyak orang ngapalin puluhan nama pola.",
-    "start": 3.891,
-    "end": 7.072
+    "text": "Stop loss itu sebenarnya stop order.",
+    "sub": "Stop loss itu sebenarnya stop order.",
+    "start": 3.383,
+    "end": 5.644
    },
    {
-    "text": "Doji, engulfing, pin bar, hammer.",
-    "sub": "Doji, engulfing, pin bar, hammer.",
-    "start": 7.475,
-    "end": 10.52
+    "text": "Waktu lo punya posisi buy, stop loss lo adalah perintah sell stop: jual kalau harga turun ke level tertentu.",
+    "sub": "Waktu lo punya posisi buy, stop loss lo adalah perintah sell stop: jual kalau harga turun ke level tertentu.",
+    "start": 5.963,
+    "end": 11.971
    },
    {
-    "text": "Nama itu boleh lo kenal, tapi bentuk candle tanpa lokasi itu nyaris nggak ada artinya.",
-    "sub": "Nama itu boleh lo kenal, tapi bentuk candle tanpa lokasi itu nyaris nggak ada artinya.",
-    "start": 10.893,
-    "end": 15.841
+    "text": "Dan take profit lo adalah sell limit: jual kalau harga naik ke level yang lebih bagus.",
+    "sub": "Dan take profit lo adalah sell limit: jual kalau harga naik ke level yang lebih bagus.",
+    "start": 12.202,
+    "end": 16.861
    },
    {
-    "text": "Lihat dua candle simulasi ini.",
-    "sub": "Lihat dua candle simulasi ini.",
-    "start": 16.298,
-    "end": 17.846
+    "text": "Kebalik untuk posisi sell.",
+    "sub": "Kebalik untuk posisi sell.",
+    "start": 17.082,
+    "end": 18.338
    },
    {
-    "text": "Bentuknya sama persis, sumbu bawah panjang dan body kecil.",
-    "sub": "Bentuknya sama persis, sumbu bawah panjang dan body kecil.",
-    "start": 18.225,
-    "end": 21.811
+    "text": "Stop loss jadi buy stop, take profit jadi buy limit.",
+    "sub": "Stop loss jadi buy stop, take profit jadi buy limit.",
+    "start": 18.617,
+    "end": 21.456
    },
    {
-    "text": "Yang kiri muncul di tengah-tengah range, di area yang nggak punya sejarah apa-apa.",
-    "sub": "Yang kiri muncul di tengah-tengah range, di area yang nggak punya sejarah apa-apa.",
-    "start": 22.264,
-    "end": 26.53
+    "text": "Kenapa ini penting?",
+    "sub": "Kenapa ini penting?",
+    "start": 21.753,
+    "end": 22.587
    },
    {
-    "text": "Yang kanan muncul tepat di area support yang sebelumnya udah beberapa kali nahan harga.",
-    "sub": "Yang kanan muncul tepat di area support yang sebelumnya udah beberapa kali nahan harga.",
-    "start": 26.978,
-    "end": 31.922
+    "text": "Karena stop loss mewarisi semua sifat stop order, termasuk slippage.",
+    "sub": "Karena stop loss mewarisi semua sifat stop order, termasuk slippage.",
+    "start": 22.836,
+    "end": 25.632
    },
    {
-    "text": "Yang kanan ngasih informasi: harga sempat ditekan ke area itu, lalu ditolak.",
-    "sub": "Yang kanan ngasih informasi: harga sempat ditekan ke area itu, lalu ditolak.",
-    "start": 32.345,
-    "end": 36.954
+    "text": "Contoh simulasi: posisi buy, stop loss di tiga ribu tujuh ratus tiga puluh enam.",
+    "sub": "Contoh simulasi: posisi buy, stop loss di 3.736.",
+    "start": 25.839,
+    "end": 31.669
    },
    {
-    "text": "Yang kiri cuma gerakan biasa.",
-    "sub": "Yang kiri cuma gerakan biasa.",
-    "start": 37.471,
-    "end": 39.228
+    "text": "Pasar tutup hari Jumat, Senin pagi harga langsung dibuka di tiga ribu tujuh ratus tiga puluh.",
+    "sub": "Pasar tutup hari Jumat, Senin pagi harga langsung dibuka di 3.730.",
+    "start": 31.926,
+    "end": 36.858
    },
    {
-    "text": "Jadi urutannya begini.",
-    "sub": "Jadi urutannya begini.",
-    "start": 39.673,
-    "end": 40.79
+    "text": "Stop loss lo nggak keisi di tiga ribu tujuh ratus tiga puluh enam.",
+    "sub": "Stop loss lo nggak keisi di 3.736.",
+    "start": 37.087,
+    "end": 39.965
    },
    {
-    "text": "Pertama, tandai dulu area penting di H empat.",
-    "sub": "Pertama, tandai dulu area penting di H4.",
-    "start": 41.237,
-    "end": 43.887
+    "text": "Dia keisi di harga pertama yang tersedia, sekitar tiga ribu tujuh ratus tiga puluh.",
+    "sub": "Dia keisi di harga pertama yang tersedia, sekitar 3.730.",
+    "start": 40.165,
+    "end": 44.505
    },
    {
-    "text": "Kedua, baru perhatiin candle yang terbentuk di area itu.",
-    "sub": "Kedua, baru perhatiin candle yang terbentuk di area itu.",
-    "start": 44.349,
-    "end": 47.63
+    "text": "Jadi stop loss itu batas rencana, bukan jaminan rugi pas segitu.",
+    "sub": "Jadi stop loss itu batas rencana, bukan jaminan rugi pas segitu.",
+    "start": 44.712,
+    "end": 48.78
    },
    {
-    "text": "Ketiga, tanya apa yang candle itu ceritain soal tarik-menarik pembeli dan penjual.",
-    "sub": "Ketiga, tanya apa yang candle itu ceritain soal tarik-menarik pembeli dan penjual.",
-    "start": 48.077,
-    "end": 53.23
-   },
-   {
-    "text": "Candle bukan sinyal.",
-    "sub": "Candle bukan sinyal.",
-    "start": 53.756,
-    "end": 54.882
-   },
-   {
-    "text": "Candle itu bukti kecil yang lo kumpulin sebelum bikin rencana.",
-    "sub": "Candle itu bukti kecil yang lo kumpulin sebelum bikin rencana.",
-    "start": 55.211,
-    "end": 58.848
+    "text": "Itu sebabnya ukuran lot dihitung dari risiko, dan risikonya dibuat kecil, supaya selisih kayak gini nggak ngerusak akun.",
+    "sub": "Itu sebabnya ukuran lot dihitung dari risiko, dan risikonya dibuat kecil, supaya selisih kayak gini nggak ngerusak akun.",
+    "start": 49.011,
+    "end": 55.954
    }
   ]
  },
  {
-  "id": "s07_risk",
-  "chapter": "Bagian 5 · Rencana risiko",
-  "visual": "risk",
-  "audioDur": 72.046,
-  "duration": 72.746,
+  "id": "s07_pilih",
+  "chapter": "Bagian 5 · Cara memilih",
+  "visual": "pilih",
+  "audioDur": 41.273,
+  "duration": 41.973,
   "sentences": [
    {
-    "text": "Bagian kelima, dari candle ke rencana risiko.",
-    "sub": "Bagian kelima, dari candle ke rencana risiko.",
+    "text": "Terus gimana milihnya?",
+    "sub": "Terus gimana milihnya?",
     "start": 0.0,
-    "end": 3.161
+    "end": 1.233
    },
    {
-    "text": "Contoh simulasi.",
-    "sub": "Contoh simulasi.",
-    "start": 3.672,
-    "end": 4.559
+    "text": "Gue pakai dua pertanyaan.",
+    "sub": "Gue pakai dua pertanyaan.",
+    "start": 1.527,
+    "end": 2.752
    },
    {
-    "text": "Di area support tadi, ada candle H satu dengan low di tiga ribu tujuh ratus empat puluh.",
-    "sub": "Di area support tadi, ada candle H1 dengan low di 3.740.",
-    "start": 5.031,
-    "end": 10.134
+    "text": "Pertanyaan pertama: gue mau buy atau sell?",
+    "sub": "Pertanyaan pertama: gue mau buy atau sell?",
+    "start": 3.015,
+    "end": 5.574
    },
    {
-    "text": "Misalnya rencana entry ilustrasi lo di tiga ribu tujuh ratus empat puluh delapan.",
-    "sub": "Misalnya rencana entry ilustrasi lo di 3.748.",
-    "start": 10.566,
-    "end": 15.004
+    "text": "Pertanyaan kedua: gue mau harga yang lebih bagus, atau gue butuh konfirmasi dulu?",
+    "sub": "Pertanyaan kedua: gue mau harga yang lebih bagus, atau gue butuh konfirmasi dulu?",
+    "start": 5.842,
+    "end": 10.14
    },
    {
-    "text": "Stop loss logisnya ditaruh di bawah ujung sumbu itu, ditambah buffer satu dolar, jadi di tiga ribu tujuh ratus tiga puluh sembilan.",
-    "sub": "Stop loss logisnya ditaruh di bawah ujung sumbu itu, ditambah buffer $1, jadi di 3.739.",
-    "start": 15.357,
-    "end": 23.276
+    "text": "Mau buy di harga lebih murah, pakai buy limit.",
+    "sub": "Mau buy di harga lebih murah, pakai buy limit.",
+    "start": 10.531,
+    "end": 12.82
    },
    {
-    "text": "Jarak stop-nya sembilan dolar.",
-    "sub": "Jarak stop-nya $9.",
-    "start": 23.601,
-    "end": 25.235
+    "text": "Mau buy setelah harga nembus ke atas, pakai buy stop.",
+    "sub": "Mau buy setelah harga nembus ke atas, pakai buy stop.",
+    "start": 13.02,
+    "end": 15.718
    },
    {
-    "text": "Kenapa bukan di tengah sumbu?",
-    "sub": "Kenapa bukan di tengah sumbu?",
-    "start": 25.614,
-    "end": 26.946
+    "text": "Mau sell di harga lebih mahal, pakai sell limit.",
+    "sub": "Mau sell di harga lebih mahal, pakai sell limit.",
+    "start": 15.94,
+    "end": 18.324
    },
    {
-    "text": "Karena harga udah pernah ke sana.",
-    "sub": "Karena harga udah pernah ke sana.",
-    "start": 27.204,
-    "end": 29.133
+    "text": "Mau sell setelah harga jebol ke bawah, pakai sell stop.",
+    "sub": "Mau sell setelah harga jebol ke bawah, pakai sell stop.",
+    "start": 18.544,
+    "end": 21.529
    },
    {
-    "text": "Stop di tengah sumbu gampang kesentuh lagi walaupun ide lo belum salah.",
-    "sub": "Stop di tengah sumbu gampang kesentuh lagi walaupun ide lo belum salah.",
-    "start": 29.383,
-    "end": 33.585
+    "text": "Dan kalau harga sekarang sudah ada di area rencana lo, baru market order.",
+    "sub": "Dan kalau harga sekarang sudah ada di area rencana lo, baru market order.",
+    "start": 21.752,
+    "end": 25.677
    },
    {
-    "text": "Sekarang hitung lot.",
-    "sub": "Sekarang hitung lot.",
-    "start": 33.994,
-    "end": 34.858
+    "text": "Cara gampang ingetnya: limit itu sabar, stop itu konfirmasi, market itu sekarang.",
+    "sub": "Cara gampang ingetnya: limit itu sabar, stop itu konfirmasi, market itu sekarang.",
+    "start": 25.947,
+    "end": 31.356
    },
    {
-    "text": "Modal lima ribu dolar, risiko satu persen, berarti lima puluh dolar.",
-    "sub": "Modal $5.000, risiko 1%, berarti $50.",
-    "start": 35.21,
-    "end": 39.481
+    "text": "Yang paling sering bikin pemula bingung adalah ketuker antara buy limit dan buy stop.",
+    "sub": "Yang paling sering bikin pemula bingung adalah ketuker antara buy limit dan buy stop.",
+    "start": 31.706,
+    "end": 35.866
    },
    {
-    "text": "Satu lot XAUUSD umumnya seratus ons, jadi tiap harga gerak satu dolar nilainya seratus dolar per lot.",
-    "sub": "Satu lot XAUUSD umumnya 100 ons, jadi tiap harga gerak $1 nilainya $100 per lot.",
-    "start": 39.808,
-    "end": 47.079
+    "text": "Ingat aja posisinya terhadap harga sekarang.",
+    "sub": "Ingat aja posisinya terhadap harga sekarang.",
+    "start": 36.093,
+    "end": 38.543
    },
    {
-    "text": "Stop sembilan dolar berarti sembilan ratus dolar per lot.",
-    "sub": "Stop $9 berarti $900 per lot.",
-    "start": 47.418,
-    "end": 50.745
-   },
-   {
-    "text": "Lima puluh dibagi sembilan ratus, kira-kira nol koma nol lima lima.",
-    "sub": "$50 ÷ $900, kira-kira 0,055.",
-    "start": 51.029,
-    "end": 55.391
-   },
-   {
-    "text": "Bulatkan ke bawah jadi nol koma nol lima lot.",
-    "sub": "Bulatkan ke bawah jadi 0,05 lot.",
-    "start": 55.653,
-    "end": 58.478
-   },
-   {
-    "text": "Kalau kena stop, rugi sekitar empat puluh lima dolar, bisa lebih kalau ada slippage atau spread melebar.",
-    "sub": "Kalau kena stop, rugi sekitar $45, bisa lebih kalau ada slippage atau spread melebar.",
-    "start": 58.806,
-    "end": 64.6
-   },
-   {
-    "text": "Urutannya selalu sama: candle ngasih lokasi stop, risiko persen ngasih batas rugi, lot dihitung paling akhir.",
-    "sub": "Urutannya selalu sama: candle ngasih lokasi stop, risiko persen ngasih batas rugi, lot dihitung paling akhir.",
-    "start": 64.893,
-    "end": 71.786
+    "text": "Buy limit di bawah, buy stop di atas.",
+    "sub": "Buy limit di bawah, buy stop di atas.",
+    "start": 38.744,
+    "end": 41.273
    }
   ]
  },
  {
-  "id": "s08_task",
-  "chapter": "Tugas latihan",
+  "id": "s08_mt5",
+  "chapter": "Bagian 6 · Cara pasang di MT5",
+  "visual": "mt5",
+  "audioDur": 54.883,
+  "duration": 55.583,
+  "sentences": [
+   {
+    "text": "Sekarang cara pasangnya.",
+    "sub": "Sekarang cara pasangnya.",
+    "start": 0.0,
+    "end": 1.204
+   },
+   {
+    "text": "Gue pakai MT5, di MT4 prinsipnya sama.",
+    "sub": "Gue pakai MT5, di MT4 prinsipnya sama.",
+    "start": 1.507,
+    "end": 4.527
+   },
+   {
+    "text": "Buka jendela order baru, lalu ubah jenisnya dari eksekusi pasar ke pending order.",
+    "sub": "Buka jendela order baru, lalu ubah jenisnya dari eksekusi pasar ke pending order.",
+    "start": 4.774,
+    "end": 9.427
+   },
+   {
+    "text": "Pilih jenisnya: buy limit, sell limit, buy stop, atau sell stop.",
+    "sub": "Pilih jenisnya: buy limit, sell limit, buy stop, atau sell stop.",
+    "start": 9.675,
+    "end": 13.518
+   },
+   {
+    "text": "Isi harga entry.",
+    "sub": "Isi harga entry.",
+    "start": 13.812,
+    "end": 14.77
+   },
+   {
+    "text": "Isi stop loss dan take profit sebelum klik, bukan nanti.",
+    "sub": "Isi stop loss dan take profit sebelum klik, bukan nanti.",
+    "start": 15.063,
+    "end": 18.168
+   },
+   {
+    "text": "Hitung lot dari risiko.",
+    "sub": "Hitung lot dari risiko.",
+    "start": 18.466,
+    "end": 19.772
+   },
+   {
+    "text": "Contoh simulasi: modal lima ribu dolar, risiko satu persen berarti lima puluh dolar.",
+    "sub": "Contoh simulasi: modal $5.000, risiko 1% berarti $50.",
+    "start": 19.98,
+    "end": 20.772
+   },
+   {
+    "text": "Jarak stop enam dolar, dan di XAUUSD satu lot itu seratus ons, jadi nilainya enam ratus dolar per lot.",
+    "sub": "Jarak stop $6, dan di XAUUSD satu lot itu 100 ons, jadi nilainya $600 per lot.",
+    "start": 21.026,
+    "end": 24.661
+   },
+   {
+    "text": "Lima puluh dibagi enam ratus, ketemu nol koma nol delapan lot setelah dibulatkan ke bawah.",
+    "sub": "$50 ÷ $600, ketemu 0,08 lot setelah dibulatkan ke bawah.",
+    "start": 24.901,
+    "end": 31.948
+   },
+   {
+    "text": "Terakhir, atur masa berlaku.",
+    "sub": "Terakhir, atur masa berlaku.",
+    "start": 32.154,
+    "end": 37.014
+   },
+   {
+    "text": "Pending order yang dibiarkan berhari-hari bisa kebuka di kondisi yang udah beda total.",
+    "sub": "Pending order yang dibiarkan berhari-hari bisa kebuka di kondisi yang udah beda total.",
+    "start": 37.264,
+    "end": 38.928
+   },
+   {
+    "text": "Kalau muncul pesan harga tidak valid, biasanya jenis order lo kebalik, misalnya buy limit dipasang di atas harga.",
+    "sub": "Kalau muncul pesan harga tidak valid, biasanya jenis order lo kebalik, misalnya buy limit dipasang di atas harga.",
+    "start": 39.186,
+    "end": 43.253
+   },
+   {
+    "text": "Ada juga jarak minimum dari harga sekarang yang ditentuin broker, jadi cek spesifikasi simbolnya.",
+    "sub": "Ada juga jarak minimum dari harga sekarang yang ditentuin broker, jadi cek spesifikasi simbolnya.",
+    "start": 43.462,
+    "end": 54.883
+   }
+  ]
+ },
+ {
+  "id": "s09_task",
+  "chapter": "Latihan",
   "visual": "task",
-  "audioDur": 40.124,
-  "duration": 40.824,
+  "audioDur": 28.343,
+  "duration": 29.043,
   "sentences": [
    {
-    "text": "Sekarang tugas latihan di akun demo.",
-    "sub": "Sekarang tugas latihan di akun demo.",
+    "text": "Tugas lo minggu ini, di akun demo.",
+    "sub": "Tugas lo minggu ini, di akun demo.",
     "start": 0.0,
-    "end": 2.025
+    "end": 1.902
    },
    {
-    "text": "Buka chart XAUUSD di H satu, lalu ambil sepuluh candle terakhir.",
-    "sub": "Buka chart XAUUSD di H1, lalu ambil 10 candle terakhir.",
-    "start": 2.49,
-    "end": 7.544
+    "text": "Satu, pasang satu buy limit dan satu sell limit di area yang lo tandai di chart H1.",
+    "sub": "Satu, pasang satu buy limit dan satu sell limit di area yang lo tandai di chart H1.",
+    "start": 2.239,
+    "end": 7.309
    },
    {
-    "text": "Untuk tiap candle, catat open, high, low, dan close.",
-    "sub": "Untuk tiap candle, catat open, high, low, dan close.",
-    "start": 8.029,
-    "end": 10.732
+    "text": "Dua, pasang satu buy stop di atas resistance dan satu sell stop di bawah support.",
+    "sub": "Dua, pasang satu buy stop di atas resistance dan satu sell stop di bawah support.",
+    "start": 7.63,
+    "end": 12.136
    },
    {
-    "text": "Hitung body, range, sumbu atas, dan sumbu bawah, lalu cek apakah body tambah dua sumbu sama dengan range.",
-    "sub": "Hitung body, range, sumbu atas, dan sumbu bawah, lalu cek apakah body tambah dua sumbu sama dengan range.",
-    "start": 10.912,
-    "end": 19.816
+    "text": "Tiga, isi stop loss dan take profit di keempat order sebelum klik.",
+    "sub": "Tiga, isi stop loss dan take profit di keempat order sebelum klik.",
+    "start": 12.478,
+    "end": 16.167
    },
    {
-    "text": "Setelah itu tandai satu atau dua area penting di H empat, dan lihat candle mana yang terbentuk di dekat area itu.",
-    "sub": "Setelah itu tandai satu atau dua area penting di H4, dan lihat candle mana yang terbentuk di dekat area itu.",
-    "start": 20.258,
-    "end": 26.831
+    "text": "Empat, catat di jurnal mana yang kebuka, mana yang nggak, dan selisih harga isinya dibanding level yang lo pasang.",
+    "sub": "Empat, catat di jurnal mana yang kebuka, mana yang nggak, dan selisih harga isinya dibanding level yang lo pasang.",
+    "start": 16.522,
+    "end": 16.865
    },
    {
-    "text": "Terakhir, pindah ke M lima belas dan lihat cerita apa yang tersembunyi di dalam satu candle H satu.",
-    "sub": "Terakhir, pindah ke M15 dan lihat cerita apa yang tersembunyi di dalam satu candle H1.",
-    "start": 27.296,
-    "end": 33.112
+    "text": "Nggak usah mikirin untung rugi dulu.",
+    "sub": "Nggak usah mikirin untung rugi dulu.",
+    "start": 17.192,
+    "end": 22.61
    },
    {
-    "text": "Nggak usah buka posisi.",
-    "sub": "Nggak usah buka posisi.",
-    "start": 33.547,
-    "end": 34.64
-   },
-   {
-    "text": "Tujuannya biar mata lo terbiasa baca candle sebagai data, bukan sebagai warna.",
-    "sub": "Tujuannya biar mata lo terbiasa baca candle sebagai data, bukan sebagai warna.",
-    "start": 34.983,
-    "end": 39.846
+    "text": "Tujuannya biar tangan lo hafal tombolnya sebelum pakai uang sungguhan.",
+    "sub": "Tujuannya biar tangan lo hafal tombolnya sebelum pakai uang sungguhan.",
+    "start": 22.927,
+    "end": 28.343
    }
   ]
  },
  {
-  "id": "s09_sum",
+  "id": "s10_sum",
   "chapter": "Ringkasan",
   "visual": "summary",
-  "audioDur": 33.646,
-  "duration": 34.346,
+  "audioDur": 30.589,
+  "duration": 31.289,
   "sentences": [
    {
-    "text": "Ringkasnya.",
-    "sub": "Ringkasnya.",
+    "text": "Kita rangkum.",
+    "sub": "Kita rangkum.",
     "start": 0.0,
-    "end": 0.698
+    "end": 0.694
    },
    {
-    "text": "Satu, tiap candle berisi empat harga: open, high, low, close.",
-    "sub": "Satu, tiap candle berisi 4 harga: open, high, low, close.",
-    "start": 1.085,
-    "end": 6.375
+    "text": "Market order masuk sekarang, dibuka di ask untuk buy dan di bid untuk sell, dan bisa kena slippage.",
+    "sub": "Market order masuk sekarang, dibuka di ask untuk buy dan di bid untuk sell, dan bisa kena slippage.",
+    "start": 1.011,
+    "end": 6.763
    },
    {
-    "text": "Dua, warna cuma nunjukin close dibanding open, bukan seluruh perjalanan harga.",
-    "sub": "Dua, warna cuma nunjukin close dibanding open, bukan seluruh perjalanan harga.",
-    "start": 6.699,
-    "end": 11.591
+    "text": "Limit order nunggu harga lebih bagus: buy limit di bawah, sell limit di atas.",
+    "sub": "Limit order nunggu harga lebih bagus: buy limit di bawah, sell limit di atas.",
+    "start": 7.049,
+    "end": 11.433
    },
    {
-    "text": "Tiga, body dan range itu beda, dan body tambah dua sumbu sama dengan range.",
-    "sub": "Tiga, body dan range itu beda, dan body tambah dua sumbu sama dengan range.",
-    "start": 12.009,
-    "end": 17.047
+    "text": "Stop order masuk setelah konfirmasi: buy stop di atas, sell stop di bawah.",
+    "sub": "Stop order masuk setelah konfirmasi: buy stop di atas, sell stop di bawah.",
+    "start": 11.698,
+    "end": 16.108
    },
    {
-    "text": "Empat, satu candle H satu adalah gabungan empat candle M lima belas, jadi mulai dari H satu dan H empat.",
-    "sub": "Empat, satu candle H1 adalah gabungan 4 candle M15, jadi mulai dari H1 dan H4.",
-    "start": 17.415,
-    "end": 24.504
+    "text": "Stop loss itu stop order, take profit itu limit order.",
+    "sub": "Stop loss itu stop order, take profit itu limit order.",
+    "start": 16.432,
+    "end": 19.72
    },
    {
-    "text": "Lima, lokasi lebih penting dari bentuk.",
-    "sub": "Lima, lokasi lebih penting dari bentuk.",
-    "start": 24.901,
-    "end": 27.446
+    "text": "Stop loss adalah batas rencana, bukan jaminan, jadi risiko per posisi dibuat kecil.",
+    "sub": "Stop loss adalah batas rencana, bukan jaminan, jadi risiko per posisi dibuat kecil.",
+    "start": 19.988,
+    "end": 25.008
    },
    {
-    "text": "Enam, stop loss di luar sumbu, dan lot dihitung dari risiko, bukan dari perasaan.",
-    "sub": "Enam, stop loss di luar sumbu, dan lot dihitung dari risiko, bukan dari perasaan.",
-    "start": 27.866,
-    "end": 33.371
+    "text": "Dan semua angka, entry, stop loss, take profit, dan lot, ditentuin sebelum klik.",
+    "sub": "Dan semua angka, entry, stop loss, take profit, dan lot, ditentuin sebelum klik.",
+    "start": 25.205,
+    "end": 30.589
    }
   ]
  },
  {
-  "id": "s10_cta",
+  "id": "s11_cta",
   "chapter": "Penutup",
   "visual": "cta",
-  "audioDur": 25.156,
-  "duration": 25.856,
+  "audioDur": 23.745,
+  "duration": 24.445,
   "sentences": [
    {
     "text": "Ini edukasi umum.",
     "sub": "Ini edukasi umum.",
     "start": 0.0,
-    "end": 1.093
+    "end": 1.139
    },
    {
     "text": "Trading pakai leverage bisa bikin lo rugi dan kehilangan modal.",
     "sub": "Trading pakai leverage bisa bikin lo rugi dan kehilangan modal.",
-    "start": 1.458,
-    "end": 4.737
+    "start": 1.483,
+    "end": 4.591
    },
    {
-    "text": "Kalau lo mau latihan baca chart bareng trader lain, join komunitas gratis di dhirajkelly dot i d.",
-    "sub": "Kalau lo mau latihan baca chart bareng trader lain, join komunitas gratis di dhirajkelly.id.",
-    "start": 5.05,
-    "end": 10.536
+    "text": "Kalau lo mau belajar bareng dan diskusi rencana trading dengan cara yang lebih tenang, join komunitas trading di dhirajkelly dot i d.",
+    "sub": "Kalau lo mau belajar bareng dan diskusi rencana trading dengan cara yang lebih tenang, join komunitas trading di dhirajkelly.id.",
+    "start": 4.943,
+    "end": 11.709
    },
    {
-    "text": "Tulis di komentar: dari sepuluh candle yang lo catat, berapa yang body-nya lebih kecil dari setengah range?",
-    "sub": "Tulis di komentar: dari 10 candle yang lo catat, berapa yang body-nya lebih kecil dari setengah range?",
-    "start": 10.969,
-    "end": 16.505
+    "text": "Tulis di komentar: selama ini lo paling sering pakai market order atau pending order?",
+    "sub": "Tulis di komentar: selama ini lo paling sering pakai market order atau pending order?",
+    "start": 12.114,
+    "end": 16.508
    },
    {
-    "text": "Kalau video ini ngebantu, subscribe biar materi berikutnya nggak kelewat.",
-    "sub": "Kalau video ini ngebantu, subscribe biar materi berikutnya nggak kelewat.",
-    "start": 16.894,
-    "end": 20.65
+    "text": "Subscribe biar materi Academy berikutnya nggak kelewat.",
+    "sub": "Subscribe biar materi Academy berikutnya nggak kelewat.",
+    "start": 16.901,
+    "end": 19.594
    },
    {
     "text": "Gue Dhiraj Kelly.",
     "sub": "Gue Dhiraj Kelly.",
-    "start": 20.951,
-    "end": 21.818
+    "start": 19.898,
+    "end": 20.73
    },
    {
     "text": "Manage risk, protect capital, trade smarter.",
     "sub": "Manage risk, protect capital, trade smarter.",
-    "start": 22.115,
-    "end": 24.88
+    "start": 20.988,
+    "end": 23.745
    }
   ]
  }

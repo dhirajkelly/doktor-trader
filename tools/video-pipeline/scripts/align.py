@@ -1,14 +1,12 @@
 import json,re,subprocess,sys,os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
 import script
-SUBMAP=[("tiga ribu tujuh ratus lima puluh delapan","3.758"),("tiga ribu tujuh ratus lima puluh dua","3.752"),("tiga ribu tujuh ratus lima puluh","3.750"),
-("tiga ribu tujuh ratus empat puluh enam","3.746"),("tiga ribu tujuh ratus empat puluh delapan","3.748"),("tiga ribu tujuh ratus empat puluh","3.740"),("tiga ribu tujuh ratus tiga puluh sembilan","3.739"),
-("Tiga ribu tujuh ratus lima puluh delapan","3.758"),("Tiga ribu tujuh ratus lima puluh dua","3.752"),
-("dua tambah enam tambah empat, balik lagi ke dua belas","2 + 6 + 4, balik lagi ke 12"),("dua belas dolar","$12"),("delapan dolar","$8"),("dua dolar","$2"),("enam dolar","$6"),("empat dolar","$4"),
-("sembilan ratus dolar","$900"),("sembilan dolar","$9"),("lima ribu dolar","$5.000"),("lima puluh dolar","$50"),("empat puluh lima dolar","$45"),("seratus dolar","$100"),("satu dolar","$1"),
-("Lima puluh dibagi sembilan ratus","$50 ÷ $900"),("nol koma nol lima lima","0,055"),("nol koma nol lima lot","0,05 lot"),("satu persen","1%"),("seratus ons","100 ons"),
-("M lima belas","M15"),("M satu","M1"),("M lima","M5"),("H satu","H1"),("H empat","H4"),("D satu","D1"),("MT empat","MT4"),("MT lima","MT5"),
-("sepuluh candle","10 candle"),("empat candle","4 candle"),("empat harga","4 harga"),("dhirajkelly dot i d","dhirajkelly.id"),("seperenam","1/6")]
+SUBMAP=[("tiga ribu tujuh ratus lima puluh koma nol nol","3.750,00"),("tiga ribu tujuh ratus lima puluh koma tiga nol","3.750,30"),("tiga ribu tujuh ratus lima puluh koma delapan","3.750,80"),
+("tiga ribu tujuh ratus lima puluh delapan","3.758"),("tiga ribu tujuh ratus lima puluh","3.750"),("tiga ribu tujuh ratus empat puluh dua","3.742"),
+("tiga ribu tujuh ratus tiga puluh enam","3.736"),("tiga ribu tujuh ratus tiga puluh","3.730"),("tiga ribu tujuh ratus enam puluh","3.760"),
+("empat belas dolar","$14"),("enam ratus dolar","$600"),("enam dolar","$6"),("satu dolar","$1"),("lima ribu dolar","$5.000"),("lima puluh dolar","$50"),
+("Lima puluh dibagi enam ratus","$50 ÷ $600"),("nol koma nol delapan lot","0,08 lot"),("satu persen","1%"),("seratus ons","100 ons"),("tiga puluh sen","30 sen"),
+("dua kali lipat","2 kali lipat"),("Trader A","Trader A"),("H satu","H1"),("MT empat","MT4"),("MT lima","MT5"),("dhirajkelly dot i d","dhirajkelly.id")]
 def subify(t):
     for a,b in SUBMAP: t=t.replace(a,b)
     return t
