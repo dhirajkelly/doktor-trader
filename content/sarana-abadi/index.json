@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-21T21:55:47Z",
+ "generated": "2026-11-22T21:51:34Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1041,6 +1041,92 @@
     {
      "q": "Seberapa sering rak gudang perlu diinspeksi?",
      "a": "Lakukan pemeriksaan visual rutin oleh petugas gudang, ditambah inspeksi oleh pihak yang kompeten secara berkala. Standar Eropa EN 15635 sering dijadikan acuan pengelolaan dan inspeksi rak."
+    }
+   ]
+  },
+  {
+   "id": "jasa-pembuatan-loading-dock-gudang",
+   "slug": "jasa-pembuatan-loading-dock-gudang",
+   "title": "Jasa Pembuatan Loading Dock Gudang: Tahapan, Desain, dan Tipsnya",
+   "publish_at_wib": "2026-11-23 07:00",
+   "publish_at_utc": "2026-11-23T00:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/23/jasa-pembuatan-loading-dock-gudang/",
+   "html": "html/jasa-pembuatan-loading-dock-gudang.html",
+   "image": "img/jasa-pembuatan-loading-dock-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa pembuatan loading dock gudang",
+   "excerpt": "Apa saja yang perlu diputuskan sebelum membangun loading dock gudang, dari tinggi dock dan dock leveler sampai kanopi dan drainase.",
+   "meta_title": "Jasa Pembuatan Loading Dock Gudang: Panduan Lengkap",
+   "meta_description": "Panduan memilih jasa pembuatan loading dock gudang: tinggi dock, dock leveler, bumper, kanopi, drainase, tahapan kerja, dan hal yang perlu ada di penawaran.",
+   "focus_keyword": "jasa pembuatan loading dock gudang",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "loading dock",
+    "dock leveler",
+    "gudang logistik",
+    "kontraktor gudang"
+   ],
+   "faq": [
+    {
+     "q": "Berapa tinggi loading dock gudang yang umum?",
+     "a": "Tinggi dock disesuaikan dengan tinggi lantai bak truk yang paling sering dilayani. Banyak gudang memakai kisaran sekitar 1,1–1,3 meter dari permukaan apron, lalu selisih tinggi truk ditangani dock leveler."
+    },
+    {
+     "q": "Apakah loading dock wajib memakai dock leveler?",
+     "a": "Tidak wajib. Dock leveler sangat membantu bila jenis truk bervariasi dan bongkar muat memakai forklift atau hand pallet. Untuk truk yang seragam dan bongkar manual, dock tetap tanpa leveler bisa cukup."
+    },
+    {
+     "q": "Berapa lama pembuatan loading dock?",
+     "a": "Durasinya bergantung jumlah bay, jenis struktur, dan apakah gudang tetap beroperasi. Pekerjaan beton membutuhkan waktu curing sebelum dibebani forklift, jadi jadwal perlu memasukkan waktu tersebut."
+    },
+    {
+     "q": "Bisakah loading dock ditambahkan pada gudang yang sudah berdiri?",
+     "a": "Bisa. Pekerjaan biasanya meliputi pembobokan dinding, pembuatan pit dan ramp atau dock, serta penyesuaian kanopi dan drainase. Survei struktur dan utilitas di lokasi wajib dilakukan lebih dulu."
+    }
+   ]
+  },
+  {
+   "id": "perhitungan-talang-atap-gudang",
+   "slug": "perhitungan-talang-atap-gudang",
+   "title": "Perhitungan Talang Atap Gudang: Rumus, Contoh, dan Detail Pasang",
+   "publish_at_wib": "2026-11-23 10:00",
+   "publish_at_utc": "2026-11-23T03:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/23/perhitungan-talang-atap-gudang/",
+   "html": "html/perhitungan-talang-atap-gudang.html",
+   "image": "img/perhitungan-talang-atap-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang perhitungan talang atap gudang",
+   "excerpt": "Langkah praktis menghitung debit air hujan, kapasitas talang, dan jumlah pipa turun untuk atap gudang, lengkap dengan contoh angka.",
+   "meta_title": "Perhitungan Talang Atap Gudang dan Contohnya",
+   "meta_description": "Cara perhitungan talang atap gudang: debit air hujan, kapasitas talang, jumlah pipa turun, contoh hitungan langkah demi langkah, dan detail pemasangan.",
+   "focus_keyword": "perhitungan talang atap gudang",
+   "categories": [
+    "Engineering & Design",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "talang atap",
+    "drainase atap",
+    "pipa turun",
+    "atap gudang"
+   ],
+   "faq": [
+    {
+     "q": "Data apa saja yang dibutuhkan untuk menghitung talang atap gudang?",
+     "a": "Luas tangkapan atap per talang, intensitas hujan rencana untuk lokasi proyek, koefisien limpasan atap, dimensi dan kemiringan talang, serta kapasitas pipa turun yang akan dipakai."
+    },
+    {
+     "q": "Berapa intensitas hujan yang dipakai untuk desain talang?",
+     "a": "Intensitas hujan sebaiknya diambil dari data curah hujan lokal dengan durasi pendek dan periode ulang yang disepakati. Angka 200 mm/jam dalam artikel ini hanya contoh untuk ilustrasi perhitungan."
+    },
+    {
+     "q": "Mengapa talang gudang sering meluap padahal ukurannya besar?",
+     "a": "Penyebab yang umum adalah jumlah atau ukuran pipa turun yang kurang, saringan outlet tersumbat, kemiringan talang yang terbalik karena lendutan, dan tidak adanya saluran limpahan darurat."
+    },
+    {
+     "q": "Apa beda sistem talang gravitasi dan siphonic?",
+     "a": "Sistem gravitasi mengandalkan aliran bebas sehingga butuh lebih banyak pipa turun. Sistem siphonic dirancang agar pipa terisi penuh sehingga satu pipa bisa melayani area lebih luas, tetapi desain dan pemasangannya harus mengikuti perhitungan khusus pemasok."
     }
    ]
   }
