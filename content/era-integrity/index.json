@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-21T21:22:16Z",
+ "generated": "2026-11-22T21:22:24Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -996,6 +996,93 @@
     {
      "q": "Lebih baik sewa tahunan atau bulanan?",
      "a": "Sewa tahunan memberi arus kas lebih pasti dan mengurangi pergantian penyewa, sedangkan sewa bulanan lebih fleksibel tetapi menuntut pengelolaan lebih aktif. Pilih sesuai target penyewa di lokasi rumah Anda."
+    }
+   ]
+  },
+  {
+   "id": "gudang-dijual-di-karawang",
+   "slug": "gudang-dijual-di-karawang",
+   "title": "Gudang Dijual di Karawang: Panduan Memilih Lokasi, Legalitas, dan Harga",
+   "publish_at_wib": "2026-11-23 07:00",
+   "publish_at_utc": "2026-11-23T00:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/23/gudang-dijual-di-karawang/",
+   "html": "html/gudang-dijual-di-karawang.html",
+   "image": "img/gudang-dijual-di-karawang.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang gudang dijual di Karawang",
+   "excerpt": "Panduan membeli gudang di Karawang: memilih lokasi, memeriksa legalitas dan zonasi, membaca harga indikatif, dan menghitung biaya transaksi.",
+   "meta_title": "Gudang Dijual di Karawang: Lokasi, Legalitas, Harga",
+   "meta_description": "Mencari gudang dijual di Karawang? Pelajari cara memilih lokasi, cek legalitas HGB/SHM dan zonasi, kisaran harga indikatif, serta biaya transaksinya.",
+   "focus_keyword": "gudang dijual di karawang",
+   "categories": [
+    "Jual • Beli • Sewa",
+    "Listing Properti",
+    "Area & Kawasan"
+   ],
+   "tags": [
+    "gudang karawang",
+    "properti industri",
+    "beli gudang",
+    "kawasan industri"
+   ],
+   "faq": [
+    {
+     "q": "Berapa kisaran harga gudang dijual di Karawang?",
+     "a": "Rentangnya sangat lebar. Iklan di portal properti pada 2026 menunjukkan gudang kecil sekitar 300 m² ditawarkan mulai sekitar Rp1,8 miliar, sedangkan gudang besar di lahan luas bisa puluhan miliar rupiah. Harga final tergantung luas, lokasi, spesifikasi bangunan, dan legalitas."
+    },
+    {
+     "q": "Lebih aman membeli gudang bersertifikat SHM atau HGB?",
+     "a": "Keduanya sah. Gudang di kawasan industri umumnya berstatus HGB yang punya jangka waktu dan perlu diperpanjang, sedangkan gudang di luar kawasan bisa SHM. Yang penting, cek keaslian sertifikat, sisa masa berlaku HGB, dan kesesuaian peruntukan lahan."
+    },
+    {
+     "q": "Apa yang perlu dicek sebelum membeli gudang di Karawang?",
+     "a": "Minimal: legalitas tanah dan bangunan (sertifikat, PBG/IMB, SLF bila ada), peruntukan lahan, akses jalan untuk truk, daya listrik, risiko genangan, dan tunggakan PBB. Survei fisik di jam operasional juga penting untuk melihat kondisi lalu lintas."
+    },
+    {
+     "q": "Lebih baik beli atau sewa gudang untuk usaha?",
+     "a": "Membeli cocok bila Anda butuh lokasi jangka panjang dan modal tersedia. Menyewa lebih fleksibel bila skala usaha masih berubah. Hitung arus kas dan rencana bisnis lima tahun ke depan sebelum memutuskan."
+    }
+   ]
+  },
+  {
+   "id": "jual-rumah-yang-masih-kpr",
+   "slug": "jual-rumah-yang-masih-kpr",
+   "title": "Jual Rumah yang Masih KPR: 4 Skema Aman dan Cara Menghitung Hasil Bersih",
+   "publish_at_wib": "2026-11-23 10:00",
+   "publish_at_utc": "2026-11-23T03:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/23/jual-rumah-yang-masih-kpr/",
+   "html": "html/jual-rumah-yang-masih-kpr.html",
+   "image": "img/jual-rumah-yang-masih-kpr.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang jual rumah yang masih KPR",
+   "excerpt": "Rumah masih dicicil tetap bisa dijual. Kenali empat skema yang aman, dokumen yang dibutuhkan, dan cara menghitung hasil bersih penjualan.",
+   "meta_title": "Jual Rumah yang Masih KPR: Skema Aman dan Hitungannya",
+   "meta_description": "Ingin jual rumah yang masih KPR? Pahami 4 skema yang aman, peran bank dan notaris, penalti pelunasan, roya, serta cara menghitung uang bersih Anda.",
+   "focus_keyword": "jual rumah yang masih kpr",
+   "categories": [
+    "Panduan & Edukasi Agen",
+    "Jual • Beli • Sewa"
+   ],
+   "tags": [
+    "kpr",
+    "jual rumah",
+    "pelunasan kpr",
+    "roya"
+   ],
+   "faq": [
+    {
+     "q": "Apakah rumah yang masih KPR boleh dijual?",
+     "a": "Boleh, asalkan prosesnya melibatkan bank pemberi KPR. Sertifikat rumah dipegang bank sebagai jaminan, jadi sisa utang harus dilunasi atau dialihkan secara resmi sebelum kepemilikan berpindah ke pembeli."
+    },
+    {
+     "q": "Berapa penalti pelunasan KPR dipercepat?",
+     "a": "Besarannya ditentukan masing-masing bank dan tercantum di perjanjian kredit. Sejumlah sumber menyebut kisaran umum sekitar 1–3%, tetapi angka yang berlaku untuk Anda harus dicek langsung ke bank."
+    },
+    {
+     "q": "Berapa biaya roya setelah KPR lunas?",
+     "a": "Menurut Kementerian ATR/BPN, PNBP layanan roya sebesar Rp50.000 per sertifikat yang dibebani hak tanggungan. Biaya jasa notaris, bila Anda memakai notaris untuk mengurusnya, dihitung terpisah."
+    },
+    {
+     "q": "Apakah over kredit di bawah tangan aman?",
+     "a": "Berisiko untuk kedua pihak. Nama debitur di bank tetap penjual, sementara pembeli tidak punya kepastian hukum atas rumah. Skema resmi melalui bank dan notaris jauh lebih aman."
     }
    ]
   }
