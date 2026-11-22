@@ -678,6 +678,29 @@ function seed() {
     db.setSetting('tool_dk_hrl', '1');
     console.log('[seed] tool DK Hedge Recovery Lite');
   }
+  // EA DK Hedge Recovery PROP v1.00 (XAUUSD, guard aturan prop firm, Doktor Rules)
+  if (db.setting('tool_dk_hrp') !== '1') {
+    const desc = [
+      'Versi **akun prop firm** dari DK Hedge Recovery Lite, khusus XAUUSD. Mesin hedge recovery sama (maks 4 posisi, cut loss otomatis), ditambah penjaga aturan prop yang dihitung dari saldo awal akun:',
+      '- **Daily guard 3%**: jika rugi hari ini (termasuk floating) mencapai 3% saldo awal, semua posisi ditutup dan tidak ada basket baru sampai besok',
+      '- **Max loss guard 6,5%**: jika equity turun 6,5% dari saldo awal, semua posisi ditutup dan EA berhenti permanen',
+      '- **Target lock** (opsional): saat target challenge tercapai, semua posisi ditutup dan EA berhenti',
+      '- **Doktor Rules**: entry bias EMA 200 H1 + cross EMA 9/VWAP M5, risiko 0,5% per basket, maksimal 2 basket per hari',
+      '- Tidak menahan posisi lewat weekend',
+      '',
+      'Guard dibuat lebih ketat dari batas umum prop firm (harian 4–5%, total 8–10%) sebagai buffer slippage. Sesuaikan angka di tab Inputs dengan aturan akun Anda dan isi `PropInitialBalance` dengan saldo awal akun.',
+      '',
+      '**Penting, cek aturan prop firm Anda dulu.** Sebagian prop firm melarang EA di ukuran akun tertentu; contohnya FundedNext hanya mengizinkan EA di akun di bawah $50.000. Melanggar aturan ini bisa membuat akun dibatalkan.',
+      '',
+      '**Hasil uji historis** (akun $25.000, risiko 0,5%, dua sumber data XAUUSD Des 2023–Okt 2026): drawdown terdalam ±2–3%, hari terburuk ±1%, tidak pernah menyentuh batas harian maupun total. Profitnya pelan, jadi EA ini lebih cocok untuk menjaga akun funded daripada mengejar target challenge dengan cepat.',
+      '',
+      '**Cara pasang (MT5):** File → Open Data Folder → MQL5 → Experts, tempel file .mq5, buka MetaEditor (F4) lalu Compile (F7). Refresh Navigator, tarik **DK_HedgeRecovery_PROP** ke chart XAUUSD, aktifkan Algo Trading. Uji dulu di Strategy Tester dan akun demo. [Unduh preset .set akun $25k](/member/unduh/DK_HedgeRecovery_PROP.set) (taruh di MQL5 → Presets).',
+    ].join('\n');
+    const pos = (db.get("SELECT MAX(position) AS m FROM tools WHERE kind = 'ea'") || {}).m || 0;
+    db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', ['ea', 'DK Hedge Recovery PROP: XAUUSD dengan guard aturan prop firm', desc, 'Sedang. Guard prop membatasi rugi harian dan total, tetapi gap harga atau slippage bisa membuat rugi melewati angka guard. Bukan jaminan lolos challenge atau profit; hasil masa lalu tidak menjamin hasil ke depan. Uji di demo dulu.', '/member/unduh/DK_HedgeRecovery_PROP.mq5', 'Unduh EA PROP (MT5)', pos + 1]);
+    db.setSetting('tool_dk_hrp', '1');
+    console.log('[seed] tool DK Hedge Recovery PROP');
+  }
 }
 
 module.exports = { seed };
