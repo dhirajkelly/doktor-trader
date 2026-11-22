@@ -1,0 +1,114 @@
+//@version=6
+// Doktor Trader | dhirajkelly.id - Indikator edukasi, bukan sinyal beli/jual. Trading derivatif berisiko tinggi.
+indicator("EMA 9 + VWAP + Fibo | Doktor Trader", shorttitle="EMA9+VWAP+Fibo", overlay=true, max_lines_count=50, max_labels_count=50)
+
+// ===== Input: EMA & VWAP =====
+grpEV     = "EMA & VWAP"
+emaLen    = input.int(9, "EMA Length", minval=1, group=grpEV)
+emaSrc    = input.source(close, "EMA Source", group=grpEV)
+anchorTf  = input.timeframe("D", "VWAP Anchor (D = Session, W = Week, M = Month)", group=grpEV)
+showBands = input.bool(true, "Tampilkan VWAP Band", group=grpEV)
+bandMult  = input.float(1.0, "Band Multiplier (StdDev)", minval=0.5, step=0.5, group=grpEV)
+useFilter = input.bool(true, "Filter: close harus searah cross", group=grpEV)
+showBg    = input.bool(false, "Warnai background (EMA di atas/bawah VWAP)", group=grpEV)
+
+// ===== Input: Fibonacci =====
+grpF      = "Fibonacci Retracement (auto swing)"
+showFib   = input.bool(true, "Tampilkan Fibonacci", group=grpF)
+fibLook   = input.int(100, "Lookback swing (jumlah bar)", minval=10, maxval=2000, group=grpF)
+fibA      = input.float(0.69, "Level 1", step=0.01, group=grpF)
+fibB      = input.float(0.79, "Level 2", step=0.01, group=grpF)
+fibC      = input.float(0.89, "Level 3", step=0.01, group=grpF)
+show01    = input.bool(true, "Tampilkan level 0 & 1 (swing high/low)", group=grpF)
+fillZone  = input.bool(true, "Arsir zona Level 1 - Level 3", group=grpF)
+extRight  = input.bool(true, "Perpanjang garis ke kanan", group=grpF)
+fibCol    = input.color(color.new(#A855F7, 0), "Warna level", group=grpF)
+
+// ===== Kalkulasi EMA & VWAP =====
+ema9 = ta.ema(emaSrc, emaLen)
+newPeriod = timeframe.change(anchorTf)
+[vwapVal, upBand, loBand] = ta.vwap(hlc3, newPeriod, bandMult)
+
+// ===== Kalkulasi Fibonacci =====
+// Swing = high & low tertinggi/terendah dalam lookback.
+// Jika high terjadi SETELAH low -> swing naik, retracement diukur turun dari high.
+// Jika low terjadi SETELAH high -> swing turun, retracement diukur naik dari low.
+hiVal   = ta.highest(high, fibLook)
+loVal   = ta.lowest(low, fibLook)
+hiOff   = ta.highestbars(high, fibLook)   // offset negatif (0 = bar sekarang)
+loOff   = ta.lowestbars(low, fibLook)
+upSwing = hiOff > loOff
+rng     = hiVal - loVal
+
+fibPrice(float r) =>
+    upSwing ? hiVal - rng * r : loVal + rng * r
+
+fA = fibPrice(fibA)
+fB = fibPrice(fibB)
+fC = fibPrice(fibC)
+zoneTop = math.max(fA, fC)
+zoneBot = math.min(fA, fC)
+
+// ===== Sinyal =====
+rawBull = ta.crossover(ema9, vwapVal)
+rawBear = ta.crossunder(ema9, vwapVal)
+bullCross = useFilter ? rawBull and close > vwapVal : rawBull
+bearCross = useFilter ? rawBear and close < vwapVal : rawBear
+
+inZone    = close <= zoneTop and close >= zoneBot
+enterZone = showFib and inZone and not inZone[1]
+
+// ===== Plot EMA & VWAP =====
+plot(ema9, "EMA 9", color=color.new(#F5B700, 0), linewidth=2)
+plot(vwapVal, "VWAP", color=color.new(#2EB5C4, 0), linewidth=2)
+pU = plot(showBands ? upBand : na, "VWAP Upper", color=color.new(#2EB5C4, 60))
+pL = plot(showBands ? loBand : na, "VWAP Lower", color=color.new(#2EB5C4, 60))
+fill(pU, pL, color=color.new(#2EB5C4, 92), title="VWAP Band Fill")
+
+bgcolor(showBg ? (ema9 > vwapVal ? color.new(color.green, 92) : color.new(color.red, 92)) : na)
+
+plotshape(bullCross, "Bull Cross", shape.triangleup, location.belowbar, color.new(#16A34A, 0), size=size.small, text="BUY", textcolor=color.new(#16A34A, 0))
+plotshape(bearCross, "Bear Cross", shape.triangledown, location.abovebar, color.new(#DC2626, 0), size=size.small, text="SELL", textcolor=color.new(#DC2626, 0))
+
+// ===== Gambar Fibonacci (digambar ulang di bar terakhir) =====
+var array<line>  fibLines  = array.new<line>()
+var array<label> fibLabels = array.new<label>()
+var linefill zoneFill = na
+
+drawLevel(float r, color col, string lStyle, int w, int x1) =>
+    p = fibPrice(r)
+    l = line.new(x1, p, bar_index, p, color=col, style=lStyle, width=w, extend=extRight ? extend.right : extend.none)
+    lb = label.new(bar_index + 2, p, str.tostring(r, "#.###") + "  (" + str.tostring(p, format.mintick) + ")", style=label.style_label_left, color=color.new(color.black, 100), textcolor=col, size=size.small)
+    fibLines.push(l)
+    fibLabels.push(lb)
+    l
+
+if barstate.islast
+    for l in fibLines
+        line.delete(l)
+    for lb in fibLabels
+        label.delete(lb)
+    fibLines.clear()
+    fibLabels.clear()
+    linefill.delete(zoneFill)
+
+    if showFib and rng > 0
+        x1 = bar_index + math.min(hiOff, loOff)
+        if show01
+            drawLevel(0.0, color.new(color.gray, 0), line.style_solid, 1, x1)
+            drawLevel(1.0, color.new(color.gray, 0), line.style_solid, 1, x1)
+        lA = drawLevel(fibA, fibCol, line.style_dashed, 1, x1)
+        drawLevel(fibB, fibCol, line.style_solid, 2, x1)
+        lC = drawLevel(fibC, fibCol, line.style_dashed, 1, x1)
+        if fillZone
+            zoneFill := linefill.new(lA, lC, color.new(fibCol, 88))
+
+// ===== Peringatan kalau feed tidak punya volume =====
+var table warn = table.new(position.top_right, 1, 1)
+if barstate.islast and (na(volume) or volume == 0)
+    table.cell(warn, 0, 0, "Feed ini tanpa volume - VWAP tidak valid.\nPakai OANDA/FOREXCOM:XAUUSD atau GC1!", text_color=color.white, bgcolor=color.new(#DC2626, 20), text_size=size.small)
+
+// ===== Alert =====
+alertcondition(bullCross, "EMA9 cross UP VWAP", "EMA9 cross UP VWAP | {{ticker}} {{interval}} @ {{close}}")
+alertcondition(bearCross, "EMA9 cross DOWN VWAP", "EMA9 cross DOWN VWAP | {{ticker}} {{interval}} @ {{close}}")
+alertcondition(enterZone, "Harga masuk zona Fibo", "Harga masuk zona Fibo 0.69-0.89 | {{ticker}} {{interval}} @ {{close}}")

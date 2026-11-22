@@ -495,6 +495,17 @@ function seed() {
     db.setSetting('promise_v3', '1');
     console.log('[seed] promise v3: analisa, materi copy trade, kartu tools');
   }
+  // Indikator TradingView EMA 9 + VWAP + Fibonacci (Nov 2026)
+  if (db.setting('tool_ema9_vwap_fibo') !== '1') {
+    if (!db.get("SELECT id FROM tools WHERE link_url = '/member/tools/ema9-vwap-fibo'")) {
+      const pos = (db.get("SELECT MAX(position) AS m FROM tools WHERE kind = 'signal'") || {}).m || 0;
+      db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', ['signal', 'EMA 9 + VWAP + Fibonacci (TradingView)',
+        'Indikator TradingView gratis: **EMA 9**, **VWAP** + band, dan **Fibonacci retracement otomatis 0.69 / 0.79 / 0.89** dari swing terakhir. Ada penanda saat EMA 9 memotong VWAP dan alert saat harga masuk zona Fibonacci.\n\nLengkap dengan panduan pasang, cara membaca, dan tombol copy kode.',
+        'Penanda teknikal untuk belajar, bukan rekomendasi transaksi. Sinyal cross sering palsu saat market sideways.', '/member/tools/ema9-vwap-fibo', 'Lihat panduan & kode', pos + 1]);
+    }
+    db.setSetting('tool_ema9_vwap_fibo', '1');
+    console.log('[seed] tool ema9 vwap fibo');
+  }
 }
 
 module.exports = { seed };

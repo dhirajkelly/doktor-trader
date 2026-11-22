@@ -197,12 +197,42 @@ router.post('/member/tanya', async (req, res, next) => {
 
 
 const DOWNLOADS = path.join(__dirname, '..', '..', 'downloads');
-const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4', 'PIPTRACKER_GoMart_V1R_SAFE_10k_XAUUSD.set', 'DoktorTrader_AI_Strategy_Lab.zip'];
+const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4', 'PIPTRACKER_GoMart_V1R_SAFE_10k_XAUUSD.set', 'DoktorTrader_AI_Strategy_Lab.zip', 'DoktorTrader_EMA9_VWAP_Fibo.pine'];
 router.get('/member/unduh/:file', (req, res, next) => {
   const f = req.params.file;
   if (!FILES.includes(f)) return next();
   db.log(req.user.id, 'download', f);
   res.download(path.join(DOWNLOADS, f), f);
+});
+
+// Indikator TradingView EMA 9 + VWAP + Fibonacci: halaman panduan + download + tombol copy kode.
+const fs = require('fs');
+const PINE_FILE = 'DoktorTrader_EMA9_VWAP_Fibo.pine';
+const PINE_GUIDE = path.join(__dirname, '..', '..', 'content', 'tools', 'ema9-vwap-fibo.md');
+router.get('/member/tools/ema9-vwap-fibo', (req, res, next) => {
+  let code; let guide;
+  try {
+    code = fs.readFileSync(path.join(DOWNLOADS, PINE_FILE), 'utf8');
+    guide = fs.readFileSync(PINE_GUIDE, 'utf8').replace(/^# .*\n/, '');
+  } catch (e) { return next(e); }
+  db.log(req.user.id, 'view_tool', 'ema9-vwap-fibo');
+  page(req, res, {
+    title: 'EMA 9 + VWAP + Fibonacci (TradingView)', active: 'tools',
+    body: `<a href="/member/tools" class="dim">← EA · AI Signals · Copy Trade</a>
+<h1 style="margin-top:8px">EMA 9 + VWAP + Fibonacci</h1>
+<p class="muted">Indikator TradingView (Pine Script v6): EMA 9, VWAP + band, dan Fibonacci retracement otomatis 0.69 / 0.79 / 0.89. Gratis untuk member, cukup akun TradingView Basic.</p>
+<div class="row" style="margin:16px 0"><a class="btn" href="/member/unduh/${PINE_FILE}">Unduh .pine</a><button class="btn ghost" type="button" id="pine-copy">Copy kode</button></div>
+<div class="prose">${md(guide)}</div>
+<h2 style="margin-top:28px">Kode indikator</h2>
+<div class="row" style="margin-bottom:10px"><button class="btn sm" type="button" id="pine-copy2">Copy kode</button><span class="dim" id="pine-msg" aria-live="polite"></span></div>
+<pre style="background:var(--bg2);border-radius:12px;padding:14px;overflow:auto;max-height:420px;font-size:13px;line-height:1.5"><code id="pine-code">${esc(code)}</code></pre>
+<script>(function(){var t=document.getElementById('pine-code').textContent,m=document.getElementById('pine-msg');
+function ok(){m.textContent='Kode tersalin. Paste di Pine Editor TradingView.';setTimeout(function(){m.textContent=''},4000);}
+function fb(){var a=document.createElement('textarea');a.value=t;a.setAttribute('readonly','');a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);try{document.execCommand('copy');ok();}catch(e){m.textContent='Gagal menyalin, silakan unduh file .pine.';}document.body.removeChild(a);}
+function copy(){if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(ok,fb);}else fb();
+document.getElementById('pine-code').scrollIntoView({behavior:'smooth',block:'center'});}
+document.getElementById('pine-copy').addEventListener('click',copy);document.getElementById('pine-copy2').addEventListener('click',copy);})();</script>`,
+  });
 });
 
 const LOT_CALC = `<h2 style="margin-top:28px">Kalkulator lot</h2>
