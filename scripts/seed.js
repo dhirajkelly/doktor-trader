@@ -500,7 +500,7 @@ function seed() {
     if (!db.get("SELECT id FROM tools WHERE link_url = '/member/tools/ema9-vwap-fibo'")) {
       const pos = (db.get("SELECT MAX(position) AS m FROM tools WHERE kind = 'signal'") || {}).m || 0;
       db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', ['signal', 'EMA 9 + VWAP + Fibonacci (TradingView)',
-        'Indikator TradingView gratis: **EMA 9**, **VWAP** + band, dan **Fibonacci retracement otomatis 0.69 / 0.79 / 0.89** dari swing terakhir. Ada penanda saat EMA 9 memotong VWAP dan alert saat harga masuk zona Fibonacci.\n\nLengkap dengan panduan pasang, cara membaca, dan tombol copy kode.',
+        'Indikator TradingView gratis: **EMA 9**, **VWAP** + band, dan **Fibonacci retracement otomatis dengan level standar** (0.236, 0.382, 0.5, 0.618, 0.786) dari swing terakhir. Ada penanda saat EMA 9 memotong VWAP dan alert saat harga masuk zona 0.618–0.786.\n\nLengkap dengan panduan pasang, cara membaca, dan tombol copy kode.',
         'Penanda teknikal untuk belajar, bukan rekomendasi transaksi. Sinyal cross sering palsu saat market sideways.', '/member/tools/ema9-vwap-fibo', 'Lihat panduan & kode', pos + 1]);
     }
     db.setSetting('tool_ema9_vwap_fibo', '1');
@@ -525,6 +525,36 @@ function seed() {
     });
     db.setSetting('academy_doktor_rules', '1');
     console.log(`[seed] academy doktor rules (+${added} materi)`);
+  }
+  // Doktor Rules v2: RR minimal 1:2 (sebelumnya 1:1). Hanya materi yang belum diedit admin (isi masih sama dengan v1).
+  if (db.setting('doktor_rules_rr2') !== '1') {
+    const crypto = require('crypto');
+    const { COURSE, LESSONS } = require('./doktor-rules');
+    const V1 = {
+      'apa-itu-doktor-rules': '0ab4310dbf165b3e',
+      'aturan-2-entry-m5-cross-ema-9-dan-vwap': '0c2555f5e0639649',
+      'aturan-3-tp-dan-sl-dengan-fibonacci-retracement': '5cdffc57a22927cf',
+      'aturan-4-lot-dari-jarak-sl-risiko-0-5': '4d05ad19243ec12e',
+      'checklist-doktor-rules-dan-contoh-lengkap': '432c323b3fc61e48',
+    };
+    const course = db.get('SELECT id FROM courses WHERE slug = ?', [slugify(COURSE.title)]);
+    let n = 0;
+    if (course) {
+      db.run("UPDATE courses SET summary = ? WHERE id = ? AND summary NOT LIKE '%1:2%'", [COURSE.summary, course.id]);
+      LESSONS.forEach(([title, , body]) => {
+        const lslug = slugify(title);
+        if (!V1[lslug]) return;
+        const row = db.get('SELECT id, body_md FROM lessons WHERE course_id = ? AND slug = ?', [course.id, lslug]);
+        if (!row || crypto.createHash('sha256').update(row.body_md || '').digest('hex').slice(0, 16) !== V1[lslug]) return;
+        db.run('UPDATE lessons SET body_md = ? WHERE id = ?', [body, row.id]);
+        n++;
+      });
+    }
+    // Indikator EMA9+VWAP+Fibo: level Fibonacci kembali ke standar (bukan 0.69/0.79/0.89).
+    db.run(`UPDATE tools SET description = REPLACE(REPLACE(description, '**Fibonacci retracement otomatis 0.69 / 0.79 / 0.89**', '**Fibonacci retracement otomatis dengan level standar** (0.236, 0.382, 0.5, 0.618, 0.786)'), 'harga masuk zona Fibonacci', 'harga masuk zona 0.618–0.786')
+      WHERE link_url = '/member/tools/ema9-vwap-fibo'`);
+    db.setSetting('doktor_rules_rr2', '1');
+    console.log(`[seed] doktor rules RR 1:2 (${n} materi diperbarui)`);
   }
 }
 

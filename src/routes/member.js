@@ -220,7 +220,7 @@ router.get('/member/tools/ema9-vwap-fibo', (req, res, next) => {
     title: 'EMA 9 + VWAP + Fibonacci (TradingView)', active: 'tools',
     body: `<a href="/member/tools" class="dim">← EA · AI Signals · Copy Trade</a>
 <h1 style="margin-top:8px">EMA 9 + VWAP + Fibonacci</h1>
-<p class="muted">Indikator TradingView (Pine Script v6): EMA 9, VWAP + band, dan Fibonacci retracement otomatis 0.69 / 0.79 / 0.89. Gratis untuk member, cukup akun TradingView Basic.</p>
+<p class="muted">Indikator TradingView (Pine Script v6): EMA 9, VWAP + band, dan Fibonacci retracement otomatis dengan level standar (0.236, 0.382, 0.5, 0.618, 0.786). Gratis untuk member, cukup akun TradingView Basic.</p>
 <div class="row" style="margin:16px 0"><a class="btn" href="/member/unduh/${PINE_FILE}">Unduh .pine</a><button class="btn ghost" type="button" id="pine-copy">Copy kode</button></div>
 <div class="prose">${md(guide)}</div>
 <h2 style="margin-top:28px">Kode indikator</h2>

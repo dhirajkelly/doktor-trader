@@ -13,7 +13,7 @@ Indikator yang menampilkan tiga alat di chart:
 - **EMA 9 (kuning)**: rata-rata harga 9 candle terakhir, bereaksi cepat terhadap pergerakan harga.
 - **VWAP (teal)**: harga rata-rata tertimbang volume sejak awal sesi. Sering dipakai sebagai "harga wajar" hari itu.
 
-- **Fibonacci retracement 0.69 / 0.79 / 0.89 (ungu)**: digambar otomatis dari swing high dan swing low terakhir. Area antara 0.69 dan 0.89 diarsir sebagai zona retracement dalam.
+- **Fibonacci retracement standar 0.236 / 0.382 / 0.5 / 0.618 / 0.786 (ungu)**: digambar otomatis dari swing high dan swing low terakhir. Area antara 0.618 dan 0.786 diarsir sebagai zona koreksi.
 
 Indikator ini memberi label **BUY** saat EMA 9 memotong VWAP ke atas dan **SELL** saat memotong ke bawah.
 
@@ -47,9 +47,9 @@ Indikator sekarang tersimpan di **Indicators → My Scripts**, jadi bisa dipasan
 | Warnai background | Off | Hijau = EMA di atas VWAP, merah = di bawah |
 | Tampilkan Fibonacci | On | Menyalakan/mematikan garis Fibonacci |
 | Lookback swing | 100 | Jumlah candle ke belakang untuk mencari swing high & low |
-| Level 1 / 2 / 3 | 0.69 / 0.79 / 0.89 | Level retracement, bisa diganti |
+| Level Fibonacci | 0.236 / 0.382 / 0.5 / 0.618 / 0.786 | Level retracement standar, bisa diganti |
 | Level 0 & 1 | On | Garis abu-abu di swing high dan swing low |
-| Arsir zona | On | Arsiran antara Level 1 dan Level 3 |
+| Arsir zona | On | Arsiran antara 0.618 dan 0.786 |
 
 ---
 
@@ -60,16 +60,16 @@ Indikator sekarang tersimpan di **Indicators → My Scripts**, jadi bisa dipasan
 - **Harga jauh di luar band** → harga sudah "melar" dari rata-rata. Hati-hati kejar harga.
 - **Garis saling silang berkali-kali** → market sideways. Cross di kondisi ini sering palsu.
 
-### Fibonacci 0.69 / 0.79 / 0.89
+### Fibonacci standar
 
 - Indikator mencari **high tertinggi dan low terendah** dalam jumlah candle *Lookback*.
 - Kalau high terjadi **setelah** low → swing naik. Level diukur turun dari high, jadi zona ungu adalah area koreksi dalam untuk dipantau saat cari **buy**.
 - Kalau low terjadi **setelah** high → swing turun. Level diukur naik dari low, jadi zona ungu adalah area pullback untuk dipantau saat cari **sell**.
 - Garis Fibonacci **ikut bergeser** setiap kali muncul high/low baru dalam lookback. Ini normal, bukan error.
 - Kalau swing yang terdeteksi bukan swing yang Anda maksud, ubah **Lookback** (kecilkan untuk swing pendek, besarkan untuk swing besar).
-- Retracement sampai 0.89 adalah koreksi yang sangat dalam. Kalau candle close **melewati level 1** (swing low/high), struktur swing itu batal.
+- Retracement di atas 0.786 adalah koreksi yang sangat dalam. Kalau candle close **melewati level 1** (swing low/high), struktur swing itu batal.
 
-**Contoh kombinasi (ilustrasi, bukan sinyal):** swing naik, harga koreksi masuk zona 0.69–0.89, lalu EMA 9 kembali cross ke atas VWAP. Itu tanda momentum mulai pulih di area koreksi. Stop loss bisa ditaruh di bawah level 1 (swing low), lalu lot dihitung dari jarak SL itu.
+**Contoh kombinasi (ilustrasi, bukan sinyal):** swing naik, harga koreksi masuk zona 0.618–0.786, lalu EMA 9 kembali cross ke atas VWAP. Itu tanda momentum mulai pulih di area koreksi. Stop loss bisa ditaruh di bawah level 1 (swing low), lalu lot dihitung dari jarak SL itu.
 
 **Timeframe yang cocok:** M5–M15 untuk intraday. VWAP harian kurang bermakna di H4 ke atas.
 
@@ -82,7 +82,7 @@ Indikator sekarang tersimpan di **Indicators → My Scripts**, jadi bisa dipasan
 3. **Trigger:** pilih **Once Per Bar Close** supaya sinyal tidak berubah-ubah di tengah candle.
 4. Atur notifikasi (app, email), lalu **Create**.
 
-Ada juga alert **"Harga masuk zona Fibo"**, yang berbunyi saat close candle masuk ke zona 0.69–0.89.
+Ada juga alert **"Harga masuk zona Fibo"**, yang berbunyi saat close candle masuk ke zona 0.618–0.786.
 
 ---
 

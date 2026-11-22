@@ -16,11 +16,13 @@ showBg    = input.bool(false, "Warnai background (EMA di atas/bawah VWAP)", grou
 grpF      = "Fibonacci Retracement (auto swing)"
 showFib   = input.bool(true, "Tampilkan Fibonacci", group=grpF)
 fibLook   = input.int(100, "Lookback swing (jumlah bar)", minval=10, maxval=2000, group=grpF)
-fibA      = input.float(0.69, "Level 1", step=0.01, group=grpF)
-fibB      = input.float(0.79, "Level 2", step=0.01, group=grpF)
-fibC      = input.float(0.89, "Level 3", step=0.01, group=grpF)
+fib1      = input.float(0.236, "Level 0.236", step=0.001, group=grpF)
+fib2      = input.float(0.382, "Level 0.382", step=0.001, group=grpF)
+fib3      = input.float(0.5,   "Level 0.5",   step=0.001, group=grpF)
+fibA      = input.float(0.618, "Level 0.618 (batas atas zona)", step=0.001, group=grpF)
+fibC      = input.float(0.786, "Level 0.786 (batas bawah zona)", step=0.001, group=grpF)
 show01    = input.bool(true, "Tampilkan level 0 & 1 (swing high/low)", group=grpF)
-fillZone  = input.bool(true, "Arsir zona Level 1 - Level 3", group=grpF)
+fillZone  = input.bool(true, "Arsir zona 0.618 - 0.786", group=grpF)
 extRight  = input.bool(true, "Perpanjang garis ke kanan", group=grpF)
 fibCol    = input.color(color.new(#A855F7, 0), "Warna level", group=grpF)
 
@@ -44,7 +46,6 @@ fibPrice(float r) =>
     upSwing ? hiVal - rng * r : loVal + rng * r
 
 fA = fibPrice(fibA)
-fB = fibPrice(fibB)
 fC = fibPrice(fibC)
 zoneTop = math.max(fA, fC)
 zoneBot = math.min(fA, fC)
@@ -97,9 +98,11 @@ if barstate.islast
         if show01
             drawLevel(0.0, color.new(color.gray, 0), line.style_solid, 1, x1)
             drawLevel(1.0, color.new(color.gray, 0), line.style_solid, 1, x1)
-        lA = drawLevel(fibA, fibCol, line.style_dashed, 1, x1)
-        drawLevel(fibB, fibCol, line.style_solid, 2, x1)
-        lC = drawLevel(fibC, fibCol, line.style_dashed, 1, x1)
+        drawLevel(fib1, fibCol, line.style_dotted, 1, x1)
+        drawLevel(fib2, fibCol, line.style_dashed, 1, x1)
+        drawLevel(fib3, fibCol, line.style_dashed, 1, x1)
+        lA = drawLevel(fibA, fibCol, line.style_solid, 2, x1)
+        lC = drawLevel(fibC, fibCol, line.style_solid, 2, x1)
         if fillZone
             zoneFill := linefill.new(lA, lC, color.new(fibCol, 88))
 
@@ -111,4 +114,4 @@ if barstate.islast and (na(volume) or volume == 0)
 // ===== Alert =====
 alertcondition(bullCross, "EMA9 cross UP VWAP", "EMA9 cross UP VWAP | {{ticker}} {{interval}} @ {{close}}")
 alertcondition(bearCross, "EMA9 cross DOWN VWAP", "EMA9 cross DOWN VWAP | {{ticker}} {{interval}} @ {{close}}")
-alertcondition(enterZone, "Harga masuk zona Fibo", "Harga masuk zona Fibo 0.69-0.89 | {{ticker}} {{interval}} @ {{close}}")
+alertcondition(enterZone, "Harga masuk zona Fibo", "Harga masuk zona Fibo 0.618-0.786 | {{ticker}} {{interval}} @ {{close}}")
