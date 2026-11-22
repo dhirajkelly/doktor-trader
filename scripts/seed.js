@@ -626,6 +626,37 @@ function seed() {
     db.setSetting('doktor_rules_oos_fix', '1');
     console.log(`[seed] EA Doktor Rules disembunyikan, revisi catatan backtest (${n} materi)`);
   }
+  // Doktor Rules v4 (22 Nov 2026): Fibonacci dibuang. SL di swing M5 terakhir, TP 2R.
+  // Aturan 3 ganti judul dan slug. Hanya materi yang isinya masih sama dengan versi sebelumnya (belum diedit admin).
+  if (db.setting('doktor_rules_no_fibo') !== '1') {
+    const crypto = require('crypto');
+    const { COURSE, LESSONS } = require('./doktor-rules');
+    const OLD_SUMMARY = 'Metode trading resmi Dr. Dhiraj Kelly: bias H1 dengan EMA 200, entry M5 dari cross EMA 9 dan VWAP, SL dengan Fibonacci retracement dan TP di extension 2.618, risiko 0,5% per trade, RR minimal 1:2.';
+    const V4 = { // slug baru -> [slug lama, hash isi lama]
+      'apa-itu-doktor-rules': ['apa-itu-doktor-rules', '1e12c5c3e5c2c849'],
+      'aturan-2-entry-m5-cross-ema-9-dan-vwap': ['aturan-2-entry-m5-cross-ema-9-dan-vwap', '13c5e24d8dbcdeed'],
+      'aturan-3-sl-di-swing-terakhir-tp-2r': ['aturan-3-tp-dan-sl-dengan-fibonacci-retracement', '4b6da891179dd877'],
+      'aturan-4-lot-dari-jarak-sl-risiko-0-5': ['aturan-4-lot-dari-jarak-sl-risiko-0-5', 'fc90796536463845'],
+      'checklist-doktor-rules-dan-contoh-lengkap': ['checklist-doktor-rules-dan-contoh-lengkap', 'e60f57bd676b66bd'],
+    };
+    const course = db.get('SELECT id FROM courses WHERE slug = ?', [slugify(COURSE.title)]);
+    let n = 0;
+    if (course) {
+      db.run('UPDATE courses SET summary = ? WHERE id = ? AND summary = ?', [COURSE.summary, course.id, OLD_SUMMARY]);
+      LESSONS.forEach(([title, dur, body]) => {
+        const lslug = slugify(title);
+        if (!V4[lslug]) return;
+        const [oldSlug, oldHash] = V4[lslug];
+        const row = db.get('SELECT id, body_md FROM lessons WHERE course_id = ? AND slug = ?', [course.id, oldSlug]);
+        if (!row || crypto.createHash('sha256').update(row.body_md || '').digest('hex').slice(0, 16) !== oldHash) return;
+        if (lslug !== oldSlug && db.get('SELECT id FROM lessons WHERE course_id = ? AND slug = ?', [course.id, lslug])) return;
+        db.run('UPDATE lessons SET title = ?, slug = ?, body_md = ?, duration_min = ? WHERE id = ?', [title, lslug, body, dur, row.id]);
+        n++;
+      });
+    }
+    db.setSetting('doktor_rules_no_fibo', '1');
+    console.log(`[seed] doktor rules tanpa Fibonacci (${n} materi diperbarui)`);
+  }
 }
 
 module.exports = { seed };
