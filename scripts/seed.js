@@ -506,6 +506,26 @@ function seed() {
     db.setSetting('tool_ema9_vwap_fibo', '1');
     console.log('[seed] tool ema9 vwap fibo');
   }
+  // Kelas "Doktor Rules" (Nov 2026): metode trading resmi. Sekali pasang, tidak menimpa editan admin.
+  if (db.setting('academy_doktor_rules') !== '1') {
+    const { COURSE, LESSONS } = require('./doktor-rules');
+    const cslug = slugify(COURSE.title);
+    let course = db.get('SELECT id FROM courses WHERE slug = ?', [cslug]);
+    if (!course) {
+      const pos = (db.get('SELECT MAX(position) m FROM courses') || {}).m || 0;
+      course = { id: db.run('INSERT INTO courses(slug, title, level, summary, position, published) VALUES(?,?,?,?,?,1)', [cslug, COURSE.title, COURSE.level, COURSE.summary, pos + 1]).lastInsertRowid };
+    }
+    let added = 0;
+    LESSONS.forEach(([title, dur, body]) => {
+      const lslug = slugify(title);
+      if (db.get('SELECT id FROM lessons WHERE course_id = ? AND slug = ?', [course.id, lslug])) return;
+      const pos = (db.get('SELECT MAX(position) m FROM lessons WHERE course_id = ?', [course.id]) || {}).m || 0;
+      db.run('INSERT INTO lessons(course_id, slug, title, video_url, body_md, duration_min, position, published) VALUES(?,?,?,?,?,?,?,1)', [course.id, lslug, title, '', body, dur, pos + 1]);
+      added++;
+    });
+    db.setSetting('academy_doktor_rules', '1');
+    console.log(`[seed] academy doktor rules (+${added} materi)`);
+  }
 }
 
 module.exports = { seed };
