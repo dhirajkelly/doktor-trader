@@ -2,6 +2,7 @@ RiskPercent=0.5
 MaxTradesPerDay=1
 RR=2.0
 SLBuffer=1.0
+BreakEvenR=1.0
 FractalBars=3
 MinSLSpreadMult=3.0
 MaxSpreadPrice=1.0

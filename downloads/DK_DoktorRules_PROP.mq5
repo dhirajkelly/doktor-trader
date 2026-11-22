@@ -10,6 +10,7 @@
 //     (di candle berikutnya).
 //  3. SL di swing M5 terakhir (fractal 3 candle kiri & kanan) + buffer (+ spread untuk sell).
 //     TP = RR x jarak SL (default 2R). Lewati sinyal jika jarak SL < 3x spread.
+//     v1.10: SL dipindah ke harga entry (break-even) saat profit mencapai +1R.
 //  4. Lot dari jarak SL dengan risiko RiskPercent (default 0,5%).
 //  Prop guard (dihitung dari saldo awal akun prop):
 //  - Daily guard: rugi hari ini (termasuk floating) >= DailyGuardPct -> tutup posisi, stop sampai besok.
@@ -21,7 +22,7 @@
 //+------------------------------------------------------------------+
 #property copyright "Dhiraj Kelly - Doktor Trader"
 #property link      "https://dhirajkelly.id"
-#property version   "1.00"
+#property version   "1.10"
 #property description "Doktor Rules (H1 EMA200 + M5 EMA9/VWAP, SL swing, TP 2R) dengan guard aturan prop firm."
 
 #include <Trade\Trade.mqh>
@@ -31,6 +32,7 @@ input double RiskPercent        = 0.5;   // Risiko per trade (% balance). Akun f
 input int    MaxTradesPerDay    = 1;     // Maksimal trade per hari
 input double RR                 = 2.0;   // TP = RR x jarak SL
 input double SLBuffer           = 1.0;   // Buffer SL di luar swing (harga, XAUUSD 1.0 = $1)
+input double BreakEvenR         = 1.0;   // Pindah SL ke entry saat profit >= N x jarak SL (0 = off)
 input int    FractalBars        = 3;     // Swing: candle kiri & kanan
 input double MinSLSpreadMult    = 3.0;   // Lewati jika jarak SL < N x spread
 input double MaxSpreadPrice     = 1.0;   // Lewati jika spread > nilai ini (harga)
@@ -183,6 +185,7 @@ void OnTick()
    { if(HasPosition()) CloseAll("PROFIT TARGET"); if(!halted) Halt(StringFormat("target %.1f%% tercapai", ProfitTargetPct)); }
    if(eq - dayRef <= -DailyGuardPct / 100.0 * initBal)
    { if(HasPosition()) CloseAll("DAILY GUARD"); if(!dayBlocked) { dayBlocked = true; SaveDay(); } }
+   ManageBreakEven();
    ShowPanel();
    if(halted || dayBlocked) return;
 
@@ -223,10 +226,37 @@ void OnTick()
    else PrintFormat("Order gagal: %d", trade.ResultRetcode());
 }
 
+void ManageBreakEven()
+{
+   if(BreakEvenR <= 0) return;
+   for(int i = PositionsTotal() - 1; i >= 0; i--)
+   {
+      ulong t = PositionGetTicket(i);
+      if(t == 0) continue;
+      if(PositionGetString(POSITION_SYMBOL) != _Symbol || PositionGetInteger(POSITION_MAGIC) != MagicNumber) continue;
+      double op = PositionGetDouble(POSITION_PRICE_OPEN), sl = PositionGetDouble(POSITION_SL), tp = PositionGetDouble(POSITION_TP);
+      if(tp <= 0 || RR <= 0) continue;
+      long type = PositionGetInteger(POSITION_TYPE);
+      double dist = MathAbs(tp - op) / RR;              // jarak SL awal
+      if(type == POSITION_TYPE_BUY)
+      {
+         if(sl >= op) continue;                          // sudah break-even
+         if(SymbolInfoDouble(_Symbol, SYMBOL_BID) - op >= BreakEvenR * dist)
+            if(trade.PositionModify(t, op, tp)) Print("SL dipindah ke break-even.");
+      }
+      else
+      {
+         if(sl > 0 && sl <= op) continue;
+         if(op - SymbolInfoDouble(_Symbol, SYMBOL_ASK) >= BreakEvenR * dist)
+            if(trade.PositionModify(t, op, tp)) Print("SL dipindah ke break-even.");
+      }
+   }
+}
+
 void ShowPanel()
 {
    double eq = AccountInfoDouble(ACCOUNT_EQUITY);
-   string s = "DK Doktor Rules PROP v1.00 | Doktor Trader\n";
+   string s = "DK Doktor Rules PROP v1.10 | Doktor Trader\n";
    if(halted) s += "STATUS: BERHENTI (max loss guard / target)\n";
    s += StringFormat("Saldo awal %.2f | Equity %.2f (%.2f%%)\n", initBal, eq, (eq / initBal - 1) * 100);
    s += StringFormat("Hari ini %.2f%% | guard -%.1f%% %s | trade %d/%d\n", (eq - dayRef) / initBal * 100, DailyGuardPct, dayBlocked ? "(TERKUNCI)" : "", tradesToday, MaxTradesPerDay);

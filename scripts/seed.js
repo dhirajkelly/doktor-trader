@@ -724,6 +724,36 @@ function seed() {
     db.setSetting('tool_dk_drp', '1');
     console.log('[seed] tool DK Doktor Rules PROP');
   }
+  // Doktor Rules v5 (23 Nov 2026): buffer 1,00, maksimal 1 trade/hari, break-even di +1R.
+  // Hanya materi yang isinya masih sama dengan v4 (belum diedit admin) yang diperbarui.
+  if (db.setting('doktor_rules_v5') !== '1') {
+    const crypto = require('crypto');
+    const { COURSE, LESSONS } = require('./doktor-rules');
+    const OLD_SUMMARY = 'Metode trading resmi Dr. Dhiraj Kelly: bias H1 dengan EMA 200, entry M5 dari cross EMA 9 dan VWAP, SL di swing M5 terakhir dan TP dua kali jarak SL (RR 1:2), risiko 0,5% per trade.';
+    const V4HASH = {"apa-itu-doktor-rules": "2568983417298a04", "aturan-1-bias-tren-h1-dengan-ema-200": "76d30cd6ce35cc96", "aturan-2-entry-m5-cross-ema-9-dan-vwap": "4e59a3d1225fd912", "aturan-3-sl-di-swing-terakhir-tp-2r": "25f31af29bc1bc3f", "aturan-4-lot-dari-jarak-sl-risiko-0-5": "6ab3985023894b6d", "batas-harian-dan-kapan-tidak-trading": "b0a3367d84acf409", "checklist-doktor-rules-dan-contoh-lengkap": "c1331a807a85789f"};
+    const course = db.get('SELECT id FROM courses WHERE slug = ?', [slugify(COURSE.title)]);
+    let n = 0;
+    if (course) {
+      db.run('UPDATE courses SET summary = ? WHERE id = ? AND summary = ?', [COURSE.summary, course.id, OLD_SUMMARY]);
+      LESSONS.forEach(([title, dur, body]) => {
+        const lslug = slugify(title);
+        if (!V4HASH[lslug]) return;
+        const row = db.get('SELECT id, body_md FROM lessons WHERE course_id = ? AND slug = ?', [course.id, lslug]);
+        if (!row || crypto.createHash('sha256').update(row.body_md || '').digest('hex').slice(0, 16) !== V4HASH[lslug]) return;
+        db.run('UPDATE lessons SET body_md = ?, duration_min = ? WHERE id = ?', [body, dur, row.id]);
+        n++;
+      });
+    }
+    // kartu EA Doktor Rules PROP -> v1.10
+    const R = [
+      ['- **SL** di swing M5 terakhir (3 candle kiri dan kanan) + buffer $1, **TP 2R**.', '- **SL** di swing M5 terakhir (3 candle kiri dan kanan) + buffer $1, **TP 2R**, SL digeser ke entry (**break-even**) saat profit +1R.'],
+      ['drawdown terdalam ±9–11%, hari terburuk ±1%, kalah beruntun terpanjang 12 kali. Tahun 2024 hasilnya negatif', 'drawdown terdalam ±7–9%, hari terburuk ±1%, kalah beruntun terpanjang 7 kali. Sepanjang 2024 hasilnya hampir impas'],
+    ];
+    for (const [a, b] of R) db.run("UPDATE tools SET description = REPLACE(description, ?, ?) WHERE link_url = '/member/unduh/DK_DoktorRules_PROP.mq5'", [a, b]);
+    db.run("UPDATE tools SET title = 'DK Doktor Rules PROP v1.10: metode resmi + guard aturan prop firm' WHERE link_url = '/member/unduh/DK_DoktorRules_PROP.mq5' AND title = 'DK Doktor Rules PROP: metode resmi + guard aturan prop firm'");
+    db.setSetting('doktor_rules_v5', '1');
+    console.log(`[seed] doktor rules v5 (${n} materi diperbarui)`);
+  }
 }
 
 module.exports = { seed };

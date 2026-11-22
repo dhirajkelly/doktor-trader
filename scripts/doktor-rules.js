@@ -4,7 +4,7 @@
 const COURSE = {
   title: 'Doktor Rules',
   level: 'Menengah',
-  summary: 'Metode trading resmi Dr. Dhiraj Kelly: bias H1 dengan EMA 200, entry M5 dari cross EMA 9 dan VWAP, SL di swing M5 terakhir dan TP dua kali jarak SL (RR 1:2), risiko 0,5% per trade.',
+  summary: 'Metode trading resmi Dr. Dhiraj Kelly: bias H1 dengan EMA 200, entry M5 dari cross EMA 9 dan VWAP, SL di swing M5 terakhir dan TP dua kali jarak SL (RR 1:2), SL digeser ke entry saat profit +1R, risiko 0,5% per trade, maksimal 1 trade per hari.',
 };
 
 const DISCLAIMER = `\n\n---\n\n*Materi edukasi Doktor Trader. Bukan ajakan atau rekomendasi transaksi. Semua harga dalam contoh adalah ilustrasi. Trading emas, forex, dan derivatif berisiko tinggi dan dapat menghabiskan seluruh modal.*`;
@@ -18,12 +18,13 @@ const LESSONS = [
 |---|---|---|---|
 | 1 | Bias tren dengan **EMA 200** | H1 | Hari ini cari buy atau sell? |
 | 2 | Entry saat **EMA 9 memotong VWAP**, setelah candle close | M5 | Kapan masuk? |
-| 3 | SL di **swing terakhir**, TP **dua kali jarak SL** | M5 | Di mana keluar, untung atau rugi? |
+| 3 | SL di **swing terakhir**, TP **dua kali jarak SL**, **break-even di +1R** | M5 | Di mana keluar, untung atau rugi? |
 | 4 | Lot dari jarak SL, **risiko 0,5% per trade** | - | Berapa lot? |
 
-Ditambah dua batas yang tidak boleh ditawar:
+Ditambah tiga batas yang tidak boleh ditawar:
 - **RR selalu 1:2.** Target selalu dua kali jarak stop loss, jadi tidak ada target yang ditebak.
-- **Maksimal 1–2 trade per hari.**
+- **Break-even di +1R.** Saat profit sudah sama dengan jarak SL, SL dipindah ke harga entry.
+- **Maksimal 1 trade per hari.**
 
 ## Kenapa dibuat seperti ini
 
@@ -99,7 +100,7 @@ Di TradingView, pasang alert dengan pilihan **Once Per Bar Close** supaya notifi
 - **Market sideways:** EMA 9 dan VWAP saling silang berkali-kali dalam waktu singkat. Cross di kondisi ini sering palsu.
 - **Harga sudah terlalu jauh dari swing terakhir** saat candle close. Jarak SL jadi lebar, lot mengecil, dan sering lot minimum pun sudah melewati risiko 0,5% (dibahas di aturan 3 dan 4).
 - **Dekat rilis berita besar** (misalnya NFP, CPI, FOMC). Hindari 15–30 menit sebelum dan sesudah rilis.
-- **Kuota harian sudah habis** (1–2 trade).
+- **Kuota harian sudah habis** (1 trade).
 
 ## Catatan soal VWAP di emas
 
@@ -107,7 +108,7 @@ VWAP butuh data volume. Spot gold hanya punya *tick volume* dari broker atau fee
 
 **Tugas:** di akun demo atau lewat replay chart, cari 10 cross EMA 9/VWAP di M5. Tandai mana yang searah bias H1 dan mana yang terjadi saat sideways.${DISCLAIMER}`],
 
-  ['Aturan 3: SL di swing terakhir, TP 2R', 10, `Aturan ketiga menentukan **di mana keluar**, baik saat salah maupun saat benar. SL ditaruh di **swing M5 terakhir**, dan TP dihitung dari jarak SL itu: **dua kali jarak SL** (disebut 2R).
+  ['Aturan 3: SL di swing terakhir, TP 2R', 10, `Aturan ketiga menentukan **di mana keluar**, baik saat salah maupun saat benar. SL ditaruh di **swing M5 terakhir**, dan TP dihitung dari jarak SL itu: **dua kali jarak SL** (disebut 2R). Saat profit sudah mencapai **+1R**, SL dipindah ke harga entry (**break-even**).
 
 ## Menandai swing terakhir
 
@@ -127,7 +128,15 @@ Yang dipakai adalah **ujung sumbu** (low atau high candle), bukan body candle.
 
 Logikanya: kalau harga menembus swing terakhir, koreksi yang menjadi dasar entry sudah batal. Itu titik di mana ide trade terbukti salah, jadi SL ditaruh di sana. TP tidak ditebak dari struktur. TP selalu dua kali jarak SL, jadi satu trade yang kena TP menutup dua trade yang kena SL.
 
-Buffer dipakai supaya SL tidak kena hanya karena spread atau sumbu kecil. Untuk XAUUSD, contoh di materi ini memakai buffer 0,50. Sesuaikan dengan spread di akun Anda.
+Buffer dipakai supaya SL tidak kena hanya karena spread atau sumbu kecil. Untuk XAUUSD, Doktor Rules memakai buffer **1,00** ($1). Jika spread di akun Anda jauh lebih lebar dari biasanya, lewati setup.
+
+## Break-even di +1R
+
+Begitu harga bergerak searah posisi sejauh **satu kali jarak SL** (+1R), SL dipindah ke **harga entry**. Sejak saat itu posisi paling buruk ditutup impas, sementara TP tetap di 2R.
+
+- Ini satu-satunya pergeseran SL yang boleh. SL **tidak pernah** digeser menjauh.
+- Patokannya harga, bukan perasaan: +1R tercapai saat harga menyentuh entry ± jarak SL.
+- Di MT5, pakai EA **DK Doktor Rules PROP** di menu Tools atau pasang alarm harga di level +1R lalu geser SL manual.
 
 ## Kapan setup dilewati
 
@@ -139,17 +148,20 @@ Buffer dipakai supaya SL tidak kena hanya karena spread atau sumbu kecil. Untuk 
 
 Versi awal Doktor Rules memakai Fibonacci retracement untuk SL dan TP. Di backtest internal kami (XAUUSD M5 Jan 2023–Okt 2025, ditambah beberapa pair forex), versi Fibonacci maupun versi swing dengan TP tetap **belum menunjukkan hasil yang konsisten**: bagus di satu periode atau pasar, buruk di yang lain. Fibonacci dibuang supaya aturannya lebih sederhana dan lebih mudah dicek, **bukan** karena versi ini terbukti lebih menguntungkan.
 
+Penyempurnaan November 2026 (buffer 1,00, maksimal 1 trade per hari, break-even di +1R) diuji di XAUUSD M5 Des 2023–Okt 2026 dengan dua sumber data broker. Dibanding versi sebelumnya, ketiga perubahan ini secara konsisten **mengurangi drawdown dan kekalahan beruntun** di semua periode uji. Tetap ada periode yang hasilnya hampir impas (sepanjang 2024), dan sebagian besar hasil positif datang dari posisi buy saat emas sedang tren naik.
+
 Jadi perlakukan Doktor Rules sebagai **kerangka disiplin** (bias jelas, entry setelah candle close, SL di titik ide trade batal, risiko 0,5%, target terukur), bukan sistem yang terbukti menghasilkan. Latih dan catat di akun demo dulu sebelum memakai uang sungguhan.
 
 ## Contoh (ilustrasi)
 
 Bias H1 bullish. Di M5, swing low terakhir sebelum cross ada di **3.700,00**.
 - EMA 9 cross ke atas VWAP, candle close. Entry buy di **3.703,50**.
-- SL = 3.700,00 − 0,50 buffer = **3.699,50**. Jarak SL = 3.703,50 − 3.699,50 = **4,00**.
-- TP = 3.703,50 + (2 × 4,00) = **3.711,50**.
-- RR = 8,00 ÷ 4,00 = **1:2**.
+- SL = 3.700,00 − 1,00 buffer = **3.699,00**. Jarak SL = 3.703,50 − 3.699,00 = **4,50**.
+- TP = 3.703,50 + (2 × 4,50) = **3.712,50**.
+- RR = 9,00 ÷ 4,50 = **1:2**.
+- Break-even: saat harga menyentuh 3.703,50 + 4,50 = **3.708,00**, SL dipindah ke **3.703,50**.
 
-Kalau cross baru muncul saat harga di 3.708,00, jarak SL menjadi 8,50 dan TP di 3.725,00. Hitungan tetap sama, tapi lot akan lebih kecil (aturan 4).
+Kalau cross baru muncul saat harga di 3.708,00, jarak SL menjadi 9,00 dan TP di 3.726,00. Hitungan tetap sama, tapi lot akan lebih kecil (aturan 4).
 
 **Tugas:** ambil 10 setup dari latihan aturan 2. Tandai swing terakhirnya, hitung SL dan TP masing-masing, lalu coret yang jarak SL-nya kurang dari 3 kali spread.${DISCLAIMER}`],
 
@@ -166,10 +178,11 @@ Selalu **bulatkan ke bawah** ke langkah lot terdekat (0,01), supaya risiko tidak
 ## Contoh (lanjutan dari aturan 3)
 
 - Modal $10.000 → risiko 0,5% = **$50**.
-- Jarak SL = 3.703,50 − 3.699,50 = **4,00**.
-- Lot = 50 ÷ (4,00 × 100) = 0,125 → dibulatkan ke bawah menjadi **0,12 lot**.
-- Rugi jika SL kena = 4,00 × 100 × 0,12 = **$48,00**.
-- Untung jika TP kena = 8,00 × 100 × 0,12 = **$96,00**.
+- Jarak SL = 3.703,50 − 3.699,00 = **4,50**.
+- Lot = 50 ÷ (4,50 × 100) = 0,111 → dibulatkan ke bawah menjadi **0,11 lot**.
+- Rugi jika SL kena = 4,50 × 100 × 0,11 = **$49,50**.
+- Untung jika TP kena = 9,00 × 100 × 0,11 = **$99,00**.
+- Jika sudah break-even lalu harga berbalik, posisi ditutup di entry: hasilnya sekitar **$0** (dikurangi spread/komisi).
 
 | Modal | Risiko 0,5% | Jarak SL 4,00 | Jarak SL 8,00 |
 |---|---|---|---|
@@ -188,7 +201,7 @@ Kekalahan beruntun pasti terjadi, bahkan pada metode yang disiplin. Risiko kecil
 | 5 kali | sekitar 97,5% | sekitar 77,4% |
 | 10 kali | sekitar 95,1% | sekitar 59,9% |
 
-Dengan risiko 0,5% dan maksimal 2 trade per hari, kerugian terburuk dalam sehari sekitar **1% modal**. Angka ini juga masih jauh di bawah batas rugi harian yang umum dipakai akun prop firm.
+Dengan risiko 0,5% dan maksimal 1 trade per hari, kerugian terburuk dalam sehari sekitar **0,5% modal**. Angka ini juga masih jauh di bawah batas rugi harian yang umum dipakai akun prop firm.
 
 **Tugas:** hitung lot untuk 10 setup dari latihan aturan 3 dengan modal Anda sendiri. Cocokkan hasilnya dengan [kalkulator lot](/alat/kalkulator-lot).${DISCLAIMER}`],
 
@@ -196,10 +209,9 @@ Dengan risiko 0,5% dan maksimal 2 trade per hari, kerugian terburuk dalam sehari
 
 ## Batas harian
 
-- **Maksimal 1–2 trade per hari.** Setelah kuota habis, chart ditutup, apa pun yang terjadi.
-- Kalau trade pertama kena SL, trade kedua **hanya** boleh diambil jika semua aturan terpenuhi dari awal. Bukan untuk "balas dendam".
+- **Maksimal 1 trade per hari.** Setelah satu trade diambil, chart ditutup, apa pun hasilnya. Tidak ada trade kedua untuk "balas dendam".
 - Tidak ada menambah posisi (averaging) di trade yang sedang rugi.
-- SL tidak digeser menjauh setelah posisi berjalan.
+- SL tidak digeser menjauh setelah posisi berjalan. Satu-satunya pergeseran yang boleh: ke harga entry saat profit +1R (aturan 3).
 
 ## Hari atau jam tanpa trading
 
@@ -224,11 +236,12 @@ Hari tanpa trade karena tidak ada setup yang lolos adalah hari yang **berhasil**
 | 2 | EMA 9 memotong VWAP di M5 **searah** bias H1? | |
 | 3 | Candle M5 tempat cross terjadi **sudah close**? | |
 | 4 | Swing M5 terakhir sebelum cross sudah ditandai? | |
-| 5 | SL di luar swing + buffer, dan jarak SL minimal 3 kali spread? | |
+| 5 | SL di luar swing + buffer 1,00, dan jarak SL minimal 3 kali spread? | |
 | 6 | TP = entry ± **2 × jarak SL** (RR 1:2)? | |
 | 7 | Lot dihitung dari jarak SL dengan risiko **0,5%** dan dibulatkan ke bawah? | |
 | 8 | Tidak ada berita besar dalam 30 menit ke depan? | |
-| 9 | Kuota harian (1–2 trade) masih ada? | |
+| 9 | Belum ada trade hari ini (kuota 1 trade)? | |
+| 10 | Alarm atau EA sudah siap untuk menggeser SL ke entry saat +1R? | |
 
 ## Contoh lengkap (ilustrasi)
 
@@ -237,12 +250,13 @@ Modal $10.000.
 1. **H1:** candle terakhir close di 3.709, EMA 200 di 3.688. Bias **bullish**, hanya cari buy.
 2. **M5:** harga koreksi, swing low terakhir terbentuk di 3.700,00.
 3. **Cross:** EMA 9 memotong VWAP ke atas. Candle close di 3.703,70, di atas VWAP. Entry buy di candle berikutnya, **3.703,50**.
-4. **SL dan TP:** SL **3.699,50** (swing low 3.700,00 − buffer 0,50), jarak 4,00. Spread saat itu jauh di bawah 4,00 ÷ 3. TP = 3.703,50 + 2 × 4,00 = **3.711,50**.
-5. **RR:** 8,00 ÷ 4,00 = **1:2**.
-6. **Lot:** $50 ÷ (4,00 × 100) = 0,125 → **0,12 lot**. Risiko $48,00, potensi untung $96,00.
-7. **Berita:** tidak ada rilis besar dalam 30 menit. Kuota: ini trade pertama hari ini.
+4. **SL dan TP:** SL **3.699,00** (swing low 3.700,00 − buffer 1,00), jarak 4,50. Spread saat itu jauh di bawah 4,50 ÷ 3. TP = 3.703,50 + 2 × 4,50 = **3.712,50**.
+5. **RR:** 9,00 ÷ 4,50 = **1:2**.
+6. **Lot:** $50 ÷ (4,50 × 100) = 0,111 → **0,11 lot**. Risiko $49,50, potensi untung $99,00.
+7. **Berita:** tidak ada rilis besar dalam 30 menit. Kuota: belum ada trade hari ini.
+8. **Break-even:** alarm dipasang di **3.708,00** (+1R). Saat tersentuh, SL dipindah ke 3.703,50.
 
-Semua "ya". Order dipasang lengkap dengan SL dan TP, lalu dibiarkan. Hasilnya apa pun, trade dicatat di jurnal.
+Semua "ya". Order dipasang lengkap dengan SL dan TP. Setelah itu yang dilakukan hanya satu: menggeser SL ke entry saat +1R tercapai. Hasilnya apa pun, trade dicatat di jurnal.
 
 ## Jurnal
 
