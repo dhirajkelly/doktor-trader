@@ -657,6 +657,27 @@ function seed() {
     db.setSetting('doktor_rules_no_fibo', '1');
     console.log(`[seed] doktor rules tanpa Fibonacci (${n} materi diperbarui)`);
   }
+  // EA DK Hedge Recovery Lite v1.00 (hedge martingale ringan, cut loss otomatis)
+  if (db.setting('tool_dk_hrl') !== '1') {
+    const desc = [
+      'EA **hedge martingale versi ringan** untuk XAUUSD yang membuka posisi sendiri, dengan batas keras:',
+      '- **Entry pertama pakai Doktor Rules**: bias EMA 200 di H1, entry di M5 saat EMA 9 menyilang VWAP (setelah candle tutup)',
+      '- Jika harga melawan sejauh 1 zona (1× ATR H1), EA membuka posisi lawan (hedge) dengan kelipatan lot kecil (±1,75–2,8× lot awal, bukan dobel terus)',
+      '- **Maksimal 4 posisi per basket.** Jika masih kena, semua posisi ditutup otomatis (cut loss), jadi kerugian maksimum per basket sudah diketahui sejak awal',
+      '- Lot awal dihitung otomatis agar kerugian maksimum per basket ≈ **1% balance** (bisa diubah di input `RiskPercent`)',
+      '- Batas rugi harian 3%, stop darurat 3%, filter jam dan spread, semua posisi ditutup Jumat malam',
+      '',
+      '**Syarat:** akun **hedging**, modal sekitar $10.000 di akun standar atau pakai akun **cent**. Jika modal terlalu kecil untuk risiko 1% dengan lot minimum, EA tidak membuka posisi.',
+      '',
+      '**Hasil uji historis** (XAUUSD M5, Des 2023–Agu 2026, spread asli broker): drawdown terdalam ±7%, kerugian basket terbesar ±2% balance karena pembulatan lot. Periode ini didominasi tren naik emas; di pasar lain hasilnya bisa jauh berbeda.',
+      '',
+      '**Cara pasang (MT5):** File → Open Data Folder → MQL5 → Experts, tempel file .mq5, buka MetaEditor (F4) lalu Compile (F7). Klik kanan Navigator → Refresh, tarik **DK_HedgeRecovery_Lite** ke chart XAUUSD, aktifkan Algo Trading. Uji dulu di Strategy Tester ("Every tick based on real ticks") dan akun demo. [Unduh preset .set](/member/unduh/DK_HedgeRecovery_Lite.set) (taruh di MQL5 → Presets).',
+    ].join('\n');
+    const pos = (db.get("SELECT MAX(position) AS m FROM tools WHERE kind = 'ea'") || {}).m || 0;
+    db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', ['ea', 'DK Hedge Recovery Lite: hedge martingale ringan + cut loss', desc, 'Sedang–tinggi. Martingale tetap martingale: beberapa cut loss beruntun bisa terjadi, dan gap harga bisa membuat rugi melebihi rencana. Bukan jaminan profit; hasil masa lalu tidak menjamin hasil ke depan. Uji di demo/cent dulu.', '/member/unduh/DK_HedgeRecovery_Lite.mq5', 'Unduh EA (MT5)', pos + 1]);
+    db.setSetting('tool_dk_hrl', '1');
+    console.log('[seed] tool DK Hedge Recovery Lite');
+  }
 }
 
 module.exports = { seed };
