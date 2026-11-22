@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-21T20:08:01Z",
+ "generated": "2026-11-22T19:56:44Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -423,6 +423,49 @@
     {
      "q": "Apakah kejadian darurat limbah B3 harus dilaporkan?",
      "a": "Ya. Penanggulangan kedaruratan wajib dilaporkan secara tertulis dan berkala setiap hari kepada Menteri, gubernur, dan bupati/wali kota sampai penanggulangan selesai dilakukan."
+    }
+   ]
+  },
+  {
+   "id": "jasa-angkut-limbah-b3-bengkel",
+   "slug": "jasa-angkut-limbah-b3-bengkel",
+   "title": "Jasa Angkut Limbah B3 Bengkel: Jenis Limbah, Kode, dan Persiapannya",
+   "publish_at_wib": "2026-11-23 07:00",
+   "publish_at_utc": "2026-11-23T00:00:00Z",
+   "url": "https://transsuma.com/jasa-angkut-limbah-b3-bengkel/",
+   "html": "html/jasa-angkut-limbah-b3-bengkel.html",
+   "image": "img/jasa-angkut-limbah-b3-bengkel.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang jasa angkut limbah B3 bengkel",
+   "excerpt": "Apa saja limbah B3 dari bengkel, bagaimana memilah dan mengemasnya, dan apa yang perlu dicek sebelum memakai jasa angkut limbah B3.",
+   "meta_title": "Jasa Angkut Limbah B3 Bengkel: Panduan Persiapan",
+   "meta_description": "Panduan jasa angkut limbah B3 bengkel: jenis limbah bengkel dan kodenya di PP 22/2021, cara memilah dan mengemas, serta dokumen yang dicek sebelum penjemputan.",
+   "focus_keyword": "jasa angkut limbah b3 bengkel",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3",
+    "Pengangkutan & Manifest"
+   ],
+   "tags": [
+    "limbah bengkel",
+    "oli bekas",
+    "kain majun bekas",
+    "aki bekas"
+   ],
+   "faq": [
+    {
+     "q": "Limbah apa saja dari bengkel yang termasuk limbah B3?",
+     "a": "Contoh yang umum adalah minyak pelumas bekas (B105d), kain majun bekas (B110d), kemasan bekas B3 (B104d), aki atau baterai bekas, pelarut bekas pencucian dan degreasing, serta limbah cat. Lampiran IX PP 22/2021 juga mencantumkan bengkel pemeliharaan kendaraan sebagai sumber spesifik dengan kode A355-1, B355-1, dan B355-2."
+    },
+    {
+     "q": "Bolehkah oli bekas bengkel dicampur dengan pelarut bekas dalam satu drum?",
+     "a": "Sebaiknya tidak. Keduanya punya kode limbah yang berbeda, dan Permen LHK 6/2021 meminta pengemasan disesuaikan dengan jenis, karakteristik, dan kompatibilitas limbah. Simpan di kemasan terpisah dengan label masing-masing."
+    },
+    {
+     "q": "Apakah bengkel kecil juga harus memakai transporter berizin?",
+     "a": "Ya. Limbah B3 yang diserahkan kepada pihak lain harus diangkut oleh pengangkut yang memiliki perizinan pengangkutan limbah B3, dan setiap pengangkutan disertai manifest elektronik (Festronik)."
+    },
+    {
+     "q": "Berapa lama limbah B3 bengkel boleh disimpan sebelum diangkut?",
+     "a": "Batasnya bergantung pada jumlah timbulan dan kategori. Untuk timbulan di bawah 50 kg per hari, batasnya 180 hari untuk kategori 1 dan 365 hari untuk kategori 2; untuk 50 kg per hari atau lebih, batasnya 90 hari."
     }
    ]
   }
