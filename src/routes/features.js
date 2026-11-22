@@ -23,6 +23,32 @@ const safeUrl = (u) => (/^https?:\/\//i.test(String(u || '')) ? String(u).slice(
 // ================= ANALISA DOKTOR =================
 const ILLUS = '<span class="pill gray">Ilustrasi edukasi · bukan data harga riil</span>';
 const VERDICT = { entry: ['Setup diambil', 'ok'], skip: ['Setup dilewati', 'bad'] };
+// Video Analisa Harian XAUUSD: content/analisa-videos.json = [{ "date": "YYYY-MM-DD", "title": "...", "url": "https://youtu.be/<id>", "links": { "instagram": "...", "tiktok": "..." } }]
+// Ditulis oleh scheduled task "XAUUSD daily plan + video" setelah video terposting. Terbaru di atas.
+const fs = require('fs');
+const path = require('path');
+const ANALISA_VIDEOS = path.join(__dirname, '..', '..', 'content', 'analisa-videos.json');
+function analisaVideos() {
+  try {
+    const list = JSON.parse(fs.readFileSync(ANALISA_VIDEOS, 'utf8'));
+    return Array.isArray(list) ? list.filter((v) => v && safeUrl(v.url)).sort((a, b) => String(b.date).localeCompare(String(a.date))) : [];
+  } catch (e) { return []; }
+}
+const ytId = (u) => (String(u || '').match(/(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)([\w-]{11})/) || [])[1];
+function videoBlock() {
+  const vids = analisaVideos();
+  if (!vids.length) return '';
+  const top = vids[0];
+  const id = ytId(top.url);
+  const player = id
+    ? `<div style="position:relative;max-width:360px;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${esc(top.title || 'Video analisa harian')}" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>`
+    : `<a class="btn sm" href="${esc(safeUrl(top.url))}" target="_blank" rel="noopener">Tonton video ↗</a>`;
+  const more = vids.slice(1, 15).map((v) => `<li><a href="${esc(safeUrl(v.url))}" target="_blank" rel="noopener">${esc(v.date)} · ${esc(v.title || 'Analisa XAUUSD')}</a></li>`).join('');
+  return `<h2 style="margin-top:22px">Video Analisa Harian XAUUSD</h2>
+<p class="dim">Cara Dr. Dhiraj menyusun trading plan hari kerja: tren H1, entry M5, SL/TP, RR, dan risiko per trade. Edukasi, bukan ajakan trading.</p>
+<div class="card" style="margin-top:12px"><div class="dim" style="margin-bottom:10px">${esc(top.date)} · ${esc(top.title || '')}</div>${player}
+${more ? `<h3 style="margin-top:18px;font-size:17px">Video sebelumnya</h3><ul>${more}</ul>` : ''}</div>`;
+}
 const verdictPill = (v) => `<span class="pill ${(VERDICT[v] || VERDICT.entry)[1]}">${(VERDICT[v] || VERDICT.entry)[0]}</span>`;
 
 router.get('/member/analisa', M, (req, res) => {
@@ -31,6 +57,7 @@ router.get('/member/analisa', M, (req, res) => {
     title: 'Analisa Doktor', active: 'analisa',
     body: `<h1>Analisa Doktor</h1>
 <p class="muted">Studi kasus untuk dipelajari: kenapa entry di situ (atau kenapa dilewati), di mana stop loss, berapa targetnya, dan kapan setup dianggap batal. Ini bahan belajar membaca proses, <b>bukan sinyal atau rekomendasi transaksi</b>.</p>
+${videoBlock()}
 ${rows.length ? `<div class="grid g2" style="margin-top:18px">${rows.map((c) => `<a class="card" href="/member/analisa/${esc(c.slug)}" style="text-decoration:none;color:inherit">
 <div class="row">${verdictPill(c.verdict)}<span class="pill gray">${esc(c.instrument)} · ${esc(c.timeframe)}</span></div>
 <h3 style="margin:10px 0 6px">${esc(c.title)}</h3><p class="muted" style="margin:0">${esc(String(c.context_md || '').replace(/[#*_>`]/g, '').slice(0, 150))}…</p>
