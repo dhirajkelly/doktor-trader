@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-22T23:24:11Z",
+ "generated": "2026-11-22T23:24:14Z",
  "items": [
   {
    "id": "profil-direktur-pt-segoro-lintas-benua",
@@ -127,6 +127,48 @@
     {
      "q": "Apakah telex release sama dengan sea waybill?",
      "a": "Tidak. Telex release adalah B/L original yang diserahkan di pelabuhan muat sehingga barang bisa dilepas di tujuan tanpa B/L fisik, sedangkan sea waybill sejak awal bukan dokumen hak milik dan tidak perlu diserahkan untuk mengambil barang."
+    }
+   ]
+  },
+  {
+   "id": "jalur-merah-dan-jalur-hijau-impor",
+   "slug": "jalur-merah-dan-jalur-hijau-impor",
+   "title": "Jalur Merah dan Jalur Hijau Impor: Aturan, Dampak, dan Persiapan",
+   "publish_at_wib": "2026-11-23 17:00",
+   "publish_at_utc": "2026-11-23T10:00:00Z",
+   "url": "https://segorolintasbenua.id/jalur-merah-dan-jalur-hijau-impor/",
+   "html": "html/jalur-merah-dan-jalur-hijau-impor.html",
+   "image": "img/jalur-merah-dan-jalur-hijau-impor.png",
+   "image_alt": "Gambar sampul artikel PT Segoro Lintas Benua tentang jalur merah dan jalur hijau impor",
+   "excerpt": "Mengapa barang impor masuk jalur merah atau hijau, apa bedanya, dan langkah praktis agar proses pengeluaran barang tetap lancar.",
+   "meta_title": "Jalur Merah dan Jalur Hijau Impor: Aturan dan Persiapan",
+   "meta_description": "Penjelasan jalur merah dan jalur hijau impor setelah jalur kuning dihapus: dasar aturan, beda proses, pemeriksaan acak jalur hijau, dan cara importir bersiap.",
+   "focus_keyword": "jalur merah dan jalur hijau impor",
+   "categories": [
+    "Kepatuhan & Regulasi"
+   ],
+   "tags": [
+    "bea cukai",
+    "jalur merah",
+    "jalur hijau",
+    "customs clearance"
+   ],
+   "faq": [
+    {
+     "q": "Apakah jalur kuning masih ada untuk impor umum?",
+     "a": "Untuk pengeluaran barang impor untuk dipakai, jalur kuning dihapus melalui PER-2/BC/2022 yang berlaku sejak 25 April 2022, sehingga yang tersisa adalah jalur merah dan jalur hijau. Istilah jalur kuning masih dipakai dalam ketentuan Tempat Penimbunan Berikat."
+    },
+    {
+     "q": "Apa beda jalur merah dan jalur hijau?",
+     "a": "Di jalur merah dilakukan pemeriksaan fisik dan penelitian dokumen sebelum SPPB terbit. Di jalur hijau, SPPB terbit tanpa pemeriksaan fisik dan tanpa penelitian dokumen oleh pejabat sebelum pengeluaran barang."
+    },
+    {
+     "q": "Apakah barang jalur hijau bisa tetap diperiksa?",
+     "a": "Bisa. Sejak awal Oktober 2025 Menteri Keuangan mengumumkan pemeriksaan acak terhadap barang jalur hijau, terutama untuk menangkal barang ilegal. Selain itu, dokumen yang sudah keluar tetap bisa diteliti ulang atau diaudit setelah barang keluar."
+    },
+    {
+     "q": "Bagaimana cara mengurangi risiko masuk jalur merah?",
+     "a": "Pastikan uraian barang, HS code, nilai pabean, dan dokumen pendukung konsisten dan akurat, penuhi perizinan lartas sebelum barang tiba, serta jaga rekam jejak kepatuhan perusahaan."
     }
    ]
   }
