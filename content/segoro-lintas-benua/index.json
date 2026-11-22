@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-19T15:13:14Z",
+ "generated": "2026-11-22T23:23:59Z",
  "items": [
   {
    "id": "profil-direktur-pt-segoro-lintas-benua",
@@ -37,6 +37,49 @@
     {
      "q": "Apa yang perlu disiapkan untuk meminta penawaran pengiriman?",
      "a": "Siapkan jenis dan jumlah barang, berat dan volume, alamat asal dan tujuan, waktu kesiapan barang, target tiba, serta dokumen yang sudah dimiliki."
+    }
+   ]
+  },
+  {
+   "id": "jasa-ekspedisi-karawang-ke-kalimantan",
+   "slug": "jasa-ekspedisi-karawang-ke-kalimantan",
+   "title": "Jasa Ekspedisi Karawang ke Kalimantan: Rute, Moda, dan Persiapan",
+   "publish_at_wib": "2026-11-23 07:00",
+   "publish_at_utc": "2026-11-23T00:00:00Z",
+   "url": "https://segorolintasbenua.id/jasa-ekspedisi-karawang-ke-kalimantan/",
+   "html": "html/jasa-ekspedisi-karawang-ke-kalimantan.html",
+   "image": "img/jasa-ekspedisi-karawang-ke-kalimantan.png",
+   "image_alt": "Gambar sampul artikel PT Segoro Lintas Benua tentang jasa ekspedisi dari Karawang ke Kalimantan",
+   "excerpt": "Cara merencanakan pengiriman barang dari Karawang ke Kalimantan: pilihan pelabuhan, moda, hitungan volume, dan dokumen yang perlu disiapkan.",
+   "meta_title": "Jasa Ekspedisi Karawang ke Kalimantan: Panduan Lengkap",
+   "meta_description": "Panduan memilih jasa ekspedisi karawang ke kalimantan: pelabuhan tujuan, pilihan FCL atau LCL, cara menghitung CBM, dokumen, dan tips agar barang tiba aman.",
+   "focus_keyword": "jasa ekspedisi karawang ke kalimantan",
+   "categories": [
+    "Layanan",
+    "Wawasan Pasar & Rute"
+   ],
+   "tags": [
+    "ekspedisi kalimantan",
+    "pengiriman antar pulau",
+    "kontainer domestik",
+    "karawang"
+   ],
+   "faq": [
+    {
+     "q": "Pelabuhan mana yang biasa dipakai untuk pengiriman dari Karawang ke Kalimantan?",
+     "a": "Pengiriman kontainer dari Karawang umumnya dimuat di Tanjung Priok, lalu dibongkar di pelabuhan tujuan seperti Banjarmasin, Balikpapan, Samarinda, atau Pontianak sesuai lokasi penerima."
+    },
+    {
+     "q": "Kapan sebaiknya memakai FCL dan kapan LCL?",
+     "a": "FCL cocok bila volume barang mendekati kapasitas satu kontainer atau barang perlu disegel sejak gudang asal. LCL lebih hemat untuk volume kecil, tetapi melalui proses konsolidasi sehingga waktunya cenderung lebih panjang."
+    },
+    {
+     "q": "Apa saja data yang perlu disiapkan untuk meminta penawaran?",
+     "a": "Siapkan jenis barang, jumlah koli, berat dan dimensi per koli, alamat muat di Karawang, alamat bongkar di Kalimantan, tanggal barang siap, serta kebutuhan khusus seperti asuransi atau bongkar dengan forklift."
+    },
+    {
+     "q": "Apakah biaya pengiriman ke Kalimantan selalu sama?",
+     "a": "Tidak. Biaya bergantung pada rute, volume, jenis barang, layanan door to door atau port to port, serta jadwal kapal dan musim. Karena itu penawaran sebaiknya dihitung per pengiriman."
     }
    ]
   }
