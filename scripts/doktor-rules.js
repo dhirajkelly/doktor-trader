@@ -133,7 +133,9 @@ Indikator *EMA 9 + VWAP + Fibonacci* di menu Tools menggambar ini otomatis. Kala
 
 Logikanya: kalau harga menembus level 1.0, swing yang menjadi dasar analisa sudah batal. Itu titik di mana ide trade terbukti salah, jadi SL ditaruh di sana. Target ditaruh di extension 2.618, yaitu kelanjutan swing searah tren.
 
-Kenapa bukan di level 0 (ujung swing)? Cross EMA 9 dan VWAP biasanya baru terjadi saat harga sudah dekat ujung swing. Di backtest internal XAUUSD M5 (Nov 2024–Okt 2025), TP di level 0 membuat hampir tidak ada setup yang mencapai RR 1:2. Backtest bukan jaminan hasil ke depan; ini hanya alasan pemilihan level.
+Kenapa bukan di level 0 (ujung swing)? Cross EMA 9 dan VWAP biasanya baru terjadi saat harga sudah dekat ujung swing. Di backtest internal XAUUSD M5 (Jan 2023–Okt 2025), TP di level 0 membuat hampir tidak ada setup yang mencapai RR 1:2. Itu satu-satunya alasan TP dipindah ke extension.
+
+Perlu Anda ketahui juga: di backtest yang sama, aturan lengkap dengan TP extension 2.618 **belum menunjukkan hasil yang konsisten**. Hasilnya bagus di satu periode dan buruk di periode lain. Jadi perlakukan Doktor Rules sebagai **kerangka disiplin** (bias jelas, entry setelah candle close, SL di titik ide trade batal, risiko 0,5%, RR minimal), bukan sistem yang terbukti menghasilkan. Latih dan catat di akun demo dulu sebelum memakai uang sungguhan.
 
 ## RR mengikuti struktur, bukan dipaksakan
 

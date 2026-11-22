@@ -603,6 +603,29 @@ function seed() {
     db.setSetting('doktor_rules_tp2618', '1');
     console.log(`[seed] doktor rules TP ext 2.618 (${n} materi diperbarui)`);
   }
+  // 22 Nov 2026: backtest Jan 2023–Okt 2024 (di luar periode pemilihan TP 2.618) negatif.
+  // Kartu EA disembunyikan sampai ada versi yang lolos; paragraf backtest di aturan 3 direvisi
+  // (hanya bila materi belum diedit admin).
+  if (db.setting('doktor_rules_oos_fix') !== '1') {
+    db.run("UPDATE tools SET published = 0 WHERE link_url = '/member/unduh/DoktorRules_EA.mq5'");
+    const crypto = require('crypto');
+    const { COURSE, LESSONS } = require('./doktor-rules');
+    const V3 = { 'aturan-3-tp-dan-sl-dengan-fibonacci-retracement': 'be05c4a790bbfe38' };
+    const course = db.get('SELECT id FROM courses WHERE slug = ?', [slugify(COURSE.title)]);
+    let n = 0;
+    if (course) {
+      LESSONS.forEach(([title, , body]) => {
+        const lslug = slugify(title);
+        if (!V3[lslug]) return;
+        const row = db.get('SELECT id, body_md FROM lessons WHERE course_id = ? AND slug = ?', [course.id, lslug]);
+        if (!row || crypto.createHash('sha256').update(row.body_md || '').digest('hex').slice(0, 16) !== V3[lslug]) return;
+        db.run('UPDATE lessons SET body_md = ? WHERE id = ?', [body, row.id]);
+        n++;
+      });
+    }
+    db.setSetting('doktor_rules_oos_fix', '1');
+    console.log(`[seed] EA Doktor Rules disembunyikan, revisi catatan backtest (${n} materi)`);
+  }
 }
 
 module.exports = { seed };
