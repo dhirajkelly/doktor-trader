@@ -556,6 +556,53 @@ function seed() {
     db.setSetting('doktor_rules_rr2', '1');
     console.log(`[seed] doktor rules RR 1:2 (${n} materi diperbarui)`);
   }
+  // EA Doktor Rules (22 Nov 2026): kartu di menu Tools, file /member/unduh/DoktorRules_EA.mq5.
+  if (db.setting('tools_doktor_rules_ea') !== '1') {
+    if (!db.get("SELECT id FROM tools WHERE link_url = '/member/unduh/DoktorRules_EA.mq5'")) {
+      const desc = `EA MT5 yang menjalankan **Doktor Rules**, metode yang sama dengan kelas Doktor Rules di Academy:
+- **Bias H1 EMA 200**: close H1 di atas EMA 200 hanya buy, di bawahnya hanya sell
+- **Entry M5**: EMA 9 memotong VWAP harian, dieksekusi setelah candle close
+- **SL/TP Fibonacci** dari swing M5 terakhir: SL di luar level 1.0 + buffer + spread, TP di extension 2.618
+- **RR minimal 1:2**: di bawah itu setup dilewati
+- **Lot otomatis** dari jarak SL dengan risiko 0,5% per trade (dibulatkan ke bawah, tidak pernah dinaikkan ke lot minimum)
+- **Batas harian**: maksimal 2 trade per hari, stop bila equity hari itu turun 3%, filter berita high-impact USD
+
+**Default mode sinyal:** EA hanya mengirim alert dan notifikasi HP serta menggambar Fibonacci, entry, SL, dan TP di chart. Eksekusi tetap Anda yang memutuskan. Untuk Strategy Tester atau eksekusi otomatis, ubah *InpAutoTrade* menjadi true.
+
+**Cara pasang (MT5):** unduh file, buka MetaTrader → File → Open Data Folder → MQL5 → Experts, tempel file, buka di MetaEditor lalu tekan Compile (F7). Klik kanan Navigator → Refresh, tarik **DoktorRules_EA** ke chart XAUUSD (timeframe chart bebas), lalu aktifkan *Allow Algo Trading*. Buffer SL diisi dalam harga (0,50 = 50 sen di XAUUSD).`;
+      const pos = (db.get("SELECT MAX(position) AS m FROM tools WHERE kind = 'ea'") || {}).m || 0;
+      db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', ['ea', 'EA Doktor Rules (MT5): sinyal & auto-trade metode resmi', desc,
+        'Alat bantu berbasis aturan, bukan jaminan profit. Hasil backtest tidak menjamin hasil ke depan. Uji di akun demo atau Strategy Tester dulu, dan cek aturan prop firm Anda sebelum memakai mode auto-trade.', '/member/unduh/DoktorRules_EA.mq5', 'Unduh EA (MT5)', pos + 1]);
+    }
+    db.setSetting('tools_doktor_rules_ea', '1');
+    console.log('[seed] tools: EA Doktor Rules');
+  }
+  // Doktor Rules v3 (22 Nov 2026): TP di extension 2.618 (sebelumnya level 0). Hanya materi yang belum diedit admin.
+  if (db.setting('doktor_rules_tp2618') !== '1') {
+    const crypto = require('crypto');
+    const { COURSE, LESSONS } = require('./doktor-rules');
+    const V2 = {
+      'apa-itu-doktor-rules': '17502b7ae56546fe',
+      'aturan-3-tp-dan-sl-dengan-fibonacci-retracement': '2a2d1b7f1afec20f',
+      'aturan-4-lot-dari-jarak-sl-risiko-0-5': 'ab803b6bc7c0873e',
+      'checklist-doktor-rules-dan-contoh-lengkap': '7967d1bf96d03dc8',
+    };
+    const course = db.get('SELECT id FROM courses WHERE slug = ?', [slugify(COURSE.title)]);
+    let n = 0;
+    if (course) {
+      db.run("UPDATE courses SET summary = ? WHERE id = ? AND summary NOT LIKE '%2.618%'", [COURSE.summary, course.id]);
+      LESSONS.forEach(([title, , body]) => {
+        const lslug = slugify(title);
+        if (!V2[lslug]) return;
+        const row = db.get('SELECT id, body_md FROM lessons WHERE course_id = ? AND slug = ?', [course.id, lslug]);
+        if (!row || crypto.createHash('sha256').update(row.body_md || '').digest('hex').slice(0, 16) !== V2[lslug]) return;
+        db.run('UPDATE lessons SET body_md = ? WHERE id = ?', [body, row.id]);
+        n++;
+      });
+    }
+    db.setSetting('doktor_rules_tp2618', '1');
+    console.log(`[seed] doktor rules TP ext 2.618 (${n} materi diperbarui)`);
+  }
 }
 
 module.exports = { seed };

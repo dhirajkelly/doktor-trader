@@ -4,7 +4,7 @@
 const COURSE = {
   title: 'Doktor Rules',
   level: 'Menengah',
-  summary: 'Metode trading resmi Dr. Dhiraj Kelly: bias H1 dengan EMA 200, entry M5 dari cross EMA 9 dan VWAP, TP/SL dengan Fibonacci, risiko 0,5% per trade, RR minimal 1:2.',
+  summary: 'Metode trading resmi Dr. Dhiraj Kelly: bias H1 dengan EMA 200, entry M5 dari cross EMA 9 dan VWAP, SL dengan Fibonacci retracement dan TP di extension 2.618, risiko 0,5% per trade, RR minimal 1:2.',
 };
 
 const DISCLAIMER = `\n\n---\n\n*Materi edukasi Doktor Trader. Bukan ajakan atau rekomendasi transaksi. Semua harga dalam contoh adalah ilustrasi. Trading emas, forex, dan derivatif berisiko tinggi dan dapat menghabiskan seluruh modal.*`;
@@ -18,7 +18,7 @@ const LESSONS = [
 |---|---|---|---|
 | 1 | Bias tren dengan **EMA 200** | H1 | Hari ini cari buy atau sell? |
 | 2 | Entry saat **EMA 9 memotong VWAP**, setelah candle close | M5 | Kapan masuk? |
-| 3 | TP dan SL dengan **Fibonacci retracement** | M5 | Di mana keluar, untung atau rugi? |
+| 3 | SL dengan **Fibonacci retracement**, TP di **extension 2.618** | M5 | Di mana keluar, untung atau rugi? |
 | 4 | Lot dari jarak SL, **risiko 0,5% per trade** | - | Berapa lot? |
 
 Ditambah dua batas yang tidak boleh ditawar:
@@ -115,10 +115,12 @@ VWAP butuh data volume. Spot gold hanya punya *tick volume* dari broker atau fee
 - Level **1.0** = swing low.
 - Level **0** = swing high.
 - Level standar di antaranya (0.236, 0.382, 0.5, 0.618, 0.786) adalah area koreksi.
+- Level **-1.618** di atas swing high = **extension 2.618**, tempat TP.
 
 **Untuk sell:** tarik dari **swing high** ke **swing low** terakhir.
 - Level **1.0** = swing high.
 - Level **0** = swing low.
+- Level **-1.618** di bawah swing low = **extension 2.618**, tempat TP.
 
 Indikator *EMA 9 + VWAP + Fibonacci* di menu Tools menggambar ini otomatis. Kalau swing yang terdeteksi bukan swing yang Anda maksud, ubah pengaturan *Lookback*.
 
@@ -127,16 +129,18 @@ Indikator *EMA 9 + VWAP + Fibonacci* di menu Tools menggambar ini otomatis. Kala
 | | Buy | Sell |
 |---|---|---|
 | **Stop loss** | Sedikit **di bawah level 1.0** (swing low) + buffer spread | Sedikit **di atas level 1.0** (swing high) + buffer spread |
-| **Take profit** | Di **level 0** (swing high) | Di **level 0** (swing low) |
+| **Take profit** | Di **extension 2.618** = swing high + 1,618 × panjang swing | Di **extension 2.618** = swing low − 1,618 × panjang swing |
 
-Logikanya: kalau harga menembus level 1.0, swing yang menjadi dasar analisa sudah batal. Itu titik di mana ide trade terbukti salah, jadi SL ditaruh di sana. Target diambil di ujung swing, tempat harga pernah berhenti sebelumnya.
+Logikanya: kalau harga menembus level 1.0, swing yang menjadi dasar analisa sudah batal. Itu titik di mana ide trade terbukti salah, jadi SL ditaruh di sana. Target ditaruh di extension 2.618, yaitu kelanjutan swing searah tren.
+
+Kenapa bukan di level 0 (ujung swing)? Cross EMA 9 dan VWAP biasanya baru terjadi saat harga sudah dekat ujung swing. Di backtest internal XAUUSD M5 (Nov 2024–Okt 2025), TP di level 0 membuat hampir tidak ada setup yang mencapai RR 1:2. Backtest bukan jaminan hasil ke depan; ini hanya alasan pemilihan level.
 
 ## RR mengikuti struktur, bukan dipaksakan
 
-Di Doktor Rules, **RR tidak dikunci** di angka tertentu. RR adalah hasil dari tiga titik: entry, SL di level 1.0, dan TP di level 0.
+Di Doktor Rules, **RR tidak dikunci** di angka tertentu. RR adalah hasil dari tiga titik: entry, SL di level 1.0, dan TP di extension 2.618.
 
 - Entry dekat level 1.0 → SL pendek, target jauh → RR besar.
-- Entry dekat level 0 → SL panjang, target dekat → RR kecil.
+- Entry dekat level 0 → SL panjang, target lebih dekat → RR kecil.
 
 Yang dikunci hanya batas bawahnya: **RR minimal 1:2.** Kalau jarak ke TP kurang dari dua kali jarak ke SL, trade **tidak diambil**. Dengan RR 1:2, satu trade yang kena TP menutup dua trade yang kena SL, jadi akun tidak bergantung pada sering menang.
 
@@ -144,14 +148,15 @@ Yang dikunci hanya batas bawahnya: **RR minimal 1:2.** Kalau jarak ke TP kurang 
 
 Bias H1 bullish. Swing M5 terakhir: low 3.700,00, high 3.712,00.
 - Level 0.618 = 3.712,00 − (0,618 × 12,00) = **3.704,58**; level 0.786 = 3.712,00 − (0,786 × 12,00) = **3.702,57**.
+- Extension 2.618 = 3.712,00 + (1,618 × 12,00) = **3.731,42**.
 - Harga koreksi sampai sekitar 3.703,5 (di antara 0.618 dan 0.786), lalu EMA 9 cross ke atas VWAP. Candle close, entry buy di **3.703,50**.
 - SL = 3.700,00 − 0,50 buffer = **3.699,50** (jarak 4,00).
-- TP = level 0 = **3.712,00** (jarak 8,50).
-- RR = 8,50 ÷ 4,00 = **1:2,1**. Lolos.
+- TP = extension 2.618 = **3.731,42** (jarak 27,92).
+- RR = 27,92 ÷ 4,00 = **1:6,98**. Lolos.
 
-Kalau cross baru muncul saat harga di 3.704,00: jarak SL 4,50, jarak TP 8,00, RR 1:1,78. Hampir, tapi di bawah 1:2. **Dilewati.**
+Kalau cross baru muncul saat harga di 3.708,00: jarak SL 8,50, jarak TP 23,42, RR 1:2,76. **Lolos.**
 
-Kalau cross baru muncul di 3.708,00: jarak SL 8,50, jarak TP 4,00, RR 1:0,47. **Dilewati.**
+Kalau cross baru muncul di 3.711,50: jarak SL 12,00, jarak TP 19,92, RR 1:1,66. Di bawah 1:2. **Dilewati.**
 
 **Tugas:** ambil 10 setup dari latihan aturan 2. Tarik Fibonacci-nya, hitung RR masing-masing, lalu coret yang di bawah 1:2.${DISCLAIMER}`],
 
@@ -171,7 +176,7 @@ Selalu **bulatkan ke bawah** ke langkah lot terdekat (0,01), supaya risiko tidak
 - Jarak SL = 3.703,50 − 3.699,50 = **4,00**.
 - Lot = 50 ÷ (4,00 × 100) = 0,125 → dibulatkan ke bawah menjadi **0,12 lot**.
 - Rugi jika SL kena = 4,00 × 100 × 0,12 = **$48,00**.
-- Untung jika TP kena = 8,50 × 100 × 0,12 = **$102,00**.
+- Untung jika TP kena = 27,92 × 100 × 0,12 = **$335,04**.
 
 | Modal | Risiko 0,5% | Jarak SL 4,00 | Jarak SL 8,00 |
 |---|---|---|---|
@@ -226,7 +231,7 @@ Hari tanpa trade karena tidak ada setup yang lolos adalah hari yang **berhasil**
 | 2 | EMA 9 memotong VWAP di M5 **searah** bias H1? | |
 | 3 | Candle M5 tempat cross terjadi **sudah close**? | |
 | 4 | Fibonacci sudah ditarik di swing M5 terakhir yang searah bias? | |
-| 5 | SL di luar level 1.0 + buffer, TP di level 0? | |
+| 5 | SL di luar level 1.0 + buffer, TP di extension 2.618? | |
 | 6 | RR **minimal 1:2**? | |
 | 7 | Lot dihitung dari jarak SL dengan risiko **0,5%** dan dibulatkan ke bawah? | |
 | 8 | Tidak ada berita besar dalam 30 menit ke depan? | |
@@ -239,9 +244,9 @@ Modal $10.000.
 1. **H1:** candle terakhir close di 3.709, EMA 200 di 3.688. Bias **bullish**, hanya cari buy.
 2. **M5:** swing low 3.700,00, swing high 3.712,00. Harga koreksi ke area 3.703,5.
 3. **Cross:** EMA 9 memotong VWAP ke atas. Candle close di 3.703,70, di atas VWAP. Entry buy di candle berikutnya, **3.703,50**.
-4. **Fibonacci:** SL **3.699,50** (di bawah level 1.0 + buffer 0,50), TP **3.712,00** (level 0).
-5. **RR:** 8,50 ÷ 4,00 = **1:2,1**. Lolos.
-6. **Lot:** $50 ÷ (4,00 × 100) = 0,125 → **0,12 lot**. Risiko $48,00, potensi untung $102,00.
+4. **Fibonacci:** SL **3.699,50** (di bawah level 1.0 + buffer 0,50), TP **3.731,42** (extension 2.618 = 3.712,00 + 1,618 × 12,00).
+5. **RR:** 27,92 ÷ 4,00 = **1:6,98**. Lolos.
+6. **Lot:** $50 ÷ (4,00 × 100) = 0,125 → **0,12 lot**. Risiko $48,00, potensi untung $335,04.
 7. **Berita:** tidak ada rilis besar dalam 30 menit. Kuota: ini trade pertama hari ini.
 
 Semua "ya". Order dipasang lengkap dengan SL dan TP, lalu dibiarkan. Hasilnya apa pun, trade dicatat di jurnal.
