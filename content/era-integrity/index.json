@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-22T21:24:34Z",
+ "generated": "2026-11-22T21:25:39Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -1169,6 +1169,53 @@
     {
      "q": "Apa yang harus ada di perjanjian sewa rumah?",
      "a": "Minimal identitas para pihak, alamat dan kondisi rumah, harga dan cara bayar, jangka waktu, deposit dan syarat pengembaliannya, pembagian biaya perbaikan, serta aturan perpanjangan atau pengakhiran sewa."
+    }
+   ]
+  },
+  {
+   "id": "cara-beli-rumah-lelang-bank",
+   "slug": "cara-beli-rumah-lelang-bank",
+   "title": "Cara Beli Rumah Lelang Bank: Alur, Biaya, dan Risiko yang Perlu Dicek",
+   "publish_at_wib": "2026-11-23 19:00",
+   "publish_at_utc": "2026-11-23T12:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/23/cara-beli-rumah-lelang-bank/",
+   "html": "html/cara-beli-rumah-lelang-bank.html",
+   "image": "img/cara-beli-rumah-lelang-bank.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang cara beli rumah lelang bank",
+   "excerpt": "Panduan beli rumah lelang bank: alur lelang di KPKNL, uang jaminan, bea lelang, batas pelunasan, biaya tambahan, dan risiko yang perlu dicek.",
+   "meta_title": "Cara Beli Rumah Lelang Bank: Alur, Biaya, dan Risiko",
+   "meta_description": "Tertarik beli rumah lelang bank? Pahami alur lelang di KPKNL, uang jaminan, bea lelang 2%, batas pelunasan 5 hari kerja, biaya lain, dan risikonya.",
+   "focus_keyword": "beli rumah lelang bank",
+   "categories": [
+    "Panduan & Edukasi Agen",
+    "Jual • Beli • Sewa"
+   ],
+   "tags": [
+    "lelang rumah",
+    "kpknl",
+    "beli rumah",
+    "hak tanggungan"
+   ],
+   "faq": [
+    {
+     "q": "Di mana mencari informasi rumah lelang bank?",
+     "a": "Lelang eksekusi hak tanggungan umumnya dilaksanakan melalui KPKNL di bawah DJKN Kementerian Keuangan, dan jadwalnya bisa dilihat di portal lelang.go.id. Bank juga sering mengumumkan agunan yang akan dilelang di situs resminya."
+    },
+    {
+     "q": "Berapa bea lelang untuk pembeli rumah lelang?",
+     "a": "Berdasarkan PP Nomor 62 Tahun 2020, bea lelang pembeli untuk barang tidak bergerak pada lelang eksekusi adalah 2% dari pokok lelang. Di luar itu, pembeli tetap perlu membayar BPHTB untuk proses balik nama."
+    },
+    {
+     "q": "Berapa lama batas waktu pelunasan setelah menang lelang?",
+     "a": "Menurut PMK Nomor 122 Tahun 2023, pembeli wajib melunasi harga lelang dan bea lelang paling lama 5 hari kerja setelah pelaksanaan lelang. Bila tidak, pembeli dinyatakan wanprestasi dan uang jaminannya tidak dikembalikan."
+    },
+    {
+     "q": "Bagaimana jika rumah lelang masih ditempati pemilik lama?",
+     "a": "Pembeli bisa menempuh pendekatan musyawarah lebih dulu. Bila pengosongan tidak dapat dilakukan secara sukarela, pembeli dapat meminta bantuan pengosongan melalui pengadilan sesuai ketentuan, yang memerlukan waktu dan biaya."
+    },
+    {
+     "q": "Apakah bisa membeli rumah lelang dengan KPR?",
+     "a": "Beberapa bank menyediakan pembiayaan untuk pembelian agunan lelang, tetapi waktunya ketat karena pelunasan harus selesai dalam 5 hari kerja. Pastikan persetujuan pembiayaan sudah jelas sebelum Anda ikut menawar."
     }
    ]
   }
