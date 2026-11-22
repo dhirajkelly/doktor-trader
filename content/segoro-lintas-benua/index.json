@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-22T23:23:59Z",
+ "generated": "2026-11-22T23:24:11Z",
  "items": [
   {
    "id": "profil-direktur-pt-segoro-lintas-benua",
@@ -80,6 +80,53 @@
     {
      "q": "Apakah biaya pengiriman ke Kalimantan selalu sama?",
      "a": "Tidak. Biaya bergantung pada rute, volume, jenis barang, layanan door to door atau port to port, serta jadwal kapal dan musim. Karena itu penawaran sebaiknya dihitung per pengiriman."
+    }
+   ]
+  },
+  {
+   "id": "cara-membaca-bill-of-lading",
+   "slug": "cara-membaca-bill-of-lading",
+   "title": "Cara Membaca Bill of Lading: Kolom Penting dan Jenis B/L",
+   "publish_at_wib": "2026-11-23 12:00",
+   "publish_at_utc": "2026-11-23T05:00:00Z",
+   "url": "https://segorolintasbenua.id/cara-membaca-bill-of-lading/",
+   "html": "html/cara-membaca-bill-of-lading.html",
+   "image": "img/cara-membaca-bill-of-lading.png",
+   "image_alt": "Gambar sampul artikel PT Segoro Lintas Benua tentang cara membaca bill of lading",
+   "excerpt": "Panduan membaca bill of lading kolom demi kolom, mengenali jenis B/L, dan mengecek kesalahan sebelum dokumen dikirim ke pembeli atau bank.",
+   "meta_title": "Cara Membaca Bill of Lading untuk Staf Ekspor Impor",
+   "meta_description": "Panduan cara membaca bill of lading: arti tiap kolom, perbedaan order dan straight B/L, clean B/L, original dan telex release, serta kesalahan yang perlu dicek.",
+   "focus_keyword": "cara membaca bill of lading",
+   "categories": [
+    "Operasional & Teknologi",
+    "Kepatuhan & Regulasi"
+   ],
+   "tags": [
+    "bill of lading",
+    "dokumen ekspor impor",
+    "konosemen",
+    "pengapalan"
+   ],
+   "faq": [
+    {
+     "q": "Apa dasar hukum bill of lading di Indonesia?",
+     "a": "Bill of lading dikenal sebagai konosemen dan diatur dalam Kitab Undang-Undang Hukum Dagang (KUHD), antara lain Pasal 506, yang menggambarkannya sebagai surat bertanggal berisi pernyataan pengangkut telah menerima barang untuk diangkut dan diserahkan kepada pihak yang ditunjuk."
+    },
+    {
+     "q": "Apa beda order B/L dan straight B/L?",
+     "a": "Straight B/L mencantumkan nama consignee secara langsung sehingga barang hanya diserahkan kepada pihak tersebut. Order B/L ditulis 'to order' atau 'to order of' pihak tertentu, sehingga hak atas barang dapat dialihkan melalui endorsement."
+    },
+    {
+     "q": "Apa yang dimaksud clean B/L?",
+     "a": "Clean B/L adalah B/L tanpa catatan tambahan tentang kerusakan atau kekurangan barang dan kemasan saat dimuat. B/L yang memuat catatan seperti itu disebut claused atau dirty B/L dan bisa ditolak dalam transaksi letter of credit."
+    },
+    {
+     "q": "Kapan perlu memeriksa draft B/L?",
+     "a": "Draft B/L sebaiknya diperiksa sebelum B/L final diterbitkan, biasanya setelah shipping instruction dikirim dan sebelum atau sesaat setelah kapal berangkat. Revisi setelah B/L final terbit umumnya lebih rumit dan bisa dikenai biaya."
+    },
+    {
+     "q": "Apakah telex release sama dengan sea waybill?",
+     "a": "Tidak. Telex release adalah B/L original yang diserahkan di pelabuhan muat sehingga barang bisa dilepas di tujuan tanpa B/L fisik, sedangkan sea waybill sejak awal bukan dokumen hak milik dan tidak perlu diserahkan untuk mengambil barang."
     }
    ]
   }
