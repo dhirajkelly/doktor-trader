@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-22T19:56:44Z",
+ "generated": "2026-11-22T19:58:02Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -466,6 +466,49 @@
     {
      "q": "Berapa lama limbah B3 bengkel boleh disimpan sebelum diangkut?",
      "a": "Batasnya bergantung pada jumlah timbulan dan kategori. Untuk timbulan di bawah 50 kg per hari, batasnya 180 hari untuk kategori 1 dan 365 hari untuk kategori 2; untuk 50 kg per hari atau lebih, batasnya 90 hari."
+    }
+   ]
+  },
+  {
+   "id": "cara-membuat-logbook-limbah-b3",
+   "slug": "cara-membuat-logbook-limbah-b3",
+   "title": "Cara Membuat Logbook Limbah B3 dan Neraca Bulanan di Fasilitas",
+   "publish_at_wib": "2026-11-23 12:00",
+   "publish_at_utc": "2026-11-23T05:00:00Z",
+   "url": "https://transsuma.com/cara-membuat-logbook-limbah-b3/",
+   "html": "html/cara-membuat-logbook-limbah-b3.html",
+   "image": "img/cara-membuat-logbook-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang cara membuat logbook limbah B3",
+   "excerpt": "Panduan praktis menyusun logbook limbah B3 harian dan neraca bulanan, lengkap dengan contoh pengisian dan tips agar data cocok dengan manifest.",
+   "meta_title": "Cara Membuat Logbook Limbah B3 dan Neraca Bulanan",
+   "meta_description": "Cara membuat logbook limbah B3 sesuai Permen LHK 6/2021: kolom yang perlu dicatat, contoh pengisian, cara menyusun neraca bulanan, dan pelaporan tiap 6 bulan.",
+   "focus_keyword": "cara membuat logbook limbah b3",
+   "categories": [
+    "Panduan Pengelolaan Limbah untuk Industri",
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "logbook limbah b3",
+    "neraca limbah b3",
+    "pelaporan limbah",
+    "permen lhk 6 2021"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda logbook dan neraca limbah B3?",
+     "a": "Logbook adalah catatan harian setiap limbah yang masuk dan keluar dari tempat penyimpanan. Neraca adalah ringkasan per periode yang membandingkan jumlah limbah yang disimpan, dikumpulkan setiap bulan, dan diserahkan kepada pihak berizin."
+    },
+    {
+     "q": "Seberapa sering pencatatan limbah B3 harus dilaporkan?",
+     "a": "Permen LHK 6/2021 mewajibkan dokumen pencatatan limbah B3 dilaporkan kepada pejabat penerbit Persetujuan Lingkungan paling sedikit 1 kali dalam 6 bulan, secara elektronik dengan bukti tanda terima elektronik."
+    },
+    {
+     "q": "Apakah logbook boleh dibuat dalam bentuk spreadsheet?",
+     "a": "Boleh dipakai sebagai alat kerja internal, selama isinya mengikuti format pencatatan dan neraca dalam Lampiran IX Permen LHK 6/2021 dan datanya bisa ditelusuri ke label kemasan serta manifest."
+    },
+    {
+     "q": "Mengapa jumlah di logbook sering tidak cocok dengan manifest?",
+     "a": "Penyebab umum adalah satuan yang berbeda (liter dan kilogram), penimbangan yang tidak dilakukan saat limbah masuk TPS, atau pengeluaran yang belum dicatat. Gunakan satu satuan utama dan catat nomor manifest pada baris pengeluaran."
     }
    ]
   }

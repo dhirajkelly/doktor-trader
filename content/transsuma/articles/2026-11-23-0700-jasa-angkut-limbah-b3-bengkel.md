@@ -79,7 +79,7 @@ Panduan umum untuk limbah bengkel:
 - **Kemasan bekas:** dikosongkan semaksimal mungkin, ditutup, dan dikumpulkan per jenis bahan asalnya.
 - **Aki bekas:** wadah tahan asam, tidak ditumpuk sembarangan.
 
-Pembahasan lengkap pemilihan drum, jumbo bag, dan IBC ada di artikel [cara memilih kemasan limbah B3](https://transsuma.com/cara-memilih-kemasan-limbah-b3/).
+Pilihan drum, jumbo bag, atau IBC tetap harus disesuaikan dengan karakteristik limbah dan rincian teknis penyimpanan fasilitas Anda.
 
 ## Contoh perhitungan timbulan dan jadwal penjemputan
 
