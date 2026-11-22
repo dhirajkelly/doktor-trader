@@ -1,0 +1,16 @@
+RiskPercent=0.5
+MaxTradesPerDay=1
+RR=2.0
+SLBuffer=1.0
+FractalBars=3
+MinSLSpreadMult=3.0
+MaxSpreadPrice=1.0
+AllowMinLotOverRisk=false
+PropInitialBalance=25000
+DailyGuardPct=3.0
+MaxLossGuardPct=6.5
+ProfitTargetPct=8
+TrendEMA=200
+FastEMA=9
+MagicNumber=26112304
+SlippagePoints=50

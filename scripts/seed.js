@@ -701,6 +701,29 @@ function seed() {
     db.setSetting('tool_dk_hrp', '1');
     console.log('[seed] tool DK Hedge Recovery PROP');
   }
+  // EA DK Doktor Rules PROP v1.00 (Doktor Rules murni + guard aturan prop firm)
+  if (db.setting('tool_dk_drp') !== '1') {
+    const desc = [
+      'EA yang menjalankan **Doktor Rules versi murni** (sama dengan materi Academy), satu posisi per sinyal, tanpa hedge dan tanpa martingale:',
+      '- **Bias H1**: close candle H1 terakhir di atas EMA 200 → hanya buy, di bawah → hanya sell',
+      '- **Entry M5**: EMA 9 memotong VWAP searah bias, dieksekusi setelah candle close',
+      '- **SL** di swing M5 terakhir (3 candle kiri dan kanan) + buffer $1, **TP 2R**. Sinyal dilewati jika jarak SL kurang dari 3× spread',
+      '- **Lot** dihitung dari jarak SL dengan risiko 0,5% per trade, maksimal 1 trade per hari',
+      '- **Guard prop firm** dari saldo awal akun: daily guard 3%, max loss guard 6,5% (EA berhenti), target lock opsional',
+      '',
+      'Untuk akun funded, pertimbangkan risiko 0,3% per trade agar drawdown lebih kecil.',
+      '',
+      '**Penting, cek aturan prop firm Anda dulu.** Sebagian prop firm melarang EA di ukuran akun tertentu; contohnya FundedNext hanya mengizinkan EA di akun di bawah $50.000. Di akun seperti itu, jalankan Doktor Rules secara manual.',
+      '',
+      '**Hasil uji historis** (XAUUSD M5, dua sumber data Des 2023–Okt 2026, risiko 0,5%): drawdown terdalam ±9–11%, hari terburuk ±1%, kalah beruntun terpanjang 12 kali. Tahun 2024 hasilnya negatif, dan sebagian besar hasil positif datang dari posisi buy saat emas sedang tren naik. Jika tren berubah, hasilnya bisa sangat berbeda.',
+      '',
+      '**Cara pasang (MT5):** File → Open Data Folder → MQL5 → Experts, tempel file .mq5, buka MetaEditor (F4) lalu Compile (F7). Refresh Navigator, tarik **DK_DoktorRules_PROP** ke chart XAUUSD (timeframe chart bebas), aktifkan Algo Trading. Uji dulu di Strategy Tester ("Every tick based on real ticks") dan akun demo. [Unduh preset .set challenge $25k](/member/unduh/DK_DoktorRules_PROP.set) (taruh di MQL5 → Presets; isi `PropInitialBalance` sesuai akun Anda).',
+    ].join('\n');
+    const pos = (db.get("SELECT MAX(position) AS m FROM tools WHERE kind = 'ea'") || {}).m || 0;
+    db.run('INSERT INTO tools(kind, title, description, risk_note, link_url, link_label, position, published) VALUES(?,?,?,?,?,?,?,1)', ['ea', 'DK Doktor Rules PROP: metode resmi + guard aturan prop firm', desc, 'Sedang. Satu posisi dengan SL pasti, tetapi kalah beruntun panjang bisa terjadi dan drawdown historis mendekati batas rugi total banyak prop firm. Bukan jaminan profit atau lolos challenge; hasil masa lalu tidak menjamin hasil ke depan. Uji di demo dulu.', '/member/unduh/DK_DoktorRules_PROP.mq5', 'Unduh EA Doktor Rules (MT5)', pos + 1]);
+    db.setSetting('tool_dk_drp', '1');
+    console.log('[seed] tool DK Doktor Rules PROP');
+  }
 }
 
 module.exports = { seed };
