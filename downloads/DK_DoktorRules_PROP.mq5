@@ -22,7 +22,7 @@
 //+------------------------------------------------------------------+
 #property copyright "Dhiraj Kelly - Doktor Trader"
 #property link      "https://dhirajkelly.id"
-#property version   "1.10"
+#property version   "1.11"
 #property description "Doktor Rules (H1 EMA200 + M5 EMA9/VWAP, SL swing, TP 2R) dengan guard aturan prop firm."
 
 #include <Trade\Trade.mqh>
@@ -42,6 +42,7 @@ input double PropInitialBalance = 0;     // Saldo awal akun prop (0 = balance sa
 input double DailyGuardPct      = 3.0;   // Tutup & stop hari ini jika rugi harian >= (% saldo awal)
 input double MaxLossGuardPct    = 6.5;   // Tutup & EA stop jika total rugi >= (% saldo awal)
 input double ProfitTargetPct    = 0;     // Tutup & EA stop saat profit >= (% saldo awal). 0 = off
+input bool   TrailingMaxLoss    = false; // true = max loss trailing dari balance tertinggi, maks sampai saldo awal (mis. Stellar Instant)
 input group "=== INDIKATOR ==="
 input int    TrendEMA           = 200;   // EMA bias H1
 input int    FastEMA            = 9;     // EMA cepat M5
@@ -53,7 +54,7 @@ CTrade trade;
 int hEma9 = INVALID_HANDLE, hEma200 = INVALID_HANDLE;
 datetime lastBar = 0;
 int curDay = -1, tradesToday = 0;
-double dayRef = 0, initBal = 0;
+double dayRef = 0, initBal = 0, peakBal = 0;
 bool dayBlocked = false, halted = false;
 
 string GV(string k) { return "DKDRP_" + _Symbol + "_" + IntegerToString(MagicNumber) + "_" + k; }
@@ -78,6 +79,9 @@ int OnInit()
    else if(GlobalVariableCheck(GV("INIT"))) initBal = GlobalVariableGet(GV("INIT"));
    else initBal = AccountInfoDouble(ACCOUNT_BALANCE);
    GlobalVariableSet(GV("INIT"), initBal);
+   peakBal = GlobalVariableCheck(GV("PEAK")) ? GlobalVariableGet(GV("PEAK")) : initBal;
+   peakBal = MathMax(peakBal, MathMax(initBal, AccountInfoDouble(ACCOUNT_BALANCE)));
+   GlobalVariableSet(GV("PEAK"), peakBal);
    halted = GlobalVariableCheck(GV("HALT")) && GlobalVariableGet(GV("HALT")) > 0;
    if(halted) Print("EA dalam status BERHENTI. Hapus Global Variable ", GV("HALT"), " (F3) untuk mengaktifkan lagi.");
 
@@ -118,6 +122,11 @@ void CloseAll(string why)
       if(HasPosition()) Sleep(300);
    }
    PrintFormat("Posisi ditutup (%s).", why);
+}
+double MaxLossFloor()
+{
+   if(!TrailingMaxLoss) return initBal * (1.0 - MaxLossGuardPct / 100.0);
+   return MathMin(peakBal - initBal * MaxLossGuardPct / 100.0, initBal);   // trailing, maksimal di saldo awal
 }
 void Halt(string why) { halted = true; GlobalVariableSet(GV("HALT"), 1); Alert("DK Doktor Rules PROP BERHENTI: ", why); }
 
@@ -179,7 +188,9 @@ void OnTick()
       tradesToday = 0; dayBlocked = false; SaveDay();
    }
    double eq = AccountInfoDouble(ACCOUNT_EQUITY);
-   if(eq <= initBal * (1.0 - MaxLossGuardPct / 100.0))
+   double bal = AccountInfoDouble(ACCOUNT_BALANCE);
+   if(bal > peakBal) { peakBal = bal; GlobalVariableSet(GV("PEAK"), peakBal); }
+   if(eq <= MaxLossFloor())
    { if(HasPosition()) CloseAll("MAX LOSS GUARD"); if(!halted) Halt(StringFormat("equity %.2f menyentuh max loss guard %.1f%%", eq, MaxLossGuardPct)); }
    if(ProfitTargetPct > 0 && eq >= initBal * (1.0 + ProfitTargetPct / 100.0))
    { if(HasPosition()) CloseAll("PROFIT TARGET"); if(!halted) Halt(StringFormat("target %.1f%% tercapai", ProfitTargetPct)); }
@@ -256,11 +267,11 @@ void ManageBreakEven()
 void ShowPanel()
 {
    double eq = AccountInfoDouble(ACCOUNT_EQUITY);
-   string s = "DK Doktor Rules PROP v1.10 | Doktor Trader\n";
+   string s = "DK Doktor Rules PROP v1.11 | Doktor Trader\n";
    if(halted) s += "STATUS: BERHENTI (max loss guard / target)\n";
    s += StringFormat("Saldo awal %.2f | Equity %.2f (%.2f%%)\n", initBal, eq, (eq / initBal - 1) * 100);
    s += StringFormat("Hari ini %.2f%% | guard -%.1f%% %s | trade %d/%d\n", (eq - dayRef) / initBal * 100, DailyGuardPct, dayBlocked ? "(TERKUNCI)" : "", tradesToday, MaxTradesPerDay);
-   s += StringFormat("Max loss guard: equity %.2f | Risk %.2f%% | RR 1:%.1f\n", initBal * (1 - MaxLossGuardPct / 100.0), RiskPercent, RR);
+   s += StringFormat("Max loss guard%s: equity %.2f | Risk %.2f%% | RR 1:%.1f\n", TrailingMaxLoss ? " (trailing)" : "", MaxLossFloor(), RiskPercent, RR);
    Comment(s);
 }
 //+------------------------------------------------------------------+

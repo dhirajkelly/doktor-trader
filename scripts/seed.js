@@ -761,6 +761,14 @@ function seed() {
     db.setSetting('tool_dk_drp_challenge', '1');
     console.log('[seed] preset challenge Doktor Rules PROP');
   }
+  // EA Doktor Rules PROP v1.11: guard max loss trailing + preset akun trailing drawdown
+  if (db.setting('tool_dk_drp_v111') !== '1') {
+    const add = '\n\n**v1.11, akun dengan max loss trailing** (batas rugi naik mengikuti balance tertinggi, mis. akun instant funded): isi input `TrailingMaxLoss=true`, atau [unduh preset trailing drawdown](/member/unduh/DK_DoktorRules_PROP_TrailingDD.set) (contoh akun $20.000, risiko 0,3% per trade, RR 1:2, guard 5,5% trailing sampai saldo awal, tanpa target). Isi `PropInitialBalance` sesuai akun Anda dan cek aturan trailing di prop firm Anda. Di akun seperti ini, menarik profit juga mendekatkan equity ke batas rugi, jadi sisakan buffer saat withdraw.';
+    db.run("UPDATE tools SET description = description || ? WHERE link_url = '/member/unduh/DK_DoktorRules_PROP.mq5' AND description NOT LIKE '%DK_DoktorRules_PROP_TrailingDD.set%'", [add]);
+    db.run("UPDATE tools SET title = REPLACE(title, 'PROP v1.10', 'PROP v1.11') WHERE link_url = '/member/unduh/DK_DoktorRules_PROP.mq5'");
+    db.setSetting('tool_dk_drp_v111', '1');
+    console.log('[seed] EA Doktor Rules PROP v1.11');
+  }
 }
 
 module.exports = { seed };
