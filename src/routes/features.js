@@ -23,8 +23,9 @@ const safeUrl = (u) => (/^https?:\/\//i.test(String(u || '')) ? String(u).slice(
 // ================= ANALISA DOKTOR =================
 const ILLUS = '<span class="pill gray">Ilustrasi edukasi · bukan data harga riil</span>';
 const VERDICT = { entry: ['Setup diambil', 'ok'], skip: ['Setup dilewati', 'bad'] };
-// Video Analisa Harian XAUUSD: content/analisa-videos.json = [{ "date": "YYYY-MM-DD", "title": "...", "url": "https://youtu.be/<id>", "links": { "instagram": "...", "tiktok": "..." } }]
-// Ditulis oleh scheduled task "XAUUSD daily plan + video" setelah video terposting. Terbaru di atas.
+// Video Analisa Harian XAUUSD: content/analisa-videos.json = [{ "date": "YYYY-MM-DD", "title": "...", "url": "https://www.instagram.com/reel/<code>/" }]
+// Ditulis oleh scheduled task "XAUUSD daily plan + video Short" setelah video terposting. Hanya link postingan IG
+// (videonya tetap di Instagram, tidak disimpan di VPS). Terbaru di atas.
 const fs = require('fs');
 const path = require('path');
 const ANALISA_VIDEOS = path.join(__dirname, '..', '..', 'content', 'analisa-videos.json');
@@ -40,7 +41,10 @@ function videoBlock() {
   if (!vids.length) return '';
   const top = vids[0];
   const id = ytId(top.url);
-  const player = id
+  const ig = (String(top.url).match(/instagram\.com\/(?:reel|reels|p)\/([\w-]+)/) || [])[1];
+  const player = ig
+    ? `<iframe src="https://www.instagram.com/reel/${ig}/embed" title="${esc(top.title || 'Video analisa harian')}" loading="lazy" allowtransparency="true" style="width:100%;max-width:400px;height:720px;border:0;border-radius:14px;background:#fff"></iframe><p style="margin-top:10px"><a class="btn ghost sm" href="${esc(safeUrl(top.url))}" target="_blank" rel="noopener">Buka di Instagram ↗</a></p>`
+    : id
     ? `<div style="position:relative;max-width:360px;aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#000"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${esc(top.title || 'Video analisa harian')}" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>`
     : `<a class="btn sm" href="${esc(safeUrl(top.url))}" target="_blank" rel="noopener">Tonton video ↗</a>`;
   const more = vids.slice(1, 15).map((v) => `<li><a href="${esc(safeUrl(v.url))}" target="_blank" rel="noopener">${esc(v.date)} · ${esc(v.title || 'Analisa XAUUSD')}</a></li>`).join('');

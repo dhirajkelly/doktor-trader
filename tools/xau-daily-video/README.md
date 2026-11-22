@@ -21,6 +21,6 @@ Voice filter: -1 semitone, bass boost, 1.1x tempo; caption/scene timing = raw ti
 Audio is all self-made (synth pad + synthesized SFX), no third-party music.
 Render takes about 8 minutes on 2 cores.
 
-After posting, add the YouTube link to `content/analisa-videos.json` (newest first):
-`{ "date": "YYYY-MM-DD", "title": "...", "url": "https://youtu.be/<id>", "links": { "instagram": "...", "tiktok": "..." } }`.
+After posting, add ONLY the Instagram post link to `content/analisa-videos.json` (newest first; no video file on the VPS):
+`{ "date": "YYYY-MM-DD", "title": "...", "url": "https://www.instagram.com/reel/<code>/" }`.
 It shows on the member page `/member/analisa` ("Video Analisa Harian XAUUSD").
