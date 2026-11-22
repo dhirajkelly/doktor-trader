@@ -5,3 +5,4 @@ remotion/out/
 out/
 scripts/script.py
 __pycache__/
+remotion/public/host/
