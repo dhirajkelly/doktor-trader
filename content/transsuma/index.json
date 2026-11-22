@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-22T19:58:02Z",
+ "generated": "2026-11-22T19:59:19Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -509,6 +509,49 @@
     {
      "q": "Mengapa jumlah di logbook sering tidak cocok dengan manifest?",
      "a": "Penyebab umum adalah satuan yang berbeda (liter dan kilogram), penimbangan yang tidak dilakukan saat limbah masuk TPS, atau pengeluaran yang belum dicatat. Gunakan satu satuan utama dan catat nomor manifest pada baris pengeluaran."
+    }
+   ]
+  },
+  {
+   "id": "kode-limbah-b3",
+   "slug": "kode-limbah-b3",
+   "title": "Kode Limbah B3: Cara Membaca Lampiran IX PP 22/2021 dan Contohnya",
+   "publish_at_wib": "2026-11-23 17:00",
+   "publish_at_utc": "2026-11-23T10:00:00Z",
+   "url": "https://transsuma.com/kode-limbah-b3/",
+   "html": "html/kode-limbah-b3.html",
+   "image": "img/kode-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang kode limbah B3",
+   "excerpt": "Arti huruf, angka, dan akhiran pada kode limbah B3 di Lampiran IX PP 22/2021, lengkap dengan contoh dan langkah menetapkan kode di fasilitas.",
+   "meta_title": "Kode Limbah B3: Cara Membaca Lampiran IX PP 22/2021",
+   "meta_description": "Panduan membaca kode limbah B3 di Lampiran IX PP 22/2021: arti huruf A dan B, akhiran d, kode industri, kategori bahaya, serta contoh kode yang sering dipakai.",
+   "focus_keyword": "kode limbah b3",
+   "categories": [
+    "Regulasi Limbah B3",
+    "Jenis & Karakteristik Limbah B3"
+   ],
+   "tags": [
+    "kode limbah b3",
+    "pp 22 2021",
+    "kategori limbah b3",
+    "identifikasi limbah"
+   ],
+   "faq": [
+    {
+     "q": "Di mana daftar kode limbah B3 bisa ditemukan?",
+     "a": "Daftar limbah B3 beserta kodenya tercantum dalam Lampiran IX Peraturan Pemerintah Nomor 22 Tahun 2021 tentang Penyelenggaraan Perlindungan dan Pengelolaan Lingkungan Hidup."
+    },
+    {
+     "q": "Apa arti huruf A dan B pada kode limbah B3?",
+     "a": "Dalam tabel Lampiran IX PP 22/2021, kode berawalan A tercantum dengan kategori bahaya 1, sedangkan kode berawalan B tercantum dengan kategori bahaya 2. Kategori 1 memiliki tingkat bahaya lebih tinggi."
+    },
+    {
+     "q": "Apa arti akhiran d pada kode seperti B105d?",
+     "a": "Akhiran a, b, c, dan d menunjukkan subkelompok dalam daftar limbah B3 dari sumber tidak spesifik. Huruf d adalah subkelompok tidak spesifik lain, misalnya aki atau baterai bekas (A102d) dan minyak pelumas bekas (B105d)."
+    },
+    {
+     "q": "Bagaimana jika limbah saya tidak tercantum dalam Lampiran IX?",
+     "a": "Limbah yang tidak tercantum tetap bisa termasuk limbah B3 bila menunjukkan karakteristik berbahaya. Penetapannya dilakukan melalui identifikasi dan uji karakteristik sesuai ketentuan, bukan dengan menebak kode yang mirip."
     }
    ]
   }

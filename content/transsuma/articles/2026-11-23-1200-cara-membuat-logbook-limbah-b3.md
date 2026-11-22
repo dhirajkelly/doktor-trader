@@ -137,6 +137,18 @@ Tips agar pelaporan tidak menumpuk:
 - Tetapkan penanggung jawab dan penggantinya, agar pencatatan tetap berjalan saat petugas cuti.
 - Lakukan pemeriksaan silang singkat setiap bulan antara logbook, kondisi fisik TPS, dan manifest.
 
+## Kesalahan umum dalam pengisian logbook
+
+Beberapa kesalahan berikut sering membuat logbook sulit dipakai saat laporan disusun atau saat pemeriksaan:
+
+- **Mencatat secara gelondongan.** Limbah dicatat sekali di akhir bulan berdasarkan perkiraan, sehingga tanggal masuk dan batas masa simpan setiap kemasan tidak bisa ditelusuri.
+- **Mencampur beberapa jenis limbah dalam satu lembar.** Akibatnya neraca per kode limbah harus dipilah ulang secara manual.
+- **Tidak mencatat limbah yang dipindahkan antarkemasan.** Bila isi drum rusak dipindahkan ke drum baru, nomor kemasan baru perlu dicatat agar jejaknya tidak putus.
+- **Kode limbah berbeda antardokumen.** Kode di label, logbook, rincian teknis, dan manifest harus sama.
+- **Koreksi tanpa jejak.** Bila ada salah tulis, coret dengan satu garis dan beri paraf, atau simpan riwayat perubahan bila memakai berkas elektronik, alih-alih menghapus data lama.
+
+Memperbaiki kebiasaan ini tidak membutuhkan sistem mahal. Yang dibutuhkan adalah format yang jelas, petugas yang paham, dan pemeriksaan rutin oleh penanggung jawab.
+
 ## Kesimpulan
 
 Logbook limbah B3 adalah catatan harian setiap limbah yang masuk dan keluar TPS, sedangkan neraca adalah ringkasan bulanan yang membandingkan limbah disimpan, dikumpulkan, dan diserahkan. Permen LHK 6/2021 meminta keduanya disusun mengikuti format Lampiran IX dan dilaporkan paling sedikit 1 kali dalam 6 bulan. Dengan kolom yang lengkap, nomor kemasan yang jelas, satuan yang konsisten, dan nomor manifest di setiap pengeluaran, pencatatan menjadi alat kerja yang membantu, bukan beban menjelang pemeriksaan.
