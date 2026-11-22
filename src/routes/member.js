@@ -197,7 +197,7 @@ router.post('/member/tanya', async (req, res, next) => {
 
 
 const DOWNLOADS = path.join(__dirname, '..', '..', 'downloads');
-const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4', 'PIPTRACKER_GoMart_V1R_SAFE_10k_XAUUSD.set', 'DoktorTrader_AI_Strategy_Lab.zip', 'DoktorTrader_EMA9_VWAP_Fibo.pine', 'DK_HedgeRecovery_Lite.mq5', 'DK_HedgeRecovery_Lite.set', 'DK_HedgeRecovery_PROP.mq5', 'DK_HedgeRecovery_PROP.set', 'DK_DoktorRules_PROP.mq5', 'DK_DoktorRules_PROP.set'];
+const FILES = ['DT_RiskGuard.mq5', 'DT_RiskGuard.mq4', 'DT_SmartSignal.mq5', 'DT_SmartSignal.mq4', 'PIPTRACKER_GoMart_V1R_SAFE_10k_XAUUSD.set', 'DoktorTrader_AI_Strategy_Lab.zip', 'DoktorTrader_EMA9_VWAP_Fibo.pine', 'DK_HedgeRecovery_Lite.mq5', 'DK_HedgeRecovery_Lite.set', 'DK_HedgeRecovery_PROP.mq5', 'DK_HedgeRecovery_PROP.set', 'DK_DoktorRules_PROP.mq5', 'DK_DoktorRules_PROP.set', 'DK_DoktorRules_PROP_Challenge.set'];
 router.get('/member/unduh/:file', (req, res, next) => {
   const f = req.params.file;
   if (!FILES.includes(f)) return next();

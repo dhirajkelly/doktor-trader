@@ -754,6 +754,13 @@ function seed() {
     db.setSetting('doktor_rules_v5', '1');
     console.log(`[seed] doktor rules v5 (${n} materi diperbarui)`);
   }
+  // Preset mode challenge untuk EA Doktor Rules PROP (risk 1%, RR 1:3)
+  if (db.setting('tool_dk_drp_challenge') !== '1') {
+    const add = '\n\n**Preset mode challenge** (opsional): [Unduh preset challenge](/member/unduh/DK_DoktorRules_PROP_Challenge.set) dengan risiko 1% per trade dan TP 3R (RR 1:3), guard dan break-even tetap sama. Dibuat untuk mempercepat fase challenge, dengan konsekuensi **risiko lebih tinggi dan peluang akun gagal lebih besar** dibanding preset standar. Tidak ada jaminan lolos challenge dalam jangka waktu tertentu. Setelah akun funded, kembali ke preset standar (risiko 0,3–0,5%, RR 1:2 sesuai Doktor Rules).';
+    db.run("UPDATE tools SET description = description || ? WHERE link_url = '/member/unduh/DK_DoktorRules_PROP.mq5' AND description NOT LIKE '%DK_DoktorRules_PROP_Challenge.set%'", [add]);
+    db.setSetting('tool_dk_drp_challenge', '1');
+    console.log('[seed] preset challenge Doktor Rules PROP');
+  }
 }
 
 module.exports = { seed };
