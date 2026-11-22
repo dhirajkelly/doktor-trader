@@ -122,6 +122,18 @@ Agar JSA hidup, jadikan ia bagian dari ritme kerja harian:
 
 Keselamatan kerja yang konsisten juga menjadi salah satu fondasi proyek industri yang andal, seperti kami bahas di artikel [keselamatan kerja pada proyek industri](https://sarana-abadi.co.id/2026/05/01/keselamatan-kerja-proyek-industri/).
 
+## Peran Pemilik Pabrik Saat Kontraktor Bekerja
+
+Pada proyek di dalam pabrik yang tetap beroperasi, keselamatan adalah tanggung jawab bersama. Pemilik pabrik dapat membantu JSA kontraktor menjadi lebih tepat dengan cara:
+
+- menyampaikan bahaya khusus di area mereka, misalnya bahan kimia, jalur forklift, mesin yang menyala otomatis, atau area bertekanan;
+- menunjuk perwakilan yang dapat memberi izin kerja dan menghentikan pekerjaan bila diperlukan;
+- menyepakati jadwal pekerjaan berisiko tinggi di luar jam produksi bila memungkinkan;
+- memastikan prosedur isolasi energi (lockout/tagout) pada mesin atau panel yang berada di area kerja kontraktor;
+- ikut dalam inspeksi bersama secara berkala.
+
+Koordinasi seperti ini mengurangi risiko benturan antara aktivitas produksi dan pekerjaan konstruksi, yang sering menjadi sumber insiden di proyek renovasi dan perluasan.
+
 ## Kesimpulan
 
 Job safety analysis adalah cara sederhana untuk memastikan setiap pekerjaan berisiko dibicarakan dan dikendalikan sebelum dimulai. Kuncinya ada pada langkah kerja yang rinci, bahaya yang diidentifikasi bersama pekerja, pengendalian yang mengikuti hierarki, dan penanggung jawab yang jelas. Dalam kerangka SMKK, fungsi ini sejalan dengan Analisis Keselamatan Pekerjaan di dalam Rencana Keselamatan Konstruksi.

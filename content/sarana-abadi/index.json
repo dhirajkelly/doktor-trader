@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-22T21:52:38Z",
+ "generated": "2026-11-22T21:55:19Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1170,6 +1170,92 @@
     {
      "q": "Kapan JSA perlu diperbarui?",
      "a": "JSA perlu ditinjau ulang bila metode kerja, alat, lokasi, atau kondisi lapangan berubah, serta setelah terjadi insiden atau nyaris celaka pada pekerjaan tersebut."
+    }
+   ]
+  },
+  {
+   "id": "jasa-instalasi-listrik-pabrik",
+   "slug": "jasa-instalasi-listrik-pabrik",
+   "title": "Jasa Instalasi Listrik Pabrik: Lingkup, Tahapan, dan SLO",
+   "publish_at_wib": "2026-11-23 16:00",
+   "publish_at_utc": "2026-11-23T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/23/jasa-instalasi-listrik-pabrik/",
+   "html": "html/jasa-instalasi-listrik-pabrik.html",
+   "image": "img/jasa-instalasi-listrik-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa instalasi listrik pabrik",
+   "excerpt": "Apa saja yang termasuk instalasi listrik pabrik, bagaimana tahapannya, dan dokumen apa yang perlu siap sebelum listrik dioperasikan.",
+   "meta_title": "Jasa Instalasi Listrik Pabrik: Lingkup dan Tahapan",
+   "meta_description": "Memilih jasa instalasi listrik pabrik: lingkup pekerjaan, panel dan kabel, tahapan dari desain sampai pengujian, SLO, serta isi penawaran yang perlu dicek.",
+   "focus_keyword": "jasa instalasi listrik pabrik",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Engineering & Design"
+   ],
+   "tags": [
+    "instalasi listrik",
+    "panel listrik",
+    "SLO",
+    "MEP pabrik"
+   ],
+   "faq": [
+    {
+     "q": "Apakah instalasi listrik pabrik wajib memiliki SLO?",
+     "a": "Ya. Undang-Undang Nomor 30 Tahun 2009 tentang Ketenagalistrikan beserta perubahannya mewajibkan setiap instalasi tenaga listrik yang beroperasi memiliki Sertifikat Laik Operasi. SLO diterbitkan setelah instalasi diperiksa dan diuji oleh lembaga yang berwenang."
+    },
+    {
+     "q": "Apa saja lingkup jasa instalasi listrik pabrik?",
+     "a": "Umumnya meliputi desain sistem, panel tegangan menengah dan rendah, jalur kabel, penerangan, stop kontak, instalasi mesin, sistem pembumian, serta pengujian dan dokumen serah terima."
+    },
+    {
+     "q": "Kapan sebaiknya kontraktor listrik dilibatkan dalam proyek pabrik?",
+     "a": "Sebaiknya sejak tahap desain, agar kebutuhan daya, lokasi gardu dan panel, jalur kabel, serta lubang dan sleeve di struktur dapat direncanakan sebelum pekerjaan sipil berjalan."
+    },
+    {
+     "q": "Apa yang perlu disiapkan pemilik pabrik sebelum meminta penawaran?",
+     "a": "Daftar mesin beserta kebutuhan dayanya, layout pabrik, rencana pengembangan kapasitas, dan informasi sambungan dari penyedia listrik. Data ini membuat penawaran lebih akurat dan mudah dibandingkan."
+    }
+   ]
+  },
+  {
+   "id": "pengecatan-struktur-baja",
+   "slug": "pengecatan-struktur-baja",
+   "title": "Pengecatan Struktur Baja: Persiapan Permukaan, Sistem Cat, dan QC",
+   "publish_at_wib": "2026-11-23 19:00",
+   "publish_at_utc": "2026-11-23T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/23/pengecatan-struktur-baja/",
+   "html": "html/pengecatan-struktur-baja.html",
+   "image": "img/pengecatan-struktur-baja.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang pengecatan struktur baja",
+   "excerpt": "Langkah teknis pengecatan struktur baja agar tahan korosi: dari persiapan permukaan dan pemilihan sistem cat sampai pemeriksaan ketebalan.",
+   "meta_title": "Pengecatan Struktur Baja: Panduan Teknis Lengkap",
+   "meta_description": "Panduan pengecatan struktur baja pabrik dan gudang: persiapan permukaan, sistem cat primer hingga top coat, contoh hitungan kebutuhan cat, dan pemeriksaan mutu.",
+   "focus_keyword": "pengecatan struktur baja",
+   "categories": [
+    "Fabrication & Construction",
+    "Quality & Standards"
+   ],
+   "tags": [
+    "cat baja",
+    "sandblasting",
+    "proteksi korosi",
+    "quality control"
+   ],
+   "faq": [
+    {
+     "q": "Mengapa persiapan permukaan penting dalam pengecatan baja?",
+     "a": "Daya lekat cat sangat bergantung pada kebersihan dan kekasaran permukaan. Karat, minyak, garam, dan mill scale yang tertinggal membuat cat cepat mengelupas atau karat muncul dari bawah lapisan."
+    },
+    {
+     "q": "Apa arti Sa 2½ pada spesifikasi cat?",
+     "a": "Sa 2½ adalah tingkat kebersihan hasil blasting menurut ISO 8501-1, yaitu permukaan yang sangat bersih di mana sisa kontaminan hanya tampak sebagai noda tipis. Tingkat ini banyak dipakai sebagai syarat untuk sistem cat berkinerja tinggi."
+    },
+    {
+     "q": "Berapa lapis cat yang dibutuhkan struktur baja?",
+     "a": "Bergantung tingkat korosivitas lingkungan dan umur proteksi yang diinginkan. Sistem umumnya terdiri dari primer, lapis antara, dan lapis akhir, dengan ketebalan total sesuai spesifikasi pabrikan cat dan standar yang dipakai."
+    },
+    {
+     "q": "Bagaimana cara memeriksa ketebalan cat?",
+     "a": "Ketebalan cat kering (DFT) diukur dengan alat ukur ketebalan lapisan pada sejumlah titik sesuai rencana inspeksi. Ketebalan cat basah juga dapat dicek saat aplikasi dengan wet film comb."
     }
    ]
   }

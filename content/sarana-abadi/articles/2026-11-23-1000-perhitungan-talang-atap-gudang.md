@@ -144,7 +144,7 @@ Perhitungan yang benar bisa gagal karena detail di lapangan. Hal-hal berikut per
 
 Pemilihan dan pemasangan lembaran atap yang tepat juga memengaruhi aliran ke talang. Detailnya kami bahas di artikel [jasa pemasangan atap spandek gudang](https://sarana-abadi.co.id/2026/11/22/jasa-pemasangan-atap-spandek-gudang/).
 
-## Pilihan Material Talang
+### Pilihan material talang
 
 | Material | Kelebihan | Hal yang perlu diperhatikan |
 |---|---|---|

@@ -84,7 +84,7 @@ Penawaran yang hanya menyebut "pekerjaan beton loading dock" sering melewatkan i
 7. **Penerangan dan stop kontak.** Lampu dock membantu bongkar muat malam hari dan pemeriksaan isi bak truk.
 8. **Marka dan rambu.** Garis parkir, jalur pejalan kaki, dan tanda batas aman forklift.
 
-## Kanopi Loading Dock
+### Kanopi loading dock
 
 Kanopi melindungi barang dan pekerja dari hujan saat perpindahan dari bak truk. Beberapa hal yang perlu diperhatikan:
 
