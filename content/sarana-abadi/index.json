@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-22T21:51:34Z",
+ "generated": "2026-11-22T21:52:38Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1127,6 +1127,49 @@
     {
      "q": "Apa beda sistem talang gravitasi dan siphonic?",
      "a": "Sistem gravitasi mengandalkan aliran bebas sehingga butuh lebih banyak pipa turun. Sistem siphonic dirancang agar pipa terisi penuh sehingga satu pipa bisa melayani area lebih luas, tetapi desain dan pemasangannya harus mengikuti perhitungan khusus pemasok."
+    }
+   ]
+  },
+  {
+   "id": "job-safety-analysis-proyek-konstruksi",
+   "slug": "job-safety-analysis-proyek-konstruksi",
+   "title": "Job Safety Analysis Proyek Konstruksi: Cara Menyusun dan Contohnya",
+   "publish_at_wib": "2026-11-23 13:00",
+   "publish_at_utc": "2026-11-23T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/23/job-safety-analysis-proyek-konstruksi/",
+   "html": "html/job-safety-analysis-proyek-konstruksi.html",
+   "image": "img/job-safety-analysis-proyek-konstruksi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang job safety analysis proyek konstruksi",
+   "excerpt": "Cara menyusun job safety analysis yang benar-benar dipakai di lapangan, lengkap dengan contoh tabel dan kaitannya dengan SMKK.",
+   "meta_title": "Job Safety Analysis Proyek Konstruksi dan Contohnya",
+   "meta_description": "Panduan job safety analysis proyek konstruksi: pengertian, kaitan dengan SMKK, langkah menyusun JSA, contoh tabel pekerjaan di ketinggian, dan kesalahan umum.",
+   "focus_keyword": "job safety analysis proyek konstruksi",
+   "categories": [
+    "Safety, Health & Environment (SHE)",
+    "Industrial Projects & Case Studies"
+   ],
+   "tags": [
+    "JSA",
+    "K3 konstruksi",
+    "SMKK",
+    "identifikasi bahaya"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu job safety analysis (JSA)?",
+     "a": "JSA adalah analisis yang memecah satu pekerjaan menjadi langkah-langkah, mengidentifikasi bahaya di setiap langkah, lalu menetapkan cara pengendaliannya sebelum pekerjaan dimulai."
+    },
+    {
+     "q": "Apa hubungan JSA dengan SMKK?",
+     "a": "Dalam Sistem Manajemen Keselamatan Konstruksi yang diatur Permen PUPR Nomor 10 Tahun 2021, dikenal Analisis Keselamatan Pekerjaan (AKP) yang fungsinya serupa dengan JSA, yaitu menganalisis bahaya per tahapan pekerjaan."
+    },
+    {
+     "q": "Siapa yang menyusun JSA?",
+     "a": "JSA sebaiknya disusun oleh pengawas pekerjaan bersama pekerja yang akan melakukan pekerjaan tersebut, lalu ditinjau oleh petugas atau ahli K3 proyek."
+    },
+    {
+     "q": "Kapan JSA perlu diperbarui?",
+     "a": "JSA perlu ditinjau ulang bila metode kerja, alat, lokasi, atau kondisi lapangan berubah, serta setelah terjadi insiden atau nyaris celaka pada pekerjaan tersebut."
     }
    ]
   }

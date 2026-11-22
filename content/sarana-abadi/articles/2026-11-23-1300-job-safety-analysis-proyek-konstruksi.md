@@ -5,7 +5,7 @@ publish_at: "2026-11-23 13:00"
 meta_title: "Job Safety Analysis Proyek Konstruksi dan Contohnya"
 meta_description: "Panduan job safety analysis proyek konstruksi: pengertian, kaitan dengan SMKK, langkah menyusun JSA, contoh tabel pekerjaan di ketinggian, dan kesalahan umum."
 focus_keyword: job safety analysis proyek konstruksi
-categories: [Safety, Health & Environment (SHE), Industrial Projects & Case Studies]
+categories: ["Safety, Health & Environment (SHE)", "Industrial Projects & Case Studies"]
 tags: [JSA, K3 konstruksi, SMKK, identifikasi bahaya]
 excerpt: "Cara menyusun job safety analysis yang benar-benar dipakai di lapangan, lengkap dengan contoh tabel dan kaitannya dengan SMKK."
 image_alt: "Gambar sampul artikel PT Sarana Abadi Raya tentang job safety analysis proyek konstruksi"
