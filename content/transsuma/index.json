@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-22T19:59:19Z",
+ "generated": "2026-11-23T20:05:45Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -552,6 +552,49 @@
     {
      "q": "Bagaimana jika limbah saya tidak tercantum dalam Lampiran IX?",
      "a": "Limbah yang tidak tercantum tetap bisa termasuk limbah B3 bila menunjukkan karakteristik berbahaya. Penetapannya dilakukan melalui identifikasi dan uji karakteristik sesuai ketentuan, bukan dengan menebak kode yang mirip."
+    }
+   ]
+  },
+  {
+   "id": "jasa-angkut-sludge-ipal-purwakarta",
+   "slug": "jasa-angkut-sludge-ipal-purwakarta",
+   "title": "Jasa Angkut Sludge IPAL Purwakarta: Kode, Kemasan, dan Persiapannya",
+   "publish_at_wib": "2026-11-24 07:00",
+   "publish_at_utc": "2026-11-24T00:00:00Z",
+   "url": "https://transsuma.com/jasa-angkut-sludge-ipal-purwakarta/",
+   "html": "html/jasa-angkut-sludge-ipal-purwakarta.html",
+   "image": "img/jasa-angkut-sludge-ipal-purwakarta.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang jasa angkut sludge IPAL di Purwakarta",
+   "excerpt": "Yang perlu disiapkan pabrik di Purwakarta sebelum sludge IPAL diangkut: kode limbah, kadar air, kemasan, masa simpan, dan dokumen transporter.",
+   "meta_title": "Jasa Angkut Sludge IPAL Purwakarta: Panduan Pabrik",
+   "meta_description": "Panduan memakai jasa angkut sludge IPAL Purwakarta: status dan kode limbah, mengurangi kadar air, kemasan, masa simpan, contoh hitungan, dan cek transporter.",
+   "focus_keyword": "jasa angkut sludge ipal purwakarta",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3",
+    "Panduan Pengelolaan Limbah untuk Industri"
+   ],
+   "tags": [
+    "sludge ipal",
+    "limbah b3 purwakarta",
+    "b108d",
+    "transporter limbah b3"
+   ],
+   "faq": [
+    {
+     "q": "Apakah sludge IPAL selalu termasuk limbah B3?",
+     "a": "Tidak selalu. Statusnya ditentukan oleh sumber dan karakteristiknya. Sludge dari IPAL terpadu di kawasan industri tercantum sebagai B108d dalam Lampiran IX PP 22/2021, sedangkan sludge dari IPAL pabrik perlu diperiksa terhadap daftar dan, bila perlu, diuji karakteristiknya."
+    },
+    {
+     "q": "Berapa lama sludge IPAL boleh disimpan di TPS?",
+     "a": "Paling lama 90 hari bila limbah B3 yang dihasilkan 50 kg per hari atau lebih. Untuk timbulan di bawah 50 kg per hari, batasnya 180 hari untuk kategori 1 dan 365 hari untuk kategori 2, dihitung sejak limbah dihasilkan."
+    },
+    {
+     "q": "Kemasan apa yang biasa dipakai untuk sludge IPAL?",
+     "a": "Sludge yang sudah cukup padat umumnya dikemas dalam jumbo bag atau drum yang sesuai, ditempatkan di atas palet. Sludge yang masih basah dan mudah merembes sebaiknya dikurangi kadar airnya dulu atau dikemas dalam wadah yang tidak bocor."
+    },
+    {
+     "q": "Apakah sludge IPAL kategori 2 boleh diangkut dengan bak terbuka?",
+     "a": "Permen LHK 6/2021 membolehkan alat angkut terbuka atau tertutup untuk limbah B3 kategori 2, sedangkan kategori 1 wajib tertutup. Namun untuk sludge yang berbau atau berpotensi tercecer, alat angkut tertutup lebih aman."
     }
    ]
   }
