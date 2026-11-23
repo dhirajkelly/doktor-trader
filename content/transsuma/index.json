@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-23T20:05:45Z",
+ "generated": "2026-11-23T20:07:00Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -595,6 +595,49 @@
     {
      "q": "Apakah sludge IPAL kategori 2 boleh diangkut dengan bak terbuka?",
      "a": "Permen LHK 6/2021 membolehkan alat angkut terbuka atau tertutup untuk limbah B3 kategori 2, sedangkan kategori 1 wajib tertutup. Namun untuk sludge yang berbau atau berpotensi tercecer, alat angkut tertutup lebih aman."
+    }
+   ]
+  },
+  {
+   "id": "cara-mengelola-kemasan-bekas-b3",
+   "slug": "cara-mengelola-kemasan-bekas-b3",
+   "title": "Cara Mengelola Kemasan Bekas B3 di Pabrik: Kode, Label, dan Penyimpanan",
+   "publish_at_wib": "2026-11-24 12:00",
+   "publish_at_utc": "2026-11-24T05:00:00Z",
+   "url": "https://transsuma.com/cara-mengelola-kemasan-bekas-b3/",
+   "html": "html/cara-mengelola-kemasan-bekas-b3.html",
+   "image": "img/cara-mengelola-kemasan-bekas-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang cara mengelola kemasan bekas B3",
+   "excerpt": "Langkah praktis mengelola drum, jeriken, IBC, dan karung bekas bahan kimia: kode limbah, label KOSONG, penyimpanan, pencatatan, dan penyerahan.",
+   "meta_title": "Cara Mengelola Kemasan Bekas B3 di Pabrik",
+   "meta_description": "Cara mengelola kemasan bekas B3 di pabrik: menetapkan kode, mengosongkan sisa isi, label KOSONG, penyimpanan di TPS, pencatatan, dan penyerahan berizin.",
+   "focus_keyword": "cara mengelola kemasan bekas b3",
+   "categories": [
+    "Panduan Pengelolaan Limbah untuk Industri",
+    "Jenis & Karakteristik Limbah B3"
+   ],
+   "tags": [
+    "kemasan bekas b3",
+    "b104d",
+    "drum bekas",
+    "tps limbah b3"
+   ],
+   "faq": [
+    {
+     "q": "Apakah drum bekas bahan kimia termasuk limbah B3?",
+     "a": "Ya, bekas kemasan B3 tercantum dalam Lampiran IX PP 22/2021, antara lain dengan kode B104d kemasan bekas B3 (kategori 2). Kemasan bekas bahan kimia tertentu juga bisa masuk Tabel 2, jadi periksa kode yang paling sesuai."
+    },
+    {
+     "q": "Bolehkah drum bekas dijual ke pengepul barang bekas?",
+     "a": "Kemasan bekas B3 adalah limbah B3, sehingga harus diserahkan kepada pihak yang memiliki perizinan untuk mengelola limbah tersebut, misalnya melalui transporter limbah B3 berizin ke pemanfaat atau pengolah."
+    },
+    {
+     "q": "Kapan kemasan perlu diberi label KOSONG?",
+     "a": "Lampiran VII Permen LHK 6/2021 menyebut kemasan yang dikosongkan untuk dipakai kembali menyimpan limbah B3 dengan karakteristik yang sama diberi label KOSONG dan disimpan di TPS."
+    },
+    {
+     "q": "Bolehkah kami mencuci sendiri kemasan bekas B3?",
+     "a": "Permen LHK 6/2021 menyebut pencucian kemasan bekas B3 sebagai salah satu cara pengolahan limbah B3. Karena itu, pencucian sebagai kegiatan pengolahan perlu dilakukan oleh pihak yang memiliki perizinan untuk itu."
     }
    ]
   }
