@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-23T20:07:00Z",
+ "generated": "2026-11-23T20:07:59Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -638,6 +638,48 @@
     {
      "q": "Bolehkah kami mencuci sendiri kemasan bekas B3?",
      "a": "Permen LHK 6/2021 menyebut pencucian kemasan bekas B3 sebagai salah satu cara pengolahan limbah B3. Karena itu, pencucian sebagai kegiatan pengolahan perlu dilakukan oleh pihak yang memiliki perizinan untuk itu."
+    }
+   ]
+  },
+  {
+   "id": "pengolahan-limbah-b3",
+   "slug": "pengolahan-limbah-b3",
+   "title": "Pengolahan Limbah B3 menurut Permen LHK 6/2021: Cara dan Syaratnya",
+   "publish_at_wib": "2026-11-24 17:00",
+   "publish_at_utc": "2026-11-24T10:00:00Z",
+   "url": "https://transsuma.com/pengolahan-limbah-b3/",
+   "html": "html/pengolahan-limbah-b3.html",
+   "image": "img/pengolahan-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang pengolahan limbah B3",
+   "excerpt": "Cara pengolahan limbah B3 yang diatur Permen LHK 6/2021, syarat teknis utamanya, dan bedanya dengan pemanfaatan serta penimbunan.",
+   "meta_title": "Pengolahan Limbah B3: Cara dan Syarat Permen LHK 6/2021",
+   "meta_description": "Penjelasan pengolahan limbah B3 menurut Permen LHK 6/2021: termal, stabilisasi dan solidifikasi, cara lain, syarat insinerator, serta beda dengan pemanfaatan.",
+   "focus_keyword": "pengolahan limbah b3",
+   "categories": [
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "pengolahan limbah b3",
+    "permen lhk 6 2021",
+    "insinerator",
+    "stabilisasi solidifikasi"
+   ],
+   "faq": [
+    {
+     "q": "Apa saja cara pengolahan limbah B3 menurut Permen LHK 6/2021?",
+     "a": "Pasal 124 menyebut tiga cara: termal, stabilisasi dan solidifikasi, serta cara lain sesuai perkembangan ilmu pengetahuan dan teknologi, yaitu bioremediasi, elektrokoagulasi, dan/atau pencucian tangki kapal maupun kemasan bekas B3."
+    },
+    {
+     "q": "Berapa standar efisiensi insinerator limbah B3?",
+     "a": "Pasal 131 menetapkan efisiensi pembakaran paling sedikit 99,99% dan efisiensi penghancuran dan penghilangan POHCs paling sedikit 99,99%, dengan pengecualian tertentu. Untuk PCBs, standarnya paling sedikit 99,9999%."
+    },
+    {
+     "q": "Apa beda pengolahan dan pemanfaatan limbah B3?",
+     "a": "Pemanfaatan menjadikan limbah B3 sebagai substitusi bahan baku, substitusi sumber energi, atau bahan baku. Pengolahan bertujuan mengurangi atau menghilangkan sifat bahaya limbah, misalnya dengan pembakaran atau stabilisasi dan solidifikasi."
+    },
+    {
+     "q": "Apakah abu sisa insinerator masih limbah B3?",
+     "a": "Pasal 133 Permen LHK 6/2021 menyatakan abu terbang, abu dasar, dan residu pengolahan flue gas dari insinerator wajib dilakukan pengelolaan lebih lanjut."
     }
    ]
   }
