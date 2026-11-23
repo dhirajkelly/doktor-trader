@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-23T21:50:55Z",
+ "generated": "2026-11-23T21:54:06Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1342,6 +1342,135 @@
     {
      "q": "Bagaimana cara memeriksa baut yang sudah dikencangkan?",
      "a": "Pemeriksaan dilakukan dengan mengamati proses pengencangan, memeriksa tanda match-mark pada metode turn-of-nut, mengecek ujung TC bolt yang putus, atau mengukur celah indikator DTI, sesuai metode yang dipakai."
+    }
+   ]
+  },
+  {
+   "id": "inspection-and-test-plan-proyek-konstruksi",
+   "slug": "inspection-and-test-plan-proyek-konstruksi",
+   "title": "Inspection and Test Plan Proyek Konstruksi: Cara Menyusun dan Contoh",
+   "publish_at_wib": "2026-11-24 13:00",
+   "publish_at_utc": "2026-11-24T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/24/inspection-and-test-plan-proyek-konstruksi/",
+   "html": "html/inspection-and-test-plan-proyek-konstruksi.html",
+   "image": "img/inspection-and-test-plan-proyek-konstruksi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang inspection and test plan proyek konstruksi",
+   "excerpt": "Cara menyusun inspection and test plan yang benar-benar dipakai di lapangan, lengkap dengan contoh tabel pekerjaan beton dan arti setiap titik inspeksi.",
+   "meta_title": "Inspection and Test Plan (ITP) Proyek Konstruksi",
+   "meta_description": "Panduan inspection and test plan proyek konstruksi: fungsi ITP, hold point dan witness point, langkah menyusun, contoh tabel pekerjaan beton, dan kesalahannya.",
+   "focus_keyword": "inspection and test plan proyek konstruksi",
+   "categories": [
+    "Quality & Standards",
+    "Industrial Projects & Case Studies"
+   ],
+   "tags": [
+    "ITP",
+    "quality control",
+    "hold point",
+    "manajemen mutu"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu inspection and test plan (ITP)?",
+     "a": "ITP adalah dokumen yang menetapkan inspeksi dan pengujian apa saja yang dilakukan pada suatu pekerjaan, kapan dilakukan, siapa yang terlibat, apa kriteria penerimaannya, dan dokumen apa yang menjadi buktinya."
+    },
+    {
+     "q": "Apa beda hold point dan witness point?",
+     "a": "Hold point adalah titik di mana pekerjaan wajib berhenti sampai inspeksi disetujui pihak yang ditunjuk. Witness point adalah titik di mana pihak tersebut diundang menyaksikan, tetapi pekerjaan boleh lanjut bila mereka tidak hadir setelah pemberitahuan yang cukup."
+    },
+    {
+     "q": "Siapa yang menyusun ITP?",
+     "a": "ITP biasanya disusun oleh kontraktor, khususnya tim quality control, lalu diajukan untuk disetujui oleh konsultan pengawas atau wakil pemilik proyek sebelum pekerjaan dimulai."
+    },
+    {
+     "q": "Apakah proyek kecil juga perlu ITP?",
+     "a": "Perlu, walaupun bentuknya bisa lebih ringkas. Bahkan pada proyek renovasi atau gudang kecil, ITP membantu memastikan pemeriksaan penting seperti pembesian sebelum cor tidak terlewat."
+    }
+   ]
+  },
+  {
+   "id": "jasa-instalasi-hydrant-pabrik",
+   "slug": "jasa-instalasi-hydrant-pabrik",
+   "title": "Jasa Instalasi Hydrant Pabrik: Komponen, Tahapan, dan Uji Fungsi",
+   "publish_at_wib": "2026-11-24 16:00",
+   "publish_at_utc": "2026-11-24T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/24/jasa-instalasi-hydrant-pabrik/",
+   "html": "html/jasa-instalasi-hydrant-pabrik.html",
+   "image": "img/jasa-instalasi-hydrant-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa instalasi hydrant pabrik",
+   "excerpt": "Apa yang perlu Anda ketahui sebelum memesan instalasi hydrant untuk pabrik atau gudang, dari komponen sistem sampai uji fungsi dan perawatan.",
+   "meta_title": "Jasa Instalasi Hydrant Pabrik: Panduan untuk Pemilik",
+   "meta_description": "Panduan jasa instalasi hydrant pabrik: komponen sistem, rumah pompa, jaringan pipa, tahapan pemasangan, uji tekanan dan uji fungsi, dan memilih kontraktor.",
+   "focus_keyword": "jasa instalasi hydrant pabrik",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Safety, Health & Environment (SHE)"
+   ],
+   "tags": [
+    "hydrant",
+    "proteksi kebakaran",
+    "pompa kebakaran",
+    "MEP pabrik"
+   ],
+   "faq": [
+    {
+     "q": "Apa saja komponen utama sistem hydrant pabrik?",
+     "a": "Komponen utamanya adalah sumber air atau tangki, rumah pompa berisi pompa utama dan jockey pump, panel kontrol, jaringan pipa, katup, hydrant pillar atau box hydrant, selang dan nozzle, serta sambungan untuk mobil pemadam (siamese connection)."
+    },
+    {
+     "q": "Mengapa sistem hydrant perlu didesain oleh ahli?",
+     "a": "Kapasitas air, tekanan, ukuran pipa, dan jumlah titik hydrant harus dihitung sesuai luas, tinggi, dan tingkat bahaya bangunan. Sistem yang dipasang tanpa perhitungan bisa terlihat lengkap tetapi tidak mampu memberikan tekanan cukup saat dibutuhkan."
+    },
+    {
+     "q": "Apakah sistem hydrant perlu diuji setelah dipasang?",
+     "a": "Ya. Minimal dilakukan uji tekanan (hydrostatic test) pada jaringan pipa, uji fungsi pompa dan panel, serta uji pancaran di titik hydrant. Hasilnya didokumentasikan sebagai bagian dari serah terima dan kelengkapan dokumen bangunan."
+    },
+    {
+     "q": "Seberapa sering sistem hydrant harus diperiksa?",
+     "a": "Pemeriksaan visual dan uji jalan pompa perlu dilakukan berkala, sedangkan pengujian yang lebih lengkap dilakukan dengan interval lebih panjang. Jadwal rinci sebaiknya mengikuti standar yang dirujuk, rekomendasi pabrikan, dan ketentuan asuransi Anda."
+    }
+   ]
+  },
+  {
+   "id": "konversi-mutu-beton-k-ke-fc",
+   "slug": "konversi-mutu-beton-k-ke-fc",
+   "title": "Konversi Mutu Beton K ke fc': Rumus, Tabel, dan Cara Membacanya",
+   "publish_at_wib": "2026-11-24 19:00",
+   "publish_at_utc": "2026-11-24T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/24/konversi-mutu-beton-k-ke-fc/",
+   "html": "html/konversi-mutu-beton-k-ke-fc.html",
+   "image": "img/konversi-mutu-beton-k-ke-fc.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang konversi mutu beton K ke fc'",
+   "excerpt": "Mengapa K-300 tidak sama dengan fc' 30 MPa, bagaimana rumus konversinya, dan cara menulis mutu beton yang tidak menimbulkan salah paham di proyek.",
+   "meta_title": "Konversi Mutu Beton K ke fc': Rumus dan Tabel",
+   "meta_description": "Panduan konversi mutu beton K ke fc': beda benda uji kubus dan silinder, rumus konversi, tabel K-175 sampai K-400, contoh hitungan, dan penulisan spesifikasi.",
+   "focus_keyword": "konversi mutu beton k ke fc",
+   "categories": [
+    "Engineering & Design",
+    "Quality & Standards"
+   ],
+   "tags": [
+    "mutu beton",
+    "fc",
+    "kuat tekan beton",
+    "ready mix"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda mutu beton K dan fc'?",
+     "a": "Mutu K menyatakan kuat tekan karakteristik dalam kg/cm² berdasarkan benda uji kubus, sedangkan fc' menyatakan kuat tekan yang disyaratkan dalam MPa berdasarkan benda uji silinder. Karena satuan dan bentuk benda ujinya berbeda, angkanya tidak bisa disamakan begitu saja."
+    },
+    {
+     "q": "K-300 setara fc' berapa?",
+     "a": "Dengan rumus konversi yang umum dipakai, K-300 setara sekitar 24 sampai 25 MPa, tergantung pembulatan dan faktor yang digunakan. Untuk spesifikasi, sebaiknya tuliskan mutu langsung dalam fc' dan MPa."
+    },
+    {
+     "q": "Standar beton struktural di Indonesia memakai K atau fc'?",
+     "a": "SNI 2847:2019 tentang persyaratan beton struktural untuk bangunan gedung menggunakan fc' dalam MPa dengan benda uji silinder. Istilah K masih sering dipakai di lapangan dan katalog ready mix sebagai kebiasaan lama."
+    },
+    {
+     "q": "Bolehkah hasil uji kubus dipakai untuk menilai beton yang dispesifikasikan dalam fc'?",
+     "a": "Sebaiknya jenis benda uji mengikuti spesifikasi proyek. Bila terpaksa memakai kubus, metode konversi dan kriteria penerimaannya harus disepakati tertulis dengan perencana sebelum pengujian."
     }
    ]
   }
