@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-23T21:23:41Z",
+ "generated": "2026-11-23T21:24:48Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -1388,6 +1388,49 @@
     {
      "q": "Bagaimana mencegah konflik dengan warga sekitar mess?",
      "a": "Lapor ke RT/RW sejak awal, tetapkan aturan penghuni soal parkir, kebisingan, dan tamu, serta tunjuk penanggung jawab mess yang mudah dihubungi warga."
+    }
+   ]
+  },
+  {
+   "id": "uang-tanda-jadi-beli-rumah",
+   "slug": "uang-tanda-jadi-beli-rumah",
+   "title": "Uang Tanda Jadi Beli Rumah: Aturan, Risiko Hangus, dan Cara Amannya",
+   "publish_at_wib": "2026-11-24 19:00",
+   "publish_at_utc": "2026-11-24T12:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/24/uang-tanda-jadi-beli-rumah/",
+   "html": "html/uang-tanda-jadi-beli-rumah.html",
+   "image": "img/uang-tanda-jadi-beli-rumah.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang uang tanda jadi beli rumah",
+   "excerpt": "Panduan memahami uang tanda jadi beli rumah: dasar hukum panjar, aturan pembatalan dari pengembang, risiko hangus, dan cara membayarnya dengan aman.",
+   "meta_title": "Uang Tanda Jadi Beli Rumah: Aturan dan Cara Aman",
+   "meta_description": "Sebelum bayar uang tanda jadi beli rumah, pahami dasar hukumnya, kapan bisa hangus atau kembali, aturan pembatalan dari pengembang, dan isi kuitansi yang aman.",
+   "focus_keyword": "uang tanda jadi beli rumah",
+   "categories": [
+    "Panduan & Edukasi Agen",
+    "Jual • Beli • Sewa"
+   ],
+   "tags": [
+    "tanda jadi",
+    "booking fee",
+    "panjar",
+    "ppjb"
+   ],
+   "faq": [
+    {
+     "q": "Apakah uang tanda jadi beli rumah bisa dikembalikan jika batal?",
+     "a": "Tergantung siapa yang membatalkan, alasannya, dan isi kesepakatan tertulis. Tanpa kesepakatan khusus, panjar yang diberikan pembeli umumnya tidak bisa diminta kembali jika pembeli sendiri yang mundur. Karena itu, tuliskan syarat pengembalian sejak awal."
+    },
+    {
+     "q": "Apa beda uang tanda jadi, booking fee, dan uang muka?",
+     "a": "Dalam praktik istilah ini sering tumpang tindih. Tanda jadi atau booking fee biasanya nominal awal untuk mengikat unit, sedangkan uang muka adalah bagian harga yang dibayar sebelum pelunasan. Yang menentukan akibat hukumnya adalah isi perjanjian, bukan sekadar sebutannya."
+    },
+    {
+     "q": "Bagaimana jika penjual membatalkan setelah menerima tanda jadi?",
+     "a": "Penjual tidak bisa membatalkan secara sepihak begitu saja. Dalam pembelian dari pengembang, jika pembatalan terjadi karena kelalaian pengembang, aturan mewajibkan seluruh pembayaran dikembalikan. Untuk transaksi perorangan, ikuti kesepakatan tertulis dan konsultasikan dengan ahli hukum bila terjadi sengketa."
+    },
+    {
+     "q": "Kepada siapa sebaiknya uang tanda jadi dibayarkan?",
+     "a": "Bayarkan langsung ke rekening atas nama pemilik sah yang tercantum di sertifikat, atau ke rekening resmi perusahaan pengembang. Hindari membayar tunai tanpa kuitansi atau ke rekening pribadi pihak lain."
     }
    ]
   }
