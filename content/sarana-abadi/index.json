@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-24T21:50:34Z",
+ "generated": "2026-11-24T21:54:12Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1557,6 +1557,135 @@
     {
      "q": "Pengujian apa yang dilakukan pada pondasi tiang?",
      "a": "Yang umum adalah uji beban statik atau uji dinamik untuk memastikan daya dukung, serta uji integritas tiang untuk mendeteksi cacat. Jenis dan jumlah uji ditetapkan oleh perencana sesuai spesifikasi proyek."
+    }
+   ]
+  },
+  {
+   "id": "method-statement-proyek-konstruksi",
+   "slug": "method-statement-proyek-konstruksi",
+   "title": "Method Statement Proyek Konstruksi: Isi, Cara Menyusun, dan Contoh",
+   "publish_at_wib": "2026-11-25 13:00",
+   "publish_at_utc": "2026-11-25T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/25/method-statement-proyek-konstruksi/",
+   "html": "html/method-statement-proyek-konstruksi.html",
+   "image": "img/method-statement-proyek-konstruksi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang method statement proyek konstruksi",
+   "excerpt": "Cara menyusun method statement yang benar-benar dipakai tim lapangan, lengkap dengan isi wajib dan contoh urutan kerja erection struktur baja.",
+   "meta_title": "Method Statement Proyek Konstruksi: Isi dan Contoh",
+   "meta_description": "Panduan method statement proyek konstruksi: fungsi, isi wajib, langkah menyusun, contoh urutan kerja erection baja, dan kesalahan yang perlu dihindari.",
+   "focus_keyword": "method statement proyek konstruksi",
+   "categories": [
+    "Quality & Standards",
+    "Industrial Projects & Case Studies"
+   ],
+   "tags": [
+    "metode kerja",
+    "manajemen proyek",
+    "quality control",
+    "K3 konstruksi"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu method statement dalam proyek konstruksi?",
+     "a": "Method statement adalah dokumen yang menjelaskan langkah demi langkah bagaimana suatu pekerjaan akan dilaksanakan, termasuk sumber daya, peralatan, urutan kerja, pengendalian mutu, dan pengendalian bahaya."
+    },
+    {
+     "q": "Apa beda method statement dengan JSA?",
+     "a": "Method statement menjelaskan cara melaksanakan pekerjaan secara keseluruhan. JSA atau job safety analysis memecah pekerjaan menjadi langkah-langkah lalu mengidentifikasi bahaya dan pengendaliannya di setiap langkah. Keduanya saling melengkapi dan sering dilampirkan bersama."
+    },
+    {
+     "q": "Siapa yang menyetujui method statement?",
+     "a": "Biasanya disusun oleh kontraktor pelaksana, ditinjau oleh tim mutu dan K3 internal, lalu diajukan untuk disetujui konsultan pengawas atau wakil pemilik proyek sebelum pekerjaan dimulai."
+    },
+    {
+     "q": "Apakah method statement perlu diperbarui?",
+     "a": "Perlu, bila ada perubahan desain, peralatan, urutan kerja, kondisi lapangan, atau temuan dari inspeksi dan insiden. Versi yang dipakai di lapangan harus selalu versi terakhir yang disetujui."
+    }
+   ]
+  },
+  {
+   "id": "jasa-perluasan-bangunan-pabrik",
+   "slug": "jasa-perluasan-bangunan-pabrik",
+   "title": "Jasa Perluasan Bangunan Pabrik: Tahapan, Perizinan, dan Tips Aman",
+   "publish_at_wib": "2026-11-25 16:00",
+   "publish_at_utc": "2026-11-25T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/25/jasa-perluasan-bangunan-pabrik/",
+   "html": "html/jasa-perluasan-bangunan-pabrik.html",
+   "image": "img/jasa-perluasan-bangunan-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa perluasan bangunan pabrik",
+   "excerpt": "Hal yang perlu Anda siapkan sebelum memperluas pabrik: kajian struktur lama, perizinan, detail sambungan, dan cara bekerja tanpa menghentikan produksi.",
+   "meta_title": "Jasa Perluasan Bangunan Pabrik: Tahapan dan Tips",
+   "meta_description": "Panduan memakai jasa perluasan bangunan pabrik: cek struktur lama, perizinan PBG, sambungan dengan bangunan eksisting, dan kerja aman saat pabrik beroperasi.",
+   "focus_keyword": "jasa perluasan bangunan pabrik",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Industrial Projects & Case Studies"
+   ],
+   "tags": [
+    "perluasan pabrik",
+    "ekspansi gudang",
+    "PBG",
+    "struktur baja"
+   ],
+   "faq": [
+    {
+     "q": "Apakah perluasan pabrik memerlukan izin baru?",
+     "a": "Ya. Berdasarkan PP Nomor 16 Tahun 2021, Persetujuan Bangunan Gedung (PBG) diperlukan untuk membangun baru, mengubah, memperluas, mengurangi, dan/atau merawat bangunan gedung. Detail prosedur dan dokumennya mengikuti ketentuan pemerintah daerah setempat."
+    },
+    {
+     "q": "Bisakah perluasan dikerjakan tanpa menghentikan produksi?",
+     "a": "Dalam banyak kasus bisa, dengan pemisahan area kerja, penjadwalan pekerjaan berisiko di luar jam produksi, pengendalian debu, dan koordinasi ketat dengan tim operasional. Pekerjaan penyambungan ke bangunan lama biasanya memerlukan jendela waktu khusus."
+    },
+    {
+     "q": "Apakah struktur baru boleh menumpang pada kolom bangunan lama?",
+     "a": "Hanya boleh bila hasil kajian struktur membuktikan kolom, pondasi, dan sambungan lama mampu memikul beban tambahan. Bila tidak, struktur baru dibuat berdiri sendiri dengan dilatasi terhadap bangunan lama."
+    },
+    {
+     "q": "Dokumen apa yang sebaiknya disiapkan sebelum menghubungi kontraktor?",
+     "a": "Siapkan gambar bangunan eksisting bila ada, dokumen perizinan lama, data penyelidikan tanah, kebutuhan luas dan fungsi ruang baru, serta jadwal operasional pabrik yang tidak boleh terganggu."
+    }
+   ]
+  },
+  {
+   "id": "sambungan-lantai-beton-gudang",
+   "slug": "sambungan-lantai-beton-gudang",
+   "title": "Sambungan Lantai Beton Gudang: Jenis Joint, Jarak, dan Perawatannya",
+   "publish_at_wib": "2026-11-25 19:00",
+   "publish_at_utc": "2026-11-25T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/25/sambungan-lantai-beton-gudang/",
+   "html": "html/sambungan-lantai-beton-gudang.html",
+   "image": "img/sambungan-lantai-beton-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang sambungan lantai beton gudang",
+   "excerpt": "Mengenal jenis sambungan pada lantai beton gudang, cara menentukan jaraknya, dan langkah mencegah retak serta kerusakan tepi joint akibat forklift.",
+   "meta_title": "Sambungan Lantai Beton Gudang: Jenis dan Jarak Joint",
+   "meta_description": "Panduan sambungan lantai beton gudang: jenis joint, cara menentukan jarak potong, waktu saw cut, pengisi joint, dan cara mencegah kerusakan akibat forklift.",
+   "focus_keyword": "sambungan lantai beton gudang",
+   "categories": [
+    "Engineering & Design",
+    "Construction Technology & Innovation"
+   ],
+   "tags": [
+    "lantai beton",
+    "joint lantai",
+    "saw cut",
+    "lantai gudang"
+   ],
+   "faq": [
+    {
+     "q": "Mengapa lantai beton gudang perlu sambungan?",
+     "a": "Beton menyusut saat mengering dan bergerak akibat perubahan suhu. Sambungan membuat retak terjadi di garis yang direncanakan dan rapi, bukan menyebar acak di permukaan lantai."
+    },
+    {
+     "q": "Kapan pemotongan sambungan (saw cut) dilakukan?",
+     "a": "Sesegera mungkin setelah beton cukup keras sehingga tepi potongan tidak terkelupas, umumnya dalam hitungan jam setelah finishing. Waktunya bergantung pada campuran beton, cuaca, dan jenis alat potong, sehingga perlu dipantau di lapangan."
+    },
+    {
+     "q": "Apa pengisi yang cocok untuk sambungan di jalur forklift?",
+     "a": "Untuk jalur roda keras, pengisi semi-rigid seperti epoxy atau polyurea sering dipakai karena menopang tepi sambungan. Sealant elastis lebih cocok untuk sambungan yang masih banyak bergerak atau area yang tidak dilintasi roda keras."
+    },
+    {
+     "q": "Apakah lantai tanpa sambungan bisa dibuat?",
+     "a": "Ada sistem lantai dengan sambungan sangat sedikit, misalnya dengan serat baja, pasca-tarik, atau beton kompensasi susut. Sistem ini memerlukan desain khusus dan pelaksanaan yang ketat, sehingga perlu dikaji sesuai kebutuhan gudang."
     }
    ]
   }

@@ -117,6 +117,8 @@ Apa pun jenis tiangnya, pengujian lapangan adalah bukti bahwa pondasi bekerja se
 
 Jenis dan jumlah uji ditetapkan dalam spesifikasi teknis. Pastikan juga catatan harian pemasangan setiap tiang tersimpan rapi sebagai bagian dokumen serah terima.
 
+Untuk tiang pancang, catatan tersebut biasanya memuat panjang tiang terpasang, jumlah segmen dan sambungan, serta data penetrasi atau tekanan akhir. Untuk bore pile, catatan memuat kedalaman pengeboran, kondisi tanah yang ditemui, waktu pembersihan dasar lubang, volume beton terpakai dibandingkan volume teoretis, dan kelancaran pengecoran. Volume beton yang jauh melebihi perkiraan bisa menandakan dinding lubang runtuh, sedangkan volume yang kurang bisa menandakan penyempitan. Data seperti ini membantu perencana menilai apakah ada titik yang perlu diuji tambahan.
+
 ## Kesimpulan
 
 Pilihan tiang pancang vs bore pile ditentukan oleh data tanah, besar beban, kondisi lingkungan sekitar, akses, dan jadwal, bukan oleh anggapan bahwa satu sistem selalu lebih murah atau lebih kuat. Tiang pancang unggul pada mutu produk pabrik dan kecepatan pemasangan, sedangkan bore pile unggul pada getaran rendah dan fleksibilitas ukuran. Keputusan terbaik lahir dari penyelidikan tanah yang memadai, perbandingan desain dan BOQ yang setara, serta pengujian lapangan yang jelas.
