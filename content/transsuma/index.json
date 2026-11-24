@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-24T19:58:09Z",
+ "generated": "2026-11-24T19:59:24Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -766,6 +766,53 @@
     {
      "q": "Apakah Permen LH 14/2013 masih berlaku?",
      "a": "Permen LH 14/2013 tidak termasuk peraturan yang dicabut oleh Pasal 236 Permen LHK 6/2021, dan Pasal 70 ayat (2) Permen LHK 6/2021 merujuk pelekatan simbol dan label sesuai peraturan perundang-undangan. Konfirmasikan penerapannya dengan dinas lingkungan hidup setempat."
+    }
+   ]
+  },
+  {
+   "id": "kewajiban-penghasil-limbah-b3",
+   "slug": "kewajiban-penghasil-limbah-b3",
+   "title": "Kewajiban Penghasil Limbah B3 menurut PP 22/2021: Daftar Lengkap",
+   "publish_at_wib": "2026-11-25 17:00",
+   "publish_at_utc": "2026-11-25T10:00:00Z",
+   "url": "https://transsuma.com/kewajiban-penghasil-limbah-b3/",
+   "html": "html/kewajiban-penghasil-limbah-b3.html",
+   "image": "img/kewajiban-penghasil-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang kewajiban penghasil limbah B3",
+   "excerpt": "Rangkuman kewajiban penghasil limbah B3 dalam PP 22/2021 dan Permen LHK 6/2021, lengkap dengan pasal, frekuensi, dan daftar periksa untuk tim EHS.",
+   "meta_title": "Kewajiban Penghasil Limbah B3 menurut PP 22/2021",
+   "meta_description": "Daftar kewajiban penghasil limbah B3 menurut PP 22/2021: pengurangan, penyimpanan, kemasan dan label, masa simpan, pelaporan, penyerahan, dan kedaruratan.",
+   "focus_keyword": "kewajiban penghasil limbah b3",
+   "categories": [
+    "Regulasi Limbah B3",
+    "Panduan Pengelolaan Limbah untuk Industri"
+   ],
+   "tags": [
+    "penghasil limbah b3",
+    "pp 22 2021",
+    "pelaporan limbah b3",
+    "kepatuhan lingkungan"
+   ],
+   "faq": [
+    {
+     "q": "Siapa yang disebut penghasil limbah B3?",
+     "a": "Setiap orang yang usaha dan/atau kegiatannya menghasilkan limbah B3, misalnya pabrik, bengkel, rumah sakit, klinik, laboratorium, atau kantor yang menghasilkan limbah seperti oli bekas, aki bekas, dan lampu TL bekas."
+    },
+    {
+     "q": "Apa kewajiban utama penghasil limbah B3?",
+     "a": "Pasal 276 PP 22/2021 mewajibkan setiap orang yang menghasilkan limbah B3 melakukan pengelolaan limbah B3 yang dihasilkannya. Dalam praktik ini mencakup pengurangan, penyimpanan sesuai ketentuan, pencatatan dan pelaporan, penyerahan kepada pihak berizin, serta program kedaruratan."
+    },
+    {
+     "q": "Seberapa sering penghasil limbah B3 wajib melapor?",
+     "a": "Laporan pelaksanaan pengurangan limbah B3 disampaikan paling sedikit 1 kali dalam 6 bulan. Permen LHK 6/2021 juga mewajibkan pencatatan limbah B3 dilaporkan kepada pejabat penerbit Persetujuan Lingkungan paling sedikit 1 kali dalam 6 bulan."
+    },
+    {
+     "q": "Apa yang wajib dilakukan bila masa simpan limbah B3 terlewati?",
+     "a": "Pasal 297 PP 22/2021 mewajibkan penghasil melakukan pemanfaatan, pengolahan, dan/atau penimbunan limbah B3 sesuai ketentuan, dan/atau menyerahkan limbah B3 kepada pihak lain yang berizin."
+    },
+    {
+     "q": "Apakah penghasil limbah B3 wajib punya program kedaruratan?",
+     "a": "Ya. Pasal 431 PP 22/2021 mewajibkan setiap orang yang menghasilkan limbah B3 menyusun program kedaruratan, dan Pasal 436 mewajibkan pelatihan serta geladi kedaruratan paling sedikit 1 kali dalam 1 tahun."
     }
    ]
   }
