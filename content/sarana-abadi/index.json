@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-23T21:54:06Z",
+ "generated": "2026-11-24T21:50:34Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1471,6 +1471,92 @@
     {
      "q": "Bolehkah hasil uji kubus dipakai untuk menilai beton yang dispesifikasikan dalam fc'?",
      "a": "Sebaiknya jenis benda uji mengikuti spesifikasi proyek. Bila terpaksa memakai kubus, metode konversi dan kriteria penerimaannya harus disepakati tertulis dengan perencana sebelum pengujian."
+    }
+   ]
+  },
+  {
+   "id": "kontraktor-clean-room-pabrik",
+   "slug": "kontraktor-clean-room-pabrik",
+   "title": "Kontraktor Clean Room Pabrik: Tahapan, Kelas ISO, dan Cara Memilih",
+   "publish_at_wib": "2026-11-25 07:00",
+   "publish_at_utc": "2026-11-25T00:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/25/kontraktor-clean-room-pabrik/",
+   "html": "html/kontraktor-clean-room-pabrik.html",
+   "image": "img/kontraktor-clean-room-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang kontraktor clean room pabrik",
+   "excerpt": "Apa saja yang perlu Anda siapkan sebelum menunjuk kontraktor clean room pabrik, dari menentukan kelas ISO sampai uji validasi ruang bersih.",
+   "meta_title": "Kontraktor Clean Room Pabrik: Tahapan dan Kelas ISO",
+   "meta_description": "Panduan memilih kontraktor clean room pabrik: kelas kebersihan ISO 14644-1, komponen ruang bersih, tahapan proyek, uji validasi, dan pertanyaan penting.",
+   "focus_keyword": "kontraktor clean room pabrik",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Engineering & Design"
+   ],
+   "tags": [
+    "clean room",
+    "ruang bersih",
+    "ISO 14644",
+    "HVAC pabrik"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu clean room di pabrik?",
+     "a": "Clean room atau ruang bersih adalah ruangan yang jumlah partikel di udaranya dikendalikan sampai batas tertentu, biasanya bersama suhu, kelembapan, dan perbedaan tekanan, untuk melindungi produk atau proses dari kontaminasi."
+    },
+    {
+     "q": "Kelas clean room apa yang dibutuhkan pabrik saya?",
+     "a": "Kelas ditentukan oleh kebutuhan produk dan regulasi industri Anda, misalnya pedoman CPOB untuk farmasi atau spesifikasi pelanggan untuk elektronik. Kontraktor membantu menerjemahkan kebutuhan itu ke desain, tetapi kelas target sebaiknya disepakati dengan tim mutu Anda sejak awal."
+    },
+    {
+     "q": "Apakah clean room bisa dibangun di dalam gudang yang sudah ada?",
+     "a": "Bisa, dengan konsep room-in-room menggunakan panel dinding dan plafon khusus. Yang perlu dicek adalah tinggi bebas bangunan, kekuatan struktur atap untuk menggantung plafon dan ducting, ruang untuk unit HVAC, serta kerataan lantai."
+    },
+    {
+     "q": "Berapa lama proyek clean room?",
+     "a": "Durasi sangat bergantung pada luas, kelas, dan waktu pengadaan peralatan HVAC serta filter. Jadwal yang realistis baru bisa disusun setelah desain dan daftar peralatan disepakati, termasuk waktu untuk uji dan validasi."
+    }
+   ]
+  },
+  {
+   "id": "tiang-pancang-vs-bore-pile",
+   "slug": "tiang-pancang-vs-bore-pile",
+   "title": "Tiang Pancang vs Bore Pile: Mana yang Tepat untuk Pondasi Pabrik?",
+   "publish_at_wib": "2026-11-25 10:00",
+   "publish_at_utc": "2026-11-25T03:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/25/tiang-pancang-vs-bore-pile/",
+   "html": "html/tiang-pancang-vs-bore-pile.html",
+   "image": "img/tiang-pancang-vs-bore-pile.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang tiang pancang vs bore pile",
+   "excerpt": "Membandingkan tiang pancang dan bore pile dari sisi tanah, lingkungan sekitar, mutu, jadwal, dan pengujian, agar pilihan pondasi pabrik Anda tepat.",
+   "meta_title": "Tiang Pancang vs Bore Pile untuk Pondasi Pabrik",
+   "meta_description": "Perbandingan tiang pancang vs bore pile untuk pondasi pabrik dan gudang: cara kerja, kelebihan, keterbatasan, faktor pemilihan, dan pengujian di lapangan.",
+   "focus_keyword": "tiang pancang vs bore pile",
+   "categories": [
+    "Engineering & Design",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "pondasi dalam",
+    "tiang pancang",
+    "bore pile",
+    "geoteknik"
+   ],
+   "faq": [
+    {
+     "q": "Apa perbedaan utama tiang pancang dan bore pile?",
+     "a": "Tiang pancang adalah tiang jadi, umumnya beton pracetak atau baja, yang dimasukkan ke tanah dengan dipukul atau ditekan. Bore pile dibuat di tempat: tanah dibor terlebih dahulu, lalu lubangnya diisi tulangan dan dicor beton."
+    },
+    {
+     "q": "Mana yang lebih murah, tiang pancang atau bore pile?",
+     "a": "Tidak ada jawaban umum. Biaya bergantung pada kedalaman tanah keras, jumlah titik, akses alat, jarak dari pabrik tiang, dan kondisi sekitar. Perbandingan yang adil hanya bisa dibuat dari desain dan BOQ yang sama untuk kedua opsi."
+    },
+    {
+     "q": "Apakah pemancangan aman di dekat pabrik yang sedang beroperasi?",
+     "a": "Pemancangan dengan pukulan menimbulkan getaran dan kebisingan yang bisa mengganggu mesin presisi atau bangunan lama di dekatnya. Di lokasi seperti ini, tiang tekan hidrolis atau bore pile sering dipertimbangkan, disertai pemantauan getaran."
+    },
+    {
+     "q": "Pengujian apa yang dilakukan pada pondasi tiang?",
+     "a": "Yang umum adalah uji beban statik atau uji dinamik untuk memastikan daya dukung, serta uji integritas tiang untuk mendeteksi cacat. Jenis dan jumlah uji ditetapkan oleh perencana sesuai spesifikasi proyek."
     }
    ]
   }
