@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-23T20:07:59Z",
+ "generated": "2026-11-24T19:57:06Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -680,6 +680,49 @@
     {
      "q": "Apakah abu sisa insinerator masih limbah B3?",
      "a": "Pasal 133 Permen LHK 6/2021 menyatakan abu terbang, abu dasar, dan residu pengolahan flue gas dari insinerator wajib dilakukan pengelolaan lebih lanjut."
+    }
+   ]
+  },
+  {
+   "id": "jasa-angkut-aki-bekas-karawang",
+   "slug": "jasa-angkut-aki-bekas-karawang",
+   "title": "Jasa Angkut Aki Bekas Karawang: Kode Limbah, Penyimpanan, dan Persiapan",
+   "publish_at_wib": "2026-11-25 07:00",
+   "publish_at_utc": "2026-11-25T00:00:00Z",
+   "url": "https://transsuma.com/jasa-angkut-aki-bekas-karawang/",
+   "html": "html/jasa-angkut-aki-bekas-karawang.html",
+   "image": "img/jasa-angkut-aki-bekas-karawang.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang jasa angkut aki bekas di Karawang",
+   "excerpt": "Yang perlu disiapkan pabrik dan bengkel di Karawang sebelum aki bekas diangkut: kode limbah, penyimpanan, masa simpan, dan pengecekan transporter.",
+   "meta_title": "Jasa Angkut Aki Bekas Karawang untuk Pabrik",
+   "meta_description": "Panduan jasa angkut aki bekas Karawang: kode A102d kategori 1, cara menyimpan aki bekas di TPS, masa simpan, alat angkut tertutup, dan dokumen yang perlu dicek.",
+   "focus_keyword": "jasa angkut aki bekas karawang",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3",
+    "Jenis & Karakteristik Limbah B3"
+   ],
+   "tags": [
+    "aki bekas",
+    "a102d",
+    "limbah b3 karawang",
+    "baterai bekas"
+   ],
+   "faq": [
+    {
+     "q": "Apakah aki bekas termasuk limbah B3?",
+     "a": "Ya. Lampiran IX PP Nomor 22 Tahun 2021 mencantumkan aki/baterai bekas dengan kode A102d sebagai limbah B3 dari sumber tidak spesifik dengan kategori bahaya 1."
+    },
+    {
+     "q": "Berapa lama aki bekas boleh disimpan di TPS?",
+     "a": "Untuk fasilitas yang menghasilkan limbah B3 50 kg per hari atau lebih, paling lama 90 hari. Untuk timbulan di bawah 50 kg per hari, limbah B3 kategori 1 seperti aki bekas paling lama 180 hari sejak dihasilkan."
+    },
+    {
+     "q": "Bolehkah aki bekas diangkut dengan kendaraan bak terbuka?",
+     "a": "Tidak. Aki bekas dengan kode A102d termasuk kategori 1, dan Permen LHK Nomor 6 Tahun 2021 mewajibkan limbah B3 kategori 1 diangkut dengan alat angkut tertutup."
+    },
+    {
+     "q": "Bolehkah aki bekas dijual ke pengepul barang bekas?",
+     "a": "Aki bekas adalah limbah B3, sehingga penyerahannya harus kepada pihak yang memiliki perizinan pengelolaan limbah B3 dan diangkut oleh transporter berizin dengan manifest elektronik (Festronik)."
     }
    ]
   }
