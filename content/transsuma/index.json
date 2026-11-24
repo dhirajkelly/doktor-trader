@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-24T19:57:06Z",
+ "generated": "2026-11-24T19:58:09Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -723,6 +723,49 @@
     {
      "q": "Bolehkah aki bekas dijual ke pengepul barang bekas?",
      "a": "Aki bekas adalah limbah B3, sehingga penyerahannya harus kepada pihak yang memiliki perizinan pengelolaan limbah B3 dan diangkut oleh transporter berizin dengan manifest elektronik (Festronik)."
+    }
+   ]
+  },
+  {
+   "id": "simbol-dan-label-limbah-b3",
+   "slug": "simbol-dan-label-limbah-b3",
+   "title": "Simbol dan Label Limbah B3: Ukuran, Isi, dan Cara Memasangnya",
+   "publish_at_wib": "2026-11-25 12:00",
+   "publish_at_utc": "2026-11-25T05:00:00Z",
+   "url": "https://transsuma.com/simbol-dan-label-limbah-b3/",
+   "html": "html/simbol-dan-label-limbah-b3.html",
+   "image": "img/simbol-dan-label-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang simbol dan label limbah B3",
+   "excerpt": "Cara memilih simbol, mengisi label identitas, dan memasang penanda limbah B3 pada kemasan, TPS, dan kendaraan sesuai aturan yang berlaku.",
+   "meta_title": "Simbol dan Label Limbah B3: Ukuran dan Cara Pasang",
+   "meta_description": "Panduan simbol dan label limbah B3: dasar aturan PP 22/2021 dan Permen LH 14/2013, ukuran minimal, isi label identitas, label KOSONG, dan cara pemasangannya.",
+   "focus_keyword": "simbol dan label limbah b3",
+   "categories": [
+    "Panduan Pengelolaan Limbah untuk Industri",
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "simbol limbah b3",
+    "label limbah b3",
+    "permen lh 14 2013",
+    "kemasan limbah b3"
+   ],
+   "faq": [
+    {
+     "q": "Apa beda simbol dan label limbah B3?",
+     "a": "Simbol adalah gambar yang menunjukkan karakteristik limbah B3, misalnya korosif atau mudah menyala. Label adalah keterangan tertulis tentang limbah, seperti identitas penghasil, tanggal pengemasan, jenis, kode, dan jumlah limbah."
+    },
+    {
+     "q": "Berapa ukuran minimal simbol limbah B3 pada kemasan?",
+     "a": "Simbol pada kemasan berukuran paling rendah 10 cm x 10 cm. Simbol pada kendaraan pengangkut dan tempat penyimpanan limbah B3 berukuran paling rendah 25 cm x 25 cm."
+    },
+    {
+     "q": "Apa saja yang wajib tercantum pada label limbah B3?",
+     "a": "PP 22/2021 Pasal 292 menyebut label paling sedikit memuat nama limbah B3, identitas penghasil, tanggal dihasilkannya limbah, dan tanggal pengemasan. Format label identitas dalam Permen LH 14/2013 juga memuat kode limbah, jumlah, dan sifat limbah."
+    },
+    {
+     "q": "Apakah Permen LH 14/2013 masih berlaku?",
+     "a": "Permen LH 14/2013 tidak termasuk peraturan yang dicabut oleh Pasal 236 Permen LHK 6/2021, dan Pasal 70 ayat (2) Permen LHK 6/2021 merujuk pelekatan simbol dan label sesuai peraturan perundang-undangan. Konfirmasikan penerapannya dengan dinas lingkungan hidup setempat."
     }
    ]
   }
