@@ -126,6 +126,18 @@ Agar penawaran bisa dibandingkan dengan adil, mintalah kontraktor menjelaskan:
 
 Harga crane dan pekerjaan struktur sangat bergantung pada kapasitas, bentang, kondisi bangunan, dan merek komponen, sehingga kami tidak mencantumkan angka di sini. Perbandingan yang wajar baru bisa dilakukan setelah spesifikasi dan lingkup disamakan.
 
+## Perawatan Setelah Crane Diserahterimakan
+
+Keselamatan crane tidak berhenti di hari serah terima. Struktur dan komponen yang bekerja berulang setiap hari perlu dirawat secara terencana. Beberapa hal yang umumnya masuk program perawatan:
+
+- **Pemeriksaan harian oleh operator** sebelum crane dipakai: fungsi tombol, limit switch, rem, kondisi tali baja atau rantai, dan kait.
+- **Pemeriksaan berkala oleh teknisi**: keausan roda dan rel, kondisi gear dan pelumasan, sambungan listrik, serta kekencangan baut.
+- **Pengukuran ulang kelurusan rel** bila crane mulai berjalan miring, berbunyi, atau roda cepat aus.
+- **Pencatatan setiap perbaikan dan penggantian komponen** dalam buku riwayat crane.
+- **Pembatasan beban** sesuai kapasitas yang tertera pada crane, dengan tanda kapasitas yang jelas terlihat dari lantai kerja.
+
+Catatan perawatan yang rapi juga akan memudahkan proses pemeriksaan dan pengujian berkala.
+
 ## Koordinasi dengan Rencana Perluasan Pabrik
 
 Banyak pabrik baru memikirkan crane setelah bangunan berdiri, padahal menambahkan crane pada struktur yang tidak dirancang untuk itu sering lebih rumit. Bila Anda sedang merencanakan bangunan baru atau penambahan bentang, masukkan kebutuhan crane sejak desain awal, termasuk kemungkinan peningkatan kapasitas di masa depan. Hal ini kami bahas juga di artikel [jasa perluasan bangunan pabrik](https://sarana-abadi.co.id/2026/11/25/jasa-perluasan-bangunan-pabrik/).

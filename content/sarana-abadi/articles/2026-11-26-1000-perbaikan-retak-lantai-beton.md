@@ -114,6 +114,18 @@ Pemeliharaan ringan seperti pembersihan dan pemantauan retak bisa dilakukan tim 
 
 Dokumentasi diagnosis yang lengkap akan mempercepat penyusunan lingkup kerja dan membuat penawaran dari kontraktor lebih mudah dibandingkan.
 
+## Dokumentasi yang Sebaiknya Diminta Setelah Perbaikan
+
+Perbaikan yang baik meninggalkan catatan yang bisa dipakai untuk pemeliharaan berikutnya. Mintalah kontraktor menyerahkan:
+
+- **Denah lokasi perbaikan** yang menunjukkan retak mana yang ditangani dan dengan metode apa.
+- **Data bahan yang dipakai**, termasuk nama produk, nomor batch bila ada, dan lembar data teknisnya.
+- **Foto sebelum, selama, dan sesudah** pekerjaan pada titik-titik yang sama.
+- **Catatan waktu pengerasan** dan kapan area boleh kembali dilalui forklift.
+- **Rekomendasi pemantauan**, misalnya titik retak yang perlu diukur ulang dalam beberapa bulan ke depan.
+
+Dengan catatan ini, tim pemeliharaan pabrik dapat membedakan retak lama yang sudah diperbaiki dengan retak baru, sekaligus menilai apakah metode yang dipilih bekerja sesuai harapan.
+
 ## Kesimpulan
 
 Perbaikan retak lantai beton yang berhasil bergantung pada diagnosis yang benar: mengenali jenis retak, mengukur lebar dan pergerakannya, lalu mengaitkannya dengan pola beban dan kondisi tanah dasar. Dari situ barulah metode dipilih, mulai dari sealer, routing dan sealing, injeksi, perbaikan tepi, hingga penggantian panel. Pencegahan, terutama perawatan sambungan dan pengendalian beban, menjaga agar retak tidak muncul kembali.

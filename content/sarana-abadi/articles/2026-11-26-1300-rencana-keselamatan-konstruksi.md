@@ -123,6 +123,20 @@ RKK yang baik terlihat dari kebiasaan di lapangan, bukan dari tebal dokumennya. 
 - **Tinjauan berkala** terhadap sasaran dan program keselamatan, lalu revisi RKK bila ada perubahan.
 - **Catatan yang rapi** sebagai bukti penerapan dan bahan evaluasi di akhir proyek.
 
+## Daftar Periksa Singkat Saat Meninjau RKK dari Kontraktor
+
+Bagi pemilik atau pengelola pabrik yang menerima RKK dari kontraktor, pertanyaan berikut membantu menilai apakah dokumen tersebut sudah memadai:
+
+1. Apakah kegiatan dalam tabel identifikasi bahaya sesuai dengan lingkup dan urutan pekerjaan di jadwal?
+2. Apakah bahaya khusus di lokasi pabrik Anda, seperti utilitas aktif, bahan kimia, atau lalu lintas forklift, sudah tercantum?
+3. Apakah pengendalian untuk risiko tinggi bersifat teknis dan terukur, bukan hanya APD?
+4. Apakah nama atau jabatan penanggung jawab keselamatan, beserta kompetensinya, jelas?
+5. Apakah ada rencana tanggap darurat yang terhubung dengan prosedur darurat pabrik, termasuk titik kumpul dan jalur evakuasi?
+6. Apakah biaya penerapan keselamatan dirinci dan masuk akal untuk skala pekerjaan?
+7. Apakah ada jadwal inspeksi, rapat keselamatan, dan peninjauan ulang RKK?
+
+Bila beberapa jawaban masih kabur, minta klarifikasi atau revisi sebelum pekerjaan dimulai. Memperbaiki dokumen di awal jauh lebih mudah daripada memperbaiki kebiasaan di lapangan.
+
 ## Kesimpulan
 
 Rencana keselamatan konstruksi adalah inti penerapan SMKK di proyek. Mengacu pada pedoman dalam Permen PUPR Nomor 10 Tahun 2021, RKK memuat lima elemen: kepemimpinan dan partisipasi tenaga kerja, perencanaan, dukungan, operasi, serta evaluasi kinerja. Agar bermanfaat, RKK harus disusun dari kondisi nyata proyek, memakai hierarki pengendalian yang benar, terhubung dengan metode kerja, JSA, dan izin kerja, serta diperbarui ketika kondisi berubah.

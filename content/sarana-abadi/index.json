@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T21:53:18Z",
+ "generated": "2026-11-25T21:55:04Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1859,6 +1859,49 @@
     {
      "q": "Siapa yang boleh mengoperasikan overhead crane?",
      "a": "Operator harus memiliki kompetensi dan lisensi K3 sesuai ketentuan yang berlaku untuk jenis pesawat angkat tersebut. Pastikan perusahaan Anda menyiapkan operator dan juru ikat beban yang kompeten sebelum crane dioperasikan."
+    }
+   ]
+  },
+  {
+   "id": "insulasi-atap-gudang",
+   "slug": "insulasi-atap-gudang",
+   "title": "Insulasi Atap Gudang: Jenis Material, Cara Pasang, dan Cara Memilih",
+   "publish_at_wib": "2026-11-26 19:00",
+   "publish_at_utc": "2026-11-26T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/26/insulasi-atap-gudang/",
+   "html": "html/insulasi-atap-gudang.html",
+   "image": "img/insulasi-atap-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang insulasi atap gudang",
+   "excerpt": "Cara memilih dan memasang insulasi atap gudang agar ruang di bawahnya lebih sejuk, tidak meneteskan embun, dan tetap aman dari sisi kebakaran.",
+   "meta_title": "Insulasi Atap Gudang: Jenis, Cara Pasang, dan Memilih",
+   "meta_description": "Panduan insulasi atap gudang: perbandingan aluminium foil, glasswool, rockwool, dan sandwich panel, menghitung nilai R, pemasangan, dan mencegah kondensasi.",
+   "focus_keyword": "insulasi atap gudang",
+   "categories": [
+    "Engineering & Design",
+    "Construction Technology & Innovation"
+   ],
+   "tags": [
+    "atap gudang",
+    "insulasi panas",
+    "glasswool",
+    "kondensasi"
+   ],
+   "faq": [
+    {
+     "q": "Apakah aluminium foil saja cukup untuk insulasi atap gudang?",
+     "a": "Aluminium foil bekerja terutama dengan memantulkan panas radiasi dan perlu celah udara agar efektif. Untuk gudang dengan kebutuhan kenyamanan lebih tinggi atau risiko kondensasi, foil sering dikombinasikan dengan lapisan glasswool atau rockwool."
+    },
+    {
+     "q": "Apa itu nilai R pada insulasi?",
+     "a": "Nilai R adalah ukuran ketahanan suatu lapisan terhadap aliran panas. Makin besar nilai R, makin baik lapisan tersebut menahan panas. Nilai R dipengaruhi oleh ketebalan dan konduktivitas termal material."
+    },
+    {
+     "q": "Mengapa atap gudang bisa meneteskan air padahal tidak bocor?",
+     "a": "Kemungkinan besar terjadi kondensasi, yaitu uap air di udara gudang mengembun saat menyentuh permukaan atap yang lebih dingin, terutama pada malam atau dini hari. Insulasi dengan lapisan penghalang uap yang utuh dan ventilasi yang baik membantu mengurangi masalah ini."
+    },
+    {
+     "q": "Bisakah insulasi dipasang di atap gudang yang sudah ada?",
+     "a": "Bisa. Insulasi dapat dipasang dari bawah dengan penggantung atau rangka tambahan, atau dipasang ulang saat penggantian penutup atap. Metode yang dipilih bergantung pada kondisi atap, ketinggian, dan operasional gudang."
     }
    ]
   }
