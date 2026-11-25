@@ -3,7 +3,7 @@ title: "Izin Pengangkutan Limbah B3: Rekomendasi KLH dan Perizinan Kemenhub"
 slug: izin-pengangkutan-limbah-b3
 publish_at: "2026-11-26 17:00"
 meta_title: "Izin Pengangkutan Limbah B3 menurut PP 22/2021"
-meta_description: "Izin pengangkutan limbah B3 menurut PP 22/2021: rekomendasi dari Menteri LH, Perizinan Berusaha dari Kemenhub, syarat, tenggat proses, dan cara penghasil mengecek."
+meta_description: "Izin pengangkutan limbah B3 menurut PP 22/2021: rekomendasi dari Menteri LH, Perizinan Berusaha dari Kemenhub, syarat, tenggat, dan cara penghasil mengecek."
 focus_keyword: izin pengangkutan limbah b3
 categories: [Regulasi Limbah B3, Pengangkutan & Manifest]
 tags: [rekomendasi pengangkutan limbah b3, pp 22 2021, transporter limbah b3, kementerian perhubungan]

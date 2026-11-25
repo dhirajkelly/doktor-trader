@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T20:09:47Z",
+ "generated": "2026-11-25T20:11:04Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -903,6 +903,53 @@
     {
      "q": "Apakah limbah B3 yang sudah dikurangi tetap harus diserahkan ke transporter berizin?",
      "a": "Ya. Pengurangan hanya menurunkan jumlah limbah yang timbul. Limbah B3 yang tetap dihasilkan harus disimpan sesuai ketentuan dan diserahkan kepada pihak yang memiliki izin, dengan manifest elektronik."
+    }
+   ]
+  },
+  {
+   "id": "izin-pengangkutan-limbah-b3",
+   "slug": "izin-pengangkutan-limbah-b3",
+   "title": "Izin Pengangkutan Limbah B3: Rekomendasi KLH dan Perizinan Kemenhub",
+   "publish_at_wib": "2026-11-26 17:00",
+   "publish_at_utc": "2026-11-26T10:00:00Z",
+   "url": "https://transsuma.com/izin-pengangkutan-limbah-b3/",
+   "html": "html/izin-pengangkutan-limbah-b3.html",
+   "image": "img/izin-pengangkutan-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang izin pengangkutan limbah B3",
+   "excerpt": "Dua dokumen wajib bagi pengangkut limbah B3 menurut PP 22/2021, syarat dan tenggat prosesnya, serta daftar periksa bagi penghasil sebelum menyerahkan limbah.",
+   "meta_title": "Izin Pengangkutan Limbah B3 menurut PP 22/2021",
+   "meta_description": "Izin pengangkutan limbah B3 menurut PP 22/2021: rekomendasi dari Menteri LH, Perizinan Berusaha dari Kemenhub, syarat, tenggat, dan cara penghasil mengecek.",
+   "focus_keyword": "izin pengangkutan limbah b3",
+   "categories": [
+    "Regulasi Limbah B3",
+    "Pengangkutan & Manifest"
+   ],
+   "tags": [
+    "rekomendasi pengangkutan limbah b3",
+    "pp 22 2021",
+    "transporter limbah b3",
+    "kementerian perhubungan"
+   ],
+   "faq": [
+    {
+     "q": "Izin apa saja yang wajib dimiliki pengangkut limbah B3?",
+     "a": "Pasal 311 ayat (1) PP 22/2021 mewajibkan pengangkut limbah B3 memiliki rekomendasi pengangkutan limbah B3 dan Perizinan Berusaha di bidang pengangkutan limbah B3."
+    },
+    {
+     "q": "Siapa yang menerbitkan rekomendasi pengangkutan limbah B3?",
+     "a": "Rekomendasi diterbitkan oleh Menteri yang membidangi lingkungan hidup. Saat ini urusan tersebut berada di Kementerian Lingkungan Hidup/Badan Pengendalian Lingkungan Hidup (KLH/BPLH)."
+    },
+    {
+     "q": "Siapa yang menerbitkan Perizinan Berusaha di bidang pengangkutan limbah B3?",
+     "a": "Menurut Pasal 313 PP 22/2021, Perizinan Berusaha di bidang pengangkutan limbah B3 diterbitkan oleh menteri yang menyelenggarakan urusan pemerintahan di bidang perhubungan, setelah pengangkut mendapat rekomendasi dari Menteri LH."
+    },
+    {
+     "q": "Berapa lama proses rekomendasi pengangkutan limbah B3?",
+     "a": "Pasal 312 mengatur pernyataan kelengkapan administrasi paling lama 2 hari kerja, verifikasi paling lama 7 hari kerja setelah permohonan lengkap, dan penerbitan atau penolakan paling lama 7 hari kerja sejak hasil verifikasi diketahui."
+    },
+    {
+     "q": "Apa akibatnya bila penghasil menyerahkan limbah B3 ke pengangkut tanpa izin?",
+     "a": "Penghasil tetap bertanggung jawab atas limbah B3 yang dihasilkannya. Menyerahkan limbah kepada pihak tanpa izin berisiko melanggar ketentuan pengelolaan limbah B3, jadi selalu periksa dokumen pengangkut sebelum penyerahan."
     }
    ]
   }
