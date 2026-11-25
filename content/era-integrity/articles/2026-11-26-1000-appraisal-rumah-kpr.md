@@ -71,6 +71,18 @@ Mari lihat ilustrasi berikut. Angka hanya contoh untuk memudahkan perhitungan.
 
 Dari contoh ini terlihat bahwa selisih Rp80 juta antara harga dan appraisal membuat dana yang harus disiapkan pembeli hampir dua kali lipat. Itu belum termasuk biaya lain seperti provisi, notaris, asuransi, dan pajak. Untuk rinciannya, baca artikel kami tentang [biaya KPR selain DP](https://www.eraintegrityindonesia.com/2026/11/22/biaya-kpr-selain-dp/).
 
+## Appraisal Rumah Baru dan Rumah Seken
+
+Proses penilaian rumah baru dari pengembang dan rumah seken memiliki perbedaan yang perlu Anda pahami.
+
+### Rumah Baru dari Pengembang
+
+Pada pembelian rumah baru, bank sering kali sudah bekerja sama dengan pengembang. Penilaian bisa dilakukan untuk satu proyek, dan bank sudah memiliki gambaran nilai setiap tipe rumah. Meski begitu, tetap perhatikan apakah rumah sudah selesai dibangun atau masih dalam tahap pembangunan, karena hal ini memengaruhi skema pencairan kredit. Pastikan juga sertifikat induk atau pecahan dan izin bangunan sudah jelas statusnya.
+
+### Rumah Seken
+
+Pada rumah seken, penilai bekerja dari nol untuk setiap rumah. Usia bangunan, kualitas perawatan, renovasi, dan kesesuaian dokumen dengan kondisi fisik sangat menentukan. Rumah seken yang sudah berubah bentuk, misalnya ditambah lantai atau diperluas, perlu dicek apakah perubahannya sudah tercatat di dokumen izin bangunan. Ketidaksesuaian seperti ini bisa membuat penilai lebih berhati-hati.
+
 ## Tips untuk Pembeli Sebelum Appraisal
 
 Pembeli bisa mengurangi risiko kejutan dengan beberapa langkah sederhana:
@@ -93,7 +105,7 @@ Penjual juga berkepentingan, karena appraisal yang rendah bisa membuat transaksi
 
 ## Jika Nilai Appraisal Lebih Rendah dari Harga
 
-Situasi ini cukup sering terjadi dan tidak berarti transaksi harus gagal. Ada beberapa pilihan yang bisa dibicarakan:
+Situasi ini bisa terjadi dan tidak berarti transaksi harus gagal. Ada beberapa pilihan yang bisa dibicarakan:
 
 - **Negosiasi ulang harga.** Hasil appraisal bisa menjadi dasar diskusi yang objektif dengan penjual. Sebagian penjual bersedia menurunkan harga agar transaksi tetap berjalan.
 - **Menambah uang muka.** Bila Anda punya dana cadangan dan yakin dengan rumahnya, menutup selisih dengan dana sendiri adalah jalan paling sederhana.
@@ -106,6 +118,8 @@ Apa pun pilihannya, pastikan setiap kesepakatan baru dituangkan secara tertulis 
 ## Peran Agen Properti dalam Proses Appraisal
 
 Agen properti yang berpengalaman dapat membantu sejak tahap penentuan harga dengan menyiapkan data pembanding yang relevan. Agen juga membantu mengoordinasikan jadwal kunjungan penilai, memastikan dokumen siap, dan menjembatani komunikasi bila hasil appraisal perlu dinegosiasikan. Peran ini bukan untuk "mengatur" nilai, karena penilaian tetap independen, melainkan untuk memastikan prosesnya berjalan tertib dan semua pihak memahami posisinya.
+
+Satu hal lagi yang sering terlupa adalah waktu. Proses penilaian, penyusunan laporan, dan keputusan kredit membutuhkan beberapa hari hingga beberapa minggu, tergantung bank dan kelengkapan dokumen. Karena itu, sepakati jadwal yang realistis dengan penjual di perjanjian awal, termasuk batas waktu pengajuan KPR dan apa yang terjadi bila batas tersebut terlewati. Kejelasan jadwal mencegah ketegangan di tengah proses.
 
 ## Kesimpulan
 
