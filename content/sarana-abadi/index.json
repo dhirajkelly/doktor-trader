@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T21:51:06Z",
+ "generated": "2026-11-25T21:53:18Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1772,6 +1772,93 @@
     {
      "q": "Berapa lama area kerja harus ditutup saat perbaikan?",
      "a": "Bergantung metode dan bahan. Sealing dan injeksi biasanya membutuhkan waktu penutupan lebih singkat dibandingkan penggantian panel, yang memerlukan waktu pengerasan beton baru. Waktu pasti mengikuti lembar data teknis bahan."
+    }
+   ]
+  },
+  {
+   "id": "rencana-keselamatan-konstruksi",
+   "slug": "rencana-keselamatan-konstruksi",
+   "title": "Rencana Keselamatan Konstruksi (RKK): Isi, Penyusunan, dan Contohnya",
+   "publish_at_wib": "2026-11-26 13:00",
+   "publish_at_utc": "2026-11-26T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/26/rencana-keselamatan-konstruksi/",
+   "html": "html/rencana-keselamatan-konstruksi.html",
+   "image": "img/rencana-keselamatan-konstruksi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang rencana keselamatan konstruksi",
+   "excerpt": "Apa itu rencana keselamatan konstruksi, apa saja isinya menurut pedoman SMKK, dan bagaimana menyusunnya agar benar-benar dipakai di lapangan.",
+   "meta_title": "Rencana Keselamatan Konstruksi (RKK): Isi dan Contoh",
+   "meta_description": "Panduan rencana keselamatan konstruksi (RKK) sesuai pedoman SMKK: lima elemen, langkah menyusun, contoh tabel risiko, dan cara memakainya di proyek pabrik.",
+   "focus_keyword": "rencana keselamatan konstruksi",
+   "categories": [
+    "Safety, Health & Environment (SHE)",
+    "Quality & Standards"
+   ],
+   "tags": [
+    "SMKK",
+    "RKK",
+    "K3 konstruksi",
+    "manajemen risiko"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu RKK dalam proyek konstruksi?",
+     "a": "RKK atau Rencana Keselamatan Konstruksi adalah dokumen yang menjelaskan bagaimana penyedia jasa menerapkan Sistem Manajemen Keselamatan Konstruksi (SMKK) pada suatu pekerjaan, mulai dari komitmen, identifikasi bahaya, sumber daya, pengendalian operasi, sampai evaluasi."
+    },
+    {
+     "q": "Peraturan apa yang menjadi acuan RKK?",
+     "a": "Pedoman SMKK yang memuat RKK diatur dalam Peraturan Menteri PUPR Nomor 10 Tahun 2021 tentang Pedoman Sistem Manajemen Keselamatan Konstruksi. Selalu periksa versi dan aturan pelaksana terbaru yang berlaku untuk proyek Anda."
+    },
+    {
+     "q": "Apa beda RKK dengan JSA?",
+     "a": "RKK adalah rencana keselamatan untuk keseluruhan pekerjaan dan sistem pengelolaannya. JSA memecah satu pekerjaan tertentu menjadi langkah-langkah lalu menganalisis bahaya dan pengendaliannya. JSA biasanya menjadi bagian pendukung pelaksanaan RKK."
+    },
+    {
+     "q": "Apakah RKK bisa diubah setelah proyek berjalan?",
+     "a": "Bisa dan sebaiknya diperbarui bila ada perubahan metode kerja, lingkup, kondisi lapangan, atau temuan dari inspeksi dan insiden. Perubahan perlu didokumentasikan dan disetujui pihak yang berwenang di proyek."
+    }
+   ]
+  },
+  {
+   "id": "jasa-pemasangan-overhead-crane-pabrik",
+   "slug": "jasa-pemasangan-overhead-crane-pabrik",
+   "title": "Jasa Pemasangan Overhead Crane Pabrik: Tahapan, Struktur, dan Riksa Uji",
+   "publish_at_wib": "2026-11-26 16:00",
+   "publish_at_utc": "2026-11-26T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/26/jasa-pemasangan-overhead-crane-pabrik/",
+   "html": "html/jasa-pemasangan-overhead-crane-pabrik.html",
+   "image": "img/jasa-pemasangan-overhead-crane-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa pemasangan overhead crane pabrik",
+   "excerpt": "Apa saja yang perlu disiapkan sebelum memasang overhead crane di pabrik, dari pengecekan struktur runway sampai riksa uji sebelum crane dipakai.",
+   "meta_title": "Jasa Pemasangan Overhead Crane Pabrik: Panduan Lengkap",
+   "meta_description": "Panduan memilih jasa pemasangan overhead crane pabrik: cek struktur runway, data yang disiapkan, tahapan instalasi, riksa uji, dan isi penawaran kontraktor.",
+   "focus_keyword": "jasa pemasangan overhead crane pabrik",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction",
+    "Engineering & Design"
+   ],
+   "tags": [
+    "overhead crane",
+    "crane girder",
+    "struktur baja",
+    "pesawat angkat"
+   ],
+   "faq": [
+    {
+     "q": "Apakah overhead crane bisa dipasang di bangunan pabrik yang sudah ada?",
+     "a": "Bisa, tetapi struktur kolom, pondasi, dan rangka bangunan harus dicek terlebih dahulu terhadap beban crane. Bangunan yang semula tidak dirancang untuk crane sering membutuhkan kolom atau struktur runway tersendiri."
+    },
+    {
+     "q": "Apa itu riksa uji overhead crane?",
+     "a": "Riksa uji adalah pemeriksaan dan pengujian pesawat angkat untuk memastikan crane aman digunakan. Ketentuan K3 pesawat angkat dan angkut diatur dalam Permenaker Nomor 8 Tahun 2020, termasuk pemeriksaan dan pengujian sebelum digunakan dan secara berkala."
+    },
+    {
+     "q": "Data apa yang perlu disiapkan sebelum meminta penawaran?",
+     "a": "Kapasitas angkat, bentang (span), tinggi angkat, panjang lintasan, jenis dan frekuensi pemakaian, kondisi lingkungan, serta gambar bangunan yang ada. Data ini menentukan desain crane dan struktur pendukungnya."
+    },
+    {
+     "q": "Siapa yang boleh mengoperasikan overhead crane?",
+     "a": "Operator harus memiliki kompetensi dan lisensi K3 sesuai ketentuan yang berlaku untuk jenis pesawat angkat tersebut. Pastikan perusahaan Anda menyiapkan operator dan juru ikat beban yang kompeten sebelum crane dioperasikan."
     }
    ]
   }
