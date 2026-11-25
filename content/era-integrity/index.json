@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T21:24:57Z",
+ "generated": "2026-11-25T21:26:03Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -1821,6 +1821,49 @@
     {
      "q": "Lebih baik memilih Tambun Selatan atau Tambun Utara?",
      "a": "Tambun Selatan umumnya lebih padat dan dekat akses KRL serta tol, sedangkan Tambun Utara masih berkembang dengan lahan yang relatif lebih luas. Pilihan bergantung pada prioritas Anda antara akses dan ruang."
+    }
+   ]
+  },
+  {
+   "id": "deposit-sewa-rumah",
+   "slug": "deposit-sewa-rumah",
+   "title": "Deposit Sewa Rumah: Besaran Wajar, Potongan, dan Cara Pengembalian",
+   "publish_at_wib": "2026-11-26 19:00",
+   "publish_at_utc": "2026-11-26T12:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/26/deposit-sewa-rumah/",
+   "html": "html/deposit-sewa-rumah.html",
+   "image": "img/deposit-sewa-rumah.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang deposit sewa rumah",
+   "excerpt": "Semua tentang deposit sewa rumah: fungsi, cara menentukan besaran, potongan yang wajar, dan langkah agar pengembaliannya lancar bagi penyewa dan pemilik.",
+   "meta_title": "Deposit Sewa Rumah: Besaran, Potongan, Pengembalian",
+   "meta_description": "Panduan deposit sewa rumah bagi penyewa dan pemilik: fungsi uang jaminan, cara menentukan besarannya, potongan yang wajar, dan cara pengembalian tanpa sengketa.",
+   "focus_keyword": "deposit sewa rumah",
+   "categories": [
+    "Panduan & Edukasi Agen",
+    "Jual • Beli • Sewa"
+   ],
+   "tags": [
+    "deposit sewa",
+    "uang jaminan",
+    "sewa rumah",
+    "perjanjian sewa"
+   ],
+   "faq": [
+    {
+     "q": "Apa bedanya deposit sewa rumah dengan uang sewa?",
+     "a": "Uang sewa adalah pembayaran atas pemakaian rumah selama periode tertentu. Deposit adalah uang jaminan yang dititipkan kepada pemilik dan dikembalikan di akhir masa sewa setelah dikurangi potongan yang disepakati, misalnya untuk kerusakan atau tagihan yang belum dibayar."
+    },
+    {
+     "q": "Berapa besar deposit sewa rumah yang wajar?",
+     "a": "Tidak ada angka baku. Dalam praktik, besaran deposit sering dikaitkan dengan nilai sewa bulanan dan disesuaikan dengan kondisi rumah serta perabot yang disediakan. Yang terpenting, besaran dan aturannya disepakati dan dituliskan di perjanjian."
+    },
+    {
+     "q": "Kapan deposit harus dikembalikan?",
+     "a": "Waktunya mengikuti kesepakatan di perjanjian sewa, biasanya setelah pemeriksaan akhir dan semua tagihan diselesaikan. Cantumkan batas waktu pengembalian yang jelas agar kedua pihak punya pegangan."
+    },
+    {
+     "q": "Apakah deposit boleh dipakai untuk membayar sewa bulan terakhir?",
+     "a": "Hanya bila disepakati kedua pihak secara tertulis. Tanpa kesepakatan, deposit sebaiknya tetap diperlakukan sebagai jaminan yang baru diperhitungkan setelah pemeriksaan akhir."
     }
    ]
   }
