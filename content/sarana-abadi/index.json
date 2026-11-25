@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T03:19:57Z",
+ "generated": "2026-11-25T21:51:06Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1686,6 +1686,92 @@
     {
      "q": "Apakah lantai tanpa sambungan bisa dibuat?",
      "a": "Ada sistem lantai dengan sambungan sangat sedikit, misalnya dengan serat baja, pasca-tarik, atau beton kompensasi susut. Sistem ini memerlukan desain khusus dan pelaksanaan yang ketat, sehingga perlu dikaji sesuai kebutuhan gudang."
+    }
+   ]
+  },
+  {
+   "id": "jasa-pematangan-lahan-pabrik",
+   "slug": "jasa-pematangan-lahan-pabrik",
+   "title": "Jasa Pematangan Lahan Pabrik: Tahapan Kerja dan Poin yang Perlu Dicek",
+   "publish_at_wib": "2026-11-26 07:00",
+   "publish_at_utc": "2026-11-26T00:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/26/jasa-pematangan-lahan-pabrik/",
+   "html": "html/jasa-pematangan-lahan-pabrik.html",
+   "image": "img/jasa-pematangan-lahan-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa pematangan lahan pabrik",
+   "excerpt": "Apa saja yang dikerjakan jasa pematangan lahan pabrik, bagaimana mutunya diperiksa, dan apa yang perlu ada dalam penawaran kontraktor.",
+   "meta_title": "Jasa Pematangan Lahan Pabrik: Tahapan dan Cek Mutu",
+   "meta_description": "Panduan memilih jasa pematangan lahan pabrik: survei awal, cut and fill, pemadatan berlapis, uji kepadatan, drainase sementara, dan isi penawaran yang wajar.",
+   "focus_keyword": "jasa pematangan lahan pabrik",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "pematangan lahan",
+    "cut and fill",
+    "pemadatan tanah",
+    "pekerjaan sipil"
+   ],
+   "faq": [
+    {
+     "q": "Apa yang dimaksud pematangan lahan untuk pabrik?",
+     "a": "Pematangan lahan adalah rangkaian pekerjaan untuk menyiapkan tanah mentah menjadi lahan siap bangun, meliputi pembersihan, pengupasan tanah humus, galian dan timbunan (cut and fill), pemadatan, serta drainase sementara sampai elevasi rencana tercapai."
+    },
+    {
+     "q": "Berapa lama pematangan lahan biasanya berlangsung?",
+     "a": "Durasinya sangat bergantung pada luas lahan, volume timbunan, jarak sumber material, dan cuaca. Pekerjaan pemadatan sulit dilakukan saat hujan deras, sehingga jadwal sebaiknya memperhitungkan musim."
+    },
+    {
+     "q": "Mengapa perlu uji kepadatan tanah?",
+     "a": "Uji kepadatan memastikan timbunan sudah mencapai tingkat kepadatan yang disyaratkan spesifikasi. Tanpa bukti uji, risiko penurunan lantai, retak, dan genangan di kemudian hari jauh lebih besar."
+    },
+    {
+     "q": "Apakah pematangan lahan bisa digabung dengan pekerjaan pondasi?",
+     "a": "Bisa, dan sering lebih efisien bila satu kontraktor mengatur urutan timbunan, jalan kerja, dan pondasi. Yang penting, elevasi akhir dan titik pondasi sudah ditetapkan dalam gambar sebelum timbunan dimulai."
+    }
+   ]
+  },
+  {
+   "id": "perbaikan-retak-lantai-beton",
+   "slug": "perbaikan-retak-lantai-beton",
+   "title": "Perbaikan Retak Lantai Beton Pabrik: Diagnosis dan Metode yang Tepat",
+   "publish_at_wib": "2026-11-26 10:00",
+   "publish_at_utc": "2026-11-26T03:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/26/perbaikan-retak-lantai-beton/",
+   "html": "html/perbaikan-retak-lantai-beton.html",
+   "image": "img/perbaikan-retak-lantai-beton.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang perbaikan retak lantai beton",
+   "excerpt": "Cara mendiagnosis retak lantai beton pabrik dan memilih metode perbaikan yang sesuai, dari routing dan sealing sampai injeksi dan penggantian panel.",
+   "meta_title": "Perbaikan Retak Lantai Beton Pabrik dan Gudang",
+   "meta_description": "Panduan perbaikan retak lantai beton pabrik: mengenali jenis retak, menentukan retak aktif atau pasif, dan memilih metode sealing, injeksi, atau bongkar pasang.",
+   "focus_keyword": "perbaikan retak lantai beton",
+   "categories": [
+    "Engineering & Design",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "lantai beton",
+    "retak beton",
+    "perawatan gudang",
+    "injeksi epoxy"
+   ],
+   "faq": [
+    {
+     "q": "Apakah semua retak lantai beton berbahaya?",
+     "a": "Tidak. Retak rambut akibat susut sering tidak mengganggu struktur, tetapi tetap perlu dipantau. Retak yang melebar, bertambah panjang, disertai penurunan, atau membuat tepi beton pecah perlu diperiksa lebih lanjut."
+    },
+    {
+     "q": "Apa beda retak aktif dan retak pasif?",
+     "a": "Retak aktif masih bergerak atau melebar karena beban, suhu, atau penurunan tanah. Retak pasif sudah stabil. Retak aktif umumnya membutuhkan bahan pengisi yang fleksibel atau penanganan penyebabnya terlebih dahulu."
+    },
+    {
+     "q": "Kapan lantai beton perlu dibongkar?",
+     "a": "Pembongkaran sebagian dipertimbangkan bila panel retak banyak arah, terjadi penurunan yang signifikan, beton hancur di sekitar retak, atau hasil pemeriksaan menunjukkan masalah di lapisan dasar yang tidak bisa diatasi dari permukaan."
+    },
+    {
+     "q": "Berapa lama area kerja harus ditutup saat perbaikan?",
+     "a": "Bergantung metode dan bahan. Sealing dan injeksi biasanya membutuhkan waktu penutupan lebih singkat dibandingkan penggantian panel, yang memerlukan waktu pengerasan beton baru. Waktu pasti mengikuti lembar data teknis bahan."
     }
    ]
   }
