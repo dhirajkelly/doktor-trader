@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T20:02:36Z",
+ "generated": "2026-11-25T20:09:47Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -813,6 +813,53 @@
     {
      "q": "Apakah penghasil limbah B3 wajib punya program kedaruratan?",
      "a": "Ya. Pasal 431 PP 22/2021 mewajibkan setiap orang yang menghasilkan limbah B3 menyusun program kedaruratan, dan Pasal 436 mewajibkan pelatihan serta geladi kedaruratan paling sedikit 1 kali dalam 1 tahun."
+    }
+   ]
+  },
+  {
+   "id": "jasa-angkut-limbah-lampu-tl",
+   "slug": "jasa-angkut-limbah-lampu-tl",
+   "title": "Jasa Angkut Limbah Lampu TL: Kode B107d, Kemasan, dan Persiapannya",
+   "publish_at_wib": "2026-11-26 07:00",
+   "publish_at_utc": "2026-11-26T00:00:00Z",
+   "url": "https://transsuma.com/jasa-angkut-limbah-lampu-tl/",
+   "html": "html/jasa-angkut-limbah-lampu-tl.html",
+   "image": "img/jasa-angkut-limbah-lampu-tl.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang jasa angkut limbah lampu TL bekas",
+   "excerpt": "Lampu TL bekas termasuk limbah B3. Pelajari kodenya, cara mengemas agar tidak pecah, batas masa simpan, dan persiapan sebelum diserahkan ke transporter berizin.",
+   "meta_title": "Jasa Angkut Limbah Lampu TL: Kode, Kemasan, Persiapan",
+   "meta_description": "Panduan jasa angkut limbah lampu TL untuk pabrik, gedung, dan kantor: kode B107d, kategori bahaya, masa simpan, cara mengemas, dan persiapan sebelum dijemput.",
+   "focus_keyword": "jasa angkut limbah lampu tl",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3",
+    "Jenis & Karakteristik Limbah B3"
+   ],
+   "tags": [
+    "lampu tl bekas",
+    "limbah merkuri",
+    "b107d",
+    "limbah elektronik"
+   ],
+   "faq": [
+    {
+     "q": "Apakah lampu TL bekas termasuk limbah B3?",
+     "a": "Ya. Lampiran IX PP 22/2021 mencantumkan kode B107d untuk limbah elektronik termasuk cathode ray tube (CRT), lampu TL, printed circuit board (PCB), dan kawat logam, dari sumber tidak spesifik dengan kategori bahaya 2."
+    },
+    {
+     "q": "Berapa lama lampu TL bekas boleh disimpan di TPS?",
+     "a": "Untuk timbulan limbah B3 50 kg per hari atau lebih, paling lama 90 hari. Untuk timbulan di bawah 50 kg per hari, limbah kategori 2 seperti B107d paling lama 365 hari sejak dihasilkan."
+    },
+    {
+     "q": "Bagaimana cara mengemas lampu TL bekas sebelum diangkut?",
+     "a": "Simpan lampu dalam keadaan utuh, gunakan kotak asli atau wadah kaku yang tertutup, beri pengganjal agar tidak saling berbenturan, lalu pasang simbol dan label limbah B3 serta catat di logbook."
+    },
+    {
+     "q": "Apa yang dilakukan bila lampu TL pecah di TPS?",
+     "a": "Batasi akses ke area itu, beri ventilasi, kumpulkan pecahan dengan alat bantu (bukan tangan kosong dan bukan penyedot debu), lalu masukkan ke wadah tertutup yang diberi label sebagai limbah B3. Ikuti prosedur tanggap darurat fasilitas Anda."
+    },
+    {
+     "q": "Apakah lampu TL bekas boleh dibuang bersama sampah kantor?",
+     "a": "Tidak. Sebagai limbah B3, lampu TL bekas harus disimpan sesuai ketentuan dan diserahkan kepada pihak yang memiliki izin, dengan manifest elektronik."
     }
    ]
   },
