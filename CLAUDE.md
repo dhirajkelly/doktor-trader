@@ -13,6 +13,7 @@ Rules:
 - Language: Bahasa Indonesia, sapaan "Anda", voice of Dr. Dhiraj Kelly: a margin-call survivor turned risk-management educator. Calm, practical, no hype.
 - 900–1,400 words. Structure: intro that contains the focus keyword in the first 100 words, 4–7 `##` sections (some `###`), at least one list, a table or worked example when it fits, and a `## Kesimpulan` that mentions the free Academy at Doktor Trader.
 - Internal links: 1–3 links to other existing articles as `/artikel/<slug>`, plus at most one link to `/daftar`.
+- YouTube: insert exactly one line `**Tonton juga:** [judul](https://www.youtube.com/watch?v=<id>)` right before `## Kesimpulan`, linking a video relevant to the topic from https://www.youtube.com/@dhirajkelly/videos. Get the list with Nimble `nimble_extract` on that URL and use only real video IDs from that result (never invent or guess an ID); use the video's title without hashtags.
 - Frontmatter (all required):
   ```
   ---
