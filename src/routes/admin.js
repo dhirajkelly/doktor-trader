@@ -207,7 +207,8 @@ ${tok ? `<form method="post" action="/admin/telegram/hapus" onsubmit="return con
 <li>Sambungkan grup diskusi: channel ${esc(SITE.telegram.replace('https://', ''))} → Edit → <b>Discussion</b> → pilih grup <b>Doktor Trader Chat</b> (atau buat baru).</li>
 <li>Tambahkan bot ke grup itu dan jadikan admin (izin default sudah cukup).</li>
 </ol>
-<p>Kapan bot menjawab: semua pesan di chat pribadi; di grup, pesan yang berbentuk pertanyaan (ada “?” atau diawali apa/bagaimana/kenapa/berapa/cara/dok/min…), yang menyebut @bot, yang membalas pesan bot, atau diawali <code>/tanya</code>. Anggota baru disambut otomatis. Batas: 4 balasan per orang per 10 menit dan ${s.cap} balasan per hari. Jawaban selalu edukasi, tanpa sinyal buy/sell.</p></div>`,
+<p>Kapan bot menjawab: semua pesan di chat pribadi; di grup <b>hanya</b> bila bot di-mention (@${esc(s.username || 'bot')}) atau pesannya di-reply. Anggota baru disambut otomatis. Batas: ${tg.USER_DAILY} pertanyaan per orang per hari (WIB, pribadi + grup) dan ${s.cap} balasan total per hari. Setiap jawaban ditutup “${esc(tg.CLOSING)}”.</p>
+<p class="dim">Pesan grup terakhir diterima bot: ${s.lastGroup ? esc(s.lastGroup.at + ' · ' + s.lastGroup.chat) : 'belum ada sejak server terakhir restart'}.</p></div>`,
   });
 });
 
