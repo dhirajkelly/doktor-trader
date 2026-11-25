@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T03:19:58Z",
+ "generated": "2026-11-25T20:02:36Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -813,6 +813,49 @@
     {
      "q": "Apakah penghasil limbah B3 wajib punya program kedaruratan?",
      "a": "Ya. Pasal 431 PP 22/2021 mewajibkan setiap orang yang menghasilkan limbah B3 menyusun program kedaruratan, dan Pasal 436 mewajibkan pelatihan serta geladi kedaruratan paling sedikit 1 kali dalam 1 tahun."
+    }
+   ]
+  },
+  {
+   "id": "cara-mengurangi-limbah-b3",
+   "slug": "cara-mengurangi-limbah-b3",
+   "title": "Cara Mengurangi Limbah B3 di Pabrik: Substitusi, Proses, dan Laporan",
+   "publish_at_wib": "2026-11-26 12:00",
+   "publish_at_utc": "2026-11-26T05:00:00Z",
+   "url": "https://transsuma.com/cara-mengurangi-limbah-b3/",
+   "html": "html/cara-mengurangi-limbah-b3.html",
+   "image": "img/cara-mengurangi-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang cara mengurangi limbah B3 di pabrik",
+   "excerpt": "Panduan langkah demi langkah mengurangi limbah B3 di pabrik: dari audit timbulan, substitusi bahan, modifikasi proses, sampai laporan enam bulanan.",
+   "meta_title": "Cara Mengurangi Limbah B3 di Pabrik sesuai PP 22/2021",
+   "meta_description": "Cara mengurangi limbah B3 di pabrik sesuai Pasal 283 PP 22/2021: substitusi bahan, modifikasi proses, teknologi ramah lingkungan, contoh hitung, dan laporan.",
+   "focus_keyword": "cara mengurangi limbah b3",
+   "categories": [
+    "Panduan Pengelolaan Limbah untuk Industri",
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "pengurangan limbah b3",
+    "pp 22 2021",
+    "efisiensi produksi",
+    "laporan limbah b3"
+   ],
+   "faq": [
+    {
+     "q": "Apakah pengurangan limbah B3 itu wajib?",
+     "a": "Ya. Pasal 283 ayat (1) PP 22/2021 menyatakan setiap orang yang menghasilkan limbah B3 wajib melakukan pengurangan limbah B3."
+    },
+    {
+     "q": "Apa saja cara pengurangan limbah B3 menurut PP 22/2021?",
+     "a": "Pasal 283 ayat (2) menyebut tiga cara: substitusi bahan, modifikasi proses, dan/atau penggunaan teknologi ramah lingkungan. Ayat (6) menambahkan bahwa pengurangan juga dapat dilakukan melalui daur ulang limbah B3 oleh penghasilnya sendiri."
+    },
+    {
+     "q": "Seberapa sering pelaksanaan pengurangan limbah B3 dilaporkan?",
+     "a": "Menurut Pasal 284, laporan tertulis kepada Menteri disampaikan secara berkala paling sedikit 1 kali dalam 6 bulan sejak pengurangan limbah B3 dilakukan."
+    },
+    {
+     "q": "Apakah limbah B3 yang sudah dikurangi tetap harus diserahkan ke transporter berizin?",
+     "a": "Ya. Pengurangan hanya menurunkan jumlah limbah yang timbul. Limbah B3 yang tetap dihasilkan harus disimpan sesuai ketentuan dan diserahkan kepada pihak yang memiliki izin, dengan manifest elektronik."
     }
    ]
   }
