@@ -18,6 +18,7 @@ const NAV = [
   ['/admin/tools', 'EA · Signals · Copy', 'tools'],
   ['/admin/analisa', 'Analisa Doktor', 'analisa'],
   ['/admin/webinar', 'Webinar', 'webinar'],
+  ['/admin/telegram', 'Bot Telegram', 'telegram'],
 ];
 
 function page(req, res, { title, active, body }) {
@@ -172,6 +173,63 @@ router.post('/admin/member/:id/status', (req, res) => {
   db.run(`UPDATE users SET status = ?${s === 'approved' ? ", approved_at = COALESCE(approved_at, datetime('now'))" : ''} WHERE id = ? AND role = 'member'`, [s, req.params.id]);
   db.log(Number(req.params.id), 'status:' + s, 'oleh ' + req.user.email);
   res.redirect(req.get('referer') && req.get('referer').includes('/admin') ? req.get('referer') : '/admin/member/' + req.params.id);
+});
+
+// ---------- Bot Telegram (auto-reply grup diskusi channel) ----------
+router.get('/admin/telegram', (req, res) => {
+  const tg = require('../telegram');
+  const s = tg.status();
+  const n = (d) => db.get("SELECT COUNT(*) n FROM events WHERE name='tg_reply' AND created_at >= datetime('now', ?)", [`-${d} days`]).n;
+  const msg = { saved: ['Token tersimpan. Bot aktif dalam ±15 detik.', 'ok'], bad: ['Token ditolak Telegram. Cek lagi token dari @BotFather.', 'bad'], off: ['Bot dimatikan.', ''], on: ['Bot diaktifkan.', 'ok'], removed: ['Token dihapus.', ''] }[req.query.m];
+  const tok = db.setting('tg_bot_token', '');
+  page(req, res, {
+    title: 'Bot Telegram', active: 'telegram',
+    body: `<h1>Bot Telegram: Doktor Trader Chat</h1>
+${msg ? flash(msg[0], msg[1]) : ''}
+<div class="grid g3" style="margin:16px 0">
+<div class="card"><div class="dim">Status</div><div class="stat" style="font-size:20px">${!s.hasToken ? '<span class="pill gray">Belum ada token</span>' : !s.on ? '<span class="pill gray">Dimatikan</span>' : s.running ? '<span class="pill ok">Aktif</span>' : '<span class="pill">Menghubungkan…</span>'}</div><span class="dim">${s.username ? 'Bot: <a href="https://t.me/' + esc(s.username) + '" target="_blank" rel="noopener">@' + esc(s.username) + '</a>' : ''}</span></div>
+<div class="card"><div class="dim">Engine jawaban</div><div class="stat" style="font-size:20px">${s.ai ? '<span class="pill ok">Claude aktif</span>' : '<span class="pill bad">AI mati</span>'}</div><span class="dim">${s.ai ? 'Kunci API sama dengan Tanya Doktor' : 'ANTHROPIC_API_KEY belum ada di server: bot hanya membalas tautan artikel saat dipanggil langsung'}</span></div>
+<div class="card"><div class="dim">Balasan bot</div><div class="stat">${s.today}</div><span class="dim">hari ini (batas ${s.cap}/hari) · ${n(7)} dalam 7 hari · ${n(30)} dalam 30 hari</span></div>
+</div>
+${s.lastError ? `<div class="alert bad" style="font-size:14px">Error terakhir (${esc(s.lastErrorAt || '')}): ${esc(s.lastError)}</div>` : ''}
+<form class="f card" method="post" action="/admin/telegram/token" style="margin-bottom:16px">${csrfField(req.csrf)}
+<h3 style="margin-top:0">Token bot</h3>
+<p class="dim" style="margin-top:0">${tok ? 'Token tersimpan (…' + esc(tok.slice(-4)) + '). Isi lagi hanya bila ingin mengganti.' : 'Tempel token dari @BotFather. Token disimpan di database server, tidak pernah masuk repo.'}</p>
+<input type="password" name="token" placeholder="123456789:AA..." autocomplete="off" required>
+<div class="row" style="margin-top:10px"><button class="btn" type="submit">Simpan &amp; cek token</button></div></form>
+<div class="row" style="margin-bottom:24px">
+<form method="post" action="/admin/telegram/toggle">${csrfField(req.csrf)}<button class="btn ghost sm" type="submit">${s.on ? 'Matikan bot' : 'Aktifkan bot'}</button></form>
+${tok ? `<form method="post" action="/admin/telegram/hapus" onsubmit="return confirm('Hapus token bot?')">${csrfField(req.csrf)}<button class="btn ghost sm" type="submit">Hapus token</button></form>` : ''}
+</div>
+<div class="card prose" style="font-size:15px"><h3 style="margin-top:0">Cara pasang</h3><ol>
+<li>Di Telegram, chat <a href="https://t.me/BotFather" target="_blank" rel="noopener">@BotFather</a> → <code>/newbot</code>, nama: <b>Doktor Trader Chat</b>, username bebas (harus diakhiri <code>bot</code>). Salin tokennya ke form di atas.</li>
+<li>Masih di BotFather: <code>/setprivacy</code> → pilih bot → <b>Disable</b>, supaya bot bisa membaca pertanyaan di grup (bukan hanya yang menyebut @bot).</li>
+<li>Sambungkan grup diskusi: channel ${esc(SITE.telegram.replace('https://', ''))} → Edit → <b>Discussion</b> → pilih grup <b>Doktor Trader Chat</b> (atau buat baru).</li>
+<li>Tambahkan bot ke grup itu dan jadikan admin (izin default sudah cukup).</li>
+</ol>
+<p>Kapan bot menjawab: semua pesan di chat pribadi; di grup, pesan yang berbentuk pertanyaan (ada “?” atau diawali apa/bagaimana/kenapa/berapa/cara/dok/min…), yang menyebut @bot, yang membalas pesan bot, atau diawali <code>/tanya</code>. Anggota baru disambut otomatis. Batas: 4 balasan per orang per 10 menit dan ${s.cap} balasan per hari. Jawaban selalu edukasi, tanpa sinyal buy/sell.</p></div>`,
+  });
+});
+
+router.post('/admin/telegram/token', async (req, res) => {
+  const t = String((req.body || {}).token || '').trim();
+  if (!/^\d{5,}:[\w-]{30,}$/.test(t)) return res.redirect('/admin/telegram?m=bad');
+  try { await require('../telegram').getMe(t); } catch (e) { return res.redirect('/admin/telegram?m=bad'); }
+  db.setSetting('tg_bot_token', t);
+  db.setSetting('tg_enabled', '1');
+  db.log(null, 'telegram:token', 'oleh ' + req.user.email);
+  res.redirect('/admin/telegram?m=saved');
+});
+
+router.post('/admin/telegram/toggle', (req, res) => {
+  const on = db.setting('tg_enabled', '1') === '1';
+  db.setSetting('tg_enabled', on ? '0' : '1');
+  res.redirect('/admin/telegram?m=' + (on ? 'off' : 'on'));
+});
+
+router.post('/admin/telegram/hapus', (req, res) => {
+  db.setSetting('tg_bot_token', '');
+  res.redirect('/admin/telegram?m=removed');
 });
 
 // ---------- Dupoin referral auto-approval ----------

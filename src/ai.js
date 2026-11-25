@@ -110,4 +110,4 @@ function reviewJournal(summary) {
   return callClaude(JOURNAL_SYSTEM, [{ type: 'text', text: `Ringkasan jurnal member:\n${String(summary).slice(0, 6000)}` }], 900);
 }
 
-module.exports = { enabled, answer, relatedLessons, analyzeChart, reviewJournal };
+module.exports = { enabled, answer, relatedLessons, analyzeChart, reviewJournal, callClaude };

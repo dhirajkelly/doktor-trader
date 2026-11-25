@@ -42,6 +42,7 @@ async function main() {
   // Token-protected temporary media hosting for scheduled tasks. Before body parsing/CSRF: streams the raw body.
   const media = require('./src/media');
   media.start();
+  require('./src/telegram').start(); // bot auto-reply grup Telegram (aktif bila token disimpan di /admin/telegram)
   app.use(media.router);
   app.use(express.urlencoded({ extended: false, limit: '1mb' }));
   app.use(auth.loadSession);
