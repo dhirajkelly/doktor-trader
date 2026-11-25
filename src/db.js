@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS activity (
 );
 CREATE TABLE IF NOT EXISTS events (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name TEXT NOT NULL,            -- broker_click | wa_click | daftar_click
+  name TEXT NOT NULL,            -- broker_click | wa_click | daftar_click | telegram
   path TEXT,
   created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );

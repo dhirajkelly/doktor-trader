@@ -1,6 +1,6 @@
 const express = require('express');
 const db = require('../db');
-const { layout, esc, md, fmtDate, plain, SITE, DISCLOSURE, authorBox } = require('../views');
+const { layout, esc, md, fmtDate, plain, SITE, DISCLOSURE, authorBox, TG_ICON } = require('../views');
 const og = require('../og');
 
 const router = express.Router();
@@ -69,10 +69,10 @@ router.get('/artikel/:slug', (req, res, next) => {
     '@context': 'https://schema.org', '@type': 'Article', headline: a.title, description: desc, inLanguage: 'id-ID',
     datePublished: isoDate(a.published_at), dateModified: isoDate(a.updated_at), mainEntityOfPage: url,
     author: { '@type': 'Person', '@id': SITE.url + '/#dhiraj', name: 'Dhiraj Kelly Sawlani', alternateName: SITE.author, url: SITE.url + '/#tentang',
-      sameAs: ['https://www.linkedin.com/in/dhirajkelly', 'https://www.instagram.com/dhirajkelly', 'https://www.tiktok.com/@dhirajkelly', 'https://www.youtube.com/@dhirajkelly'],
+      sameAs: ['https://www.linkedin.com/in/dhirajkelly', 'https://www.instagram.com/dhirajkelly', 'https://www.tiktok.com/@dhirajkelly', 'https://www.youtube.com/@dhirajkelly', SITE.telegram],
       hasCredential: { '@type': 'EducationalOccupationalCredential', name: SITE.cert.title, credentialCategory: 'Sertifikat Kompetensi', identifier: SITE.cert.reg,
         recognizedBy: { '@type': 'Organization', name: 'Badan Nasional Sertifikasi Profesi (BNSP)' } } },
-    publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: SITE.url + '/logo-512.png' } },
+    publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: SITE.url + '/logo-512.png' }, sameAs: [SITE.telegram] },
     image: ogImg, keywords: [a.focus_keyword, a.tags].filter(Boolean).join(', '),
   }, {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
@@ -93,6 +93,7 @@ router.get('/artikel/:slug', (req, res, next) => {
 <div class="prose">${md(a.body_md)}</div>
 <div class="alert" style="margin-top:28px;font-size:14px">Artikel ini bersifat edukasi, bukan ajakan atau rekomendasi transaksi. Trading memiliki risiko tinggi; gunakan hanya dana yang siap Anda tanggung risikonya.</div>
 ${cta()}
+<p class="tgline">${TG_ICON(16)} Dapat XAUUSD plan harian di Telegram: <a href="${SITE.telegram}" target="_blank" rel="noopener" data-track="telegram"><strong>t.me/doktortrader_id</strong></a></p>
 <div id="penulis">${authorBox()}</div>
 ${related.length ? `<h2>Baca juga</h2><ul>${related.map((r) => `<li><a href="/artikel/${esc(r.slug)}">${esc(r.title)}</a></li>`).join('')}</ul>` : ''}
 </article>`,

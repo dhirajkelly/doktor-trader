@@ -79,6 +79,7 @@ router.get('/admin', (req, res) => {
 <div class="grid g3" style="margin:12px 0 18px">
 <div class="card"><div class="dim">Klik buka akun ${SITE.brokerName}</div><div class="stat">${ev('broker_click')}</div><span class="dim">${ev('broker_click', 7)} dalam 7 hari</span></div>
 <div class="card"><div class="dim">Klik WhatsApp</div><div class="stat">${ev('wa_click')}</div><span class="dim">${ev('wa_click', 7)} dalam 7 hari</span></div>
+<div class="card"><div class="dim">Klik channel Telegram</div><div class="stat">${ev('telegram')}</div><span class="dim">${ev('telegram', 7)} dalam 7 hari</span></div>
 <div class="card"><div class="dim">Klik daftar → member baru</div><div class="stat">${ev('daftar_click')} → ${c("SELECT COUNT(*) n FROM users WHERE role='member' AND created_at >= datetime('now','-30 days')")}</div><span class="dim">klik tombol daftar → akun terdaftar</span></div>
 </div>
 ${topPages.length ? `<div class="tablewrap card" style="padding:6px 14px;margin-bottom:24px"><table><thead><tr><th>Halaman asal klik ${SITE.brokerName}</th><th>Klik (30 hari)</th></tr></thead><tbody>${topPages.map((r) => `<tr><td>${esc(r.path)}</td><td>${r.n}</td></tr>`).join('')}</tbody></table></div>` : ''}

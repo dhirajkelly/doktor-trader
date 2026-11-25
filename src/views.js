@@ -7,6 +7,7 @@ const SITE = {
   brokerName: 'Dupoin',
   brokerUrl: process.env.BROKER_URL || 'https://i.dupoin.vip/Xff2dFOFr',
   whatsapp: process.env.WHATSAPP || '6285178956447',
+  telegram: 'https://t.me/doktortrader_id',
   // Partner broker's legal entity (verified on dupoin.co.id/about-us/licenses, Nov 2026)
   brokerEntity: 'PT Dupoin Futures Indonesia',
   brokerLicense: 'Izin Bappebti No. 423/BAPPEBTI/SI/VII/2004 · Anggota JFX No. SPAB-064/BBJ/04/04',
@@ -29,6 +30,9 @@ const SITE = {
     'Sertifikat Kompetensi BNSP Jenjang 5 Pasar Modal, Pengelolaan Investasi, No. 66301 2412 5 0028048 2026',
   ],
 };
+
+// Telegram paper-plane icon (inline SVG, inherits currentColor).
+const TG_ICON = (s = 16) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="vertical-align:-0.15em;flex:none"><path d="M21.94 4.3a1.2 1.2 0 0 0-1.62-1.3L2.9 9.7c-1.1.43-1.08 2 .03 2.4l4.4 1.55 1.7 5.4c.27.86 1.35 1.13 2 .5l2.5-2.4 4.4 3.24c.72.53 1.75.13 1.93-.75L21.94 4.3zM9.6 13.3l8.1-6.1-6.5 7.1-.3 3.1-1.3-4.1z"/></svg>`;
 
 const DISCLOSURE = `Pengungkapan: Doktor Trader adalah mitra referral ${SITE.brokerName} (${SITE.brokerEntity}). Jika Anda membuka akun lewat link kami, kami dapat menerima komisi dari ${SITE.brokerName} tanpa biaya tambahan untuk Anda.`;
 
@@ -130,6 +134,8 @@ th{color:var(--dim);font-weight:700;font-size:12px;text-transform:uppercase;lett
 @media(max-width:820px){.side{grid-template-columns:1fr;gap:18px}.side aside{display:flex;flex-wrap:wrap;gap:6px}.side aside a{white-space:nowrap;padding:7px 12px;font-size:13px;border:1px solid var(--line)}.side aside a.on{border-color:rgba(233,196,106,.45)}}
 footer.bot{border-top:1px solid var(--line);margin-top:60px;padding:30px 0;color:var(--dim);font-size:12px;line-height:1.7}
 .stat{font-size:28px;font-weight:800}
+.btn.tg{background:#2DB5C4;color:#fff}.btn.tg:hover{filter:brightness(1.08)}
+.tgline{margin:24px 0 0;padding:12px 16px;border-left:3px solid #2DB5C4;background:rgba(45,181,196,.08);border-radius:0 10px 10px 0;font-size:15px}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .spread{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
 `;
@@ -139,7 +145,7 @@ const RISK = 'Peringatan risiko: Trading forex, emas, dan instrumen berjangka me
 // First-party click tracking: broker links, WhatsApp links and anything with data-track.
 // Sends only the event name and page path; no personal data, no cookies beyond the existing session.
 const TRACK_JS = `(function(){function ev(e){var a=e.target.closest&&e.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'',t=a.getAttribute('data-track');
-if(!t){if(/dupoin\\./i.test(h))t='broker_click';else if(/wa\\.me\\//i.test(h))t='wa_click';else if(/^\\/daftar/.test(h))t='daftar_click';}
+if(!t){if(/dupoin\\./i.test(h))t='broker_click';else if(/wa\\.me\\//i.test(h))t='wa_click';else if(/^\\/daftar/.test(h))t='daftar_click';else if(/^https?:\\/\\/t\\.me\\//i.test(h))t='telegram';}
 if(!t)return;try{navigator.sendBeacon('/t',new Blob([JSON.stringify({e:t,p:location.pathname})],{type:'application/json'}))}catch(_){}}
 document.addEventListener('click',ev,true);})();
 (function(){var h=document.querySelector('header.top'),b=h&&h.querySelector('.navt');if(!b)return;
@@ -187,7 +193,7 @@ ${user ? `<form method="post" action="/keluar" style="display:inline"><input typ
 <footer class="bot"><div class="wrap"><p>${RISK} ${DISCLOSURE} Pembukaan akun dan transaksi tunduk pada syarat dan ketentuan ${SITE.brokerName} serta regulasi yang berlaku. ${SITE.brokerEntity}: ${SITE.brokerLicense}.</p>
 <p><img src="/logo-smartin.webp" alt="Logo Smartin" width="28" height="37" loading="lazy" style="vertical-align:middle;background:#F7F7F7;border-radius:6px;padding:3px;margin-right:8px">Perusahaan penasihat berjangka: <a href="${SITE.advisor.url}" target="_blank" rel="noopener">${SITE.advisor.name}</a> (Smartin) · ${SITE.advisor.license} · <a href="https://bappebti.go.id/penasihat_berjangka" target="_blank" rel="noopener">Cek di Bappebti</a>.</p>
 <p>Penulis: ${SITE.author}, pemegang izin Wakil Manajer Investasi (WMI) OJK, sertifikat kompetensi BNSP CTA, dan ${SITE.cert.title} (No. Reg. ${SITE.cert.reg}). Doktor Trader adalah layanan edukasi; konten di situs ini bukan nasihat investasi pribadi atau jasa pengelolaan dana.</p>
-<p>© ${new Date().getFullYear()} ${SITE.author} · <a href="/">dhirajkelly.id</a> · <a href="/artikel">Artikel</a> · <a href="/alat/kalkulator-lot">Kalkulator Lot</a> · <a href="/syarat-ketentuan">Syarat &amp; Ketentuan</a> · <a href="/kebijakan-privasi">Kebijakan Privasi</a> · <a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener" data-track="wa_click">WhatsApp</a></p></div></footer>
+<p>© ${new Date().getFullYear()} ${SITE.author} · <a href="/">dhirajkelly.id</a> · <a href="/artikel">Artikel</a> · <a href="/alat/kalkulator-lot">Kalkulator Lot</a> · <a href="/syarat-ketentuan">Syarat &amp; Ketentuan</a> · <a href="/kebijakan-privasi">Kebijakan Privasi</a> · <a href="https://wa.me/${SITE.whatsapp}" target="_blank" rel="noopener" data-track="wa_click">WhatsApp</a> · <a href="${SITE.telegram}" target="_blank" rel="noopener" data-track="telegram" aria-label="Channel Telegram Doktor Trader">${TG_ICON(13)} Telegram</a></p></div></footer>
 <script>${TRACK_JS}</script>
 </body></html>`;
 }
@@ -204,4 +210,4 @@ function csrfField(csrf) {
   return `<input type="hidden" name="_csrf" value="${esc(csrf)}">`;
 }
 
-module.exports = { SITE, DISCLOSURE, authorBox, esc, md, plain, slugify, firstName, fmtDate, layout, sideNav, flash, csrfField, RISK };
+module.exports = { SITE, TG_ICON, DISCLOSURE, authorBox, esc, md, plain, slugify, firstName, fmtDate, layout, sideNav, flash, csrfField, RISK };

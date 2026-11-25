@@ -26,7 +26,7 @@ async function main() {
     next();
   });
   // First-party click events (sendBeacon). Before session/CSRF: carries no personal data and changes nothing but a counter.
-  const EVENTS = new Set(['broker_click', 'wa_click', 'daftar_click']);
+  const EVENTS = new Set(['broker_click', 'wa_click', 'daftar_click', 'telegram']);
   const evHits = new Map();
   app.post('/t', express.json({ limit: '2kb', type: () => true }), (req, res) => {
     const b = req.body || {};
