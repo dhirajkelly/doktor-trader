@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-26T21:54:05Z",
+ "generated": "2026-11-26T21:56:13Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -2031,6 +2031,92 @@
     {
      "q": "Siapa yang menyusun WBS?",
      "a": "Biasanya dipimpin manajer proyek atau tim perencana (project control) bersama engineer dari tiap disiplin. Pemilik proyek sebaiknya ikut meninjau agar lingkup yang tertuang sesuai kontrak."
+    }
+   ]
+  },
+  {
+   "id": "jasa-cor-lantai-beton-gudang",
+   "slug": "jasa-cor-lantai-beton-gudang",
+   "title": "Jasa Cor Lantai Beton Gudang: Lingkup, Faktor Biaya, dan Cara Memilih",
+   "publish_at_wib": "2026-11-27 16:00",
+   "publish_at_utc": "2026-11-27T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/27/jasa-cor-lantai-beton-gudang/",
+   "html": "html/jasa-cor-lantai-beton-gudang.html",
+   "image": "img/jasa-cor-lantai-beton-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa cor lantai beton gudang",
+   "excerpt": "Hal yang perlu Anda siapkan dan bandingkan sebelum menunjuk jasa cor lantai beton untuk gudang baru atau penggantian lantai gudang lama.",
+   "meta_title": "Jasa Cor Lantai Beton Gudang: Lingkup dan Biaya",
+   "meta_description": "Sebelum memakai jasa cor lantai beton gudang di Bekasi atau Cikarang, pahami lingkup kerja, faktor biaya, isi penawaran, dan cara memilih kontraktornya.",
+   "focus_keyword": "jasa cor lantai beton gudang",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "lantai beton",
+    "lantai gudang",
+    "pengecoran",
+    "kontraktor Bekasi"
+   ],
+   "faq": [
+    {
+     "q": "Berapa biaya jasa cor lantai beton gudang per meter persegi?",
+     "a": "Biaya sangat bergantung pada tebal pelat, mutu beton, jenis tulangan, kondisi tanah dasar, finishing, luas, dan lokasi. Karena itu angka yang dapat dipertanggungjawabkan hanya bisa diberikan setelah survei dan perhitungan BOQ."
+    },
+    {
+     "q": "Berapa lama lantai gudang baru bisa dipakai setelah dicor?",
+     "a": "Waktunya mengikuti spesifikasi dan rencana beban. Lantai biasanya bisa dilalui pejalan kaki lebih dulu, sedangkan beban forklift dan rak berat menunggu beton mencapai kekuatan yang disyaratkan perencana, yang dibuktikan dengan hasil uji benda uji."
+    },
+    {
+     "q": "Apakah lantai gudang bisa dicor sambil gudang tetap beroperasi?",
+     "a": "Bisa, dengan membagi area kerja per zona, memindahkan barang secara bertahap, dan mengatur jalur forklift sementara. Penjadwalan seperti ini perlu disepakati sejak awal."
+    },
+    {
+     "q": "Apa yang harus ada di penawaran jasa cor lantai beton gudang?",
+     "a": "Minimal tebal dan mutu beton, jenis dan diameter tulangan, pekerjaan tanah dasar, jenis finishing, pola dan pengisian sambungan, metode curing, pengujian, serta jadwal pekerjaan."
+    }
+   ]
+  },
+  {
+   "id": "standar-pencahayaan-gudang",
+   "slug": "standar-pencahayaan-gudang",
+   "title": "Standar Pencahayaan Gudang: Acuan Lux, Perhitungan, dan Pilihan Lampu",
+   "publish_at_wib": "2026-11-27 19:00",
+   "publish_at_utc": "2026-11-27T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/27/standar-pencahayaan-gudang/",
+   "html": "html/standar-pencahayaan-gudang.html",
+   "image": "img/standar-pencahayaan-gudang.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang standar pencahayaan gudang",
+   "excerpt": "Berapa lux yang dibutuhkan gudang, bagaimana menghitung jumlah lampu, dan apa saja yang perlu diperhatikan agar penerangan gudang aman dan efisien.",
+   "meta_title": "Standar Pencahayaan Gudang: Lux dan Perhitungan",
+   "meta_description": "Panduan standar pencahayaan gudang: acuan lux di Permenaker 5/2018, contoh perhitungan jumlah lampu dengan metode lumen, pilihan lampu, dan pengukurannya.",
+   "focus_keyword": "standar pencahayaan gudang",
+   "categories": [
+    "Engineering & Design",
+    "Safety, Health & Environment (SHE)"
+   ],
+   "tags": [
+    "pencahayaan",
+    "lux",
+    "lampu gudang",
+    "K3 lingkungan kerja"
+   ],
+   "faq": [
+    {
+     "q": "Peraturan apa yang mengatur standar pencahayaan tempat kerja di Indonesia?",
+     "a": "Pencahayaan di tempat kerja diatur dalam Permenaker Nomor 5 Tahun 2018 tentang Keselamatan dan Kesehatan Kerja Lingkungan Kerja. Pasal 16 mewajibkan pengukuran dan pengendalian pencahayaan, sedangkan standar intensitasnya tercantum di lampiran peraturan tersebut."
+    },
+    {
+     "q": "Berapa lux pencahayaan minimal untuk gudang?",
+     "a": "Lampiran Permenaker 5/2018 membedakan jenis pekerjaannya. Gudang penyimpanan barang besar dan kasar tercantum dengan intensitas minimal 50 lux, sedangkan tempat penyimpanan barang sedang dan kecil 100 lux. Area yang menuntut pembacaan label atau pekerjaan lebih teliti membutuhkan intensitas lebih tinggi."
+    },
+    {
+     "q": "Apa itu metode lumen dalam perhitungan lampu?",
+     "a": "Metode lumen menghitung jumlah lampu dari target lux, luas ruang, lumen per lampu, faktor utilisasi, dan faktor pemeliharaan. Metode ini cocok untuk perkiraan awal, sedangkan desain akhir sebaiknya dicek dengan perangkat lunak simulasi pencahayaan."
+    },
+    {
+     "q": "Apakah pencahayaan alami dari skylight bisa menggantikan lampu?",
+     "a": "Pencahayaan alami dapat mengurangi pemakaian lampu di siang hari, tetapi tidak menggantikan lampu sepenuhnya karena tidak tersedia pada malam hari dan bervariasi menurut cuaca. Skylight juga perlu diperhitungkan terhadap panas dan silau."
     }
    ]
   }
