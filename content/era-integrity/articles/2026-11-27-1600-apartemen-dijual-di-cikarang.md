@@ -56,7 +56,7 @@ Untuk apartemen, lokasi gedung menentukan hampir segalanya: kenyamanan penghuni,
 | 1 kamar tidur | Pasangan, profesional | Lebih fleksibel untuk dihuni maupun disewakan |
 | 2 kamar tidur | Keluarga kecil, ekspatriat, berbagi unit | Penyewa lebih sedikit, tetapi cenderung tinggal lebih lama |
 
-Perhatikan juga lantai, arah hadap, pemandangan, dan jarak unit ke lift atau ruang sampah. Detail kecil seperti ini memengaruhi kenyamanan dan minat penyewa.
+Perhatikan juga lantai, arah hadap, pemandangan, dan jarak unit ke lift atau ruang sampah. Detail kecil seperti ini memengaruhi kenyamanan dan minat penyewa. Unit yang terkena sinar matahari sore langsung, misalnya, bisa terasa lebih panas dan membuat pemakaian AC lebih boros, sementara unit yang menghadap jalan raya mungkin lebih bising di malam hari.
 
 ## Legalitas: SHMSRS dan Dokumen Lain
 

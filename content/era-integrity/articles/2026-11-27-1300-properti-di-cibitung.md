@@ -37,7 +37,7 @@ Karakter kawasan Cibitung cukup beragam:
 - **Zona industri dan pergudangan** di sekitar akses tol dan kawasan industri.
 - **Lahan yang masih berkembang** di sisi-sisi yang lebih jauh dari jalan utama.
 
-Keragaman ini membuat Cibitung tidak bisa dinilai dengan satu angka atau satu kesimpulan. Nilai dan prospek sebuah properti sangat bergantung pada titik lokasinya.
+Keragaman ini membuat Cibitung tidak bisa dinilai dengan satu angka atau satu kesimpulan. Nilai dan prospek sebuah properti sangat bergantung pada titik lokasinya, bahkan dua rumah di kecamatan yang sama bisa memiliki daya tarik yang sangat berbeda.
 
 ## Akses Transportasi: Tol dan KRL
 
