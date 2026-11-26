@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-26T21:21:55Z",
+ "generated": "2026-11-26T21:24:14Z",
  "items": [
   {
    "id": "sewa-rumah-dekat-kiic-karawang",
@@ -1950,6 +1950,92 @@
     {
      "q": "Bagaimana pembeli memastikan surat kuasa itu sah?",
      "a": "Minta salinan kuasa sejak awal, cocokkan identitas pemberi kuasa dengan sertifikat, dan biarkan notaris/PPAT memverifikasi keaslian serta keberlakuan kuasa sebelum pembayaran dilakukan."
+    }
+   ]
+  },
+  {
+   "id": "properti-di-cibitung",
+   "slug": "properti-di-cibitung",
+   "title": "Properti di Cibitung Bekasi: Profil Kawasan, Akses, dan Peluangnya",
+   "publish_at_wib": "2026-11-27 13:00",
+   "publish_at_utc": "2026-11-27T06:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/27/properti-di-cibitung/",
+   "html": "html/properti-di-cibitung.html",
+   "image": "img/properti-di-cibitung.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang properti di Cibitung",
+   "excerpt": "Profil kawasan Cibitung untuk pembeli dan investor: akses tol dan KRL, penggerak permintaan, tipe properti yang dicari, dan risiko yang perlu dicek.",
+   "meta_title": "Properti di Cibitung: Profil Kawasan dan Peluang",
+   "meta_description": "Menimbang properti di Cibitung? Kenali profil kawasan, akses tol dan KRL, penggerak permintaan hunian dan gudang, serta risiko yang perlu dicek sebelum membeli.",
+   "focus_keyword": "properti di cibitung",
+   "categories": [
+    "Area & Kawasan",
+    "Investasi & Analisis"
+   ],
+   "tags": [
+    "cibitung",
+    "kabupaten bekasi",
+    "investasi properti",
+    "kawasan industri"
+   ],
+   "faq": [
+    {
+     "q": "Mengapa Cibitung menarik untuk properti?",
+     "a": "Cibitung berada di koridor industri timur Jakarta, dilalui jaringan tol dan jalur KRL, serta berdekatan dengan beberapa kawasan industri. Kombinasi ini menciptakan permintaan hunian bagi pekerja dan permintaan ruang untuk gudang serta logistik."
+    },
+    {
+     "q": "Tipe properti apa yang banyak dicari di Cibitung?",
+     "a": "Rumah tapak untuk keluarga pekerja, kontrakan dan kos untuk karyawan, serta gudang dan lahan untuk kebutuhan logistik. Permintaan setiap tipe bisa berbeda per lokasi, jadi cek kondisi pasar di sekitar titik properti."
+    },
+    {
+     "q": "Apa risiko yang perlu dicek sebelum membeli properti di Cibitung?",
+     "a": "Cek riwayat genangan atau banjir, kepadatan lalu lintas di jam sibuk, peruntukan lahan menurut tata ruang, serta legalitas sertifikat. Untuk tujuan sewa, cek juga tingkat persaingan unit sewa di sekitarnya."
+    },
+    {
+     "q": "Apakah Era Integrity Indonesia melayani area Cibitung?",
+     "a": "Ya. Tim kami bisa membantu mencarikan properti di Cibitung dan sekitarnya, membandingkan pilihan, serta mendampingi proses pengecekan sampai transaksi."
+    }
+   ]
+  },
+  {
+   "id": "apartemen-dijual-di-cikarang",
+   "slug": "apartemen-dijual-di-cikarang",
+   "title": "Apartemen Dijual di Cikarang: Cara Memilih Unit untuk Huni atau Sewa",
+   "publish_at_wib": "2026-11-27 16:00",
+   "publish_at_utc": "2026-11-27T09:00:00Z",
+   "url": "https://www.eraintegrityindonesia.com/2026/11/27/apartemen-dijual-di-cikarang/",
+   "html": "html/apartemen-dijual-di-cikarang.html",
+   "image": "img/apartemen-dijual-di-cikarang.png",
+   "image_alt": "Gambar sampul artikel Era Integrity Indonesia tentang apartemen dijual di Cikarang",
+   "excerpt": "Cara memilih apartemen dijual di Cikarang untuk dihuni atau disewakan: lokasi, tipe unit, legalitas SHMSRS, biaya bulanan, dan hitungan sewa yang realistis.",
+   "meta_title": "Apartemen Dijual di Cikarang: Cara Memilih Unit",
+   "meta_description": "Panduan membeli apartemen dijual di Cikarang: memilih lokasi dan tipe unit, memahami SHMSRS, biaya IPL, hitungan sewa, dan cek unit baru maupun bekas.",
+   "focus_keyword": "apartemen dijual di cikarang",
+   "categories": [
+    "Jual • Beli • Sewa",
+    "Listing Properti"
+   ],
+   "tags": [
+    "apartemen cikarang",
+    "beli apartemen",
+    "shmsrs",
+    "investasi apartemen"
+   ],
+   "faq": [
+    {
+     "q": "Apa bukti kepemilikan apartemen?",
+     "a": "Umumnya berupa Sertifikat Hak Milik atas Satuan Rumah Susun (SHMSRS) yang diterbitkan kantor pertanahan. Untuk rusun yang dibangun di atas tanah tertentu, seperti barang milik negara, bukti kepemilikannya bisa berupa SKBG sarusun. Pastikan jenis dan status dokumennya sebelum membeli."
+    },
+    {
+     "q": "Biaya bulanan apa saja yang perlu disiapkan pemilik apartemen?",
+     "a": "Biasanya iuran pengelolaan lingkungan (IPL) atau service charge, dana cadangan (sinking fund), listrik, air, dan biaya parkir bila memakai. Besarnya berbeda di setiap gedung, jadi minta rinciannya dari pengelola."
+    },
+    {
+     "q": "Lebih baik membeli unit baru atau unit bekas?",
+     "a": "Unit baru dari developer biasanya punya promo dan bisa memenuhi syarat insentif PPN DTP bila sesuai ketentuan, tetapi ada yang masih inden. Unit bekas bisa langsung ditempati atau disewakan dan kondisinya bisa dicek langsung, tetapi perlu proses balik nama sertifikat."
+    },
+    {
+     "q": "Apakah apartemen di Cikarang cocok untuk disewakan?",
+     "a": "Bisa, terutama unit yang dekat dengan kawasan industri dan perkantoran. Namun, hitung dulu potensi sewa, tingkat kekosongan, dan biaya bulanan dengan angka lapangan agar ekspektasi Anda realistis."
     }
    ]
   }
