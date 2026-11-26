@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T20:11:04Z",
+ "generated": "2026-11-26T19:57:48Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -950,6 +950,49 @@
     {
      "q": "Apa akibatnya bila penghasil menyerahkan limbah B3 ke pengangkut tanpa izin?",
      "a": "Penghasil tetap bertanggung jawab atas limbah B3 yang dihasilkannya. Menyerahkan limbah kepada pihak tanpa izin berisiko melanggar ketentuan pengelolaan limbah B3, jadi selalu periksa dokumen pengangkut sebelum penyerahan."
+    }
+   ]
+  },
+  {
+   "id": "jasa-angkut-limbah-majun",
+   "slug": "jasa-angkut-limbah-majun",
+   "title": "Jasa Angkut Limbah Majun: Kode B110d, Penyimpanan, dan Persiapannya",
+   "publish_at_wib": "2026-11-27 07:00",
+   "publish_at_utc": "2026-11-27T00:00:00Z",
+   "url": "https://transsuma.com/jasa-angkut-limbah-majun/",
+   "html": "html/jasa-angkut-limbah-majun.html",
+   "image": "img/jasa-angkut-limbah-majun.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang jasa angkut limbah majun",
+   "excerpt": "Majun berminyak tampak sepele, tetapi tercatat sebagai limbah B3 B110d. Ini cara memilah, menyimpan, dan menyiapkannya sebelum diangkut.",
+   "meta_title": "Jasa Angkut Limbah Majun B110d untuk Pabrik",
+   "meta_description": "Panduan jasa angkut limbah majun untuk pabrik: kode B110d, pemilahan di titik kerja, kemasan, masa simpan, dan dokumen yang dicek sebelum limbah diserahkan.",
+   "focus_keyword": "jasa angkut limbah majun",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3",
+    "Jenis & Karakteristik Limbah B3"
+   ],
+   "tags": [
+    "majun bekas",
+    "kain majun terkontaminasi",
+    "b110d",
+    "limbah b3 pabrik"
+   ],
+   "faq": [
+    {
+     "q": "Apakah kain majun bekas termasuk limbah B3?",
+     "a": "Ya. Lampiran IX PP 22/2021 mencantumkan kain majun bekas (used rags) dan yang sejenis dengan kode B110d, sebagai limbah B3 dari sumber tidak spesifik kategori 2."
+    },
+    {
+     "q": "Berapa lama majun bekas boleh disimpan di TPS?",
+     "a": "Mengikuti Pasal 296 PP 22/2021: 90 hari bila fasilitas menghasilkan limbah B3 50 kg per hari atau lebih, dan 365 hari bila di bawah 50 kg per hari karena B110d termasuk kategori 2 dari sumber tidak spesifik. Hitungan dimulai sejak limbah dihasilkan."
+    },
+    {
+     "q": "Bolehkah majun bekas dibuang ke tempat sampah biasa atau dibakar sendiri?",
+     "a": "Tidak. Majun bekas yang tercatat sebagai limbah B3 harus disimpan di tempat penyimpanan limbah B3 lalu diserahkan kepada pihak berizin melalui pengangkut berizin, bukan dibuang ke sampah domestik atau dibakar di area pabrik."
+    },
+    {
+     "q": "Bolehkah majun dicampur dengan sarung tangan atau filter bekas dalam satu wadah?",
+     "a": "Pasal 285 PP 22/2021 melarang pencampuran limbah B3 yang disimpan. Bila sarung tangan atau filter dicatat dengan kode berbeda, simpan terpisah. Cara pengelompokannya sebaiknya mengikuti rincian teknis penyimpanan fasilitas Anda."
     }
    ]
   }
