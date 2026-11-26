@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-26T20:01:30Z",
+ "generated": "2026-11-26T20:08:47Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -1036,6 +1036,48 @@
     {
      "q": "Siapa yang sebaiknya menyusun SOP limbah B3?",
      "a": "Biasanya disusun oleh tim EHS/HSE bersama perwakilan produksi, maintenance, gudang, dan pengadaan, lalu disahkan oleh pimpinan fasilitas agar mengikat semua bagian."
+    }
+   ]
+  },
+  {
+   "id": "sanksi-limbah-b3",
+   "slug": "sanksi-limbah-b3",
+   "title": "Sanksi Limbah B3: Administratif, Pidana, dan Perubahan 2026",
+   "publish_at_wib": "2026-11-27 17:00",
+   "publish_at_utc": "2026-11-27T10:00:00Z",
+   "url": "https://transsuma.com/sanksi-limbah-b3/",
+   "html": "html/sanksi-limbah-b3.html",
+   "image": "img/sanksi-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang sanksi limbah B3",
+   "excerpt": "Ringkasan sanksi administratif dan pidana terkait limbah B3 menurut UU PPLH yang berlaku sekarang, termasuk penyesuaian pidana sejak 2 Januari 2026.",
+   "meta_title": "Sanksi Limbah B3: Administratif & Pidana Terbaru",
+   "meta_description": "Sanksi limbah B3 bagi penghasil: lima jenis sanksi administratif, ancaman pidana UU PPLH setelah UU Cipta Kerja dan UU 1/2026, serta cara mencegahnya.",
+   "focus_keyword": "sanksi limbah b3",
+   "categories": [
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "uu pplh",
+    "sanksi administratif lingkungan",
+    "pidana lingkungan",
+    "uu 1 tahun 2026"
+   ],
+   "faq": [
+    {
+     "q": "Apa saja jenis sanksi administratif untuk pelanggaran limbah B3?",
+     "a": "Pasal 82C UU 32/2009 sebagaimana diubah UU Cipta Kerja menyebut lima jenis: teguran tertulis, paksaan pemerintah, denda administratif, pembekuan Perizinan Berusaha, dan/atau pencabutan Perizinan Berusaha."
+    },
+    {
+     "q": "Berapa ancaman pidana bagi penghasil yang tidak mengelola limbah B3?",
+     "a": "Setelah penyesuaian oleh UU Nomor 1 Tahun 2026, Pasal 103 UU PPLH mengancam pidana penjara paling lama 3 tahun dan/atau pidana denda paling banyak kategori III. Menurut Pasal 79 KUHP, kategori III bernilai paling banyak Rp50.000.000."
+    },
+    {
+     "q": "Apakah Pasal 102 UU PPLH tentang pengelolaan limbah B3 tanpa izin masih berlaku?",
+     "a": "Tidak. Pasal 102 dihapus oleh UU Cipta Kerja, yang kini berlaku melalui Perppu 2/2022 dan UU 6/2023. Kegiatan tanpa Perizinan Berusaha lebih dulu ditangani dengan sanksi administratif, sedangkan Pasal 109 mengatur pidana bila kegiatan itu mengakibatkan korban atau kerusakan."
+    },
+    {
+     "q": "Apakah penghasil ikut bertanggung jawab bila limbah B3 diserahkan ke pihak tanpa izin?",
+     "a": "Penghasil tetap wajib memastikan limbah B3 dikelola sesuai Pasal 59 UU PPLH, termasuk menyerahkannya hanya kepada pihak yang memiliki Perizinan Berusaha. Karena itu dokumen pengangkut dan penerima akhir perlu dicek sebelum penyerahan."
     }
    ]
   }
