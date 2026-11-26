@@ -36,3 +36,11 @@ No third-party music (Content ID): only the self-generated `public/sfx/whoosh.wa
    privacy: public, contains_synthetic_media: true, cover_media_id}`; description = summary, timestamps, CTA, disclaimer, AI-voice note.
 8. Academy module videos: add `"<course>/<lesson>": "https://youtu.be/<id>"` to `content/academy-videos.json`, push to main.
 9. AE handoff: `python3 scripts/make_ae.py` → `out/ae/build_timeline.jsx` + `timeline.edl`; `out/subtitles_id.srt`.
+
+## Whiteboard format (aturan L, Academy videos since 26 Nov 2026)
+`src/index.ts` now renders `WBMain.tsx` (paper board, Permanent Marker + Caveat, chapter cards, subtitles white/black
+outline) with scenes in `WBScenes.tsx` and primitives in `wb.tsx`; `End` = `WBEnd.tsx`. Charts read real OHLCV saved
+from TradingView (`src/ohlcv.json`). Host = cartoon pose clips (ElevenLabs flow czfFlIlCur8n3RiG8RGi) keyed with the
+edge flood-fill script (KEYING HOST WAJIB) into `public/host/<pose>/fNNN.webp` (not committed); `hostPlan()` picks
+poses per sentence. Voice: raw VO for timing, then after render rubberband −1 semitone + bass EQ, music ducking,
+whole video 1.1x, loudnorm −14 LUFS. Upload to YouTube Doktor Trader via Metricool blogId 7054057.
