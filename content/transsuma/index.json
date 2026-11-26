@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-26T19:57:48Z",
+ "generated": "2026-11-26T20:01:30Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -993,6 +993,49 @@
     {
      "q": "Bolehkah majun dicampur dengan sarung tangan atau filter bekas dalam satu wadah?",
      "a": "Pasal 285 PP 22/2021 melarang pencampuran limbah B3 yang disimpan. Bila sarung tangan atau filter dicatat dengan kode berbeda, simpan terpisah. Cara pengelompokannya sebaiknya mengikuti rincian teknis penyimpanan fasilitas Anda."
+    }
+   ]
+  },
+  {
+   "id": "sop-pengelolaan-limbah-b3",
+   "slug": "sop-pengelolaan-limbah-b3",
+   "title": "SOP Pengelolaan Limbah B3: Cara Menyusun dan Contoh Isinya",
+   "publish_at_wib": "2026-11-27 12:00",
+   "publish_at_utc": "2026-11-27T05:00:00Z",
+   "url": "https://transsuma.com/sop-pengelolaan-limbah-b3/",
+   "html": "html/sop-pengelolaan-limbah-b3.html",
+   "image": "img/sop-pengelolaan-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang SOP pengelolaan limbah B3",
+   "excerpt": "Langkah praktis menyusun SOP limbah B3 yang benar-benar dipakai di lantai produksi, lengkap dengan struktur dokumen dan contoh format.",
+   "meta_title": "SOP Pengelolaan Limbah B3: Cara Menyusun & Contoh",
+   "meta_description": "Cara menyusun SOP pengelolaan limbah B3 di pabrik: struktur dokumen, langkah dari titik kerja sampai serah terima, pembagian peran, dan contoh format prosedur.",
+   "focus_keyword": "sop pengelolaan limbah b3",
+   "categories": [
+    "Panduan Pengelolaan Limbah untuk Industri",
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "prosedur limbah b3",
+    "sop tps limbah b3",
+    "ehs pabrik",
+    "pp 22 2021"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu SOP pengelolaan limbah B3?",
+     "a": "SOP pengelolaan limbah B3 adalah prosedur tertulis di fasilitas yang menjabarkan langkah kerja dan penanggung jawab untuk memenuhi kewajiban pengelolaan limbah B3, mulai dari identifikasi, pengumpulan, penyimpanan, pencatatan, sampai penyerahan kepada pihak berizin."
+    },
+    {
+     "q": "Apakah SOP limbah B3 harus mengikuti format tertentu?",
+     "a": "Format SOP umumnya mengikuti sistem dokumen internal fasilitas Anda. Yang penting, isinya sejalan dengan PP 22/2021, Permen LHK 6/2021, serta rincian teknis penyimpanan dan Persetujuan Lingkungan fasilitas Anda."
+    },
+    {
+     "q": "Seberapa sering SOP limbah B3 perlu ditinjau?",
+     "a": "Tinjau setiap kali ada perubahan jenis limbah, lokasi atau kapasitas TPS, peraturan, atau temuan audit. Banyak fasilitas juga menjadwalkan tinjauan rutin, misalnya setahun sekali bersamaan dengan geladi kedaruratan."
+    },
+    {
+     "q": "Siapa yang sebaiknya menyusun SOP limbah B3?",
+     "a": "Biasanya disusun oleh tim EHS/HSE bersama perwakilan produksi, maintenance, gudang, dan pengadaan, lalu disahkan oleh pimpinan fasilitas agar mengikat semua bagian."
     }
    ]
   }
