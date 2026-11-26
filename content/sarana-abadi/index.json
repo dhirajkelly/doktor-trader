@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-25T21:55:04Z",
+ "generated": "2026-11-26T21:54:05Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -1902,6 +1902,135 @@
     {
      "q": "Bisakah insulasi dipasang di atap gudang yang sudah ada?",
      "a": "Bisa. Insulasi dapat dipasang dari bawah dengan penggantung atau rangka tambahan, atau dipasang ulang saat penggantian penutup atap. Metode yang dipilih bergantung pada kondisi atap, ketinggian, dan operasional gudang."
+    }
+   ]
+  },
+  {
+   "id": "jasa-instalasi-pipa-compressed-air-pabrik",
+   "slug": "jasa-instalasi-pipa-compressed-air-pabrik",
+   "title": "Jasa Instalasi Pipa Compressed Air Pabrik: Desain, Material, dan Tahapan",
+   "publish_at_wib": "2026-11-27 07:00",
+   "publish_at_utc": "2026-11-27T00:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/27/jasa-instalasi-pipa-compressed-air-pabrik/",
+   "html": "html/jasa-instalasi-pipa-compressed-air-pabrik.html",
+   "image": "img/jasa-instalasi-pipa-compressed-air-pabrik.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa instalasi pipa compressed air pabrik",
+   "excerpt": "Apa saja yang perlu Anda siapkan dan periksa sebelum menunjuk jasa instalasi pipa compressed air untuk pabrik di Karawang, Bekasi, dan sekitarnya.",
+   "meta_title": "Jasa Instalasi Pipa Compressed Air Pabrik",
+   "meta_description": "Panduan memilih jasa instalasi pipa compressed air pabrik: desain jalur ring, pilihan material pipa, kebocoran, tahapan kerja, dan dokumen yang perlu diminta.",
+   "focus_keyword": "jasa instalasi pipa compressed air pabrik",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Engineering & Design"
+   ],
+   "tags": [
+    "compressed air",
+    "pipa udara tekan",
+    "utilitas pabrik",
+    "MEP"
+   ],
+   "faq": [
+    {
+     "q": "Material pipa apa yang umum dipakai untuk compressed air pabrik?",
+     "a": "Yang umum dipakai adalah pipa baja karbon (galvanis atau hitam), pipa stainless steel, dan sistem pipa aluminium modular. Pilihannya bergantung pada kebutuhan kualitas udara, tekanan kerja, anggaran, dan rencana perubahan tata letak pabrik."
+    },
+    {
+     "q": "Mengapa jalur pipa compressed air sebaiknya dibuat ring atau loop?",
+     "a": "Jalur ring membuat udara bisa mengalir dari dua arah ke titik pemakaian, sehingga penurunan tekanan lebih kecil dan pasokan lebih stabil saat pemakaian berfluktuasi. Ring juga memudahkan isolasi sebagian jalur untuk perawatan."
+    },
+    {
+     "q": "Apakah tangki udara (air receiver) perlu izin atau pemeriksaan?",
+     "a": "Tangki udara termasuk bejana tekanan. Ketentuan K3-nya diatur dalam Permenaker Nomor 37 Tahun 2016 tentang K3 Bejana Tekanan dan Tangki Timbun, termasuk soal pemeriksaan dan pengujian. Pastikan tim Anda atau penyedia jasa K3 mengurus ketentuan yang berlaku."
+    },
+    {
+     "q": "Berapa lama pekerjaan instalasi pipa compressed air?",
+     "a": "Tergantung panjang jalur, jumlah titik drop, material, dan apakah pabrik tetap beroperasi selama pekerjaan. Jadwal yang realistis disusun setelah survei lapangan dan gambar jalur disetujui."
+    }
+   ]
+  },
+  {
+   "id": "pemasangan-bondek-lantai-beton",
+   "slug": "pemasangan-bondek-lantai-beton",
+   "title": "Pemasangan Bondek Lantai Beton: Urutan Kerja, Perancah, dan Kontrol Mutu",
+   "publish_at_wib": "2026-11-27 10:00",
+   "publish_at_utc": "2026-11-27T03:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/27/pemasangan-bondek-lantai-beton/",
+   "html": "html/pemasangan-bondek-lantai-beton.html",
+   "image": "img/pemasangan-bondek-lantai-beton.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang pemasangan bondek lantai beton",
+   "excerpt": "Langkah demi langkah pemasangan bondek atau floor deck untuk pelat lantai beton di bangunan pabrik dan kantor, lengkap dengan titik kontrol mutunya.",
+   "meta_title": "Pemasangan Bondek Lantai Beton: Urutan dan Kontrol",
+   "meta_description": "Panduan pemasangan bondek lantai beton untuk bangunan pabrik: urutan kerja, perancah sementara, shear connector, pembesian, pengecoran, dan daftar periksa mutu.",
+   "focus_keyword": "pemasangan bondek",
+   "categories": [
+    "Engineering & Design",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "bondek",
+    "floor deck",
+    "pelat komposit",
+    "struktur baja"
+   ],
+   "faq": [
+    {
+     "q": "Apakah bondek bisa menggantikan bekisting dan tulangan bawah?",
+     "a": "Bondek berfungsi sebagai bekisting tetap dan, pada desain pelat komposit, dapat diperhitungkan sebagai tulangan tarik positif. Namun tulangan susut, tulangan negatif di atas tumpuan, dan detail lainnya tetap mengikuti gambar perencana struktur."
+    },
+    {
+     "q": "Apakah pemasangan bondek selalu membutuhkan perancah?",
+     "a": "Tidak selalu. Perlu atau tidaknya penyangga sementara ditentukan oleh bentang, ketebalan pelat, dan tabel bentang tanpa penyangga dari produsen dek yang dipakai. Perencana struktur yang menetapkannya."
+    },
+    {
+     "q": "Kapan perancah di bawah bondek boleh dibongkar?",
+     "a": "Setelah beton mencapai kekuatan yang disyaratkan perencana, yang biasanya dibuktikan dengan hasil uji benda uji beton atau umur beton yang ditetapkan dalam spesifikasi. Jangan membongkar hanya berdasarkan perkiraan."
+    },
+    {
+     "q": "Apa beda bondek dengan pelat beton konvensional?",
+     "a": "Pelat konvensional memakai bekisting kayu atau multipleks yang dibongkar setelah beton keras, sedangkan bondek tetap tinggal di bawah pelat. Bondek umumnya mempercepat pekerjaan dan mengurangi kebutuhan bekisting."
+    }
+   ]
+  },
+  {
+   "id": "work-breakdown-structure-proyek-konstruksi",
+   "slug": "work-breakdown-structure-proyek-konstruksi",
+   "title": "Work Breakdown Structure Proyek Konstruksi: Cara Menyusun dan Contohnya",
+   "publish_at_wib": "2026-11-27 13:00",
+   "publish_at_utc": "2026-11-27T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/27/work-breakdown-structure-proyek-konstruksi/",
+   "html": "html/work-breakdown-structure-proyek-konstruksi.html",
+   "image": "img/work-breakdown-structure-proyek-konstruksi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang work breakdown structure proyek konstruksi",
+   "excerpt": "Panduan praktis menyusun WBS untuk proyek pabrik dan gudang, dari prinsip dasarnya sampai contoh struktur yang bisa langsung Anda adaptasi.",
+   "meta_title": "Work Breakdown Structure Proyek Konstruksi",
+   "meta_description": "Cara menyusun work breakdown structure proyek konstruksi pabrik: aturan 100%, level WBS, kamus WBS, contoh WBS gudang baja, serta kaitannya dengan biaya.",
+   "focus_keyword": "work breakdown structure proyek konstruksi",
+   "categories": [
+    "Industrial Projects & Case Studies",
+    "Quality & Standards"
+   ],
+   "tags": [
+    "WBS",
+    "manajemen proyek",
+    "penjadwalan",
+    "estimasi biaya"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu WBS dalam proyek konstruksi?",
+     "a": "WBS atau work breakdown structure adalah pemecahan seluruh lingkup proyek menjadi bagian-bagian yang lebih kecil secara hierarkis sampai tingkat paket kerja yang bisa diestimasi, dijadwalkan, dan diawasi."
+    },
+    {
+     "q": "Apa beda WBS dengan jadwal proyek?",
+     "a": "WBS menjawab apa yang harus dihasilkan, sedangkan jadwal menjawab kapan dan dalam urutan apa pekerjaan dilakukan. Aktivitas di jadwal disusun dari paket kerja WBS."
+    },
+    {
+     "q": "Berapa level WBS yang ideal?",
+     "a": "Tidak ada angka baku. Pecah sampai tingkat paket kerja yang cukup kecil untuk diestimasi biaya dan durasinya serta punya satu penanggung jawab yang jelas. Untuk proyek pabrik menengah, tiga sampai lima level biasanya sudah memadai."
+    },
+    {
+     "q": "Siapa yang menyusun WBS?",
+     "a": "Biasanya dipimpin manajer proyek atau tim perencana (project control) bersama engineer dari tiap disiplin. Pemilik proyek sebaiknya ikut meninjau agar lingkup yang tertuang sesuai kontrak."
     }
    ]
   }
