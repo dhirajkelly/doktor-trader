@@ -47,7 +47,7 @@ The auto-approval flow, kept for reference if it is turned back on: it runs in t
 
 ## Academy module videos (scheduled task)
 
-Each of the 30 Academy lessons gets a faceless YouTube video (one per day). After the video is uploaded to YouTube @dhirajkelly, add its link to `content/academy-videos.json` as `"<course-slug>/<lesson-slug>": "https://youtu.be/<id>"` and push to `main` with message `academy(video): <lesson title>`. The importer (`src/content.js` → `syncAcademyVideos()`, run with the 5-minute content sync) sets the lesson's `video_url`, which the member page embeds. It never overwrites a link the admin changed by hand. Slugs are `slugify(title)` of the course and lesson in `scripts/seed.js`. Touch only the JSON file in that task.
+Each of the 30 Academy lessons gets a faceless YouTube video (one per day). Since 2026-11-26 new lesson videos go only to the Doktor Trader YouTube channel (@doktortraderid, via Metricool blogId 7054057), never to @dhirajkelly; links already in the JSON stay as they are. After the video is uploaded, add its link to `content/academy-videos.json` as `"<course-slug>/<lesson-slug>": "https://youtu.be/<id>"` and push to `main` with message `academy(video): <lesson title>`. The importer (`src/content.js` → `syncAcademyVideos()`, run with the 5-minute content sync) sets the lesson's `video_url`, which the member page embeds. It never overwrites a link the admin changed by hand. Slugs are `slugify(title)` of the course and lesson in `scripts/seed.js`. Touch only the JSON file in that task.
 
 ## Temporary media hosting (scheduled tasks)
 
