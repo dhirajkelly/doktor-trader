@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-26T21:56:13Z",
+ "generated": "2026-11-27T21:51:28Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -2117,6 +2117,92 @@
     {
      "q": "Apakah pencahayaan alami dari skylight bisa menggantikan lampu?",
      "a": "Pencahayaan alami dapat mengurangi pemakaian lampu di siang hari, tetapi tidak menggantikan lampu sepenuhnya karena tidak tersedia pada malam hari dan bervariasi menurut cuaca. Skylight juga perlu diperhitungkan terhadap panas dan silau."
+    }
+   ]
+  },
+  {
+   "id": "kontraktor-pre-engineered-building",
+   "slug": "kontraktor-pre-engineered-building",
+   "title": "Kontraktor Pre Engineered Building: Cara Memilih dan Alur Kerjanya",
+   "publish_at_wib": "2026-11-28 07:00",
+   "publish_at_utc": "2026-11-28T00:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/28/kontraktor-pre-engineered-building/",
+   "html": "html/kontraktor-pre-engineered-building.html",
+   "image": "img/kontraktor-pre-engineered-building.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang kontraktor pre engineered building",
+   "excerpt": "Kapan bangunan PEB cocok untuk pabrik Anda, bagaimana alur kerjanya, dan apa saja yang perlu dicek sebelum memilih kontraktor.",
+   "meta_title": "Kontraktor Pre Engineered Building untuk Pabrik",
+   "meta_description": "Panduan memilih kontraktor pre engineered building untuk pabrik dan gudang: kapan PEB cocok, alur kerja, data yang perlu disiapkan, dan poin cek penawaran.",
+   "focus_keyword": "kontraktor pre engineered building",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "pre engineered building",
+    "PEB",
+    "gudang baja",
+    "bangunan pabrik"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu pre engineered building?",
+     "a": "Pre engineered building (PEB) adalah bangunan baja yang komponen utamanya, seperti rafter dan kolom tapered dari pelat las, dirancang dan difabrikasi di workshop sesuai ukuran proyek, lalu dirakit di lokasi dengan sambungan baut."
+    },
+    {
+     "q": "Apa beda PEB dengan gudang baja konvensional?",
+     "a": "Gudang baja konvensional umumnya memakai profil hot rolled seperti WF dengan penampang seragam. PEB memakai penampang yang dibentuk sesuai gaya dalam di tiap titik, sehingga berat baja bisa lebih efisien untuk bentang lebar."
+    },
+    {
+     "q": "Berapa lama pembangunan gedung PEB?",
+     "a": "Durasinya bergantung luas, bentang, kesiapan pondasi, dan antrean fabrikasi. Yang pasti, fabrikasi di workshop bisa berjalan paralel dengan pekerjaan pondasi di lokasi sehingga jadwal total cenderung lebih pendek."
+    },
+    {
+     "q": "Apakah gedung PEB tetap butuh PBG?",
+     "a": "Ya. Sistem struktur apa pun yang dipilih, bangunan gedung tetap memerlukan Persetujuan Bangunan Gedung sebelum dibangun dan Sertifikat Laik Fungsi sebelum dipakai."
+    }
+   ]
+  },
+  {
+   "id": "grouting-base-plate-kolom-baja",
+   "slug": "grouting-base-plate-kolom-baja",
+   "title": "Grouting Base Plate Kolom Baja: Fungsi, Material, dan Langkah Kerja",
+   "publish_at_wib": "2026-11-28 10:00",
+   "publish_at_utc": "2026-11-28T03:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/28/grouting-base-plate-kolom-baja/",
+   "html": "html/grouting-base-plate-kolom-baja.html",
+   "image": "img/grouting-base-plate-kolom-baja.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang grouting base plate kolom baja",
+   "excerpt": "Celah kecil di bawah base plate menentukan bagaimana beban kolom baja sampai ke pondasi. Begini cara mengisinya dengan benar.",
+   "meta_title": "Grouting Base Plate Kolom Baja: Panduan Praktis",
+   "meta_description": "Panduan grouting base plate kolom baja: fungsi grout, pilihan non-shrink grout, persiapan permukaan, bekisting, cara pengecoran, curing, dan cek mutunya.",
+   "focus_keyword": "grouting base plate kolom baja",
+   "categories": [
+    "Engineering & Design",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "grouting",
+    "base plate",
+    "non-shrink grout",
+    "struktur baja"
+   ],
+   "faq": [
+    {
+     "q": "Mengapa base plate harus di-grouting?",
+     "a": "Grout mengisi celah antara base plate dan pondasi sehingga beban kolom tersalur merata ke beton. Tanpa grout yang padat, beban hanya bertumpu pada mur perata atau shim dan titik-titik kecil."
+    },
+    {
+     "q": "Bolehkah memakai adukan semen pasir biasa untuk grouting base plate?",
+     "a": "Adukan semen pasir biasa cenderung menyusut dan sulit mengalir ke celah sempit, sehingga berisiko meninggalkan rongga. Untuk kolom struktural lazim dipakai non-shrink grout siap pakai sesuai spesifikasi perencana."
+    },
+    {
+     "q": "Kapan grouting dilakukan?",
+     "a": "Setelah kolom dan rangka di sekitarnya terpasang, posisi serta elevasi kolom sudah dicek dan disetujui, dan baut angkur dikencangkan sementara. Grouting sebelum alignment final berisiko mengunci posisi yang salah."
+    },
+    {
+     "q": "Berapa lama grout harus dirawat sebelum dibebani?",
+     "a": "Ikuti lembar data teknis produk dan instruksi perencana. Umumnya grout dirawat lembap dan baru dibebani penuh setelah mencapai kuat tekan yang disyaratkan berdasarkan hasil uji benda uji."
     }
    ]
   }
