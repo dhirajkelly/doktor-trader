@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-27T20:03:23Z",
+ "generated": "2026-11-27T20:05:56Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -1164,6 +1164,49 @@
     {
      "q": "Apakah rincian teknis perlu disesuaikan bila jenis limbah bertambah?",
      "a": "Rincian teknis memuat nama, jumlah, dan karakteristik limbah yang disimpan, sehingga perubahan jenis limbah, kapasitas, atau lokasi TPS perlu dikonsultasikan dengan instansi lingkungan hidup yang menerbitkan Persetujuan Lingkungan Anda."
+    }
+   ]
+  },
+  {
+   "id": "apd-penanganan-limbah-b3",
+   "slug": "apd-penanganan-limbah-b3",
+   "title": "APD Penanganan Limbah B3: Jenis, Cara Memilih, dan Aturannya",
+   "publish_at_wib": "2026-11-28 17:00",
+   "publish_at_utc": "2026-11-28T10:00:00Z",
+   "url": "https://transsuma.com/apd-penanganan-limbah-b3/",
+   "html": "html/apd-penanganan-limbah-b3.html",
+   "image": "img/apd-penanganan-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang APD penanganan limbah B3",
+   "excerpt": "Cara memilih alat pelindung diri yang tepat untuk petugas TPS limbah B3, dari sarung tangan sampai pelindung pernapasan, lengkap dengan matriks per pekerjaan.",
+   "meta_title": "APD Penanganan Limbah B3: Jenis, Pemilihan & Aturan",
+   "meta_description": "Panduan APD penanganan limbah B3 untuk petugas TPS dan bongkar muat: dasar aturan Permenakertrans 8/2010, jenis APD, matriks per pekerjaan, dan cara merawatnya.",
+   "focus_keyword": "apd penanganan limbah b3",
+   "categories": [
+    "K3 & Tanggap Darurat",
+    "Panduan Pengelolaan Limbah untuk Industri"
+   ],
+   "tags": [
+    "alat pelindung diri",
+    "k3 limbah b3",
+    "petugas tps",
+    "permenakertrans 8 2010"
+   ],
+   "faq": [
+    {
+     "q": "Apa dasar hukum kewajiban APD untuk petugas limbah B3?",
+     "a": "Kewajiban umum APD diatur dalam Permenakertrans Nomor PER.08/MEN/VII/2010 tentang Alat Pelindung Diri. Pengusaha wajib menyediakan APD sesuai SNI atau standar yang berlaku secara cuma-cuma, dan pekerja wajib memakainya sesuai potensi bahaya dan risiko."
+    },
+    {
+     "q": "APD apa saja yang umumnya dipakai petugas TPS limbah B3?",
+     "a": "Umumnya sepatu keselamatan, sarung tangan tahan bahan kimia, pelindung mata, dan pakaian kerja lengan panjang. Pelindung muka, apron, dan pelindung pernapasan ditambahkan sesuai jenis limbah dan pekerjaan, berdasarkan penilaian risiko dan lembar data keselamatan bahan."
+    },
+    {
+     "q": "Apakah masker kain cukup untuk menangani limbah pelarut?",
+     "a": "Tidak. Masker kain tidak dirancang untuk menyaring uap bahan kimia. Bila penilaian risiko menunjukkan perlu pelindung pernapasan, pilih respirator dengan filter yang sesuai jenis kontaminan dan pastikan pas di wajah pemakainya."
+    },
+    {
+     "q": "Bagaimana membuang APD sekali pakai yang terkena limbah B3?",
+     "a": "Sarung tangan, majun, atau pakaian sekali pakai yang terkontaminasi limbah B3 diperlakukan sebagai limbah B3, dikemas, diberi label, dicatat di logbook, dan diserahkan kepada pihak berizin."
     }
    ]
   }
