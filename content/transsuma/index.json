@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-27T19:58:26Z",
+ "generated": "2026-11-27T20:03:23Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -1121,6 +1121,49 @@
     {
      "q": "Bagaimana memastikan transporter boleh mengangkut limbah cat dan thinner?",
      "a": "Minta salinan rekomendasi pengangkutan limbah B3 dan Perizinan Berusaha di bidang pengangkutan, lalu cocokkan kode limbah Anda dengan daftar kode yang tercantum di rekomendasi tersebut."
+    }
+   ]
+  },
+  {
+   "id": "rincian-teknis-penyimpanan-limbah-b3",
+   "slug": "rincian-teknis-penyimpanan-limbah-b3",
+   "title": "Rincian Teknis Penyimpanan Limbah B3: Isi dan Cara Menyusunnya",
+   "publish_at_wib": "2026-11-28 12:00",
+   "publish_at_utc": "2026-11-28T05:00:00Z",
+   "url": "https://transsuma.com/rincian-teknis-penyimpanan-limbah-b3/",
+   "html": "html/rincian-teknis-penyimpanan-limbah-b3.html",
+   "image": "img/rincian-teknis-penyimpanan-limbah-b3.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang rincian teknis penyimpanan limbah B3",
+   "excerpt": "Panduan langkah demi langkah menyiapkan rincian teknis penyimpanan limbah B3 untuk persetujuan lingkungan, lengkap dengan contoh hitungan kapasitas TPS.",
+   "meta_title": "Rincian Teknis Penyimpanan Limbah B3: Isi & Cara Menyusun",
+   "meta_description": "Cara menyusun rincian teknis penyimpanan limbah B3 sesuai Permen LHK 6/2021: siapa yang wajib, lima komponen isinya, contoh hitungan kapasitas, dan kesalahan.",
+   "focus_keyword": "rincian teknis penyimpanan limbah b3",
+   "categories": [
+    "Panduan Pengelolaan Limbah untuk Industri",
+    "Regulasi Limbah B3"
+   ],
+   "tags": [
+    "persetujuan lingkungan",
+    "tps limbah b3",
+    "permen lhk 6 2021",
+    "standar penyimpanan limbah b3"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu rincian teknis penyimpanan limbah B3?",
+     "a": "Rincian teknis adalah ketentuan teknis penyimpanan limbah B3 yang dimuat dalam Persetujuan Lingkungan. Isinya meliputi nama, sumber, karakteristik, dan jumlah limbah, dokumen tempat penyimpanan, dokumen pengemasan, persyaratan lingkungan hidup, dan kewajiban pemenuhannya."
+    },
+    {
+     "q": "Siapa yang wajib memiliki rincian teknis penyimpanan limbah B3?",
+     "a": "Menurut Pasal 51 Permen LHK 6/2021, rincian teknis berlaku bagi penghasil limbah B3 dari usaha atau kegiatan wajib Amdal atau UKL-UPL serta instansi pemerintah yang menghasilkan limbah B3. Usaha wajib SPPL memenuhi standar penyimpanan yang diintegrasikan ke dalam NIB."
+    },
+    {
+     "q": "Apa beda rincian teknis dan standar penyimpanan limbah B3?",
+     "a": "Standar penyimpanan berisi tujuh syarat dasar untuk usaha wajib SPPL, misalnya terlindung dari hujan, lantai kedap air, serta kemasan berlabel dan tidak bocor. Rincian teknis lebih lengkap karena memuat dokumen tempat penyimpanan, pengemasan, dan persyaratan lingkungan untuk fasilitas tertentu."
+    },
+    {
+     "q": "Apakah rincian teknis perlu disesuaikan bila jenis limbah bertambah?",
+     "a": "Rincian teknis memuat nama, jumlah, dan karakteristik limbah yang disimpan, sehingga perubahan jenis limbah, kapasitas, atau lokasi TPS perlu dikonsultasikan dengan instansi lingkungan hidup yang menerbitkan Persetujuan Lingkungan Anda."
     }
    ]
   }

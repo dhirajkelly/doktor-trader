@@ -3,7 +3,7 @@ title: "Rincian Teknis Penyimpanan Limbah B3: Isi dan Cara Menyusunnya"
 slug: rincian-teknis-penyimpanan-limbah-b3
 publish_at: "2026-11-28 12:00"
 meta_title: "Rincian Teknis Penyimpanan Limbah B3: Isi & Cara Menyusun"
-meta_description: "Cara menyusun rincian teknis penyimpanan limbah B3 sesuai Permen LHK 6/2021: siapa yang wajib, lima komponen isinya, contoh hitungan kapasitas, dan kesalahan umum."
+meta_description: "Cara menyusun rincian teknis penyimpanan limbah B3 sesuai Permen LHK 6/2021: siapa yang wajib, lima komponen isinya, contoh hitungan kapasitas, dan kesalahan."
 focus_keyword: rincian teknis penyimpanan limbah b3
 categories: [Panduan Pengelolaan Limbah untuk Industri, Regulasi Limbah B3]
 tags: [persetujuan lingkungan, tps limbah b3, permen lhk 6 2021, standar penyimpanan limbah b3]
