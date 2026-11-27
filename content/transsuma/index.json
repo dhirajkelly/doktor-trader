@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-26T20:08:47Z",
+ "generated": "2026-11-27T19:58:26Z",
  "items": [
   {
    "id": "profil-direktur-pt-transsuma-lestari-sejahtera",
@@ -1078,6 +1078,49 @@
     {
      "q": "Apakah penghasil ikut bertanggung jawab bila limbah B3 diserahkan ke pihak tanpa izin?",
      "a": "Penghasil tetap wajib memastikan limbah B3 dikelola sesuai Pasal 59 UU PPLH, termasuk menyerahkannya hanya kepada pihak yang memiliki Perizinan Berusaha. Karena itu dokumen pengangkut dan penerima akhir perlu dicek sebelum penyerahan."
+    }
+   ]
+  },
+  {
+   "id": "jasa-angkut-limbah-cat-dan-thinner",
+   "slug": "jasa-angkut-limbah-cat-dan-thinner",
+   "title": "Jasa Angkut Limbah Cat dan Thinner: Kode, Kemasan, dan Persiapan",
+   "publish_at_wib": "2026-11-28 07:00",
+   "publish_at_utc": "2026-11-28T00:00:00Z",
+   "url": "https://transsuma.com/jasa-angkut-limbah-cat-dan-thinner/",
+   "html": "html/jasa-angkut-limbah-cat-dan-thinner.html",
+   "image": "img/jasa-angkut-limbah-cat-dan-thinner.png",
+   "image_alt": "Gambar sampul artikel PT Transsuma Lestari Sejahtera tentang jasa angkut limbah cat dan thinner",
+   "excerpt": "Apa yang perlu disiapkan pabrik dan bengkel sebelum menyerahkan sisa cat, sludge cat, dan thinner bekas kepada transporter limbah B3 berizin.",
+   "meta_title": "Jasa Angkut Limbah Cat dan Thinner: Kode & Persiapan",
+   "meta_description": "Panduan memakai jasa angkut limbah cat dan thinner: kode limbah yang umum dipakai, kategori bahaya, masa simpan, kemasan, dan persiapan sebelum dijemput.",
+   "focus_keyword": "jasa angkut limbah cat dan thinner",
+   "categories": [
+    "Jasa Pengangkutan Limbah B3",
+    "Jenis & Karakteristik Limbah B3"
+   ],
+   "tags": [
+    "limbah thinner bekas",
+    "sisa cat",
+    "pelarut bekas",
+    "a107d"
+   ],
+   "faq": [
+    {
+     "q": "Apakah thinner bekas termasuk limbah B3?",
+     "a": "Ya. Pelarut bekas tercantum dalam daftar limbah B3 Lampiran IX PP 22/2021, misalnya A107d untuk pelarut bekas lainnya yang belum dikodifikasi (kategori 1) atau kode sumber spesifik sesuai jenis industri Anda."
+    },
+    {
+     "q": "Berapa lama limbah cat dan thinner boleh disimpan di TPS?",
+     "a": "Bila timbulan limbah B3 fasilitas 50 kg per hari atau lebih, paling lama 90 hari. Bila di bawah 50 kg per hari, limbah kategori 1 paling lama 180 hari dan kategori 2 paling lama 365 hari sejak dihasilkan."
+    },
+    {
+     "q": "Bolehkah sisa cat dan thinner dicampur dalam satu drum?",
+     "a": "Sebaiknya tidak. Limbah B3 yang disimpan tidak boleh dicampur, dan tiap kemasan harus sesuai dengan satu jenis limbah dan kodenya agar label, manifest, dan pengolahannya tepat."
+    },
+    {
+     "q": "Bagaimana memastikan transporter boleh mengangkut limbah cat dan thinner?",
+     "a": "Minta salinan rekomendasi pengangkutan limbah B3 dan Perizinan Berusaha di bidang pengangkutan, lalu cocokkan kode limbah Anda dengan daftar kode yang tercantum di rekomendasi tersebut."
     }
    ]
   }
