@@ -3,68 +3,86 @@
   "id": "s01_hook",
   "chapter": "Intro",
   "visual": "hook",
-  "audioDur": 40.046,
-  "duration": 40.746,
+  "audioDur": 59.324,
+  "duration": 60.024,
   "sentences": [
    {
-    "text": "Coba jawab jujur.",
-    "sub": "Coba jawab jujur.",
+    "text": "Modal sepuluh juta lo bisa kebakar tujuh ratus tujuh puluh dua ribu dalam sehari, padahal tiap trade cuma risiko satu persen.",
+    "sub": "Modal 10 juta lo bisa kebakar Rp772 ribu dalam sehari, padahal tiap trade cuma risiko 1%.",
     "start": 0.0,
-    "end": 0.908
+    "end": 7.366
    },
    {
-    "text": "Trade rugi terakhir lo, alasannya apa?",
-    "sub": "Trade rugi terakhir lo, alasannya apa?",
-    "start": 1.388,
-    "end": 3.515
+    "text": "Jam sembilan pagi, kena stop loss pertama.",
+    "sub": "Jam 09.00, kena stop loss pertama.",
+    "start": 7.873,
+    "end": 10.107
    },
    {
-    "text": "Jam berapa lo masuk?",
-    "sub": "Jam berapa lo masuk?",
-    "start": 3.888,
-    "end": 4.81
+    "text": "Masih santai.",
+    "sub": "Masih santai.",
+    "start": 10.57,
+    "end": 11.371
    },
    {
-    "text": "Perasaan lo waktu itu gimana?",
-    "sub": "Perasaan lo waktu itu gimana?",
-    "start": 5.225,
-    "end": 6.593
+    "text": "Jam dua belas, stop loss kedua.",
+    "sub": "Jam 12.00, stop loss kedua.",
+    "start": 11.814,
+    "end": 12.568
    },
    {
-    "text": "Kalau lo nggak bisa jawab, lo bakal bayar kesalahan yang sama lagi, dan lagi.",
-    "sub": "Kalau lo nggak bisa jawab, lo bakal bayar kesalahan yang sama lagi, dan lagi.",
-    "start": 7.049,
-    "end": 11.507
+    "text": "Mulai kesel.",
+    "sub": "Mulai kesel.",
+    "start": 12.778,
+    "end": 13.673
    },
    {
-    "text": "Di contoh jurnal sepuluh trade yang gue bedah nanti, empat trade di luar rencana ngapus semua hasil dari enam trade yang bener.",
-    "sub": "Di contoh jurnal 10 trade yang gue bedah nanti, empat trade di luar rencana ngapus semua hasil dari enam trade yang bener.",
-    "start": 11.928,
-    "end": 18.474
+    "text": "Jam enam sore, emas jatuh, lo masuk lagi, kena lagi.",
+    "sub": "Jam 18.00, emas jatuh, lo masuk lagi, kena lagi.",
+    "start": 14.081,
+    "end": 17.147
    },
    {
-    "text": "Strateginya nggak salah.",
-    "sub": "Strateginya nggak salah.",
-    "start": 18.801,
-    "end": 20.058
+    "text": "Jam sepuluh malam, trade kedelapan.",
+    "sub": "Jam 22.00, trade ke-8.",
+    "start": 17.397,
+    "end": 19.242
    },
    {
-    "text": "Yang bocor itu kebiasaan, dan kebiasaan cuma kelihatan kalau dicatat.",
-    "sub": "Yang bocor itu kebiasaan, dan kebiasaan cuma kelihatan kalau dicatat.",
-    "start": 20.321,
-    "end": 25.218
+    "text": "Akun lo minus tujuh koma tujuh persen, dan nggak ada satu pun trade yang melanggar aturan satu persen.",
+    "sub": "Akun lo minus 7,7%, dan nggak ada satu pun trade yang melanggar aturan 1%.",
+    "start": 19.681,
+    "end": 27.36
    },
    {
-    "text": "Hari ini gue tunjukin cara isi jurnal trading dari nol, contoh satu baris jurnal di chart emas asli, sampai cara review mingguan biar lo nemu pola kesalahan lo sendiri.",
-    "sub": "Hari ini gue tunjukin cara isi jurnal trading dari nol, contoh satu baris jurnal di chart emas asli, sampai cara review mingguan biar lo nemu pola kesalahan lo sendiri.",
-    "start": 25.591,
-    "end": 35.148
+    "text": "Aturan satu persen itu ngelindungin lo dari satu trade jelek.",
+    "sub": "Aturan 1% itu ngelindungin lo dari satu trade jelek.",
+    "start": 27.891,
+    "end": 31.148
    },
    {
-    "text": "Kalau lo skip, lo bakal terus ngulang kesalahan yang sama, cuma beda tanggal.",
-    "sub": "Kalau lo skip, lo bakal terus ngulang kesalahan yang sama, cuma beda tanggal.",
-    "start": 35.493,
-    "end": 39.808
+    "text": "Tapi yang paling sering ngabisin akun bukan satu trade jelek.",
+    "sub": "Tapi yang paling sering ngabisin akun bukan satu trade jelek.",
+    "start": 31.531,
+    "end": 34.787
+   },
+   {
+    "text": "Yang ngabisin akun itu satu hari jelek yang nggak lo stop.",
+    "sub": "Yang ngabisin akun itu satu hari jelek yang nggak lo stop.",
+    "start": 35.135,
+    "end": 38.438
+   },
+   {
+    "text": "Gue pernah margin call bukan karena satu trade, tapi karena terus nambah posisi pas harga lawan arah dan nggak tau kapan harus berhenti.",
+    "sub": "Gue pernah margin call bukan karena satu trade, tapi karena terus nambah posisi pas harga lawan arah dan nggak tau kapan harus berhenti.",
+    "start": 38.9,
+    "end": 46.298
+   },
+   {
+    "text": "Di video ini gue tunjukin angka pastinya, satu aturan yang motong kerugian hari itu jadi kurang dari tiga persen, dan kesalahan nomor tiga di akhir video yang bikin batas ini percuma walaupun udah lo tulis.",
+    "sub": "Di video ini gue tunjukin angka pastinya, satu aturan yang motong kerugian hari itu jadi kurang dari 3%, dan kesalahan nomor tiga di akhir video yang bikin batas ini percuma walaupun udah lo tulis.",
+    "start": 46.802,
+    "end": 59.324
    }
   ]
  },
@@ -72,623 +90,548 @@
   "id": "s02_map",
   "chapter": "Intro",
   "visual": "map",
-  "audioDur": 24.999,
-  "duration": 25.699,
+  "audioDur": 26.044,
+  "duration": 26.744,
   "sentences": [
    {
-    "text": "Peta videonya begini.",
-    "sub": "Peta videonya begini.",
+    "text": "Ini materi Academy Doktor Trader, modul Manajemen Risiko, materi kedua belas.",
+    "sub": "Ini materi Academy Doktor Trader, modul Manajemen Risiko, materi ke-12.",
     "start": 0.0,
-    "end": 1.173
+    "end": 5.168
    },
    {
-    "text": "Satu, kenapa jurnal itu alat belajar paling murah.",
-    "sub": "Satu, kenapa jurnal itu alat belajar paling murah.",
-    "start": 1.57,
-    "end": 4.879
+    "text": "Kita bagi jadi empat bagian.",
+    "sub": "Kita bagi jadi 4 bagian.",
+    "start": 5.531,
+    "end": 7.114
    },
    {
-    "text": "Dua, kolom apa aja yang wajib lo catat.",
-    "sub": "Dua, kolom apa aja yang wajib lo catat.",
-    "start": 5.186,
-    "end": 7.848
+    "text": "Satu, kenapa risiko satu persen per trade belum cukup, pakai chart emas asli tanggal dua puluh lima November.",
+    "sub": "Satu, kenapa risiko 1% per trade belum cukup, pakai chart emas asli tanggal 25 November.",
+    "start": 7.436,
+    "end": 13.595
    },
    {
-    "text": "Tiga, contoh ngisi satu baris jurnal, lengkap sama itungan lotnya.",
-    "sub": "Tiga, contoh ngisi satu baris jurnal, lengkap sama itungan lotnya.",
-    "start": 8.167,
-    "end": 12.189
+    "text": "Dua, cara nentuin batas rugi harian dan mingguan, lengkap sama itungannya.",
+    "sub": "Dua, cara nentuin batas rugi harian dan mingguan, lengkap sama itungannya.",
+    "start": 13.986,
+    "end": 18.545
    },
    {
-    "text": "Empat, cara review sepuluh sampai dua puluh trade tiap akhir pekan.",
-    "sub": "Empat, cara review 10–20 trade tiap akhir pekan.",
-    "start": 12.509,
-    "end": 16.348
+    "text": "Tiga, rencana berhenti yang lo tulis sebelum market buka.",
+    "sub": "Tiga, rencana berhenti yang lo tulis sebelum market buka.",
+    "start": 18.91,
+    "end": 22.327
    },
    {
-    "text": "Terakhir, tiga kesalahan yang bikin jurnal jadi percuma.",
-    "sub": "Terakhir, tiga kesalahan yang bikin jurnal jadi percuma.",
-    "start": 16.652,
-    "end": 20.078
-   },
-   {
-    "text": "Semua chart dan angka di video ini simulasi buat edukasi, bukan sinyal.",
-    "sub": "Semua chart dan angka di video ini simulasi buat edukasi, bukan sinyal.",
-    "start": 20.437,
-    "end": 24.753
+    "text": "Empat, tiga kesalahan yang bikin batas ini jebol.",
+    "sub": "Empat, tiga kesalahan yang bikin batas ini jebol.",
+    "start": 22.672,
+    "end": 25.757
    }
   ]
  },
  {
   "id": "s03_why",
-  "chapter": "Bagian 1 · Kenapa jurnal",
+  "chapter": "Bagian 1 · Kenapa 1% belum cukup",
   "visual": "why",
-  "audioDur": 42.998,
-  "duration": 43.698,
+  "audioDur": 57.887,
+  "duration": 58.587,
   "sentences": [
    {
-    "text": "Mulai dari alasannya.",
-    "sub": "Mulai dari alasannya.",
+    "text": "Ini chart emas asli, XAUUSD timeframe satu jam, tanggal dua puluh lima November dua ribu dua puluh enam, data dari TradingView.",
+    "sub": "Ini chart emas asli, XAUUSD timeframe H1, tanggal 25 November 2026, data dari TradingView.",
     "start": 0.0,
-    "end": 1.125
+    "end": 8.44
    },
    {
-    "text": "Ingatan trader itu nggak bisa dipercaya.",
-    "sub": "Ingatan trader itu nggak bisa dipercaya.",
-    "start": 1.545,
-    "end": 3.696
+    "text": "Titik tertinggi hari itu tiga ribu lima ratus tujuh puluh lima, terendahnya tiga ribu empat ratus dua puluh tujuh.",
+    "sub": "Titik tertinggi hari itu 3.575, terendahnya 3.427.",
+    "start": 8.81,
+    "end": 14.941
    },
    {
-    "text": "Trade yang profit kita inget sebagai hasil skill.",
-    "sub": "Trade yang profit kita inget sebagai hasil skill.",
-    "start": 4.1,
-    "end": 6.734
+    "text": "Jaraknya seratus empat puluh delapan dolar dalam satu hari.",
+    "sub": "Jaraknya $148 dalam satu hari.",
+    "start": 15.282,
+    "end": 18.697
    },
    {
-    "text": "Trade yang rugi kita inget sebagai sial, spread lebar, atau market yang lagi aneh.",
-    "sub": "Trade yang rugi kita inget sebagai sial, spread lebar, atau market yang lagi aneh.",
-    "start": 7.12,
-    "end": 11.898
+    "text": "Sekarang lihat tiap candle satu jamnya.",
+    "sub": "Sekarang lihat tiap candle satu jamnya.",
+    "start": 19.066,
+    "end": 21.08
    },
    {
-    "text": "Akhirnya kita nggak pernah belajar apa-apa dari rugi.",
-    "sub": "Akhirnya kita nggak pernah belajar apa-apa dari rugi.",
-    "start": 12.189,
-    "end": 14.981
+    "text": "Dari delapan belas candle, empat belas punya jarak high ke low lebih dari lima belas dolar.",
+    "sub": "Dari 18 candle, 14 punya jarak high ke low lebih dari $15.",
+    "start": 21.431,
+    "end": 26.319
    },
    {
-    "text": "Jurnal motong bias itu.",
-    "sub": "Jurnal motong bias itu.",
-    "start": 15.379,
-    "end": 16.988
+    "text": "Candle jam enam sore jarak high ke low-nya empat puluh delapan dolar, jam tujuh empat puluh satu dolar, jam delapan lima puluh enam dolar.",
+    "sub": "Candle jam 18.00 jarak high ke low-nya $48, jam 19.00 $41, jam 20.00 $56.",
+    "start": 26.647,
+    "end": 34.405
    },
    {
-    "text": "Lo nulis alasan masuk sebelum hasilnya keluar, jadi lo nggak bisa ngarang cerita setelahnya.",
-    "sub": "Lo nulis alasan masuk sebelum hasilnya keluar, jadi lo nggak bisa ngarang cerita setelahnya.",
-    "start": 17.387,
-    "end": 22.427
+    "text": "Kalau stop loss lo lima belas dolar, di hari kayak gini stop loss itu gampang kesenggol, mau lo buy atau sell.",
+    "sub": "Kalau stop loss lo $15, di hari kayak gini stop loss itu gampang kesenggol, mau lo buy atau sell.",
+    "start": 34.764,
+    "end": 40.954
    },
    {
-    "text": "Jurnal juga bikin lo mikir dua kali sebelum masuk, karena lo tahu alasan itu bakal lo baca lagi akhir pekan nanti.",
-    "sub": "Jurnal juga bikin lo mikir dua kali sebelum masuk, karena lo tahu alasan itu bakal lo baca lagi akhir pekan nanti.",
-    "start": 22.79,
-    "end": 29.048
+    "text": "Ini bukan salah analisa lo.",
+    "sub": "Ini bukan salah analisa lo.",
+    "start": 41.275,
+    "end": 42.664
    },
    {
-    "text": "Biayanya nol rupiah.",
-    "sub": "Biayanya Rp0.",
-    "start": 29.431,
-    "end": 31.024
+    "text": "Ini karakter emas di hari yang volatil.",
+    "sub": "Ini karakter emas di hari yang volatil.",
+    "start": 42.944,
+    "end": 45.321
    },
    {
-    "text": "Cukup spreadsheet atau buku tulis, dan dua menit per trade.",
-    "sub": "Cukup spreadsheet atau buku tulis, dan 2 menit per trade.",
-    "start": 31.298,
-    "end": 34.327
+    "text": "Masalahnya, makin sering kena, makin besar dorongan buat masuk lagi.",
+    "sub": "Masalahnya, makin sering kena, makin besar dorongan buat masuk lagi.",
+    "start": 45.662,
+    "end": 49.802
    },
    {
-    "text": "Bandingin sama biaya belajar dari akun yang kena margin call.",
-    "sub": "Bandingin sama biaya belajar dari akun yang kena margin call.",
-    "start": 34.627,
-    "end": 37.597
-   },
-   {
-    "text": "Gue pernah bayar biaya yang itu, dan percaya sama gue, jurnal jauh lebih murah.",
-    "sub": "Gue pernah bayar biaya yang itu, dan percaya sama gue, jurnal jauh lebih murah.",
-    "start": 37.901,
-    "end": 42.765
+    "text": "Dan di situ aturan satu persen nggak bisa nolong, karena dia cuma ngatur ukuran satu trade, bukan berapa kali lo boleh klik dalam sehari.",
+    "sub": "Dan di situ aturan 1% nggak bisa nolong, karena dia cuma ngatur ukuran satu trade, bukan berapa kali lo boleh klik dalam sehari.",
+    "start": 50.098,
+    "end": 57.648
    }
   ]
  },
  {
-  "id": "s04_cols",
-  "chapter": "Bagian 2 · Kolom wajib",
-  "visual": "cols",
-  "audioDur": 54.126,
-  "duration": 54.826,
+  "id": "s04_sim",
+  "chapter": "Bagian 1 · Kenapa 1% belum cukup",
+  "visual": "sim",
+  "audioDur": 63.164,
+  "duration": 63.864,
   "sentences": [
    {
-    "text": "Sekarang kolomnya.",
-    "sub": "Sekarang kolomnya.",
+    "text": "Kita itung pakai contoh simulasi.",
+    "sub": "Kita itung pakai contoh simulasi.",
     "start": 0.0,
-    "end": 1.085
+    "end": 1.82
    },
    {
-    "text": "Ada lima kelompok yang wajib ada di setiap baris.",
-    "sub": "Ada lima kelompok yang wajib ada di setiap baris.",
-    "start": 1.543,
-    "end": 4.274
+    "text": "Modal sepuluh juta, risiko satu persen dari saldo terakhir tiap trade.",
+    "sub": "Modal 10 juta, risiko 1% dari saldo terakhir tiap trade.",
+    "start": 2.342,
+    "end": 6.393
    },
    {
-    "text": "Kelompok pertama, data posisi: tanggal, jam, pair, buy atau sell, dan ukuran lot.",
-    "sub": "Kelompok pertama, data posisi: tanggal, jam, pair, buy atau sell, dan ukuran lot.",
-    "start": 4.623,
-    "end": 10.671
+    "text": "Trader A nggak punya batas harian.",
+    "sub": "Trader A nggak punya batas harian.",
+    "start": 6.92,
+    "end": 8.786
    },
    {
-    "text": "Kelompok kedua, rencana harga: entry, stop loss, dan take profit.",
-    "sub": "Kelompok kedua, rencana harga: entry, stop loss, dan take profit.",
-    "start": 11.069,
-    "end": 15.421
+    "text": "Hari itu dia kena stop loss delapan kali.",
+    "sub": "Hari itu dia kena stop loss 8 kali.",
+    "start": 9.146,
+    "end": 11.643
    },
    {
-    "text": "Ini lo isi sebelum klik, bukan sesudah.",
-    "sub": "Ini lo isi sebelum klik, bukan sesudah.",
-    "start": 15.793,
-    "end": 17.091
+    "text": "Trade pertama rugi seratus ribu.",
+    "sub": "Trade pertama rugi Rp100 ribu.",
+    "start": 12.009,
+    "end": 13.882
    },
    {
-    "text": "Kelompok ketiga, alasan masuk.",
-    "sub": "Kelompok ketiga, alasan masuk.",
-    "start": 17.347,
-    "end": 18.337
+    "text": "Trade kedua sedikit lebih kecil karena saldonya udah turun, dan seterusnya.",
+    "sub": "Trade kedua sedikit lebih kecil karena saldonya udah turun, dan seterusnya.",
+    "start": 14.177,
+    "end": 18.301
    },
    {
-    "text": "Setup apa yang lo pakai?",
-    "sub": "Setup apa yang lo pakai?",
-    "start": 18.735,
-    "end": 20.452
+    "text": "Setelah delapan kali, totalnya minus tujuh ratus tujuh puluh dua ribu lima ratus lima puluh tiga rupiah, atau tujuh koma tujuh persen.",
+    "sub": "Setelah 8 kali, totalnya minus Rp772.553, atau 7,7%.",
+    "start": 18.655,
+    "end": 26.455
    },
    {
-    "text": "Tulis satu kalimat.",
-    "sub": "Tulis satu kalimat.",
-    "start": 20.824,
-    "end": 22.005
+    "text": "Trader B pakai aturan yang sama, ditambah satu baris: rugi tiga persen sehari, berhenti.",
+    "sub": "Trader B pakai aturan yang sama, ditambah satu baris: rugi 3% sehari, berhenti.",
+    "start": 26.91,
+    "end": 31.897
    },
    {
-    "text": "Kalau lo nggak bisa nulis alasannya dalam satu kalimat, kemungkinan besar itu bukan setup, itu perasaan.",
-    "sub": "Kalau lo nggak bisa nulis alasannya dalam satu kalimat, kemungkinan besar itu bukan setup, itu perasaan.",
-    "start": 22.303,
-    "end": 29.264
+    "text": "Setelah tiga kali kena, totalnya minus dua ratus sembilan puluh tujuh ribu sepuluh rupiah.",
+    "sub": "Setelah 3 kali kena, totalnya minus Rp297.010.",
+    "start": 32.078,
+    "end": 37.88
    },
    {
-    "text": "Kelompok keempat, hasil.",
-    "sub": "Kelompok keempat, hasil.",
-    "start": 29.681,
-    "end": 31.116
+    "text": "Satu trade lagi bakal lewat batas, jadi dia tutup platform.",
+    "sub": "Satu trade lagi bakal lewat batas, jadi dia tutup platform.",
+    "start": 38.168,
+    "end": 41.721
    },
    {
-    "text": "Jangan cuma tulis dolar.",
-    "sub": "Jangan cuma tulis dolar.",
-    "start": 31.441,
-    "end": 32.771
+    "text": "Selisihnya empat ratus tujuh puluh lima ribu, dari strategi yang sama dan setup yang sama.",
+    "sub": "Selisihnya Rp475 ribu, dari strategi yang sama dan setup yang sama.",
+    "start": 42.05,
+    "end": 47.289
    },
    {
-    "text": "Tulis dalam R, artinya kelipatan dari risiko awal.",
-    "sub": "Tulis dalam R, artinya kelipatan dari risiko awal.",
-    "start": 33.054,
-    "end": 36.586
+    "text": "Dan perhatiin biaya baliknya.",
+    "sub": "Dan perhatiin biaya baliknya.",
+    "start": 47.599,
+    "end": 49.33
    },
    {
-    "text": "Rugi penuh di stop loss itu minus satu R.",
-    "sub": "Rugi penuh di stop loss itu −1R.",
-    "start": 36.909,
-    "end": 39.355
+    "text": "Rugi dua koma sembilan tujuh persen butuh naik tiga koma nol enam persen buat balik modal.",
+    "sub": "Rugi 2,97% butuh naik 3,06% buat balik modal.",
+    "start": 49.651,
+    "end": 54.659
    },
    {
-    "text": "Profit dua kali jarak stop loss itu plus dua R.",
-    "sub": "Profit dua kali jarak stop loss itu +2R.",
-    "start": 39.66,
-    "end": 42.591
+    "text": "Rugi tujuh koma tujuh tiga persen butuh naik delapan koma tiga delapan persen.",
+    "sub": "Rugi 7,73% butuh naik 8,38%.",
+    "start": 54.939,
+    "end": 59.548
    },
    {
-    "text": "Dengan R, trade lot kecil dan lot besar bisa dibandingin dengan adil.",
-    "sub": "Dengan R, trade lot kecil dan lot besar bisa dibandingin dengan adil.",
-    "start": 42.895,
-    "end": 46.824
-   },
-   {
-    "text": "Kelompok kelima, emosi dan bukti: perasaan lo waktu masuk dan keluar, plus screenshot chart sebelum dan sesudah.",
-    "sub": "Kelompok kelima, emosi dan bukti: perasaan lo waktu masuk dan keluar, plus screenshot chart sebelum dan sesudah.",
-    "start": 47.206,
-    "end": 54.126
+    "text": "Makin dalam lubangnya, makin jauh jalan pulangnya.",
+    "sub": "Makin dalam lubangnya, makin jauh jalan pulangnya.",
+    "start": 59.846,
+    "end": 62.937
    }
   ]
  },
  {
-  "id": "s04b_template",
-  "chapter": "Bagian 2 · Kolom wajib",
-  "visual": "template",
-  "audioDur": 46.916,
-  "duration": 47.616,
+  "id": "s05_revenge",
+  "chapter": "Bagian 1 · Kenapa 1% belum cukup",
+  "visual": "revenge",
+  "audioDur": 47.569,
+  "duration": 48.269,
   "sentences": [
    {
-    "text": "Cara bikinnya simpel.",
-    "sub": "Cara bikinnya simpel.",
+    "text": "Itu baru versi sopan, trader yang tetap disiplin satu persen.",
+    "sub": "Itu baru versi sopan, trader yang tetap disiplin 1%.",
     "start": 0.0,
-    "end": 1.161
+    "end": 3.826
    },
    {
-    "text": "Buka spreadsheet kosong, satu baris untuk satu trade, satu kolom untuk satu data.",
-    "sub": "Buka spreadsheet kosong, satu baris untuk satu trade, satu kolom untuk satu data.",
-    "start": 1.533,
-    "end": 6.457
+    "text": "Kenyataannya, setelah tiga kali kena, banyak yang mulai gedein lot buat balikin rugi.",
+    "sub": "Kenyataannya, setelah 3 kali kena, banyak yang mulai gedein lot buat balikin rugi.",
+    "start": 4.329,
+    "end": 9.021
    },
    {
-    "text": "Tambahin dua kolom bantu.",
-    "sub": "Tambahin dua kolom bantu.",
-    "start": 6.903,
-    "end": 8.206
+    "text": "Itu namanya revenge trading.",
+    "sub": "Itu namanya revenge trading.",
+    "start": 9.478,
+    "end": 11.262
    },
    {
-    "text": "Kolom pertama, risiko dalam dolar, yaitu berapa yang hilang kalau stop loss kena.",
-    "sub": "Kolom pertama, risiko dalam dolar, yaitu berapa yang hilang kalau stop loss kena.",
-    "start": 8.627,
-    "end": 13.338
+    "text": "Contoh simulasi.",
+    "sub": "Contoh simulasi.",
+    "start": 11.755,
+    "end": 12.571
    },
    {
-    "text": "Kolom kedua, hasil dalam R, rumusnya hasil dolar dibagi risiko dolar.",
-    "sub": "Kolom kedua, hasil dalam R, rumusnya hasil dolar dibagi risiko dolar.",
-    "start": 13.787,
-    "end": 18.821
+    "text": "Trade pertama risiko satu persen, kena, rugi seratus ribu.",
+    "sub": "Trade pertama risiko 1%, kena, rugi Rp100 ribu.",
+    "start": 13.079,
+    "end": 17.002
    },
    {
-    "text": "Jadi kalau risikonya lima puluh dolar dan lo profit seratus dolar, hasilnya plus dua R.",
-    "sub": "Jadi kalau risikonya $50 dan lo profit $100, hasilnya +2R.",
-    "start": 19.212,
-    "end": 24.538
+    "text": "Kesel, trade kedua risiko dua persen.",
+    "sub": "Kesel, trade kedua risiko 2%.",
+    "start": 17.465,
+    "end": 17.999
    },
    {
-    "text": "Lalu bikin satu kolom tag kesalahan dengan pilihan tetap, misalnya: sesuai rencana, FOMO, geser stop loss, revenge, entry pas berita.",
-    "sub": "Lalu bikin satu kolom tag kesalahan dengan pilihan tetap, misalnya: sesuai rencana, FOMO, geser stop loss, revenge, entry pas berita.",
-    "start": 24.988,
-    "end": 33.101
+    "text": "Kena lagi, totalnya minus dua ratus sembilan puluh delapan ribu.",
+    "sub": "Kena lagi, totalnya minus Rp298 ribu.",
+    "start": 18.311,
+    "end": 24.037
    },
    {
-    "text": "Pilihan tetap ini penting, karena nanti waktu review lo tinggal hitung tag mana yang paling sering muncul.",
-    "sub": "Pilihan tetap ini penting, karena nanti waktu review lo tinggal hitung tag mana yang paling sering muncul.",
-    "start": 33.303,
-    "end": 40.082
+    "text": "Trade ketiga empat persen.",
+    "sub": "Trade ketiga 4%.",
+    "start": 24.488,
+    "end": 26.021
    },
    {
-    "text": "Kalau lo lebih nyaman nulis tangan, nggak masalah.",
-    "sub": "Kalau lo lebih nyaman nulis tangan, nggak masalah.",
-    "start": 40.495,
-    "end": 42.882
-   },
-   {
-    "text": "Yang penting formatnya sama setiap hari, jadi gampang dibandingin.",
-    "sub": "Yang penting formatnya sama setiap hari, jadi gampang dibandingin.",
-    "start": 43.122,
-    "end": 46.689
-   }
-  ]
- },
- {
-  "id": "s05_chart",
-  "chapter": "Bagian 3 · Contoh satu baris",
-  "visual": "chart",
-  "audioDur": 51.409,
-  "duration": 52.109,
-  "sentences": [
-   {
-    "text": "Biar kebayang, kita isi satu baris pakai chart emas asli.",
-    "sub": "Biar kebayang, kita isi satu baris pakai chart emas asli.",
-    "start": 0.0,
-    "end": 3.72
-   },
-   {
-    "text": "Ini XAUUSD timeframe satu jam dari TradingView, tanggal dua puluh lima sampai dua puluh enam November.",
-    "sub": "Ini XAUUSD timeframe H1 dari TradingView, tanggal 25–26 November.",
-    "start": 4.231,
-    "end": 10.913
-   },
-   {
-    "text": "Emas turun tajam dari sekitar tiga ribu lima ratus tiga puluh ke titik terendah sekitar tiga ribu empat ratus dua puluh tujuh.",
-    "sub": "Emas turun tajam dari sekitar 3.530 ke titik terendah sekitar 3.427.",
-    "start": 11.387,
-    "end": 18.356
-   },
-   {
-    "text": "Sekarang bayangin seorang trader simulasi.",
-    "sub": "Sekarang bayangin seorang trader simulasi.",
-    "start": 18.89,
-    "end": 21.107
-   },
-   {
-    "text": "Jam sebelas malam, dia lihat candle merah berderet, panik takut ketinggalan, lalu sell di sekitar tiga ribu empat ratus enam puluh delapan.",
-    "sub": "Jam 23.00, dia lihat candle merah berderet, panik takut ketinggalan, lalu sell di sekitar 3.468.",
-    "start": 21.56,
-    "end": 29.484
-   },
-   {
-    "text": "Stop loss dia taruh di atas high candle sebelumnya plus buffer dua dolar, sekitar tiga ribu empat ratus sembilan puluh dua.",
-    "sub": "Stop loss dia taruh di atas high candle sebelumnya plus buffer $2, sekitar 3.492.",
-    "start": 29.957,
-    "end": 36.836
-   },
-   {
-    "text": "Jaraknya dua puluh empat dolar.",
-    "sub": "Jaraknya $24.",
-    "start": 37.243,
-    "end": 38.862
-   },
-   {
-    "text": "Satu jam kemudian harga naik tajam dan stop loss kena.",
-    "sub": "Satu jam kemudian harga naik tajam dan stop loss kena.",
-    "start": 39.396,
-    "end": 42.594
-   },
-   {
-    "text": "Satu hal penting: di market yang bergerak cepat, eksekusi stop loss bisa kena slippage, jadi rugi riil bisa sedikit lebih besar dari rencana.",
-    "sub": "Satu hal penting: di market yang bergerak cepat, eksekusi stop loss bisa kena slippage, jadi rugi riil bisa sedikit lebih besar dari rencana.",
-    "start": 43.092,
-    "end": 51.113
-   }
-  ]
- },
- {
-  "id": "s06_lot",
-  "chapter": "Bagian 3 · Contoh satu baris",
-  "visual": "lot",
-  "audioDur": 51.331,
-  "duration": 52.031,
-  "sentences": [
-   {
-    "text": "Sebelum masuk, lot dihitung dari risiko, bukan dari feeling.",
-    "sub": "Sebelum masuk, lot dihitung dari risiko, bukan dari feeling.",
-    "start": 0.0,
-    "end": 3.941
-   },
-   {
-    "text": "Misalnya saldo akun simulasi lima ribu dolar, risiko satu persen, berarti rugi maksimal lima puluh dolar.",
-    "sub": "Misalnya saldo akun simulasi $5.000, risiko 1%, berarti rugi maksimal $50.",
-    "start": 4.426,
-    "end": 11.343
-   },
-   {
-    "text": "Rumusnya: risiko dalam dolar dibagi jarak stop loss kali seratus.",
-    "sub": "Rumusnya: risiko dalam dolar dibagi jarak stop loss kali seratus.",
-    "start": 11.859,
-    "end": 16.269
-   },
-   {
-    "text": "Lima puluh dibagi dua puluh empat kali seratus, hasilnya nol koma nol dua lot setelah dibulatkan ke bawah.",
-    "sub": "50 ÷ (24 × 100), hasilnya 0,02 lot setelah dibulatkan ke bawah.",
-    "start": 16.66,
-    "end": 23.294
-   },
-   {
-    "text": "Dengan nol koma nol dua lot, kalau stop loss kena, ruginya sekitar empat puluh delapan dolar.",
-    "sub": "Dengan 0,02 lot, kalau stop loss kena, ruginya sekitar $48.",
-    "start": 23.862,
+    "text": "Totalnya minus enam ratus delapan puluh enam ribu.",
+    "sub": "Totalnya minus Rp686 ribu.",
+    "start": 26.34,
     "end": 29.077
    },
    {
-    "text": "Itu minus satu R.",
-    "sub": "Itu −1R.",
-    "start": 29.472,
-    "end": 30.754
+    "text": "Trade keempat delapan persen.",
+    "sub": "Trade keempat 8%.",
+    "start": 29.529,
+    "end": 31.308
    },
    {
-    "text": "Take profit dua R ada di sekitar tiga ribu empat ratus dua puluh.",
-    "sub": "Take profit 2R ada di sekitar 3.420.",
-    "start": 31.268,
-    "end": 37.073
+    "text": "Totalnya minus satu koma empat tiga juta, atau empat belas koma tiga persen.",
+    "sub": "Totalnya minus Rp1,43 juta, atau 14,3%.",
+    "start": 31.613,
+    "end": 34.129
    },
    {
-    "text": "Sekarang lihat baris jurnalnya.",
-    "sub": "Sekarang lihat baris jurnalnya.",
-    "start": 37.639,
-    "end": 38.298
+    "text": "Cuma empat trade, dan rugi yang direncanain seratus ribu udah jadi empat belas kali lipat.",
+    "sub": "Cuma 4 trade, dan rugi yang direncanain Rp100 ribu udah jadi 14 kali lipat.",
+    "start": 34.433,
+    "end": 41.81
    },
    {
-    "text": "Alasan masuk: ikut candle merah, takut ketinggalan.",
-    "sub": "Alasan masuk: ikut candle merah, takut ketinggalan.",
-    "start": 38.745,
-    "end": 42.69
-   },
-   {
-    "text": "Emosi: panik.",
-    "sub": "Emosi: panik.",
-    "start": 43.091,
-    "end": 43.547
-   },
-   {
-    "text": "Hasil: minus satu R.",
-    "sub": "Hasil: −1R.",
-    "start": 43.829,
-    "end": 44.725
-   },
-   {
-    "text": "Kolom alasan itu yang paling jujur.",
-    "sub": "Kolom alasan itu yang paling jujur.",
-    "start": 45.214,
-    "end": 46.988
-   },
-   {
-    "text": "Di situ kelihatan bahwa ini bukan setup, ini FOMO.",
-    "sub": "Di situ kelihatan bahwa ini bukan setup, ini FOMO.",
-    "start": 47.383,
-    "end": 51.331
+    "text": "Batas rugi harian itu rem buat momen kayak gini, pas kepala lo udah nggak bisa dipercaya.",
+    "sub": "Batas rugi harian itu rem buat momen kayak gini, pas kepala lo udah nggak bisa dipercaya.",
+    "start": 42.313,
+    "end": 47.266
    }
   ]
  },
  {
-  "id": "s07_review",
-  "chapter": "Bagian 4 · Review mingguan",
-  "visual": "review",
-  "audioDur": 61.074,
-  "duration": 61.774,
+  "id": "s06_rules",
+  "chapter": "Bagian 2 · Cara nentuin batasnya",
+  "visual": "rules",
+  "audioDur": 52.349,
+  "duration": 53.049,
   "sentences": [
    {
-    "text": "Satu baris jurnal belum ngasih banyak pelajaran.",
-    "sub": "Satu baris jurnal belum ngasih banyak pelajaran.",
+    "text": "Sekarang cara nentuin batasnya.",
+    "sub": "Sekarang cara nentuin batasnya.",
     "start": 0.0,
-    "end": 2.529
+    "end": 1.908
    },
    {
-    "text": "Nilainya muncul waktu lo review.",
-    "sub": "Nilainya muncul waktu lo review.",
-    "start": 2.966,
-    "end": 4.824
+    "text": "Ini kerangka yang bisa lo sesuaikan, bukan angka sakral.",
+    "sub": "Ini kerangka yang bisa lo sesuaikan, bukan angka sakral.",
+    "start": 2.375,
+    "end": 5.621
    },
    {
-    "text": "Tiap akhir pekan, buka sepuluh sampai dua puluh trade terakhir, lalu pisahin jadi dua kelompok: sesuai rencana dan di luar rencana.",
-    "sub": "Tiap akhir pekan, buka 10–20 trade terakhir, lalu pisahin jadi dua kelompok: sesuai rencana dan di luar rencana.",
-    "start": 5.26,
-    "end": 13.04
+    "text": "Batas rugi harian maksimal tiga persen dari saldo awal hari itu.",
+    "sub": "Batas rugi harian maksimal 3% dari saldo awal hari itu.",
+    "start": 5.992,
+    "end": 9.797
    },
    {
-    "text": "Ini contoh jurnal ilustrasi sepuluh trade.",
-    "sub": "Ini contoh jurnal ilustrasi 10 trade.",
-    "start": 13.586,
-    "end": 15.758
+    "text": "Kena, berhenti sampai besok.",
+    "sub": "Kena, berhenti sampai besok.",
+    "start": 10.149,
+    "end": 11.679
    },
    {
-    "text": "Enam trade sesuai rencana: plus dua, minus satu, plus dua, minus satu, minus satu, plus dua.",
-    "sub": "Enam trade sesuai rencana: +2, −1, +2, −1, −1, +2.",
-    "start": 16.278,
-    "end": 22.997
+    "text": "Batas rugi mingguan maksimal enam persen dari saldo awal minggu.",
+    "sub": "Batas rugi mingguan maksimal 6% dari saldo awal minggu.",
+    "start": 12.019,
+    "end": 15.901
    },
    {
-    "text": "Totalnya plus tiga R.",
-    "sub": "Totalnya +3R.",
-    "start": 23.495,
-    "end": 24.887
+    "text": "Kena, berhenti sampai minggu depan dan buka jurnal.",
+    "sub": "Kena, berhenti sampai minggu depan dan buka jurnal.",
+    "start": 16.227,
+    "end": 19.12
    },
    {
-    "text": "Empat trade di luar rencana: dua kali FOMO masing-masing minus satu, satu kali stop loss digeser jadi minus satu koma enam, dan satu revenge trade plus nol koma lima.",
-    "sub": "Empat trade di luar rencana: dua kali FOMO masing-masing minus satu, satu kali stop loss digeser jadi −1,6, dan satu revenge trade +0,5.",
-    "start": 25.486,
-    "end": 35.743
+    "text": "Dengan modal sepuluh juta, tiga persen itu tiga ratus ribu rupiah, enam persen itu enam ratus ribu rupiah.",
+    "sub": "Dengan modal 10 juta, 3% itu Rp300 ribu, 6% itu Rp600 ribu.",
+    "start": 19.503,
+    "end": 25.709
    },
    {
-    "text": "Totalnya minus tiga koma satu R.",
-    "sub": "Totalnya −3,1R.",
-    "start": 36.249,
-    "end": 38.465
+    "text": "Kalau risiko lo satu persen per trade, batas harian tiga persen artinya kira kira tiga stop loss beruntun.",
+    "sub": "Kalau risiko lo 1% per trade, batas harian 3% artinya kira-kira 3 stop loss beruntun.",
+    "start": 26.085,
+    "end": 32.027
    },
    {
-    "text": "Hasil minggu itu minus nol koma satu R.",
-    "sub": "Hasil minggu itu −0,1R.",
-    "start": 39.033,
-    "end": 41.528
+    "text": "Kalau risiko lo setengah persen, berarti sekitar enam stop loss.",
+    "sub": "Kalau risiko lo 0,5%, berarti sekitar 6 stop loss.",
+    "start": 32.336,
+    "end": 35.79
    },
    {
-    "text": "Rencananya jalan.",
-    "sub": "Rencananya jalan.",
-    "start": 42.053,
-    "end": 43.106
+    "text": "Satu hal penting: hitung pakai equity, bukan cuma posisi yang udah ditutup.",
+    "sub": "Satu hal penting: hitung pakai equity, bukan cuma posisi yang udah ditutup.",
+    "start": 36.135,
+    "end": 40.654
    },
    {
-    "text": "Yang ngapus hasilnya justru empat trade yang nggak ada di rencana.",
-    "sub": "Yang ngapus hasilnya justru empat trade yang nggak ada di rencana.",
-    "start": 43.492,
-    "end": 46.996
+    "text": "Posisi yang lagi floating minus juga dihitung.",
+    "sub": "Posisi yang lagi floating minus juga dihitung.",
+    "start": 40.975,
+    "end": 43.386
    },
    {
-    "text": "Kenapa minimal sepuluh trade?",
-    "sub": "Kenapa minimal 10 trade?",
-    "start": 47.559,
-    "end": 48.852
+    "text": "Jadi kalau ada posisi terbuka minus dua ratus ribu dan lo udah rugi seratus ribu hari itu, lo udah di batas.",
+    "sub": "Jadi kalau ada posisi terbuka minus Rp200 ribu dan lo udah rugi Rp100 ribu hari itu, lo udah di batas.",
+    "start": 43.722,
+    "end": 50.281
    },
    {
-    "text": "Karena dari dua atau tiga trade, hasilnya masih bisa kebetulan.",
-    "sub": "Karena dari dua atau tiga trade, hasilnya masih bisa kebetulan.",
-    "start": 49.339,
-    "end": 52.896
-   },
-   {
-    "text": "Dengan sepuluh sampai dua puluh, pola kebiasaan mulai kelihatan, walaupun sampelnya tetap kecil dan belum bisa jadi kesimpulan pasti.",
-    "sub": "Dengan 10–20, pola kebiasaan mulai kelihatan, walaupun sampelnya tetap kecil dan belum bisa jadi kesimpulan pasti.",
-    "start": 53.274,
-    "end": 60.86
+    "text": "Jangan buka posisi baru.",
+    "sub": "Jangan buka posisi baru.",
+    "start": 50.553,
+    "end": 52.132
    }
   ]
  },
  {
-  "id": "s08_pattern",
-  "chapter": "Bagian 4 · Review mingguan",
-  "visual": "pattern",
-  "audioDur": 42.762,
-  "duration": 43.462,
+  "id": "s07_week",
+  "chapter": "Bagian 2 · Cara nentuin batasnya",
+  "visual": "week",
+  "audioDur": 46.028,
+  "duration": 46.728,
   "sentences": [
    {
-    "text": "Dari tabel yang sama, tanya tiga pertanyaan.",
-    "sub": "Dari tabel yang sama, tanya tiga pertanyaan.",
+    "text": "Kenapa perlu batas mingguan juga?",
+    "sub": "Kenapa perlu batas mingguan juga?",
     "start": 0.0,
-    "end": 2.634
+    "end": 1.751
    },
    {
-    "text": "Pertama, setup mana yang paling sering jalan sesuai rencana?",
-    "sub": "Pertama, setup mana yang paling sering jalan sesuai rencana?",
-    "start": 3.165,
-    "end": 6.689
+    "text": "Karena hari jelek suka datang berurutan.",
+    "sub": "Karena hari jelek suka datang berurutan.",
+    "start": 2.238,
+    "end": 4.662
    },
    {
-    "text": "Itu yang lo pertahankan.",
-    "sub": "Itu yang lo pertahankan.",
-    "start": 7.121,
-    "end": 8.403
+    "text": "Contoh simulasi.",
+    "sub": "Contoh simulasi.",
+    "start": 5.063,
+    "end": 5.941
    },
    {
-    "text": "Kedua, jam berapa lo paling sering salah?",
-    "sub": "Kedua, jam berapa lo paling sering salah?",
-    "start": 8.97,
-    "end": 11.422
+    "text": "Senin lo kena batas harian, minus tiga persen.",
+    "sub": "Senin lo kena batas harian, minus 3%.",
+    "start": 6.401,
+    "end": 8.012
    },
    {
-    "text": "Di contoh ini, tiga dari empat trade di luar rencana dibuka setelah jam sembilan malam, waktu badan udah capek.",
-    "sub": "Di contoh ini, 3 dari 4 trade di luar rencana dibuka setelah jam 21.00, waktu badan udah capek.",
-    "start": 11.865,
-    "end": 18.525
+    "text": "Selasa kena lagi, minus tiga persen dari saldo yang udah turun.",
+    "sub": "Selasa kena lagi, minus 3% dari saldo yang udah turun.",
+    "start": 8.251,
+    "end": 13.238
    },
    {
-    "text": "Ketiga, kesalahan apa yang berulang?",
-    "sub": "Ketiga, kesalahan apa yang berulang?",
-    "start": 19.124,
-    "end": 21.366
+    "text": "Totalnya minus lima koma sembilan satu persen, atau lima ratus sembilan puluh satu ribu.",
+    "sub": "Totalnya minus 5,91%, atau Rp591 ribu.",
+    "start": 13.625,
+    "end": 18.673
    },
    {
-    "text": "Di sini FOMO muncul dua kali, geser stop loss sekali, revenge sekali.",
-    "sub": "Di sini FOMO muncul dua kali, geser stop loss sekali, revenge sekali.",
-    "start": 21.857,
-    "end": 25.489
+    "text": "Sisa jatah minggu itu tinggal nol koma nol sembilan persen.",
+    "sub": "Sisa jatah minggu itu tinggal 0,09%.",
+    "start": 19.006,
+    "end": 22.469
    },
    {
-    "text": "Dari situ lahir aturan baru yang konkret.",
-    "sub": "Dari situ lahir aturan baru yang konkret.",
-    "start": 25.719,
-    "end": 29.609
+    "text": "Itu artinya minggu lo selesai di hari Selasa.",
+    "sub": "Itu artinya minggu lo selesai di hari Selasa.",
+    "start": 22.809,
+    "end": 25.334
    },
    {
-    "text": "Misalnya: nggak buka posisi baru setelah jam sembilan malam, dan stop loss nggak boleh digeser menjauh.",
-    "sub": "Misalnya: nggak buka posisi baru setelah jam 21.00, dan stop loss nggak boleh digeser menjauh.",
-    "start": 29.998,
-    "end": 36.255
+    "text": "Bandingin sama trader tanpa batas yang kena delapan stop loss di dua hari itu.",
+    "sub": "Bandingin sama trader tanpa batas yang kena 8 stop loss di dua hari itu.",
+    "start": 25.747,
+    "end": 29.979
    },
    {
-    "text": "Satu aturan per minggu udah cukup.",
-    "sub": "Satu aturan per minggu udah cukup.",
-    "start": 36.735,
-    "end": 38.58
+    "text": "Totalnya minus empat belas koma delapan lima persen, dan dia butuh naik tujuh belas koma empat delapan persen cuma buat balik ke sepuluh juta.",
+    "sub": "Totalnya minus 14,85%, dan dia butuh naik 17,48% cuma buat balik ke 10 juta.",
+    "start": 30.322,
+    "end": 38.333
    },
    {
-    "text": "Jangan bikin sepuluh aturan sekaligus, nanti nggak ada yang dijalanin.",
-    "sub": "Jangan bikin sepuluh aturan sekaligus, nanti nggak ada yang dijalanin.",
-    "start": 38.915,
-    "end": 42.539
+    "text": "Batas mingguan maksa lo berhenti di saat performa lo lagi turun, dan pakai sisa minggu buat evaluasi, bukan buat ngejar.",
+    "sub": "Batas mingguan maksa lo berhenti di saat performa lo lagi turun, dan pakai sisa minggu buat evaluasi, bukan buat ngejar.",
+    "start": 38.75,
+    "end": 46.028
+   }
+  ]
+ },
+ {
+  "id": "s08_plan",
+  "chapter": "Bagian 3 · Rencana berhenti",
+  "visual": "plan",
+  "audioDur": 54.909,
+  "duration": 55.609,
+  "sentences": [
+   {
+    "text": "Bagian ketiga, dan ini yang paling sering dilewatin.",
+    "sub": "Bagian ketiga, dan ini yang paling sering dilewatin.",
+    "start": 0.0,
+    "end": 3.451
+   },
+   {
+    "text": "Batas ini harus ditulis sebelum market buka, bukan diputusin pas lagi rugi.",
+    "sub": "Batas ini harus ditulis sebelum market buka, bukan diputusin pas lagi rugi.",
+    "start": 3.912,
+    "end": 8.687
+   },
+   {
+    "text": "Pas lagi rugi, otak lo bakal selalu nemu alasan buat satu trade lagi.",
+    "sub": "Pas lagi rugi, otak lo bakal selalu nemu alasan buat satu trade lagi.",
+    "start": 9.077,
+    "end": 13.303
+   },
+   {
+    "text": "Tulis empat baris di catatan trading lo tiap pagi.",
+    "sub": "Tulis 4 baris di catatan trading lo tiap pagi.",
+    "start": 13.8,
+    "end": 16.342
+   },
+   {
+    "text": "Satu, saldo awal hari ini.",
+    "sub": "Satu, saldo awal hari ini.",
+    "start": 16.846,
+    "end": 18.756
+   },
+   {
+    "text": "Dua, batas rugi harian dalam rupiah atau dolar, bukan cuma persen, biar nggak bisa ditawar.",
+    "sub": "Dua, batas rugi harian dalam rupiah atau dolar, bukan cuma persen, biar nggak bisa ditawar.",
+    "start": 19.23,
+    "end": 25.239
+   },
+   {
+    "text": "Tiga, sisa jatah minggu ini.",
+    "sub": "Tiga, sisa jatah minggu ini.",
+    "start": 25.726,
+    "end": 27.676
+   },
+   {
+    "text": "Empat, apa yang lo lakuin begitu batas kena.",
+    "sub": "Empat, apa yang lo lakuin begitu batas kena.",
+    "start": 28.188,
+    "end": 30.833
+   },
+   {
+    "text": "Jawaban nomor empat harus konkret: tutup semua posisi, logout dari platform, tutup aplikasi di HP, isi jurnal, selesai.",
+    "sub": "Jawaban nomor empat harus konkret: tutup semua posisi, logout dari platform, tutup aplikasi di HP, isi jurnal, selesai.",
+    "start": 31.347,
+    "end": 37.932
+   },
+   {
+    "text": "Jangan sekadar mantau chart.",
+    "sub": "Jangan sekadar mantau chart.",
+    "start": 38.193,
+    "end": 39.662
+   },
+   {
+    "text": "Mantau doang itu pintu paling deket ke revenge trading.",
+    "sub": "Mantau doang itu pintu paling deket ke revenge trading.",
+    "start": 40.123,
+    "end": 45.197
+   },
+   {
+    "text": "Kalau lo sering ngelanggar, pakai alat bantu yang otomatis nutup posisi pas batas harian kena, jadi keputusannya udah diambil sebelum emosi lo ikut campur.",
+    "sub": "Kalau lo sering ngelanggar, pakai alat bantu yang otomatis nutup posisi pas batas harian kena, jadi keputusannya udah diambil sebelum emosi lo ikut campur.",
+    "start": 45.637,
+    "end": 54.694
    }
   ]
  },
@@ -696,80 +639,68 @@
   "id": "s09_mistakes",
   "chapter": "3 kesalahan umum",
   "visual": "mistakes",
-  "audioDur": 45.871,
-  "duration": 46.571,
+  "audioDur": 41.326,
+  "duration": 42.026,
   "sentences": [
    {
-    "text": "Sekarang tiga kesalahan yang bikin jurnal jadi percuma.",
-    "sub": "Sekarang tiga kesalahan yang bikin jurnal jadi percuma.",
+    "text": "Tiga kesalahan yang bikin batas rugi harian percuma.",
+    "sub": "Tiga kesalahan yang bikin batas rugi harian percuma.",
     "start": 0.0,
-    "end": 3.403
+    "end": 3.108
    },
    {
-    "text": "Kesalahan pertama, cuma nyatet trade yang profit.",
-    "sub": "Kesalahan pertama, cuma nyatet trade yang profit.",
-    "start": 3.922,
-    "end": 6.731
+    "text": "Satu, batasnya cuma ada di kepala.",
+    "sub": "Satu, batasnya cuma ada di kepala.",
+    "start": 3.66,
+    "end": 6.207
    },
    {
-    "text": "Jurnal kayak gitu cuma bikin lo ngerasa jago, padahal pelajarannya ada di trade yang rugi.",
-    "sub": "Jurnal kayak gitu cuma bikin lo ngerasa jago, padahal pelajarannya ada di trade yang rugi.",
-    "start": 7.201,
-    "end": 12.779
+    "text": "Kalau nggak ditulis dalam angka rupiah, pas lagi minus dua koma delapan persen lo bakal bilang, ah tanggung, satu lagi.",
+    "sub": "Kalau nggak ditulis dalam angka rupiah, pas lagi minus 2,8% lo bakal bilang, ah tanggung, satu lagi.",
+    "start": 6.649,
+    "end": 13.131
    },
    {
-    "text": "Kesalahan kedua, ngisi alasan setelah posisi ditutup.",
-    "sub": "Kesalahan kedua, ngisi alasan setelah posisi ditutup.",
-    "start": 13.234,
-    "end": 16.422
+    "text": "Dua, ngitung batas cuma dari posisi yang udah ditutup.",
+    "sub": "Dua, ngitung batas cuma dari posisi yang udah ditutup.",
+    "start": 13.62,
+    "end": 17.087
    },
    {
-    "text": "Setelah hasil keluar, otak lo otomatis bikin cerita yang enak didengar.",
-    "sub": "Setelah hasil keluar, otak lo otomatis bikin cerita yang enak didengar.",
-    "start": 16.804,
-    "end": 20.793
+    "text": "Lo merasa baru rugi dua persen, padahal ada posisi floating minus dua persen lagi yang lo biarin tanpa stop loss.",
+    "sub": "Lo merasa baru rugi 2%, padahal ada posisi floating minus 2% lagi yang lo biarin tanpa stop loss.",
+    "start": 17.424,
+    "end": 24.105
    },
    {
-    "text": "Isi alasan sebelum klik buy atau sell.",
-    "sub": "Isi alasan sebelum klik buy atau sell.",
-    "start": 21.116,
-    "end": 23.476
+    "text": "Tiga, dan ini yang gue janjiin di awal: reset batas di tengah hari.",
+    "sub": "Tiga, dan ini yang gue janjiin di awal: reset batas di tengah hari.",
+    "start": 24.57,
+    "end": 29.023
    },
    {
-    "text": "Kesalahan ketiga, nyatet tapi nggak pernah direview.",
-    "sub": "Kesalahan ketiga, nyatet tapi nggak pernah direview.",
-    "start": 23.973,
-    "end": 27.183
+    "text": "Kena tiga persen jam dua siang, terus jam delapan malam lo bilang, ini sesi baru, batasnya mulai dari nol.",
+    "sub": "Kena 3% jam 14.00, terus jam 20.00 lo bilang, ini sesi baru, batasnya mulai dari nol.",
+    "start": 29.365,
+    "end": 35.239
    },
    {
-    "text": "Jurnal yang nggak dibaca sama aja kayak nggak punya jurnal.",
-    "sub": "Jurnal yang nggak dibaca sama aja kayak nggak punya jurnal.",
-    "start": 27.553,
-    "end": 30.718
+    "text": "Itu sama aja nggak punya batas.",
+    "sub": "Itu sama aja nggak punya batas.",
+    "start": 35.543,
+    "end": 37.383
    },
    {
-    "text": "Pasang jadwal tetap, misalnya Sabtu pagi tiga puluh menit, khusus buat review.",
-    "sub": "Pasang jadwal tetap, misalnya Sabtu pagi 30 menit, khusus buat review.",
-    "start": 31.062,
-    "end": 35.665
+    "text": "Satu hari ya satu hari.",
+    "sub": "Satu hari ya satu hari.",
+    "start": 37.601,
+    "end": 39.236
    },
    {
-    "text": "Waktu review, baca juga kolom emosi.",
-    "sub": "Waktu review, baca juga kolom emosi.",
-    "start": 36.018,
-    "end": 38.364
-   },
-   {
-    "text": "Sering banget trade terburuk dibuka waktu lo lagi kesel, capek, atau baru aja rugi.",
-    "sub": "Sering banget trade terburuk dibuka waktu lo lagi kesel, capek, atau baru aja rugi.",
-    "start": 38.647,
-    "end": 43.755
-   },
-   {
-    "text": "Itu data, bukan aib.",
-    "sub": "Itu data, bukan aib.",
-    "start": 44.039,
-    "end": 45.598
+    "text": "Besok pagi baru jatahnya balik.",
+    "sub": "Besok pagi baru jatahnya balik.",
+    "start": 39.436,
+    "end": 41.038
    }
   ]
  },
@@ -777,56 +708,68 @@
   "id": "s10_summary",
   "chapter": "Rangkuman",
   "visual": "summary",
-  "audioDur": 42.998,
-  "duration": 43.698,
+  "audioDur": 36.911,
+  "duration": 37.611,
   "sentences": [
    {
-    "text": "Kita rangkum.",
-    "sub": "Kita rangkum.",
+    "text": "Rangkuman.",
+    "sub": "Rangkuman.",
     "start": 0.0,
-    "end": 0.741
+    "end": 0.643
    },
    {
-    "text": "Jurnal trading itu alat belajar paling murah, karena dia motong bias ingatan.",
-    "sub": "Jurnal trading itu alat belajar paling murah, karena dia motong bias ingatan.",
-    "start": 1.111,
-    "end": 5.785
+    "text": "Aturan satu persen ngelindungin lo dari satu trade jelek.",
+    "sub": "Aturan 1% ngelindungin lo dari satu trade jelek.",
+    "start": 1.125,
+    "end": 4.335
    },
    {
-    "text": "Catat lima kelompok kolom: data posisi, rencana harga, alasan masuk, hasil dalam R, plus emosi dan screenshot.",
-    "sub": "Catat lima kelompok kolom: data posisi, rencana harga, alasan masuk, hasil dalam R, plus emosi dan screenshot.",
-    "start": 6.295,
-    "end": 14.269
+    "text": "Batas rugi harian ngelindungin lo dari satu hari jelek.",
+    "sub": "Batas rugi harian ngelindungin lo dari satu hari jelek.",
+    "start": 4.78,
+    "end": 7.935
    },
    {
-    "text": "Mulai besok, lakuin tiga langkah ini.",
-    "sub": "Mulai besok, lakuin tiga langkah ini.",
-    "start": 14.851,
-    "end": 16.81
+    "text": "Batas mingguan ngelindungin lo dari satu minggu jelek.",
+    "sub": "Batas mingguan ngelindungin lo dari satu minggu jelek.",
+    "start": 8.32,
+    "end": 11.315
    },
    {
-    "text": "Satu, sebelum klik, tulis entry, stop loss, take profit, dan alasan masuk dalam satu kalimat.",
-    "sub": "Satu, sebelum klik, tulis entry, stop loss, take profit, dan alasan masuk dalam satu kalimat.",
-    "start": 17.286,
-    "end": 23.275
+    "text": "Di contoh simulasi tadi, batas tiga persen motong kerugian satu hari dari tujuh koma tujuh persen jadi dua koma sembilan tujuh persen.",
+    "sub": "Di contoh simulasi tadi, batas 3% motong kerugian satu hari dari 7,7% jadi 2,97%.",
+    "start": 11.767,
+    "end": 21.315
    },
    {
-    "text": "Dua, setelah posisi ditutup, isi hasil dalam R dan emosi lo.",
-    "sub": "Dua, setelah posisi ditutup, isi hasil dalam R dan emosi lo.",
-    "start": 23.713,
-    "end": 25.685
+    "text": "Tiga langkah mulai besok.",
+    "sub": "Tiga langkah mulai besok.",
+    "start": 21.753,
+    "end": 22.187
    },
    {
-    "text": "Tiga, tiap akhir pekan review sepuluh sampai dua puluh trade, cari satu kesalahan yang berulang, lalu bikin satu aturan buat minggu depan.",
-    "sub": "Tiga, tiap akhir pekan review 10–20 trade, cari satu kesalahan yang berulang, lalu bikin satu aturan buat minggu depan.",
-    "start": 25.908,
-    "end": 36.48
+    "text": "Satu, tulis saldo awal dan batas harian dalam rupiah sebelum market buka.",
+    "sub": "Satu, tulis saldo awal dan batas harian dalam rupiah sebelum market buka.",
+    "start": 22.569,
+    "end": 27.197
    },
    {
-    "text": "Kalau lo butuh bantu itung lot dari risiko, latihan dulu di akun demo sampai rumusnya jadi refleks.",
-    "sub": "Kalau lo butuh bantu itung lot dari risiko, latihan dulu di akun demo sampai rumusnya jadi refleks.",
-    "start": 36.976,
-    "end": 42.998
+    "text": "Dua, hitung pakai equity, termasuk posisi yang lagi floating.",
+    "sub": "Dua, hitung pakai equity, termasuk posisi yang lagi floating.",
+    "start": 27.55,
+    "end": 31.419
+   },
+   {
+    "text": "Tiga, begitu batas kena, tutup platform dan isi jurnal.",
+    "sub": "Tiga, begitu batas kena, tutup platform dan isi jurnal.",
+    "start": 31.715,
+    "end": 34.874
+   },
+   {
+    "text": "Nggak ada satu trade lagi.",
+    "sub": "Nggak ada satu trade lagi.",
+    "start": 35.196,
+    "end": 36.664
    }
   ]
  },
@@ -834,32 +777,26 @@
   "id": "s11_disclaimer",
   "chapter": "Penutup",
   "visual": "disclaimer",
-  "audioDur": 11.807,
-  "duration": 12.507,
+  "audioDur": 14.028,
+  "duration": 14.728,
   "sentences": [
    {
-    "text": "Satu pengingat.",
-    "sub": "Satu pengingat.",
+    "text": "Ingat, ini konten edukasi, bukan ajakan transaksi atau saran keuangan pribadi.",
+    "sub": "Ingat, ini konten edukasi, bukan ajakan transaksi atau saran keuangan pribadi.",
     "start": 0.0,
-    "end": 0.716
+    "end": 5.095
    },
    {
-    "text": "Video ini edukasi umum, bukan ajakan transaksi atau sinyal.",
-    "sub": "Video ini edukasi umum, bukan ajakan transaksi atau sinyal.",
-    "start": 1.124,
-    "end": 4.825
+    "text": "Semua angka hitungan tadi simulasi.",
+    "sub": "Semua angka hitungan tadi simulasi.",
+    "start": 5.508,
+    "end": 7.472
    },
    {
-    "text": "Chart dan angka di video ini contoh simulasi.",
-    "sub": "Chart dan angka di video ini contoh simulasi.",
-    "start": 5.322,
-    "end": 7.795
-   },
-   {
-    "text": "Trading pakai leverage bisa bikin lo rugi dan kehilangan modal.",
-    "sub": "Trading pakai leverage bisa bikin lo rugi dan kehilangan modal.",
-    "start": 8.263,
-    "end": 11.552
+    "text": "Trading berleverage bisa bikin lo kehilangan modal, dan stop loss bisa kena slippage pas pasar gerak cepat.",
+    "sub": "Trading berleverage bisa bikin lo kehilangan modal, dan stop loss bisa kena slippage pas pasar gerak cepat.",
+    "start": 7.868,
+    "end": 13.797
    }
   ]
  },
@@ -867,26 +804,38 @@
   "id": "s12_cta",
   "chapter": "Penutup",
   "visual": "cta",
-  "audioDur": 18.599,
-  "duration": 19.299,
+  "audioDur": 19.879,
+  "duration": 20.579,
   "sentences": [
    {
-    "text": "Kalau lo mau belajar bareng trader lain yang serius soal manajemen risiko, join komunitas trading di dhirajkelly dot i d.",
-    "sub": "Kalau lo mau belajar bareng trader lain yang serius soal manajemen risiko, join komunitas trading di dhirajkelly.id.",
+    "text": "Sekarang gue pengen tau.",
+    "sub": "Sekarang gue pengen tau.",
     "start": 0.0,
-    "end": 6.935
+    "end": 1.164
    },
    {
-    "text": "Dan tulis di komentar: lo tim yang udah punya jurnal, atau tim yang selama ini cuma ngandelin ingetan?",
-    "sub": "Dan tulis di komentar: lo tim yang udah punya jurnal, atau tim yang selama ini cuma ngandelin ingetan?",
-    "start": 7.282,
-    "end": 12.936
+    "text": "Lo tim yang berhenti setelah rugi tiga persen, atau tim yang bilang batas kayak gini bikin lo kehilangan peluang?",
+    "sub": "Lo tim yang berhenti setelah rugi 3%, atau tim yang bilang batas kayak gini bikin lo kehilangan peluang?",
+    "start": 1.584,
+    "end": 7.673
    },
    {
-    "text": "Kalau video ini ngebantu, subscribe channel Doktor Trader biar nggak ketinggalan materi berikutnya.",
-    "sub": "Kalau video ini ngebantu, subscribe channel Doktor Trader biar nggak ketinggalan materi berikutnya.",
-    "start": 13.537,
-    "end": 18.599
+    "text": "Tulis alasannya di komentar.",
+    "sub": "Tulis alasannya di komentar.",
+    "start": 8.171,
+    "end": 9.421
+   },
+   {
+    "text": "Kalau mau belajar bareng trader lain yang risk first, join komunitas trading di dhirajkelly dot i d.",
+    "sub": "Kalau mau belajar bareng trader lain yang risk first, join komunitas trading di dhirajkelly.id.",
+    "start": 9.841,
+    "end": 15.367
+   },
+   {
+    "text": "Subscribe channel Doktor Trader biar materi Academy berikutnya nggak kelewat.",
+    "sub": "Subscribe channel Doktor Trader biar materi Academy berikutnya nggak kelewat.",
+    "start": 15.769,
+    "end": 19.631
    }
   ]
  }

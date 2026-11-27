@@ -1,6 +1,6 @@
 import React from 'react';
 import {Composition, registerRoot} from 'remotion';
-import {Main, FPS, layout, SceneT} from './WBMain';
+import {Main, FPS, layout, SceneT} from './RiskMain';
 import {WBEnd} from './WBEnd';
 import timings from '../public/timings.json';
 
