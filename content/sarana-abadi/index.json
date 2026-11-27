@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generated": "2026-11-27T21:51:28Z",
+ "generated": "2026-11-27T21:54:40Z",
  "items": [
   {
    "id": "kontraktor-pabrik-karawang",
@@ -2203,6 +2203,139 @@
     {
      "q": "Berapa lama grout harus dirawat sebelum dibebani?",
      "a": "Ikuti lembar data teknis produk dan instruksi perencana. Umumnya grout dirawat lembap dan baru dibebani penuh setelah mencapai kuat tekan yang disyaratkan berdasarkan hasil uji benda uji."
+    }
+   ]
+  },
+  {
+   "id": "jaminan-pelaksanaan-proyek-konstruksi",
+   "slug": "jaminan-pelaksanaan-proyek-konstruksi",
+   "title": "Jaminan Pelaksanaan Proyek Konstruksi: Fungsi, Besaran, dan Klaimnya",
+   "publish_at_wib": "2026-11-28 13:00",
+   "publish_at_utc": "2026-11-28T06:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/28/jaminan-pelaksanaan-proyek-konstruksi/",
+   "html": "html/jaminan-pelaksanaan-proyek-konstruksi.html",
+   "image": "img/jaminan-pelaksanaan-proyek-konstruksi.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jaminan pelaksanaan proyek konstruksi",
+   "excerpt": "Apa itu jaminan pelaksanaan, kapan diminta, berapa besarnya, dan bagaimana pemilik proyek serta kontraktor sebaiknya mengelolanya.",
+   "meta_title": "Jaminan Pelaksanaan Proyek Konstruksi",
+   "meta_description": "Memahami jaminan pelaksanaan proyek konstruksi: fungsi, bentuk bank garansi dan surety bond, besaran di pengadaan pemerintah, masa berlaku, dan pencairannya.",
+   "focus_keyword": "jaminan pelaksanaan proyek konstruksi",
+   "categories": [
+    "Industrial Projects & Case Studies",
+    "Quality & Standards"
+   ],
+   "tags": [
+    "kontrak konstruksi",
+    "bank garansi",
+    "surety bond",
+    "manajemen proyek"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu jaminan pelaksanaan?",
+     "a": "Jaminan pelaksanaan adalah jaminan tertulis, biasanya berupa bank garansi atau surety bond, yang diserahkan kontraktor kepada pemilik proyek untuk menjamin kontraktor menyelesaikan pekerjaan sesuai kontrak."
+    },
+    {
+     "q": "Berapa besar jaminan pelaksanaan di pengadaan pemerintah?",
+     "a": "Menurut Pasal 33 Perpres 16 Tahun 2018 beserta perubahannya, besarnya 5% dari nilai kontrak bila penawaran terkoreksi 80–100% dari HPS, atau 5% dari nilai HPS bila penawaran di bawah 80% HPS, untuk kontrak di atas Rp200 juta."
+    },
+    {
+     "q": "Apakah proyek swasta wajib memakai jaminan pelaksanaan?",
+     "a": "Tidak ada kewajiban umum. Pada proyek swasta, perlu tidaknya jaminan pelaksanaan, besarnya, dan bentuknya ditentukan oleh kesepakatan para pihak dalam kontrak."
+    },
+    {
+     "q": "Kapan jaminan pelaksanaan dikembalikan?",
+     "a": "Pada pengadaan pemerintah, jaminan pelaksanaan berlaku sampai serah terima pertama pekerjaan konstruksi. Pada proyek swasta, waktunya mengikuti ketentuan kontrak."
+    },
+    {
+     "q": "Apa beda jaminan pelaksanaan dan jaminan pemeliharaan?",
+     "a": "Jaminan pelaksanaan menjamin pekerjaan diselesaikan sesuai kontrak sampai serah terima pertama, sedangkan jaminan pemeliharaan menjamin kontraktor memperbaiki cacat selama masa pemeliharaan."
+    }
+   ]
+  },
+  {
+   "id": "jasa-waterproofing-dak-beton",
+   "slug": "jasa-waterproofing-dak-beton",
+   "title": "Jasa Waterproofing Dak Beton Pabrik: Pilihan Sistem dan Tahapannya",
+   "publish_at_wib": "2026-11-28 16:00",
+   "publish_at_utc": "2026-11-28T09:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/28/jasa-waterproofing-dak-beton/",
+   "html": "html/jasa-waterproofing-dak-beton.html",
+   "image": "img/jasa-waterproofing-dak-beton.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang jasa waterproofing dak beton",
+   "excerpt": "Dak beton yang bocor merusak plafon, panel listrik, dan barang di bawahnya. Begini memilih sistem dan jasa waterproofing yang tepat.",
+   "meta_title": "Jasa Waterproofing Dak Beton Pabrik dan Gedung",
+   "meta_description": "Panduan memilih jasa waterproofing dak beton untuk pabrik dan kantor: penyebab bocor, sistem membran, tahapan kerja, uji genang, dan isi penawaran yang jelas.",
+   "focus_keyword": "jasa waterproofing dak beton",
+   "categories": [
+    "Jasa Kontraktor Karawang",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "waterproofing",
+    "dak beton",
+    "atap bocor",
+    "perawatan gedung"
+   ],
+   "faq": [
+    {
+     "q": "Apa sistem waterproofing yang cocok untuk dak beton?",
+     "a": "Bergantung kondisi dak dan fungsinya. Dak yang sering diinjak atau menampung unit AC biasanya memakai membran yang dilindungi screed atau lapisan pelindung, sedangkan dak yang jarang diakses bisa memakai coating cair yang tahan UV."
+    },
+    {
+     "q": "Apakah waterproofing bisa dipasang di atas lapisan lama?",
+     "a": "Bisa, asalkan lapisan lama masih menempel kuat dan kompatibel dengan material baru. Lapisan lama yang menggelembung, lepas, atau rapuh sebaiknya dibongkar lebih dulu."
+    },
+    {
+     "q": "Berapa lama uji genang dilakukan?",
+     "a": "Lamanya mengikuti spesifikasi proyek dan rekomendasi produsen; praktik yang umum adalah merendam area dengan air setinggi beberapa sentimeter selama sekitar 24 sampai 48 jam lalu memeriksa bagian bawah dak."
+    },
+    {
+     "q": "Mengapa dak tetap bocor setelah di-waterproofing?",
+     "a": "Penyebab yang sering ditemui adalah detail sudut, sambungan pipa, dan drain yang tidak diperkuat, permukaan yang lembap saat aplikasi, atau kemiringan dak yang membuat air tergenang."
+    }
+   ]
+  },
+  {
+   "id": "uji-sondir-tanah",
+   "slug": "uji-sondir-tanah",
+   "title": "Uji Sondir Tanah untuk Pabrik: Cara Kerja dan Membaca Hasilnya",
+   "publish_at_wib": "2026-11-28 19:00",
+   "publish_at_utc": "2026-11-28T12:00:00Z",
+   "url": "https://sarana-abadi.co.id/2026/11/28/uji-sondir-tanah/",
+   "html": "html/uji-sondir-tanah.html",
+   "image": "img/uji-sondir-tanah.png",
+   "image_alt": "Gambar sampul artikel PT Sarana Abadi Raya tentang uji sondir tanah",
+   "excerpt": "Sebelum mendesain pondasi pabrik, Anda perlu tahu apa yang ada di bawah tanah. Begini uji sondir bekerja dan cara membaca hasilnya.",
+   "meta_title": "Uji Sondir Tanah: Cara Kerja dan Membaca Hasilnya",
+   "meta_description": "Panduan uji sondir tanah untuk rencana pabrik dan gudang: cara kerja alat, parameter qc dan fs, jumlah titik, beda dengan boring SPT, dan cara membaca grafik.",
+   "focus_keyword": "uji sondir tanah",
+   "categories": [
+    "Engineering & Design",
+    "Fabrication & Construction"
+   ],
+   "tags": [
+    "sondir",
+    "penyelidikan tanah",
+    "geoteknik",
+    "pondasi pabrik"
+   ],
+   "faq": [
+    {
+     "q": "Apa itu uji sondir?",
+     "a": "Uji sondir atau cone penetration test adalah pengujian lapangan dengan menekan konus ke dalam tanah secara bertahap sambil mencatat perlawanan ujung konus dan gesekan selimut di setiap kedalaman."
+    },
+    {
+     "q": "Standar apa yang dipakai untuk uji sondir di Indonesia?",
+     "a": "Acuan yang umum dipakai adalah SNI 2827:2008 tentang cara uji penetrasi lapangan dengan alat sondir."
+    },
+    {
+     "q": "Apakah sondir saja cukup untuk mendesain pondasi pabrik?",
+     "a": "Untuk bangunan ringan di tanah yang relatif seragam, sondir sering menjadi data utama. Untuk beban berat, tanah lunak tebal, atau rencana tiang pancang dalam, sondir biasanya dilengkapi boring dengan SPT dan uji laboratorium."
+    },
+    {
+     "q": "Berapa titik sondir yang dibutuhkan?",
+     "a": "Tidak ada satu angka baku. Jumlah dan jarak titik ditentukan ahli geoteknik berdasarkan luas bangunan, sebaran beban, dan variasi kondisi tanah, dengan titik ditempatkan di area kolom dan beban terberat."
     }
    ]
   }

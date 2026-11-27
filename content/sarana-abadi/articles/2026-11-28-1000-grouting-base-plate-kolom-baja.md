@@ -136,6 +136,8 @@ Mutu grout diperiksa dari beberapa sisi:
 - **Ketukan ringan (sounding)** di sekitar tepi base plate untuk mendeteksi rongga dangkal.
 - **Dokumentasi**: tanggal pengecoran, nomor batch produk, suhu, dan nama pengawas.
 
+Simpan juga sisa benda uji dan catatan batch produk sampai pekerjaan diterima. Bila suatu saat ada pertanyaan tentang mutu grout di kolom tertentu, catatan inilah yang memudahkan penelusuran tanpa harus membongkar.
+
 Kesalahan yang sering kami temui di lapangan antara lain:
 
 - Grouting dilakukan sebelum alignment kolom disetujui.
