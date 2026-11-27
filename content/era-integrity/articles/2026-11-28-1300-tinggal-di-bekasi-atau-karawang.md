@@ -91,6 +91,8 @@ Apa pun pilihannya, beberapa risiko perlu dicek sebelum membeli:
 4. **Legalitas dan perizinan.** Cek sertifikat, PBG atau IMB, dan PBB melalui notaris/PPAT.
 5. **Rencana pembangunan sekitar.** Proyek jalan atau kawasan baru bisa membawa manfaat, tetapi juga masa konstruksi yang mengganggu.
 
+Cara paling sederhana untuk mengurangi risiko adalah datang ke lokasi beberapa kali pada waktu yang berbeda: pagi saat jam berangkat kerja, sore saat jam pulang, dan bila memungkinkan saat hujan deras. Berbincanglah dengan warga atau pengurus lingkungan, karena mereka biasanya tahu riwayat genangan, keamanan, dan kebiasaan lalu lintas di sekitar rumah yang tidak tampak di iklan.
+
 ## Cara Memutuskan dengan Tenang
 
 Agar tidak terjebak pada perdebatan "mana yang lebih bagus", gunakan langkah berikut:
@@ -103,6 +105,14 @@ Agar tidak terjebak pada perdebatan "mana yang lebih bagus", gunakan langkah ber
 - Pertimbangkan rencana lima sampai sepuluh tahun ke depan, misalnya pindah kerja atau kebutuhan sekolah anak.
 
 Dengan cara ini, keputusan Anda didasarkan pada data pribadi yang relevan, bukan sekadar reputasi kawasan.
+
+### Ilustrasi dua keluarga dengan kebutuhan berbeda
+
+Misalnya keluarga pertama terdiri dari suami yang berkantor di Jakarta Timur dan istri yang bekerja dari rumah. Bagi mereka, rumah di Kota Bekasi atau di sekitar jalur KRL Kabupaten Bekasi kemungkinan lebih masuk akal, karena perjalanan harian suami bisa memakai kereta dan tidak terlalu bergantung pada kondisi jalan tol.
+
+Keluarga kedua, misalnya, terdiri dari suami dan istri yang sama-sama bekerja di kawasan industri di Karawang. Bagi mereka, tinggal di Bekasi justru berarti dua perjalanan panjang setiap hari. Rumah di Karawang yang dekat dengan tempat kerja dapat menghemat waktu, biaya bensin, dan tenaga, sehingga waktu bersama keluarga lebih banyak.
+
+Ilustrasi ini menunjukkan bahwa pertanyaan "Bekasi atau Karawang" hampir selalu dijawab oleh pola perjalanan keluarga itu sendiri. Bila pola perjalanan Anda campuran, misalnya satu bekerja di Jakarta dan satu di Karawang, kawasan perbatasan seperti Cikarang atau Karawang Barat bisa menjadi titik tengah yang layak dipertimbangkan, asalkan rute keduanya sudah diuji.
 
 ## Kesimpulan
 

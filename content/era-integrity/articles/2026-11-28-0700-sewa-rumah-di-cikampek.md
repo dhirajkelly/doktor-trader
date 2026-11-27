@@ -126,6 +126,17 @@ Sebagian besar pemilik rumah beritikad baik, tetapi tetap waspadai situasi berik
 
 Bila menemukan salah satu tanda ini, tahan dulu pembayaran dan lakukan pengecekan tambahan. Lebih baik kehilangan satu pilihan rumah daripada kehilangan uang sewa setahun.
 
+## Tips Khusus untuk Perusahaan yang Mencari Rumah Staf
+
+Selain penyewa perorangan, ada pula perusahaan yang mencari rumah di Cikampek untuk staf atau tim proyek. Kebutuhannya sedikit berbeda:
+
+- **Kapasitas penghuni.** Hitung jumlah kamar tidur dan kamar mandi agar sesuai jumlah staf, dan pastikan daya listrik cukup untuk pemakaian beberapa orang.
+- **Izin lingkungan.** Beri tahu pengurus RT atau pengelola perumahan bahwa rumah akan dihuni beberapa karyawan, agar tidak timbul salah paham dengan warga.
+- **Perjanjian atas nama perusahaan.** Pastikan pihak penyewa dalam perjanjian jelas, apakah perusahaan atau perorangan, termasuk siapa penanggung jawab di lapangan.
+- **Aspek pajak.** Penghasilan dari persewaan bangunan dikenai PPh final, dan bila penyewanya badan usaha yang ditunjuk sebagai pemotong pajak, pajak tersebut dipotong oleh penyewa. Koordinasikan dengan bagian keuangan perusahaan dan pemilik rumah sejak awal.
+
+Dengan persiapan seperti ini, rumah staf bisa berfungsi dengan baik tanpa mengganggu lingkungan sekitar.
+
 ## Kesimpulan
 
 Mencari sewa rumah di Cikampek akan jauh lebih mudah bila dimulai dari rute harian, bukan dari foto iklan. Tentukan batas waktu tempuh, pilih jenis rumah yang sesuai kebutuhan, survei unit dengan teliti, hitung biaya tempat tinggal secara utuh, dan pastikan semua kesepakatan tertulis di perjanjian. Harga sewa sangat bergantung pada lokasi dan kondisi rumah, jadi bandingkan beberapa pilihan sebelum memutuskan.
