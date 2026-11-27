@@ -3,27 +3,30 @@ const express = require('express');
 const db = require('../db');
 const auth = require('../auth');
 const ai = require('../ai');
-const { layout, esc, md, flash, csrfField, sideNav, fmtDate, firstName, SITE, TG_ICON } = require('../views');
+const { layout, esc, md, flash, csrfField, sideNav, fmtDate, firstName, SITE, TG_ICON, icon } = require('../views');
 
 const router = express.Router();
 
 const NAV = [
-  ['/member', 'Dashboard', 'home'],
-  ['/member/academy', 'Academy', 'academy'],
-  ['/member/tanya', 'Tanya Doktor (AI)', 'tanya'],
-  ['/member/analisa', 'Analisa Doktor', 'analisa'],
-  ['/member/command-center', 'Trading Command Center', 'cc'],
-  ['/member/market', 'Market Watch', 'market'],
-  ['/member/tools', 'EA · AI Signals · Copy Trade', 'tools'],
-  ['/member/ai-lab', 'AI Strategy Lab', 'ailab'],
-  ['/member/webinar', 'Webinar bulanan', 'webinar'],
-  ['/member/akun', 'Akun', 'akun'],
+  [null, 'Belajar'],
+  ['/member', 'Dashboard', 'home', 'home'],
+  ['/member/academy', 'Academy', 'academy', 'academy'],
+  ['/member/tanya', 'Tanya Doktor (AI)', 'tanya', 'tanya'],
+  ['/member/analisa', 'Analisa Doktor', 'analisa', 'analisa'],
+  ['/member/webinar', 'Webinar bulanan', 'webinar', 'webinar'],
+  [null, 'Alat trading'],
+  ['/member/command-center', 'Trading Command Center', 'cc', 'cc'],
+  ['/member/market', 'Market Watch', 'market', 'market'],
+  ['/member/tools', 'EA · AI Signals · Copy Trade', 'tools', 'tools'],
+  ['/member/ai-lab', 'AI Strategy Lab', 'ailab', 'ailab'],
+  [null, 'Akun'],
+  ['/member/akun', 'Akun', 'akun', 'akun'],
 ];
 
 function page(req, res, { title, active, body }) {
   res.send(layout({
     title, noindex: true, user: req.user, active: 'member',
-    body: `<section class="wrap" style="padding:32px 20px"><div class="side">${sideNav(NAV, active)}<div style="min-width:0">${body}</div></div></section>`,
+    body: `<section class="wrap" style="padding:32px 20px"><div class="side">${sideNav(NAV, active, 'Menu member')}<div style="min-width:0">${body}</div></div></section>`,
   }));
 }
 
@@ -70,19 +73,27 @@ router.get('/member', (req, res) => {
   const next = db.get(`SELECT l.*, c.slug AS cslug, c.title AS ctitle FROM lessons l JOIN courses c ON c.id = l.course_id
     WHERE l.published = 1 AND c.published = 1 AND l.id NOT IN (SELECT lesson_id FROM progress WHERE user_id = ?)
     ORDER BY c.position, c.id, l.position, l.id LIMIT 1`, [req.user.id]);
+  const pct = total ? Math.round((done / total) * 100) : 0;
+  const nq = db.get('SELECT COUNT(*) n FROM questions WHERE user_id=?', [req.user.id]).n;
   page(req, res, {
     title: 'Dashboard member', active: 'home',
-    body: `<h1>Selamat datang, ${esc(firstName(req.user.name))}</h1>
-<div class="grid g3" style="margin:20px 0">
-<div class="card"><div class="dim">Progress Academy</div><div class="stat">${done}/${total}</div><div class="bar"><i style="width:${total ? Math.round((done / total) * 100) : 0}%"></i></div></div>
-<div class="card"><div class="dim">Pertanyaan ke Doktor</div><div class="stat">${qs.length ? db.get('SELECT COUNT(*) n FROM questions WHERE user_id=?', [req.user.id]).n : 0}</div><a href="/member/tanya">Tanya sekarang →</a></div>
-<div class="card"><div class="dim">Status</div><div class="stat" style="font-size:20px;margin:6px 0"><span class="pill ok">Member terverifikasi</span></div><a href="/member/tools">Buka EA, AI Signals &amp; Copy Trade →</a></div>
+    body: `<div class="spread" style="margin-bottom:18px"><h1 style="margin:0">Selamat datang, ${esc(firstName(req.user.name))}</h1><span class="pill ok">Member terverifikasi</span></div>
+${next ? `<div class="card hero-card spread" style="margin-bottom:16px"><div style="flex:1;min-width:220px"><div class="dim">${done ? 'Lanjutkan belajar' : 'Mulai belajar'}</div><strong style="font-size:18px">${esc(next.title)}</strong><div class="muted" style="font-size:14px;margin:2px 0 10px">${esc(next.ctitle)} · ${done}/${total} materi selesai</div><div class="bar" role="progressbar" aria-label="Progress Academy" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${done}"><i style="width:${pct}%"></i></div></div><a class="btn" href="/member/academy/${esc(next.cslug)}/${esc(next.slug)}">${done ? 'Lanjutkan' : 'Mulai materi'}</a></div>` : (total ? '<div class="alert ok">Semua materi Academy sudah selesai. Mantap!</div>' : '')}
+<div class="stats" style="margin-bottom:16px">
+<a class="card" href="/member/academy" style="text-decoration:none;color:inherit"><div class="dim">Progress Academy</div><div class="stat">${pct}%</div><div class="dim">${done}/${total} materi</div></a>
+<a class="card" href="/member/tanya" style="text-decoration:none;color:inherit"><div class="dim">Pertanyaan ke Doktor</div><div class="stat">${nq}</div><div class="dim">Tanya sekarang →</div></a>
 </div>
-<a class="card spread" href="/member/command-center" style="text-decoration:none;color:inherit;margin-bottom:18px;border-color:rgba(233,196,106,.45)"><div><div class="dim">Baru</div><strong>Trading Command Center</strong><div class="muted" style="font-size:14px">Scanner · AI Chart Analysis · Strategy Builder · Backtest · Risk Manager · Broker &amp; MT5 · AI Journal</div></div><span class="btn sm">Buka</span></a>
+<h2 style="font-size:18px;margin:22px 0 10px">Akses cepat</h2>
+<div class="tiles" style="margin-bottom:18px">
+<a class="icon-tile" href="/member/command-center"><i>${icon('cc')}</i>Command Center</a>
+<a class="icon-tile" href="/member/analisa"><i>${icon('analisa')}</i>Analisa Doktor</a>
+<a class="icon-tile" href="/member/market"><i>${icon('market')}</i>Market Watch</a>
+<a class="icon-tile" href="/member/tools"><i>${icon('tools')}</i>EA · Signals · Copy</a>
+<a class="icon-tile" href="/member/webinar"><i>${icon('webinar')}</i>Webinar bulanan</a>
+<a class="icon-tile" href="/alat/kalkulator-lot"><i>${icon('calc')}</i>Kalkulator lot</a>
+</div>
 <div class="card spread" style="margin-bottom:18px;border-color:rgba(45,181,196,.45)"><div style="flex:1;min-width:220px"><div class="dim" style="color:#5BE3EE">${TG_ICON(14)} Gratis</div><strong>Channel Telegram Doktor Trader</strong><div class="muted" style="font-size:14px">XAUUSD plan tiap pagi 07:30 WIB, gratis. Bersifat edukasi, bukan ajakan transaksi.</div></div><a class="btn sm tg" href="${SITE.telegram}" target="_blank" rel="noopener" data-track="telegram">${TG_ICON(14)} Join Channel</a></div>
-<div class="row" style="margin-bottom:18px"><a class="btn ghost sm" href="/member/analisa">Analisa Doktor</a><a class="btn ghost sm" href="/member/market">Market Watch</a><a class="btn ghost sm" href="/member/webinar">Webinar bulanan</a><a class="btn ghost sm" href="/alat/kalkulator-lot">Kalkulator lot</a></div>
-${next ? `<div class="card spread"><div><div class="dim">Lanjutkan belajar</div><strong>${esc(next.ctitle)} · ${esc(next.title)}</strong></div><a class="btn" href="/member/academy/${esc(next.cslug)}/${esc(next.slug)}">Mulai materi</a></div>` : (total ? '<div class="alert ok">Semua materi Academy sudah selesai. Mantap!</div>' : '')}
-${qs.length ? `<h2 style="margin-top:28px">Pertanyaan terakhirmu</h2>${qs.map((q) => `<div class="card" style="margin-bottom:10px"><div class="spread"><strong>${esc(q.topic || 'Pertanyaan')}</strong>${(q.answer || q.ai_answer) ? '<span class="pill ok">Dijawab</span>' : '<span class="pill gray">Menunggu jawaban</span>'}</div><p class="muted" style="margin:6px 0 0">${esc(q.body.slice(0, 180))}</p></div>`).join('')}` : ''}`,
+${qs.length ? `<h2 style="font-size:18px;margin-top:28px">Pertanyaan terakhirmu</h2>${qs.map((q) => `<div class="card" style="margin-bottom:10px"><div class="spread"><strong>${esc(q.topic || 'Pertanyaan')}</strong>${(q.answer || q.ai_answer) ? '<span class="pill ok">Dijawab</span>' : '<span class="pill gray">Menunggu jawaban</span>'}</div><p class="muted" style="margin:6px 0 0">${esc(q.body.slice(0, 180))}</p></div>`).join('')}<a href="/member/tanya">Lihat semua pertanyaan →</a>` : ''}`,
   });
 });
 

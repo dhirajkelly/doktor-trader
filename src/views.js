@@ -127,17 +127,42 @@ th{color:var(--dim);font-weight:700;font-size:12px;text-transform:uppercase;lett
 .prose p,.prose ul,.prose ol{margin:0 0 1em}.prose blockquote{margin:1em 0;padding:4px 18px;border-left:3px solid var(--gold);color:var(--muted)}
 .prose table{margin:1em 0}.prose code{background:var(--bg2);padding:2px 6px;border-radius:6px}
 .bar{height:8px;border-radius:8px;background:rgba(255,255,255,.08);overflow:hidden}.bar i{display:block;height:100%;background:var(--gold)}
-.side{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:start}
-.side aside a{display:block;padding:9px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:14px}
+.side{display:grid;grid-template-columns:232px 1fr;gap:28px;align-items:start}
+.side aside{position:sticky;top:76px}
+.side aside a{display:flex;align-items:center;gap:10px;min-height:40px;padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:14px;transition:background-color .15s,color .15s}
+.side aside a svg{flex:none;opacity:.75}
 .side aside a.on,.side aside a:hover{background:var(--card);color:var(--text)}
+.side aside a.on{box-shadow:inset 3px 0 0 var(--gold)}.side aside a.on svg{opacity:1;color:var(--gold)}
+.side aside .navh{margin:16px 12px 6px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.side aside .navh:first-child{margin-top:0}
 .side>*{min-width:0}
-@media(max-width:820px){.side{grid-template-columns:1fr;gap:18px}.side aside{display:flex;flex-wrap:wrap;gap:6px}.side aside a{white-space:nowrap;padding:7px 12px;font-size:13px;border:1px solid var(--line)}.side aside a.on{border-color:rgba(233,196,106,.45)}}
+@media(max-width:820px){.side{grid-template-columns:1fr;gap:18px}
+.side aside{position:relative;top:auto;display:flex;flex-wrap:nowrap;gap:8px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-inline:20px;margin:0 -20px;padding:2px 20px 6px;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 20px,#000 calc(100% - 28px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 20px,#000 calc(100% - 28px),transparent 100%)}
+.side aside::-webkit-scrollbar{display:none}
+.side aside .navh{display:none}
+.side aside a{flex:none;scroll-snap-align:start;white-space:nowrap;min-height:40px;padding:0 14px;font-size:14px;border:1px solid var(--line);border-radius:999px}
+.side aside a svg{width:16px;height:16px}
+.side aside a.on{box-shadow:none;border-color:rgba(233,196,106,.55);background:rgba(233,196,106,.1)}}
 footer.bot{border-top:1px solid var(--line);margin-top:60px;padding:30px 0;color:var(--dim);font-size:12px;line-height:1.7}
 .stat{font-size:28px;font-weight:800}
-.btn.tg{background:#2DB5C4;color:#fff}.btn.tg:hover{filter:brightness(1.08)}
+.btn.tg{background:#2DB5C4;color:#04162E}.btn.tg:hover{filter:brightness(1.08)}
 .tgline{margin:24px 0 0;padding:12px 16px;border-left:3px solid #2DB5C4;background:rgba(45,181,196,.08);border-radius:0 10px 10px 0;font-size:15px}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .spread{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+html{scroll-padding-top:80px}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-radius:6px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:0;border-color:var(--gold)}
+.btn{transition:filter .15s,background-color .15s,transform .15s}.btn:hover{filter:brightness(1.06)}.btn:active{transform:translateY(1px)}
+@media(pointer:coarse){.btn.sm{min-height:40px;padding:0 14px}}
+a.card{transition:border-color .15s,transform .15s}a.card:hover{border-color:rgba(233,196,106,.4);transform:translateY(-1px)}
+.icon-tile{display:flex;align-items:center;gap:12px;min-height:56px;padding:12px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:var(--text);text-decoration:none;font-weight:700;font-size:14px;transition:border-color .15s}
+.icon-tile:hover{border-color:rgba(233,196,106,.4)}
+.icon-tile i{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:rgba(233,196,106,.12);color:var(--gold);flex:none}
+.tiles{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.hero-card{border-color:rgba(233,196,106,.45);background:linear-gradient(135deg,rgba(233,196,106,.1),var(--card) 55%)}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.stats .card{padding:16px 18px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 `;
 
 const RISK = 'Peringatan risiko: Trading forex, emas, dan instrumen berjangka memiliki risiko tinggi dan dapat mengakibatkan kehilangan sebagian atau seluruh modal. Seluruh konten Doktor Trader bersifat edukasi, bukan ajakan atau rekomendasi transaksi. Kinerja masa lalu tidak menjamin hasil di masa depan.';
@@ -151,6 +176,7 @@ document.addEventListener('click',ev,true);})();
 (function(){var h=document.querySelector('header.top'),b=h&&h.querySelector('.navt');if(!b)return;
 function set(o){h.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Tutup menu':'Buka menu')}
 b.addEventListener('click',function(){set(!h.classList.contains('open'))});
+var on=document.querySelector('.side aside a.on'),as=on&&on.parentNode;if(as&&as.scrollWidth>as.clientWidth){var r=on.getBoundingClientRect(),q=as.getBoundingClientRect();if(r.right>q.right-28)as.scrollLeft+=r.left-q.left-q.width/2+r.width/2}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
 document.addEventListener('click',function(e){if(!h.contains(e.target))set(false)});})();`;
 
@@ -198,8 +224,31 @@ ${user ? `<form method="post" action="/keluar" style="display:inline"><input typ
 </body></html>`;
 }
 
-function sideNav(items, active) {
-  return `<aside>${items.map(([href, label, key]) => `<a href="${href}"${key === active ? ' class="on"' : ''}>${label}</a>`).join('')}</aside>`;
+// Lucide-style 24px stroke icons (inline SVG, inherit currentColor).
+const ICON_PATHS = {
+  home: '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/>',
+  academy: '<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/>',
+  tanya: '<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4v.3"/><path d="M12 16.5h.01"/>',
+  analisa: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8 13l2-2 2 1.5 2-3"/>',
+  cc: '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 13l3-3 2 2 4-4"/>',
+  market: '<path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/>',
+  tools: '<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/>',
+  ailab: '<path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7.5 15h9"/>',
+  webinar: '<rect x="2" y="5" width="15" height="14" rx="2"/><path d="m17 10 5-3v10l-5-3"/>',
+  akun: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  calc: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M14 11h2M8 15h2M14 15h2M8 19h2M14 19h2"/>',
+  telegram: '<path d="M21.5 4.5 2.5 11l6 2.2 2.3 6.3 3.3-4 4.9 3.6 2.5-14.6z"/><path d="m8.5 13.2 9-6.2"/>',
+};
+function icon(name, s = 18) {
+  const p = ICON_PATHS[name];
+  return p ? `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>` : '';
+}
+
+// items: [href, label, key, iconName?]; an item with href === null renders as a group heading.
+function sideNav(items, active, label = 'Navigasi') {
+  return `<aside aria-label="${esc(label)}">${items.map(([href, text, key, ic]) => href === null
+    ? `<div class="navh">${text}</div>`
+    : `<a href="${href}"${key === active ? ' class="on" aria-current="page"' : ''}>${icon(ic || '')}${text}</a>`).join('')}</aside>`;
 }
 
 function flash(msg, kind = '') {
@@ -210,4 +259,4 @@ function csrfField(csrf) {
   return `<input type="hidden" name="_csrf" value="${esc(csrf)}">`;
 }
 
-module.exports = { SITE, TG_ICON, DISCLOSURE, authorBox, esc, md, plain, slugify, firstName, fmtDate, layout, sideNav, flash, csrfField, RISK };
+module.exports = { SITE, TG_ICON, icon, DISCLOSURE, authorBox, esc, md, plain, slugify, firstName, fmtDate, layout, sideNav, flash, csrfField, RISK };

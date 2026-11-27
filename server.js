@@ -53,6 +53,8 @@ async function main() {
   app.get(['/', '/index.html'], (req, res) => {
     const rows = db.all("SELECT slug, title, excerpt, published_at, category FROM articles WHERE status='published' AND published_at <= datetime('now') ORDER BY published_at DESC LIMIT 3");
     let html = landingTpl.replace('<!-- MARKET WATCH -->', require('./src/market').landingSection());
+    // Logged-in visitors: the nav link goes straight to the member area instead of the login page.
+    if (req.user) html = html.replace('<a class="login" href="/masuk"><!--LOGIN-->Masuk Member</a>', `<a class="login" href="${req.user.role === 'sales' ? '/admin/lead' : '/member'}">Area Member</a>`);
     if (rows.length) {
       const sec = `<section class="sec" style="padding-top:24px"><div class="wrap">
 <div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:12px;margin-bottom:28px"><h2 class="h-sec" style="text-align:left">Artikel terbaru</h2><a href="/artikel" style="font-weight:700;text-decoration:none">Lihat semua artikel →</a></div>
