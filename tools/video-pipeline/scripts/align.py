@@ -1,14 +1,14 @@
 import json,re,subprocess,sys,os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__))))
 import script
-SUBMAP=[('tujuh ratus tujuh puluh dua ribu lima ratus lima puluh tiga rupiah','Rp772.553'),('dua ratus sembilan puluh tujuh ribu sepuluh rupiah','Rp297.010'),('tujuh ratus tujuh puluh dua ribu','Rp772 ribu'),('empat ratus tujuh puluh lima ribu','Rp475 ribu'),('dua ratus sembilan puluh delapan ribu','Rp298 ribu'),('enam ratus delapan puluh enam ribu','Rp686 ribu'),('lima ratus sembilan puluh satu ribu','Rp591 ribu'),('tiga ratus ribu rupiah','Rp300 ribu'),('enam ratus ribu rupiah','Rp600 ribu'),('dua ratus ribu','Rp200 ribu'),('seratus ribu','Rp100 ribu'),('satu koma empat tiga juta','Rp1,43 juta'),('sepuluh juta','10 juta'),
-('tiga ribu lima ratus tujuh puluh lima','3.575'),('tiga ribu empat ratus dua puluh tujuh','3.427'),('seratus empat puluh delapan dolar','$148'),('empat puluh delapan dolar','$48'),('empat puluh satu dolar','$41'),('lima puluh enam dolar','$56'),('lima belas dolar','$15'),
-('dua puluh lima November dua ribu dua puluh enam','25 November 2026'),('dua puluh lima November','25 November'),('timeframe satu jam','timeframe H1'),('delapan belas candle','18 candle'),('empat belas punya','14 punya'),
-('tujuh koma tujuh tiga persen','7,73%'),('tujuh koma tujuh persen','7,7%'),('dua koma sembilan tujuh persen','2,97%'),('tiga koma nol enam persen','3,06%'),('delapan koma tiga delapan persen','8,38%'),('empat belas koma tiga persen','14,3%'),('lima koma sembilan satu persen','5,91%'),('nol koma nol sembilan persen','0,09%'),('empat belas koma delapan lima persen','14,85%'),('tujuh belas koma empat delapan persen','17,48%'),('dua koma delapan persen','2,8%'),
-('satu persen','1%'),('dua persen','2%'),('tiga persen','3%'),('empat persen','4%'),('enam persen','6%'),('delapan persen','8%'),('setengah persen','0,5%'),
-('empat belas kali lipat','14 kali lipat'),('delapan kali','8 kali'),('tiga kali','3 kali'),('empat trade','4 trade'),('trade kedelapan','trade ke-8'),('tiga stop loss','3 stop loss'),('enam stop loss','6 stop loss'),('delapan stop loss','8 stop loss'),('empat baris','4 baris'),('empat bagian','4 bagian'),('materi kedua belas','materi ke-12'),
-('Jam sembilan pagi','Jam 09.00'),('Jam dua belas','Jam 12.00'),('Jam enam sore','Jam 18.00'),('Jam sepuluh malam','Jam 22.00'),('jam enam sore','jam 18.00'),('jam tujuh','jam 19.00'),('jam delapan malam','jam 20.00'),('jam delapan','jam 20.00'),('jam dua siang','jam 14.00'),
-('kira kira','kira-kira'),('dhirajkelly dot i d','dhirajkelly.id')]
+SUBMAP=[('dua November sampai dua puluh delapan November dua ribu dua puluh enam','2–28 November 2026'),('dua puluh lima November','25 November'),
+('tiga ribu empat ratus enam puluh tujuh','3.467'),('tiga ribu lima ratus lima puluh','3.550'),('tiga ribu lima ratus dua puluh','3.520'),('tiga ribu empat ratus sembilan puluh','3.490'),('tiga ribu empat ratus tujuh puluh','3.470'),
+('sepuluh ribu dolar','$10.000'),('dua ratus delapan puluh dolar','$280'),('dua ratus delapan puluh','$280'),('satu dolar per satu dolar','$1 per $1'),('delapan puluh dolar','$80'),('tiga ratus dolar','$300'),('dua ratus dolar','$200'),('seratus dolar','$100'),('lima puluh dolar','$50'),('dua puluh dolar','$20'),
+('nol koma nol satu','0,01'),('nol koma nol dua','0,02'),('nol koma nol lima','0,05'),('nol koma sembilan satu','0,91'),
+('dua sampai tiga persen','2–3%'),('dua koma delapan persen','2,8%'),('dua koma satu persen','2,1%'),('dua koma dua persen','2,2%'),('satu persen','1%'),('dua persen','2%'),('tiga persen','3%'),
+('seratus sembilan belas candle empat jam','119 candle H4'),('seratus empat candle','104 candle'),('timeframe satu jam','timeframe H1'),('timeframe empat jam','timeframe H4'),
+('Jam delapan malam','Jam 20.00'),('Jam satu siang','Jam 13.00'),('Jam enam sore','Jam 18.00'),('materi ketiga belas','materi ke-13'),('empat minggu','4 minggu'),('tiga kali lipat','3 kali lipat'),
+('Angka satu artinya','Angka 1 artinya'),('nol artinya','0 artinya'),('dhirajkelly dot i d','dhirajkelly.id')]
 def subify(t):
     for a,b in SUBMAP: t=t.replace(a,b)
     return t
