@@ -159,7 +159,9 @@ Pada contoh sebelumnya, zona **2.374–2.380** bertumpuk dengan area 0.69 (2.369
 ### Kapan order dibatalkan sebelum terisi
 - Harga turun dan membuat **low baru di bawah Fib 0** sebelum menyentuh 0.79. Swing low berubah, jadi Fibonacci harus ditarik ulang dan semua angka dihitung lagi.
 - Ada rilis berita berdampak tinggi dalam **±30 menit** (aturan 5).
-- Ada candle H1 yang body-nya close di atas zona SBR sebelum order terisi.
+- Ada candle H1 yang body-nya close di atas **0.89** sebelum order terisi.
+
+Harga yang naik melewati zona SBR menuju 0.79 **tidak** membatalkan order. Itu justru jalan harga menuju entry, karena 0.79 sering berada di atas zona.
 
 ## Yang tidak dilakukan
 - Mengejar harga dengan sell market kalau harga berbalik turun sebelum sampai 0.79.
@@ -245,7 +247,6 @@ Kalau lot terkecil saja sudah melewati batas risiko, jawabannya **tidak trading*
 Order tidak dipasang, atau dibatalkan kalau sudah terpasang, ketika:
 - Ada rilis berita berdampak tinggi dalam **30 menit sebelum sampai 30 menit sesudah** harga diperkirakan sampai ke 0.79. Cek kalender ekonomi setiap pagi.
 - Spread melebar tidak wajar dibanding biasanya.
-- Ada candle H1 yang **body**-nya close **di atas zona SBR** sebelum order terisi.
 - Harga close di atas **0.89**.
 - Harga membuat low baru di bawah Fib 0 sebelum menyentuh 0.79.
 
